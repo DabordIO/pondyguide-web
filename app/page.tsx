@@ -14,11 +14,15 @@ export const metadata: Metadata = {
 
 const PRICE_LABELS: Record<string, string> = { budget: "₹", mid: "₹₹", high: "₹₹₹" };
 
-function BigHeading({ children }: { children: React.ReactNode }) {
+function SectionHeader({ title, href, h1 = false }: { title: string; href: string; h1?: boolean }) {
+  const headingStyle = { fontFamily: "var(--font-playfair), Georgia, serif", fontSize: h1 ? "clamp(2.5rem, 6vw, 3.75rem)" : "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, margin: 0 };
   return (
-    <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.15, marginBottom: 16 }}>
-      {children}
-    </h2>
+    <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 16, marginBottom: 16 }}>
+      <Link href={href} style={{ textDecoration: "none" }}>
+        {h1 ? <h1 style={headingStyle}>{title}</h1> : <h2 style={headingStyle}>{title}</h2>}
+      </Link>
+      <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
+    </div>
   );
 }
 
@@ -72,10 +76,7 @@ export default function HomePage() {
 
       {/* ── HISTORY ─────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>History</p>
-        <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2.5rem, 6vw, 3.75rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, marginBottom: 20 }}>
-          The Story of Pondicherry
-        </h1>
+        <SectionHeader title="The Story of Pondicherry" href="/history" h1 />
         <SectionIntro>
           Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
         </SectionIntro>
@@ -89,7 +90,7 @@ export default function HomePage() {
 
       {/* ── FRENCH INSTITUTIONS ─────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <BigHeading>French Institutions</BigHeading>
+        <SectionHeader title="French Institutions" href="/history/institutions" />
         <ThreeGrid>
           {featuredInstitutions.map(a => (
             <ArticleCard key={a.id} href={`/history/institutions/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
@@ -99,7 +100,7 @@ export default function HomePage() {
 
       {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <BigHeading>Lives &amp; Legacies</BigHeading>
+        <SectionHeader title="Lives & Legacies" href="/history/lives-and-legacies" />
         <SectionIntro>The governors, soldiers, scholars, and saints who shaped the town.</SectionIntro>
         <ThreeGrid>
           {featuredFigures.map(f => (
@@ -114,12 +115,12 @@ export default function HomePage() {
               </div>
             </Link>
           ))}
-        </div>
+        </ThreeGrid>
       </section>
 
       {/* ── DISCOVER ────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <BigHeading>Explore the Town</BigHeading>
+        <SectionHeader title="Explore the Town" href="/discover" />
         <ThreeGrid>
           {[
             { href: "/discover/white-town", photo: "/streets/rue-dumas.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
@@ -142,7 +143,7 @@ export default function HomePage() {
 
       {/* ── AUROVILLE ───────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <BigHeading>Understanding Auroville</BigHeading>
+        <SectionHeader title="Understanding Auroville" href="/discover/auroville" />
         <SectionIntro>
           Founded in 1968 on a plateau of eroded land north of Pondicherry, Auroville is home to around 3,400 people from more than 60 countries. It is neither a tourist attraction nor a spiritual retreat. Read before you visit.
         </SectionIntro>
@@ -155,7 +156,7 @@ export default function HomePage() {
 
       {/* ── RESTAURANTS ─────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <BigHeading>Restaurants in Pondicherry</BigHeading>
+        <SectionHeader title="Restaurants in Pondicherry" href="/restaurants" />
         <SectionIntro>
           Pondicherry punches above its weight for food. French-influenced cafés, fresh seafood, Tamil homecooked thalis — and enough coffee to keep you going through the afternoon heat.
         </SectionIntro>
@@ -182,7 +183,7 @@ export default function HomePage() {
 
       {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <BigHeading>Where to Stay</BigHeading>
+        <SectionHeader title="Where to Stay" href="/hotels" />
         <ThreeGrid>
           {[
             { href: "/hotels/palais-de-mahe", photo: "/hotels/palais-de-mahe.jpg", title: "Palais de Mahe", description: "The most romantic address in the White Town. A mustard-yellow façade on Rue Law de Lauriston." },
@@ -205,7 +206,7 @@ export default function HomePage() {
 
       {/* ── FESTIVALS ───────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <BigHeading>Festival Calendar</BigHeading>
+        <SectionHeader title="Festival Calendar" href="/festivals" />
         <ThreeGrid>
           {[
             { href: "/festivals/pongal", photo: "/festivals/pongal.jpg", label: "January", title: "Pongal", description: "The Tamil harvest festival — four days, rice pots boiling over, decorated cows, and kolam patterns at every door." },
@@ -228,7 +229,7 @@ export default function HomePage() {
 
       {/* ── PLAN ────────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 64 }}>
-        <BigHeading>Before You Go</BigHeading>
+        <SectionHeader title="Before You Go" href="/plan" />
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12 }}>
           {[
             { href: "/plan/getting-here", title: "Getting Here", desc: "Bus from Chennai, train from Bangalore, the ECR coastal road." },
