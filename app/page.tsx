@@ -101,10 +101,10 @@ export default function HomePage() {
       <section style={{ marginBottom: 72 }}>
         <BigHeading>Lives &amp; Legacies</BigHeading>
         <SectionIntro>The governors, soldiers, scholars, and saints who shaped the town.</SectionIntro>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 16 }}>
+        <ThreeGrid>
           {featuredFigures.map(f => (
             <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              <div style={{ position: "relative", width: "100%", height: 200, background: "#f0ece6" }}>
+              <div style={{ position: "relative", width: "100%", height: 280, background: "#f0ece6" }}>
                 <Image src={`/figures/${f.photo}`} alt={f.name} fill style={{ objectFit: "cover", objectPosition: "center top" }} />
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
