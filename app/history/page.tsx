@@ -22,11 +22,11 @@ export default function HistoryPage() {
       </p>
 
       <Section title="The Full Story">
-        <ArticleGrid items={historyArticles.map(a => ({ id: a.id, title: a.title, teaser: a.teaser ?? "", href: `/history/${a.id}` }))} />
+        <ArticleGrid items={historyArticles.map(a => ({ id: a.id, title: a.title, teaser: a.teaser ?? "", href: `/history/${a.id}`, photo: a.photo, photoFolder: a.photoFolder ?? "history" }))} />
       </Section>
 
       <Section title="French Institutions">
-        <ArticleGrid items={institutions.map(a => ({ id: a.id, title: a.title, teaser: a.teaser, href: `/history/institutions/${a.id}` }))} />
+        <ArticleGrid items={institutions.map(a => ({ id: a.id, title: a.title, teaser: a.teaser, href: `/history/institutions/${a.id}`, photo: a.photo, photoFolder: a.photoFolder ?? "history" }))} />
       </Section>
 
       <Section title="Lives & Legacies">
@@ -61,14 +61,21 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function ArticleGrid({ items }: { items: { id: string; title: string; teaser: string; href: string }[] }) {
+function ArticleGrid({ items }: { items: { id: string; title: string; teaser: string; href: string; photo?: string; photoFolder?: string }[] }) {
   return (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
       {items.map(item => (
-        <Link key={item.id} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, padding: "20px 20px 16px", display: "block" }}>
-          <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{item.title}</p>
-          <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.6 }}>{item.teaser.slice(0, 120)}{item.teaser.length > 120 ? "…" : ""}</p>
-          <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+        <Link key={item.id} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+          {item.photo && (
+            <div style={{ position: "relative", width: "100%", height: 160 }}>
+              <Image src={`/${item.photoFolder}/${item.photo}`} alt={item.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+            </div>
+          )}
+          <div style={{ padding: "16px 20px 16px" }}>
+            <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{item.title}</p>
+            <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.6 }}>{item.teaser.slice(0, 120)}{item.teaser.length > 120 ? "…" : ""}</p>
+            <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+          </div>
         </Link>
       ))}
     </div>
