@@ -263,7 +263,7 @@ It functions today as a government-run school, still teaching in the same city, 
   },
   {
     id: "cluny-schools",
-    title: "Les Écoles de Cluny",
+    title: "The Cluny Schools",
     subtitle: "Sisters of St. Joseph of Cluny, in Pondicherry since 1827",
     photo: "école-cluny.png",
     photoFolder: "history",
