@@ -13,54 +13,53 @@ export interface InstitutionArticle {
 
 export const institutionArticles: InstitutionArticle[] = [
   {
-    id: "petit-seminaire",
-    title: "Petit Séminaire",
-    subtitle: "Founded 1792, one of India's oldest schools in continuous operation",
-    photo: "petit-seminaire.jpg",
+    id: "lycee-francais",
+    title: "Lycée Français International",
+    subtitle: "Founded 1826 as the Collège Royal de Pondichéry. Bicentenary: 2026.",
+    photo: "lycee-français-pondichéry.png",
     photoFolder: "history",
     teaser:
-      "Started to train clergy in the last decade of the eighteenth century, it has been teaching boys without interruption ever since. Every political transition the city has experienced, it survived.",
-    gradient: "linear-gradient(135deg, #3b1f0a 0%, #7c4a1a 100%)",
-    address: "Petit Séminaire Higher Secondary School, Puducherry",
-    body: `There is a school in the heart of Pondicherry that has been teaching boys since 1792. It has changed names, changed languages, changed systems of examination, and changed its relationship to both the Church and the state. It has never closed. What you see when you stand in front of it today is the physical expression of every political and religious transition this city has lived through, accumulated in stone over two and a half centuries.
+      "In autumn 1826 the same governor who opened the Pensionnat de Jeunes Filles also founded a college for boys. Nearly two hundred years later, both institutions are still open. The Lycée is the older of the two by a few weeks.",
+    gradient: "linear-gradient(135deg, #1a3a1a 0%, #2d5a2d 100%)",
+    address: "Lycée Français International de Pondichéry, Puducherry",
+    website: "https://www.lfpondichery.com",
+    body: `On 26 October 1826, Governor Eugène Desbassayns de Richemont signed the founding decree for a college for boys in Pondicherry. He called it the Collège Royal de Pondichéry. It is still open today, nearly two hundred years later, as the Lycée Français International de Pondichéry. Its bicentenary falls in 2026, making it one of the oldest continuously operating French overseas schools in the world.
 
-**The Seminary**
+On the same day, the same governor signed the founding decree for the Pensionnat de Jeunes Filles. Two institutions, one year, one administrator. Between them they defined the structure of French colonial education in India for the century that followed.
 
-Petit Séminaire was founded in 1792 under French Catholic missionary influence. Its original mandate was precise: to train seminarians as candidates for the clergy, to educate local Catholic youth, and, over time, to serve a broader student population. It was a seminary in form but already something more in ambition. The Church in Pondicherry understood that it could not sustain itself in India purely on imported priests. It needed to produce its own, and to do that it needed an institution.
+**The Colonial College**
 
-By the early nineteenth century the school had already begun to outgrow its original purpose. The training of clergy remained central, but the walls had opened enough to admit students who had no intention of taking holy orders. The dual identity, part seminary, part college, was already established before the buildings themselves had reached their final form.
+The Collège Royal was founded to educate the children of the French colonial population: in the language of the time, the "white class," meaning the sons of administrators, merchants, and the métis families of the French quarter. Its mission was precise: to provide elite instruction in French, to train the administrative intermediaries that French India required, and to produce a class of young men who could function inside both the colonial system and the world of French academic culture.
 
-**The Buildings**
+The curriculum was classical French in orientation, literature, mathematics, philosophy at its core, but with an unusual addition that distinguished this school from many of its counterparts elsewhere in the French empire. Tamil and Hindustani were introduced early into the programme. This was a practical acknowledgement that the school's graduates would spend their lives in India, and that a purely European education would not equip them for the place they actually inhabited.
 
-In 1844 the institution was formally consolidated into a structured school complex. The main buildings were completed and blessed on 19 March 1846, giving the school the physical presence it largely retains today. These were substantial French colonial structures: high ceilings, shaded corridors, the proportions of a serious institution rather than a temporary arrangement. Students today walk the same stone corridors that were laid down in the reign of Louis-Philippe, under a French colonial administration that still imagined it was building for permanence.
+**Governance Shifts**
 
-**Opening the Doors**
+Through the first century, the institution moved between secular and religious administration several times. It began under secular French colonial governance, was entrusted to the Missions Étrangères de Paris, the Catholic missionary body that ran several of the colony's educational institutions, and returned to secular state control depending on the political moment in France. The alternation between Church and state was not unusual for French colonial schools of this period: it reflected the shifting balance between republican laïcité and Catholic influence that dominated French politics from the Revolution through the Third Republic.
 
-The first major transformation came in 1873, when the seminary became a fully public college. The restriction to clerical candidates was lifted. Enrollment expanded to include local populations beyond the narrow circle of Catholic families who had been the school's original constituency. It was no longer, in any meaningful sense, a seminary. It was a school.
+Each governance transition left its mark on the curriculum and the student body. When the school reopened under fully secular Republic control in 1900, after the anticlerical reforms that reshaped French public education, it became more explicitly merit-based and opened gradually to a wider range of Indian students. Access was not equal, but it was expanding.
 
-In 1904 an English section was introduced, initially covering three standards. This was the first formal concession to a world in which English was becoming the language of advancement in India, even inside the boundaries of French Pondicherry. French remained the primary medium, but the institution had registered which way the wind was blowing.
+**From Colonial Tool to Bridge Institution**
 
-**The Academic Mainstream**
+After the Second World War, the geopolitical ground shifted dramatically. India became independent in 1947. French India did not, but everyone understood that the transfer was coming. In this period the school became something more deliberately calibrated: a symbol of French soft power, a bridge between two political worlds that were about to separate formally.
 
-The early decades of the twentieth century brought a sustained effort to integrate Petit Séminaire into the Indian academic mainstream without abandoning its French character. By 1932 the school had been upgraded to matriculation level and affiliated with Madras University. In 1934 the first batch of students sat for the matriculation examinations and passed successfully. The school had arrived in the modern Indian system.
+It educated both French citizens and Indian elites through the years of transition from 1947 to 1954. It prepared students for a future in which the flag over the building had not yet been settled. When the de facto transfer came in November 1954, the school was one of the institutions that both sides had reasons to preserve.
 
-This was a genuinely difficult balancing act. The curriculum was still substantially French in orientation. The language of instruction was still primarily French. But the qualifications it offered now had to be legible to Indian universities and employers, which meant Madras University affiliation, which meant English-language examinations, which meant a bilingual institution navigating between two systems simultaneously.
+**The AEFE and the Baccalauréat**
 
-**The Political Transition**
+After 1954 the Lycée retained its French curriculum under bilateral agreements between France and India. It was brought into the AEFE, the Agence pour l'Enseignement Français à l'Étranger, the global network that governs French schools outside France. This ensured full curriculum continuity and diplomas equivalent to those awarded anywhere in France.
 
-After the de facto transfer of Pondicherry to India in 1954, the pressures on French-medium education intensified rapidly. Demand for English instruction increased across the city. The French Baccalaureate was discontinued in 1960, six years after the transfer. French settled into its current role as a language option, one of several that students could choose, rather than the medium through which everything else was taught.
-
-This was not a sudden collapse but a managed withdrawal: the school adapting to political reality without sacrificing institutional continuity. The Archdiocese of Pondicherry-Cuddalore, which had managed the institution since its founding, ensured the transition was orderly.
+The school is one of fewer than ten institutions in India authorised to conduct the full French Baccalauréat, the national secondary school leaving examination that is the gateway to French and European universities. Because of the local academic calendar, students in Pondicherry typically sit the Bac before their counterparts in mainland France.
 
 **The Modern School**
 
-In 1978 the school adopted the 10+2 higher secondary structure that organises Indian secondary education today, becoming Petit Séminaire Higher Secondary School in its current form. What had begun as a seminary of perhaps a hundred students had become a large institution serving thousands, with science, commerce, and computer science streams alongside Tamil, Hindi, and French as language options.
+Today the Lycée Français International de Pondichéry follows the French national curriculum from primary through the final "Terminale" year, in strict alignment with the French Ministry of Education. French is the primary language of instruction. English is a strong second. Tamil is offered as a local language. German and Spanish are optional. Students who complete the programme receive the French Baccalauréat and an international admissions profile that opens universities across France and Europe.
 
-**The Living Archive**
+**Three Regimes, One School**
 
-What distinguishes Petit Séminaire from most Indian schools is not its curriculum, which is now entirely conventional, but its continuity. The Archdiocese has managed this institution across every political transition the city has experienced: French colonial rule, the British occupation of 1761, the restoration of French authority, Indian independence, the transfer of 1954, and the six decades of Indian administration since. The school was here through all of it, on the same ground, teaching the same boys of this city.
+The Lycée Français International de Pondichéry has operated under French monarchy and empire, French republic, and Indian sovereignty without closing. It has survived every political transition this city has undergone since 1826 and has educated generations of students who went on to French universities, Indian professional careers, and lives on both sides of the relationship the school was built to serve.
 
-Its alumni include Prapanchan, the Tamil writer S. Vaidyalingam, who received the Sahitya Akademi award, along with generations of clergy, academics, civil servants, and professionals who carry some trace of its particular inheritance. A French Catholic institution that became, without ever quite intending to, a thoroughly Indian one.`,
+That continuity across three regimes, across colonial and postcolonial, across French and Indian sovereignty, is itself the argument for what this school is and what it represents in Pondicherry.`,
   },
   {
     id: "consulate-general",
@@ -151,53 +150,54 @@ The centre continues to conduct field research across South India, publish criti
 The EFEO maintains establishments across Asia. The Pondicherry centre is arguably the most important: the place where the study of Indian civilisation, in its full historical, textual, spatial, and material depth, has been pursued with the greatest sustained seriousness, and where two complementary ways of reading India, through its texts and through its landscapes, have been developed side by side for seventy years.`,
   },
   {
-    id: "lycee-francais",
-    title: "Lycée Français International",
-    subtitle: "Founded 1826 as the Collège Royal de Pondichéry. Bicentenary: 2026.",
-    photo: "lycee-français-pondichéry.png",
+    id: "petit-seminaire",
+    title: "Petit Séminaire",
+    subtitle: "Founded 1792, one of India's oldest schools in continuous operation",
+    photo: "petit-seminaire.jpg",
     photoFolder: "history",
     teaser:
-      "In autumn 1826 the same governor who opened the Pensionnat de Jeunes Filles also founded a college for boys. Nearly two hundred years later, both institutions are still open. The Lycée is the older of the two by a few weeks.",
-    gradient: "linear-gradient(135deg, #1a3a1a 0%, #2d5a2d 100%)",
-    address: "Lycée Français International de Pondichéry, Puducherry",
-    website: "https://www.lfpondichery.com",
-    body: `On 26 October 1826, Governor Eugène Desbassayns de Richemont signed the founding decree for a college for boys in Pondicherry. He called it the Collège Royal de Pondichéry. It is still open today, nearly two hundred years later, as the Lycée Français International de Pondichéry. Its bicentenary falls in 2026, making it one of the oldest continuously operating French overseas schools in the world.
+      "Started to train clergy in the last decade of the eighteenth century, it has been teaching boys without interruption ever since. Every political transition the city has experienced, it survived.",
+    gradient: "linear-gradient(135deg, #3b1f0a 0%, #7c4a1a 100%)",
+    address: "Petit Séminaire Higher Secondary School, Puducherry",
+    body: `There is a school in the heart of Pondicherry that has been teaching boys since 1792. It has changed names, changed languages, changed systems of examination, and changed its relationship to both the Church and the state. It has never closed. What you see when you stand in front of it today is the physical expression of every political and religious transition this city has lived through, accumulated in stone over two and a half centuries.
 
-On the same day, the same governor signed the founding decree for the Pensionnat de Jeunes Filles. Two institutions, one year, one administrator. Between them they defined the structure of French colonial education in India for the century that followed.
+**The Seminary**
 
-**The Colonial College**
+Petit Séminaire was founded in 1792 under French Catholic missionary influence. Its original mandate was precise: to train seminarians as candidates for the clergy, to educate local Catholic youth, and, over time, to serve a broader student population. It was a seminary in form but already something more in ambition. The Church in Pondicherry understood that it could not sustain itself in India purely on imported priests. It needed to produce its own, and to do that it needed an institution.
 
-The Collège Royal was founded to educate the children of the French colonial population: in the language of the time, the "white class," meaning the sons of administrators, merchants, and the métis families of the French quarter. Its mission was precise: to provide elite instruction in French, to train the administrative intermediaries that French India required, and to produce a class of young men who could function inside both the colonial system and the world of French academic culture.
+By the early nineteenth century the school had already begun to outgrow its original purpose. The training of clergy remained central, but the walls had opened enough to admit students who had no intention of taking holy orders. The dual identity, part seminary, part college, was already established before the buildings themselves had reached their final form.
 
-The curriculum was classical French in orientation, literature, mathematics, philosophy at its core, but with an unusual addition that distinguished this school from many of its counterparts elsewhere in the French empire. Tamil and Hindustani were introduced early into the programme. This was a practical acknowledgement that the school's graduates would spend their lives in India, and that a purely European education would not equip them for the place they actually inhabited.
+**The Buildings**
 
-**Governance Shifts**
+In 1844 the institution was formally consolidated into a structured school complex. The main buildings were completed and blessed on 19 March 1846, giving the school the physical presence it largely retains today. These were substantial French colonial structures: high ceilings, shaded corridors, the proportions of a serious institution rather than a temporary arrangement. Students today walk the same stone corridors that were laid down in the reign of Louis-Philippe, under a French colonial administration that still imagined it was building for permanence.
 
-Through the first century, the institution moved between secular and religious administration several times. It began under secular French colonial governance, was entrusted to the Missions Étrangères de Paris, the Catholic missionary body that ran several of the colony's educational institutions, and returned to secular state control depending on the political moment in France. The alternation between Church and state was not unusual for French colonial schools of this period: it reflected the shifting balance between republican laïcité and Catholic influence that dominated French politics from the Revolution through the Third Republic.
+**Opening the Doors**
 
-Each governance transition left its mark on the curriculum and the student body. When the school reopened under fully secular Republic control in 1900, after the anticlerical reforms that reshaped French public education, it became more explicitly merit-based and opened gradually to a wider range of Indian students. Access was not equal, but it was expanding.
+The first major transformation came in 1873, when the seminary became a fully public college. The restriction to clerical candidates was lifted. Enrollment expanded to include local populations beyond the narrow circle of Catholic families who had been the school's original constituency. It was no longer, in any meaningful sense, a seminary. It was a school.
 
-**From Colonial Tool to Bridge Institution**
+In 1904 an English section was introduced, initially covering three standards. This was the first formal concession to a world in which English was becoming the language of advancement in India, even inside the boundaries of French Pondicherry. French remained the primary medium, but the institution had registered which way the wind was blowing.
 
-After the Second World War, the geopolitical ground shifted dramatically. India became independent in 1947. French India did not, but everyone understood that the transfer was coming. In this period the school became something more deliberately calibrated: a symbol of French soft power, a bridge between two political worlds that were about to separate formally.
+**The Academic Mainstream**
 
-It educated both French citizens and Indian elites through the years of transition from 1947 to 1954. It prepared students for a future in which the flag over the building had not yet been settled. When the de facto transfer came in November 1954, the school was one of the institutions that both sides had reasons to preserve.
+The early decades of the twentieth century brought a sustained effort to integrate Petit Séminaire into the Indian academic mainstream without abandoning its French character. By 1932 the school had been upgraded to matriculation level and affiliated with Madras University. In 1934 the first batch of students sat for the matriculation examinations and passed successfully. The school had arrived in the modern Indian system.
 
-**The AEFE and the Baccalauréat**
+This was a genuinely difficult balancing act. The curriculum was still substantially French in orientation. The language of instruction was still primarily French. But the qualifications it offered now had to be legible to Indian universities and employers, which meant Madras University affiliation, which meant English-language examinations, which meant a bilingual institution navigating between two systems simultaneously.
 
-After 1954 the Lycée retained its French curriculum under bilateral agreements between France and India. It was brought into the AEFE, the Agence pour l'Enseignement Français à l'Étranger, the global network that governs French schools outside France. This ensured full curriculum continuity and diplomas equivalent to those awarded anywhere in France.
+**The Political Transition**
 
-The school is one of fewer than ten institutions in India authorised to conduct the full French Baccalauréat, the national secondary school leaving examination that is the gateway to French and European universities. Because of the local academic calendar, students in Pondicherry typically sit the Bac before their counterparts in mainland France.
+After the de facto transfer of Pondicherry to India in 1954, the pressures on French-medium education intensified rapidly. Demand for English instruction increased across the city. The French Baccalaureate was discontinued in 1960, six years after the transfer. French settled into its current role as a language option, one of several that students could choose, rather than the medium through which everything else was taught.
+
+This was not a sudden collapse but a managed withdrawal: the school adapting to political reality without sacrificing institutional continuity. The Archdiocese of Pondicherry-Cuddalore, which had managed the institution since its founding, ensured the transition was orderly.
 
 **The Modern School**
 
-Today the Lycée Français International de Pondichéry follows the French national curriculum from primary through the final "Terminale" year, in strict alignment with the French Ministry of Education. French is the primary language of instruction. English is a strong second. Tamil is offered as a local language. German and Spanish are optional. Students who complete the programme receive the French Baccalauréat and an international admissions profile that opens universities across France and Europe.
+In 1978 the school adopted the 10+2 higher secondary structure that organises Indian secondary education today, becoming Petit Séminaire Higher Secondary School in its current form. What had begun as a seminary of perhaps a hundred students had become a large institution serving thousands, with science, commerce, and computer science streams alongside Tamil, Hindi, and French as language options.
 
-**Three Regimes, One School**
+**The Living Archive**
 
-The Lycée Français International de Pondichéry has operated under French monarchy and empire, French republic, and Indian sovereignty without closing. It has survived every political transition this city has undergone since 1826 and has educated generations of students who went on to French universities, Indian professional careers, and lives on both sides of the relationship the school was built to serve.
+What distinguishes Petit Séminaire from most Indian schools is not its curriculum, which is now entirely conventional, but its continuity. The Archdiocese has managed this institution across every political transition the city has experienced: French colonial rule, the British occupation of 1761, the restoration of French authority, Indian independence, the transfer of 1954, and the six decades of Indian administration since. The school was here through all of it, on the same ground, teaching the same boys of this city.
 
-That continuity across three regimes, across colonial and postcolonial, across French and Indian sovereignty, is itself the argument for what this school is and what it represents in Pondicherry.`,
+Its alumni include Prapanchan, the Tamil writer S. Vaidyalingam, who received the Sahitya Akademi award, along with generations of clergy, academics, civil servants, and professionals who carry some trace of its particular inheritance. A French Catholic institution that became, without ever quite intending to, a thoroughly Indian one.`,
   },
   {
     id: "alliance-francaise",

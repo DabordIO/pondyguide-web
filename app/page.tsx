@@ -63,7 +63,7 @@ function ThreeGrid({ children }: { children: React.ReactNode }) {
 export default function HomePage() {
   const featuredHistory = historyArticles.slice(0, 3);
   const featuredInstitutions = institutionArticles.slice(0, 3);
-  const featuredFigures = figures.slice(0, 5);
+  const featuredFigures = figures.slice(0, 3);
   const featuredAuroville = aurovilleArticles.slice(0, 3);
   const featuredRestaurants = restaurants.slice(0, 3);
 
