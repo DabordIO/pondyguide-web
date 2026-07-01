@@ -47,26 +47,30 @@ Return to Goubert Avenue at the end of the walk. Le Café, the Sri Aurobindo Ash
     title: "Manakula Vinayagar Temple",
     cardTitle: "Manakula Vinayagar",
     teaser:
-      "The oldest active temple in Pondicherry, a short walk from the French Institute. Predating French settlement, it survived every colonial attempt at demolition through sheer popular resistance.",
+      "One of the oldest continuously active Hindu temples in Puducherry, established before the French arrived in 1674. It survived every colonial attempt at relocation through sustained local resistance.",
     duration: "1 hour",
     photo: "manakula-vinayagar.jpg",
-    body: `Manakula Vinayagar Temple stands on Manakula Vinayagar Koil Street, two minutes' walk from the French Institute, in the heart of the White Town. It is the oldest active temple in Pondicherry and one of the few institutions in the city that survived French colonial rule not by accommodation but by popular refusal to let it go.
+    body: `A short walk from the French Institute, Manakula Vinayagar Temple is one of the oldest continuously active Hindu temples in Puducherry. Established before the arrival of the French in 1674, it remained on its historic site as the colonial town grew around it and today stands as one of the city's most important religious and cultural landmarks.
 
-**The history**
+**History**
 
-The temple predates French settlement. When the French established their trading post in Pondicherry in the 1670s, the temple was already here. Over the following century the colonial administration attempted on several occasions to relocate or demolish it to regularise the French Quarter's street grid. Each time, the local population resisted, and each time the temple remained. It is still where it has always been, a fact the street grid quietly navigates around.
+The temple was already established when the French East India Company founded its settlement at Pondicherry in 1674. As the colonial administration developed the town according to a planned street layout, officials made several attempts during the eighteenth century to relocate the shrine. These proposals met sustained opposition from the local Hindu community, and the temple remained in its historic location. Its continued presence reflects both the strength of local religious life and the limits of colonial authority in reshaping an existing sacred landscape.
 
-**The deity and the shrine**
+**The Shrine**
 
-The presiding deity is Vinayagar, the Tamil name for Ganesha, worshipped here in his form as Manakula Vinayagar. The golden gopuram above the entrance depicts 40 different forms of Ganesha, each with distinct iconography. Inside, the painted pillars and layered mandapam ceiling make this one of the most visually rich interiors in the city. Pujas are performed multiple times daily and the atmosphere at the morning and evening sessions is particularly intense.
+The presiding deity is Vinayagar, the Tamil name for Ganesha, worshipped here as Manakula Vinayagar. The temple's gold-plated gopuram is decorated with numerous forms of Ganesha, while the interior features painted pillars, richly ornamented ceilings, and a series of mandapams leading to the sanctum. Daily pujas are conducted throughout the day, drawing a steady stream of devotees. The morning and evening services are particularly atmospheric, with the sounds of chanting, bells, and devotional music filling the temple.
 
-**The elephant**
+**Lakshmi**
 
-The temple elephant gives blessings to devotees at the entrance on most mornings, touching her trunk to the head of anyone who offers a coin or a banana. It is one of the most immediately striking experiences in the White Town for first-time visitors.
+For more than three decades, the temple elephant, Lakshmi, was one of Puducherry's most familiar and beloved figures. Standing at the entrance, she greeted generations of devotees and visitors, gently placing her trunk on their heads as a blessing. For many people, meeting Lakshmi became as memorable a part of visiting the temple as offering prayers inside the shrine.
 
-**When to visit**
+Lakshmi died in November 2022 after decades of service to the temple. Her passing prompted an outpouring of public grief, and thousands of devotees attended her funeral rites. Although visitors no longer receive her blessing at the entrance, Lakshmi remains an enduring part of the temple's recent history and of the memories of countless residents and travellers.
 
-Entry is free. The temple is open approximately 5:45am to 12:30pm and 4pm to 9:30pm. The evening session, when the gopuram is lit and the inner sanctum fills with lamp and incense, is the most atmospheric. Vinayaka Chaturthi, the annual Ganesha festival, is the major event in the temple calendar and draws large crowds across several days.`,
+**Visiting**
+
+Entry is free and all visitors are welcome, provided they dress modestly and respect the temple's customs. The temple is generally open from about 5:45 am to 12:30 pm and from 4:00 pm to 9:30 pm, although timings may vary on festival days. The evening hours are especially rewarding, when lamps are lit and the temple takes on a warm glow of incense, prayer, and devotional music.
+
+The temple's principal annual festival is Vinayaka Chaturthi, celebrated with special ceremonies, processions, and large gatherings of devotees from across Puducherry and neighbouring Tamil Nadu.`,
   },
 
   // ── ACTIVITIES ────────────────────────────────────────────────────────────
