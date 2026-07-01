@@ -91,7 +91,7 @@ From Chennai Airport, the metro from Meenambakkam station (directly outside the 
     category: "arriving",
     teaser:
       "The 150-kilometre coastal drive from Chennai to Pondicherry along the Bay of Bengal is one of the great day journeys in South India.",
-    photo: "ecr-road.jpg.jxl",
+    photo: "ecr-road.png",
     body: `**The road**
 
 The East Coast Road (ECR) runs south from Chennai along the Coromandel Coast, hugging the Bay of Bengal for much of its length before reaching Pondicherry. The drive covers approximately 150 kilometres and takes around three hours in normal traffic. The road passes fishing villages, open beach stretches, and buildings still bearing visible marks from the 2004 tsunami. It is best driven during daylight: avoid the ECR at night, when the road is poorly lit and coastal traffic is unpredictable.
