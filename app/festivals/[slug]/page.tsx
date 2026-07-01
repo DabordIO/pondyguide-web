@@ -73,7 +73,7 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
 
       {festival.photo && (
         <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
-          <Image src={`/festivals/${festival.photo}`} alt={festival.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+          <Image src={`/festivals/${festival.photo}`} alt={festival.title} fill style={{ objectFit: "cover", objectPosition: festival.photoPosition ?? "center" }} />
         </div>
       )}
 

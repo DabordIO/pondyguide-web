@@ -52,7 +52,7 @@ export default function FestivalsPage() {
           <Link href={`/festivals/${upcoming.id}`} style={{ textDecoration: "none", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0, background: "#fff", border: "1px solid #e8ddd4", borderRadius: 16, overflow: "hidden", maxWidth: 800 }}>
             {upcoming.photo && (
               <div style={{ position: "relative", minHeight: 260 }}>
-                <Image src={`/festivals/${upcoming.photo}`} alt={upcoming.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+                <Image src={`/festivals/${upcoming.photo}`} alt={upcoming.title} fill style={{ objectFit: "cover", objectPosition: upcoming.photoPosition ?? "center" }} />
               </div>
             )}
             <div style={{ padding: "32px 28px" }}>
@@ -75,7 +75,7 @@ export default function FestivalsPage() {
           <Link key={f.id} href={`/festivals/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
             {f.photo && (
               <div style={{ position: "relative", width: "100%", height: 160 }}>
-                <Image src={`/festivals/${f.photo}`} alt={f.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+                <Image src={`/festivals/${f.photo}`} alt={f.title} fill style={{ objectFit: "cover", objectPosition: f.photoPosition ?? "center" }} />
               </div>
             )}
             <div style={{ padding: "14px 16px 16px" }}>
