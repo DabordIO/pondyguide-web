@@ -50,6 +50,24 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
       </p>
 
       <ArticleBody text={article.body} />
+
+      {article.highlights && article.highlights.length > 0 && (
+        <div style={{ background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 12, padding: "20px 24px", margin: "32px 0" }}>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>What to look for</p>
+          <ul style={{ listStyle: "disc", paddingLeft: "1.5rem" }}>
+            {article.highlights.map((h, i) => <li key={i} style={{ fontSize: 14, color: "#292524", marginBottom: 8, lineHeight: 1.65 }}>{h}</li>)}
+          </ul>
+        </div>
+      )}
+
+      {article.visitInfo && (
+        <div style={{ background: "#f8f8f6", border: "1px solid #e8ddd4", borderRadius: 12, padding: "16px 20px", margin: "24px 0" }}>
+          {article.visitInfo.hours && <p style={{ fontSize: 14, color: "#292524", marginBottom: 6 }}><strong style={{ color: "#1c1917" }}>Hours: </strong>{article.visitInfo.hours}</p>}
+          {article.visitInfo.entry && <p style={{ fontSize: 14, color: "#292524", marginBottom: 6 }}><strong style={{ color: "#1c1917" }}>Entry: </strong>{article.visitInfo.entry}</p>}
+          {article.visitInfo.tip && <p style={{ fontSize: 14, color: "#292524" }}><strong style={{ color: "#1c1917" }}>Tip: </strong>{article.visitInfo.tip}</p>}
+        </div>
+      )}
+
       <AppBanner />
 
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 48, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>

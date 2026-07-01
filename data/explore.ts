@@ -9,6 +9,8 @@ export interface ExploreArticle {
   duration?: string;
   body: string;
   photo?: string;
+  highlights?: string[];
+  visitInfo?: { hours?: string; entry?: string; tip?: string };
 }
 
 export const exploreArticles: ExploreArticle[] = [
@@ -174,27 +176,49 @@ Archaeological Survey of India site: open daily, 9am to 5:30pm. Entry fee approx
     cardTitle: "Arikamedu",
     photo: "arikamedu.jpg",
     teaser:
-      "Three kilometres south of Pondicherry, an ancient port where Roman traders exchanged Mediterranean goods for Indian cotton and gems. Roman amphorae and Arretine pottery excavated here confirmed the oldest known Indo-Roman trade route.",
-    duration: "1 to 2 hours",
-    body: `Arikamedu is an archaeological site on the south bank of the Ariyankuppam River, three kilometres south of central Pondicherry. It is not a dramatic ruin. There are no standing columns or ornate carvings. What it is, for those drawn to ancient history, is one of the most historically significant sites on the Indian coast — a place where the classical Mediterranean world and South India met in trade across two thousand years ago.
+      "Four kilometres south of the French Quarter, an ancient port where Roman traders exchanged Mediterranean goods for Indian cotton and gems. Roman amphorae, Arretine pottery, and a gemstone engraved with the Emperor Augustus were excavated here.",
+    duration: "Half day",
+    body: `**Built:** Occupied from about the 2nd century BCE to the 8th century CE
 
-**The history**
+Four kilometres south of the French Quarter lies one of the most important archaeological sites in India. At first glance, Arikamedu is underwhelming. There are no towering ruins, no grand temples, and little to suggest that this quiet stretch beside the Ariyankuppam River was once an international port. Yet beneath these low mounds archaeologists uncovered unmistakable evidence that ships from the Roman world were trading here two thousand years ago.
 
-The site was active as a port settlement from roughly the 2nd century BCE to the 3rd century CE. During the height of the Indo-Roman trade (1st century BCE to 1st century CE), Roman merchants came here to buy fine cotton cloth (muslin), gems, pearls, and spices, paying with gold coins, wine, olive oil packed in distinctive ceramic amphorae, and luxury goods including Italian Arretine pottery (the red-glaze tableware of Roman dining).
+Italian tableware made in Arezzo. Roman wine amphorae. Mediterranean glass. An engraved gemstone depicting the Emperor Augustus. These were not local imitations but objects that had travelled thousands of kilometres across the Red Sea and the Indian Ocean, arriving on the Tamil coast within decades of Rome opening direct maritime trade with India.
 
-The Roman historian Pliny the Elder complained that Rome was haemorrhaging gold into India for luxuries: the site at Arikamedu is one of the physical confirmations that he was right.
+## The Ancient Port
 
-**The excavation**
+Arikamedu flourished as a trading settlement from about the 2nd century BCE until the 8th century CE. Its greatest prosperity came during the first centuries BCE and CE, when merchants from the Mediterranean exchanged wine, olive oil, fine pottery, and luxury goods for South Indian cotton textiles, beads, precious stones, pearls, and spices.
 
-Sir Mortimer Wheeler excavated Arikamedu in 1945 and identified it as the Indo-Roman trading post described in ancient texts, including the Periplus of the Erythraean Sea. The finds go beyond the famous amphorae and Arretine tableware: excavations also recovered Roman gold, silver, and bronze coins, glass vessels with decorative inlays, semi-precious stone and glass beads, terracotta figurines, and the everyday tools of a working craftsmen's settlement. Most of these objects are now in the Pondicherry Museum on Saint Louis Street. The museum is a better place to see the material than the site itself.
+Excavations have revealed far more than imported Roman goods. Archaeologists identified dyeing vats where fine cotton cloth was coloured for export, workshops producing the celebrated Indo-Pacific glass beads that were traded across Asia and the Mediterranean, and evidence of a bustling settlement of craftsmen, traders, and sailors. The northern part of the site appears to have contained large communal structures associated with the harbour, while the southern sector was devoted to industrial activity.
 
-**The site today**
+Ancient Tamil literature supports the archaeological evidence. Sangam poems describe *yavanas*, foreign merchants generally understood to be Greeks and Romans, arriving with wine and departing with pepper and fine textiles. The Roman writer Pliny the Elder famously complained that Rome was losing vast quantities of gold each year to India's luxury trade. Arikamedu provides some of the clearest archaeological evidence that this commerce was real.
 
-The archaeological area sits on the river bank in the Ariyankuppam village area, about 7 km from central Pondicherry. It is a quiet, open site with low earthwork remains and information boards. There is very little shade, so an early morning visit is strongly recommended, and October to March is the most comfortable season. Entry is free. A short walk from the site brings you to the Jesuit Mission House, a colonial-era building worth a brief look if you are already in the area. Serious archaeology enthusiasts will find the visit worthwhile; casual visitors may prefer to see the finds at the museum and come here briefly for the historical context.
+The settlement is widely identified with **Poduke**, the trading port described in the *Periplus of the Erythraean Sea* and later by the geographer Ptolemy.
 
-**Getting there**
+## Excavating Arikamedu
 
-Auto-rickshaw from central Pondicherry: 20 to 25 minutes, approximately 100 to 150 rupees one way. Tell the driver the Ariyankuppam bridge or Arikamedu archaeological site.`,
+Although local discoveries had attracted attention earlier, Arikamedu entered world archaeology in 1945 when Sir Mortimer Wheeler excavated the site and identified it as a major Indo-Roman trading station. His discoveries of Roman amphorae and Arretine pottery transformed understanding of ancient maritime trade between the Mediterranean and India.
+
+Further excavations by the French archaeologist Jean-Marie Casal between 1947 and 1950 added significantly to the picture while Puducherry was still under French administration. Between 1989 and 1992, the American archaeologist Vimala Begley re-examined the site and demonstrated that Arikamedu's history extended far beyond the Roman trading period. Rather than a settlement occupied for only a couple of centuries, it had remained active for more than six hundred years, from the 2nd century BCE until about the 8th century CE.
+
+Many of the finest discoveries, including Arretine pottery bearing the stamps of Italian potters, Roman amphorae, glassware, beads, coins, terracotta objects, and sculptures, are now displayed in the Pondicherry Museum. Some artefacts recovered during the French excavations are held in museums in France.
+
+## Visiting Today
+
+Arikamedu is best appreciated with a little imagination. What survives above ground is modest: low earthworks, scattered brick remains, and the foundations of a substantial brick warehouse overlooking the river. This was once a working port where cargo was unloaded, textiles dyed, beads manufactured, and merchants from distant cultures conducted business.
+
+There are few visitor facilities and only limited interpretation on site, making a visit to the Pondicherry Museum highly recommended before coming here. Seeing the Roman pottery, amphorae, beads, and glassware first helps bring the landscape into focus.
+
+The site lies about four kilometres south of the French Quarter near Ariyankuppam and can be reached by auto-rickshaw in about twenty minutes. Entry is free, and the cooler months from October to March offer the most comfortable conditions for exploring. An early morning visit is particularly rewarding, when the river is quiet and it is easier to imagine the harbour that connected the Tamil coast with the Roman world two thousand years ago.`,
+    highlights: [
+      "The site itself has no panels or infrastructure. Visit the Pondicherry Museum first to see the finds, including Arretine pottery with its Italian potters' stamps.",
+      "Look for the low mound near the Ariyankuppam River estuary and the remains of the brick warehouse. This was a working port for over 600 years.",
+      "The site may be the 'Poduke' described in the Periplus of the Erythraean Sea and by Ptolemy — possibly derived from Tamil 'Potikai', meaning 'meeting place'.",
+    ],
+    visitInfo: {
+      hours: "Accessible at all times (ASI-protected, unmanaged)",
+      entry: "Free",
+      tip: "4 km south on the coast road toward Ariyankuppam. No signage or facilities on site. Visit the Pondicherry Museum first — the Arikamedu finds there make the site itself far easier to read.",
+    },
   },
 
   {

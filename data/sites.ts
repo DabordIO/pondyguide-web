@@ -230,29 +230,6 @@ export const sites: Site[] = [
     },
   },
   {
-    id: "arikamedu",
-    name: "Arikamedu: Roman Trading Site",
-    tamilName: "அரிகமேடு",
-    category: "experience",
-    lat: 11.9012,
-    lng: 79.8201,
-    era: "2nd century BCE – 8th century CE",
-    summary:
-      "An engraved emblem of Emperor Augustus was found here. Roman wine jars. Pottery imported directly from Arezzo, Italy. This unmanaged site 4 km south of the French Quarter is proof that Pondicherry was a global trading hub 2,000 years before the French arrived.",
-    history:
-      "**The Romans were here.** The Arretine pottery found at Arikamedu is not a local imitation; it was manufactured in Arezzo, central Italy, and shipped here, identifiable by potters' stamps pressed into the base. Roman amphorae for wine and olive oil. Mediterranean glass. An engraved emblem of Emperor Augustus. A wooden toy boat. These arrived in the first century BCE, within decades of Rome opening the direct Red Sea route to India.\n\n**What they were trading.** The northern sector shows evidence of mass feeding of sailors and traders. To the south: dyeing vats where muslin was dyed for export. Indo-Pacific beads were crafted here locally and shipped west. Pepper and spices came through from further south. A rare Brahma statue was found, unusual in South India of this period. The Sangam Tamil poems confirm it: yavanas (Romans) arriving with wine, leaving with pepper and fine cloth.\n\n**The excavators.** Sir Mortimer Wheeler came in 1945 and thought he'd found a Greek trading post lasting ~200 years. Later work by Vimala Begley (1989–1992) revised this: continuous occupation from the 2nd century BCE to the 8th century CE, a span of over 600 years. The French team under Jean-Marie Casal (1947–1950) excavated on what was still French colonial soil, some finds going to the Musée Guimet in Paris. In 2004, Italy and Pondicherry jointly proposed the site for UNESCO World Heritage status under Silk Road Sites in India.",
-    highlights: [
-      "The site itself has no panels or infrastructure; visit the Pondicherry Museum first to see the finds, including the Arretine pottery with its Italian potters' stamps.",
-      "Look for the low mound near the Ariyankuppam River estuary and the remains of the 45-metre brick storehouse. This was a working port for 600 years.",
-      "The site may be the 'Poduke' described as an emporium in both the Periplus of the Erythraean Sea and Ptolemy's writings, possibly derived from Tamil 'Potikai', meaning 'meeting place'.",
-    ],
-    visitInfo: {
-      hours: "Accessible at all times (ASI-protected, unmanaged)",
-      entry: "Free",
-      tip: "4 km south on the coast road toward Ariyankuppam. No signage or facilities on site. Visit the Pondicherry Museum first: the Arikamedu gallery there is the real experience. Then come here for the ground.",
-    },
-  },
-  {
     id: "white-town-streets",
     name: "White Town (Ville Blanche)",
     frenchName: "Ville Blanche",
