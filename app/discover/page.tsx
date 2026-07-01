@@ -16,7 +16,7 @@ const sections = [
   },
   {
     href: "/discover/landmarks",
-    title: "Landmarks & Sites",
+    title: "Sites & Landmarks",
     description: "Heritage buildings, temples, churches, museums, and the ancient ruins that predate the French by two thousand years.",
     photo: "/sites/customs-building.jpg",
   },

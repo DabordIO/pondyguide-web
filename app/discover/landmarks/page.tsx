@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { sites, CATEGORY_LABELS, CATEGORY_COLORS } from "@/data/sites";
 
 export const metadata: Metadata = {
-  title: "Landmarks & Sites — Pondicherry",
+  title: "Sites & Landmarks — Pondicherry",
   description: "Heritage buildings, temples, churches, museums, and the ancient ruins that predate the French by two thousand years.",
 };
 
