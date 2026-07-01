@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { historyArticles } from "@/data/history";
 import { institutionArticles as institutions } from "@/data/institutions";
@@ -32,10 +33,17 @@ export default function HistoryPage() {
         <p style={{ fontSize: 14, color: "#78716c", marginBottom: 20 }}>The governors, soldiers, scholars, and saints who shaped the town.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
           {figures.map(f => (
-            <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, padding: "16px", display: "block" }}>
-              <p style={{ fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4 }}>{f.name}</p>
-              <p style={{ fontSize: 12, color: "#b45309" }}>{f.dates}</p>
-              <p style={{ fontSize: 13, color: "#78716c", marginTop: 6, lineHeight: 1.5 }}>{f.role}</p>
+            <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, overflow: "hidden", display: "block" }}>
+              {f.photo && (
+                <div style={{ position: "relative", width: "100%", height: 140 }}>
+                  <Image src={`/figures/${f.photo}`} alt={f.name} fill style={{ objectFit: "cover", objectPosition: "center top" }} />
+                </div>
+              )}
+              <div style={{ padding: "12px 16px 16px" }}>
+                <p style={{ fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4 }}>{f.name}</p>
+                <p style={{ fontSize: 12, color: "#b45309" }}>{f.dates}</p>
+                <p style={{ fontSize: 13, color: "#78716c", marginTop: 6, lineHeight: 1.5 }}>{f.role}</p>
+              </div>
             </Link>
           ))}
         </div>

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { restaurants } from "@/data/restaurants";
 import AppBanner from "@/components/AppBanner";
 import Link from "next/link";
@@ -29,6 +30,12 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
       <Link href="/restaurants" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
+
+      {r.photo && (
+        <div style={{ position: "relative", width: "100%", height: 320, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
+          <Image src={`/restaurants/${r.photo}`} alt={r.name} fill style={{ objectFit: "cover", objectPosition: r.photoPosition ?? "center" }} />
+        </div>
+      )}
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "20px 0 8px", lineHeight: 1.2 }}>
         {r.name}

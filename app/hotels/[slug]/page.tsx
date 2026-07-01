@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { hotels, COLLECTION_LABELS, getHotelsByCollection, COLLECTION_ORDER } from "@/data/hotels";
 import AppBanner from "@/components/AppBanner";
 import Link from "next/link";
@@ -29,6 +30,12 @@ export default async function HotelPage({ params }: { params: Promise<{ slug: st
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
       <Link href="/hotels" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Hotels</Link>
+
+      {h.photo && (
+        <div style={{ position: "relative", width: "100%", height: 320, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
+          <Image src={`/hotels/${h.photo}`} alt={h.name} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+        </div>
+      )}
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 6px" }}>
         {COLLECTION_LABELS[h.collection]}

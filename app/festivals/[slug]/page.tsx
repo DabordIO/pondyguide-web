@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { festivals } from "@/data/festivals";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -69,6 +70,12 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
       <Link href="/festivals" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
+
+      {festival.photo && (
+        <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
+          <Image src={`/festivals/${festival.photo}`} alt={festival.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+        </div>
+      )}
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 6px" }}>
         {MONTH_LABELS[festival.month]}

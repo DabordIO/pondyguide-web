@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { figures } from "@/data/figures";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -28,6 +29,14 @@ export default async function FigurePage({ params }: { params: Promise<{ slug: s
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
       <Link href="/history" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Lives & Legacies</Link>
+
+      {figure.photo && (
+        <div style={{ display: "flex", gap: 24, margin: "24px 0 28px", alignItems: "flex-start" }}>
+          <div style={{ position: "relative", width: 160, height: 200, flexShrink: 0, borderRadius: 10, overflow: "hidden", border: "1px solid #e8ddd4" }}>
+            <Image src={`/figures/${figure.photo}`} alt={figure.name} fill style={{ objectFit: "cover", objectPosition: figure.photoZoom ? `center ${figure.photoZoom}%` : "center top" }} />
+          </div>
+        </div>
+      )}
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 4px" }}>
         {figure.dates}
