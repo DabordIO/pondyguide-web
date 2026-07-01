@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const PRICE_LABELS: Record<string, string> = { budget: "₹", mid: "₹₹", high: "₹₹₹" };
 
 function SectionHeader({ title, href, h1 = false }: { title: string; href: string; h1?: boolean }) {
-  const headingStyle = { fontFamily: "var(--font-playfair), Georgia, serif", fontSize: h1 ? "clamp(2.5rem, 6vw, 3.75rem)" : "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, margin: 0 };
+  const headingStyle = { fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, margin: 0 };
   return (
     <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 16, marginBottom: 16 }}>
       <Link href={href} className="section-heading-link">
