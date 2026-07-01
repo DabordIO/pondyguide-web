@@ -234,25 +234,45 @@ Buses run from Pondicherry main bus depot north toward Chennai, passing the Maha
     category: "walk",
     title: "Temples of the Tamil Quarter",
     teaser:
-      "North of the French Quarter, in the Tamil Quarter (Heritage Town), two major temples and several smaller shrines represent a Hindu presence in Pondicherry that predates the French by centuries.",
+      "The city's older history lies just across the canal, in the streets traditionally known as the Tamil Quarter. Here, temples, markets, and family houses reveal a settlement that long predates the arrival of the French East India Company in 1674.",
     duration: "2 to 3 hours",
-    body: `The canal that runs through Pondicherry marked the original boundary between the French White Town to the east and the Tamil Quarter (officially Heritage Town) to the west. The French built their colonial city on one side; on the other, Tamil Pondicherry continued with its own temples, markets, and social life.\n\nThe Tamil Quarter's temples are the reason to cross the canal.
+    body: `For many visitors, the French Quarter defines Puducherry. Yet the city's older history lies just across the canal, in the streets traditionally known as the Tamil Quarter, now recognised as Heritage Town. Here, temples, markets, and family houses reveal a settlement that long predates the arrival of the French East India Company in 1674.
+
+The canal, today called the Grand Canal, became the dividing line between two urban worlds. To the east lay the planned colonial town of broad avenues and European public buildings. To the west, Tamil neighbourhoods continued to develop around temples, markets, and artisan communities. The result is one of the most distinctive urban landscapes in India, where two traditions evolved side by side while remaining closely connected.
+
+Exploring the temples of the Tamil Quarter offers a glimpse into the religious and cultural life that has shaped Puducherry for centuries.
 
 **Manakula Vinayagar Temple**
 
-Technically located within the White Town grid (the French Quarter absorbed it over the centuries), the Manakula Vinayagar Temple on Mission Street is over 800 years old and dedicated to Ganesh. It is the most visited temple in Pondicherry: painted towers, golden pillars, marble floors, and a working elephant named Lakshmi who blesses visitors at the entrance. Hours are 5:45am to 12:30pm and 4pm to 9pm. Entry is free. Remove shoes at the entrance; shoulders and knees should be covered.
+Although it stands within today's French Quarter, Manakula Vinayagar Temple belongs historically to the older Tamil settlement. The temple was already established when the French founded Pondicherry in 1674 and remained on its historic site despite repeated eighteenth-century attempts by the colonial administration to relocate it.
+
+Dedicated to Vinayagar, the Tamil form of Ganesha, the temple is among Puducherry's most visited places of worship. Its gold-plated gopuram, colourful sculptures, painted ceilings, and richly decorated halls make it one of the city's most impressive temple interiors. Daily pujas are held throughout the day, with the morning and evening ceremonies attracting the largest gatherings of devotees.
+
+Many visitors remember the temple elephant, Lakshmi, who welcomed devotees for more than three decades by gently blessing them with her trunk. Following her death in 2022, she remains a cherished part of the temple's recent history.
 
 **Sri Varadaraja Perumal Temple**
 
-In the Tamil Quarter proper, the Sri Varadaraja Perumal Temple is believed to have been built in the 11th century and is dedicated to Vishnu. It is a working temple of significant antiquity, with far fewer tourists than the Manakula Vinayagar.
+A short walk into the Tamil Quarter stands Sri Varadaraja Perumal Temple, one of Puducherry's principal Vaishnavite temples. Dedicated to Vishnu as Varadaraja Perumal, the temple is of medieval origin and continues to serve as an active centre of worship. Unlike the more visited Manakula Vinayagar Temple, it offers a quieter experience, allowing visitors to appreciate its traditional Dravidian architecture and the rhythms of daily temple life.
 
-**Sri Vedavaneswarar Temple**
+**Vedapureeswarar Temple**
 
-Dedicated to Shiva, this temple stands across from the new lighthouse entrance. Smaller than the two above but worth visiting if you are walking the lighthouse route.
+Dedicated to Shiva, Vedapureeswarar Temple is among Puducherry's most important Shaivite shrines. The present temple dates to the eighteenth century, following the destruction of an earlier temple during the colonial conflicts of the 1740s. Rebuilt by the local community, it remains an active place of worship and an important reminder of the resilience of Puducherry's religious traditions during a turbulent period of its history.
 
-**What to know before entering**
+**Siddhivinayakar Temple**
 
-All temples require shoes to be removed before entering; leave them at the designated storage area (a small donation is expected). Dress conservatively: shoulders and knees covered. Photography rules vary by temple and by area within the temple: look for signs or ask. The inner sanctum of most Hindu temples is restricted to Hindu worshippers; respectful observation from the designated outer areas is welcome for all visitors.`,
+Often called Elai Pillaiyar Koil, or the "Temple of the Poor", Siddhivinayakar Temple is one of the oldest neighbourhood shrines in Heritage Town. Dating to the early eighteenth century, it is dedicated to Vinayagar and has served generations of local residents. Modest in scale compared with Manakula Vinayagar Temple, it offers a glimpse of everyday devotional life away from the city's busiest tourist sites. Its nineteenth-century gopuram rises above the surrounding streets, while the quiet inner courtyard provides a welcome contrast to the bustle outside.
+
+**Worth the Short Journey: Thirukameswarar Temple, Villianur**
+
+About eight kilometres west of the city centre stands Sri Kokilambigai Udanurai Thirukameswarar Temple, one of the oldest and most important temples in the Puducherry region. With origins in the Chola period, the temple is dedicated to Shiva as Thirukameswarar and to Goddess Kokilambigai. Its spacious temple tank, towering gopuram, and broad courtyards make it one of the finest examples of Dravidian temple architecture in the Union Territory.
+
+The temple is especially renowned for its annual car festival, during which the massive wooden chariot is drawn through the streets of Villianur by thousands of devotees. Visitors seeking a deeper understanding of Puducherry's religious heritage will find the short journey well worthwhile, offering a perspective that extends beyond the colonial city to the region's much older Tamil past.
+
+**Visiting the Temples**
+
+Visitors are welcome at all these temples, provided they observe local customs. Shoes must be removed before entering the temple precincts, and modest clothing covering the shoulders and knees is expected. Photography policies vary between temples and may also differ within individual parts of a temple, so it is always best to look for signs or ask permission.
+
+The innermost sanctum is generally reserved for Hindu worshippers, but visitors of all faiths are welcome in the outer halls and courtyards, where they can observe the architecture, rituals, and devotional life with respect.`,
   },
 ];
 
