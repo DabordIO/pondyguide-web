@@ -1,161 +1,256 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { historyArticles } from "@/data/history";
+import { institutionArticles } from "@/data/institutions";
+import { figures } from "@/data/figures";
+import { aurovilleArticles } from "@/data/auroville";
+import { restaurants } from "@/data/restaurants";
 
 export const metadata: Metadata = {
   title: "Pondy Guide — Pondicherry Travel & Heritage Guide",
   description: "The definitive English-language guide to Pondicherry. History, heritage streets, restaurants, hotels, festivals, and practical travel information.",
 };
 
-function SectionHeading({ label, title, href }: { label: string; title: string; href: string }) {
+const PRICE_LABELS: Record<string, string> = { budget: "₹", mid: "₹₹", high: "₹₹₹" };
+
+function BigHeading({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 24, paddingBottom: 12, borderBottom: "1px solid #e8ddd4" }}>
-      <div>
-        <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 4 }}>{label}</p>
-        <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917" }}>{title}</h2>
-      </div>
-      <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
+    <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.15, marginBottom: 16 }}>
+      {children}
+    </h2>
+  );
+}
+
+function SectionIntro({ children }: { children: React.ReactNode }) {
+  return <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 620, lineHeight: 1.75, marginBottom: 40 }}>{children}</p>;
+}
+
+function SubHeading({ label, href }: { label: string; href?: string }) {
+  return (
+    <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderBottom: "1px solid #e8ddd4", paddingBottom: 12, marginBottom: 24 }}>
+      <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917" }}>{label}</h3>
+      {href && <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>See all →</Link>}
     </div>
   );
 }
 
-function PhotoCard({ href, photo, label, title, description }: { href: string; photo: string; label?: string; title: string; description: string }) {
+function ArticleCard({ href, photo, photoFolder = "history", title, teaser }: { href: string; photo?: string; photoFolder?: string; title: string; teaser: string }) {
   return (
     <Link href={href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-      <div style={{ position: "relative", width: "100%", height: 180 }}>
-        <Image src={photo} alt={title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
-      </div>
-      <div style={{ padding: "14px 16px 16px" }}>
-        {label && <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{label}</p>}
-        <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{title}</p>
-        <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{description}</p>
+      {photo && (
+        <div style={{ position: "relative", width: "100%", height: 180 }}>
+          <Image src={`/${photoFolder}/${photo}`} alt={title} fill style={{ objectFit: "cover" }} />
+        </div>
+      )}
+      <div style={{ padding: "16px 18px 18px" }}>
+        <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{title}</p>
+        <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{teaser.slice(0, 115)}…</p>
+        <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
       </div>
     </Link>
   );
 }
 
-export default function HomePage() {
+function ThreeGrid({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      {/* Hero */}
-      <section style={{ background: "#1c1917", padding: "80px 24px 72px" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#f97316", marginBottom: 16 }}>
-            pondyguide.com
-          </p>
-          <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2.2rem, 6vw, 3.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 24 }}>
-            Pondicherry, properly told.
-          </h1>
-          <p style={{ fontSize: "1.125rem", color: "#a8a29e", lineHeight: 1.8, maxWidth: 560, margin: "0 auto 40px" }}>
-            A serious guide to one of India&apos;s most layered towns — its French colonial history, its streets, its food, and what to do when you get there.
-          </p>
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/history" style={{ background: "#f97316", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 28px", borderRadius: 10, textDecoration: "none" }}>
-              Start with History
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
+      {children}
+    </div>
+  );
+}
+
+export default function HomePage() {
+  const featuredHistory = historyArticles.slice(0, 3);
+  const featuredInstitutions = institutionArticles.slice(0, 3);
+  const featuredFigures = figures.slice(0, 5);
+  const featuredAuroville = aurovilleArticles.slice(0, 3);
+  const featuredRestaurants = restaurants.slice(0, 3);
+
+  return (
+    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px" }}>
+
+      {/* ── HISTORY ─────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>History</p>
+        <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2.5rem, 6vw, 3.75rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, marginBottom: 20 }}>
+          The Story of Pondicherry
+        </h1>
+        <SectionIntro>
+          Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
+        </SectionIntro>
+        <SubHeading label="The Full Story" href="/history" />
+        <ThreeGrid>
+          {featuredHistory.map(a => (
+            <ArticleCard key={a.id} href={`/history/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── FRENCH INSTITUTIONS ─────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <BigHeading>French Institutions</BigHeading>
+        <ThreeGrid>
+          {featuredInstitutions.map(a => (
+            <ArticleCard key={a.id} href={`/history/institutions/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <BigHeading>Lives &amp; Legacies</BigHeading>
+        <SectionIntro>The governors, soldiers, scholars, and saints who shaped the town.</SectionIntro>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 16 }}>
+          {featuredFigures.map(f => (
+            <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 200, background: "#f0ece6" }}>
+                <Image src={`/figures/${f.photo}`} alt={f.name} fill style={{ objectFit: "cover", objectPosition: "center top" }} />
+              </div>
+              <div style={{ padding: "14px 16px 16px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
+                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginBottom: 6 }}>{f.dates}</p>
+                <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.5 }}>{f.role}</p>
+              </div>
             </Link>
-            <Link href="/discover" style={{ background: "rgba(255,255,255,0.08)", color: "#fff", fontWeight: 600, fontSize: 15, padding: "14px 28px", borderRadius: 10, textDecoration: "none" }}>
-              Explore the Town
-            </Link>
-          </div>
+          ))}
         </div>
       </section>
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px" }}>
-
-        {/* History */}
-        <section style={{ marginBottom: 64 }}>
-          <SectionHeading label="History" title="The Story of Pondicherry" href="/history" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-            <PhotoCard href="/history/before-the-french" photo="/history/before-the-french.png" label="Ancient History" title="Before the French" description="Two thousand years of a world-famous shore — Roman traders, Chola kings, and the ruins at Arikamedu." />
-            <PhotoCard href="/history/dupleix-gamble" photo="/history/british-siege-of-Dupleix-pondicherry.jpg" label="The French Era" title="Dupleix's Gamble" description="The man who almost gave France an empire in India — and the siege that ended everything." />
-            <PhotoCard href="/history/the-handover-1954" photo="/history/the-transfer.webp" label="Independence" title="1954: The Handover" description="The peaceful end of three centuries of French rule — and what it meant for the people who stayed." />
+      {/* ── DISCOVER ────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 24, paddingBottom: 12, borderBottom: "1px solid #e8ddd4" }}>
+          <div>
+            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 4 }}>Discover</p>
+            <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917" }}>Explore the Town</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16, marginTop: 16 }}>
-            <PhotoCard href="/history/lives-and-legacies/dupleix" photo="/figures/dupleix.jpg" label="Lives & Legacies" title="Joseph François Dupleix" description="Governor-General of French India, architect of an empire that never was." />
-            <PhotoCard href="/history/lives-and-legacies/ananda-ranga-pillai" photo="/figures/ananda-ranga-pillai.png" label="Lives & Legacies" title="Ananda Ranga Pillai" description="Dupleix's broker, interpreter, and the man who recorded it all in his diary." />
-            <PhotoCard href="/history/lives-and-legacies/lally" photo="/figures/lally.png" label="Lives & Legacies" title="Comte de Lally" description="The general who lost Pondicherry — and was executed in Paris for it." />
-          </div>
-        </section>
+          <Link href="/discover" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
+        </div>
+        <ThreeGrid>
+          {[
+            { href: "/discover/white-town", photo: "/streets/rue-dumas.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
+            { href: "/discover/landmarks", photo: "/sites/customs-building.jpg", label: "Landmarks", title: "Sites & Heritage Buildings", description: "From the seafront promenade to Arikamedu's Roman-era ruins." },
+            { href: "/discover/auroville", photo: "/auroville/matrimandir.jpg", label: "Auroville", title: "The Experiment at Auroville", description: "3,400 people from 60 countries. Founded 1968. Still running." },
+          ].map(s => (
+            <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={s.photo} alt={s.title} fill style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 16px" }}>
+                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{s.label}</p>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6, lineHeight: 1.3 }}>{s.title}</p>
+                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.55 }}>{s.description}</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
 
-        {/* Discover */}
-        <section style={{ marginBottom: 64 }}>
-          <SectionHeading label="Discover" title="Explore the Town" href="/discover" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-            <PhotoCard href="/discover/white-town" photo="/streets/rue-dumas.jpg" label="White Town" title="The French Quarter Streets" description="43 streets named after governors and admirals. Each one has a story." />
-            <PhotoCard href="/discover/landmarks" photo="/sites/promenade.jpg" label="Landmarks" title="Sites & Heritage Buildings" description="From the seafront promenade to Arikamedu's Roman-era ruins." />
-            <PhotoCard href="/discover/auroville" photo="/auroville/matrimandir.jpg" label="Auroville" title="The Experiment at Auroville" description="3,400 people from 60 countries. Founded 1968. Still running." />
-            <PhotoCard href="/discover/explore" photo="/explore/walking-tour.jpg" label="Things to Do" title="Walks, Day Trips & Experiences" description="Self-guided walks, mangrove forests, Roman ruins, and cooking classes." />
-          </div>
-        </section>
+      {/* ── AUROVILLE ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <BigHeading>Understanding Auroville</BigHeading>
+        <SectionIntro>
+          Founded in 1968 on a plateau of eroded land north of Pondicherry, Auroville is home to around 3,400 people from more than 60 countries. It is neither a tourist attraction nor a spiritual retreat. Read before you visit.
+        </SectionIntro>
+        <ThreeGrid>
+          {featuredAuroville.map(a => (
+            <ArticleCard key={a.id} href={`/discover/auroville/${a.id}`} photo={a.photo} photoFolder="auroville" title={a.title} teaser={a.teaser} />
+          ))}
+        </ThreeGrid>
+      </section>
 
-        {/* Restaurants */}
-        <section style={{ marginBottom: 64 }}>
-          <SectionHeading label="Eat" title="Restaurants" href="/restaurants" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-            <PhotoCard href="/restaurants/cafe-des-arts" photo="/restaurants/cafe-des-arts.jpg" label="Garden Café" title="Café des Arts" description="One of the great shaded terraces of the White Town. Coffee, crêpes, and a slow morning." />
-            <PhotoCard href="/restaurants/villa-shanti" photo="/restaurants/villa-shanti.jpg" label="French Quarter" title="Villa Shanti" description="A colonial house turned restaurant — seafood, French techniques, Tamil ingredients." />
-            <PhotoCard href="/restaurants/maison-perumal" photo="/restaurants/maison-perumal.jpg" label="Heritage Hotel" title="Maison Perumal" description="Chettinad cooking in a restored heritage house. One of the best dining rooms in town." />
-          </div>
-        </section>
+      {/* ── RESTAURANTS ─────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <BigHeading>Restaurants in Pondicherry</BigHeading>
+        <SectionIntro>
+          Pondicherry punches above its weight for food. French-influenced cafés, fresh seafood, Tamil homecooked thalis — and enough coffee to keep you going through the afternoon heat.
+        </SectionIntro>
+        <ThreeGrid>
+          {featuredRestaurants.map(r => (
+            <Link key={r.id} href={`/restaurants/${r.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {r.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/restaurants/${r.photo}`} alt={r.name} fill style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "14px 16px 18px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+                  <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, lineHeight: 1.3 }}>{r.name}</p>
+                  <p style={{ fontSize: 13, color: "#78716c", whiteSpace: "nowrap", marginLeft: 8 }}>{PRICE_LABELS[r.priceRange] ?? ""}</p>
+                </div>
+                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{r.summary.slice(0, 115)}…</p>
+                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
 
-        {/* Hotels */}
-        <section style={{ marginBottom: 64 }}>
-          <SectionHeading label="Stay" title="Hotels" href="/hotels" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-            <PhotoCard href="/hotels/palais-de-mahe" photo="/hotels/palais-de-mahe.jpg" label="Heritage" title="Palais de Mahe" description="The most romantic address in the White Town. A mustard-yellow façade on Rue Law de Lauriston." />
-            <PhotoCard href="/hotels/maison-perumal" photo="/hotels/maison-perumal.jpg" label="Heritage" title="Maison Perumal" description="A Chettinad mansion restored with extraordinary care. Quiet, beautiful, unhurried." />
-            <PhotoCard href="/hotels/le-dupleix" photo="/hotels/le-dupleix.jpg" label="Heritage" title="Le Dupleix" description="Named after the governor himself, on the street that carries his name." />
-          </div>
-        </section>
+      {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <BigHeading>Where to Stay</BigHeading>
+        <ThreeGrid>
+          {[
+            { href: "/hotels/palais-de-mahe", photo: "/hotels/palais-de-mahe.jpg", title: "Palais de Mahe", description: "The most romantic address in the White Town. A mustard-yellow façade on Rue Law de Lauriston." },
+            { href: "/hotels/maison-perumal", photo: "/hotels/maison-perumal.jpg", title: "Maison Perumal", description: "A Chettinad mansion restored with extraordinary care. Quiet, beautiful, unhurried." },
+            { href: "/hotels/le-dupleix", photo: "/hotels/le-dupleix.jpg", title: "Le Dupleix", description: "Named after the governor himself, on the street that carries his name." },
+          ].map(h => (
+            <Link key={h.href} href={h.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={h.photo} alt={h.title} fill style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{h.title}</p>
+                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{h.description}</p>
+                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
 
-        {/* Festivals */}
-        <section style={{ marginBottom: 64 }}>
-          <SectionHeading label="Calendar" title="Festivals" href="/festivals" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-            <PhotoCard href="/festivals/pongal" photo="/festivals/pongal.jpg" label="January" title="Pongal" description="The Tamil harvest festival — four days, rice pots boiling over, decorated cows, and kolam patterns at every door." />
-            <PhotoCard href="/festivals/bastille-day" photo="/festivals/bastille-day.png" label="July" title="Bastille Day" description="Pondicherry is one of the very few places outside France where July 14th is still celebrated in the streets." />
-            <PhotoCard href="/festivals/veerampattinam-car-festival" photo="/festivals/veerampattinam-car-festival.jpg" label="February–March" title="Masi Magam" description="The most spectacular festival in the Pondicherry calendar. Temple chariots, the sea, and a million people." />
-          </div>
-        </section>
+      {/* ── FESTIVALS ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <BigHeading>Festival Calendar</BigHeading>
+        <ThreeGrid>
+          {[
+            { href: "/festivals/pongal", photo: "/festivals/pongal.jpg", label: "January", title: "Pongal", description: "The Tamil harvest festival — four days, rice pots boiling over, decorated cows, and kolam patterns at every door." },
+            { href: "/festivals/bastille-day", photo: "/festivals/bastille-day.png", label: "July", title: "Bastille Day", description: "Pondicherry is one of the very few places outside France where July 14th is still celebrated in the streets." },
+            { href: "/festivals/veerampattinam-car-festival", photo: "/festivals/veerampattinam-car-festival.jpg", label: "February–March", title: "Masi Magam", description: "The most spectacular festival in the Pondicherry calendar. Temple chariots, the sea, and a million people." },
+          ].map(f => (
+            <Link key={f.href} href={f.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={f.photo} alt={f.title} fill style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{f.label}</p>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{f.title}</p>
+                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{f.description}</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
 
-        {/* Plan */}
-        <section style={{ marginBottom: 64 }}>
-          <SectionHeading label="Plan" title="Before You Go" href="/plan" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12 }}>
-            {[
-              { href: "/plan/getting-here", title: "Getting Here", desc: "Bus from Chennai, train from Bangalore, the ECR coastal road." },
-              { href: "/plan/getting-around", title: "Getting Around", desc: "Auto-rickshaws, bicycles, scooters. The White Town is walkable." },
-              { href: "/plan/healthcare", title: "Healthcare", desc: "JIPMER, private clinics, pharmacies — what to know before you need it." },
-              { href: "/plan/practical", title: "Practical", desc: "Currency, SIM cards, dress code, water, tipping." },
-            ].map(item => (
-              <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, padding: "18px 18px 16px", display: "block" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
-                <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{item.desc}</p>
-                <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read →</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-      </div>
-
-      {/* App CTA */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px 80px" }}>
-        <div style={{ background: "#1c1917", borderRadius: 20, padding: "48px 40px", display: "flex", alignItems: "center", gap: 40, flexWrap: "wrap" }}>
-          <div style={{ flex: 1, minWidth: 260 }}>
-            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f97316", marginBottom: 10 }}>The Pondy App</p>
-            <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.6rem", fontWeight: 700, color: "#fff", marginBottom: 12, lineHeight: 1.3 }}>
-              The whole guide, offline, in your pocket.
-            </p>
-            <p style={{ fontSize: 15, color: "#a8a29e", lineHeight: 1.7 }}>
-              Maps, street stories, restaurant picks, hotel guides — everything on this site works offline on the Pondy App.
-            </p>
-          </div>
-          <Link href="/about" style={{ background: "#f97316", color: "#fff", fontWeight: 700, fontSize: 16, padding: "16px 32px", borderRadius: 12, textDecoration: "none", whiteSpace: "nowrap" }}>
-            Get the Pondy App →
-          </Link>
+      {/* ── PLAN ────────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 64 }}>
+        <BigHeading>Before You Go</BigHeading>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12 }}>
+          {[
+            { href: "/plan/getting-here", title: "Getting Here", desc: "Bus from Chennai, train from Bangalore, the ECR coastal road." },
+            { href: "/plan/getting-around", title: "Getting Around", desc: "Auto-rickshaws, bicycles, scooters. The White Town is walkable." },
+            { href: "/plan/healthcare", title: "Healthcare", desc: "JIPMER, private clinics, pharmacies — what to know before you need it." },
+            { href: "/plan/practical", title: "Practical", desc: "Currency, SIM cards, dress code, water, tipping." },
+          ].map(item => (
+            <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, padding: "18px 18px 16px", display: "block" }}>
+              <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
+              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{item.desc}</p>
+              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read →</p>
+            </Link>
+          ))}
         </div>
       </section>
-    </>
+
+    </div>
   );
 }
