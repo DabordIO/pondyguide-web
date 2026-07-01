@@ -204,6 +204,29 @@ export default function HomePage() {
         </ThreeGrid>
       </section>
 
+      {/* ── WALKS, TRIPS & EXPERIENCES ──────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Walks, Trips & Experiences" href="/discover/explore" />
+        <ThreeGrid>
+          {[
+            { href: "/discover/explore/walk-white-town", photo: "/explore/walking-tour-1.jpg", title: "Walking the White Town", teaser: "A self-guided walk through the French Quarter: colonial streets, heritage buildings, temples, and the seafront promenade. The best two hours you will spend in Pondicherry." },
+            { href: "/discover/explore/daytrip-ousteri", photo: "/explore/ousteri-lake.jpg", title: "Ousteri Lake", teaser: "The largest natural freshwater lake in the Pondicherry region, five kilometres west of town. A Ramsar wetland with over 170 recorded bird species." },
+            { href: "/discover/explore/activity-sunday-market", photo: "/explore/sunday-market.jpg", title: "The Sunday Market", teaser: "Every Sunday on Mahatma Gandhi Street: second-hand furniture, vintage electronics, handmade clothes, tools, and street food. One of the most local experiences in Pondicherry." },
+          ].map(e => (
+            <Link key={e.href} href={e.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={e.photo} alt={e.title} fill style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{e.title}</p>
+                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{e.teaser.slice(0, 115)}…</p>
+                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── FESTIVALS ───────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Festival Calendar" href="/festivals" />
