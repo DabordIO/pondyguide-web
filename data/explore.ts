@@ -262,11 +262,11 @@ Dedicated to Shiva, Vedapureeswarar Temple is among Puducherry's most important 
 
 Often called Elai Pillaiyar Koil, or the "Temple of the Poor", Siddhivinayakar Temple is one of the oldest neighbourhood shrines in Heritage Town. Dating to the early eighteenth century, it is dedicated to Vinayagar and has served generations of local residents. Modest in scale compared with Manakula Vinayagar Temple, it offers a glimpse of everyday devotional life away from the city's busiest tourist sites. Its nineteenth-century gopuram rises above the surrounding streets, while the quiet inner courtyard provides a welcome contrast to the bustle outside.
 
-**Worth the Short Journey: Thirukameswarar Temple, Villianur**
+**Worth the Short Journey: Sri Gokilambal Thirukameshwara Temple, Villianur**
 
-About eight kilometres west of the city centre stands Sri Kokilambigai Udanurai Thirukameswarar Temple, one of the oldest and most important temples in the Puducherry region. With origins in the Chola period, the temple is dedicated to Shiva as Thirukameswarar and to Goddess Kokilambigai. Its spacious temple tank, towering gopuram, and broad courtyards make it one of the finest examples of Dravidian temple architecture in the Union Territory.
+About eight kilometres west of the city centre stands Sri Gokilambal Thirukameshwara Temple, one of the oldest and most important temples in the Puducherry region. With origins in the Chola period, the temple is dedicated to Shiva as Thirukameshwara and to Goddess Gokilambal. Its spacious temple tank, towering gopuram, and broad courtyards make it one of the finest examples of Dravidian temple architecture in the Union Territory.
 
-The temple is especially renowned for its annual car festival, during which the massive wooden chariot is drawn through the streets of Villianur by thousands of devotees. Visitors seeking a deeper understanding of Puducherry's religious heritage will find the short journey well worthwhile, offering a perspective that extends beyond the colonial city to the region's much older Tamil past.
+The temple is especially renowned for its [annual car festival](/festivals/villianur-car-festival), during which the massive wooden chariot is drawn through the streets of Villianur by thousands of devotees. Visitors seeking a deeper understanding of Puducherry's religious heritage will find the short journey well worthwhile, offering a perspective that extends beyond the colonial city to the region's much older Tamil past.
 
 **Visiting the Temples**
 

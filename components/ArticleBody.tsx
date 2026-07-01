@@ -13,10 +13,11 @@ export default function ArticleBody({ text }: { text: string }) {
         if (para.startsWith("> ")) {
           return <blockquote key={i}>{para.replace(/^> /, "")}</blockquote>;
         }
-        // Bold and italic inline
+        // Bold, italic, and link inline
         const html = para
           .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-          .replace(/\*(.+?)\*/g, "<em>$1</em>");
+          .replace(/\*(.+?)\*/g, "<em>$1</em>")
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
         return <p key={i} dangerouslySetInnerHTML={{ __html: html }} />;
       })}
     </div>
