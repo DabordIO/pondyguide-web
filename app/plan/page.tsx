@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,25 +12,25 @@ const sections = [
     href: "/plan/getting-here",
     title: "Getting Here",
     description: "From Chennai by bus or train, from Bangalore overnight, from Madurai by road. No meaningful direct flights — but the journey is manageable.",
-    icon: "✈",
+    photo: "/transport/puducherry-railway-station.jpg",
   },
   {
     href: "/plan/getting-around",
     title: "Getting Around",
     description: "Auto-rickshaws, bicycles, scooters, and the rare taxi. The White Town is walkable. Beyond it, you need wheels.",
-    icon: "🛺",
+    photo: "/transport/auto-rickshaw-white-town.jpg",
   },
   {
     href: "/plan/healthcare",
     title: "Healthcare",
     description: "JIPMER is one of India's premier medical institutes. Private clinics are plentiful. Pharmacies are on every corner.",
-    icon: "🏥",
+    photo: "/healthcare/public-hospital.jpg",
   },
   {
     href: "/plan/practical",
     title: "Practical",
     description: "Currency, SIM cards, dress code, water safety, tipping, and the things visitors consistently get wrong.",
-    icon: "📋",
+    photo: "/transport/general-tourism-information.jpeg",
   },
 ];
 
@@ -46,11 +47,15 @@ export default function PlanPage() {
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 20 }}>
         {sections.map(s => (
-          <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, padding: "24px", display: "block" }}>
-            <p style={{ fontSize: 28, marginBottom: 12 }}>{s.icon}</p>
-            <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 19, marginBottom: 10, lineHeight: 1.3 }}>{s.title}</p>
-            <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.65 }}>{s.description}</p>
-            <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 16 }}>Read →</p>
+          <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+            <div style={{ position: "relative", width: "100%", height: 180 }}>
+              <Image src={s.photo} alt={s.title} fill style={{ objectFit: "cover" }} />
+            </div>
+            <div style={{ padding: "16px 18px 18px" }}>
+              <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 19, marginBottom: 10, lineHeight: 1.3 }}>{s.title}</p>
+              <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.65 }}>{s.description}</p>
+              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 16 }}>Read →</p>
+            </div>
           </Link>
         ))}
       </div>
