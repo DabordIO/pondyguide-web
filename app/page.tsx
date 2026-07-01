@@ -80,7 +80,6 @@ export default function HomePage() {
         <SectionIntro>
           Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
         </SectionIntro>
-        <SubHeading label="The Full Story" href="/history" />
         <ThreeGrid>
           {featuredHistory.map(a => (
             <ArticleCard key={a.id} href={`/history/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
