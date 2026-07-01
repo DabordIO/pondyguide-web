@@ -43,7 +43,7 @@ Turn west from the promenade down any of the cross-streets and you will find the
 
 Return to Goubert Avenue at the end of the walk. Le Café, the Sri Aurobindo Ashram's beachfront café, is the right place to sit with a coffee and watch the light change on the water. The Bay of Bengal faces east: sunrises here are worth the early alarm.`,
   },
-  {
+
   // ── ACTIVITIES ────────────────────────────────────────────────────────────
 
   {
