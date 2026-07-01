@@ -611,6 +611,31 @@ export const sites: Site[] = [
       tip: "Check the current state of restoration before visiting the interior. The seafront facade is the main visual draw.",
     },
   },
+  {
+    id: "manakula-vinayagar",
+    name: "Manakula Vinayagar Temple",
+    tamilName: "மணக்குள விநாயகர் கோயில்",
+    category: "experience",
+    lat: 11.9352,
+    lng: 79.8313,
+    era: "Pre-colonial (before 1674)",
+    summary:
+      "One of the oldest continuously active Hindu temples in Puducherry, established before the arrival of the French in 1674. It remained on its historic site as the colonial town grew around it, surviving every attempt at relocation through sustained local resistance.",
+    history:
+      "A short walk from the French Institute, Manakula Vinayagar Temple is one of the oldest continuously active Hindu temples in Puducherry. Established before the arrival of the French in 1674, it remained on its historic site as the colonial town grew around it and today stands as one of the city's most important religious and cultural landmarks.\n\n**History**\n\nThe temple was already established when the French East India Company founded its settlement at Pondicherry in 1674. As the colonial administration developed the town according to a planned street layout, officials made several attempts during the eighteenth century to relocate the shrine. These proposals met sustained opposition from the local Hindu community, and the temple remained in its historic location. Its continued presence reflects both the strength of local religious life and the limits of colonial authority in reshaping an existing sacred landscape.\n\n**The Shrine**\n\nThe presiding deity is Vinayagar, the Tamil name for Ganesha, worshipped here as Manakula Vinayagar. The temple's gold-plated gopuram is decorated with numerous forms of Ganesha, while the interior features painted pillars, richly ornamented ceilings, and a series of mandapams leading to the sanctum. Daily pujas are conducted throughout the day, drawing a steady stream of devotees. The morning and evening services are particularly atmospheric, with the sounds of chanting, bells, and devotional music filling the temple.\n\n**Lakshmi**\n\nFor more than three decades, the temple elephant, Lakshmi, was one of Puducherry's most familiar and beloved figures. Standing at the entrance, she greeted generations of devotees and visitors, gently placing her trunk on their heads as a blessing. For many people, meeting Lakshmi became as memorable a part of visiting the temple as offering prayers inside the shrine.\n\nLakshmi died in November 2022 after decades of service to the temple. Her passing prompted an outpouring of public grief, and thousands of devotees attended her funeral rites. Although visitors no longer receive her blessing at the entrance, Lakshmi remains an enduring part of the temple's recent history and of the memories of countless residents and travellers.",
+    highlights: [
+      "Established before the French arrived in 1674 — one of the oldest active temples in Puducherry.",
+      "Colonial officials attempted several times to relocate it. The local community refused each time.",
+      "The gold-plated gopuram is decorated with numerous forms of Ganesha.",
+      "Lakshmi, the temple elephant who blessed visitors for over three decades, died in November 2022.",
+    ],
+    photo: "manakula-vinayagar.jpg",
+    visitInfo: {
+      hours: "5:45 am to 12:30 pm and 4:00 pm to 9:30 pm (timings may vary on festival days)",
+      entry: "Free",
+      tip: "The evening session is especially rewarding, when lamps are lit and the temple fills with incense, chanting, and devotional music.",
+    },
+  },
 ];
 
 export function getSite(id: string): Site | undefined {
