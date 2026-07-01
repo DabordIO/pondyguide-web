@@ -123,7 +123,7 @@ export default function HomePage() {
         <SectionHeader title="Explore the Town" href="/discover" />
         <ThreeGrid>
           {[
-            { href: "/discover/white-town", photo: "/streets/rue-dumas.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
+            { href: "/discover/white-town", photo: "/streets/rue-françois-martin.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
             { href: "/discover/landmarks", photo: "/sites/customs-building.jpg", label: "Landmarks", title: "Sites & Heritage Buildings", description: "From the seafront promenade to Arikamedu's Roman-era ruins." },
             { href: "/discover/auroville", photo: "/auroville/matrimandir.jpg", label: "Auroville", title: "The Experiment at Auroville", description: "3,400 people from 60 countries. Founded 1968. Still running." },
           ].map(s => (
