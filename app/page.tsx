@@ -261,7 +261,7 @@ export default function HomePage() {
             { href: "/plan/practical", photo: "/transport/general-tourism-information.jpeg", title: "Practical", desc: "Currency, SIM cards, dress code, water, tipping." },
           ].map(item => (
             <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              <div style={{ position: "relative", width: "100%", height: 160 }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
                 <Image src={item.photo} alt={item.title} fill style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
