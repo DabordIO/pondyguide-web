@@ -88,12 +88,25 @@ export default function HomePage() {
         </ThreeGrid>
       </section>
 
-      {/* ── FRENCH INSTITUTIONS ─────────────────────────────────────────────── */}
+      {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="French Institutions" href="/history/institutions" />
+        <SectionHeader title="Where to Stay" href="/hotels" />
         <ThreeGrid>
-          {featuredInstitutions.map(a => (
-            <ArticleCard key={a.id} href={`/history/institutions/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
+          {[
+            { href: "/hotels/palais-de-mahe", photo: "/hotels/palais-de-mahe.jpg", title: "Palais de Mahe", description: "The most romantic address in the White Town. A mustard-yellow façade on Rue Law de Lauriston." },
+            { href: "/hotels/maison-perumal", photo: "/hotels/maison-perumal.jpg", title: "Maison Perumal", description: "A Chettinad mansion restored with extraordinary care. Quiet, beautiful, unhurried." },
+            { href: "/hotels/le-dupleix", photo: "/hotels/le-dupleix.jpg", title: "Le Dupleix", description: "Named after the governor himself, on the street that carries his name." },
+          ].map(h => (
+            <Link key={h.href} href={h.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={h.photo} alt={h.title} fill style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{h.title}</p>
+                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{h.description}</p>
+                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              </div>
+            </Link>
           ))}
         </ThreeGrid>
       </section>
@@ -114,42 +127,6 @@ export default function HomePage() {
                 <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.5 }}>{f.role}</p>
               </div>
             </Link>
-          ))}
-        </ThreeGrid>
-      </section>
-
-      {/* ── DISCOVER ────────────────────────────────────────────────────────── */}
-      <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Explore the Town" href="/discover" />
-        <ThreeGrid>
-          {[
-            { href: "/discover/white-town", photo: "/streets/rue-françois-martin.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
-            { href: "/discover/landmarks", photo: "/sites/customs-building.jpg", label: "Landmarks", title: "Sites & Heritage Buildings", description: "From the seafront promenade to Arikamedu's Roman-era ruins." },
-            { href: "/discover/auroville", photo: "/auroville/matrimandir.jpg", label: "Auroville", title: "The Experiment at Auroville", description: "3,400 people from 60 countries. Founded 1968. Still running." },
-          ].map(s => (
-            <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={s.photo} alt={s.title} fill style={{ objectFit: "cover" }} />
-              </div>
-              <div style={{ padding: "14px 16px 16px" }}>
-                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{s.label}</p>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6, lineHeight: 1.3 }}>{s.title}</p>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.55 }}>{s.description}</p>
-              </div>
-            </Link>
-          ))}
-        </ThreeGrid>
-      </section>
-
-      {/* ── AUROVILLE ───────────────────────────────────────────────────────── */}
-      <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Understanding Auroville" href="/discover/auroville" />
-        <SectionIntro>
-          Founded in 1968 on a plateau of eroded land north of Pondicherry, Auroville is home to around 3,400 people from more than 60 countries. It is neither a tourist attraction nor a spiritual retreat. Read before you visit.
-        </SectionIntro>
-        <ThreeGrid>
-          {featuredAuroville.map(a => (
-            <ArticleCard key={a.id} href={`/discover/auroville/${a.id}`} photo={a.photo} photoFolder="auroville" title={a.title} teaser={a.teaser} />
           ))}
         </ThreeGrid>
       </section>
@@ -181,23 +158,33 @@ export default function HomePage() {
         </ThreeGrid>
       </section>
 
-      {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
+      {/* ── FRENCH INSTITUTIONS ─────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Where to Stay" href="/hotels" />
+        <SectionHeader title="French Institutions" href="/history/institutions" />
+        <ThreeGrid>
+          {featuredInstitutions.map(a => (
+            <ArticleCard key={a.id} href={`/history/institutions/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── DISCOVER ────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Explore the Town" href="/discover" />
         <ThreeGrid>
           {[
-            { href: "/hotels/palais-de-mahe", photo: "/hotels/palais-de-mahe.jpg", title: "Palais de Mahe", description: "The most romantic address in the White Town. A mustard-yellow façade on Rue Law de Lauriston." },
-            { href: "/hotels/maison-perumal", photo: "/hotels/maison-perumal.jpg", title: "Maison Perumal", description: "A Chettinad mansion restored with extraordinary care. Quiet, beautiful, unhurried." },
-            { href: "/hotels/le-dupleix", photo: "/hotels/le-dupleix.jpg", title: "Le Dupleix", description: "Named after the governor himself, on the street that carries his name." },
-          ].map(h => (
-            <Link key={h.href} href={h.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+            { href: "/discover/white-town", photo: "/streets/rue-françois-martin.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
+            { href: "/discover/landmarks", photo: "/sites/customs-building.jpg", label: "Landmarks", title: "Sites & Heritage Buildings", description: "From the seafront promenade to Arikamedu's Roman-era ruins." },
+            { href: "/discover/auroville", photo: "/auroville/matrimandir.jpg", label: "Auroville", title: "The Experiment at Auroville", description: "3,400 people from 60 countries. Founded 1968. Still running." },
+          ].map(s => (
+            <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={h.photo} alt={h.title} fill style={{ objectFit: "cover" }} />
+                <Image src={s.photo} alt={s.title} fill style={{ objectFit: "cover" }} />
               </div>
-              <div style={{ padding: "14px 16px 18px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{h.title}</p>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{h.description}</p>
-                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              <div style={{ padding: "14px 16px 16px" }}>
+                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{s.label}</p>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6, lineHeight: 1.3 }}>{s.title}</p>
+                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.55 }}>{s.description}</p>
               </div>
             </Link>
           ))}
@@ -223,6 +210,19 @@ export default function HomePage() {
                 <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── AUROVILLE ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Understanding Auroville" href="/discover/auroville" />
+        <SectionIntro>
+          Founded in 1968 on a plateau of eroded land north of Pondicherry, Auroville is home to around 3,400 people from more than 60 countries. It is neither a tourist attraction nor a spiritual retreat. Read before you visit.
+        </SectionIntro>
+        <ThreeGrid>
+          {featuredAuroville.map(a => (
+            <ArticleCard key={a.id} href={`/discover/auroville/${a.id}`} photo={a.photo} photoFolder="auroville" title={a.title} teaser={a.teaser} />
           ))}
         </ThreeGrid>
       </section>
