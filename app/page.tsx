@@ -18,7 +18,7 @@ function SectionHeader({ title, href, h1 = false }: { title: string; href: strin
   const headingStyle = { fontFamily: "var(--font-playfair), Georgia, serif", fontSize: h1 ? "clamp(2.5rem, 6vw, 3.75rem)" : "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, margin: 0 };
   return (
     <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 16, marginBottom: 16 }}>
-      <Link href={href} style={{ textDecoration: "none" }}>
+      <Link href={href} className="section-heading-link">
         {h1 ? <h1 style={headingStyle}>{title}</h1> : <h2 style={headingStyle}>{title}</h2>}
       </Link>
       <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>

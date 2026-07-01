@@ -31,3 +31,7 @@ h1, h2, h3, h4, h5 {
 .prose ul li { margin-bottom: 0.4rem; line-height: 1.75; color: #292524; }
 .prose blockquote { border-left: 3px solid #b45309; padding-left: 1.25rem; margin: 1.75rem 0; color: #78716c; font-style: italic; }
 .prose a { color: #b45309; text-decoration: underline; text-underline-offset: 3px; }
+
+.section-heading-link { text-decoration: none; }
+.section-heading-link:hover h1,
+.section-heading-link:hover h2 { color: #b45309; transition: color 0.15s; }
