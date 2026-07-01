@@ -116,7 +116,7 @@ From Tiruchirappalli, the drive is approximately 175 kilometres and takes four t
     category: "arriving",
     teaser:
       "A pre-booked taxi from Chennai is the most comfortable door-to-door option, taking three to three and a half hours with no connection to manage.",
-    photo: "taxi-white-town-arrival.jpg",
+    photo: "taxi-pondicherry.png",
     body: `**When a taxi makes sense**
 
 A private taxi is the right call when you are travelling with luggage, arriving late at night, or splitting the cost across a group of two to four people. There is no connection to change, no schedule to chase, and the driver waits for you in arrivals.
