@@ -28,27 +28,23 @@ export default function LandmarksPage() {
         From Arikamedu's Roman-era ruins to the French Consulate on the seafront, Pondicherry's landmarks span more than two thousand years of history.
       </p>
 
-      {byCategory.map(({ cat, items }) => (
-        <div key={cat} style={{ marginBottom: 52 }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-            {items.map(s => (
-              <Link key={s.id} href={`/discover/landmarks/${s.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-                {s.photo && (
-                  <div style={{ position: "relative", width: "100%", height: 160 }}>
-                    <Image src={`/sites/${s.photo}`} alt={s.name} fill style={{ objectFit: "cover", objectPosition: s.photoPosition ?? "center" }} />
-                  </div>
-                )}
-                <div style={{ padding: "14px 16px 16px" }}>
-                  <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: CATEGORY_COLORS[s.category], marginBottom: 6 }}>{CATEGORY_LABELS[s.category]}</p>
-                  <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{s.name}</p>
-                  <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{s.summary.slice(0, 110)}…</p>
-                  <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      ))}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
+        {byCategory.flatMap(({ items }) => items).map(s => (
+          <Link key={s.id} href={`/discover/landmarks/${s.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+            {s.photo && (
+              <div style={{ position: "relative", width: "100%", height: 160 }}>
+                <Image src={`/sites/${s.photo}`} alt={s.name} fill style={{ objectFit: "cover", objectPosition: s.photoPosition ?? "center" }} />
+              </div>
+            )}
+            <div style={{ padding: "14px 16px 16px" }}>
+              <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: CATEGORY_COLORS[s.category], marginBottom: 6 }}>{CATEGORY_LABELS[s.category]}</p>
+              <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{s.name}</p>
+              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{s.summary.slice(0, 110)}…</p>
+              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
