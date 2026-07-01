@@ -119,13 +119,7 @@ export default function HomePage() {
 
       {/* ── DISCOVER ────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 24, paddingBottom: 12, borderBottom: "1px solid #e8ddd4" }}>
-          <div>
-            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 4 }}>Discover</p>
-            <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917" }}>Explore the Town</h2>
-          </div>
-          <Link href="/discover" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
-        </div>
+        <BigHeading>Explore the Town</BigHeading>
         <ThreeGrid>
           {[
             { href: "/discover/white-town", photo: "/streets/rue-dumas.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
