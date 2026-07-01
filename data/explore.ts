@@ -44,37 +44,6 @@ Turn west from the promenade down any of the cross-streets and you will find the
 Return to Goubert Avenue at the end of the walk. Le Café, the Sri Aurobindo Ashram's beachfront café, is the right place to sit with a coffee and watch the light change on the water. The Bay of Bengal faces east: sunrises here are worth the early alarm.`,
   },
   {
-    id: "walk-manakula-vinayagar",
-    category: "walk",
-    title: "Manakula Vinayagar Temple",
-    cardTitle: "Manakula Vinayagar",
-    teaser:
-      "One of the oldest continuously active Hindu temples in Puducherry, established before the French arrived in 1674. It survived every colonial attempt at relocation through sustained local resistance.",
-    duration: "1 hour",
-    photo: "manakula-vinayagar.jpg",
-    body: `A short walk from the French Institute, Manakula Vinayagar Temple is one of the oldest continuously active Hindu temples in Puducherry. Established before the arrival of the French in 1674, it remained on its historic site as the colonial town grew around it and today stands as one of the city's most important religious and cultural landmarks.
-
-**History**
-
-The temple was already established when the French East India Company founded its settlement at Pondicherry in 1674. As the colonial administration developed the town according to a planned street layout, officials made several attempts during the eighteenth century to relocate the shrine. These proposals met sustained opposition from the local Hindu community, and the temple remained in its historic location. Its continued presence reflects both the strength of local religious life and the limits of colonial authority in reshaping an existing sacred landscape.
-
-**The Shrine**
-
-The presiding deity is Vinayagar, the Tamil name for Ganesha, worshipped here as Manakula Vinayagar. The temple's gold-plated gopuram is decorated with numerous forms of Ganesha, while the interior features painted pillars, richly ornamented ceilings, and a series of mandapams leading to the sanctum. Daily pujas are conducted throughout the day, drawing a steady stream of devotees. The morning and evening services are particularly atmospheric, with the sounds of chanting, bells, and devotional music filling the temple.
-
-**Lakshmi**
-
-For more than three decades, the temple elephant, Lakshmi, was one of Puducherry's most familiar and beloved figures. Standing at the entrance, she greeted generations of devotees and visitors, gently placing her trunk on their heads as a blessing. For many people, meeting Lakshmi became as memorable a part of visiting the temple as offering prayers inside the shrine.
-
-Lakshmi died in November 2022 after decades of service to the temple. Her passing prompted an outpouring of public grief, and thousands of devotees attended her funeral rites. Although visitors no longer receive her blessing at the entrance, Lakshmi remains an enduring part of the temple's recent history and of the memories of countless residents and travellers.
-
-**Visiting**
-
-Entry is free and all visitors are welcome, provided they dress modestly and respect the temple's customs. The temple is generally open from about 5:45 am to 12:30 pm and from 4:00 pm to 9:30 pm, although timings may vary on festival days. The evening hours are especially rewarding, when lamps are lit and the temple takes on a warm glow of incense, prayer, and devotional music.
-
-The temple's principal annual festival is Vinayaka Chaturthi, celebrated with special ceremonies, processions, and large gatherings of devotees from across Puducherry and neighbouring Tamil Nadu.`,
-  },
-
   // ── ACTIVITIES ────────────────────────────────────────────────────────────
 
   {
@@ -101,7 +70,7 @@ The temple's principal annual festival is Vinayaka Chaturthi, celebrated with sp
   },
   {
     id: "activity-beach-lighthouse-walk",
-    category: "activity",
+    category: "walk",
     title: "The Lighthouse and Fishing Village Walk",
     teaser:
       "From the promenade south through a working fishing village to the new lighthouse. Fabric warehouses with traditional looms, the old lighthouse on its circular base, and a 360-degree view from the top for 5 rupees.",
@@ -262,7 +231,7 @@ Buses run from Pondicherry main bus depot north toward Chennai, passing the Maha
 
   {
     id: "theme-temples",
-    category: "theme",
+    category: "walk",
     title: "Temples of the Tamil Quarter",
     teaser:
       "North of the French Quarter, in the Tamil Quarter (Heritage Town), two major temples and several smaller shrines represent a Hindu presence in Pondicherry that predates the French by centuries.",
