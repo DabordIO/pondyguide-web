@@ -12,13 +12,13 @@ const sections = [
     href: "/discover/white-town",
     title: "White Town Streets",
     description: "The French Quarter grid — 43 streets named after governors, admirals, and soldiers. Each one has a story.",
-    photo: "/streets/rue-dumas.jpg",
+    photo: "/streets/rue-françois-martin.jpg",
   },
   {
     href: "/discover/landmarks",
     title: "Landmarks & Sites",
     description: "Heritage buildings, temples, churches, museums, and the ancient ruins that predate the French by two thousand years.",
-    photo: "/sites/promenade.jpg",
+    photo: "/sites/customs-building.jpg",
   },
   {
     href: "/discover/auroville",
