@@ -4,6 +4,7 @@ import { historyArticles } from "@/data/history";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import Link from "next/link";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return historyArticles.map(a => ({ slug: a.id }));
@@ -31,6 +32,12 @@ export default async function HistoryArticlePage({ params }: { params: Promise<{
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
       <Link href="/history" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← History</Link>
+
+      {article.photo && (
+        <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
+          <Image src={`/${article.photoFolder ?? "history"}/${article.photo}`} alt={article.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+        </div>
+      )}
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "20px 0 16px", lineHeight: 1.2 }}>
         {article.title}
