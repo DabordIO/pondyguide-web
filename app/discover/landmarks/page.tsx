@@ -30,9 +30,6 @@ export default function LandmarksPage() {
 
       {byCategory.map(({ cat, items }) => (
         <div key={cat} style={{ marginBottom: 52 }}>
-          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 20, paddingBottom: 12, borderBottom: "1px solid #e8ddd4" }}>
-            {CATEGORY_LABELS[cat]}
-          </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
             {items.map(s => (
               <Link key={s.id} href={`/discover/landmarks/${s.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
