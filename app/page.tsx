@@ -253,20 +253,25 @@ export default function HomePage() {
       {/* ── PLAN ────────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 64 }}>
         <SectionHeader title="Before You Go" href="/plan" />
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12 }}>
+        <ThreeGrid>
           {[
-            { href: "/plan/getting-here", title: "Getting Here", desc: "Bus from Chennai, train from Bangalore, the ECR coastal road." },
-            { href: "/plan/getting-around", title: "Getting Around", desc: "Auto-rickshaws, bicycles, scooters. The White Town is walkable." },
-            { href: "/plan/healthcare", title: "Healthcare", desc: "JIPMER, private clinics, pharmacies — what to know before you need it." },
-            { href: "/plan/practical", title: "Practical", desc: "Currency, SIM cards, dress code, water, tipping." },
+            { href: "/plan/getting-here", photo: "/transport/puducherry-railway-station.jpg", title: "Getting Here", desc: "Bus from Chennai, train from Bangalore, the ECR coastal road." },
+            { href: "/plan/getting-around", photo: "/transport/auto-rickshaw-white-town.jpg", title: "Getting Around", desc: "Auto-rickshaws, bicycles, scooters. The White Town is walkable." },
+            { href: "/plan/healthcare", photo: "/healthcare/jipmer-entrance.jpg", title: "Healthcare", desc: "JIPMER, private clinics, pharmacies — what to know before you need it." },
+            { href: "/plan/practical", photo: "/streets/rue-dumas.jpg", title: "Practical", desc: "Currency, SIM cards, dress code, water, tipping." },
           ].map(item => (
-            <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, padding: "18px 18px 16px", display: "block" }}>
-              <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
-              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{item.desc}</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read →</p>
+            <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 160 }}>
+                <Image src={item.photo} alt={item.title} fill style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 16px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
+                <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{item.desc}</p>
+                <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read →</p>
+              </div>
             </Link>
           ))}
-        </div>
+        </ThreeGrid>
       </section>
 
     </div>
