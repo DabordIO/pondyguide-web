@@ -28,7 +28,7 @@ export default function GettingHerePage() {
       {articles.map((a, i) => (
         <div key={a.id} style={{ marginBottom: 48, paddingBottom: i < articles.length - 1 ? 48 : 0, borderBottom: i < articles.length - 1 ? "1px solid #e8ddd4" : "none" }}>
           {a.photo && (
-            <div style={{ position: "relative", width: "100%", height: 220, borderRadius: 12, overflow: "hidden", marginBottom: 20 }}>
+            <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 12, overflow: "hidden", marginBottom: 20 }}>
               <Image src={`/transport/${a.photo}`} alt={a.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
             </div>
           )}

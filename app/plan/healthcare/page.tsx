@@ -44,7 +44,7 @@ export default function HealthcarePage() {
           {items.map((a, i) => (
             <div key={a.id} style={{ marginBottom: i < items.length - 1 ? 36 : 0 }}>
               {a.photo && (
-                <div style={{ position: "relative", width: "100%", height: 200, borderRadius: 12, overflow: "hidden", marginBottom: 16 }}>
+                <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 12, overflow: "hidden", marginBottom: 16 }}>
                   <Image src={`/healthcare/${a.photo}`} alt={a.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
                 </div>
               )}
