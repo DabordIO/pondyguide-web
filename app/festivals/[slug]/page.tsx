@@ -72,7 +72,7 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
       <Link href="/festivals" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
 
       {festival.photo && (
-        <div style={{ position: "relative", width: "100%", aspectRatio: "16/9", borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
+        <div style={{ position: "relative", width: "100%", aspectRatio: festival.photoAspectRatio ?? "16/9", borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
           <Image src={`/festivals/${festival.photo}`} alt={festival.title} fill style={{ objectFit: "cover", objectPosition: festival.photoPosition ?? "center" }} />
         </div>
       )}

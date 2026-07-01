@@ -23,6 +23,7 @@ export interface Festival {
   website?: string;
   photo?: string;
   photoPosition?: string;
+  photoAspectRatio?: string;
 }
 
 export const festivals: Festival[] = [
@@ -93,7 +94,7 @@ export const festivals: Festival[] = [
     body:
       "**The ceremony**\n\nOn January 26, the Lieutenant Governor of Puducherry hoists the national flag at Beach Road (Goubert Avenue) and takes the salute at a formal parade. Police contingents, armed services units, and columns of school children march along the scenic seafront. Gallantry Awards, the President's Medal for meritorious service, and state honours are presented publicly during the ceremony. The citations are read aloud. This is a formal civic occasion, conducted with seriousness.\n\n**The illuminations**\n\nFrom the evening of January 25 through January 26, government buildings, the Gandhi Statue, the French War Memorial, and landmarks along the seafront are lit with tricolour lighting. A walk along the Promenade at dusk on Republic Day, from the War Memorial to the Lighthouse and back, is worth the effort. The seafront looks different with the buildings lit up.\n\n**Pondicherry University and JIPMER**\n\nBeyond the main ceremony, institutions like Pondicherry University and JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) hold their own flag-hoisting ceremonies, student marches, and cultural programmes on January 26. If you are near either campus, the events there are often more intimate than the main parade.",
     photo: "republic-day.png",
-    photoPosition: "center bottom",
+    photoPosition: "center 45%",
   },
 
   {
@@ -108,7 +109,7 @@ export const festivals: Festival[] = [
       "**Who the Mother was**\n\nMirra Alfassa was born in Paris on February 21, 1878. She arrived in Pondicherry in 1914, and from 1926 until her death on November 17, 1973, she co-founded and ran the Sri Aurobindo Ashram with Sri Aurobindo. After his death in 1950, she guided the community alone for another twenty-three years, running its schools, workshops, and correspondence, directing its daily practice of Integral Yoga, and conceiving the international township of Auroville, which was inaugurated in 1968. She was 95 when she died.\n\n**The celebration at the Ashram**\n\nFebruary 21 is one of the most significant days in the ashram's calendar. The Samadhi, the white marble shrine in the central courtyard where both Sri Aurobindo and the Mother are interred, draws a continuous stream of meditators from before dawn. Collective readings from her writings accompany the silent prayers throughout the day. The Mother's personal room, normally closed to visitors, is opened on her birthday.\n\n**At Auroville**\n\nThe international township 10 km north of Pondicherry holds a dawn meditation at the Matrimandir Amphitheatre. The amphitheatre is decorated with fresh flowers. A few Aurovilians still in the community met the Mother during her final years; their presence at these gatherings is something rare and not announced.\n\n**Planning your visit**\n\nFebruary 21 draws large numbers of devotees and spiritual tourists. Book accommodation several weeks in advance. Dress modestly at the ashram: shoulders and knees covered. The ashram website (sriaurobindoashram.org) publishes its programme for the day.",
     website: "sriaurobindoashram.org",
     photo: "mothers-birthday.png",
-    photoPosition: "top",
+    photoPosition: "center 30%",
   },
 
   {
@@ -125,6 +126,7 @@ export const festivals: Festival[] = [
       "**What happens**\n\nOn the day of Masi Magam, temple priests carry the principal deities out of their sanctuaries in palanquins and process through the streets to the sea at Vaithikuppam Beach, north of Pondicherry town. The processions move slowly, with nagaswaram (classical wind instrument) and temple drums audible for hours before the deities arrive. Devotees line the streets to offer prayers as the palanquins pass. At the beach, the idols receive the Theerthavari, a ceremonial bath in the sea. Devotees then take their own dip in the waves alongside the deities, believing the waters are sanctified and wash away accumulated sins, including ancestral ones.\n\n**Why this day**\n\nMasi Magam falls when the moon occupies the Makam (Magha) nakshatra during the Tamil month of Masi. Makam is the birth star of kings and ancestors, and the alignment with the full moon is considered one of the most powerful of the year. The Tamil tradition holds that on this day, divine beings descend to earth and blessings are unusually accessible. It is also believed that whoever bathes in the sea during Masi Magam receives salvation.\n\n**The spectacle**\n\nMasi Magam in Pondicherry draws temples from across the Union Territory and neighbouring Tamil Nadu districts. By the time the processions converge on the beach, the shore is packed. The event is colourful, loud, and genuinely extraordinary. It is one of the largest religious gatherings in the region and one of the most visually immersive things you can witness in Pondicherry.\n\n**Finding the date**\n\nThe Gregorian date changes each year. For the current year's date, check the Tamil panchangam or contact Pondicherry Tourism at pondytourism@gmail.com.",
     website: "pondytourism@gmail.com",
     photo: "masi-magam.jpg",
+    photoPosition: "top",
   },
 
   {
@@ -230,6 +232,7 @@ export const festivals: Festival[] = [
       "**The event**\n\nFête de la Musique, or World Music Day, is celebrated on June 21 in cities across the world. Pondicherry is one of very few Indian cities where it has taken hold with genuine enthusiasm, organized each year by the Alliance Française de Pondichéry. The premise is simple and democratic: music in public spaces, free of charge, for everyone.\n\n**What to expect**\n\nThe Alliance Française hosts a week of music-related events leading up to June 21, including live concerts, musical poetry performances, and indie showcases at their premises on Suffren Street. On the day itself, stages appear across the city. Amateur and professional artists perform side by side: jazz, classical Carnatic music, rock, folk, and fusion. The southern end of the beach promenade near Children's Park is one of the most popular spots, with bands setting up as the sun goes down.\n\n**A French tradition in a French city**\n\nFête de la Musique was created in France in 1982. Pondicherry, as a former French territory with a functioning Consulate, an Alliance Française, and a Franco-Tamil community that has maintained cultural ties across generations, takes the occasion seriously. It is one of the few days in the year when French heritage in the city is felt through sound rather than architecture.\n\n**Practical note**\n\nJune 21 falls during the early monsoon season on the Coromandel Coast. Humidity is high and an evening shower is possible. Events typically move indoors if needed. The Alliance Française schedule for the week is worth checking in advance.",
     photo: "fete-de-la-musique.png",
     photoPosition: "top",
+    photoAspectRatio: "4/3",
   },
 
   {
@@ -314,7 +317,7 @@ export const festivals: Festival[] = [
       "**The coincidence**\n\nSri Aurobindo was born on August 15, 1872, in Calcutta. He had been a revolutionary organizer against British rule before his trial and acquittal in the 1908 Alipore Conspiracy Case, after which he fled to French Pondicherry. He spent forty years in Pondicherry writing, developing Integral Yoga, and corresponding with thousands of disciples, most of whom he never saw. He noticed that the date India became independent matched his own birthday and took the coincidence as significant.\n\n**Darshan Day**\n\nAugust 15 is one of four annual Darshan Days at the Sri Aurobindo Ashram (the others are November 17, February 21, and April 24). On Darshan Days, the ashram distributes tokens from before dawn allowing devotees to view the room where Sri Aurobindo lived and worked for forty years. The Samadhi, the white marble shrine in the ashram courtyard where he and the Mother are interred, draws hundreds of meditators from before sunrise. The atmosphere is one of intense collective silence. Darshan is conducted without noise. Dress modestly, shoulders and knees covered.\n\n**Crowds**\n\nBecause August 15 is also a national holiday, Pondicherry receives large numbers of both spiritual pilgrims and general tourists simultaneously. The ashram manages the flow carefully, but queues for Darshan tokens begin well before dawn. Arrive early if you intend to participate in the morning meditation.\n\n**At Auroville**\n\nAuroville marks the day with a Dawn Fire gathering at the Matrimandir Amphitheatre before sunrise. Phones and cameras are not permitted inside the Park of Unity. See auroville.org for timing.",
     website: "sriaurobindoashram.org",
     photo: "sri-aurobindo-birthday.jpg",
-    photoPosition: "top",
+    photoPosition: "center 22%",
   },
 
   {
