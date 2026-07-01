@@ -23,12 +23,12 @@ export interface Site {
 }
 
 export const CATEGORY_LABELS: Record<SiteCategory, string> = {
-  heritage: "Colonial Heritage",
-  religious: "Religious Site",
-  nature: "Nature & Garden",
+  heritage: "Heritage",
+  religious: "Spirituality",
+  nature: "Nature and History",
   museum: "Museum",
   ancient: "Ancient History",
-  monument: "Monument & Street",
+  monument: "Monument",
 };
 
 export const CATEGORY_COLORS: Record<SiteCategory, string> = {
@@ -142,7 +142,7 @@ export const sites: Site[] = [
     name: "Pondicherry Museum",
     frenchName: "Musée de Pondichéry",
     tamilName: "புதுச்சேரி அரசு அருங்காட்சியகம்",
-    category: "museum",
+    category: "nature",
     lat: 11.9345,
     lng: 79.8349,
     era: "Established 1983",
@@ -241,7 +241,7 @@ export const sites: Site[] = [
     id: "arikamedu",
     name: "Arikamedu: Roman Trading Site",
     tamilName: "அரிகமேடு",
-    category: "ancient",
+    category: "nature",
     lat: 11.9012,
     lng: 79.8201,
     era: "2nd century BCE – 8th century CE",
@@ -496,7 +496,7 @@ export const sites: Site[] = [
     id: "european-cemetery",
     name: "European Cemetery",
     frenchName: "Cimetière européen",
-    category: "monument",
+    category: "religious",
     lat: 11.9209,
     lng: 79.8207,
     era: "c.1700 – present",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Heritage buildings, temples, churches, museums, and the ancient ruins that predate the French by two thousand years.",
 };
 
-const CATEGORY_ORDER = ["heritage", "religious", "museum", "nature", "ancient", "monument"] as const;
+const CATEGORY_ORDER = ["heritage", "religious", "monument", "nature", "ancient", "museum"] as const;
 
 export default function LandmarksPage() {
   const byCategory = CATEGORY_ORDER.map(cat => ({
