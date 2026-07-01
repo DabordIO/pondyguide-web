@@ -725,9 +725,9 @@ export const hotels: Hotel[] = [
 export const COLLECTION_ORDER: HotelCollection[] = [
   "french-heritage",
   "boutique",
+  "coastal-wellness",
   "family",
   "backpacker",
-  "coastal-wellness",
 ];
 
 export function getHotelsByCollection(collection: HotelCollection): Hotel[] {
