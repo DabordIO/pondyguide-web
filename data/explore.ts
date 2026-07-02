@@ -289,6 +289,7 @@ Buses run from Pondicherry main bus depot north toward Chennai, passing the Maha
     id: "theme-temples",
     category: "walk",
     title: "Temples of the Tamil Quarter",
+    photo: "temples-tamil-quarter.png",
     teaser:
       "The city's older history lies just across the canal, in the streets traditionally known as the Tamil Quarter. Here, temples, markets, and family houses reveal a settlement that long predates the arrival of the French East India Company in 1674.",
     duration: "2 to 3 hours",
