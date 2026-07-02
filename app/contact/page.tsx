@@ -17,7 +17,13 @@ export default function ContactPage() {
           Thank you for visiting. Pondy Guide is a personal project, a genuine attempt to give visitors the most researched, most honest account of yesterday's Pondichéry and today's Puducherry.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
-          If you notice a factual discrepancy anywhere on the site, it is unintentional and we very much want to hear about it. If you would like to suggest a new article, or simply leave a comment, we would be glad to receive that too.
+          We have done extensive research thanks to many scholarly articles, theses and books, most of them not available online. History is not a static field. We progress as we discover. However, we have deliberately avoided controversies and a few debated topics. Our goal has been to present crisp accounts accessible to everyone. No oversimplification. No over-obfuscation.
+        </p>
+        <p style={{ marginBottom: "1.25rem" }}>
+          If you notice a factual discrepancy anywhere on the site, kindly regard it as genuinely unintentional and we very much want to hear about it.
+        </p>
+        <p style={{ marginBottom: "1.25rem" }}>
+          If you would like to suggest a new article, or simply share a thought or give us your word of appreciation, we would be glad to receive that too.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
           Write to us at{" "}
