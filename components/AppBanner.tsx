@@ -11,7 +11,7 @@ export default function AppBanner() {
             Take this guide with you
           </p>
           <p style={{ fontSize: 14, color: "#a8a29e", lineHeight: 1.6 }}>
-            Offline maps, street-level history, restaurant picks, and hotel guides — everything on this site, in your pocket.
+            Offline maps, street-level history, restaurant picks, and hotel guides: everything on this site, in your pocket.
           </p>
         </div>
       </div>
