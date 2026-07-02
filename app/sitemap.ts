@@ -10,7 +10,7 @@ import { sites } from "@/data/sites";
 import { aurovilleArticles } from "@/data/auroville";
 import { exploreArticles } from "@/data/explore";
 
-const BASE = "https://pondyguide.com";
+const BASE = "https://www.pondyguide.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
