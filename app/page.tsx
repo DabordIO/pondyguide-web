@@ -39,12 +39,12 @@ function SubHeading({ label, href }: { label: string; href?: string }) {
   );
 }
 
-function ArticleCard({ href, photo, photoFolder = "history", title, teaser }: { href: string; photo?: string; photoFolder?: string; title: string; teaser: string }) {
+function ArticleCard({ href, photo, photoFolder = "history", title, teaser, priority = false }: { href: string; photo?: string; photoFolder?: string; title: string; teaser: string; priority?: boolean }) {
   return (
     <Link href={href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
       {photo && (
         <div style={{ position: "relative", width: "100%", height: 180 }}>
-          <Image src={`/${photoFolder}/${photo}`} alt={title} fill style={{ objectFit: "cover" }} />
+          <Image src={`/${photoFolder}/${photo}`} alt={title} fill style={{ objectFit: "cover" }} priority={priority} />
         </div>
       )}
       <div style={{ padding: "16px 18px 18px" }}>
@@ -81,8 +81,8 @@ export default function HomePage() {
           Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
         </SectionIntro>
         <ThreeGrid>
-          {featuredHistory.map(a => (
-            <ArticleCard key={a.id} href={`/history/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
+          {featuredHistory.map((a, i) => (
+            <ArticleCard key={a.id} href={`/history/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} priority={i === 0} />
           ))}
         </ThreeGrid>
       </section>
