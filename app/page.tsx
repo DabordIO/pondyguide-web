@@ -256,7 +256,7 @@ export default function HomePage() {
           {[
             { href: "/plan/getting-here", photo: "/transport/puducherry-railway-station.jpg", title: "Getting Here", desc: "Bus from Chennai, train from Bangalore, the ECR coastal road." },
             { href: "/plan/getting-around", photo: "/transport/auto-rickshaw-white-town.jpg", title: "Getting Around", desc: "Auto-rickshaws, bicycles, scooters. The White Town is walkable." },
-            { href: "/plan/healthcare", photo: "/healthcare/public-hospital.jpg", title: "Healthcare", desc: "JIPMER, private clinics, pharmacies — what to know before you need it." },
+            { href: "/plan/healthcare", photo: "/healthcare/public-hospital.jpg", title: "Emergency", desc: "JIPMER, private clinics, pharmacies — what to know before you need it." },
           ].map(item => (
             <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 180 }}>
