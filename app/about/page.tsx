@@ -41,7 +41,7 @@ export default function AboutPage() {
 
         <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: "0.75rem" }}>A note on independence</p>
         <p style={{ marginBottom: "1.25rem" }}>
-          None of the selected restaurants or hotels were contacted earlier, nor have we any sort of paid partnership with any of them. If you are the managing staff of one of these selected places and wish to have your establishment removed, please reach out. As we believe our authority relies on independent writing, please avoid asking to change how we described your establishment. On the other hand, if you would like to change the photo we have used, please send us one in landscape view in any format but not more than 1 MB.
+          None of the selected restaurants or hotels were contacted earlier, nor have we any sort of paid partnership with any of them. If you are the managing staff of one of these selected places and wish to have your establishment removed, please reach out. As we believe our authority relies on independent writing, please avoid asking to change how we described your establishment. On the other hand, if you would like to change the photo we have used, please send us one in landscape view in any format but preferably not more than 1 MB.
         </p>
       </div>
       <AppBanner />
