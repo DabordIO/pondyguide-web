@@ -255,7 +255,7 @@ That is perhaps the most interesting thing about Pondicherry. It absorbed the Ro
   },
   {
     id: "les-combattants",
-    title: "Les Combattants",
+    title: "Les anciens combattants",
     subtitle: "The French Indians who fought in four wars for France",
     teaser:
       "On Goubert Avenue there is a war memorial that France kept after 1954. It is the one piece of ground on the promenade that is technically still French. The names on it tell a story about citizenship, loyalty, and a community that took an unusual path through the twentieth century.",
