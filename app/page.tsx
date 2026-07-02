@@ -134,7 +134,7 @@ export default function HomePage() {
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Restaurants in Pondicherry" href="/restaurants" />
         <SectionIntro>
-          Pondicherry punches above its weight for food. French-influenced cafés, fresh seafood, Tamil homecooked thalis — and enough coffee to keep you going through the afternoon heat.
+          Pondicherry punches above its weight for food. French-influenced cafés, fresh seafood, Tamil homecooked thalis and enough coffee & ice cream to keep you going through the afternoon heat.
         </SectionIntro>
         <ThreeGrid>
           {featuredRestaurants.map(r => (
