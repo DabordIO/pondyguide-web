@@ -36,7 +36,7 @@ export default function AboutPage() {
 
         <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: "0.75rem" }}>Hotels</p>
         <p style={{ marginBottom: "1.25rem" }}>
-          Curating a hotel list was the hardest part of this project, next only to writing the history articles, and there will be many more of those coming your way soon. Why? Because our set goal was not to provide a full list of all hotels but to give a signal to visitors of which places they could book in confidence. Further, we decided to limit that list to just 25 of them and, as we have not personally stayed in any of them, things became even harder. So the best route was to compile a list through word of mouth and check for ourselves when we visited friends who stayed there or got to taste their hospitality offers.
+          Curating a hotel list was the hardest part of this project, next only to writing the history articles. Why? Because our set goal was not to provide a full list of all hotels but to give a signal to visitors of which places they could book in confidence. Further, we decided to limit that list to just 25 of them and, as we have not personally stayed in any of them, things became even harder. So the best route was to compile a list through word of mouth and check for ourselves when we visited friends who stayed there.
         </p>
 
         <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: "0.75rem" }}>A note on independence</p>
