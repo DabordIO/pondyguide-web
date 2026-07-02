@@ -18,13 +18,13 @@ export default function AboutPage() {
           Pondy Guide was built by two friends who share a connection to Pondicherry that goes well beyond a holiday visit. Both have family roots in the town going back generations, and both grew up with a particular attachment to its streets, its history, and the layers of life that most visitors never get the chance to see.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
-          The idea was simple: give people who come to Pondicherry the chance to discover something more than the surface. Not just where to eat and where to stay, but who built this place, who fought over it, who left, who stayed, and what their descendants are doing today.
+          The idea was simple: give people who come to Pondicherry the chance to discover something more than the surface. Not just where to eat and where to stay, but the people who built this place, the troops that fought over it, the families that left, those who stayed, and what their descendants are doing today.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
           The history of Pondicherry is genuinely extraordinary, and much of it is poorly documented in the places tourists actually look. We wanted to change that in a small way.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
-          This guide was made with care, with a great deal of help from the historical record, and with a deep respect for a town that has meant a great deal to both of us for a very long time.
+          This guide was made with care, with a great deal of help from historical records, despite the fact that none of us are historians, and with a deep respect for a town that has meant a great deal to both of us since our childhood days.
         </p>
 
         <div style={{ borderTop: "1px solid #e7e5e4", margin: "2rem 0" }} />
