@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         <div>
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>Plan</p>
-          {[["Restaurants", "/restaurants"], ["Hotels", "/hotels"], ["Getting Here", "/plan/getting-here"], ["Practical", "/plan/practical"]].map(([label, href]) => (
+          {[["Restaurants", "/restaurants"], ["Hotels", "/hotels"], ["Getting Here", "/plan/getting-here"], ["Practical Tips", "/plan/practical"]].map(([label, href]) => (
             <Link key={href} href={href} style={{ display: "block", fontSize: 13, color: "#a8a29e", textDecoration: "none", marginBottom: 8 }}>{label}</Link>
           ))}
         </div>

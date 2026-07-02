@@ -28,7 +28,7 @@ const sections = [
   },
   {
     href: "/plan/practical",
-    title: "Practical",
+    title: "Practical Tips",
     description: "Currency, SIM cards, dress code, water safety, tipping, and the things visitors consistently get wrong.",
     photo: "/transport/general-tourism-information.jpeg",
   },
