@@ -196,6 +196,7 @@ The site lies about four kilometres south of the French Quarter near Ariyankuppa
     category: "daytrip",
     title: "Pichavaram Mangrove Forest",
     cardTitle: "Pichavaram",
+    photo: "pichavaram.jpg",
     teaser:
       "One of India's largest mangrove forests, 65 kilometres north of Pondicherry. A boat through narrow waterways between the roots, with herons overhead and crabs below. One of the quietest and most unusual half-days you can spend near Pondicherry.",
     duration: "Half day",
