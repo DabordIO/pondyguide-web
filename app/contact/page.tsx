@@ -26,6 +26,9 @@ export default function ContactPage() {
           If you would like to suggest a new article, or simply share a thought or give us your word of appreciation, we would be glad to receive that too.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
+          We do receive, from time to time, messages from individuals or agencies offering to promote this site for a fee. We appreciate the thought, but have no interest in that kind of arrangement. What does mean a great deal to us is something simpler: if you found something here that helped or interested you, telling a friend is the best thing you can do for this project.
+        </p>
+        <p style={{ marginBottom: "1.25rem" }}>
           Write to us at{" "}
           <a href="mailto:hello@pondyguide.com" style={{ color: "#b45309", textDecoration: "none", fontWeight: 600 }}>
             hello@pondyguide.com
