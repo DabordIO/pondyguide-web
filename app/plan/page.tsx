@@ -22,7 +22,7 @@ const sections = [
   },
   {
     href: "/plan/healthcare",
-    title: "Healthcare",
+    title: "Emergency",
     description: "JIPMER is one of India's premier medical institutes. Private clinics are plentiful. Pharmacies are on every corner.",
     photo: "/healthcare/public-hospital.jpg",
   },

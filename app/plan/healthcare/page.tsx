@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
-  emergency: "Emergency & Public Hospitals",
+  emergency: "Public hospitals",
   private: "Private Clinics",
   pharmacy: "Pharmacies",
 };
@@ -28,9 +28,9 @@ export default function HealthcarePage() {
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
       <Link href="/plan" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 12px" }}>Healthcare</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 12px" }}>Emergency</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
-        Medical Care in Pondicherry
+        Emergency in Pondicherry
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         Pondicherry is better served medically than most Indian towns its size. JIPMER — Jawaharlal Institute of Postgraduate Medical Education and Research — is one of the top public hospitals in the country and provides free emergency care around the clock.
