@@ -32,7 +32,7 @@ export default function PracticalPage() {
         Practical Information
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
-        The essentials — what to bring, what to expect, and what catches most visitors off guard.
+        The essentials: what to bring, what to expect, and what catches most visitors off guard.
       </p>
 
       {bySectionArr.map(({ sec, items }) => (
