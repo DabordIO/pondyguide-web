@@ -25,15 +25,15 @@ export const transportArticles: TransportArticle[] = [
 
 Chennai to Pondicherry covers 150 kilometres by the East Coast Road (ECR), which skirts the Bay of Bengal for much of its length. Both the ECR and the inland National Highway 45 take between 3.5 and 4.5 hours. ECR is the more scenic option.
 
-State-run buses (TNSTC, SETC, PRTC) cost 130 to 190 rupees and depart from CMBT (Koyambedu) from 2:30am with a new service every 15 to 20 minutes. They are basic — no air conditioning — and some divert off the ECR to avoid tolls, adding an hour to the trip. Ask the conductor before boarding.
+State-run buses (TNSTC, SETC, PRTC) cost 130 to 190 rupees and depart from CMBT (Koyambedu) from 2:30am with a new service every 15 to 20 minutes. They are basic, with no air conditioning, and some divert off the ECR to avoid tolls, adding an hour to the trip. Ask the conductor before boarding.
 
-Private AC coaches (Fresh Bus, NueGo) take around 3.5 hours and cost 230 to 1,200 rupees. Book through RedBus or MakeMyTrip. Many pick up at Adyar or Thiruvanmiyur rather than CMBT — confirm the stop before booking.
+Private AC coaches (Fresh Bus, NueGo) take around 3.5 hours and cost 230 to 1,200 rupees. Book through RedBus or MakeMyTrip. Many pick up at Adyar or Thiruvanmiyur rather than CMBT, so confirm the stop before booking.
 
 From Chennai Airport, take the metro from Meenambakkam to CMBT (₹50, change at Alandur), then board directly.
 
 **From Bangalore**
 
-Buses follow NH 77 through Hosur, Krishnagiri, Tiruvannamalai, and Tindivanam — 315 kilometres, six to eight hours. The route passes within sight of Tiruvannamalai's Arunachala and Gingee Fort.
+Buses follow NH 77 through Hosur, Krishnagiri, Tiruvannamalai, and Tindivanam: 315 kilometres, six to eight hours. The route passes within sight of Tiruvannamalai's Arunachala and Gingee Fort.
 
 Most services are overnight, departing 8pm–11:30pm from Madiwala, Shanti Nagar, or Majestic bus stand, arriving at Pondicherry's New Bus Stand in the early morning. Private operators Kallada Travels, Sharma Transports, and KPN Travels run sleeper and seater services (500–1,200 rupees). KSRTC and SETC are reliable state alternatives at the lower end.
 

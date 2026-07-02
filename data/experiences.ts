@@ -31,7 +31,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $20",
     gradient: "linear-gradient(135deg, #065f46 0%, #10b981 100%)",
     photo: "city-bike-tour.jpg",
-    teaser: "Pedal through the French, Tamil, and Muslim quarters on a vintage-style bicycle — the fastest way to feel like a local in a city built for slow travel.",
+    teaser: "Pedal through the French, Tamil, and Muslim quarters on a vintage-style bicycle, the fastest way to feel like a local in a city built for slow travel.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Pondy-Cycle-Tour/d22690-8207P5",
   },
   {
@@ -42,7 +42,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $47",
     gradient: "linear-gradient(135deg, #1e3a5f 0%, #3b82f6 100%)",
     photo: "full-day-city-tour.jpg",
-    teaser: "From the Ashram to Auroville, with refreshments included — the definitive guided day for first-time visitors who want to understand what makes this city unlike anywhere else.",
+    teaser: "From the Ashram to Auroville, with refreshments included: the definitive guided day for first-time visitors who want to understand what makes this city unlike anywhere else.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Guided-City-Tour-with-complimentary-refreshments/d22690-125365P1",
   },
   {
@@ -53,7 +53,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $251",
     gradient: "linear-gradient(135deg, #064e3b 0%, #059669 100%)",
     photo: "pichavaram-mangrove.jpg",
-    teaser: "Glide by boat through one of the world's largest mangrove forests, then visit the 10th-century Nataraja Temple at Chidambaram — a day trip with no equivalent.",
+    teaser: "Glide by boat through one of the world's largest mangrove forests, then visit the 10th-century Nataraja Temple at Chidambaram: a day trip with no equivalent.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Day-Trip-to-Pichavaram-Mangrove-Forest-and-Thillai-Nataraja-Temple-in-Chidambaram-from-Pondicherry-with-lunch/d22690-50182P509",
   },
   {
@@ -64,7 +64,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $100",
     gradient: "linear-gradient(135deg, #78350f 0%, #d97706 100%)",
     photo: "mahabalipuram-tour.jpg",
-    teaser: "UNESCO World Heritage rock-cut temples carved by the Pallava kings in the 7th century, two hours up the coast — a private tour with guide, car, and lunch included.",
+    teaser: "UNESCO World Heritage rock-cut temples carved by the Pallava kings in the 7th century, two hours up the coast, with guide, car, and lunch included.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Mahabalipuram-tour-from-Pondicherry-with-guide-car-and-lunch/d22690-18983P195",
   },
 
@@ -76,7 +76,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $10",
     gradient: "linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 100%)",
     photo: "kayaking-backwaters.jpg",
-    teaser: "Paddle through Pondicherry's quiet backwater channels — mangrove-lined, birdlife-rich, and nothing like the coast road. The most peaceful hour you'll spend here.",
+    teaser: "Paddle through Pondicherry's quiet backwater channels, mangrove-lined, birdlife-rich, and nothing like the coast road. The most peaceful hour you'll spend here.",
     viatorUrl: "https://www.getyourguide.com/pondichery-l32421/kayak-dans-les-backwaters-de-pondichery-t770965/",
   },
   {
@@ -100,7 +100,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $28",
     gradient: "linear-gradient(135deg, #7f1d1d 0%, #ea580c 100%)",
     photo: "cooking-class.jpg",
-    teaser: "Learn to cook traditional South Indian dishes from scratch in a hands-on class — the most-reviewed experience in Pondicherry, rated 4.9 by 69 travellers.",
+    teaser: "Learn to cook traditional South Indian dishes from scratch in a hands-on class, the most-reviewed experience in Pondicherry, rated 4.9 by 69 travellers.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Indian-Cooking-Class-in-Pondicherry/d22690-8207P1",
   },
   {
@@ -111,7 +111,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $10",
     gradient: "linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%)",
     photo: "kolam-class.jpg",
-    teaser: "Every Tamil doorstep begins the day with kolam — intricate geometric patterns drawn in rice flour. Learn the tradition, the meaning, and the technique firsthand.",
+    teaser: "Every Tamil doorstep begins the day with kolam, intricate geometric patterns drawn in rice flour. Learn the tradition, the meaning, and the technique firsthand.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Kolam-Class-in-Pondicherry/d22690-8207P3",
   },
   {
@@ -122,7 +122,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $20",
     gradient: "linear-gradient(135deg, #78350f 0%, #b45309 100%)",
     photo: "pottery-workshop.jpg",
-    teaser: "Shape clay on the wheel at the SITA Cultural Centre — a meditative hour that leaves you with a handmade piece and a new respect for craft.",
+    teaser: "Shape clay on the wheel at the SITA Cultural Centre: a meditative hour that leaves you with a handmade piece and a new respect for craft.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Hands-On-Pottery-Workshop-at-Sita-Cultural-Center/d22690-8207P7",
   },
   {
@@ -144,7 +144,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $99",
     gradient: "linear-gradient(135deg, #1c1917 0%, #57534e 100%)",
     photo: "creole-cooking.jpg",
-    teaser: "Cook with Anita's family and taste the cuisine that exists nowhere else on earth — a fusion of French, Vietnamese, Creole, and Tamil flavours born in Pondicherry's unique history.",
+    teaser: "Cook with Anita's family and taste the cuisine that exists nowhere else on earth, a fusion of French, Vietnamese, Creole, and Tamil flavours born in Pondicherry's unique history.",
     viatorUrl: "https://www.viator.com/tours/Pondicherry/Explore-South-Indian-Food-in-a-Private-In-Home-Dining-Experience-in-Alwarpet-Chennai/d22690-7626P80",
   },
   {
@@ -155,7 +155,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $32",
     gradient: "linear-gradient(135deg, #713f12 0%, #ca8a04 100%)",
     photo: "street-food-tour.jpg",
-    teaser: "Pondicherry's street food is a world of its own — banana-leaf meals, Tamil snacks, Indo-French pastries. A guide who knows every stall takes you through it all.",
+    teaser: "Pondicherry's street food is a world of its own: banana-leaf meals, Tamil snacks, Indo-French pastries. A guide who knows every stall takes you through it all.",
     viatorUrl: "https://www.getyourguide.com/pondichery-l32421/saveurs-de-pondichery-visite-guidee-et-degustation-de-street-food-t1130490/",
   },
   {
@@ -166,7 +166,7 @@ export const experiences: ViatorExperience[] = [
     price: "from $9",
     gradient: "linear-gradient(135deg, #4a044e 0%, #a21caf 100%)",
     photo: "saree-draping-workshop.jpg",
-    teaser: "Learn to drape a saree the right way — the history behind each style, the stories tied to the cloth, and how to carry yourself with the grace it deserves.",
+    teaser: "Learn to drape a saree the right way: the history behind each style, the stories tied to the cloth, and how to carry yourself with the grace it deserves.",
     viatorUrl: "https://www.getyourguide.com/auroville-l123545/pondichery-atelier-de-drapage-du-sari-t925379/",
   },
 ];

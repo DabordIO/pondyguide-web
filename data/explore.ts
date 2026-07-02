@@ -87,9 +87,9 @@ Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo As
     cardTitle: "Ousteri Lake",
     photo: "ousteri-lake.jpg",
     teaser:
-      "The largest natural freshwater lake in the Pondicherry region, five kilometres west of town. A Ramsar wetland with over 170 recorded bird species — flamingoes, painted storks, and spot-billed pelicans among them.",
+      "The largest natural freshwater lake in the Pondicherry region, five kilometres west of town. A Ramsar wetland with over 170 recorded bird species, flamingoes, painted storks, and spot-billed pelicans among them.",
     duration: "Half day",
-    body: `Ousteri (also spelled Oussudu) is a shallow freshwater lake covering around 40 square kilometres on the western edge of the Pondicherry Union Territory, straddling the border with Tamil Nadu. The lake and its surrounding wetlands were declared a Ramsar site — internationally important wetland — in 2002, and the area falls under a wildlife protection order that restricts development on the shoreline.
+    body: `Ousteri (also spelled Oussudu) is a shallow freshwater lake covering around 40 square kilometres on the western edge of the Pondicherry Union Territory, straddling the border with Tamil Nadu. The lake and its surrounding wetlands were declared a Ramsar site, an internationally important wetland, in 2002, and the area falls under a wildlife protection order that restricts development on the shoreline.
 
 **The birds**
 
@@ -115,11 +115,11 @@ Ousteri is approximately five kilometres west of Pondicherry town centre, a 15-m
     teaser:
       "Seventy kilometres west of Pondicherry, one of the most formidable fortresses in South India: three granite hills connected by walls and bastions, called the Troy of the East by the British.",
     duration: "Full day",
-    body: `Gingee (pronounced Senji) is one of the most impressive fortresses in South India and one of the least visited given its scale. Located 70 kilometres west of Pondicherry — about 1.5 hours by road — the fort complex covers three separate granite hills connected by massive walls, bastions, and moats spanning approximately 11 square kilometres.
+    body: `Gingee (pronounced Senji) is one of the most impressive fortresses in South India and one of the least visited given its scale. Located 70 kilometres west of Pondicherry, about 1.5 hours by road, the fort complex covers three separate granite hills connected by massive walls, bastions, and moats spanning approximately 11 square kilometres.
 
 **History**
 
-Built by the Nayaks of Gingee in the 15th century on foundations that may be older, the fort passed through successive hands without ever falling easily. Shivaji captured it in 1677 and found it so impressive that he called it the most impregnable fortress in India. The Mughals besieged it for eight years and finally took it in 1698 only through negotiation rather than force. The French held it briefly in the 18th century, followed by the British, who named it the Troy of the East — a phrase that has stayed with it since.
+Built by the Nayaks of Gingee in the 15th century on foundations that may be older, the fort passed through successive hands without ever falling easily. Shivaji captured it in 1677 and found it so impressive that he called it the most impregnable fortress in India. The Mughals besieged it for eight years and finally took it in 1698 only through negotiation rather than force. The French held it briefly in the 18th century, followed by the British, who named it the Troy of the East, a phrase that has stayed with it since.
 
 **What to see**
 
@@ -181,12 +181,12 @@ The site lies about four kilometres south of the French Quarter near Ariyankuppa
     highlights: [
       "The site itself has no panels or infrastructure. Visit the Pondicherry Museum first to see the finds, including Arretine pottery with its Italian potters' stamps.",
       "Look for the low mound near the Ariyankuppam River estuary and the remains of the brick warehouse. This was a working port for over 600 years.",
-      "The site may be the 'Poduke' described in the Periplus of the Erythraean Sea and by Ptolemy — possibly derived from Tamil 'Potikai', meaning 'meeting place'.",
+      "The site may be the 'Poduke' described in the Periplus of the Erythraean Sea and by Ptolemy, possibly derived from Tamil 'Potikai', meaning 'meeting place'.",
     ],
     visitInfo: {
       hours: "Accessible at all times (ASI-protected, unmanaged)",
       entry: "Free",
-      tip: "4 km south on the coast road toward Ariyankuppam. No signage or facilities on site. Visit the Pondicherry Museum first — the Arikamedu finds there make the site itself far easier to read.",
+      tip: "4 km south on the coast road toward Ariyankuppam. No signage or facilities on site. Visit the Pondicherry Museum first: the Arikamedu finds there make the site itself far easier to read.",
     },
   },
 

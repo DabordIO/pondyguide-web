@@ -97,7 +97,7 @@ Twelve themed gardens encircle the Matrimandir, each corresponding to one of the
     photo: "sustainable-living.jpg",
     teaser:
       "Since 1968, Auroville has reforested a barren plateau, pioneered solar cooking for a thousand meals a day, and developed compressed earth architecture now taught across dozens of countries. A working model, not a showcase.",
-    body: `Auroville is frequently cited as one of the world's most significant experiments in sustainable living, and not without reason. What began as a practical necessity in the late 1960s — building a community on barren land with no infrastructure — became a working model that has influenced ecological, architectural and energy projects across India and internationally.
+    body: `Auroville is frequently cited as one of the world's most significant experiments in sustainable living, and not without reason. What began as a practical necessity in the late 1960s, building a community on barren land with no infrastructure, became a working model that has influenced ecological, architectural and energy projects across India and internationally.
 
 **Reforesting a barren landscape**
 
@@ -153,7 +153,7 @@ Auroville has built an international reputation for natural incense. AuroMira an
 
 **Ceramics**
 
-The hub of ceramic activity in Auroville is the Dana Community, a cluster of studios tucked into a secluded part of the township. Two operations work side by side — Flame Pottery and Mandala Pottery — sharing clay supplies and kiln access. Production spans wheel-thrown and slab-built pieces fired in wood-burning kilns, ranging from everyday tableware and incense holders to sculptural work that ships to Europe and beyond. The workspace walls are covered in tribal paintings, which makes the visit worth making for the atmosphere alone.
+The hub of ceramic activity in Auroville is the Dana Community, a cluster of studios tucked into a secluded part of the township. Two operations work side by side, Flame Pottery and Mandala Pottery, sharing clay supplies and kiln access. Production spans wheel-thrown and slab-built pieces fired in wood-burning kilns, ranging from everyday tableware and incense holders to sculptural work that ships to Europe and beyond. The workspace walls are covered in tribal paintings, which makes the visit worth making for the atmosphere alone.
 
 Other ceramic studios across the township organise short workshops in wheel throwing and hand-building for visitors; schedules vary, so check availability before arriving.
 
