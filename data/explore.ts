@@ -198,13 +198,51 @@ The site lies about four kilometres south of the French Quarter near Ariyankuppa
     cardTitle: "Pichavaram",
     photo: "pichavaram.jpg",
     teaser:
-      "One of India's largest mangrove forests, 65 kilometres north of Pondicherry. A boat through narrow waterways between the roots, with herons overhead and crabs below. One of the quietest and most unusual half-days you can spend near Pondicherry.",
-    duration: "Half day",
-    body: `Pichavaram lies approximately 65 kilometres north of Pondicherry, near the temple town of Chidambaram in Cuddalore district. It is one of the largest mangrove forests in India, covering around 1,100 hectares of tidal wetland between two estuaries: the Vellar to the north and the Coleroon to the south.\n\nThe forest is a dense network of waterways, islands, and channels threading between the aerial roots of the mangroves. From a boat, the canopy closes overhead and the noise of the coast disappears. The water is shallow and tidal, brackish and generally calm. The overall effect is unlike anything else near Pondicherry.\n\n**Getting there and getting on the water**\n\nBoats are operated by the Tamil Nadu Tourism Development Corporation (TTDC) from a boat house at the edge of the forest. Both motor boats and rowing boats are available; the rowing boats are quieter and the better choice for bird watching. The boat house also has a basic cafeteria.\n\nThe drive from Pondicherry takes around 90 minutes via the East Coast Road (ECR) and Chidambaram. Most visitors combine Pichavaram with a visit to the Nataraja Temple at Chidambaram, one of the most important Shiva temples in Tamil Nadu.\n\n**The birds**\n\nPichavaram is a significant bird habitat. Herons, egrets, kingfishers, cormorants, spoonbills, and painted storks are regularly sighted. The best time for bird watching is early morning, before the motor boats arrive in numbers.\n\n**When to go**\n\nThe forest is accessible year-round but most pleasant between October and February, when the heat is manageable and migrant birds are present. Avoid peak summer months (April and May). Early morning visits give the best light and the quietest conditions on the water.\n\n**Practical information**\n\nBoat house hours: generally 7am to 5pm. Timings can vary; check with your accommodation before setting out. The site is managed by TTDC and entry fees apply per boat. Facilities on site are basic.`,
+      "One of India's most remarkable coastal landscapes, 65 kilometres north of Puducherry. More than 1,100 hectares of tidal channels, small islands, and mangrove forest best explored by rowing boat through passages barely wider than the boat itself.",
+    duration: "Half to full day",
+    body: `About 65 kilometres north of Puducherry, Pichavaram is one of India's most remarkable coastal landscapes. Here, the Vellar and Coleroon rivers meet the Bay of Bengal, creating an intricate network of tidal channels, small islands, and mangrove forests that stretches across more than 1,100 hectares. Exploring these waterways by boat is one of the most memorable excursions from Puducherry, offering a complete contrast to the city's colonial streets and seaside promenade.
+
+The mangroves form a living ecosystem where salt water and fresh water mingle. Dense stands of mangrove trees send down tangled aerial roots that stabilise the shoreline, provide breeding grounds for fish and crustaceans, and create an important habitat for resident and migratory birds. Many of the narrow waterways are accessible only by small rowing boats, allowing visitors to glide quietly beneath the leafy canopy through passages barely wider than the boat itself.
+
+## Exploring the Mangroves
+
+The best way to experience Pichavaram is on the water. The Tamil Nadu Tourism Development Corporation (TTDC) operates boat services from the Pichavaram Boat House, offering both motor boats and traditional rowing boats. Motor boats cover a larger area in less time, while rowing boats can enter the narrowest channels where the forest feels almost enclosed by arching branches and interwoven roots.
+
+As the boat moves deeper into the mangroves, the sounds of traffic disappear, replaced by birdsong, the splash of fish, and the gentle movement of the tide. The calm, brackish water reflects the dense green canopy overhead, creating one of the most peaceful natural settings on the Coromandel Coast.
+
+## Wildlife
+
+Pichavaram supports a rich variety of wildlife and is particularly rewarding for birdwatchers. Common sightings include little and great egrets, grey and purple herons, pond herons, cormorants, kingfishers, darters, and black-headed ibises. During the cooler months, migratory birds add to the diversity of species found in the wetlands.
+
+The mangrove ecosystem also supports mudskippers, crabs, prawns, molluscs, and numerous fish species that depend on these sheltered waters during part of their life cycle. Although the forest is rich in wildlife, its greatest attraction is often the experience of moving quietly through one of India's best-preserved mangrove landscapes.
+
+## A Perfect Day Trip from Puducherry
+
+Pichavaram lies close to Chidambaram, making it easy to combine both destinations in a single day. Many visitors spend the morning exploring the mangroves before continuing to the magnificent Nataraja Temple, one of the most important Shiva temples in India and a masterpiece of Chola architecture.
+
+The drive from Puducherry along the East Coast Road takes approximately one and a half to two hours, passing fishing villages, salt pans, and stretches of the Bay of Bengal before reaching the mangrove reserve.
+
+## When to Visit
+
+Pichavaram can be visited throughout the year, but the most comfortable months are from October to February, when temperatures are lower and migratory birds are present. Early morning and late afternoon offer the best light for photography and the most pleasant conditions on the water. Visitors interested in birdwatching should choose the first boat departures of the day, when the forest is at its quietest.
+
+## Practical Information
+
+The Pichavaram Boat House is managed by the Tamil Nadu Tourism Development Corporation. Both rowing boats and motor boats are available, with charges depending on the type of boat and the duration of the trip. Basic refreshments, restrooms, and parking are available at the boat house.
+
+Allow at least two to three hours for the visit, particularly if choosing a rowing boat through the narrow mangrove channels. Lightweight clothing, sunscreen, drinking water, and insect repellent are recommended, especially during the warmer months.
+
+**Distance from Puducherry:** Approximately 65 km
+
+**Driving time:** Around 1½ to 2 hours
+
+**Boat House:** Generally open daily from about 8:00 am to 5:00 pm
+
+**Best experience:** Choose a rowing boat for a slower journey through the narrow waterways, and combine your visit with Chidambaram's Nataraja Temple for one of the finest day trips from Puducherry.`,
     visitInfo: {
-      hours: "Approximately 7am to 5pm (verify locally)",
+      hours: "Generally 8:00 am to 5:00 pm daily (verify locally)",
       entry: "Per boat; rates vary by boat type",
-      tip: "Go early. Rowing boats are quieter than motor boats and better for the birds. Combine with the Nataraja Temple at Chidambaram on the same day.",
+      tip: "Choose a rowing boat for the narrow channels. Go early for the birds. Combine with the Nataraja Temple at Chidambaram on the same day.",
     },
   },
 
