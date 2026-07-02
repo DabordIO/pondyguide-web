@@ -44,7 +44,7 @@ function ArticleCard({ href, photo, photoFolder = "history", title, teaser, prio
     <Link href={href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
       {photo && (
         <div style={{ position: "relative", width: "100%", height: 180 }}>
-          <Image src={`/${photoFolder}/${photo}`} alt={title} fill style={{ objectFit: "cover" }} priority={priority} />
+          <Image src={`/${photoFolder}/${photo}`} alt={title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} priority={priority} />
         </div>
       )}
       <div style={{ padding: "16px 18px 18px" }}>
@@ -98,7 +98,7 @@ export default function HomePage() {
           ].map(h => (
             <Link key={h.href} href={h.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={h.photo} alt={h.title} fill style={{ objectFit: "cover" }} />
+                <Image src={h.photo} alt={h.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{h.title}</p>
@@ -118,7 +118,7 @@ export default function HomePage() {
           {featuredFigures.map(f => (
             <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 280, background: "#f0ece6" }}>
-                <Image src={`/figures/${f.photo}`} alt={f.name} fill style={{ objectFit: "cover", objectPosition: "center top" }} />
+                <Image src={`/figures/${f.photo}`} alt={f.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: "center top" }} />
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
@@ -141,7 +141,7 @@ export default function HomePage() {
             <Link key={r.id} href={`/restaurants/${r.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               {r.photo && (
                 <div style={{ position: "relative", width: "100%", height: 180 }}>
-                  <Image src={`/restaurants/${r.photo}`} alt={r.name} fill style={{ objectFit: "cover" }} />
+                  <Image src={`/restaurants/${r.photo}`} alt={r.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
                 </div>
               )}
               <div style={{ padding: "14px 16px 18px" }}>
@@ -178,7 +178,7 @@ export default function HomePage() {
           ].map(s => (
             <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={s.photo} alt={s.title} fill style={{ objectFit: "cover" }} />
+                <Image src={s.photo} alt={s.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{s.label}</p>
@@ -201,7 +201,7 @@ export default function HomePage() {
           ].map(e => (
             <Link key={e.href} href={e.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={e.photo} alt={e.title} fill style={{ objectFit: "cover" }} />
+                <Image src={e.photo} alt={e.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{e.title}</p>
@@ -237,7 +237,7 @@ export default function HomePage() {
           ].map(f => (
             <Link key={f.href} href={f.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={f.photo} alt={f.title} fill style={{ objectFit: "cover" }} />
+                <Image src={f.photo} alt={f.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{f.label}</p>
@@ -261,7 +261,7 @@ export default function HomePage() {
           ].map(item => (
             <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
               <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={item.photo} alt={item.title} fill style={{ objectFit: "cover" }} />
+                <Image src={item.photo} alt={item.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
