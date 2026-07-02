@@ -72,6 +72,7 @@ Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo As
     id: "activity-beach-lighthouse-walk",
     category: "walk",
     title: "The Lighthouse and Fishing Village Walk",
+    photo: "new-lighthouse.png",
     teaser:
       "From the promenade south through a working fishing village to the new lighthouse. Fabric warehouses with traditional looms, the old lighthouse on its circular base, and a 360-degree view from the top for 5 rupees.",
     duration: "1 to 2 hours",
@@ -187,6 +188,22 @@ The site lies about four kilometres south of the French Quarter near Ariyankuppa
       hours: "Accessible at all times (ASI-protected, unmanaged)",
       entry: "Free",
       tip: "4 km south on the coast road toward Ariyankuppam. No signage or facilities on site. Visit the Pondicherry Museum first: the Arikamedu finds there make the site itself far easier to read.",
+    },
+  },
+
+  {
+    id: "daytrip-pichavaram",
+    category: "daytrip",
+    title: "Pichavaram Mangrove Forest",
+    cardTitle: "Pichavaram",
+    teaser:
+      "One of India's largest mangrove forests, 65 kilometres north of Pondicherry. A boat through narrow waterways between the roots, with herons overhead and crabs below. One of the quietest and most unusual half-days you can spend near Pondicherry.",
+    duration: "Half day",
+    body: `Pichavaram lies approximately 65 kilometres north of Pondicherry, near the temple town of Chidambaram in Cuddalore district. It is one of the largest mangrove forests in India, covering around 1,100 hectares of tidal wetland between two estuaries: the Vellar to the north and the Coleroon to the south.\n\nThe forest is a dense network of waterways, islands, and channels threading between the aerial roots of the mangroves. From a boat, the canopy closes overhead and the noise of the coast disappears. The water is shallow and tidal, brackish and generally calm. The overall effect is unlike anything else near Pondicherry.\n\n**Getting there and getting on the water**\n\nBoats are operated by the Tamil Nadu Tourism Development Corporation (TTDC) from a boat house at the edge of the forest. Both motor boats and rowing boats are available; the rowing boats are quieter and the better choice for bird watching. The boat house also has a basic cafeteria.\n\nThe drive from Pondicherry takes around 90 minutes via the East Coast Road (ECR) and Chidambaram. Most visitors combine Pichavaram with a visit to the Nataraja Temple at Chidambaram, one of the most important Shiva temples in Tamil Nadu.\n\n**The birds**\n\nPichavaram is a significant bird habitat. Herons, egrets, kingfishers, cormorants, spoonbills, and painted storks are regularly sighted. The best time for bird watching is early morning, before the motor boats arrive in numbers.\n\n**When to go**\n\nThe forest is accessible year-round but most pleasant between October and February, when the heat is manageable and migrant birds are present. Avoid peak summer months (April and May). Early morning visits give the best light and the quietest conditions on the water.\n\n**Practical information**\n\nBoat house hours: generally 7am to 5pm. Timings can vary; check with your accommodation before setting out. The site is managed by TTDC and entry fees apply per boat. Facilities on site are basic.`,
+    visitInfo: {
+      hours: "Approximately 7am to 5pm (verify locally)",
+      entry: "Per boat; rates vary by boat type",
+      tip: "Go early. Rowing boats are quieter than motor boats and better for the birds. Combine with the Nataraja Temple at Chidambaram on the same day.",
     },
   },
 
