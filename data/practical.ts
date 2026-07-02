@@ -90,7 +90,7 @@ Walking tours of the French Quarter with lunch are available through Get Your Gu
 
 **The French Consulate**
 
-For French nationals and registered visitors, the French Consulate is on the seafront on Goubert Avenue. It handles consular services but not general tourist enquiries. Visa services for Indian nationals applying for French visas are handled through a third-party provider, not the consulate directly. The consulate also has a branch in Chennai.
+For French nationals and registered visitors, the [French Consulate](/history/institutions/consulate-general) is on the seafront on [Goubert Avenue](/discover/white-town/avenue-goubert). It handles consular services but not general tourist enquiries. Visa services for Indian nationals applying for French visas are handled through a third-party provider, not the consulate directly. The consulate also has a branch in Chennai.
 
 **Money and Payments**
 
@@ -136,7 +136,7 @@ Pondicherry has a unique cultural identity where Tamil traditions blend with Fre
 
 When entering temples, footwear must always be removed. Photography inside temples may be restricted, so observe signboards before taking pictures.
 
-Near the Sri Aurobindo Ashram, visitors are expected to maintain silence. Loud conversations, music and unnecessary photography should be avoided. Many people visit the Ashram for meditation and reflection rather than sightseeing.
+Near the [Sri Aurobindo Ashram](/discover/landmarks/ashram), visitors are expected to maintain silence. Loud conversations, music and unnecessary photography should be avoided. Many people visit the Ashram for meditation and reflection rather than sightseeing.
 
 Churches should also be visited respectfully. During prayer services, visitors should remain quiet and avoid interrupting worshippers.
 
@@ -321,7 +321,7 @@ Pondicherry is warm throughout the year. Light cotton or linen in loose fits is 
 
 **Temple and ashram dress code**
 
-At all Hindu temples, cover shoulders and knees: this applies to men as well as women. Shorts and sleeveless tops are not acceptable at religious sites. Most temples also ask you to remove your shoes before entering; leave them at the entrance or in the designated area. At Sri Aurobindo Ashram, modest and respectful clothing is required: no shorts, no bare shoulders.
+At all Hindu temples, cover shoulders and knees: this applies to men as well as women. Shorts and sleeveless tops are not acceptable at religious sites. Most temples also ask you to remove your shoes before entering; leave them at the entrance or in the designated area. At [Sri Aurobindo Ashram](/discover/landmarks/ashram), modest and respectful clothing is required: no shorts, no bare shoulders.
 
 **Shoes**
 

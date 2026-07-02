@@ -25,7 +25,7 @@ export const institutionArticles: InstitutionArticle[] = [
     website: "https://www.lfpondichery.com",
     body: `On 26 October 1826, Governor Eugène Desbassayns de Richemont signed the founding decree for a college for boys in Pondicherry. He called it the Collège Royal de Pondichéry. It is still open today, nearly two hundred years later, as the Lycée Français International de Pondichéry. Its bicentenary falls in 2026, making it one of the oldest continuously operating French overseas schools in the world.
 
-On the same day, the same governor signed the founding decree for the Pensionnat de Jeunes Filles. Two institutions, one year, one administrator. Between them they defined the structure of French colonial education in India for the century that followed.
+On the same day, the same governor signed the founding decree for the [Pensionnat de Jeunes Filles](/history/institutions/pensionnat). Two institutions, one year, one administrator. Between them they defined the structure of French colonial education in India for the century that followed.
 
 **The Colonial College**
 
@@ -72,7 +72,7 @@ That continuity across three regimes, across colonial and postcolonial, across F
     photoFolder: "sites",
     address: "Rue de la Marine, White Town, Puducherry",
     website: "https://in.ambafrance.org/Pondicherry",
-    body: `The Consulate General of France in Pondicherry is not simply another diplomatic mission. It is the direct institutional successor of nearly three centuries of French administration in India: one of the very few diplomatic representations in the world that evolved from a former colonial government into a modern consular office without ever closing, without ever relocating, and without ever breaking the thread of institutional continuity that connects it to François Martin's first settlement in 1674.
+    body: `The Consulate General of France in Pondicherry is not simply another diplomatic mission. It is the direct institutional successor of nearly three centuries of French administration in India: one of the very few diplomatic representations in the world that evolved from a former colonial government into a modern consular office without ever closing, without ever relocating, and without ever breaking the thread of institutional continuity that connects it to [François Martin](/history/lives-and-legacies/francois-martin)'s first settlement in 1674.
 
 **From Colonial Capital to Consulate**
 
@@ -86,7 +86,7 @@ Most countries establish consulates where there is a significant national commun
 
 Following the transfer, thousands of residents chose French nationality over Indian citizenship. Descendants of renonçant families, Franco-Tamil veterans, civil servants and their children: a large and rooted community of French nationals chose to remain in Pondicherry rather than emigrate. They needed passports, civil registration, electoral rolls, notarial services, pension administration, and a French state that could see them. The Consulate General was that state.
 
-Today it also serves as the coordinating centre for France's institutional presence across southern India: the Alliance Française de Pondichéry, the Lycée Français International, the EFEO, and the broader network of French cultural and research activity in the region. Its jurisdiction extends beyond Pondicherry to cover Tamil Nadu through its office in Chennai.
+Today it also serves as the coordinating centre for France's institutional presence across southern India: the [Alliance Française de Pondichéry](/history/institutions/alliance-francaise), the [Lycée Français International](/history/institutions/lycee-francais), the [EFEO](/history/institutions/efeo), and the broader network of French cultural and research activity in the region. Its jurisdiction extends beyond Pondicherry to cover Tamil Nadu through its office in Chennai.
 
 **The Community It Serves**
 
@@ -96,7 +96,7 @@ The community it serves includes French citizens born in Puducherry, descendants
 
 **Bastille Day and the War Memorial**
 
-Each year on 14 July, the Consulate organises the Bastille Day ceremonies that remain a genuine civic occasion in Pondicherry. Wreaths are laid at the French War Memorial on Goubert Avenue, attended by French officials, veterans' families, and members of the Franco-Tamil community. These ceremonies are not pageantry. They reflect a shared history that extends beyond diplomacy into memory and identity, connecting the city to the soldiers it sent to the Western Front, to North Africa, to Indochina, and to the families those soldiers left behind.
+Each year on 14 July, the Consulate organises the [Bastille Day](/festivals/bastille-day) ceremonies that remain a genuine civic occasion in Pondicherry. Wreaths are laid at the [French War Memorial](/discover/landmarks/war-memorial) on [Goubert Avenue](/discover/white-town/avenue-goubert), attended by French officials, veterans' families, and members of the Franco-Tamil community. These ceremonies are not pageantry. They reflect a shared history that extends beyond diplomacy into memory and identity, connecting the city to the soldiers it sent to the Western Front, to North Africa, to Indochina, and to the families those soldiers left behind.
 
 **The Building**
 
@@ -137,13 +137,13 @@ Collectively this tradition has been essential for three things: the reconstruct
 
 The second major intellectual tradition is the more unexpected of the two, and it belongs almost entirely to one man. Jean Deloche, born in 1929 and a presence in Pondicherry from the 1960s until near his death in 2019, who directed the centre from 1992 to 1994, fundamentally expanded what the discipline could ask.
 
-Deloche demonstrated that Indian history could be reconstructed not only through texts but through the physical infrastructure of the subcontinent. Roads and their routing logic. River crossings and navigation systems. Port infrastructure along the Coromandel and Malabar coasts. The fortification systems of South India, including his monumental documentation of the great fort complex at Gingee. The territorial organisation of kingdoms as readable from Dutch and French cartographic sources that colonial administrators had produced without understanding their scholarly value.
+Deloche demonstrated that Indian history could be reconstructed not only through texts but through the physical infrastructure of the subcontinent. Roads and their routing logic. River crossings and navigation systems. Port infrastructure along the Coromandel and Malabar coasts. The fortification systems of South India, including his monumental documentation of the great fort complex at [Gingee](/discover/explore/daytrip-gingee). The territorial organisation of kingdoms as readable from Dutch and French cartographic sources that colonial administrators had produced without understanding their scholarly value.
 
 He showed that bridges, roads, forts, and spatial networks are historical documents as legible as inscriptions, if you know how to read them. This transformed EFEO Pondicherry into a centre not only for textual and philological scholarship but for historical geography and material civilisation studies in the fullest sense.
 
 **The Living Centre**
 
-The library on the Dumas Street campus holds thousands of volumes on Sanskrit, Tamil, and South and Southeast Asian languages, alongside rubbings of stone inscriptions, palm-leaf manuscripts, and photographic archives accumulated over more than a century of fieldwork. For certain areas of Indology and epigraphy, it is irreplaceable. Researchers arrive from France, Europe, Japan, and North America specifically to use it.
+The library on the [Dumas Street](/discover/white-town/rue-dumas) campus holds thousands of volumes on Sanskrit, Tamil, and South and Southeast Asian languages, alongside rubbings of stone inscriptions, palm-leaf manuscripts, and photographic archives accumulated over more than a century of fieldwork. For certain areas of Indology and epigraphy, it is irreplaceable. Researchers arrive from France, Europe, Japan, and North America specifically to use it.
 
 The centre continues to conduct field research across South India, publish critical scholarly editions of manuscripts and inscriptions, and collaborate with Indian universities and institutions. It remains one of the most respected global centres for South Asian studies.
 
@@ -218,7 +218,7 @@ Pondicherry is one of the very few places in India where French was an official 
 
 **What It Offers**
 
-The Alliance Française de Pondichéry runs French language courses at every level, from complete beginner through advanced, and prepares students for the DELF and DALF official qualifications that are recognised by French universities and European employers. Its library holds French books, films, and periodicals. Its cultural programme brings cinema, music, and exhibitions to a city that has particular reasons to be interested.
+The [Alliance Française de Pondichéry](/history/institutions/alliance-francaise) runs French language courses at every level, from complete beginner through advanced, and prepares students for the DELF and DALF official qualifications that are recognised by French universities and European employers. Its library holds French books, films, and periodicals. Its cultural programme brings cinema, music, and exhibitions to a city that has particular reasons to be interested.
 
 **Three Reasons to Be in the Same Classroom**
 
@@ -233,7 +233,7 @@ The Pondicherry Alliance Française draws a student body that would be unusual i
     teaser:
       "The first structured institution of girls' education in French India. It was started by missionaries, taken over by the colonial state in 1903, and transferred to Indian administration in 1954. It is still open today.",
     gradient: "linear-gradient(135deg, #2d1b69 0%, #5b2d8e 100%)",
-    body: `In 1826, the French colonial administration in Pondicherry made a deliberate decision: to open a formal school for girls. Before this, structured female education in French India was extremely limited. Governor Eugène Desbassayns de Richemont signed the founding decree and entrusted the institution to the Sisters of Saint Joseph of Cluny, who had arrived in Pondicherry the previous year. The school they opened was the Pensionnat de Jeunes Filles: the first structured institution of girls' education in French India.
+    body: `In 1826, the French colonial administration in Pondicherry made a deliberate decision: to open a formal school for girls. Before this, structured female education in French India was extremely limited. Governor Eugène Desbassayns de Richemont signed the founding decree and entrusted the institution to the [Sisters of Saint Joseph of Cluny](/history/institutions/cluny-schools), who had arrived in Pondicherry the previous year. The school they opened was the Pensionnat de Jeunes Filles: the first structured institution of girls' education in French India.
 
 **The Mission**
 
@@ -333,7 +333,7 @@ One section taught in French, preparing students for the examination systems of 
 
 The school's most consequential role turned out to be one its founder probably did not anticipate. Through the first half of the twentieth century, Calvé College became a space of political formation and intellectual awakening for Pondicherry's non-elite Tamil communities.
 
-V. Subbiah, a Communist leader and freedom fighter, was among its alumni. M.O.H. Farook, who would later serve as Chief Minister of Puducherry, is also associated with its legacy as recorded in heritage documents. The school produced nationalists, labour organisers, and early communist thinkers at a moment when Pondicherry's political consciousness was sharpening in the face of French colonial rule, and when the independence movement across British India was making the question of who ruled the subcontinent impossible to ignore. That a Tamil philanthropic school, not one of the French or Catholic institutions, became a nursery of political consciousness in French India is one of the more interesting facts about the city's educational history.
+[V. Subbiah](/history/lives-and-legacies/v-subbiah), a Communist leader and freedom fighter, was among its alumni. M.O.H. Farook, who would later serve as Chief Minister of Puducherry, is also associated with its legacy as recorded in heritage documents. The school produced nationalists, labour organisers, and early communist thinkers at a moment when Pondicherry's political consciousness was sharpening in the face of French colonial rule, and when the independence movement across British India was making the question of who ruled the subcontinent impossible to ignore. That a Tamil philanthropic school, not one of the French or Catholic institutions, became a nursery of political consciousness in French India is one of the more interesting facts about the city's educational history.
 
 **The Building**
 
@@ -392,7 +392,7 @@ Some faced specific restrictions related to former foreign military service and 
 
 The Foyer du Soldat no longer functions as it once did. The generation of men who actually served is now very old, and the institution has moved from active social infrastructure toward something closer to commemoration. Its traces survive in family oral histories, in historical photographs, in the Bastille Day ceremonies still held at the war memorial on Goubert Avenue, and in the Franco-Tamil families of Reddiyarpalayam and the surrounding neighbourhoods who carry the knowledge of where their grandfathers went and what they did there.
 
-A monument near the city also commemorates the WWI soldiers of these villages: their names, their origins, their deployment into a global war that most of them probably never expected to survive. It is a reminder that Pondicherry's French story was not only an administrative or cultural one. It was also a story of bodies sent to the other side of the world, and of the institutions built to receive them when some of them came back.
+The [war memorial on Goubert Avenue](/discover/landmarks/war-memorial) commemorates the soldiers from these villages: their names, their origins, their deployment into a global war that most of them probably never expected to survive. [Bastille Day](/festivals/bastille-day) ceremonies at the memorial remain a genuine civic occasion in the city. It is a reminder that Pondicherry's French story was not only an administrative or cultural one. It was also a story of bodies sent to the other side of the world, and of the institutions built to receive them when some of them came back.
 
 The Foyer du Soldat is one of the vanishing institutional memories of French India: a small place that held a large and unlikely history, built around men who were Tamil by origin, French by legal identity, and soldiers of an empire that no longer exists.`,
   },

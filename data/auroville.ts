@@ -21,13 +21,13 @@ export const aurovilleArticles: AurovilleArticle[] = [
 
 On 28 February 1968, a ceremony took place on a plateau of eroded land about 12 kilometres north of Pondicherry. Representatives of 124 nations and the States and Union Territories of India placed soil from their homelands into a marble-clad urn at the centre of the site.
 
-Mirra Alfassa, known as The Mother, sent a message that was read aloud: "Auroville wants to be a universal town where men and women of all countries are able to live in peace and progressive harmony, above all creeds, all politics and all nationalities."
+[Mirra Alfassa](/history/lives-and-legacies/mirra-alfassa), known as The Mother, sent a message that was read aloud: "Auroville wants to be a universal town where men and women of all countries are able to live in peace and progressive harmony, above all creeds, all politics and all nationalities."
 
 More than half a century later, that statement remains Auroville's founding charter.
 
 **Not a spiritual retreat**
 
-Many visitors arrive expecting an ashram or a religious community centred on the teachings of Sri Aurobindo. Auroville grew from the vision of Sri Aurobindo and The Mother, but it has no official religion, no required belief system, and no prescribed form of worship.
+Many visitors arrive expecting an ashram or a religious community centred on the teachings of Sri Aurobindo. Auroville grew from the vision of [Sri Aurobindo](/history/lives-and-legacies/sri-aurobindo) and The Mother, but it has no official religion, no required belief system, and no prescribed form of worship.
 
 The Matrimandir, at the centre of the township, is intended for silent individual concentration rather than prayer or religious ceremonies. Residents include architects, engineers, artists, farmers, teachers, scientists and entrepreneurs from many parts of the world, united by a shared commitment to the experiment rather than a common faith.
 

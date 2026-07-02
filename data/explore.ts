@@ -25,7 +25,7 @@ export const exploreArticles: ExploreArticle[] = [
       "A self-guided walk through the French Quarter: colonial streets, heritage buildings, temples, and the seafront promenade. The best two hours you will spend in Pondicherry.",
     duration: "2 to 3 hours",
     photo: "walking-tour-1.jpg",
-    body: `The French Quarter of Pondicherry is one of the few places in India where you can walk down a street of colonial buildings with their original names still on the signs: Rue Dupleix, Rue Bussy, Rue de la Bourdonnais. The street grid was designed in the 1690s and has not changed since. The names survived decolonisation intact in 1962. Every name on the grid is a chapter in the story of French India.
+    body: `The French Quarter of Pondicherry is one of the few places in India where you can walk down a street of colonial buildings with their original names still on the signs: [Rue Dupleix](/discover/white-town/rue-dupleix), [Rue Bussy](/discover/white-town/rue-bussy), [Rue de la Bourdonnais](/discover/white-town/labourdonnais-street). The street grid was designed in the 1690s and has not changed since. The names survived decolonisation intact in 1962. Every name on the grid is a chapter in the story of French India.
 
 **Where to start**
 
@@ -33,7 +33,7 @@ Begin at the Romain Rolland Library on the main cross-street of the French Quart
 
 **The streets**
 
-Walk south down Rue Romain Rolland toward the seafront. Turn onto Rue Dupleix and walk its length: the buildings here are among the best-preserved in the White Town, with painted facades, shuttered windows, and bougainvillea over the balconies. This is the street the Instagram photographs come from.\n\nAt the eastern end of Rue Dupleix, you reach Goubert Avenue and the seafront. Walk north along the promenade toward the Gandhi statue (13 feet of bronze on eight monolithic granite pillars from Gingee Fort, unveiled Republic Day 1965) and the War Memorial (1938), where the names of Pondicherry's dead from two world wars are recorded in stone.
+Walk south down [Rue Romain Rolland](/discover/white-town/rue-romain-rolland) toward the seafront. Turn onto [Rue Dupleix](/discover/white-town/rue-dupleix) and walk its length: the buildings here are among the best-preserved in the White Town, with painted facades, shuttered windows, and bougainvillea over the balconies. This is the street the Instagram photographs come from.\n\nAt the eastern end of Rue Dupleix, you reach [Goubert Avenue](/discover/white-town/avenue-goubert) and the seafront. Walk north along the promenade toward the Gandhi statue (13 feet of bronze on eight monolithic granite pillars from Gingee Fort, unveiled Republic Day 1965) and the [War Memorial](/discover/landmarks/war-memorial) (1938), where the names of Pondicherry's dead from two world wars are recorded in stone.
 
 **The temple**
 
@@ -41,7 +41,7 @@ Turn west from the promenade down any of the cross-streets and you will find the
 
 **The promenade**
 
-Return to Goubert Avenue at the end of the walk. Le Café, the Sri Aurobindo Ashram's beachfront café, is the right place to sit with a coffee and watch the light change on the water. The Bay of Bengal faces east: sunrises here are worth the early alarm.`,
+Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo Ashram](/discover/landmarks/ashram)'s beachfront café, is the right place to sit with a coffee and watch the light change on the water. The Bay of Bengal faces east: sunrises here are worth the early alarm.`,
   },
 
   // ── ACTIVITIES ────────────────────────────────────────────────────────────
@@ -75,7 +75,7 @@ Return to Goubert Avenue at the end of the walk. Le Café, the Sri Aurobindo Ash
     teaser:
       "From the promenade south through a working fishing village to the new lighthouse. Fabric warehouses with traditional looms, the old lighthouse on its circular base, and a 360-degree view from the top for 5 rupees.",
     duration: "1 to 2 hours",
-    body: `The promenade on Goubert Avenue is the obvious starting point. Walk south from the Gandhi statue, past the Schoelcher bust on Port Road, toward the old lighthouse built by French engineer Louis Guerre in 1835. The old lighthouse is now a landmark rather than a working light (it was decommissioned in 1979) but its proportions are elegant: 29 metres tall on a circular white base, visible for 15 miles at sea in its working days.\n\nContinue south through the fishing village. This is the route worth taking for the walk itself, not just the destination: fabric warehouses line the lanes with traditional wooden looms visible through open doors, weavers working cloth in patterns that have not changed much in a century.\n\nThe new lighthouse in Dubrayapet (2km south of the White Town) is a red and white striped tower built in 1979 when the old light was retired. The spiral staircase of 250 steps leads to a viewing deck with a 360-degree view over the whole of Pondicherry, the Bay of Bengal, and the low flat country stretching west. Entry is 5 rupees, plus 25 rupees if you carry a camera.\n\nOpening hours: Tuesday to Sunday, 10am to 1pm and 3pm to 6pm. Closed Mondays. Occasional maintenance closures.\n\n**Note on swimming:** The beach along the Pondicherry promenade is not safe for swimming. The current is strong, warning signs are posted, and lifeguards are present. Auroville Beach, 30km north, is the nearest safe swimming beach.`,
+    body: `The promenade on [Goubert Avenue](/discover/white-town/avenue-goubert) is the obvious starting point. Walk south from the Gandhi statue, past the Schoelcher bust on Port Road, toward the old lighthouse built by French engineer Louis Guerre in 1835. The old lighthouse is now a landmark rather than a working light (it was decommissioned in 1979) but its proportions are elegant: 29 metres tall on a circular white base, visible for 15 miles at sea in its working days.\n\nContinue south through the fishing village. This is the route worth taking for the walk itself, not just the destination: fabric warehouses line the lanes with traditional wooden looms visible through open doors, weavers working cloth in patterns that have not changed much in a century.\n\nThe new lighthouse in Dubrayapet (2km south of the White Town) is a red and white striped tower built in 1979 when the old light was retired. The spiral staircase of 250 steps leads to a viewing deck with a 360-degree view over the whole of Pondicherry, the Bay of Bengal, and the low flat country stretching west. Entry is 5 rupees, plus 25 rupees if you carry a camera.\n\nOpening hours: Tuesday to Sunday, 10am to 1pm and 3pm to 6pm. Closed Mondays. Occasional maintenance closures.\n\n**Note on swimming:** The beach along the Pondicherry promenade is not safe for swimming. The current is strong, warning signs are posted, and lifeguards are present. Auroville Beach, 30km north, is the nearest safe swimming beach.`,
   },
 
   // ── DAY TRIPS ─────────────────────────────────────────────────────────────
@@ -169,13 +169,13 @@ Although local discoveries had attracted attention earlier, Arikamedu entered wo
 
 Further excavations by the French archaeologist Jean-Marie Casal between 1947 and 1950 added significantly to the picture while Puducherry was still under French administration. Between 1989 and 1992, the American archaeologist Vimala Begley re-examined the site and demonstrated that Arikamedu's history extended far beyond the Roman trading period. Rather than a settlement occupied for only a couple of centuries, it had remained active for more than six hundred years, from the 2nd century BCE until about the 8th century CE.
 
-Many of the finest discoveries, including Arretine pottery bearing the stamps of Italian potters, Roman amphorae, glassware, beads, coins, terracotta objects, and sculptures, are now displayed in the Pondicherry Museum. Some artefacts recovered during the French excavations are held in museums in France.
+Many of the finest discoveries, including Arretine pottery bearing the stamps of Italian potters, Roman amphorae, glassware, beads, coins, terracotta objects, and sculptures, are now displayed in the [Pondicherry Museum](/discover/landmarks/museum). Some artefacts recovered during the French excavations are held in museums in France.
 
 ## Visiting Today
 
 Arikamedu is best appreciated with a little imagination. What survives above ground is modest: low earthworks, scattered brick remains, and the foundations of a substantial brick warehouse overlooking the river. This was once a working port where cargo was unloaded, textiles dyed, beads manufactured, and merchants from distant cultures conducted business.
 
-There are few visitor facilities and only limited interpretation on site, making a visit to the Pondicherry Museum highly recommended before coming here. Seeing the Roman pottery, amphorae, beads, and glassware first helps bring the landscape into focus.
+There are few visitor facilities and only limited interpretation on site, making a visit to the [Pondicherry Museum](/discover/landmarks/museum) highly recommended before coming here. Seeing the Roman pottery, amphorae, beads, and glassware first helps bring the landscape into focus.
 
 The site lies about four kilometres south of the French Quarter near Ariyankuppam and can be reached by auto-rickshaw in about twenty minutes. Entry is free, and the cooler months from October to March offer the most comfortable conditions for exploring. An early morning visit is particularly rewarding, when the river is quiet and it is easier to imagine the harbour that connected the Tamil coast with the Roman world two thousand years ago.`,
     highlights: [
@@ -199,7 +199,7 @@ The site lies about four kilometres south of the French Quarter near Ariyankuppa
     teaser:
       "30km north of Pondicherry: the experimental township founded in 1968 by Mirra Alfassa as a city belonging to no nation. The golden Matrimandir dome is the visual centre. Allow half a day minimum.",
     duration: "Half to full day",
-    body: `Auroville was founded on 28 February 1968 by Mirra Alfassa, known as The Mother, as a city intended to belong to no single nation and to embody human unity in practice. Around 50,000 people attended the inauguration ceremony; delegates from 124 countries symbolically poured soil from their home nations into a marble urn at the centre of the site.\n\nToday Auroville is a functioning community of around 3,500 residents from 60 countries, living and working across a forested plateau north of Pondicherry. It has farms, schools, workshops, guesthouses, restaurants, and a software industry. It is governed by a board under the auspices of UNESCO.\n\n**The Matrimandir**
+    body: `Auroville was founded on 28 February 1968 by [Mirra Alfassa](/history/lives-and-legacies/mirra-alfassa), known as The Mother, as a city intended to belong to no single nation and to embody human unity in practice. Around 50,000 people attended the inauguration ceremony; delegates from 124 countries symbolically poured soil from their home nations into a marble urn at the centre of the site.\n\nToday Auroville is a functioning community of around 3,500 residents from 60 countries, living and working across a forested plateau north of Pondicherry. It has farms, schools, workshops, guesthouses, restaurants, and a software industry. It is governed by a board under the auspices of UNESCO.\n\n**The Matrimandir**
 
 The golden dome of the Matrimandir is the architectural and spiritual centre of Auroville. Access to the interior is strictly managed: you must register in advance at the Visitor Centre to enter the meditation chamber inside. Day visitors can view the dome from the designated outer viewing point without advance registration.\n\nThe interior chamber houses a large crystal ball lit by a single beam of sunlight tracked through the day. It is designed exclusively for silent meditation. Photography inside is not permitted.
 

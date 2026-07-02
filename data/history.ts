@@ -25,7 +25,7 @@ export const historyArticles: HistoryArticle[] = [
 
 The Periplus of the Erythraean Sea, a Greek merchant's handbook written around the first century AD, lists among the ports of the Coromandel Coast a place called Poduke. Scholars have argued over the identification for generations. The majority view now places Poduke at Arikamedu, a site two kilometres south of what would become Pondicherry's centre, where excavations in the 1940s by the archaeologist Sir Mortimer Wheeler produced something extraordinary: a Roman trading station in working condition.
 
-The finds were remarkable. Amphorae of the kind used to ship wine and olive oil from Italy. Sherds of Arretine ware, the fine red-gloss pottery manufactured in Arezzo that appears in the grandest Roman houses of the first century. Glass beads in their thousands. Fragments of lamps. Stamps of Roman merchants pressed into local clay. A full emporium, not a casual anchorage: warehouses, dye tanks where cloth was prepared for export, the infrastructure of sustained trade.
+The finds were remarkable. Amphorae of the kind used to ship wine and olive oil from Italy. Sherds of Arretine ware, the fine red-gloss pottery manufactured in Arezzo that appears in the grandest Roman houses of the first century. Glass beads in their thousands. Fragments of lamps. Stamps of Roman merchants pressed into local clay. A full emporium, not a casual anchorage: warehouses, dye tanks where cloth was prepared for export, the infrastructure of sustained trade. The site of [Arikamedu](/discover/explore/daytrip-arikamedu) is still accessible today, two kilometres south of the city centre.
 
 What did they trade for? The Tamil coast offered muslin so fine it was described in Roman sources as "woven air," along with pepper, pearls, tortoiseshell, and the precious gems that the Sangam poets counted among the glories of their world. The Yavanas, as the Tamils called Greeks and Romans alike, appear in the literature of this period not as exotic visitors but as familiar presences. The great poem Silappadikaram, set in the port city of Puhar a little north of here, shows Yavana merchants "carrying lamps of gold" in the torchlit streets, their ships riding at anchor in a harbour described with the pride of a city that knows the world comes to it.
 
@@ -33,13 +33,13 @@ What did they trade for? The Tamil coast offered muslin so fine it was described
 
 Long before the Romans arrived, and long after they departed, this place carried another name and another identity. Vedapuri: the city of the Vedas. The tradition holds that a Sanskrit university of considerable standing occupied ground here, drawing students from across the subcontinent. Pilgrims on the long road to Rameshwaram stopped here to rest. The sage Agastya, the great Vedic teacher said to have brought Sanskrit south of the Vindhyas, is associated with an ashram on this site.
 
-If you know where to look, that ashram stood on the same ground where Sri Aurobindo's ashram stands today. It is a detail that takes a moment to absorb: the continuity of sacred geography across three thousand years of human habitation.
+If you know where to look, that ashram stood on the same ground where [Sri Aurobindo's ashram](/discover/landmarks/ashram) stands today. It is a detail that takes a moment to absorb: the continuity of sacred geography across three thousand years of human habitation.
 
 **Kingdoms Without Number**
 
 The centuries between the fall of Rome and the arrival of the French produced a succession of powers, each leaving its mark.
 
-The Pallavas came first, those brilliant builders who gave the world Mahabalipuram and whose sculptors invented an aesthetic that spread across Southeast Asia. Pondicherry fell within their domain, then passed to the Cholas, whose naval empire reached as far as Sri Lanka, Burma, and the Malay Peninsula. The Pandyas took their turn. Then the great empire of Vijayanagara stretched its authority south to Cape Comorin and north along the Coromandel Coast. When Vijayanagara fell at the Battle of Talikota in 1565, the Nayaks of Tanjore inherited the fragments.
+The Pallavas came first, those brilliant builders who gave the world [Mahabalipuram](/discover/explore/daytrip-mahabalipuram) and whose sculptors invented an aesthetic that spread across Southeast Asia. Pondicherry fell within their domain, then passed to the Cholas, whose naval empire reached as far as Sri Lanka, Burma, and the Malay Peninsula. The Pandyas took their turn. Then the great empire of Vijayanagara stretched its authority south to Cape Comorin and north along the Coromandel Coast. When Vijayanagara fell at the Battle of Talikota in 1565, the Nayaks of Tanjore inherited the fragments.
 
 Through all of this, the town that would become Pondicherry remained a modest settlement of fishermen and weavers, significant for its port and its pilgrims, not for any political ambition of its own. The great powers fought over the Deccan plateau and the river valleys. The coast was transit, not prize.
 
@@ -51,7 +51,7 @@ In the years before 1674, when the French established themselves permanently, th
 
 **What the French Found**
 
-When François Martin, a man from Dieppe who had already spent decades learning the rhythms of this coast, established the French settlement at Pondicherry in 1674, he was not arriving in wilderness. He was arriving in a place that had been cosmopolitan for two millennia, that had received Romans and Arabs and Persians, and that knew how to receive Europeans as one more wave of commercial visitors.
+When [François Martin](/history/lives-and-legacies/francois-martin), a man from Dieppe who had already spent decades learning the rhythms of this coast, established the French settlement at Pondicherry in 1674, he was not arriving in wilderness. He was arriving in a place that had been cosmopolitan for two millennia, that had received Romans and Arabs and Persians, and that knew how to receive Europeans as one more wave of commercial visitors.
 
 The grid he laid out, the canal that divided the Tamil quarter from the French quarter, the street names that survive to this day: all of this was imposed on a landscape already thick with history. The French came late to a very old party. What they chose to do with their invitation is the story that follows.`,
   },
@@ -88,11 +88,11 @@ The French had first arrived at Surat in 1668, with the establishment of the Com
 
 **François Martin and Nine Men**
 
-In 1674, a French merchant named François Martin arrived at the site of Pondicherry with nine companions and a modest amount of capital. He had been working the Coromandel Coast since 1665, learning its languages, its markets, and its political structures. He had watched the Dutch, the British, and the Portuguese operate at close range and formed his own views about what worked.
+In 1674, a French merchant named [François Martin](/history/lives-and-legacies/francois-martin) arrived at the site of Pondicherry with nine companions and a modest amount of capital. He had been working the Coromandel Coast since 1665, learning its languages, its markets, and its political structures. He had watched the Dutch, the British, and the Portuguese operate at close range and formed his own views about what worked.
 
 He obtained a grant of land from the local Mughal governor, Sher Khan Lodi, and began to build. What he built was a grid: a rational, planned settlement divided by a canal into a French quarter to the east and an Indian quarter to the west. The streets ran straight. The warehouses and the governor's residence faced the sea. The canal became the boundary between two worlds that would coexist, uneasily, for three centuries.
 
-Martin governed Pondicherry for thirty-two years, surviving wars, Dutch occupation, and the chronic indifference of Paris. When he died in 1706, still in Pondicherry, he left behind a functioning city of several thousand people and a commercial network that reached across the entire coast. The street named after him in the French Quarter today is one of the quieter ones. It deserves more notice.
+Martin governed Pondicherry for thirty-two years, surviving wars, Dutch occupation, and the chronic indifference of Paris. When he died in 1706, still in Pondicherry, he left behind a functioning city of several thousand people and a commercial network that reached across the entire coast. The [street named after him](/discover/white-town/rue-francois-martin) in the French Quarter today is one of the quieter ones. It deserves more notice.
 
 **The British at Madras**
 
@@ -123,11 +123,11 @@ He understood that politics in the Mughal world was also theatre. To be taken se
 
 An observer wrote in 1746: "When he marches in ceremony, he is preceded by more than a hundred troopers and three elephants, upon which his flags are carried, and his coach is followed by a crowd of horsemen and jesters." This was not vanity. It was a calculated signal, broadcast in a visual language every Indian ruler would read correctly. The French governor was not a merchant seeking favours. He was a power among powers, entitled to negotiate as an equal.
 
-His indispensable broker was Ananda Ranga Pillai, a Tamil merchant whose private diaries are the most vivid account we have of this period. Pillai moved constantly between the French residence and the courts of Indian rulers, carrying intelligence, gifts, and the careful phrase at the right moment: the man who made the whole enterprise legible to itself.
+His indispensable broker was [Ananda Ranga Pillai](/history/lives-and-legacies/ananda-ranga-pillai), a Tamil merchant whose private diaries are the most vivid account we have of this period. Pillai moved constantly between the French residence and the courts of Indian rulers, carrying intelligence, gifts, and the careful phrase at the right moment: the man who made the whole enterprise legible to itself.
 
 **The Deccan Pivot**
 
-The decisive moment came in 1749, when succession disputes ignited simultaneously in Hyderabad and the Carnatic. Dupleix backed two pretenders: Muzaffar Jang for the Hyderabad throne, Chanda Sahib for the Carnatic nawabship. A joint Franco-Indian force swept the field. The Nawab of the Carnatic was killed in battle. The new Nizam came to Pondicherry in person to acknowledge his patron.
+The decisive moment came in 1749, when succession disputes ignited simultaneously in Hyderabad and the Carnatic. Dupleix backed two pretenders: Muzaffar Jang for the Hyderabad throne, [Chanda Sahib](/history/lives-and-legacies/chanda-sahib) for the Carnatic nawabship. A joint Franco-Indian force swept the field. The Nawab of the Carnatic was killed in battle. The new Nizam came to Pondicherry in person to acknowledge his patron.
 
 The reward was staggering. By Mughal imperial grant, Dupleix was formally appointed Nawab and Governor of all southern India from the Krishna River to Cape Comorin. Pondicherry had become, in constitutional terms, the capital of the Deccan. His lieutenant Charles de Bussy rode north to construct a French protectorate across the entire plateau, from Aurangabad to the Orissa frontier.
 
@@ -135,9 +135,9 @@ For two years, it held. France was the dominant European power in India: not by 
 
 **The British Counterstroke**
 
-The instrument of French reversal was a former bookkeeper named Robert Clive. Where Dupleix had built coalitions through ceremony and subsidy, Clive moved fast, struck hard, and chose his moments with the instinct of a man who knew his opponent's hand.
+The instrument of French reversal was a former bookkeeper named [Robert Clive](/history/lives-and-legacies/robert-clive). Where Dupleix had built coalitions through ceremony and subsidy, Clive moved fast, struck hard, and chose his moments with the instinct of a man who knew his opponent's hand.
 
-The fall came at Srirangam in June 1752. The French commander Law de Lauriston, encircled on an island in the Kaveri river, surrendered his force. Chanda Sahib was taken prisoner by a rival's men and beheaded the same afternoon. The protectorate in the Carnatic was gone.
+The fall came at Srirangam in June 1752. The French commander [Law de Lauriston](/history/lives-and-legacies/law-de-lauriston), encircled on an island in the Kaveri river, surrendered his force. Chanda Sahib was taken prisoner by a rival's men and beheaded the same afternoon. The protectorate in the Carnatic was gone.
 
 Dupleix continued fighting, now financing the campaigns from his own personal fortune. He wrote to Paris with increasing desperation: remove the army, and everything else collapses. The commercial revenues depended on the political position. The political position depended on the troops. This was not a philosophy the Compagnie des Indes was equipped to understand. Its directors wanted trade routes, not territorial sovereignty.
 
@@ -176,7 +176,7 @@ The decisive engagement came on 22 January 1760, at the inland town of Wandiwash
 
 **The Siege**
 
-Eyre Coote followed and invested the city from the landward side while the British navy blockaded the harbour. The siege began in August 1760. Pondicherry at this moment was not a village or a small trading post: at the peak of the Dupleix era it had housed between 80,000 and 100,000 people. Even reduced by the years of reversal, it was a substantial city protected by Fort Louis, completed by Martin in 1702 and improved since, with walls three metres thick in places and brick-lined magazines designed to absorb artillery fire. Lally organised the defence with considerable energy. The garrison, though reduced, was experienced. But the city had no means of resupply once the blockade was complete, and its population was large relative to its food stocks.
+[Eyre Coote](/history/lives-and-legacies/eyre-coote) followed and invested the city from the landward side while the British navy blockaded the harbour. The siege began in August 1760. Pondicherry at this moment was not a village or a small trading post: at the peak of the Dupleix era it had housed between 80,000 and 100,000 people. Even reduced by the years of reversal, it was a substantial city protected by Fort Louis, completed by Martin in 1702 and improved since, with walls three metres thick in places and brick-lined magazines designed to absorb artillery fire. Lally organised the defence with considerable energy. The garrison, though reduced, was experienced. But the city had no means of resupply once the blockade was complete, and its population was large relative to its food stocks.
 
 British engineers advanced their trenches systematically through the autumn of 1760. Food shortages became critical by December. By January 1761 the situation was unsustainable. On 16 January 1761, Lally surrendered. The terms were the honours of war: the garrison was allowed to march out with their arms. The siege had lasted five months.
 
@@ -184,7 +184,7 @@ British engineers advanced their trenches systematically through the autumn of 1
 
 What happened next was deliberate policy, strategic rather than merely punitive. The Madras Council reasoned that Pondicherry as a fortified city capable of sheltering a French army and fleet had been the direct cause of thirty years of Carnatic warfare. If France were to recover it by treaty, as seemed likely given the precedents of earlier wars, the British were determined it should not recover a functioning military base. A tolerable commercial inconvenience was acceptable; a revived rival capital was not.
 
-The demolition was comprehensive. Fort Louis was the first target: its bastions were mined and blown up with gunpowder, its walls breached and pushed down, its magazines opened and stripped. Contemporary accounts record the detonations as audible for miles, the smoke hanging over the city for days. The Government Palace, which had been the site of Dupleix's audiences with Indian princes and ambassadors and whose records were either carried off to Madras or lost, was pulled down. The churches, the warehouses along the waterfront, the colonnaded townhouses of the Rue de la Marine and Rue Dumas, the hospital, the barracks: all demolished. French officers who had negotiated honourable surrender terms watched from outside the walls as works some of them had themselves built were systematically destroyed.
+The demolition was comprehensive. Fort Louis was the first target: its bastions were mined and blown up with gunpowder, its walls breached and pushed down, its magazines opened and stripped. Contemporary accounts record the detonations as audible for miles, the smoke hanging over the city for days. The Government Palace, which had been the site of Dupleix's audiences with Indian princes and ambassadors and whose records were either carried off to Madras or lost, was pulled down. The churches, the warehouses along the waterfront, the colonnaded townhouses of [Rue de la Marine](/discover/white-town/rue-de-la-marine) and [Rue Dumas](/discover/white-town/rue-dumas), the hospital, the barracks: all demolished. French officers who had negotiated honourable surrender terms watched from outside the walls as works some of them had themselves built were systematically destroyed.
 
 The Black Town to the west of the canal suffered less comprehensively, but was not spared. One building survived intact in the White Town: the house of Ananda Ranga Pillai, built of solid laterite and teak, sealed against the street behind its internal courtyards. Pillai himself died on 25 January 1761, nine days after the surrender, without recording in his diary the demolition he had feared. His house stands today. The street grid and the canal also survived because they were features of the landscape rather than of the built fabric: even when every building on every street had been pulled down, the plan of the city remained legible in the ground.
 
@@ -194,7 +194,7 @@ Lally was sent back to France, imprisoned in the Bastille, tried for treason, an
 
 The Treaty of Paris in February 1763 returned Pondicherry to France, but under a condition without precedent in earlier colonial treaties: France was prohibited from erecting fortifications or maintaining military forces beyond small police detachments. This provision, secured by British diplomacy, transformed Pondicherry from a potential military base into a permanently disarmed commercial enclave. The physical demolition and the treaty clause together achieved what the British wanted: a Pondicherry that could trade but could never again threaten Madras.
 
-When the first French governor of the restored city, Jean Law de Lauriston, stepped ashore in 1765, he arrived in a field of rubble. What he found was silted canals, overgrown foundations, and a remnant community camped in the Black Town. What he had to work with was the street grid, the surviving foundations of demolished buildings, and their cut stone and brick, now available as salvage material for reconstruction.
+When the first French governor of the restored city, [Jean Law de Lauriston](/history/lives-and-legacies/law-de-lauriston), stepped ashore in 1765, he arrived in a field of rubble. What he found was silted canals, overgrown foundations, and a remnant community camped in the Black Town. What he had to work with was the street grid, the surviving foundations of demolished buildings, and their cut stone and brick, now available as salvage material for reconstruction.
 
 **The Rebuilding**
 
@@ -206,7 +206,7 @@ French India shrank to five small enclaves across the subcontinent: Pondicherry,
 
 **The Arrival of Aurobindo**
 
-In 1910, a Bengali philosopher, poet, and former revolutionary named Aurobindo Ghosh crossed the border from British India into French Pondicherry. He had been under British surveillance as a political agitator, and French jurisdiction offered a different set of laws. He had no intention of leaving.
+In 1910, a Bengali philosopher, poet, and former revolutionary named [Aurobindo Ghosh](/history/lives-and-legacies/sri-aurobindo) crossed the border from British India into French Pondicherry. He had been under British surveillance as a political agitator, and French jurisdiction offered a different set of laws. He had no intention of leaving.
 
 He stayed for the rest of his life, founding the ashram that still bears his name on the seafront, developing the philosophy he called Integral Yoga, and drawing followers from across the world. His arrival transformed what Pondicherry meant. The city that had been, for a decade in the 1740s, the capital of a near-empire, and for a century after that a modest and somewhat melancholy colonial backwater, began to become something else: a place of serious spiritual inquiry, with an international community gathered around a teaching that had nothing to do with trade routes or territorial sovereignty.
 
@@ -229,7 +229,7 @@ For seven years after the rest of India achieved independence from Britain, Pond
 
 The political atmosphere inside the enclaves was charged. A movement for merger with India, the Mouvement pour la Libération de l'Inde Française, had been active since the mid-1940s. There were demonstrations, strikes, and a sustained campaign of civil disobedience modelled explicitly on the methods of the Indian National Congress. The Indian government closed its consulate in Pondicherry in 1954 after a particular escalation of tension. The French administration found itself governing territory that many of its own citizens wished to leave.
 
-The decisive political shift came in March 1954 when Édouard Goubert, who had been the architect of the pro-French electoral position in 1948 and the leading local voice for remaining French, defected to the Indian side. His crossing removed the principal local political obstacle to the transfer. By October 1954, the Congrès de Kijour, the deliberative assembly on the question of merger, voted 170 to 8 in favour. The mathematics of the situation had become impossible to deny.
+The decisive political shift came in March 1954 when [Édouard Goubert](/history/lives-and-legacies/edouard-goubert), who had been the architect of the pro-French electoral position in 1948 and the leading local voice for remaining French, defected to the Indian side. His crossing removed the principal local political obstacle to the transfer. By October 1954, the *Congrès de Kizhour*, the deliberative assembly on the question of merger, voted 170 to 8 in favour. The mathematics of the situation had become impossible to deny.
 
 **The Transfer**
 
@@ -239,7 +239,7 @@ The formal legal transfer, the Treaty of Cession, was signed on 28 May 1956 and 
 
 **What Was Kept**
 
-What happened next is, by the logic of colonial history, surprising. The French institutions largely survived. The legal system retained elements of the Code Civil that persist in modified form to this day. The schools continued to teach in French. The Lycée Français, the Alliance Française, and the French consulate continued to function. The street names were not renamed: Dupleix, Suffren, Labourdonnais, Romain Rolland, all still there on their blue enamel plaques.
+What happened next is, by the logic of colonial history, surprising. The French institutions largely survived. The legal system retained elements of the Code Civil that persist in modified form to this day. The schools continued to teach in French. The [Lycée Français](/history/institutions/lycee-francais), the [Alliance Française](/history/institutions/alliance-francaise), and the French consulate continued to function. The street names were not renamed: Dupleix, Suffren, Labourdonnais, Romain Rolland, all still there on their blue enamel plaques.
 
 The explanation is partly practical: there were too many French institutions, too deeply embedded, to dismantle quickly. But it is also something more interesting: a recognition, on both sides, that what Pondicherry had accumulated over three centuries was worth preserving as itself. Nehru's government understood that a city with this particular history was not the same as any other Indian city, and that erasing what made it distinctive would be a loss rather than a gain.
 
@@ -247,9 +247,9 @@ Pondicherry became a Union Territory, reporting directly to Delhi rather than be
 
 **The City That Resulted**
 
-The Pondicherry that exists today is the product of all of this. The Tamil quarter to the west of the canal has its own continuity: its temples, its markets, its languages, its rhythms, which no change of flag ever interrupted. The French quarter to the east is something unique: a South Indian city that also has the architecture, the street plan, and some of the cultural habits of provincial France, overlaid with the spiritual intensity that Aurobindo and, after him, Mirra Alfassa, known as the Mother, and the Auroville project brought in the twentieth century.
+The Pondicherry that exists today is the product of all of this. The Tamil quarter to the west of the canal has its own continuity: its temples, its markets, its languages, its rhythms, which no change of flag ever interrupted. The French quarter to the east is something unique: a South Indian city that also has the architecture, the street plan, and some of the cultural habits of provincial France, overlaid with the spiritual intensity that [Sri Aurobindo](/history/lives-and-legacies/sri-aurobindo) and, after him, [Mirra Alfassa](/history/lives-and-legacies/mirra-alfassa), known as the Mother, and [Auroville](/discover/auroville/what-is-auroville) brought in the twentieth century.
 
-The French who come today often have the disorienting sensation of recognition: the proportions of the buildings, the scale of the streets, the relationship between the sea and the promenade, something in the quality of the afternoon light. And yet the sounds and the smells and the faces are entirely Tamil, entirely South Indian. The city is not a museum of colonialism. It is a living place that has metabolised its history and made it its own.
+The French who come today often have the disorienting sensation of recognition: the proportions of the buildings, the scale of the streets, the relationship between the sea and the promenade, something in the quality of the afternoon light that makes Puducherry the 'Window of France on India' as Nehru famously said. And yet the sounds and the smells and the faces are entirely Tamil, entirely South Indian. The city is not a museum of colonialism. It is a living place that has metabolised its history and made it its own.
 
 That is perhaps the most interesting thing about Pondicherry. It absorbed the Romans and the Pallavas, the Cholas and the Mughals, the French and the British, the ashram and the commune. It remains recognisably itself. The sea that the Roman merchants sailed to reach it is the same sea you can see from the promenade today. The continuity is the city.`,
   },
@@ -262,9 +262,9 @@ That is perhaps the most interesting thing about Pondicherry. It absorbed the Ro
     gradient: "linear-gradient(135deg, #002395 0%, #5a0a0a 100%)",
     photo: "les-combattants.jpg",
     photoFolder: "history",
-    body: `On Goubert Avenue, the seafront promenade that runs along the edge of Pondicherry's old French quarter, there is a war memorial. It was unveiled on 3 April 1938, facing the Bay of Bengal. Its inscription records the names of men from the Five Settlements of French India (Pondicherry, Karikal, Mahé, Yanam, and Chandernagor) who died in France's service.
+    body: `On [Goubert Avenue](/discover/white-town/avenue-goubert), the seafront promenade that runs along the edge of Pondicherry's old French quarter, there is a [war memorial](/discover/landmarks/war-memorial). It was unveiled on 3 April 1938, facing the Bay of Bengal. Its inscription records the names of men from the Five Settlements of French India (Pondicherry, Karikal, Mahé, Yanam, and Chandernagor) who died in France's service.
 
-After the transfer of 1954, France kept it. The French Consulate General still maintains it and organises annual commemorations at which French officials lay wreaths. It is one of the last physical expressions of the French state's presence in a city that was once the capital of its Indian empire.
+After the transfer of 1954, France kept it. The [French Consulate General](/history/institutions/consulate-general) still maintains it and organises annual commemorations at which French officials lay wreaths. It is one of the last physical expressions of the French state's presence in a city that was once the capital of its Indian empire.
 
 **The Legal Foundation**
 
@@ -335,11 +335,11 @@ The *renonçant* system no longer exists. The 1963 option window is closed. The 
 
 One practical point that often confuses visitors: France allows dual nationality, but India does not. An Indian who becomes a French citizen must give up Indian citizenship. The OCI card (Overseas Citizen of India) is sometimes mistaken for a form of dual citizenship, but it is not: it is a long-term residency and travel document, not nationality. This means many families in Pondicherry that went through the 1963 option have members on different sides of this line, some holding French passports, some Indian, some on OCI status, all in the same household.
 
-What distinguishes Pondicherry is not a special legal route but a specific historical population. Some families in this city have held French nationality for three or four generations, passed down since the *renonçant* era. They are French citizens living in India, served by the Consulate General on the Rue de la Caserne, commemorated at the war memorial on Goubert Avenue.
+What distinguishes Pondicherry is not a special legal route but a specific historical population. Some families in this city have held French nationality for three or four generations, passed down since the *renonçant* era. They are French citizens living in India, served by the [Consulate General](/history/institutions/consulate-general) on the Rue de la Caserne, commemorated at the [war memorial](/discover/landmarks/war-memorial) on Goubert Avenue.
 
 What made the *renonçant* system unique in world history is something worth stating plainly: it allowed people to become French without leaving India. This was not emigration. It was a change of legal identity inside India itself, available to any resident of the Five Settlements who chose to renounce personal law and submit to the French Civil Code. No other colonial system in Asia offered anything quite like it.
 
-The question "Can anyone from Pondy become French?" once had a unique answer that existed nowhere else in the world. That answer closed in 1963. What it left behind is visible in the schools, the streets, the names on the buildings, and the community that still meets for Bastille Day on the promenade.`,
+The question "Can anyone from Pondy become French?" once had a unique answer that existed nowhere else in the world. That answer closed in 1963. What it left behind is visible in the schools, the streets, the names on the buildings, and the community that still meets for [Bastille Day](/festivals/bastille-day) on the promenade.`,
   },
 ];
 
