@@ -21,7 +21,7 @@ function SectionHeader({ title, href, h1 = false }: { title: string; href: strin
       <Link href={href} className="section-heading-link">
         {h1 ? <h1 style={headingStyle}>{title}</h1> : <h2 style={headingStyle}>{title}</h2>}
       </Link>
-      <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
+      <Link href={href} aria-label={`See all: ${title}`} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
     </div>
   );
 }
@@ -82,7 +82,7 @@ export default function HomePage() {
         </SectionIntro>
         <ThreeGrid>
           {featuredHistory.map((a, i) => (
-            <ArticleCard key={a.id} href={`/history/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} priority={i === 0} />
+            <ArticleCard key={a.id} href={`/history/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} priority={i < 2} />
           ))}
         </ThreeGrid>
       </section>
