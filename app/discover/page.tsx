@@ -30,7 +30,7 @@ const sections = [
     href: "/discover/explore",
     title: "Walks, Trips & Experiences",
     description: "Self-guided walks, day trips, workshops, and experiences: from Arikamedu's Roman ruins to the Pichavaram mangroves.",
-    photo: "/explore/walking-tour.jpg",
+    photo: "/explore/pichavaram.jpg",
   },
 ];
 
