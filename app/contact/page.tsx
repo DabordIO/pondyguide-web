@@ -14,7 +14,7 @@ export default function ContactPage() {
       </h1>
       <div style={{ fontSize: "1.0625rem", lineHeight: 1.85, color: "#292524" }}>
         <p style={{ marginBottom: "1.25rem" }}>
-          Thank you for visiting. Pondy Guide is a personal project — a genuine attempt to give visitors the most researched, most honest account of yesterday's Pondichéry and today's Puducherry.
+          Thank you for visiting. Pondy Guide is a personal project, a genuine attempt to give visitors the most researched, most honest account of yesterday's Pondichéry and today's Puducherry.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
           If you notice a factual discrepancy anywhere on the site, it is unintentional and we very much want to hear about it. If you would like to suggest a new article, or simply leave a comment, we would be glad to receive that too.
