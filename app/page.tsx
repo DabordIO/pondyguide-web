@@ -196,7 +196,7 @@ export default function HomePage() {
         <ThreeGrid>
           {[
             { href: "/discover/explore/walk-white-town", photo: "/explore/walking-tour-1.jpg", title: "Walking the White Town", teaser: "A self-guided walk through the French Quarter: colonial streets, heritage buildings, temples, and the seafront promenade. The best two hours you will spend in Pondicherry." },
-            { href: "/discover/explore/daytrip-ousteri", photo: "/explore/ousteri-lake.jpg", title: "Ousteri Lake", teaser: "The largest natural freshwater lake in the Pondicherry region, five kilometres west of town. A Ramsar wetland with over 170 recorded bird species." },
+            { href: "/discover/explore/daytrip-arikamedu", photo: "/explore/arikamedu.jpg", title: "Arikamedu", teaser: "Four kilometres south of the French Quarter, an ancient port where Roman traders exchanged Mediterranean goods for Indian cotton and gems. Roman amphorae, Arretine pottery, and a gemstone engraved with the Emperor Augustus were excavated here." },
             { href: "/discover/explore/activity-sunday-market", photo: "/explore/sunday-market.jpg", title: "The Sunday Market", teaser: "Every Sunday on Mahatma Gandhi Street: second-hand furniture, vintage electronics, handmade clothes, tools, and street food. One of the most local experiences in Pondicherry." },
           ].map(e => (
             <Link key={e.href} href={e.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
