@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
 
 const nav = [
@@ -11,20 +14,37 @@ const nav = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header style={{ background: "#fff", borderBottom: "1px solid #e8ddd4", position: "relative" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 60 }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
         <Link href="/" style={{ textDecoration: "none" }}>
           <span style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 22, fontWeight: 700, color: "#1c1917", letterSpacing: "-0.02em" }}>
             Pondy<span style={{ color: "#b45309" }}>.</span>Guide
           </span>
         </Link>
         <nav className="desktop-nav" style={{ display: "flex", gap: 28, alignItems: "center" }}>
-          {nav.map((item) => (
-            <Link key={item.href} href={item.href} style={{ fontSize: 14, fontWeight: 600, color: "#44403c", textDecoration: "none", padding: "8px 0", display: "inline-block" }}>
-              {item.label}
-            </Link>
-          ))}
+          {nav.map((item) => {
+            const active = pathname === item.href || pathname.startsWith(item.href + "/");
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                style={{
+                  fontSize: 14,
+                  fontWeight: 600,
+                  color: active ? "#b45309" : "#44403c",
+                  textDecoration: "none",
+                  padding: "8px 0",
+                  borderBottom: active ? "2px solid #b45309" : "2px solid transparent",
+                  display: "inline-block",
+                }}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
         <MobileNav />
       </div>
