@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "16px 24px", borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <p style={{ fontSize: 12, color: "#6b6560" }}>© {new Date().getFullYear()} Pondy Guide. All rights reserved.</p>
+        <p style={{ fontSize: 12, color: "#a8a29e" }}>© {new Date().getFullYear()} Pondy Guide. All rights reserved.</p>
         <div style={{ display: "flex", gap: 24 }}>
           {[["About", "/about"], ["Contact", "/contact"], ["Sitemap", "/sitemap"]].map(([label, href]) => (
             <Link key={href} href={href} style={{ fontSize: 12, color: "#a8a29e", textDecoration: "none" }}>{label}</Link>
