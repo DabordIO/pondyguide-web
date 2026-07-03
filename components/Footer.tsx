@@ -27,7 +27,7 @@ export default function Footer() {
         <div>
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>The App</p>
           <p style={{ fontSize: 13, lineHeight: 1.7, marginBottom: 12 }}>Take the full guide offline. Maps, history, and recommendations in your pocket.</p>
-          <Link href="/app" style={{ display: "inline-block", background: "#f97316", color: "#fff", fontSize: 13, fontWeight: 700, padding: "8px 16px", borderRadius: 8, textDecoration: "none" }}>
+          <Link href="/app" style={{ display: "inline-block", background: "#b45309", color: "#fff", fontSize: 13, fontWeight: 700, padding: "8px 16px", borderRadius: 8, textDecoration: "none" }}>
             Get the Pondy App
           </Link>
         </div>

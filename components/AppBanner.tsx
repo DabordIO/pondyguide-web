@@ -17,7 +17,7 @@ export default function AppBanner() {
       </div>
       <a
         href="https://pondyguide.com/app"
-        style={{ background: "#f97316", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 28px", borderRadius: 10, textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}
+        style={{ background: "#b45309", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 28px", borderRadius: 10, textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}
       >
         Open the App →
       </a>
