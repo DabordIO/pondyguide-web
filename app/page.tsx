@@ -18,11 +18,11 @@ const PRICE_LABELS: Record<string, string> = { budget: "₹", mid: "₹₹", hig
 function SectionHeader({ title, href, h1 = false }: { title: string; href: string; h1?: boolean }) {
   const headingStyle = { fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, margin: 0 };
   return (
-    <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 16, marginBottom: 16 }}>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, marginBottom: 16 }}>
       <Link href={href} className="section-heading-link">
         {h1 ? <h1 style={headingStyle}>{title}</h1> : <h2 style={headingStyle}>{title}</h2>}
       </Link>
-      <Link href={href} aria-label={`See all: ${title}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
+      <Link href={href} aria-label={`See all: ${title}`} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap", border: "1px solid #b45309", borderRadius: 6, padding: "5px 12px", flexShrink: 0 }}>See all →</Link>
     </div>
   );
 }
@@ -33,9 +33,9 @@ function SectionIntro({ children }: { children: React.ReactNode }) {
 
 function SubHeading({ label, href }: { label: string; href?: string }) {
   return (
-    <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderBottom: "1px solid #e8ddd4", paddingBottom: 12, marginBottom: 24 }}>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid #e8ddd4", paddingBottom: 12, marginBottom: 24 }}>
       <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917" }}>{label}</h3>
-      {href && <Link href={href} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>See all →</Link>}
+      {href && <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap", border: "1px solid #b45309", borderRadius: 6, padding: "5px 12px", flexShrink: 0 }}>See all →</Link>}
     </div>
   );
 }
