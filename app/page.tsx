@@ -86,7 +86,7 @@ export default function HomePage() {
           Pondicherry
         </h1>
         <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.25rem)", color: "#6b6560", maxWidth: 680, lineHeight: 1.8 }}>
-          A place where Roman traders, Tamil kingdoms, French governors, and modern spiritual experiments all left their mark. Explore its story, its heritage, its cuisine and everything else it has to offer to the visitor.
+          A place where Roman traders, Tamil kingdoms, French governors, and modern spiritual experiments all left their mark. Uncover its history and explore its charms.
         </p>
       </section>
 
