@@ -73,7 +73,7 @@ He returned to France expecting recognition. Instead, his enemies were waiting. 
     name: "Chanda Sahib",
     dates: "died 1752",
     role: "Nawab of the Carnatic, French Ally",
-    photo: "chanda-sahib.webp",
+    photo: "chanda-sahib.png",
     teaser: "Dupleix's chosen Nawab of the Carnatic, whose rise and fall over three years defined the decisive phase of the Carnatic Wars, and whose death ended French dominance in southern India in a single afternoon.",
     body: `**THE FRENCH-BACKED NAWAB**
 
@@ -221,7 +221,7 @@ He died on 7 December 1782 of a lumbar abscess, at the moment of maximum French 
     name: "Tipu Sultan",
     dates: "1751–1799",
     role: "Sultan of Mysore",
-    photo: "tipu-sultan.webp",
+    photo: "tipu-sultan.png",
     teaser: "The Tiger of Mysore, last Indian ruler to pose a genuinely existential threat to British power in South Asia, and the most ideologically committed French ally of the Revolutionary era.",
     body: `**THE TIGER OF MYSORE**
 
@@ -241,7 +241,7 @@ Among the objects the British took from his palace was a life-size mechanical au
     name: "Pierre Loti",
     dates: "1850–1923",
     role: "French Novelist and Naval Officer",
-    photo: "pierre-loti.webp",
+    photo: "pierre-loti.png",
     teaser: "The celebrated French novelist who arrived in Pondicherry by sea in 1899 and wrote the most atmospheric literary portrait of the city ever put on paper.",
     body: `**THE NOVELIST WHO CAME BY SEA**
 
