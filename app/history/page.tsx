@@ -13,33 +13,14 @@ export const metadata: Metadata = {
 
 export default function HistoryPage() {
   return (
-    <>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 32px" }}>
+    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
         <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>History</p>
         <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
           The Story of Pondicherry
         </h1>
-        <p style={{ fontSize: "1.1rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 0 }}>
+        <p style={{ fontSize: "1.1rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 48 }}>
           Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
         </p>
-      </div>
-
-      {/* ── Jump nav — sits outside the max-width container so sticky works ── */}
-      <div style={{ position: "sticky", top: 68, background: "#fff", borderTop: "1px solid #e8ddd4", borderBottom: "1px solid #e8ddd4", zIndex: 10 }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", gap: 32, overflowX: "auto" }}>
-          {[
-            ["The Full Story", "#the-full-story"],
-            ["French Institutions", "#french-institutions"],
-            ["Lives & Legacies", "#lives-and-legacies"],
-          ].map(([label, href]) => (
-            <a key={href} href={href} style={{ fontSize: 14, fontWeight: 600, color: "#44403c", textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0, paddingTop: 14, paddingBottom: 14, display: "block" }}>
-              {label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 24px 80px" }}>
         <Section id="the-full-story" title="The Full Story">
           <ArticleGrid items={historyArticles.map(a => ({ id: a.id, title: a.title, teaser: a.teaser ?? "", href: `/history/${a.id}`, photo: a.photo, photoFolder: a.photoFolder ?? "history" }))} />
         </Section>
@@ -67,8 +48,7 @@ export default function HistoryPage() {
             ))}
           </div>
         </Section>
-      </div>
-    </>
+    </div>
   );
 }
 
