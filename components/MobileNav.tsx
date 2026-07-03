@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const nav = [
   { label: "History", href: "/history" },
@@ -13,6 +14,7 @@ const nav = [
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <div className="mobile-nav-toggle">
@@ -27,17 +29,29 @@ export default function MobileNav() {
       </button>
 
       {open && (
-        <div style={{ position: "absolute", top: 60, left: 0, right: 0, background: "#fff", borderBottom: "1px solid #e8ddd4", zIndex: 100, padding: "8px 0" }}>
-          {nav.map(item => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              style={{ display: "block", padding: "14px 24px", fontSize: 16, fontWeight: 500, color: "#1c1917", textDecoration: "none", borderBottom: "1px solid #f5f0eb" }}
-            >
-              {item.label}
-            </Link>
-          ))}
+        <div style={{ position: "absolute", top: 68, left: 0, right: 0, background: "#fff", borderBottom: "1px solid #e8ddd4", zIndex: 100, padding: "8px 0" }}>
+          {nav.map(item => {
+            const active = pathname === item.href || pathname.startsWith(item.href + "/");
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                style={{
+                  display: "block",
+                  padding: "14px 24px",
+                  fontSize: 16,
+                  fontWeight: active ? 700 : 500,
+                  color: active ? "#b45309" : "#1c1917",
+                  textDecoration: "none",
+                  borderBottom: "1px solid #f5f0eb",
+                  borderLeft: active ? "3px solid #b45309" : "3px solid transparent",
+                }}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>
