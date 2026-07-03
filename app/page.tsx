@@ -80,9 +80,19 @@ export default function HomePage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px" }}>
 
+      {/* ── HERO ────────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72, paddingBottom: 64, borderBottom: "1px solid #e8ddd4" }}>
+        <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2.75rem, 6vw, 4.5rem)", fontWeight: 700, color: "#1c1917", lineHeight: 1.1, marginBottom: 24, maxWidth: 800 }}>
+          Pondicherry
+        </h1>
+        <p style={{ fontSize: "clamp(1.05rem, 2vw, 1.25rem)", color: "#6b6560", maxWidth: 680, lineHeight: 1.8 }}>
+          A place where Roman traders, Tamil kingdoms, French governors, and modern spiritual experiments all left their mark. Explore its story.
+        </p>
+      </section>
+
       {/* ── HISTORY ─────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="The Story of Pondicherry" href="/history" h1 />
+        <SectionHeader title="The Story of Pondicherry" href="/history" />
         <SectionIntro>
           Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
         </SectionIntro>
