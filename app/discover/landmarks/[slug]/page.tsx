@@ -42,10 +42,10 @@ export default async function LandmarkPage({ params }: { params: Promise<{ slug:
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
         {site.name}
       </h1>
-      {site.frenchName && <p style={{ fontSize: 13, color: "#78716c", marginBottom: 4 }}>French: {site.frenchName}</p>}
-      <p style={{ fontSize: 13, color: "#78716c", marginBottom: 24 }}>Built: {site.era}</p>
+      {site.frenchName && <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 4 }}>French: {site.frenchName}</p>}
+      <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 24 }}>Built: {site.era}</p>
 
-      <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         {site.summary}
       </p>
 

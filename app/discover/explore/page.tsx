@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { exploreArticles } from "@/data/explore";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Things to Do in Pondicherry",
@@ -31,7 +32,7 @@ export default function ExplorePage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Walks, Trips & Experiences
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
         Pondicherry is a good base for the south Tamil Nadu coast. The town itself rewards slow walking. Beyond it, the day trips are genuinely worth the effort.
       </p>
 
@@ -51,8 +52,8 @@ export default function ExplorePage() {
                 <div style={{ padding: "14px 16px 16px" }}>
                   {a.duration && <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 6 }}>{a.duration}</p>}
                   <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{a.cardTitle ?? a.title}</p>
-                  <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{a.teaser.slice(0, 110)}…</p>
-                  <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
+                  <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(a.teaser, 110)}</p>
+                  <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
                 </div>
               </Link>
             ))}

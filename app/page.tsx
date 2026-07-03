@@ -6,6 +6,7 @@ import { institutionArticles } from "@/data/institutions";
 import { figures } from "@/data/figures";
 import { aurovilleArticles } from "@/data/auroville";
 import { restaurants } from "@/data/restaurants";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Pondy Guide — Pondicherry Travel & Heritage Guide",
@@ -21,20 +22,20 @@ function SectionHeader({ title, href, h1 = false }: { title: string; href: strin
       <Link href={href} className="section-heading-link">
         {h1 ? <h1 style={headingStyle}>{title}</h1> : <h2 style={headingStyle}>{title}</h2>}
       </Link>
-      <Link href={href} aria-label={`See all: ${title}`} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
+      <Link href={href} aria-label={`See all: ${title}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}>See all →</Link>
     </div>
   );
 }
 
 function SectionIntro({ children }: { children: React.ReactNode }) {
-  return <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 620, lineHeight: 1.75, marginBottom: 40 }}>{children}</p>;
+  return <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 620, lineHeight: 1.75, marginBottom: 40 }}>{children}</p>;
 }
 
 function SubHeading({ label, href }: { label: string; href?: string }) {
   return (
     <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", borderBottom: "1px solid #e8ddd4", paddingBottom: 12, marginBottom: 24 }}>
       <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917" }}>{label}</h3>
-      {href && <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>See all →</Link>}
+      {href && <Link href={href} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>See all →</Link>}
     </div>
   );
 }
@@ -49,8 +50,8 @@ function ArticleCard({ href, photo, photoFolder = "history", title, teaser, prio
       )}
       <div style={{ padding: "16px 18px 18px" }}>
         <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{title}</p>
-        <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{teaser.slice(0, 115)}…</p>
-        <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+        <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(teaser, 115)}</p>
+        <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
       </div>
     </Link>
   );
@@ -65,11 +66,16 @@ function ThreeGrid({ children }: { children: React.ReactNode }) {
 }
 
 export default function HomePage() {
-  const featuredHistory = historyArticles.slice(0, 3);
-  const featuredInstitutions = institutionArticles.slice(0, 3);
-  const featuredFigures = figures.slice(0, 3);
-  const featuredAuroville = aurovilleArticles.slice(0, 3);
-  const featuredRestaurants = restaurants.slice(0, 3);
+  const featuredHistory = ["dupleix-gamble", "the-handover-1954", "can-anyone-become-french"]
+    .map(id => historyArticles.find(a => a.id === id)).filter(Boolean) as typeof historyArticles;
+  const featuredInstitutions = ["lycee-francais", "alliance-francaise", "foyer-du-soldat"]
+    .map(id => institutionArticles.find(a => a.id === id)).filter(Boolean) as typeof institutionArticles;
+  const featuredFigures = ["ananda-ranga-pillai", "lally", "sri-aurobindo"]
+    .map(id => figures.find(f => f.id === id)).filter(Boolean) as typeof figures;
+  const featuredAuroville = ["the-matrimandir", "arts-crafts", "how-to-visit"]
+    .map(id => aurovilleArticles.find(a => a.id === id)).filter(Boolean) as typeof aurovilleArticles;
+  const featuredRestaurants = ["coromandel-cafe", "indian-coffee-house", "de-bluefin-seafood"]
+    .map(id => restaurants.find(r => r.id === id)).filter(Boolean) as typeof restaurants;
 
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px" }}>
@@ -102,8 +108,8 @@ export default function HomePage() {
               </div>
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{h.title}</p>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{h.description}</p>
-                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{h.description}</p>
+                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
           ))}
@@ -122,8 +128,8 @@ export default function HomePage() {
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
-                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginBottom: 6 }}>{f.dates}</p>
-                <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.5 }}>{f.role}</p>
+                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginBottom: 6 }}>{f.dates}</p>
+                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{f.role}</p>
               </div>
             </Link>
           ))}
@@ -147,10 +153,10 @@ export default function HomePage() {
               <div style={{ padding: "14px 16px 18px" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
                   <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, lineHeight: 1.3 }}>{r.name}</p>
-                  <p style={{ fontSize: 13, color: "#78716c", whiteSpace: "nowrap", marginLeft: 8 }}>{PRICE_LABELS[r.priceRange] ?? ""}</p>
+                  <p style={{ fontSize: 13, color: "#6b6560", whiteSpace: "nowrap", marginLeft: 8 }}>{PRICE_LABELS[r.priceRange] ?? ""}</p>
                 </div>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{r.summary.slice(0, 115)}…</p>
-                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(r.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
           ))}
@@ -183,7 +189,7 @@ export default function HomePage() {
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{s.label}</p>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6, lineHeight: 1.3 }}>{s.title}</p>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.55 }}>{s.description}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.55 }}>{s.description}</p>
               </div>
             </Link>
           ))}
@@ -205,8 +211,8 @@ export default function HomePage() {
               </div>
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{e.title}</p>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{e.teaser.slice(0, 115)}…</p>
-                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(e.teaser, 115)}</p>
+                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
           ))}
@@ -242,7 +248,7 @@ export default function HomePage() {
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{f.label}</p>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{f.title}</p>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.6 }}>{f.description}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{f.description}</p>
               </div>
             </Link>
           ))}
@@ -264,8 +270,8 @@ export default function HomePage() {
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
-                <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{item.desc}</p>
-                <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read →</p>
+                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{item.desc}</p>
+                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read →</p>
               </div>
             </Link>
           ))}

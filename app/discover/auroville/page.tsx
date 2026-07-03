@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { aurovilleArticles } from "@/data/auroville";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Auroville — Pondicherry",
@@ -17,7 +18,7 @@ export default function AurovillePage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Understanding Auroville
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
         Founded in 1968 on a plateau of eroded land north of Pondicherry, Auroville is home to around 3,400 people from more than 60 countries. It is neither a tourist attraction nor a spiritual retreat. Read before you visit.
       </p>
 
@@ -33,8 +34,8 @@ export default function AurovillePage() {
             )}
             <div style={{ padding: "18px 18px 16px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{a.title}</p>
-              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.6 }}>{a.teaser.slice(0, 120)}…</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.6 }}>{truncate(a.teaser, 120)}</p>
+              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
             </div>
           </Link>
         ))}

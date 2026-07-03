@@ -43,7 +43,7 @@ export default async function HotelPage({ params }: { params: Promise<{ slug: st
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
         {h.name}
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         {h.tagline}
       </p>
 
@@ -75,7 +75,7 @@ export default async function HotelPage({ params }: { params: Promise<{ slug: st
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div style={{ marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4" }}>
-      <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#78716c", marginBottom: 12 }}>{title}</p>
+      <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#6b6560", marginBottom: 12 }}>{title}</p>
       {children}
     </div>
   );

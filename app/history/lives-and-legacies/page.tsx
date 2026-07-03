@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { figures } from "@/data/figures";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Lives & Legacies — Pondicherry",
@@ -17,7 +18,7 @@ export default function LivesAndLegaciesPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Lives & Legacies
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
         The governors, commanders, diplomats, and diarists who shaped Pondicherry's history — and left their names on its streets.
       </p>
 
@@ -29,9 +30,9 @@ export default function LivesAndLegaciesPage() {
             </div>
             <div style={{ padding: "14px 16px 16px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginBottom: 8 }}>{f.dates}</p>
-              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{f.teaser.slice(0, 110)}…</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
+              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginBottom: 8 }}>{f.dates}</p>
+              <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(f.teaser, 110)}</p>
+              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
             </div>
           </Link>
         ))}

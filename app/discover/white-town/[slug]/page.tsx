@@ -42,10 +42,10 @@ export default async function StreetPage({ params }: { params: Promise<{ slug: s
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
         {street.name}
       </h1>
-      {street.altName && <p style={{ fontSize: 14, color: "#78716c", marginBottom: 8 }}>Also known as: {street.altName}</p>}
+      {street.altName && <p style={{ fontSize: 14, color: "#6b6560", marginBottom: 8 }}>Also known as: {street.altName}</p>}
       <p style={{ fontSize: 14, color: "#b45309", marginBottom: 24 }}>Named after: {street.namedAfter}{street.dates ? ` (${street.dates})` : ""}</p>
 
-      <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         {street.summary}
       </p>
 

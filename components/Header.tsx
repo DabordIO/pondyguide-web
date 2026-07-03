@@ -21,7 +21,7 @@ export default function Header() {
         </Link>
         <nav className="desktop-nav" style={{ display: "flex", gap: 28, alignItems: "center" }}>
           {nav.map((item) => (
-            <Link key={item.href} href={item.href} style={{ fontSize: 14, fontWeight: 500, color: "#78716c", textDecoration: "none", padding: "8px 0", display: "inline-block" }}>
+            <Link key={item.href} href={item.href} style={{ fontSize: 14, fontWeight: 600, color: "#44403c", textDecoration: "none", padding: "8px 0", display: "inline-block" }}>
               {item.label}
             </Link>
           ))}

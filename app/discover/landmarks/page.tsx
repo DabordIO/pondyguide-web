@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { sites, CATEGORY_LABELS, CATEGORY_COLORS } from "@/data/sites";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Sites & Landmarks — Pondicherry",
@@ -24,7 +25,7 @@ export default function LandmarksPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Sites & Landmarks
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
         From Arikamedu's Roman-era ruins to the French Consulate on the seafront, Pondicherry's landmarks span more than two thousand years of history.
       </p>
 
@@ -39,8 +40,8 @@ export default function LandmarksPage() {
             <div style={{ padding: "14px 16px 16px" }}>
               <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: CATEGORY_COLORS[s.category], marginBottom: 6 }}>{CATEGORY_LABELS[s.category]}</p>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{s.name}</p>
-              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{s.summary.slice(0, 110)}…</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
+              <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(s.summary, 110)}</p>
+              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
             </div>
           </Link>
         ))}

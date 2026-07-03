@@ -32,7 +32,7 @@ export default function HealthcarePage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         Emergency in Pondicherry
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         Pondicherry is better served medically than most Indian towns its size. JIPMER — Jawaharlal Institute of Postgraduate Medical Education and Research — is one of the top public hospitals in the country and provides free emergency care around the clock.
       </p>
 
@@ -49,7 +49,7 @@ export default function HealthcarePage() {
                 </div>
               )}
               <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{a.title}</h3>
-              <p style={{ fontSize: "0.95rem", color: "#78716c", lineHeight: 1.7, marginBottom: 16, fontStyle: "italic" }}>{a.teaser}</p>
+              <p style={{ fontSize: "0.95rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 16, fontStyle: "italic" }}>{a.teaser}</p>
               <ArticleBody text={a.body} />
             </div>
           ))}

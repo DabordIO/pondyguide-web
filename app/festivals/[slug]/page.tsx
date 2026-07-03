@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { festivals } from "@/data/festivals";
+import { truncate } from "@/lib/truncate";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import Link from "next/link";
@@ -42,15 +43,15 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
           {MONTH_LABELS[slug]} in Pondicherry
         </h1>
         {monthFestivals.length === 0 ? (
-          <p style={{ color: "#78716c" }}>No festivals listed for this month yet.</p>
+          <p style={{ color: "#6b6560" }}>No festivals listed for this month yet.</p>
         ) : (
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20 }}>
             {monthFestivals.map(f => (
               <Link key={f.id} href={`/festivals/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, padding: "24px", display: "block" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 18, marginBottom: 8, lineHeight: 1.3 }}>{f.title}</p>
-                <p style={{ fontSize: 13, color: "#b45309", fontWeight: 600, marginBottom: 10 }}>{f.when}</p>
-                <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.65 }}>{f.teaser.slice(0, 140)}…</p>
-                <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 14 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginBottom: 10 }}>{f.when}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.65 }}>{truncate(f.teaser, 140)}</p>
+                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 14 }}>Read more →</p>
               </Link>
             ))}
           </div>
@@ -83,9 +84,9 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
         {festival.title}
       </h1>
-      <p style={{ fontSize: 14, color: "#78716c", marginBottom: 24 }}>{festival.when}</p>
+      <p style={{ fontSize: 14, color: "#6b6560", marginBottom: 24 }}>{festival.when}</p>
 
-      <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         {festival.teaser}
       </p>
 

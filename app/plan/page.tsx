@@ -41,7 +41,7 @@ export default function PlanPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         Before You Go
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
         Pondicherry is easy to navigate once you understand the basics. Most visitors get into trouble for the same three or four reasons. Read this first.
       </p>
 
@@ -53,8 +53,8 @@ export default function PlanPage() {
             </div>
             <div style={{ padding: "16px 18px 18px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 19, marginBottom: 10, lineHeight: 1.3 }}>{s.title}</p>
-              <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.65 }}>{s.description}</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 16 }}>Read →</p>
+              <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.65 }}>{s.description}</p>
+              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 16 }}>Read →</p>
             </div>
           </Link>
         ))}

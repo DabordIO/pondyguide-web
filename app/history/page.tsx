@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { historyArticles } from "@/data/history";
 import { institutionArticles as institutions } from "@/data/institutions";
 import { figures } from "@/data/figures";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "History of Pondicherry",
@@ -17,7 +18,7 @@ export default function HistoryPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         The Story of Pondicherry
       </h1>
-      <p style={{ fontSize: "1.1rem", color: "#78716c", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.1rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
         Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
       </p>
 
@@ -30,7 +31,7 @@ export default function HistoryPage() {
       </Section>
 
       <Section title="Lives & Legacies">
-        <p style={{ fontSize: 14, color: "#78716c", marginBottom: 20 }}>The governors, soldiers, scholars, and saints who shaped the town.</p>
+        <p style={{ fontSize: 14, color: "#6b6560", marginBottom: 20 }}>The governors, soldiers, scholars, and saints who shaped the town.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
           {figures.map(f => (
             <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, overflow: "hidden", display: "block" }}>
@@ -42,7 +43,7 @@ export default function HistoryPage() {
               <div style={{ padding: "12px 16px 16px" }}>
                 <p style={{ fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4 }}>{f.name}</p>
                 <p style={{ fontSize: 12, color: "#b45309" }}>{f.dates}</p>
-                <p style={{ fontSize: 13, color: "#78716c", marginTop: 6, lineHeight: 1.5 }}>{f.role}</p>
+                <p style={{ fontSize: 13, color: "#6b6560", marginTop: 6, lineHeight: 1.5 }}>{f.role}</p>
               </div>
             </Link>
           ))}
@@ -73,8 +74,8 @@ function ArticleGrid({ items }: { items: { id: string; title: string; teaser: st
           )}
           <div style={{ padding: "16px 20px 16px" }}>
             <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{item.title}</p>
-            <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.6 }}>{item.teaser.slice(0, 120)}{item.teaser.length > 120 ? "…" : ""}</p>
-            <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+            <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.6 }}>{truncate(item.teaser, 120)}</p>
+            <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
           </div>
         </Link>
       ))}

@@ -15,7 +15,7 @@ export default function HotelsPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Hotels in Pondicherry
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
         Where you stay shapes the whole experience. A heritage mansion in White Town puts you inside the history. A coastal resort keeps you close to the sea. Here is how to choose.
       </p>
 
@@ -37,8 +37,8 @@ export default function HotelsPage() {
                   )}
                   <div style={{ padding: "20px 20px 16px" }}>
                     <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6 }}>{h.name}</p>
-                    <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.6 }}>{h.tagline}</p>
-                    <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                    <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.6 }}>{h.tagline}</p>
+                    <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
                   </div>
                 </Link>
               ))}

@@ -5,7 +5,7 @@
   --surface: #ffffff;
   --border: #e8ddd4;
   --text: #1c1917;
-  --muted: #78716c;
+  --muted: #6b6560;
   --accent: #b45309;
 }
 
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5 {
 .prose em { font-style: italic; }
 .prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; }
 .prose ul li { margin-bottom: 0.4rem; line-height: 1.75; color: #292524; }
-.prose blockquote { border-left: 3px solid #b45309; padding-left: 1.25rem; margin: 1.75rem 0; color: #78716c; font-style: italic; }
+.prose blockquote { border-left: 3px solid #b45309; padding-left: 1.25rem; margin: 1.75rem 0; color: #6b6560; font-style: italic; }
 .prose a { color: #b45309; text-decoration: underline; text-underline-offset: 3px; }
 
 .section-heading-link { text-decoration: none; }

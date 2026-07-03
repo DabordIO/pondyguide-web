@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { restaurants } from "@/data/restaurants";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Restaurants in Pondicherry",
@@ -17,7 +18,7 @@ export default function RestaurantsPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Restaurants in Pondicherry
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 600, lineHeight: 1.8, marginBottom: 48 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 600, lineHeight: 1.8, marginBottom: 48 }}>
         Pondicherry punches above its weight for food. French-influenced cafés, fresh seafood, Tamil homecooked thalis — and enough coffee to keep you going through the afternoon heat.
       </p>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20 }}>
@@ -31,10 +32,10 @@ export default function RestaurantsPage() {
             <div style={{ padding: "20px 20px 16px" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, lineHeight: 1.3 }}>{r.name}</p>
-                <span style={{ fontSize: 13, color: "#78716c", marginLeft: 8, flexShrink: 0 }}>{PRICE[r.priceRange]}</span>
+                <span style={{ fontSize: 13, color: "#6b6560", marginLeft: 8, flexShrink: 0 }}>{PRICE[r.priceRange]}</span>
               </div>
-              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.6 }}>{r.summary.slice(0, 110)}…</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.6 }}>{truncate(r.summary, 110)}</p>
+              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
             </div>
           </Link>
         ))}

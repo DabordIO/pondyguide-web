@@ -36,7 +36,7 @@ His statue stands on [Goubert Avenue](/discover/white-town/avenue-goubert), arm 
     name: "Ananda Ranga Pillai",
     dates: "1709–1761",
     role: "Chief Interpreter to Dupleix; Diarist",
-    photo: "ananda-ranga-pillai.png",
+    photo: "ananda-ranga-pillai.webp",
     teaser: "Dupleix's chief broker and interpreter, whose private Tamil diary is the most intimate record of French India ever written, and the only one told from inside the room.",
     body: `**THE MAN WHO WROTE IT ALL DOWN**
 
@@ -55,7 +55,7 @@ He died in 1761, the same year Pondicherry fell to the British and the world he 
     cardName: "La Bourdonnais",
     dates: "1699–1753",
     role: "French Naval Commander",
-    photo: "la-bourdonnais.png",
+    photo: "la-bourdonnais.webp",
     teaser: "The admiral who captured Madras for France in 1746, then squandered the victory in a furious quarrel with Dupleix over what to do with it, and paid with his liberty and his health.",
     body: `**THE ADMIRAL FROM SAINT-MALO**
 
@@ -73,7 +73,7 @@ He returned to France expecting recognition. Instead, his enemies were waiting. 
     name: "Chanda Sahib",
     dates: "died 1752",
     role: "Nawab of the Carnatic, French Ally",
-    photo: "chanda-sahib.png",
+    photo: "chanda-sahib.webp",
     teaser: "Dupleix's chosen Nawab of the Carnatic, whose rise and fall over three years defined the decisive phase of the Carnatic Wars, and whose death ended French dominance in southern India in a single afternoon.",
     body: `**THE FRENCH-BACKED NAWAB**
 
@@ -91,7 +91,7 @@ The British response was Robert Clive's seizure of Arcot in 1751, which diverted
     name: "Charles de Bussy",
     dates: "1718–1785",
     role: "French Military Commander in the Deccan",
-    photo: "charles-de-bussy.png",
+    photo: "charles-de-bussy.webp",
     teaser: "Dupleix's most gifted officer, who administered a French protectorate at Hyderabad for eight years with barely two thousand men, whose recall destroyed everything he had built.",
     body: `**EIGHT YEARS AT HYDERABAD**
 
@@ -110,7 +110,7 @@ He was captured at the Battle of Wandiwash in January 1760 and spent three years
     cardName: "Comte de Lally",
     dates: "1702–1766",
     role: "Last French Commander of Pondicherry",
-    photo: "lally.png",
+    photo: "lally.webp",
     teaser: "The Irish-French general who arrived in 1758 to save French India and instead presided over its final collapse, before being executed in Paris for a defeat that was structurally inevitable.",
     body: `**THE LAST COMMANDER**
 
@@ -129,7 +129,7 @@ The city surrendered in January 1761 after a five-month siege that left the popu
     cardName: "Pierre de Suffren",
     dates: "1729–1788",
     role: "Vice-Admiral, French Navy",
-    photo: "suffren.png",
+    photo: "suffren.webp",
     teaser: "The greatest French naval commander of the eighteenth century, who fought five battles on the Coromandel Coast in 1782 and 1783 and came closer than anyone to reversing Britain's ascendancy in India.",
     body: `**THE ADMIRAL OF THE INDIAN OCEAN**
 
@@ -147,7 +147,7 @@ The peace of 1783 ended his campaign before a decision could be reached. He retu
     name: "Robert Clive",
     dates: "1725–1774",
     role: "British Military Commander; 1st Baron Clive",
-    photo: "robert-clive.png",
+    photo: "robert-clive.webp",
     teaser: "The Company clerk turned conqueror who dismantled Dupleix's empire at Arcot and Srirangam, then handed Britain the revenues of Bengal at Plassey, and ended his life as he had briefly considered beginning it, by his own hand.",
     body: `**CLIVE OF INDIA**
 
@@ -167,7 +167,7 @@ Clive ended his career in controversy, accused of corruption during his two Beng
     name: "Stringer Lawrence",
     dates: "1697–1775",
     role: "Father of the Indian Army",
-    photo: "stringer-lawrence.png",
+    photo: "stringer-lawrence.webp",
     teaser: "The British officer who built the sepoy army from scratch and mentored Robert Clive, whose institutional legacy outlasted every individual battle of the Carnatic Wars.",
     body: `**THE BUILDER OF ARMIES**
 
@@ -185,7 +185,7 @@ He is less celebrated than Clive because his contribution was institutional rath
     name: "Law de Lauriston",
     dates: "1719–1797",
     role: "French Military Officer",
-    photo: "law-de-lauriston.png",
+    photo: "law-de-lauriston.webp",
     teaser: "The French officer who surrendered the last French field force in the Carnatic at Srirangam, on the same afternoon, and possibly the same hour, that Chanda Sahib was beheaded a few miles away.",
     body: `**THE SURRENDER AT SRIRANGAM**
 
@@ -203,7 +203,7 @@ Law de Lauriston was released after capitulation, continued in French service, a
     name: "Hyder Ali",
     dates: "c. 1720–1782",
     role: "De facto Ruler of Mysore",
-    photo: "hyder-ali.png",
+    photo: "hyder-ali.webp",
     teaser: "The self-made Sultan of Mysore who twice humiliated British forces in the field and became the cornerstone of every French strategic plan for India after Pondicherry fell.",
     body: `**THE TIGER BEFORE THE TIGER**
 
@@ -221,7 +221,7 @@ He died on 7 December 1782 of a lumbar abscess, at the moment of maximum French 
     name: "Tipu Sultan",
     dates: "1751–1799",
     role: "Sultan of Mysore",
-    photo: "tipu-sultan.png",
+    photo: "tipu-sultan.webp",
     teaser: "The Tiger of Mysore, last Indian ruler to pose a genuinely existential threat to British power in South Asia, and the most ideologically committed French ally of the Revolutionary era.",
     body: `**THE TIGER OF MYSORE**
 
@@ -241,7 +241,7 @@ Among the objects the British took from his palace was a life-size mechanical au
     name: "Pierre Loti",
     dates: "1850–1923",
     role: "French Novelist and Naval Officer",
-    photo: "pierre-loti.png",
+    photo: "pierre-loti.webp",
     teaser: "The celebrated French novelist who arrived in Pondicherry by sea in 1899 and wrote the most atmospheric literary portrait of the city ever put on paper.",
     body: `**THE NOVELIST WHO CAME BY SEA**
 
@@ -259,7 +259,7 @@ He died in Hendaye in June 1923. *L'Inde (sans les Anglais)* is less read today 
     name: "Romain Rolland",
     dates: "1866–1944",
     role: "French Novelist; Nobel Prize 1915",
-    photo: "romain-rolland.png",
+    photo: "romain-rolland.webp",
     teaser: "The French Nobel laureate who never visited India but whose passionate engagement with Indian spiritual thought built the intellectual bridge between Pondicherry's ashram and European culture.",
     body: `**THE EUROPEAN WHO LISTENED TO INDIA**
 
@@ -277,7 +277,7 @@ He died in Vézelay in December 1944, having never visited India. A street in Po
     name: "François Gaudart",
     dates: "1844–1923",
     role: "First Mayor of Karikal; Industrialist",
-    photo: "francois-gaudart.png",
+    photo: "francois-gaudart.webp",
     teaser: "The first elected mayor of Karikal, lawyer, factory owner, and the man whose gift of a Joan of Arc statue to Notre-Dame des Anges is still one of the most visited objects in Pondicherry.",
     body: `**THE MAN WHO BUILT KARIKAL**
 
@@ -295,7 +295,7 @@ Shortly before his death he donated to [Notre-Dame des Anges](/discover/landmark
     name: "Édouard Goubert",
     dates: "1894–1974",
     role: "Mayor of Pondicherry; Last Pro-French Political Boss",
-    photo: "edouard-goubert.png",
+    photo: "edouard-goubert.webp",
     teaser: "The physician turned political boss who held Pondicherry in the French camp through fraud and obstruction for a decade, then switched sides in 1954 and made the transfer to India possible overnight.",
     body: `**THE LAST MACHINE POLITICIAN**
 
@@ -315,7 +315,7 @@ His political reversal in March 1954 was the decisive event of Pondicherry's fin
     name: "Charles François Baron",
     dates: "1900–1980",
     role: "Last Governor of French India",
-    photo: "charles-baron.png",
+    photo: "charles-baron.webp",
     teaser: "The first Gaullist in history, disciple of Sri Aurobindo, and last Governor of French India: a life that moved from the salons of Paris surrealism to a Singapore poisoning attempt to the spiritual corridors of the White Town.",
     body: `**THE GOVERNOR WHO KNELT BEFORE A YOGI**
 
@@ -333,7 +333,7 @@ In September 1947, Baron arranged a meeting between Sri Aurobindo, in strict sec
     name: "Sri Aurobindo",
     dates: "1872–1950",
     role: "Philosopher, Yogi, Nationalist",
-    photo: "sri-aurobindo.png",
+    photo: "sri-aurobindo.webp",
     teaser: "The Indian nationalist who arrived in Pondicherry in 1910 as a political fugitive, never left, and spent the next forty years building one of the twentieth century's most significant spiritual traditions, in a city that sheltered him because it flew a different flag.",
     body: `**FROM REVOLUTIONARY TO RISHI**
 
@@ -353,7 +353,7 @@ In September 1947, for the first time since 1928, he received outside visitors: 
     name: "Subramania Bharati",
     dates: "1882–1921",
     role: "Tamil Poet; Nationalist",
-    photo: "subramania-bharati.png",
+    photo: "subramania-bharati.webp",
     teaser: "The greatest Tamil poet of the modern era, who lived in Pondicherry from 1908 to 1919 as a fugitive from British India and wrote some of the finest poetry in the Tamil language in a small house near the seafront.",
     body: `**THE POET IN EXILE**
 
@@ -371,7 +371,7 @@ He returned to British India in 1919, was arrested briefly, and died in Madras i
     name: "V. Subbiah",
     dates: "1911–1993",
     role: "Trade Union Leader; Pro-Merger Activist",
-    photo: "v-subbiah.png",
+    photo: "v-subbiah.webp",
     teaser: "The Communist trade union leader who built the popular base that made the pro-merger movement in Pondicherry a mass phenomenon rather than an elite affair.",
     body: `**THE VOICE OF THE WORKERS**
 

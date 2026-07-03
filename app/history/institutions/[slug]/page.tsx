@@ -44,7 +44,7 @@ export default async function InstitutionPage({ params }: { params: Promise<{ sl
       </h1>
 
       {item.teaser && (
-        <p style={{ fontSize: "1.1rem", color: "#78716c", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+        <p style={{ fontSize: "1.1rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
           {item.teaser}
         </p>
       )}

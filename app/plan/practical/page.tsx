@@ -31,7 +31,7 @@ export default function PracticalPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         Practical Information
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         The essentials: what to bring, what to expect, and what catches most visitors off guard.
       </p>
 
@@ -43,7 +43,7 @@ export default function PracticalPage() {
           {items.map((t, i) => (
             <div key={t.id} style={{ marginBottom: i < items.length - 1 ? 36 : 0 }}>
               <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{t.title}</h3>
-              <p style={{ fontSize: "0.95rem", color: "#78716c", lineHeight: 1.7, marginBottom: 16, fontStyle: "italic" }}>{t.summary}</p>
+              <p style={{ fontSize: "0.95rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 16, fontStyle: "italic" }}>{t.summary}</p>
               <ArticleBody text={t.body} />
             </div>
           ))}

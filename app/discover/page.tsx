@@ -41,11 +41,11 @@ export default function DiscoverPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         Explore the Town
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
         Pondicherry rewards slow exploration. The French Quarter is walkable in an afternoon, but understanding it takes longer. Start anywhere.
       </p>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 24 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(420px, 1fr))", gap: 24 }}>
         {sections.map(s => (
           <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 16, overflow: "hidden", display: "block" }}>
             <div style={{ position: "relative", width: "100%", height: 200 }}>
@@ -53,8 +53,8 @@ export default function DiscoverPage() {
             </div>
             <div style={{ padding: "20px 20px 18px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 19, marginBottom: 8, lineHeight: 1.3 }}>{s.title}</p>
-              <p style={{ fontSize: 14, color: "#78716c", lineHeight: 1.65 }}>{s.description}</p>
-              <p style={{ fontSize: 12, color: "#b45309", fontWeight: 600, marginTop: 14 }}>Explore →</p>
+              <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.65 }}>{s.description}</p>
+              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 14 }}>Explore →</p>
             </div>
           </Link>
         ))}

@@ -40,9 +40,9 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "20px 0 8px", lineHeight: 1.2 }}>
         {r.name}
       </h1>
-      <p style={{ fontSize: 14, color: "#78716c", marginBottom: 8 }}>{PRICE[r.priceRange]}{r.address ? ` · ${r.address}` : ""}</p>
+      <p style={{ fontSize: 14, color: "#6b6560", marginBottom: 8 }}>{PRICE[r.priceRange]}{r.address ? ` · ${r.address}` : ""}</p>
 
-      <p style={{ fontSize: "1.05rem", color: "#78716c", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         {r.summary}
       </p>
 
@@ -65,7 +65,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
         </div>
       )}
 
-      {r.hours && <p style={{ fontSize: 14, color: "#78716c", marginTop: 16 }}><strong style={{ color: "#1c1917" }}>Hours: </strong>{r.hours}</p>}
+      {r.hours && <p style={{ fontSize: 14, color: "#6b6560", marginTop: 16 }}><strong style={{ color: "#1c1917" }}>Hours: </strong>{r.hours}</p>}
 
       <AppBanner />
 

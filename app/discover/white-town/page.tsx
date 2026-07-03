@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { streets } from "@/data/streets";
+import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "White Town Streets — Pondicherry",
@@ -20,7 +21,7 @@ export default function WhiteTownPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         The Streets of the French Quarter
       </h1>
-      <p style={{ fontSize: "1.05rem", color: "#78716c", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
         The French Quarter street grid was designed in the 1690s and has barely changed since. Every street carries a name from French India's history — governors, admirals, soldiers, scholars. Most of the names survived decolonisation in 1962.
       </p>
 
@@ -34,7 +35,7 @@ function StreetSection({ title, subtitle, items }: { title: string; subtitle: st
   return (
     <div style={{ marginBottom: 56 }}>
       <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 4, paddingBottom: 12, borderBottom: "1px solid #e8ddd4" }}>{title}</h2>
-      <p style={{ fontSize: 13, color: "#78716c", marginBottom: 24 }}>{subtitle}</p>
+      <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 24 }}>{subtitle}</p>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16 }}>
         {items.map(s => (
           <Link key={s.id} href={`/discover/white-town/${s.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
@@ -46,7 +47,7 @@ function StreetSection({ title, subtitle, items }: { title: string; subtitle: st
             <div style={{ padding: "14px 16px 16px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 4 }}>{s.name}</p>
               <p style={{ fontSize: 12, color: "#b45309", marginBottom: 6 }}>Named after {s.namedAfter}</p>
-              <p style={{ fontSize: 13, color: "#78716c", lineHeight: 1.55 }}>{s.summary.slice(0, 100)}…</p>
+              <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(s.summary, 100)}</p>
             </div>
           </Link>
         ))}
