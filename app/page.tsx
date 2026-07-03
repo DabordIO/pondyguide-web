@@ -106,7 +106,7 @@ export default function HomePage() {
       {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Where to Stay" href="/hotels" />
-        <SectionIntro>White Town has restored heritage properties. The city has other places to fit every taste and need.</SectionIntro>
+        <SectionIntro>25 carefully chosen places to stay, from heritage boutique hotels to budget guesthouses, for every taste.</SectionIntro>
         <ThreeGrid>
           {[
             { href: "/hotels/palais-de-mahe", photo: "/hotels/palais-de-mahe.jpg", title: "Palais de Mahe", description: "The most romantic address in the White Town. A mustard-yellow façade on Rue Law de Lauriston." },

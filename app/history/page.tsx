@@ -18,19 +18,34 @@ export default function HistoryPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         The Story of Pondicherry
       </h1>
-      <p style={{ fontSize: "1.1rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
+      <p style={{ fontSize: "1.1rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 40 }}>
         Few towns in India carry as many layers as Pondicherry. Roman traders, Chola kings, Portuguese, Dutch, British, and French have all left their mark on a stretch of coastline that refused to be ordinary.
       </p>
 
-      <Section title="The Full Story">
+      {/* ── Jump nav ── */}
+      <div style={{ position: "sticky", top: 68, background: "#fff", borderTop: "1px solid #e8ddd4", borderBottom: "1px solid #e8ddd4", zIndex: 10, marginBottom: 48 }}>
+        <div style={{ display: "flex", gap: 32, paddingTop: 14, paddingBottom: 14, overflowX: "auto" }}>
+          {[
+            ["The Full Story", "#the-full-story"],
+            ["French Institutions", "#french-institutions"],
+            ["Lives & Legacies", "#lives-and-legacies"],
+          ].map(([label, href]) => (
+            <a key={href} href={href} style={{ fontSize: 14, fontWeight: 600, color: "#44403c", textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}>
+              {label}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <Section id="the-full-story" title="The Full Story">
         <ArticleGrid items={historyArticles.map(a => ({ id: a.id, title: a.title, teaser: a.teaser ?? "", href: `/history/${a.id}`, photo: a.photo, photoFolder: a.photoFolder ?? "history" }))} />
       </Section>
 
-      <Section title="French Institutions">
+      <Section id="french-institutions" title="French Institutions">
         <ArticleGrid items={institutions.map(a => ({ id: a.id, title: a.title, teaser: a.teaser, href: `/history/institutions/${a.id}`, photo: a.photo, photoFolder: a.photoFolder ?? "history" }))} />
       </Section>
 
-      <Section title="Lives & Legacies">
+      <Section id="lives-and-legacies" title="Lives & Legacies">
         <p style={{ fontSize: 14, color: "#6b6560", marginBottom: 20 }}>The governors, soldiers, scholars, and saints who shaped the town.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
           {figures.map(f => (
@@ -53,9 +68,9 @@ export default function HistoryPage() {
   );
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ id, title, children }: { id?: string; title: string; children: React.ReactNode }) {
   return (
-    <div style={{ marginBottom: 56 }}>
+    <div id={id} style={{ marginBottom: 56, scrollMarginTop: 140 }}>
       <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 24, paddingBottom: 12, borderBottom: "1px solid #e8ddd4" }}>{title}</h2>
       {children}
     </div>
