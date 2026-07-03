@@ -106,6 +106,7 @@ export default function HomePage() {
       {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Where to Stay" href="/hotels" />
+        <SectionIntro>White Town has restored heritage properties. The city has other places to fit every taste and need.</SectionIntro>
         <ThreeGrid>
           {[
             { href: "/hotels/palais-de-mahe", photo: "/hotels/palais-de-mahe.jpg", title: "Palais de Mahe", description: "The most romantic address in the White Town. A mustard-yellow façade on Rue Law de Lauriston." },
@@ -176,6 +177,7 @@ export default function HomePage() {
       {/* ── FRENCH INSTITUTIONS ─────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="French Institutions" href="/history/institutions" />
+        <SectionIntro>The French centres of excellence that still carry on their work, some under Indian administration.</SectionIntro>
         <ThreeGrid>
           {featuredInstitutions.map(a => (
             <ArticleCard key={a.id} href={`/history/institutions/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
@@ -186,6 +188,7 @@ export default function HomePage() {
       {/* ── DISCOVER ────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Explore the Town" href="/discover" />
+        <SectionIntro>Four ways into Pondicherry: its streets, its monuments, its spiritual experiment at Auroville, and day trips that take you further.</SectionIntro>
         <ThreeGrid>
           {[
             { href: "/discover/white-town", photo: "/streets/rue-françois-martin.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
@@ -209,6 +212,7 @@ export default function HomePage() {
       {/* ── WALKS, TRIPS & EXPERIENCES ──────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Walks, Trips & Experiences" href="/discover/explore" />
+        <SectionIntro>Historical places with no equivalent anywhere in India that are yours to explore.</SectionIntro>
         <ThreeGrid>
           {[
             { href: "/discover/explore/walk-white-town", photo: "/explore/walking-tour-1.jpg", title: "Walking the White Town", teaser: "A self-guided walk through the French Quarter: colonial streets, heritage buildings, temples, and the seafront promenade. The best two hours you will spend in Pondicherry." },
@@ -245,6 +249,7 @@ export default function HomePage() {
       {/* ── FESTIVALS ───────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Festival Calendar" href="/festivals" />
+        <SectionIntro>Pondicherry celebrates constantly, and unusually. Each month is a feast.</SectionIntro>
         <ThreeGrid>
           {[
             { href: "/festivals/pongal", photo: "/festivals/pongal.jpg", label: "January", title: "Pongal", description: "The Tamil harvest festival — four days, rice pots boiling over, decorated cows, and kolam patterns at every door." },
@@ -268,6 +273,7 @@ export default function HomePage() {
       {/* ── PLAN ────────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 64 }}>
         <SectionHeader title="Before You Go" href="/plan" />
+        <SectionIntro>All you need to know before you arrive.</SectionIntro>
         <ThreeGrid>
           {[
             { href: "/plan/getting-here", photo: "/transport/puducherry-railway-station.jpg", title: "Getting Here", desc: "Bus from Chennai, train from Bangalore, the ECR coastal road." },
