@@ -212,7 +212,7 @@ export default function HomePage() {
       {/* ── WALKS, TRIPS & EXPERIENCES ──────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Walks, Trips & Experiences" href="/discover/explore" />
-        <SectionIntro>Historical places with no equivalent anywhere in India that are yours to explore.</SectionIntro>
+        <SectionIntro>Places with no equivalent anywhere in India. Yours to explore at your own pace.</SectionIntro>
         <ThreeGrid>
           {[
             { href: "/discover/explore/walk-white-town", photo: "/explore/walking-tour-1.jpg", title: "Walking the White Town", teaser: "A self-guided walk through the French Quarter: colonial streets, heritage buildings, temples, and the seafront promenade. The best two hours you will spend in Pondicherry." },
