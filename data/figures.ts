@@ -35,7 +35,7 @@ His statue stands on [Goubert Avenue](/discover/white-town/avenue-goubert), arm 
     id: "ananda-ranga-pillai",
     name: "Ananda Ranga Pillai",
     dates: "1709–1761",
-    role: "Chief Interpreter to Dupleix; Diarist",
+    role: "Chief Interpreter to Dupleix, Diarist",
     photo: "ananda-ranga-pillai.webp",
     teaser: "Dupleix's chief broker and interpreter, whose private Tamil diary is the most intimate record of French India ever written, and the only one told from inside the room.",
     body: `**THE MAN WHO WROTE IT ALL DOWN**
