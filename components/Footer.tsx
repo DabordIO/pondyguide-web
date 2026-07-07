@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer style={{ background: "#1c1917", color: "#a8a29e", marginTop: 80 }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 24px 32px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 40 }}>
         <div>
+          <Image src="/logo.png" alt="" width={64} height={64} style={{ marginBottom: 12 }} />
           <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>
             Pondy<span style={{ color: "#f97316" }}>.</span>Guide
           </p>
@@ -27,7 +29,7 @@ export default function Footer() {
         <div>
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>The App</p>
           <p style={{ fontSize: 13, lineHeight: 1.7, marginBottom: 12 }}>Take the full guide offline. Maps, history, and recommendations in your pocket.</p>
-          <Link href="/app" style={{ display: "inline-block", background: "#b45309", color: "#fff", fontSize: 13, fontWeight: 700, padding: "8px 16px", borderRadius: 8, textDecoration: "none" }}>
+          <Link href="/app" style={{ display: "inline-block", background: "#d4711a", color: "#fff", fontSize: 13, fontWeight: 700, padding: "8px 16px", borderRadius: 8, textDecoration: "none" }}>
             Get the Pondy App
           </Link>
         </div>
