@@ -22,7 +22,7 @@ export default function Header() {
     <header style={{ background: "#fff", borderBottom: "1px solid #e8ddd4", position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
         <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
-          <Image src="/logo.png" alt="" width={36} height={36} style={{ flexShrink: 0 }} />
+          <Image src="/pondy-seal.png" alt="" width={36} height={36} style={{ flexShrink: 0 }} />
           <span style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 22, fontWeight: 700, color: "#1c1917", letterSpacing: "-0.02em" }}>
             Pondy<span style={{ color: "#d4711a" }}>.</span>Guide
           </span>
