@@ -44,17 +44,17 @@ export const restaurants: Restaurant[] = [
     address: "58, Capitaine Marius Xavier Street, White Town",
     whatsapp: "919994481914",
     summary:
-      "A colonial mansion with a walled garden, Café des Arts is the closest thing Pondicherry has to a Parisian courtyard café. French pastries, fresh salads, crepes, and waffles served under the trees.",
+      "Set inside a restored heritage mansion in the French Quarter, Café des Arts is one of the closest things Pondicherry has to a Parisian-style courtyard café. French pastries, fresh salads, crepes, and waffles are served beneath shaded trees in a space that feels designed for slow, unhurried meals.",
     description:
-      "Set inside a heritage building in the French Quarter, Café des Arts manages to feel both colonial and relaxed. The outdoor garden is the draw: shaded tables, bougainvillea overhead, and a pace that encourages you to stay longer than you planned.\n\nThe food spans French classics and light international dishes. The summer salad (cucumber, mint, watermelon, feta, pumpkin seeds, and almonds) is one of the best things on the menu. The caramelized banana crepe is worth the visit alone. To drink, try the local ginger beer brewed nearby in Auroville.\n\nWeekend mornings bring a queue. Come on a weekday if you want a table without a wait.",
+      "The garden is the main draw: bougainvillea overhead, mismatched tables, and a relaxed rhythm that makes it easy to lose track of time. It's a place that rewards lingering, especially in the cooler morning hours.\n\nThe menu focuses on light French-inspired dishes and café staples. The summer salad, with cucumber, mint, watermelon, feta, pumpkin seeds, and almonds, is a standout for freshness and balance. The caramelized banana crepe is a simple but reliable favourite, and locally brewed ginger beer from Auroville is a refreshing accompaniment. Almond croissants are also worth ordering if you arrive early.\n\nExpect queues on weekend mornings, while weekdays offer a quieter, more comfortable experience with better choice of seating.",
     mustOrder: [
-      "Summer salad: cucumber, mint, watermelon, feta, pumpkin seeds, almonds",
+      "Summer salad (cucumber, mint, watermelon, feta, pumpkin seeds, almonds)",
       "Caramelized banana crepe",
-      "Auroville ginger beer",
       "Almond croissant",
+      "Auroville ginger beer",
     ],
-    tip: "Very busy on weekend mornings. Weekday visits are calmer and you get your pick of the garden tables.",
-    hours: "Open daily, approximate hours 8am to 10pm (check locally)",
+    tip: "Weekday mornings are ideal if you want a calm garden table. Weekends get busy quickly.",
+    hours: "Daily, ~8:00 AM to 10:00 PM (hours may vary)",
     voucherEnabled: true,
   },
   {
@@ -68,17 +68,17 @@ export const restaurants: Restaurant[] = [
     whatsapp: "918940058500",
     photo: "Bread-and-chocolate.jpg",
     summary:
-      "Pondicherry's most inventive kitchen: a chocolatier, gelato maker, and rooftop café rolled into one. The menu runs from breakfast to dinner with serious vegan and vegetarian options.",
+      "One of Pondicherry's more creative all-day cafés, Bread & Chocolate combines a bakery, chocolatier, gelato counter, and rooftop dining space under one roof. The result is a spot that works just as well for a morning pastry stop as it does for a full lunch or relaxed dinner.",
     description:
-      "Bread and Chocolate is one of those rare places that does everything well. Downstairs is a chocolate shop and bakery: house-made sourdough, croissants, macaroons, cinnamon whirls, and a gelato counter. Upstairs, the rooftop dining room serves a menu that takes its vegetables seriously without being tedious about it.\n\nThe Mexican bean salad served in a dosa wrap has become a signature dish. The roast vegetable quinoa poke bowl is the kind of food that makes you feel good about where you are eating. Bread is baked fresh daily and sells out by mid-morning.\n\nDietary options are genuinely wide: vegan, vegetarian, and gluten-free menus are all available and clearly marked.",
+      "Downstairs, the bakery and chocolate counter set the tone: fresh sourdough, croissants, macarons, cinnamon whirls, and house-made chocolates, along with seasonal gelato. Upstairs, the rooftop café offers a menu that leans heavily into fresh produce and global vegetarian cooking, with a clear emphasis on flavour rather than novelty.\n\nDishes like the Mexican bean salad served in a dosa wrap have developed a loyal following, while the roast vegetable quinoa bowl is a dependable, well-balanced option. The bread is baked fresh daily and is often picked up quickly in the morning rush.\n\nThe menu is especially accommodating for different dietary preferences, with clearly marked vegan, vegetarian, and gluten-free options.",
     mustOrder: [
       "Mexican bean salad in dosa wrap",
-      "Roast vegetable quinoa poke bowl",
+      "Roast vegetable quinoa bowl",
       "Cinnamon whirl pastry",
-      "House sourdough (buy a loaf to take)",
+      "House sourdough (worth taking a loaf to go)",
     ],
-    tip: "Arrives early or gets very busy, especially on weekends. The rooftop fills up fast at lunch.",
-    hours: "Open daily from breakfast through dinner",
+    tip: "Arrive early for breakfast or brunch, as both the bakery and rooftop fill up quickly, especially on weekends.",
+    hours: "Open daily from morning through evening service (hours may vary slightly)",
     voucherEnabled: true,
   },
   {
@@ -92,16 +92,16 @@ export const restaurants: Restaurant[] = [
     whatsapp: "919489242962",
     photo: "Coromandel café.jpg",
     summary:
-      "The most famous café in Pondicherry. Garden setting, full menu from breakfast to dinner, and the kind of place where visitors end up spending half a day without meaning to.",
+      "One of Pondicherry's best-known cafés, Coromandel Café has earned its reputation with an elegant garden setting, polished service, and an all-day menu that makes it just as popular for breakfast as it is for dinner.",
     description:
-      "Coromandel Café has the reputation and, mostly, the food to back it up. It sits in a shaded garden in the French Quarter and serves a menu wide enough to cover almost any mood: eggs benedict and bagels for breakfast, French pastries through the morning, Italian pizza and steaks in the evening.\n\nWine and cocktails are available throughout the day, which partly explains why tables get so occupied for so long. The atmosphere is relaxed, international, and slightly self-conscious about being the place everyone recommends.\n\nCome for breakfast or early lunch if you want the quieter version. By late morning it fills up and stays full.",
+      "Set in the heart of White Town, the café offers everything from eggs benedict, bagels, and freshly baked pastries in the morning to wood-fired pizzas, grilled steaks, and seasonal mains later in the day. The menu blends European favourites with contemporary café fare, while a well-curated selection of wines and cocktails encourages guests to linger long after their meal.\n\nThe leafy courtyard is one of the most inviting dining spaces in the city, attracting a mix of travellers, expatriates, and locals celebrating special occasions. It can feel busy throughout the day, but the atmosphere remains relaxed and effortlessly stylish.\n\nFor a quieter experience, visit for breakfast or an early lunch. By late morning, tables fill quickly and often stay occupied well into the evening.",
     mustOrder: [
-      "Eggs benedict (breakfast)",
-      "Thin-crust pizza (dinner)",
+      "Eggs benedict",
+      "Wood-fired pizza",
       "House cocktail",
     ],
-    tip: "Book ahead for dinner on weekends. Breakfast is the easiest time to walk in without a wait.",
-    hours: "Open daily from breakfast through late dinner",
+    tip: "Reserve ahead for dinner, especially on weekends. Breakfast is usually the easiest time to get a table without a wait.",
+    hours: "Daily, 8:00 AM to 11:00 PM.",
   },
   {
     id: "le-cafe",
@@ -112,16 +112,16 @@ export const restaurants: Restaurant[] = [
     lng: 79.8359,
     photo: "le-cafe.jpg",
     summary:
-      "The Sri Aurobindo Ashram's beachfront café on Goubert Avenue. Sea-view seating, simple food, honest coffee. One of the most pleasantly situated spots on the promenade.",
+      "Set directly on Goubert Avenue (Beach Road), facing the Bay of Bengal, Le Café is one of the simplest and most well-situated places to sit by the sea in Pondicherry. It is run in association with the Sri Aurobindo Ashram and is not designed as a destination restaurant in the usual sense.",
     description:
-      "Le Café is run by the Sri Aurobindo Ashram and sits directly on Goubert Avenue facing the Bay of Bengal. It is not trying to be a destination restaurant: the menu is straightforward (coffee, tea, smoothies, cakes, salads, light sandwiches), the prices are fair, and the sea is right there.\n\nThe building has a history worth knowing. It was originally the port office for the railway that once ran from South Boulevard to the old boulevard along Beach Road. In 1952, a powerful cyclone destroyed the pier that connected both destinations. The remains of the pier can still be seen jutting out into the water, a piece of Pondicherry's vanished infrastructure visible from the café terrace.\n\nThe terrace tables overlooking the ocean are what people come for. In the early morning, before the beach road fills with traffic, this is one of the most peaceful spots in the city. It is also one of the few places on the promenade where you can sit, order something, and stay.\n\nAs an Ashram institution, the atmosphere is quieter and more contemplative than the French Quarter cafés. No alcohol.",
+      "The menu is straightforward: coffee, tea, juices, smoothies, cakes, salads, and light sandwiches, all served at reasonable prices with minimal fuss. The appeal here is location above all else. The terrace opens directly onto the promenade, with uninterrupted views of the ocean. Early mornings are especially calm, before the traffic builds along the seafront, and the space becomes one of the more peaceful places in the city to sit with a drink and watch the bay.\n\nLe Café also sits on a historically significant stretch of coastline. The promenade area has changed considerably over time, and parts of the older coastal infrastructure were lost or altered through storms and redevelopment over the decades. Some local accounts mention remnants of earlier pier or port-related structures offshore, which can still be faintly visible depending on tide and light, though the exact history is often mixed with oral recollection rather than clearly documented detail.\n\nAs an Ashram-affiliated café, the atmosphere is quiet, orderly, and alcohol-free. It attracts a steady mix of early walkers, visitors, and people looking for a simple seaside pause rather than a long dining experience.",
     mustOrder: [
       "Filter coffee",
       "Fresh lime soda",
       "Cake of the day",
     ],
-    tip: "Come at sunrise for the best light on the water and the quietest atmosphere on the promenade.",
-    hours: "Open daily from early morning",
+    tip: "Sunrise is the best time to visit. The light is soft over the water and the promenade is at its quietest before the city fully wakes up.",
+    hours: "Typically open from morning to late evening (exact timings may vary slightly by season)",
   },
   {
     id: "the-french-loaf",
@@ -133,16 +133,17 @@ export const restaurants: Restaurant[] = [
     photo: "The-french-loaf.png",
     photoPosition: "bottom",
     summary:
-      "A proper French bakery on Suffren Street. Fresh bread baked daily, croissants, almond croissants, savory tarts, and coffee. One of the best budget stops in the White Town.",
+      "A reliable bakery and café on Suffren Street, The French Loaf is one of White Town's best-value stops for fresh pastries, bread, coffee, and light snacks. It may be part of a larger bakery chain, but it remains a popular choice for an inexpensive breakfast, quick lunch, or afternoon coffee.",
     description:
-      "The French Loaf is on Suffren Street, one of the most photographed streets in the White Town, and it earns its place there. The smell of the baking reaches the pavement before you see the shop.\n\nThe bread and pastry range is genuinely good: fresh loaves, croissants, almond croissants, doughnuts, savory tarts, and a short coffee menu. It opens early and runs until late, which makes it useful at both ends of the day. Prices are low by any measure: this is one of the few places in the French Quarter where you can eat well for very little.\n\nThe croissant, almond or plain, is the thing to get.",
+      "The display is filled throughout the day with croissants, almond croissants, cakes, cookies, savoury puffs, tarts, sandwiches, and freshly baked loaves, alongside a straightforward coffee menu. While it doesn't aim to replicate a traditional Parisian boulangerie, it delivers consistently good baked goods at prices that are noticeably lower than many of White Town's independent cafés.\n\nIts central location also makes it an easy stop while exploring the French Quarter, whether you're picking up breakfast before sightseeing or grabbing a pastry and coffee between walks.\n\nThe almond croissant is the standout, with buttery layers and a generous almond filling. If you're visiting early in the day, it's also worth picking up a fresh loaf of bread to take away.",
     mustOrder: [
       "Almond croissant",
-      "Fresh sourdough loaf",
-      "Savory tart",
+      "Freshly baked bread",
+      "Savoury tart or puff",
+      "Coffee",
     ],
-    tip: "Bread sells out by mid-morning. Come early if you want the full range.",
-    hours: "Open daily from early morning to late evening",
+    tip: "Visit in the morning for the widest selection of freshly baked pastries and bread.",
+    hours: "Open daily from early morning until late evening (hours may vary slightly).",
   },
   {
     id: "indian-coffee-house",
@@ -153,16 +154,17 @@ export const restaurants: Restaurant[] = [
     lng: 79.8340,
     photo: "Indian-coffee-house.jpg",
     summary:
-      "A 1940s canteen that has not changed and does not intend to. Standing room only, filter coffee for 25 rupees, and a menu that shifts from dosa at breakfast to biryani at lunch.",
+      "For generations, Indian Coffee House has been serving simple South Indian food and strong filter coffee with very little interest in following café trends. Part of the long-running worker-owned Indian Coffee House network, it remains one of Pondicherry's most authentic budget dining experiences.",
     description:
-      "Indian Coffee House belongs to a different era and that is precisely why it is worth visiting. The interior has the feel of a colonial-period canteen: tiled floors, ceiling fans, a counter for ordering, and no concessions to ambiance. Time has stood still here, deliberately.\n\nThe menu changes through the day. Mornings bring dosa, idly, and vada. By afternoon it shifts to biryani, uttapam, and omelettes. The filter coffee is spiced, sweet, and strong, served in a steel tumbler, and costs around 25 rupees. A samosa is about 10.\n\nThis is not a tourist destination in the conventional sense. It is where Pondicherry residents eat. That is what makes it worth knowing about.",
+      "The atmosphere is refreshingly unchanged. Ceiling fans, stainless steel tumblers, handwritten bills, and a steady flow of regulars create the feeling of a place that exists entirely for its customers rather than for social media. During busy periods, seating is limited and many diners happily stand while enjoying a quick coffee or breakfast.\n\nThe menu is built around South Indian staples. Idli, vada, pongal, and masala dosa are the breakfast favourites, while later in the day you'll often find biryani, omelettes, and simple rice dishes alongside snacks and tea-time favourites. The filter coffee, served in the traditional stainless steel tumbler and davara, is rich, sweet, and reliably satisfying while remaining one of the city's best-value drinks.\n\nThis isn't a destination created for visitors. It's a working café where students, office workers, and long-time residents stop for breakfast, a coffee break, or an inexpensive meal. That everyday authenticity is exactly what makes it worth seeking out.",
     mustOrder: [
-      "Filter coffee (25 rupees)",
-      "Masala dosa (morning)",
-      "Vegetable biryani (lunch)",
+      "Filter coffee",
+      "Masala dosa",
+      "Idli and vada",
+      "Vegetable biryani (if available)",
     ],
-    tip: "Standing room only. Go with the flow: order at the counter, find a spot, eat standing. It is part of the experience.",
-    hours: "Open daily from early morning through afternoon",
+    tip: "Visit in the morning for the fullest breakfast selection. Peak hours can be busy, and seating is limited, so be prepared to wait briefly or enjoy your coffee standing like many of the regulars.",
+    hours: "Typically open from early morning until late afternoon (hours may vary).",
   },
   {
     id: "sola-bistro",
@@ -173,16 +175,17 @@ export const restaurants: Restaurant[] = [
     lng: 79.8330,
     photo: "Sola-bistro.jpeg",
     summary:
-      "Mediterranean food in a restored French Quarter building. The thin-crust sourdough pizzas are the best in the city. Book ahead on weekends.",
+      "Housed in a beautifully restored heritage building in White Town, Sola Bistro brings a modern Mediterranean sensibility to Pondicherry's dining scene. With naturally fermented pizzas, fresh pasta, seasonal ingredients, and a thoughtful cocktail programme, it has become one of the city's most popular restaurants for a leisurely lunch or dinner.",
     description:
-      "Sola Bistro occupies a colonial building in the French Quarter and brings a focus to its cooking that most Pondicherry restaurants do not bother with. The menu is Mediterranean: pizza, pasta, salads, and flatbreads, executed with more care than the surroundings might lead you to expect.\n\nThe thin-crust sourdough pizzas are the main draw. The dough is properly fermented, the toppings balanced, and the result is substantially better than anything else in its category in the city. The cocktail list is well-built: a Moscow Mule is the safe recommendation.\n\nThe restaurant fills up quickly after opening. Reservations are strongly recommended for dinner, especially on weekends.",
+      "The menu blends Mediterranean and contemporary European influences, moving comfortably between wood-fired pizzas, handmade pastas, vibrant salads, grilled dishes, and sharing plates. The kitchen places clear emphasis on quality ingredients and careful preparation rather than an overly long menu, and the result is consistently polished without feeling overly formal.\n\nThe naturally fermented pizzas are the standout. Crisp yet airy, with well-balanced toppings and a flavourful crust, they are widely regarded as among the best in Pondicherry. Pasta dishes change with seasonal ingredients, while the cocktail list complements the food with a mix of classics and house creations.\n\nThe dining room retains much of the character of the original heritage building, creating an atmosphere that feels elegant without being intimidating. It's a favourite for date nights, celebrations, and relaxed evenings over good food and drinks.",
     mustOrder: [
-      "Thin-crust sourdough pizza (any topping)",
-      "Moscow Mule",
-      "Pasta of the day",
+      "Naturally fermented pizza (any topping)",
+      "Fresh pasta of the day",
+      "Burrata or seasonal starter (when available)",
+      "A house cocktail",
     ],
-    tip: "Book a table in advance for dinner. Walk-ins at lunch are usually possible.",
-    hours: "Lunch and dinner daily; check locally for exact hours",
+    tip: "Reservations are recommended for dinner, particularly on weekends. Lunch is generally quieter and offers a more relaxed experience.",
+    hours: "Open daily for lunch and dinner (hours may vary slightly).",
     voucherEnabled: true,
   },
   {
@@ -194,16 +197,16 @@ export const restaurants: Restaurant[] = [
     lng: 79.8335,
     photo: "De-blue-fin.jpg",
     summary:
-      "The place for fresh seafood in Pondicherry. The Bay of Bengal catch arrives daily: tawa-fried fish, grilled prawns, crab, lobster, and squid masala on a single shared platter.",
+      "One of Pondicherry's best-known seafood restaurants, De Bluefin keeps the focus where it belongs: fresh fish, shellfish, and straightforward coastal cooking. It's the kind of place locals and visitors alike come to when they're craving seafood rather than atmosphere.",
     description:
-      "Pondicherry sits on the Bay of Bengal and has a working fishing community. De Bluefin is where that fact translates into a meal. The kitchen buys what comes off the boats and cooks it straightforwardly: fried, grilled, or in a masala.\n\nThe signature seafood platter brings together tawa-fried fish, grilled prawns, crab, lobster, and squid masala. It is designed for sharing and takes the guesswork out of ordering. Individual dishes are also available if you want to focus on one thing.\n\nThe atmosphere is simple and unpretentious. The food is the point here, not the decor.",
+      "The menu showcases the flavours of the Bay of Bengal through grilled, tawa-fried, and masala-based preparations, with the day's selection often reflecting what's available from local suppliers. Fish, prawns, crab, squid, and lobster all feature regularly, prepared with minimal fuss and generous seasoning that lets the seafood remain the star.\n\nThe signature seafood platter is the easiest introduction to the menu, typically combining a selection of fish, prawns, crab, squid, and, when available, lobster on one generously sized sharing plate. If you prefer to focus on a single dish, the grilled prawns and traditional fish curry with rice are consistently popular choices.\n\nThe dining room is simple and unpretentious, placing the emphasis firmly on the food rather than the décor. Service is friendly, portions are generous, and prices remain reasonable considering the quality and quantity of seafood on offer.",
     mustOrder: [
-      "Seafood platter (tawa fish, grilled prawns, crab, lobster, squid masala)",
+      "Seafood platter (selection varies by availability)",
       "Grilled prawns",
       "Fish curry with rice",
     ],
-    tip: "Come for lunch when the catch is freshest. Prices are reasonable by seafood standards.",
-    hours: "Lunch and dinner daily",
+    tip: "Ask what's freshest that day before ordering. The menu can vary with seasonal availability, and the staff are usually happy to recommend the day's best seafood.",
+    hours: "Open daily for lunch and dinner (hours may vary slightly).",
   },
   {
     id: "boku-ramen",
@@ -214,15 +217,17 @@ export const restaurants: Restaurant[] = [
     lng: 79.8330,
     photo: "Boku-ramen.jpeg",
     summary:
-      "A small street-side ramen shop in the French Quarter with three proper broths and the kind of bowl that surprises you in a city not known for Japanese food.",
+      "A compact ramen bar in White Town, Boku Ramen has earned a loyal following by focusing on one thing and doing it well. Rather than offering an extensive menu, it keeps the spotlight on carefully prepared bowls of ramen inspired by classic Japanese styles, making it one of the more unexpected finds in Pondicherry's increasingly diverse dining scene.",
     description:
-      "Boku Ramen is a short-menu, no-frills operation that takes its ramen seriously. Three broths: shoyu (soy-based), miso, and paitan (rich chicken bone). Each comes with toppings chosen at the counter.\n\nThe shoyu chicken ramen is the one to order: a clean, salty broth with perfectly cooked noodles, enoki mushrooms, and fresh vegetables. Vegan and vegetarian broth options are available and well-made.\n\nIn a city full of rice and curry, a bowl of good ramen at a street-side price is a welcome surprise.",
+      "The menu centres on a handful of broth options, typically including shoyu, miso, and rich chicken-based varieties, with a choice of toppings to customise each bowl. The emphasis is on deeply flavoured broths, springy noodles, and fresh ingredients rather than elaborate presentation.\n\nThe shoyu chicken ramen is a favourite for its light yet savoury broth, while the miso ramen offers a richer, more comforting alternative. Vegetarian and vegan options are also available, making the restaurant an easy choice for mixed groups with different dietary preferences.\n\nThe space is small, informal, and often busy, creating an atmosphere that feels more like a neighbourhood ramen shop than a conventional restaurant. It's an excellent choice for a casual lunch or an inexpensive dinner after exploring White Town.",
     mustOrder: [
       "Shoyu chicken ramen",
-      "Miso ramen (vegetarian)",
+      "Miso ramen",
+      "Gyoza (if available)",
+      "Matcha or Japanese-style beverage (if available)",
     ],
-    tip: "Small space, limited seating. Go at off-peak hours if you want a table.",
-    hours: "Lunch and dinner; check locally for exact hours",
+    tip: "Seating is limited, so visit outside peak lunch and dinner hours if you want to avoid waiting.",
+    hours: "Open for lunch and dinner (hours may vary slightly).",
   },
   {
     id: "gelateria-montecatini",
@@ -235,14 +240,14 @@ export const restaurants: Restaurant[] = [
     whatsapp: "914132227434",
     photo: "Gelateria.jpg",
     summary:
-      "Italian-style gelato on the beachfront. The tiramisu and cremino flavours are the ones to try. The right way to end a walk along Goubert Avenue.",
+      "Italian-style gelato by the sea, Gelateria Montecatini Terme is one of the easiest recommendations for a sweet stop while walking along Pondicherry's promenade. With the ocean on one side and the French Quarter just behind, it is the kind of place that naturally fits into an evening stroll.",
     description:
-      "Gelateria Montecatini Terme is on the seafront and serves proper Italian-style gelato. The range covers the classics (vanilla, strawberry, mint) and some more interesting options (tiramisu, Irish cream, brownie, cremino).\n\nThe tiramisu gelato is the standout: it has the bitterness of the coffee and the richness of the mascarpone balanced well. The cremino (chocolate-hazelnut) is the other one worth having.\n\nA scoop costs very little. It is the obvious stop at the end of a promenade walk, before or after the sunset.",
+      "The menu offers a mix of familiar favourites and richer dessert-inspired flavours, with options that typically include classics as well as indulgent choices such as tiramisu, chocolate-hazelnut styles, and brownie-inspired flavours. The focus is simple: good gelato, served in a relaxed setting with a front-row view of the seafront.\n\nThe tiramisu flavour is the one to start with, combining coffee notes with a creamy dessert-like richness. The cremino, with its chocolate and hazelnut profile, is another popular choice for those who prefer something more decadent.\n\nPrices remain reasonable, making it an easy addition to a walk along Goubert Avenue rather than a planned dessert destination. The best time to visit is around sunset, when the promenade comes alive and the sea views are at their most atmospheric.",
     mustOrder: [
       "Tiramisu gelato",
-      "Cremino (chocolate-hazelnut)",
+      "Cremino (chocolate-hazelnut style)",
     ],
-    tip: "Best visited around sunset when the light on the water is at its best and the promenade is at its most lively.",
+    tip: "Visit around sunset for the best combination of gelato, sea breeze, and promenade atmosphere.",
     hours: "Open daily from late morning through evening",
   },
   {
@@ -254,15 +259,16 @@ export const restaurants: Restaurant[] = [
     lng: 79.8330,
     photo: "catamaran-brewing.jpg",
     summary:
-      "Pondicherry's craft beer scene is small and Catamaran is one of its better entries: ales, lagers, pilsners brewed in-house, with food and occasional live music.",
+      "Pondicherry's craft beer scene is still relatively young, and Catamaran Brewing Company is one of the places that has helped put it on the city's map. With house-brewed beers, a casual dining menu, and an easygoing evening atmosphere, it offers something different from the French Quarter's cafés and cocktail bars.",
     description:
-      "Craft brewing came to Pondicherry relatively recently, and Catamaran is one of the places that made it stick. The brewery produces ales, lagers, and pilsners on-site, and the range is wider than you would expect for a city this size.\n\nThe food menu supports a proper session rather than just drinks: burgers, bar snacks, and larger plates. Live music and bar games appear on some evenings.\n\nFor visitors arriving from a long journey or wanting an evening that does not involve wine or cocktails, Catamaran fills the gap well.",
+      "The brewery produces its own beers on-site, with a rotating selection that typically includes styles such as lagers, pilsners, and ales. The appeal is less about chasing rare beer styles and more about having a fresh, locally brewed pint in a relaxed setting. The house lager is the safest starting point: crisp, approachable, and suited to Pondicherry's warm evenings. If available, a seasonal ale is worth trying for something with more character.\n\nThe food menu is designed for lingering rather than a quick drink. Expect familiar pub-style favourites such as burgers, bar snacks, and larger plates that pair naturally with beer. It is the kind of place where a planned one-hour stop can easily turn into a longer evening, especially when the music starts or the crowd picks up.\n\nThe atmosphere is casual and social, attracting a mix of locals, travellers, and groups looking for a more laid-back night out. It does not have the heritage charm of White Town cafés, but that is exactly the point: Catamaran offers a more contemporary Pondicherry experience.",
     mustOrder: [
       "House craft lager",
-      "Seasonal ale (ask what is on)",
+      "Seasonal or limited-release ale (ask what is pouring)",
+      "A beer-friendly sharing plate",
     ],
-    tip: "Check their social media for live music nights before visiting.",
-    hours: "Evenings; check locally for current opening hours",
+    tip: "Check ahead for live music evenings and arrive after sunset when the brewery atmosphere is at its best.",
+    hours: "Typically open from late afternoon into the evening; check current timings before visiting.",
   },
 
   {
@@ -275,11 +281,11 @@ export const restaurants: Restaurant[] = [
     address: "12, Bussy Street, White Town",
     whatsapp: "919944835916",
     photo: "baker-street.jpg",
-    summary: "An Indo-French café on Bussy Street where flaky éclairs and a killer chicken-olive sandwich have earned a loyal morning crowd.",
-    description: "Baker Street sits on Bussy Street and has quietly become one of the most reliable breakfast and lunch stops in the White Town. The menu is short and well-executed: sandwiches, quiches, pasta, lasagne, and a pastry counter stocked with éclairs, croissants, and daily specials.\n\nThe chicken and olive sandwich is the thing to order: properly seasoned, generous, and served on bread that is baked in-house. The éclairs sell out fast. The café fills quickly after opening and again around mid-morning, so timing matters.\n\nThe atmosphere is neighbourhood rather than tourist: locals picking up bread, regulars with laptops, the occasional passing cyclist. Prices are low for the quality.",
+    summary: "An Indo-French bakery and café on Bussy Street where buttery pastries, flaky éclairs, and a standout chicken and olive sandwich have made it one of White Town's most enduring breakfast institutions.",
+    description: "Baker Street has been a fixture of White Town's café scene for years, occupying a prominent corner on Rue Bussy (Bussy Street). Inspired by Pondicherry's French heritage, it blends the atmosphere of a neighbourhood boulangerie with an approachable café menu, making it equally popular with locals, expatriates, and visitors. The offering is deliberately concise but consistently executed: freshly baked breads, sandwiches, quiches, lasagne, pasta, savoury bakes, and a pastry counter lined with éclairs, croissants, tarts, and changing daily specials.\n\nThe chicken and olive sandwich remains the house classic: generously filled with well-seasoned chicken, briny olives, crisp vegetables, and served on bread baked fresh in-house each morning. The éclairs, available in rotating flavours alongside the traditional chocolate, are among the city's best and often disappear before lunchtime. Quiches are equally dependable, while the croissants strike an admirable balance between crisp, flaky layers and buttery richness.\n\nThe atmosphere feels distinctly local rather than overtly touristy. Residents stop in for their daily bread, regulars settle down with coffee and laptops, and cyclists and morning walkers drift in after exploring the seaside promenade. Considering the quality of the baking, prices remain remarkably reasonable by White Town standards.",
     mustOrder: ["Chicken & olive sandwich", "Éclairs", "Quiche"],
-    tip: "Arrive early (before 9 AM) or after 10:30 AM to avoid the rush.",
-    hours: "Morning to early afternoon; closed some afternoons",
+    tip: "Arrive before 9 AM or after 10:30 AM to avoid the breakfast rush. The pastry selection is at its fullest early in the day.",
+    hours: "Morning to early afternoon; opening hours may vary on certain afternoons.",
   },
 
   {
@@ -290,10 +296,10 @@ export const restaurants: Restaurant[] = [
     lat: 11.9338,
     lng: 79.8328,
     photo: "botanist-lounge.jpg",
-    summary: "A colonial-chic bar and café in the White Town known for its vegan mango ice cream, inventive cocktails, and one of the most photogenic interiors in the city.",
-    description: "The Botanist Lounge occupies a beautifully restored space in the La Maison Rose building in the White Town. The interiors are the first thing visitors notice: pressed flowers, botanical prints, rattan furniture, and warm lighting that makes the space work equally well in the afternoon and late into the evening.\n\nThe menu blends café staples with a serious bar programme. The vegan mango ice cream has developed a following of its own. The cocktails are inventive without being gimmicky. It is one of the few spots in Pondicherry where you can move seamlessly from a late lunch to an evening drink without it feeling wrong.\n\nThe crowd tends to be a mix of design-minded travellers, Aurovilians, and White Town regulars.",
+    summary: "A stylish botanical café and cocktail bar in White Town celebrated for its elegant interiors, creative drinks, and one of Pondicherry's most memorable vegan desserts.",
+    description: "The Botanist Lounge occupies a beautifully restored space within La Maison Rose, one of White Town's charming heritage buildings. The interiors are an attraction in themselves: preserved botanical specimens, pressed flowers, rattan furniture, colonial detailing, lush greenery, and warm ambient lighting create a space that feels sophisticated without becoming formal. It is equally suited to a leisurely afternoon coffee, sunset cocktails, or a relaxed dinner.\n\nThe menu combines modern café favourites with an inventive cocktail programme that has earned the lounge a loyal following. The vegan mango ice cream has become something of a signature, delivering intense fruit flavour and remarkable creaminess without dairy. Cocktails are imaginative, carefully balanced, and crafted with fresh ingredients rather than novelty. It is one of the few venues in Pondicherry where lingering over lunch naturally transitions into aperitifs and evening drinks.\n\nThe clientele reflects the neighbourhood: design-conscious travellers, Auroville residents, creative professionals, and White Town regulars who appreciate the relaxed elegance of the setting. It remains one of the city's most photogenic cafés without ever feeling designed solely for photographs.",
     mustOrder: ["Vegan mango ice cream", "Signature cocktail"],
-    tip: "Come in the late afternoon when the light through the windows is at its best.",
+    tip: "Visit in the late afternoon, when natural light streams through the windows and the interiors are at their most beautiful.",
   },
 
   {
@@ -304,10 +310,10 @@ export const restaurants: Restaurant[] = [
     lat: 11.9150,
     lng: 79.8220,
     photo: "chez-pushpa.jpg",
-    summary: "A reservation-only Creole home-dining experience in Ariankuppam: duck vadavoum, prawn poriyal, and kesari served at a family table by Pushpa herself.",
-    description: "Chez Pushpa is not a restaurant in the conventional sense. It is a home in Ariankuppam where Pushpa cooks for small groups of guests who book in advance. The food is Creole: a cuisine that belongs specifically to the Franco-Tamil families of Pondicherry, blending French technique with South Indian spicing in ways that exist nowhere else.\n\nThe dishes change with the season and Pushpa's mood, but recurring highlights include duck vadavoum, ridge gourd with prawns poriyal, Vietnamese-style chả giò, and kesari for dessert. The experience is intimate: a minimum of three people, eaten together at the family table, with Pushpa explaining the history and provenance of each dish as it arrives.\n\nThis is one of the few places in the world where authentic Pondicherry Creole cuisine is available to visitors. Book well in advance.",
+    summary: "A reservation-only Creole home-dining experience in Ariyankuppam, where duck vadavoum, prawn poriyal, and traditional desserts are served around the family table by Pushpa herself.",
+    description: "Chez Pushpa is not a restaurant in the conventional sense but an intimate home dining experience in Ariyankuppam, just south of central Puducherry. Guests dine in Pushpa's home after booking well in advance, enjoying a cuisine that is increasingly difficult to find elsewhere: authentic Pondicherry Creole cooking. This distinctive culinary tradition developed within the city's Franco-Tamil communities, blending French influences with Tamil ingredients, local spices, and techniques passed down through generations.\n\nThe menu evolves according to seasonal produce, market availability, and Pushpa's own inspiration, so no two meals are exactly alike. Recurring favourites include duck vadavoum (a deeply aromatic duck preparation featuring the traditional Franco-Creole spice blend), ridge gourd with prawns poriyal, Vietnamese-style chả giò that reflects Pondicherry's historical links with French Indochina, and a comforting serving of kesari to finish. Throughout the meal, Pushpa shares stories about the origins of the dishes, family traditions, and the cultural history behind Pondicherry's Creole cuisine, making the experience as educational as it is memorable.\n\nFew places offer visitors such an authentic introduction to Pondicherry's unique culinary heritage in such a personal setting. It is less a restaurant meal than an invitation into a family tradition.",
     mustOrder: ["Duck vadavoum", "Ridge gourd with prawns poriyal", "Kesari"],
-    tip: "Reservation required. Minimum 3 people. Contact directly to book and confirm the menu.",
+    tip: "Advance reservation is essential. A minimum booking size may apply, so contact Pushpa directly to confirm availability, group size requirements, and the seasonal menu.",
   },
 
   {
@@ -320,10 +326,10 @@ export const restaurants: Restaurant[] = [
     address: "White Town, Puducherry",
     whatsapp: "916384441512",
     photo: "la-villa.jpg",
-    summary: "A 19th-century mansion with a bougainvillea courtyard, serving refined Indo-French and Italian dishes on a seasonal menu that changes with what is fresh.",
-    description: "La Villa occupies a 19th-century colonial mansion in the White Town, its courtyard draped in bougainvillea and its dining room a study in understated heritage restoration. The seasonal menu shifts with what is available locally and changes frequently enough that return visits rarely feel repetitive.\n\nThe kitchen works best with seafood: the prawns and smoked fish fusilli is a consistent standout, as is the prawns coconut curry served inside a coconut shell. The grilled fish is precise and unfussy. The wine list is one of the more thoughtful in Pondicherry.\n\nService is unhurried and attentive. This is a place for a long lunch or a dinner with nowhere to be afterwards. Sister restaurant to Villa Shanti.",
+    summary: "An elegant restaurant set within a beautifully restored 19th-century colonial mansion, where seasonal Indo-French and Italian cooking is served in one of White Town's most romantic courtyards.",
+    description: "La Villa occupies a meticulously restored 19th-century French colonial residence in the heart of White Town. Bougainvillea cascades across the tranquil courtyard, while the interiors preserve the building's historic character through understated architecture, high ceilings, and refined contemporary touches. The restaurant has long established itself as one of Puducherry's finest dining addresses, with a menu that evolves according to seasonal ingredients and the freshest local catch.\n\nSeafood is where the kitchen consistently excels. The prawns and smoked fish fusilli brings together Italian technique with local produce, while the signature prawns coconut curry, served dramatically inside a fresh coconut shell, offers a refined interpretation of regional flavours. Simply grilled market fish demonstrates the kitchen's confidence, relying on careful cooking rather than elaborate presentation. The wine list is among the strongest in Puducherry, thoughtfully curated to complement the menu without becoming overwhelming.\n\nService is polished, attentive, and intentionally unhurried, encouraging guests to linger over a long lunch or an extended dinner. La Villa is the sister restaurant of the equally respected Villa Shanti and shares the same commitment to understated luxury and ingredient-driven cooking.",
     mustOrder: ["Prawns & smoked fish fusilli", "Prawns coconut curry", "Grilled fish"],
-    tip: "Book ahead for courtyard tables. The seasonal menu changes, so ask what is freshest.",
+    tip: "Reserve ahead if you would like a courtyard table. Since the menu changes regularly, ask the staff about the day's freshest seafood and seasonal specials.",
   },
 
   {
@@ -334,10 +340,10 @@ export const restaurants: Restaurant[] = [
     lat: 11.9336,
     lng: 79.8325,
     photo: "mahe-bar.jpg",
-    summary: "The cocktail bar inside Palais de Mahe, one of the White Town's most elegant heritage hotels. The 12 Mile Limit and Connection cocktails are the ones to order.",
-    description: "Mahe Bar sits inside the Palais de Mahe, a meticulously restored heritage property in the White Town that ranks among the finest hotels in Pondicherry. The bar is small, calm, and serious about its cocktails in a way that few places in the city are.\n\nThe 12 Mile Limit is the signature: a rum, rye, and brandy cocktail that references the outer boundary of French territorial waters, the zone beyond which French jurisdiction ended and beyond which Pondicherry once existed in a complicated relationship with British India. The Connection is another house classic, lighter and more approachable.\n\nEven if you are not staying at the Palais de Mahe, the bar is worth visiting. The setting is one of the most beautiful in the White Town.",
+    summary: "An intimate cocktail bar inside Palais de Mahe, one of White Town's finest heritage hotels, serving expertly crafted classics and inventive house signatures in an elegant colonial setting.",
+    description: "Mahe Bar is tucked inside Palais de Mahe, a beautifully restored heritage hotel operated by CGH Earth and widely regarded as one of the most elegant places to stay in Puducherry. Reflecting the quiet sophistication of the hotel itself, the bar offers a calm alternative to the city's livelier nightlife, with polished service, comfortable seating, and an emphasis on thoughtfully made cocktails rather than volume or spectacle.\n\nThe signature 12 Mile Limit combines rum, rye whiskey, and brandy in a spirit-forward cocktail inspired by the historic maritime boundary that once marked the extent of French territorial waters off the coast of French India. It is both a well-balanced drink and a subtle nod to Puducherry's colonial past. The Connection is another house favourite, offering a lighter, more approachable profile while maintaining the same attention to balance and presentation. Alongside the signature cocktails, the bartenders prepare classic drinks with equal confidence.\n\nEven for those not staying at Palais de Mahe, Mahe Bar is worth seeking out. The refined atmosphere, heritage surroundings, and consistently excellent drinks make it one of White Town's finest places for an evening cocktail.",
     mustOrder: ["12 Mile Limit", "Connection cocktail"],
-    tip: "Arrive early in the evening for a seat. The bar is small and fills up on weekends.",
+    tip: "Arrive early in the evening, particularly on weekends, as the intimate bar has limited seating and fills quickly.",
   },
 
   {
@@ -574,12 +580,12 @@ export const restaurants: Restaurant[] = [
     lat: 11.9315,
     lng: 79.8340,
     photo: "Oh Pondi !.png",
-    address: "7, 1st Floor, 7 South Boulevard, near Park",
-    summary: "A South Indian kitchen with over 2,600 reviews and a 4.7 rating, one of the most trusted local restaurants in the city for authentic Tamil cooking.",
-    description: "Oh Pondi! is what happens when a South Indian kitchen gets everything right and word spreads: over 2,600 reviews and a rating that has held at 4.7, which in Pondicherry's restaurant scene is genuinely unusual.\n\nThe menu is rooted in Tamil home cooking: rice meals, gravies, fresh fish preparations, and the kind of food that locals eat rather than what cafés serve to tourists. It occupies a first-floor space on South Boulevard near the park, away from the main tourist drag, which is part of why it has retained its character.\n\nFor visitors who want to eat the way Pondicherry actually eats, South Indian, fresh, affordable, and without pretence, this is the honest answer.",
-    mustOrder: ["Rice meal of the day", "Fish curry", "Filter coffee"],
-    tip: "Go at lunch when the kitchen is at its freshest. Arrive early: it fills up with regulars.",
-    hours: "Lunch from 12 PM; check locally for dinner hours",
+    address: "7, 1st Floor, South Boulevard (Subbaiya Salai), near Park",
+    summary: "One of the most trusted local restaurants in the city for authentic Tamil cooking.",
+    description: "In a city filled with cafés catering to visitors, Oh Pondi! is where you go for the food locals actually eat. This unpretentious first-floor restaurant has built a loyal following by serving hearty Tamil-style meals, generous seafood dishes, and honest home-style cooking at sensible prices.\n\nThe menu leans heavily into regional favourites rather than tourist-friendly interpretations. Expect satisfying rice meals, deeply flavoured gravies, fresh fish prepared in classic South Indian styles, and comforting curries that showcase the bold, spice-forward flavours of Tamil cuisine. Portions are generous, service is efficient, and the focus is firmly on what's on the plate.\n\nLocated just off South Boulevard near the park, it sits slightly away from White Town's busiest café circuit, attracting a healthy mix of residents and travellers who have done their homework.\n\nIf you're looking to experience Pondicherry beyond croissants and beachfront brunches, Oh Pondi! is one of the city's most dependable choices for authentic, affordable South Indian cooking.",
+    mustOrder: ["Rice meal of the day", "Fish curry or fish meals", "Filter coffee"],
+    tip: "Visit at lunch for the freshest selection of meals and seafood. It gets busy with regulars, so arriving before the peak lunch rush is a smart move.",
+    hours: "Daily, approximately 11:45 AM to 11:30 PM, though opening hours can occasionally vary.",
   },
 
   {
