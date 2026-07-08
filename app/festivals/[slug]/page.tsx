@@ -27,7 +27,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
   const f = festivals.find(f => f.id === slug);
   if (!f) return {};
-  return { title: `${f.title} — Pondicherry`, description: f.teaser };
+  return {
+    title: `${f.title} — Pondicherry`,
+    description: f.teaser,
+    openGraph: f.photo ? { images: [`/festivals/${f.photo}`] } : undefined,
+  };
 }
 
 export default async function FestivalOrMonthPage({ params }: { params: Promise<{ slug: string }> }) {

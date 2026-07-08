@@ -14,7 +14,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const a = aurovilleArticles.find(a => a.id === slug);
   if (!a) return {};
-  return { title: `${a.title} — Auroville`, description: a.teaser };
+  return {
+    title: `${a.title} — Auroville`,
+    description: a.teaser,
+    openGraph: a.photo ? { images: [`/auroville/${a.photo}`] } : undefined,
+  };
 }
 
 const HAS_AUROVILLE = /auroville/i;

@@ -13,7 +13,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const r = restaurants.find(r => r.id === slug);
   if (!r) return {};
-  return { title: `${r.name} — Pondicherry`, description: r.summary };
+  return {
+    title: `${r.name} — Pondicherry`,
+    description: r.summary,
+    openGraph: r.photo ? { images: [`/restaurants/${r.photo}`] } : undefined,
+  };
 }
 
 const PRICE = { budget: "₹ Budget", mid: "₹₹ Mid-range", upscale: "₹₹₹ Upscale" };

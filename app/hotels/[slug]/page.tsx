@@ -15,7 +15,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const h = hotels.find(h => h.id === slug);
   if (!h) return {};
-  return { title: `${h.name} — Pondicherry`, description: h.tagline };
+  return {
+    title: `${h.name} — Pondicherry`,
+    description: h.tagline,
+    openGraph: h.photo ? { images: [`/hotels/${h.photo}`] } : undefined,
+  };
 }
 
 const HAS_ESTABLISHMENT_WORD = /hotel|villa|hostel|\binn\b|resort|spa|palais|guest ?house/i;

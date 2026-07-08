@@ -14,7 +14,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const item = institutions.find(a => a.id === slug);
   if (!item) return {};
-  return { title: `${item.title} — Pondicherry`, description: item.teaser };
+  return {
+    title: `${item.title} — Pondicherry`,
+    description: item.teaser,
+    openGraph: item.photo ? { images: [`/${item.photoFolder ?? "history"}/${item.photo}`] } : undefined,
+  };
 }
 
 const HAS_CITY = /pondicherry|pondich[ée]ry|puducherry/i;
