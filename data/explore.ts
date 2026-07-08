@@ -305,8 +305,6 @@ Although it stands within today's French Quarter, Manakula Vinayagar Temple belo
 
 Dedicated to Vinayagar, the Tamil form of Ganesha, the temple is among Puducherry's most visited places of worship. Its gold-plated gopuram, colourful sculptures, painted ceilings, and richly decorated halls make it one of the city's most impressive temple interiors. Daily pujas are held throughout the day, with the morning and evening ceremonies attracting the largest gatherings of devotees.
 
-Many visitors remember the temple elephant, Lakshmi, who welcomed devotees for more than three decades by gently blessing them with her trunk. Following her death in 2022, she remains a cherished part of the temple's recent history.
-
 **Sri Varadaraja Perumal Temple**
 
 A short walk into the Tamil Quarter stands Sri Varadaraja Perumal Temple, one of Puducherry's principal Vaishnavite temples. Dedicated to Vishnu as Varadaraja Perumal, the temple is of medieval origin and continues to serve as an active centre of worship. Unlike the more visited Manakula Vinayagar Temple, it offers a quieter experience, allowing visitors to appreciate its traditional Dravidian architecture and the rhythms of daily temple life.
