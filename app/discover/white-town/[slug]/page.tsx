@@ -17,6 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${s.name} — White Town, Pondicherry`, description: s.summary };
 }
 
+const HAS_CITY = /pondicherry|puducherry|white town/i;
+
+function displayH1(name: string) {
+  return HAS_CITY.test(name) ? name : `${name}, White Town, Pondicherry`;
+}
+
 export default async function StreetPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const street = streets.find(s => s.id === slug);
@@ -40,7 +46,7 @@ export default async function StreetPage({ params }: { params: Promise<{ slug: s
         {street.axis === "N-S" ? "North–South Street" : "East–West Street"}
       </p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
-        {street.name}
+        {displayH1(street.name)}
       </h1>
       {street.altName && <p style={{ fontSize: 14, color: "#6b6560", marginBottom: 8 }}>Also known as: {street.altName}</p>}
       <p style={{ fontSize: 14, color: "#b45309", marginBottom: 24 }}>Named after: {street.namedAfter}{street.dates ? ` (${street.dates})` : ""}</p>

@@ -14,7 +14,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const f = figures.find(f => f.id === slug);
   if (!f) return {};
-  return { title: f.name, description: f.teaser };
+  return { title: `${f.name} — Pondicherry`, description: f.teaser };
+}
+
+const HAS_CITY = /pondicherry|puducherry/i;
+
+function displayH1(name: string) {
+  return HAS_CITY.test(name) ? name : `${name}, Pondicherry`;
 }
 
 export default async function FigurePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -42,7 +48,7 @@ export default async function FigurePage({ params }: { params: Promise<{ slug: s
         {figure.dates}
       </p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 6, lineHeight: 1.2 }}>
-        {figure.name}
+        {displayH1(figure.name)}
       </h1>
       <p style={{ fontSize: 15, color: "#6b6560", marginBottom: 24 }}>{figure.role}</p>
 

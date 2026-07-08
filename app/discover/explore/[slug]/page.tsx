@@ -17,6 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${a.title} — Pondicherry`, description: a.teaser };
 }
 
+const HAS_CITY = /pondicherry|puducherry/i;
+
+function displayH1(title: string) {
+  return HAS_CITY.test(title) ? title : `${title}, Pondicherry`;
+}
+
 export default async function ExploreArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = exploreArticles.find(a => a.id === slug);
@@ -42,7 +48,7 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
         </p>
       )}
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
-        {article.title}
+        {displayH1(article.title)}
       </h1>
 
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>

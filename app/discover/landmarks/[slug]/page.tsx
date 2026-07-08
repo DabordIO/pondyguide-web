@@ -17,6 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${s.name} — Pondicherry`, description: s.summary };
 }
 
+const HAS_CITY = /pondicherry|puducherry/i;
+
+function displayH1(name: string) {
+  return HAS_CITY.test(name) ? name : `${name}, Pondicherry`;
+}
+
 export default async function LandmarkPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const site = sites.find(s => s.id === slug);
@@ -40,7 +46,7 @@ export default async function LandmarkPage({ params }: { params: Promise<{ slug:
         {CATEGORY_LABELS[site.category]}
       </p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
-        {site.name}
+        {displayH1(site.name)}
       </h1>
       {site.frenchName && <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 4 }}>French: {site.frenchName}</p>}
       <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 24 }}>Built: {site.era}</p>

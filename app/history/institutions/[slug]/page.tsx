@@ -14,7 +14,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const item = institutions.find(a => a.id === slug);
   if (!item) return {};
-  return { title: item.title, description: item.teaser };
+  return { title: `${item.title} — Pondicherry`, description: item.teaser };
+}
+
+const HAS_CITY = /pondicherry|pondich[ée]ry|puducherry/i;
+
+function displayH1(title: string) {
+  return HAS_CITY.test(title) ? title : `${title}, Pondicherry`;
 }
 
 export default async function InstitutionPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -40,7 +46,7 @@ export default async function InstitutionPage({ params }: { params: Promise<{ sl
         French Institution
       </p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
-        {item.title}
+        {displayH1(item.title)}
       </h1>
 
       {item.teaser && (

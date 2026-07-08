@@ -17,6 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${a.title} — Auroville`, description: a.teaser };
 }
 
+const HAS_AUROVILLE = /auroville/i;
+
+function displayH1(title: string) {
+  return HAS_AUROVILLE.test(title) ? title : `${title}, Auroville`;
+}
+
 export default async function AurovilleArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = aurovilleArticles.find(a => a.id === slug);
@@ -40,7 +46,7 @@ export default async function AurovilleArticlePage({ params }: { params: Promise
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 6px" }}>Auroville</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
-        {article.title}
+        {displayH1(article.title)}
       </h1>
 
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
