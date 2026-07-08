@@ -315,7 +315,7 @@ When French officials pass through Pondicherry, the memorial is where they come.
     gradient: "linear-gradient(135deg, #002395 0%, #1a3a1a 100%)",
     photo: "can-anyone-become-french-citizens.webp",
     photoFolder: "history",
-    body: `The short answer is: not in the way it once was possible. But the way it was once possible is one of the strangest legal inventions of the colonial era, and understanding it explains why Pondicherry looks the way it does.
+    body: `From the mid-nineteenth century until the transfer of 1962, French India ran a legal door that British India never had: a way for an Indian resident to formally step out of Hindu or Muslim personal law and step into full French citizenship, without leaving home or converting to anything. It produced a class of families who were French in every legal sense and Tamil in every cultural one, and their descendants are still part of Pondicherry today.
 
 **The Renonçant System**
 
