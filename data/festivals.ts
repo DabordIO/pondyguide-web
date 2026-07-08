@@ -93,7 +93,7 @@ export const festivals: Festival[] = [
       "India's Republic Day is marked in Pondicherry with a formal flag-hoisting ceremony on Goubert Avenue, a military and school parade, gallantry awards, and tricolour illuminations along the seafront through the night.",
     body:
       "**The ceremony**\n\nOn January 26, the Lieutenant Governor of Puducherry hoists the national flag at Beach Road (Goubert Avenue) and takes the salute at a formal parade. Police contingents, armed services units, and columns of school children march along the scenic seafront. Gallantry Awards, the President's Medal for meritorious service, and state honours are presented publicly during the ceremony. The citations are read aloud. This is a formal civic occasion, conducted with seriousness.\n\n**The illuminations**\n\nFrom the evening of January 25 through January 26, government buildings, the Gandhi Statue, the [French War Memorial](/discover/landmarks/war-memorial), and landmarks along the seafront are lit with tricolour lighting. A walk along the Promenade at dusk on Republic Day, from the War Memorial to the Lighthouse and back, is worth the effort. The seafront looks different with the buildings lit up.\n\n**Pondicherry University and JIPMER**\n\nBeyond the main ceremony, institutions like Pondicherry University and JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) hold their own flag-hoisting ceremonies, student marches, and cultural programmes on January 26. If you are near either campus, the events there are often more intimate than the main parade.",
-    photo: "republic-day.png",
+    photo: "republic-day.jpg",
     photoPosition: "center 60%",
   },
 
@@ -169,7 +169,7 @@ export const festivals: Festival[] = [
       "Easter in Pondicherry is the most French-inflected Christian festival in India: midnight masses in three grand colonial churches, a 'Way of the Cross' procession through the streets, and the city's bakeries producing handmade chocolate eggs, marzipan bunnies, and French meringues for the season.",
     body:
       "**Holy Week**\n\nEaster in Pondicherry begins formally with Palm Sunday, one week before Easter, and builds through Holy Week. Good Friday is observed with solemn readings from the Gospels, individual fasting, and prayers in the churches. On Holy Saturday evening, the Easter Vigil begins. At midnight, every light in the building goes dark and candles are lit throughout the congregation, representing the resurrection of Christ. The visual effect, inside these large colonial churches, is striking.\n\n**The churches**\n\nThree churches are central to Easter in Pondicherry. The Immaculate Conception Cathedral on Mission Street is the oldest and most central: founded in 1688 and rebuilt in its current Baroque form in 1791. On Easter Sunday morning, a procession called the Way of the Cross moves through the streets around the Cathedral. The Basilica of the Sacred Heart of Jesus on South Boulevard (1908, neo-Gothic) holds a grand midnight mass. [Notre-Dame des Anges](/discover/landmarks/notre-dame) on the seafront, completed in 1855, is the most photographed church in the city. All three hold Easter Vigil masses on Holy Saturday night. Arrive early for seats.\n\n**The bakeries**\n\nThis is where Pondicherry's French heritage makes itself felt most directly. In the days around Easter, the city's patisseries produce handmade chocolate Easter eggs (here filled with fresh cream and white chocolate), hot cross buns, marzipan bunnies, French meringues, and marshmallows. Bread and Chocolate on Rue Suffren is reliable. Grand Bakery and Bon Bakes produce their own seasonal ranges. Many visitors come for the bakeries alone, which is entirely understandable.\n\n**The dates**\n\nEaster 2026 is April 5. Good Friday 2026 is April 3. Palm Sunday is March 29, 2026. Easter 2027 is March 28.",
-    photo: "easter.png",
+    photo: "easter.jpg",
     photoPosition: "top",
   },
 
@@ -186,7 +186,7 @@ export const festivals: Festival[] = [
     body:
       "**The solar new year**\n\nPuthandu, also called Varushapirappu, marks the beginning of the Tamil year at the moment the sun enters Mesha (Aries), the first sign of the Tamil solar zodiac. This happens on April 13 or April 14 in the Gregorian calendar. The same solar event is celebrated as Baisakhi in Punjab and as Vishu in Kerala, each with distinct local customs. Because Puthandu is anchored to the sun's position in the sky, its Gregorian date is as stable as any Western calendar date. This distinguishes it from Hindu festivals like Diwali or Ganesha Chaturthi, which follow the lunisolar calendar and shift by weeks from year to year.\n\n**The auspicious tray**\n\nThe central ritual of Puthandu morning is Kani Paarthal: the first thing you see upon waking must be a specially arranged tray. Families lay out three fruits (mango, banana, jackfruit), silver or gold jewellery, betel leaves and areca nut, fresh flowers, and a mirror. Looking at this tray as the first act of the year is believed to bring wealth, health, and prosperity in the months ahead. In Pondicherry, this private domestic ritual plays out in homes across the Tamil quarter and among Tamil families throughout the city.\n\n**Mangai Pachadi**\n\nThe family feast in the evening is the social centrepiece of Puthandu. The essential dish is Mangai Pachadi: raw mango cooked with jaggery, neem flowers, and tamarind. It is deliberately complex in flavour, combining sour, sweet, bitter, and salty in one mouthful. Tamil tradition holds that this mixture encodes the whole range of experience the new year will bring.\n\n**Further reading**\n\nThe Wikipedia article on Puthandu (en.wikipedia.org/wiki/Puthandu) is a thorough introduction to the festival's customs across Tamil Nadu and its diaspora.",
     website: "en.wikipedia.org/wiki/Puthandu",
-    photo: "tamil-new-year.png",
+    photo: "tamil-new-year.jpg",
   },
 
   {
@@ -241,7 +241,7 @@ export const festivals: Festival[] = [
     category: "arts",
     month: "sep",
     when: "Early September, two days. Confirm current year's dates with the organizers.",
-    photo: "midnight-tribe.png",
+    photo: "midnight-tribe.jpg",
     calendarNote:
       "Dates vary slightly year to year. Check The Midnight Tribe's social channels or Sandunes Paradise Beach Resort for the current edition's schedule and ticket release.",
     teaser:
@@ -256,7 +256,7 @@ export const festivals: Festival[] = [
     category: "french",
     month: "jul",
     when: "July 14 each year",
-    photo: "bastille-day.png",
+    photo: "bastille-day.jpg",
     teaser:
       "France's national day is celebrated in Pondicherry with wreath-laying at the French War Memorial, both national anthems at the Consulate General, a torchlight parade through the White Town, and fireworks over the Promenade.",
     body:
@@ -302,7 +302,7 @@ export const festivals: Festival[] = [
       "Three days of music, illuminated buildings, street food, and dancing mark Pondicherry's double celebration of Indian Independence Day and its own particular history of liberation from French rule.",
     body:
       "**The three days**\n\nThe Fête de Pondichéry runs from August 15 to 17 each year, combining Indian Independence Day with Pondicherry's own layered liberation story. August 15 is India's Independence Day. August 16 is De Jure Day, marking the legal transfer of Pondicherry from French to Indian administration on August 16, 1962. August 17 extends the celebration. The focal point is Gandhi Thidal on Beach Road, where concerts, folk dances, food stalls, and illuminations are concentrated.\n\n**A complicated history**\n\nThe transfer of Pondicherry from France to India was not a straightforward colonial liberation. France administered Pondicherry under a democratic government with universal suffrage, while British India was still a colonial possession. The French departed peacefully on November 1, 1954, the de facto handover. The formal legal ratification did not come until August 16, 1962, when the Treaty of Cession was signed in Paris. Many Pondicherrians hold both dates: November 1 as the day the flag was lowered, August 16 as the day the papers were signed. The Consulate General of France remains open in the city; the relationship between Pondicherry and France continues in a different form.\n\n**The festivities**\n\nGovernment buildings, the seafront, and the colonial facades of the White Town are illuminated and decorated through all three days. On August 15, the Chief Minister hoists the national flag at the Swadeshi Bharathiar Illam (Legislative Assembly), followed by police parade and student contingents. Cultural performances, folk dances mixing Tamil and Western traditions, and food stalls serving local and fusion Tamil-French street food fill the evenings.",
-    photo: "fete-de-pondichery.png",
+    photo: "fete-de-pondichery.jpg",
   },
 
   {
@@ -379,7 +379,7 @@ export const festivals: Festival[] = [
       "On November 1, 1954, the French tricolour was lowered over Pondicherry and the Indian flag raised for the first time. Liberation Day marks the de facto end of French rule with a public holiday, civic parades, and a moment to reckon with what exactly was liberated, and what was lost.",
     body:
       "**The transfer**\n\nFrance and India negotiated the handover of Pondicherry and the other French Establishments (Karikal, Mahé, and Yanam) over several years of careful diplomacy. The de facto handover happened on November 1, 1954: French forces departed, Indian forces arrived, and Pondicherry became part of the Indian Union in practice. The formal legal treaty, however, required ratification by the French National Assembly and did not come until August 16, 1962. Pondicherry therefore observes two liberation dates: November 1 for the physical transfer, August 16 for the legal one.\n\n**The ambivalence**\n\nIt would be wrong to describe the French departure as straightforwardly joyful. France had administered Pondicherry under a democratic government with full French citizenship for its residents and free schooling in French. A substantial Franco-Tamil community left for France after the transfer. Others stayed. The [Consulate General of France](/history/institutions/consulate-general) remains open in the city today; the [Alliance Française](/history/institutions/alliance-francaise) and the [Lycée Français](/history/institutions/lycee-francais) continue operating. [Bastille Day](/festivals/bastille-day) is still celebrated with fireworks on the seafront. The relationship between Pondicherry and France changed in 1954 and 1962; it did not end.\n\n**The observance**\n\nLiberation Day is a public holiday in Puducherry. The government marks it with civic parades, exhibitions of photographs and documents from the 1954 transfer, and ceremonies at public squares honouring the freedom fighters and activists who campaigned for merger with India. The [French War Memorial](/discover/landmarks/war-memorial) on [Goubert Avenue](/discover/white-town/avenue-goubert), which commemorates an earlier conflict, stands nearby.",
-    photo: "liberation-day.png",
+    photo: "liberation-day.jpg",
     photoPosition: "center 25%",
   },
 
@@ -396,7 +396,7 @@ export const festivals: Festival[] = [
     body:
       "**The mythology**\n\nKarthigai Deepam is rooted in one of the oldest stories in South Indian tradition: the moment Lord Shiva appeared as an infinite column of fire to resolve an argument between Vishnu and Brahma about who was superior. Neither god could find the beginning or end of Shiva's flame, proving his supremacy. Shiva then manifested as the sacred hill at Thiruvannamalai, 100 kilometres west of Pondicherry. Every year on Karthigai Deepam night, a great beacon fire is lit on Arunachala Hill and is visible for kilometres in every direction. Many devotees in Pondicherry travel to Thiruvannamalai for the festival; others observe it at home.\n\n**The lamps**\n\nIn Pondicherry, Karthigai Deepam is primarily a domestic festival. Families light rows of agal vilakku (small clay lamps) along compound walls, balcony railings, and doorsteps after sunset. The specific lamp forms have traditional names: the Lakshmi Vilakku (a lamp shaped as a woman with folded hands), the Kuthu Vilakku (a tall brass standing lamp in the shape of a five-petal flower), and the Gajalakshmi Vilakku (an elephant lamp). The effect across the Tamil quarter and the White Town on Karthigai Deepam night is genuinely beautiful: quieter and older than Diwali, entirely without firecrackers.\n\n**The food**\n\nThe festival's traditional sweet is Pori Urundai, balls of puffed rice bound with jaggery. Sweet Pongal and appam are also prepared. Families observe a partial fast during the day, breaking it after sunset when the lamps are lit.\n\n**Finding the date**\n\nThe exact Gregorian date shifts each year with the nakshatra and full moon alignment. For the current year's date, check the Tamil panchangam or contact Pondicherry Tourism at pondytourism@gmail.com.",
     website: "pondytourism@gmail.com",
-    photo: "karthigai-deepam.png",
+    photo: "karthigai-deepam.jpg",
     photoPosition: "center 25%",
   },
 

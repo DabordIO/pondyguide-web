@@ -72,7 +72,7 @@ Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo As
     id: "activity-beach-lighthouse-walk",
     category: "walk",
     title: "The Lighthouse and Fishing Village Walk",
-    photo: "new-lighthouse.png",
+    photo: "new-lighthouse.jpg",
     teaser:
       "From the promenade south through a working fishing village to the new lighthouse. Fabric warehouses with traditional looms, the old lighthouse on its circular base, and a 360-degree view from the top for 5 rupees.",
     duration: "1 to 2 hours",
@@ -289,7 +289,7 @@ Buses run from Pondicherry main bus depot north toward Chennai, passing the Maha
     id: "theme-temples",
     category: "walk",
     title: "Temples of the Tamil Quarter",
-    photo: "temples-tamil-quarter.png",
+    photo: "temples-tamil-quarter.jpg",
     teaser:
       "The city's older history lies just across the canal, in the streets traditionally known as the Tamil Quarter. Here, temples, markets, and family houses reveal a settlement that long predates the arrival of the French East India Company in 1674.",
     duration: "2 to 3 hours",

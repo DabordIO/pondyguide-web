@@ -221,7 +221,7 @@ The settings are part of the experience: shaded gardens, birdsong instead of tra
     id: "how-to-visit",
     title: "How to Visit",
     gradient: "linear-gradient(135deg, #374151 0%, #6b7280 100%)",
-    photo: "going-to-auroville.png",
+    photo: "going-to-auroville.jpg",
     teaser:
       "Auroville covers 20 square kilometres. The Matrimandir requires a pass from the Visitors' Centre. A scooter gives the most flexibility. November to February is the most comfortable time to visit.",
     body: `**Getting there**

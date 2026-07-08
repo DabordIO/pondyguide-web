@@ -82,7 +82,7 @@ export const streets: Street[] = [
   },
   {
     id: "rue-romain-rolland",
-    photo: "rue-romain-rolland.png",
+    photo: "rue-romain-rolland.jpg",
     name: "Rue Romain Rolland",
     axis: "N-S",
     namedAfter: "Romain Rolland, French writer and Nobel laureate",
@@ -142,7 +142,7 @@ export const streets: Street[] = [
   },
   {
     id: "rue-desbassayns",
-    photo: "rue-desbassyns-de-richemont.png",
+    photo: "rue-desbassyns-de-richemont.jpg",
     name: "Rue Desbassayns de Richemont",
     axis: "E-W",
     namedAfter: "Vicomte de Richemont, colonial administrator",
@@ -185,7 +185,7 @@ export const streets: Street[] = [
 
   {
     id: "rue-lally-tollendal",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Rue Lally-Tollendal",
     axis: "E-W",
     namedAfter: "Thomas Arthur de Lally-Tollendal, last French military governor",
@@ -205,7 +205,7 @@ export const streets: Street[] = [
   },
   {
     id: "rue-de-la-compagnie",
-    photo: "rue-de-la-compagnie.png",
+    photo: "rue-de-la-compagnie.jpg",
     name: "Rue de la Compagnie",
     axis: "N-S",
     namedAfter: "Compagnie des Indes (French East India Company)",
@@ -225,7 +225,7 @@ export const streets: Street[] = [
   },
   {
     id: "rue-dumont-durville",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Rue Dumont d'Urville",
     axis: "E-W",
     namedAfter: "Jules Dumont d'Urville, French naval explorer",
@@ -245,7 +245,7 @@ export const streets: Street[] = [
   },
   {
     id: "rue-dupleix",
-    photo: "rue-dupleix.png",
+    photo: "rue-dupleix.jpg",
     name: "Jawaharlal Nehru Street",
     altName: "ex-Dupleix Street",
     axis: "E-W",
@@ -286,7 +286,7 @@ export const streets: Street[] = [
   },
   {
     id: "rue-capitaine-marius",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Rue Capitaine Marius",
     axis: "N-S",
     namedAfter: "Captain François Marius Xavier, Tamil officer of the French Colonial Infantry from Reddiarpalayam",
@@ -348,7 +348,7 @@ export const streets: Street[] = [
   },
   {
     id: "marine-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Marine Street",
     altName: "Rue de la Marine",
     axis: "N-S",
@@ -369,7 +369,7 @@ export const streets: Street[] = [
   },
   {
     id: "st-gilles-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "St. Gilles Street",
     altName: "Rue Saint-Gilles",
     axis: "E-W",
@@ -389,7 +389,7 @@ export const streets: Street[] = [
   },
   {
     id: "bazar-saint-laurent",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Bazar Saint Laurent Street",
     altName: "Rue Bazar Saint-Laurent",
     axis: "E-W",
@@ -431,7 +431,7 @@ export const streets: Street[] = [
   },
   {
     id: "st-ange-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Rue Saint Ange",
     axis: "E-W",
     namedAfter: "Saint Ange (Angelo of Jerusalem, c.1185-1225), Carmelite priest and martyr killed in Licata, Sicily",
@@ -513,7 +513,7 @@ export const streets: Street[] = [
   },
   {
     id: "ananda-rangapillai",
-    photo: "rue-ananda-rangapillai.png",
+    photo: "rue-ananda-rangapillai.jpg",
     name: "Ananda Rangapillai Street",
     axis: "E-W",
     namedAfter: "Ananda Ranga Pillai (1709-1761), dubash to Dupleix and author of the most important Indian diary of the French colonial period",
@@ -575,7 +575,7 @@ export const streets: Street[] = [
   },
   {
     id: "avenue-goubert",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Avenue Goubert",
     altName: "Beach Road",
     axis: "N-S",
@@ -619,7 +619,7 @@ export const streets: Street[] = [
   },
   {
     id: "rue-aurobindo",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Sri Aurobindo Street",
     altName: "Rue Sri Aurobindo",
     axis: "E-W",
@@ -640,7 +640,7 @@ export const streets: Street[] = [
   },
   {
     id: "mission-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Mission Street",
     altName: "Rue de la Mission",
     axis: "E-W",
@@ -680,7 +680,7 @@ export const streets: Street[] = [
   },
   {
     id: "laporte-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Laporte Street",
     altName: "Rue Laporte",
     axis: "E-W",
@@ -700,7 +700,7 @@ export const streets: Street[] = [
   },
   {
     id: "chanda-sahib-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Chanda Sahib Street",
     altName: "Rue Chanda Sahib",
     axis: "E-W",
@@ -720,7 +720,7 @@ export const streets: Street[] = [
   },
   {
     id: "hyder-ali-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Hyder Ali Street",
     altName: "Rue Hyder Ali",
     axis: "N-S",
@@ -741,7 +741,7 @@ export const streets: Street[] = [
   },
   {
     id: "tip-sahib-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Tip Sahib Street",
     altName: "Rue Tipu Sultan",
     axis: "E-W",
@@ -762,7 +762,7 @@ export const streets: Street[] = [
   },
   {
     id: "cardinal-de-beausset-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Cardinal de Beausset Street",
     altName: "Rue Cardinal de Beausset",
     axis: "E-W",
@@ -783,7 +783,7 @@ export const streets: Street[] = [
   },
   {
     id: "bharathi-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Bharathi Street",
     altName: "Rue Bharathi",
     axis: "N-S",
@@ -804,7 +804,7 @@ export const streets: Street[] = [
   },
   {
     id: "voc-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "VOC Street",
     altName: "V.O.C. Street",
     axis: "E-W",
@@ -825,7 +825,7 @@ export const streets: Street[] = [
   },
   {
     id: "nainiappa-pillai-street",
-    photo: "generic.png",
+    photo: "generic.jpg",
     name: "Nainiappa Pillai Street",
     altName: "Rue Nainiappa Pillai",
     axis: "N-S",

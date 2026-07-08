@@ -16,7 +16,7 @@ export const institutionArticles: InstitutionArticle[] = [
     id: "lycee-francais",
     title: "Lycée Français International",
     subtitle: "Founded 1826 as the Collège Royal de Pondichéry. Bicentenary: 2026.",
-    photo: "lycee-français-pondichéry.png",
+    photo: "lycee-français-pondichéry.jpg",
     photoFolder: "history",
     teaser:
       "In autumn 1826 the same governor who opened the Pensionnat de Jeunes Filles also founded a college for boys. Nearly two hundred years later, both institutions are still open. The Lycée is the older of the two by a few weeks.",
@@ -108,7 +108,7 @@ It is the oldest continuously occupied site of French official presence in India
     id: "efeo",
     title: "EFEO Pondicherry Centre",
     subtitle: "École française d'Extrême-Orient, founded Saigon 1900",
-    photo: "EFEO.png",
+    photo: "EFEO.jpg",
     photoFolder: "history",
     teaser:
       "Founded in Saigon in 1900 to study the civilisations of Asia, the EFEO relocated its scholars and collections to Pondicherry as French Indochina collapsed. What it has built here since is one of the world's most rigorous centres for understanding Indian civilisation in its full historical depth.",
@@ -228,7 +228,7 @@ The Pondicherry Alliance Française draws a student body that would be unusual i
     id: "pensionnat",
     title: "Pensionnat de Jeunes Filles",
     subtitle: "Founded 1826, secularized by France in 1903, then absorbed by India",
-    photo: "pensionnat.png",
+    photo: "pensionnat.jpg",
     photoFolder: "history",
     teaser:
       "The first structured institution of girls' education in French India. It was started by missionaries, taken over by the colonial state in 1903, and transferred to Indian administration in 1954. It is still open today.",
@@ -265,7 +265,7 @@ It functions today as a government-run school, still teaching in the same city, 
     id: "cluny-schools",
     title: "The Cluny Schools",
     subtitle: "Sisters of St. Joseph of Cluny, in Pondicherry since 1827",
-    photo: "école-cluny.png",
+    photo: "école-cluny.jpg",
     photoFolder: "history",
     teaser:
       "Anne-Marie Javouhey founded her congregation in 1807 to educate girls that no one else was educating. Her sisters arrived in Pondicherry twenty years later and have been here ever since.",

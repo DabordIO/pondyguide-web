@@ -19,7 +19,7 @@ export const historyArticles: HistoryArticle[] = [
     teaser:
       "Long before any European flag flew here, this coast was already cosmopolitan. Romans anchored offshore. Tamil poets wrote its praises. Pilgrims walked its roads for centuries.",
     gradient: "linear-gradient(135deg, #44211a 0%, #7c3a1e 100%)",
-    photo: "before-the-french.png",
+    photo: "before-the-french.jpg",
     photoFolder: "history",
     body: `Two thousand years before any Frenchman set foot on this shore, the merchants of Rome knew exactly where to find it.
 
@@ -163,7 +163,7 @@ The garden he had planted was Pondicherry itself, briefly the capital of a Frenc
     teaser:
       "In 1761 the British captured Pondicherry and systematically demolished it. What the French recovered eight years later was a field of rubble. The city you see today was built on that foundation, stone by patient stone.",
     gradient: "linear-gradient(135deg, #1a0a0a 0%, #4a1515 100%)",
-    photo: "the-fallen-city.png",
+    photo: "the-fallen-city.jpg",
     photoFolder: "history",
     body: `In 1758, with Dupleix's grand project already unravelling, France sent a new commander to save its Indian position. Thomas Arthur, Count of Lally, arrived at Pondicherry that spring full of energy and quickly made enemies of everyone around him.
 
