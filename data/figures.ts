@@ -410,9 +410,9 @@ He died in office on 30 December 1706, buried in the fort he had built at the he
     id: "mirra-alfassa",
     name: "Mirra Alfassa",
     dates: "1878–1973",
-    role: "Co-founder of the Sri Aurobindo Ashram; 'The Mother'",
+    role: "Co-founder of the Sri Aurobindo Ashram; Founder of Auroville; 'The Mother'",
     photo: "mirra-alfassa.jpg",
-    teaser: "The Parisian painter who arrived in Pondicherry in 1914, recognised Sri Aurobindo as the being she had seen in her inner life for years, and spent the next fifty-nine years building what became the spiritual centre of the White Town.",
+    teaser: "The Parisian mystic who arrived in Pondicherry in 1914, recognised Sri Aurobindo as the being she had seen in her inner life for years, spent the next fifty-nine years building what became the spiritual centre of the White Town, and at ninety founded Auroville.",
     body: `**THE MOTHER**
 
 Mirra Alfassa was born in Paris on 21 February 1878, into a family of Egyptian-Turkish origin that had made its way from Alexandria to the 4th arrondissement. She trained as a visual artist, moved in the Belle Époque intellectual milieu, co-founded a Parisian spiritual journal called the *Revue Cosmique* in 1904, and had, for years before leaving Europe, a series of inner experiences she had no framework to interpret. She arrived in Pondicherry on 29 March 1914, accompanying her second husband Paul Richard, who was standing as a political candidate in the French settlement, and met Sri Aurobindo for the first time. She later said she recognised him immediately as the figure she had been encountering in her inner life since childhood.
