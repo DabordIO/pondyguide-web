@@ -10,6 +10,8 @@ export async function generateStaticParams() {
   return streets.map(s => ({ slug: s.id }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const s = streets.find(s => s.id === slug);

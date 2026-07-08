@@ -10,6 +10,8 @@ export async function generateStaticParams() {
   return aurovilleArticles.map(a => ({ slug: a.id }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const a = aurovilleArticles.find(a => a.id === slug);

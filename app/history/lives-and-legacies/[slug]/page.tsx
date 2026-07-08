@@ -10,6 +10,8 @@ export async function generateStaticParams() {
   return figures.map(f => ({ slug: f.id }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const f = figures.find(f => f.id === slug);

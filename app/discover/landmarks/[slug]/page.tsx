@@ -10,6 +10,8 @@ export async function generateStaticParams() {
   return sites.map(s => ({ slug: s.id }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const s = sites.find(s => s.id === slug);
