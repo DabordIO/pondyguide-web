@@ -495,28 +495,28 @@ His name is least familiar to history because his achievement was survival rathe
     id: "victor-simonel",
     name: "Victor Simonel",
     dates: "1896–1917",
-    role: "Aspirant, 55e Régiment d'Infanterie; Mort pour la France",
+    role: "Officer Cadet, 55th Infantry Regiment; Died for France",
     photo: "victor-simonel.jpg",
     teaser: "The Tamil boy from Pondicherry who won a place at a Paris engineering school the week war was declared, became an infantry officer at twenty-one, and died leading an assault at Verdun, the only child of India to fall there.",
-    body: `**SUS AUX BOCHES**
+    body: `**"DOWN WITH THE GERMANS"**
 
-Victor Simonel was born in Pondicherry on 24 December 1896, into a Tamil family long established in the city. He was educated at the Collège colonial de Pondicherry, the institution that would become the [Lycée Français](/history/institutions/lycee-francais), and was admitted to the École des travaux publics, des bâtiments et de l'industrie in Paris. He arrived in the capital on 19 August 1914. Germany had declared war on France sixteen days earlier.
+Victor Simonel was born in Pondicherry on 24 December 1896, into a Tamil family long established in the city. He was educated at the Collège Colonial in Pondicherry, the institution that would become the [Lycée Français](/history/institutions/lycee-francais), and was admitted to the École des Travaux Publics (School of Public Works, Building, and Industry) in Paris. He arrived in the capital on 19 August 1914. Germany had declared war on France sixteen days earlier.
 
-He entered the school on 26 August 1914 and was mobilised on 15 April 1915. He passed through three regiments before joining the 55e régiment d'infanterie, went to the front on 16 March 1916, aged twenty, and served on the defensive line near Toul, in the Forêt d'Apremont, and at Pont-à-Mousson. Selected for officer training, he sat the examination at Issoudun on 24 July 1917 and returned to the Verdun front as an aspirant, the lowest commissioned rank, on 10 August 1917.
+He entered the school on 26 August 1914 and was mobilised on 15 April 1915. He passed through three regiments before joining the 55th Infantry Regiment, went to the front on 16 March 1916, aged twenty, and served on the defensive line near Toul, in the Apremont Forest, and at Pont-à-Mousson. Selected for officer training, he sat the examination at Issoudun on 24 July 1917 and returned to the Verdun front as an aspirant, the lowest commissioned rank, on 10 August 1917.
 
 On 16 August 1917 he wrote to his father in Pondicherry. He knew the letter might arrive after him:
 
 *"My dear Papa... In the meantime, I place my trust in God. Do not grieve. If my destiny is to die in a few days or in twenty or thirty years, I cannot change my destiny... This is perhaps my last letter. May it reach you. I will try to be equal to my task."*
 
-On 20 August 1917, his section took part in the attack on the Côte du Talou, east of Champneuville, seizing the ridge from the German forces. That evening, his commanding officer having been put out of action, he was assigned as chef de la 4ème section d'assaut, in charge of the spearhead unit of the 1st company, placed in the first line, in front of everything.
+On 20 August 1917, his section took part in the attack on the Côte du Talou, east of Champneuville, seizing the ridge from the German forces. That evening, his commanding officer having been put out of action, he was placed in command of the spearhead unit of the 1st company, in the first line, in front of everything.
 
-At five o'clock in the morning on 21 August 1917, in fog, his section advanced on Samogneux. The German artillery and machine guns opened when the French had covered four hundred metres. His section pressed forward through the barrage. They reached the German wire. Sergeant Durand, who had been watching him, saw Simonel at roughly the halfway point and then saw him no more. The battalion commander's report, written months later, states that the sous-lieutenant Berthy found him dead against the wire: *"Your brother must have pushed into the fog believing his men were following, and he reached the outermost enemy wire."* His last words, reported by his liaison agent Arsène Maret, were: *"We're going in, at them, the Boches."*
+At five o'clock in the morning on 21 August 1917, in fog, his section advanced on Samogneux. The German artillery and machine guns opened when the French had covered four hundred metres. His section pressed forward through the barrage. They reached the German wire. Sergeant Durand, who had been watching him, saw Simonel at roughly the halfway point and then saw him no more. The battalion commander's report, written months later, states that Second Lieutenant Berthy found him dead against the wire: *"Your brother must have pushed into the fog believing his men were following, and he reached the outermost enemy wire."* His last words, reported by his liaison agent Arsène Maret, were: *"We're going in, at them, the Germans."*
 
 Samogneux was taken.
 
 He was cited to the order of the 55th regiment on 4 April 1918: *"A young section commander, full of drive, with remarkable calm and composure. Mortally wounded on 21 August 1917 while leading his men through an enemy wire entanglement."* He was awarded the Croix de Guerre and the Médaille Militaire posthumously in 1920. The city of Verdun inscribed him in its book of honour: *"the only child of India to share with soldiers of every rank the honour of having contributed to the heroic defence of the memorable city."* His name is on the [French War Memorial](/discover/landmarks/war-memorial) on Goubert Avenue. The only child of India to die at Verdun.
 
-He is buried in the national necropolis at Bras-sur-Meuse, near Samogneux, tomb 262. In 2003, earth and a stone from Pondicherry were mixed with the Lorraine soil at the foot of his cross. Shortly after the Armistice, the government of the Établissements français renamed the old rue de la Monnaie in his honour. The street runs to the European Cemetery, the city's oldest burial ground, where the French colonial establishment lies. His plaque is also in the church at Yanam, another of France's Indian settlements, where devotees still come to offer prayers.`,
+He is buried in the national necropolis at Bras-sur-Meuse, near Samogneux, tomb 262. In 2003, earth and a stone from Pondicherry were mixed with the Lorraine soil at the foot of his cross. Shortly after the Armistice, the government of the French Settlements renamed the old rue de la Monnaie in his honour. The street runs to the European Cemetery, the city's oldest burial ground, where the French colonial establishment lies. His plaque is also in the church at Yanam, another of France's Indian settlements, where devotees still come to offer prayers.`,
   },
 
   {
