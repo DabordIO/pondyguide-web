@@ -15,9 +15,9 @@ const EW = streets.filter(s => s.axis === "E-W");
 export default function WhiteTownPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <Link href="/discover" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
+      <Link href="/discover" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
 
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 12px" }}>White Town</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>White Town</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         The Streets of the French Quarter
       </h1>
@@ -46,7 +46,7 @@ function StreetSection({ title, subtitle, items }: { title: string; subtitle: st
             )}
             <div style={{ padding: "14px 16px 16px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 4 }}>{s.name}</p>
-              <p style={{ fontSize: 12, color: "#b45309", marginBottom: 6 }}>Named after {s.namedAfter}</p>
+              <p style={{ fontSize: 12, color: "#d4711a", marginBottom: 6 }}>Named after {s.namedAfter}</p>
               <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(s.summary, 100)}</p>
             </div>
           </Link>

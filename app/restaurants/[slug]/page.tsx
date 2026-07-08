@@ -42,7 +42,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
-      <Link href="/restaurants" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
+      <Link href="/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
 
       {r.photo && (
         <div style={{ position: "relative", width: "100%", height: 320, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
@@ -65,7 +65,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
 
       {r.mustOrder && r.mustOrder.length > 0 && (
         <div style={{ background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 12, padding: "20px 24px", margin: "32px 0" }}>
-          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>Must Order</p>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Must Order</p>
           <ul style={{ listStyle: "disc", paddingLeft: "1.5rem" }}>
             {r.mustOrder.map(dish => <li key={dish} style={{ fontSize: 14, color: "#292524", marginBottom: 6 }}>{dish}</li>)}
           </ul>
@@ -83,8 +83,8 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
       <AppBanner />
 
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 48, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>
-        {prev ? <Link href={`/restaurants/${prev.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← {prev.name}</Link> : <span />}
-        {next ? <Link href={`/restaurants/${next.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>{next.name} →</Link> : <span />}
+        {prev ? <Link href={`/restaurants/${prev.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← {prev.name}</Link> : <span />}
+        {next ? <Link href={`/restaurants/${next.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>{next.name} →</Link> : <span />}
       </div>
     </div>
   );

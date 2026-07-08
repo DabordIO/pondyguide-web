@@ -14,7 +14,7 @@ const PRICE = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };
 export default function RestaurantsPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>Eat</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Eat</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Restaurants in Pondicherry
       </h1>
@@ -35,7 +35,7 @@ export default function RestaurantsPage() {
                 <span style={{ fontSize: 13, color: "#6b6560", marginLeft: 8, flexShrink: 0 }}>{PRICE[r.priceRange]}</span>
               </div>
               <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.6 }}>{truncate(r.summary, 110)}</p>
-              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
             </div>
           </Link>
         ))}

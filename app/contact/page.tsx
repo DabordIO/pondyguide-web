@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>Contact</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Contact</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 2.75rem)", fontWeight: 700, color: "#1c1917", marginBottom: 32, lineHeight: 1.2 }}>
         Get in touch
       </h1>
@@ -30,7 +30,7 @@ export default function ContactPage() {
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
           Write to us at{" "}
-          <a href="mailto:hello@pondyguide.com" style={{ color: "#b45309", textDecoration: "none", fontWeight: 600 }}>
+          <a href="mailto:hello@pondyguide.com" style={{ color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>
             hello@pondyguide.com
           </a>
         </p>

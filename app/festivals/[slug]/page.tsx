@@ -42,7 +42,7 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
     const monthFestivals = festivals.filter(f => f.month === slug);
     return (
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-        <Link href="/festivals" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
+        <Link href="/festivals" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
         <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", margin: "20px 0 40px" }}>
           {MONTH_LABELS[slug]} in Pondicherry
         </h1>
@@ -53,9 +53,9 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
             {monthFestivals.map(f => (
               <Link key={f.id} href={`/festivals/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, padding: "24px", display: "block" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 18, marginBottom: 8, lineHeight: 1.3 }}>{f.title}</p>
-                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginBottom: 10 }}>{f.when}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 10 }}>{f.when}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.65 }}>{truncate(f.teaser, 140)}</p>
-                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 14 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 14 }}>Read more →</p>
               </Link>
             ))}
           </div>
@@ -74,7 +74,7 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
-      <Link href="/festivals" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
+      <Link href="/festivals" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
 
       {festival.photo && (
         <div style={{ position: "relative", width: "100%", aspectRatio: festival.photoAspectRatio ?? "16/9", borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
@@ -82,7 +82,7 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
         </div>
       )}
 
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 6px" }}>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 6px" }}>
         {MONTH_LABELS[festival.month]}
       </p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
@@ -104,8 +104,8 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
       <AppBanner />
 
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 48, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>
-        {prev ? <Link href={`/festivals/${prev.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← {prev.title}</Link> : <span />}
-        {next ? <Link href={`/festivals/${next.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>{next.title} →</Link> : <span />}
+        {prev ? <Link href={`/festivals/${prev.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← {prev.title}</Link> : <span />}
+        {next ? <Link href={`/festivals/${next.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>{next.title} →</Link> : <span />}
       </div>
     </div>
   );

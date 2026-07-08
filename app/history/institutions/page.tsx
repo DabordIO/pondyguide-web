@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function InstitutionsPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <Link href="/history" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← History</Link>
+      <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← History</Link>
 
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 12px" }}>History</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>History</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         French Institutions
       </h1>
@@ -34,7 +34,7 @@ export default function InstitutionsPage() {
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{a.title}</p>
               <p style={{ fontSize: 12, color: "#6b6560", fontStyle: "italic", marginBottom: 8 }}>{a.subtitle}</p>
               <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(a.teaser, 110)}</p>
-              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read more →</p>
+              <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 10 }}>Read more →</p>
             </div>
           </Link>
         ))}

@@ -38,7 +38,7 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
-      <Link href="/discover/explore" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Things to Do</Link>
+      <Link href="/discover/explore" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Things to Do</Link>
 
       {article.photo && (
         <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
@@ -47,7 +47,7 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
       )}
 
       {article.duration && (
-        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 6px" }}>
+        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 6px" }}>
           {article.duration}
         </p>
       )}
@@ -63,7 +63,7 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
 
       {article.highlights && article.highlights.length > 0 && (
         <div style={{ background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 12, padding: "20px 24px", margin: "32px 0" }}>
-          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>What to look for</p>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>What to look for</p>
           <ul style={{ listStyle: "disc", paddingLeft: "1.5rem" }}>
             {article.highlights.map((h, i) => <li key={i} style={{ fontSize: 14, color: "#292524", marginBottom: 8, lineHeight: 1.65 }}>{h}</li>)}
           </ul>
@@ -81,8 +81,8 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
       <AppBanner />
 
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 48, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>
-        {prev ? <Link href={`/discover/explore/${prev.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← {prev.cardTitle ?? prev.title}</Link> : <span />}
-        {next ? <Link href={`/discover/explore/${next.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>{next.cardTitle ?? next.title} →</Link> : <span />}
+        {prev ? <Link href={`/discover/explore/${prev.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← {prev.cardTitle ?? prev.title}</Link> : <span />}
+        {next ? <Link href={`/discover/explore/${next.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>{next.cardTitle ?? next.title} →</Link> : <span />}
       </div>
     </div>
   );

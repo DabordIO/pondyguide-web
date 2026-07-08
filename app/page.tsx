@@ -22,7 +22,7 @@ function SectionHeader({ title, href, h1 = false }: { title: string; href: strin
       <Link href={href} className="section-heading-link">
         {h1 ? <h1 style={headingStyle}>{title}</h1> : <h2 style={headingStyle}>{title}</h2>}
       </Link>
-      <Link href={href} aria-label={`See all: ${title}`} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap", border: "1px solid #b45309", borderRadius: 6, padding: "5px 12px", flexShrink: 0 }}>See all →</Link>
+      <Link href={href} aria-label={`See all: ${title}`} style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap", border: "1px solid #d4711a", borderRadius: 6, padding: "5px 12px", flexShrink: 0 }}>See all →</Link>
     </div>
   );
 }
@@ -35,7 +35,7 @@ function SubHeading({ label, href }: { label: string; href?: string }) {
   return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid #e8ddd4", paddingBottom: 12, marginBottom: 24 }}>
       <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917" }}>{label}</h3>
-      {href && <Link href={href} style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap", border: "1px solid #b45309", borderRadius: 6, padding: "5px 12px", flexShrink: 0 }}>See all →</Link>}
+      {href && <Link href={href} style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap", border: "1px solid #d4711a", borderRadius: 6, padding: "5px 12px", flexShrink: 0 }}>See all →</Link>}
     </div>
   );
 }
@@ -51,7 +51,7 @@ function ArticleCard({ href, photo, photoFolder = "history", title, teaser, prio
       <div style={{ padding: "16px 18px 18px" }}>
         <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{title}</p>
         <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(teaser, 115)}</p>
-        <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+        <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
       </div>
     </Link>
   );
@@ -120,7 +120,7 @@ export default function HomePage() {
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{h.title}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{h.description}</p>
-                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
           ))}
@@ -139,7 +139,7 @@ export default function HomePage() {
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
-                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginBottom: 6 }}>{f.dates}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 6 }}>{f.dates}</p>
                 <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{f.role}</p>
               </div>
             </Link>
@@ -167,7 +167,7 @@ export default function HomePage() {
                   <p style={{ fontSize: 13, color: "#6b6560", whiteSpace: "nowrap", marginLeft: 8 }}>{PRICE_LABELS[r.priceRange] ?? ""}</p>
                 </div>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(r.summary, 115)}</p>
-                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
           ))}
@@ -200,7 +200,7 @@ export default function HomePage() {
                 <Image src={s.photo} alt={s.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 16px" }}>
-                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{s.label}</p>
+                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 5 }}>{s.label}</p>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6, lineHeight: 1.3 }}>{s.title}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.55 }}>{s.description}</p>
               </div>
@@ -226,7 +226,7 @@ export default function HomePage() {
               <div style={{ padding: "14px 16px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{e.title}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(e.teaser, 115)}</p>
-                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
           ))}
@@ -261,7 +261,7 @@ export default function HomePage() {
                 <Image src={f.photo} alt={f.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
               </div>
               <div style={{ padding: "14px 16px 18px" }}>
-                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{f.label}</p>
+                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 5 }}>{f.label}</p>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{f.title}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{f.description}</p>
               </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
               <div style={{ padding: "14px 16px 16px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
                 <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{item.desc}</p>
-                <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 10 }}>Read →</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 10 }}>Read →</p>
               </div>
             </Link>
           ))}

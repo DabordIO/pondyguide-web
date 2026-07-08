@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function HotelsPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>Stay</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Stay</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Hotels in Pondicherry
       </h1>
@@ -38,7 +38,7 @@ export default function HotelsPage() {
                   <div style={{ padding: "20px 20px 16px" }}>
                     <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6 }}>{h.name}</p>
                     <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.6 }}>{h.tagline}</p>
-                    <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+                    <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
                   </div>
                 </Link>
               ))}

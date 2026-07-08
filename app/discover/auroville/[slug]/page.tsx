@@ -38,7 +38,7 @@ export default async function AurovilleArticlePage({ params }: { params: Promise
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
-      <Link href="/discover/auroville" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Auroville</Link>
+      <Link href="/discover/auroville" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Auroville</Link>
 
       {article.photo ? (
         <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
@@ -48,7 +48,7 @@ export default async function AurovilleArticlePage({ params }: { params: Promise
         <div style={{ width: "100%", height: 8, borderRadius: 4, background: article.gradient, margin: "24px 0 28px" }} />
       )}
 
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 6px" }}>Auroville</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 6px" }}>Auroville</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         {displayH1(article.title)}
       </h1>
@@ -61,8 +61,8 @@ export default async function AurovilleArticlePage({ params }: { params: Promise
       <AppBanner />
 
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 48, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>
-        {prev ? <Link href={`/discover/auroville/${prev.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← {prev.title}</Link> : <span />}
-        {next ? <Link href={`/discover/auroville/${next.id}`} style={{ fontSize: 14, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>{next.title} →</Link> : <span />}
+        {prev ? <Link href={`/discover/auroville/${prev.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← {prev.title}</Link> : <span />}
+        {next ? <Link href={`/discover/auroville/${next.id}`} style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>{next.title} →</Link> : <span />}
       </div>
     </div>
   );

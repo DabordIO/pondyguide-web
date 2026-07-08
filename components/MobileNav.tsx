@@ -43,10 +43,10 @@ export default function MobileNav() {
                   padding: "14px 24px",
                   fontSize: 16,
                   fontWeight: active ? 700 : 500,
-                  color: active ? "#b45309" : "#1c1917",
+                  color: active ? "#d4711a" : "#1c1917",
                   textDecoration: "none",
                   borderBottom: "1px solid #f5f0eb",
-                  borderLeft: active ? "3px solid #b45309" : "3px solid transparent",
+                  borderLeft: active ? "3px solid #d4711a" : "3px solid transparent",
                 }}
               >
                 {item.label}

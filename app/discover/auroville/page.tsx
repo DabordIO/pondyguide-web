@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function AurovillePage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <Link href="/discover" style={{ fontSize: 13, color: "#b45309", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
+      <Link href="/discover" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
 
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", margin: "20px 0 12px" }}>Auroville</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Auroville</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Understanding Auroville
       </h1>
@@ -35,7 +35,7 @@ export default function AurovillePage() {
             <div style={{ padding: "18px 18px 16px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{a.title}</p>
               <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.6 }}>{truncate(a.teaser, 120)}</p>
-              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 12 }}>Read more →</p>
+              <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
             </div>
           </Link>
         ))}

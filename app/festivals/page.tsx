@@ -36,7 +36,7 @@ const upcoming = getUpcoming();
 export default function FestivalsPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>Calendar</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Calendar</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Festivals in Pondicherry
       </h1>
@@ -57,11 +57,11 @@ export default function FestivalsPage() {
               </div>
             )}
             <div style={{ padding: "32px 28px" }}>
-              <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 8 }}>{MONTH_LABELS[upcoming.month]}</p>
+              <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 8 }}>{MONTH_LABELS[upcoming.month]}</p>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)", marginBottom: 10, lineHeight: 1.25 }}>{upcoming.title}</p>
-              <p style={{ fontSize: 13, color: "#b45309", marginBottom: 14 }}>{upcoming.when}</p>
+              <p style={{ fontSize: 13, color: "#d4711a", marginBottom: 14 }}>{upcoming.when}</p>
               <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }}>{truncate(upcoming.teaser, 180)}</p>
-              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 20 }}>Read more →</p>
+              <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 20 }}>Read more →</p>
             </div>
           </Link>
         </div>
@@ -80,7 +80,7 @@ export default function FestivalsPage() {
               </div>
             )}
             <div style={{ padding: "14px 16px 16px" }}>
-              <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#b45309", marginBottom: 5 }}>{MONTH_LABELS[f.month]}</p>
+              <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 5 }}>{MONTH_LABELS[f.month]}</p>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 4, lineHeight: 1.3 }}>{f.title}</p>
               <p style={{ fontSize: 12, color: "#6b6560", marginBottom: 8 }}>{truncate(f.when, 60)}</p>
               <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(f.teaser, 90)}</p>

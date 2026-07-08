@@ -37,7 +37,7 @@ const sections = [
 export default function PlanPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b45309", marginBottom: 12 }}>Plan</p>
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Plan</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         Before You Go
       </h1>
@@ -54,7 +54,7 @@ export default function PlanPage() {
             <div style={{ padding: "16px 18px 18px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 19, marginBottom: 10, lineHeight: 1.3 }}>{s.title}</p>
               <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.65 }}>{s.description}</p>
-              <p style={{ fontSize: 14, color: "#b45309", fontWeight: 600, marginTop: 16 }}>Read →</p>
+              <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 16 }}>Read →</p>
             </div>
           </Link>
         ))}
