@@ -18,6 +18,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${h.name} — Pondicherry`, description: h.tagline };
 }
 
+const HAS_ESTABLISHMENT_WORD = /hotel|villa|hostel|\binn\b|resort|spa|palais|guest ?house/i;
+const HAS_CITY = /pondicherry|puducherry/i;
+
+function displayH1(name: string, category: string) {
+  const genericNoun = category === "hostel" ? " Hostel" : " Hotel";
+  const noun = HAS_ESTABLISHMENT_WORD.test(name) ? "" : genericNoun;
+  const city = HAS_CITY.test(name) ? "" : ", Pondicherry";
+  return `${name}${noun}${city}`;
+}
+
 export default async function HotelPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const h = hotels.find(h => h.id === slug);
@@ -41,7 +51,7 @@ export default async function HotelPage({ params }: { params: Promise<{ slug: st
         {COLLECTION_LABELS[h.collection]}
       </p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
-        {h.name}
+        {displayH1(h.name, h.category)}
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         {h.tagline}

@@ -18,6 +18,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const PRICE = { budget: "₹ Budget", mid: "₹₹ Mid-range", upscale: "₹₹₹ Upscale" };
 
+const HAS_ESTABLISHMENT_WORD = /restaurant|café|cafe|\bbar\b|bistro|brewing|brewery|gelateria|lounge|\bspot\b|cuisine|kaffe|coffee/i;
+const HAS_CITY = /pondicherry|puducherry/i;
+
+function displayH1(name: string) {
+  const noun = HAS_ESTABLISHMENT_WORD.test(name) ? "" : " Restaurant";
+  const city = HAS_CITY.test(name) ? "" : ", Pondicherry";
+  return `${name}${noun}${city}`;
+}
+
 export default async function RestaurantPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const r = restaurants.find(r => r.id === slug);
@@ -38,7 +47,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
       )}
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "20px 0 8px", lineHeight: 1.2 }}>
-        {r.name}
+        {displayH1(r.name)}
       </h1>
       <p style={{ fontSize: 14, color: "#6b6560", marginBottom: 8 }}>{PRICE[r.priceRange]}{r.address ? ` · ${r.address}` : ""}</p>
 
