@@ -13,6 +13,8 @@ export interface Street {
   summary: string;
   history: string;
   notable: string[];
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 // N-S streets run parallel to the coast (sea on the right when heading south)
@@ -24,6 +26,8 @@ export const streets: Street[] = [
 
   {
     id: "rue-de-la-marine",
+    metaTitle: "Rue de la Marine, Seafront Street of White Town",
+    metaDescription: "The street closest to the sea, named for the marine itself. Before there was a harbour, every governor, soldier, and bale of cotton arrived through surf.",
     photo: "rue-de-la-marine.jpg",
     name: "Rue de la Marine",
     axis: "N-S",
@@ -42,6 +46,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-dumas",
+    metaTitle: "Rue Dumas, Colonial Avenue of White Town Pondicherry",
+    metaDescription: "Named after the Governor-General who built the palace and improved the harbour. Notre-Dame des Anges and the Joan of Arc statue stand here.",
     photo: "rue-dumas.jpg",
     name: "Rue Dumas",
     axis: "N-S",
@@ -62,6 +68,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-suffren",
+    metaTitle: "Rue Suffren, Admiral's Street in White Town Pondicherry",
+    metaDescription: "Named for the admiral who fought five battles against the British off Pondicherry in 1782 and 1783 without suffering a defeat.",
     photo: "rue-suffren.jpg",
     name: "Rue Suffren",
     axis: "N-S",
@@ -82,6 +90,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-romain-rolland",
+    metaTitle: "Rue Romain Rolland, Nobel Laureate Street in White Town",
+    metaDescription: "The only White Town street named after someone who never visited Pondicherry, honouring the French Nobel laureate and friend of Gandhi.",
     photo: "rue-romain-rolland.jpg",
     name: "Rue Romain Rolland",
     axis: "N-S",
@@ -102,6 +112,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-francois-martin",
+    metaTitle: "Rue François Martin, Founder's Street in White Town",
+    metaDescription: "Named after the founder of French Pondicherry, who stayed with six men in 1674 when others abandoned the settlement.",
     photo: "rue-françois-martin.jpg",
     name: "Rue François Martin",
     axis: "N-S",
@@ -122,6 +134,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-saint-louis",
+    metaTitle: "Rue Saint Louis, Royal Street of White Town Pondicherry",
+    metaDescription: "Named after King Louis IX of France, with the Pondicherry Museum located on this historic White Town street.",
     photo: "rue-saint-louis.jpg",
     name: "Rue Saint Louis",
     axis: "N-S",
@@ -142,6 +156,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-desbassayns",
+    metaTitle: "Rue Desbassayns, Lycée Français Street in White Town",
+    metaDescription: "Named after the administrator who founded the French College in 1826, now the Lycée Français de Pondichéry.",
     photo: "rue-desbassyns-de-richemont.jpg",
     name: "Rue Desbassayns de Richemont",
     axis: "E-W",
@@ -162,6 +178,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-law-de-lauriston",
+    metaTitle: "Rue Law de Lauriston, Rebuilder of Pondicherry Street",
+    metaDescription: "Named after the governor who surrendered to Robert Clive, returned years later, and rebuilt Pondicherry from ruins in five months.",
     photo: "rue-law-de-lauriston.jpg",
     name: "Rue Law de Lauriston",
     axis: "E-W",
@@ -185,6 +203,8 @@ export const streets: Street[] = [
 
   {
     id: "rue-lally-tollendal",
+    metaTitle: "Rue Lally-Tollendal, Tragic Commander Street in White Town",
+    metaDescription: "Named after the commander who surrendered Pondicherry in 1761, was executed in Paris in 1766, and later officially rehabilitated.",
     photo: "generic.jpg",
     name: "Rue Lally-Tollendal",
     axis: "E-W",
@@ -205,6 +225,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-de-la-compagnie",
+    metaTitle: "Rue de la Compagnie, French East India Company Street",
+    metaDescription: "Named after the Compagnie des Indes, the trading company that founded French Pondicherry and shaped its first century.",
     photo: "rue-de-la-compagnie.jpg",
     name: "Rue de la Compagnie",
     axis: "N-S",
@@ -225,6 +247,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-dumont-durville",
+    metaTitle: "Rue Dumont d'Urville, Explorer's Street in White Town",
+    metaDescription: "Named after the French naval explorer of Antarctica. The historic Cercle de Pondichéry stands on this White Town street.",
     photo: "generic.jpg",
     name: "Rue Dumont d'Urville",
     axis: "E-W",
@@ -245,6 +269,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-dupleix",
+    metaTitle: "Jawaharlal Nehru Street, Former Rue Dupleix White Town",
+    metaDescription: "The main east-west axis of White Town, carrying the legacy of Dupleix and the India that later absorbed French Pondicherry.",
     photo: "rue-dupleix.jpg",
     name: "Jawaharlal Nehru Street",
     altName: "ex-Dupleix Street",
@@ -266,6 +292,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-mahe-de-la-bourdonnais",
+    metaTitle: "Rue Mahé de La Bourdonnais, Madras Victory Street",
+    metaDescription: "Named after the commander who captured Madras in 1746, the greatest French military victory in India, before it was traded back.",
     photo: "rue-mahe-de-labourdonnais.jpg",
     name: "Rue Mahé de La Bourdonnais",
     axis: "N-S",
@@ -286,6 +314,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-capitaine-marius",
+    metaTitle: "Rue Capitaine Marius, French Indian Officer Street",
+    metaDescription: "Named after a Tamil officer of the French Colonial Infantry from Reddiarpalayam, identified through the pedestal of his statue.",
     photo: "generic.jpg",
     name: "Rue Capitaine Marius",
     axis: "N-S",
@@ -306,6 +336,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-bussy",
+    metaTitle: "Rue Bussy, Dupleix's Lieutenant Street in White Town",
+    metaDescription: "Named after Dupleix's most gifted lieutenant, who ruled Hyderabad for France, was captured at Wandiwash, and returned decades later.",
     photo: "rue-bussy.webp",
     name: "Rue Bussy",
     axis: "E-W",
@@ -327,6 +359,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-victor-simonnel",
+    metaTitle: "Rue Victor Simonnel, Verdun Hero Street in White Town",
+    metaDescription: "One of White Town's busiest streets, named after a Pondicherry soldier killed at Verdun in 1917, with hospitals and the Lycée Français.",
     photo: "rue-victor-simonel.png",
     name: "Rue Victor Simonnel",
     axis: "N-S",
@@ -348,6 +382,8 @@ export const streets: Street[] = [
   },
   {
     id: "marine-street",
+    metaTitle: "Marine Street, Ashram Street of White Town Pondicherry",
+    metaDescription: "Named after the French navy that connected Pondicherry to France. The Sri Aurobindo Ashram stands on this historic street.",
     photo: "generic.jpg",
     name: "Marine Street",
     altName: "Rue de la Marine",
@@ -369,6 +405,8 @@ export const streets: Street[] = [
   },
   {
     id: "st-gilles-street",
+    metaTitle: "St. Gilles Street, Colonial Homes in White Town",
+    metaDescription: "A quiet White Town street lined with trees, colonial houses, shuttered facades, and walled gardens.",
     photo: "generic.jpg",
     name: "St. Gilles Street",
     altName: "Rue Saint-Gilles",
@@ -389,6 +427,8 @@ export const streets: Street[] = [
   },
   {
     id: "bazar-saint-laurent",
+    metaTitle: "Bazar Saint Laurent Street, Market Street of White Town",
+    metaDescription: "A colourful former market street running parallel to Rue Bussy, named after Saint Laurent, the Roman deacon martyred in 258 AD.",
     photo: "generic.jpg",
     name: "Bazar Saint Laurent Street",
     altName: "Rue Bazar Saint-Laurent",
@@ -410,6 +450,8 @@ export const streets: Street[] = [
   },
   {
     id: "caserne-street",
+    metaTitle: "Caserne Street, French Barracks Street in White Town",
+    metaDescription: "Named after the military barracks that housed the soldiers of French India through sieges, occupations, and two centuries of empire.",
     photo: "rue-de-la-caserne.jpg",
     name: "Caserne Street",
     altName: "Rue de la Caserne",
@@ -431,6 +473,8 @@ export const streets: Street[] = [
   },
   {
     id: "st-ange-street",
+    metaTitle: "Rue Saint Ange, Crossroads Street of White Town",
+    metaDescription: "A street linking the cathedral, the Tamil quarter, and White Town, named after the Carmelite martyr Saint Ange.",
     photo: "generic.jpg",
     name: "Rue Saint Ange",
     axis: "E-W",
@@ -452,6 +496,8 @@ export const streets: Street[] = [
   },
   {
     id: "surcouf-street",
+    metaTitle: "Surcouf Street, Privateer Street Leading to the Beach",
+    metaDescription: "Named after Robert Surcouf, the French privateer who attacked British East India Company shipping in the Indian Ocean.",
     photo: "rue-surcouf.jpg",
     name: "Surcouf Street",
     altName: "Rue Surcouf",
@@ -474,6 +520,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-de-leveche",
+    metaTitle: "Rue de l'Évêché, Bishop's Lane in White Town",
+    metaDescription: "One of White Town's smallest streets, named after the Catholic bishopric established by MEP missionaries in the 1670s.",
     photo: "rue-de-leveche.jpg",
     name: "Rue de l'Évêché",
     altName: "Bishop's Lane",
@@ -494,6 +542,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-baslieu",
+    metaTitle: "Rue Baslieu, Charity Legacy Street in White Town",
+    metaDescription: "Named after a wealthy settler who left his fortune to Pondicherry's poor children and widows, only for the Company to go bankrupt.",
     photo: "rue-baslieu.jpg",
     name: "Rue Baslieu",
     axis: "N-S",
@@ -513,6 +563,8 @@ export const streets: Street[] = [
   },
   {
     id: "ananda-rangapillai",
+    metaTitle: "Ananda Rangapillai Street, Dubash of French India",
+    metaDescription: "Named after the chief broker of the Compagnie des Indes, whose famous Tamil diary survives in twelve volumes.",
     photo: "rue-ananda-rangapillai.jpg",
     name: "Ananda Rangapillai Street",
     axis: "E-W",
@@ -535,6 +587,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-dupuy",
+    metaTitle: "Rue Dupuy, Restorer of French Pondicherry Street",
+    metaDescription: "Named after Governor André Julien Dupuy, who restored French sovereignty in 1816 and rebuilt the city after British occupation.",
     photo: "rue-dupuy.jpg",
     name: "Rue Dupuy",
     axis: "E-W",
@@ -556,6 +610,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-bellecombe",
+    metaTitle: "Rue Bellecombe, Siege Commander Street in White Town",
+    metaDescription: "Named after the governor who defended Pondicherry for ten weeks during the 1778 British siege linked to the American War of Independence.",
     photo: "rue-bellecombe.jpg",
     name: "Rue Bellecombe",
     axis: "E-W",
@@ -575,6 +631,8 @@ export const streets: Street[] = [
   },
   {
     id: "avenue-goubert",
+    metaTitle: "Avenue Goubert, Beach Road of White Town Pondicherry",
+    metaDescription: "Pondicherry's famous 1.5 km promenade, lined with the Gandhi statue, Dupleix statue, French War Memorial, Old Lighthouse, and Raj Nivas.",
     photo: "generic.jpg",
     name: "Avenue Goubert",
     altName: "Beach Road",
@@ -598,6 +656,8 @@ export const streets: Street[] = [
   },
   {
     id: "labourdonnais-street",
+    metaTitle: "Labourdonnais Street, 1746 Madras Victory in White Town",
+    metaDescription: "Named after the admiral who captured Madras in 1746, France's greatest military achievement in India, before being imprisoned in France.",
     photo: "rue-labourdonnais.jpg",
     name: "Labourdonnais Street",
     altName: "Rue Labourdonnais",
@@ -619,6 +679,8 @@ export const streets: Street[] = [
   },
   {
     id: "rue-aurobindo",
+    metaTitle: "Sri Aurobindo Street, Philosopher's Street in White Town",
+    metaDescription: "Named after the philosopher and revolutionary who arrived in Pondicherry in 1910 and built a major spiritual tradition here.",
     photo: "generic.jpg",
     name: "Sri Aurobindo Street",
     altName: "Rue Sri Aurobindo",
@@ -640,6 +702,8 @@ export const streets: Street[] = [
   },
   {
     id: "mission-street",
+    metaTitle: "Mission Street, Catholic Mission Street of White Town",
+    metaDescription: "Named after the French Catholic missionaries who arrived in 1674 and helped shape the city alongside the trading company.",
     photo: "generic.jpg",
     name: "Mission Street",
     altName: "Rue de la Mission",
@@ -660,6 +724,8 @@ export const streets: Street[] = [
   },
   {
     id: "petit-canal-street",
+    metaTitle: "Petit Canal Street, Boundary Canal of White Town",
+    metaDescription: "Named after the smaller canal that marked the edges of the division between White Town and the Tamil quarter.",
     photo: "rue-petit-canal.jpg",
     name: "Petit Canal Street",
     altName: "Rue du Petit Canal",
@@ -680,6 +746,8 @@ export const streets: Street[] = [
   },
   {
     id: "laporte-street",
+    metaTitle: "Laporte Street, Equality Campaigner of French India",
+    metaDescription: "Named after Ponnoutamby Laporte, the Tamil advocate who fought for equal rights between Indian and European French citizens.",
     photo: "generic.jpg",
     name: "Laporte Street",
     altName: "Rue Laporte",
@@ -700,6 +768,8 @@ export const streets: Street[] = [
   },
   {
     id: "chanda-sahib-street",
+    metaTitle: "Chanda Sahib Street, French Ally of the Carnatic",
+    metaDescription: "Named after the Nawab backed by Dupleix, whose execution on 12 June 1752 marked the end of French dominance in South India.",
     photo: "generic.jpg",
     name: "Chanda Sahib Street",
     altName: "Rue Chanda Sahib",
@@ -720,6 +790,8 @@ export const streets: Street[] = [
   },
   {
     id: "hyder-ali-street",
+    metaTitle: "Hyder Ali Street, Mysore Sultan of White Town",
+    metaDescription: "A small White Town street honouring the self-made ruler of Mysore, whose alliance became central to French plans in South India.",
     photo: "generic.jpg",
     name: "Hyder Ali Street",
     altName: "Rue Hyder Ali",
@@ -741,6 +813,8 @@ export const streets: Street[] = [
   },
   {
     id: "tip-sahib-street",
+    metaTitle: "Tip Sahib Street, Tipu Sultan Street in White Town",
+    metaDescription: "Named after Tipu Sultan, France's strongest Indian ally, who corresponded with Napoleon and died at Seringapatam in 1799.",
     photo: "generic.jpg",
     name: "Tip Sahib Street",
     altName: "Rue Tipu Sultan",
@@ -762,6 +836,8 @@ export const streets: Street[] = [
   },
   {
     id: "cardinal-de-beausset-street",
+    metaTitle: "Cardinal de Beausset Street, French Cardinal of Pondicherry",
+    metaDescription: "Named after Louis-François de Bausset-Roquefort, born in Pondicherry in 1748 and later admitted to the Académie française.",
     photo: "generic.jpg",
     name: "Cardinal de Beausset Street",
     altName: "Rue Cardinal de Beausset",
@@ -783,6 +859,8 @@ export const streets: Street[] = [
   },
   {
     id: "bharathi-street",
+    metaTitle: "Bharathi Street, Tamil Poet's Street in White Town",
+    metaDescription: "Named after Subramania Bharati, who lived in Pondicherry from 1908 to 1919 and wrote some of modern Tamil's finest poetry.",
     photo: "generic.jpg",
     name: "Bharathi Street",
     altName: "Rue Bharathi",
@@ -804,6 +882,8 @@ export const streets: Street[] = [
   },
   {
     id: "voc-street",
+    metaTitle: "VOC Street, Shipping Pioneer of White Town Pondicherry",
+    metaDescription: "Named after V.O. Chidambaram Pillai, who founded India's first indigenous shipping company in 1906 and challenged British monopoly.",
     photo: "generic.jpg",
     name: "VOC Street",
     altName: "V.O.C. Street",
@@ -825,6 +905,8 @@ export const streets: Street[] = [
   },
   {
     id: "nainiappa-pillai-street",
+    metaTitle: "Nainiappa Pillai Street, First Great Dubash of Pondicherry",
+    metaDescription: "Named after the early eighteenth-century broker who made French Pondicherry commercially viable and whose family shaped French India.",
     photo: "generic.jpg",
     name: "Nainiappa Pillai Street",
     altName: "Rue Nainiappa Pillai",
