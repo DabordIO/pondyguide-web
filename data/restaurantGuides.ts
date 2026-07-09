@@ -185,12 +185,12 @@ export const restaurantGuides: RestaurantGuide[] = [
     metaTitle: "6 Best Indian & Tamil Restaurants in Pondicherry",
     metaDescription: "Six of Pondicherry's best Indian and Tamil restaurants, from everyday filter-coffee spots to heritage Franco-Tamil dining, with what each does best.",
     restaurantIds: [
-      "indian-coffee-house",
       "maison-perumal",
       "oh-pondi",
       "great-indian-cuisine",
       "podouke-heritage",
       "surguru-spot",
+      "indian-coffee-house",
     ],
     intro:
       "French cafés may have put Pondicherry on the culinary map, but to understand the city, you have to sit down for a proper South Indian meal.\n\nThe aromas of freshly ground spices, the comforting simplicity of a well-made dosa, the satisfying spread of a traditional Tamil meal served on a banana leaf, and the unmistakable richness of regional curries tell a story that predates colonial boulevards by centuries. While the French Quarter attracts much of the attention, some of Pondicherry's most memorable meals are found in restaurants that celebrate the flavours of Tamil Nadu and the wider Indian subcontinent.\n\nThese are the places where breakfast begins early, filter coffee is taken seriously, recipes are rooted in tradition, and hospitality often feels as important as the food itself.\n\nThis guide brings together six restaurants that showcase different sides of Indian dining in Pondicherry. Some specialise in classic South Indian favourites, others present regional cuisine in a more refined setting, but each offers a distinctly local experience. Rather than ranking them from first to last, we've highlighted what each restaurant is best known for so you can choose the one that suits your appetite and your itinerary. Each listing links to our dedicated restaurant guide for practical information, location details and planning tips.",
