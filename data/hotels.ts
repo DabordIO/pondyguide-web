@@ -33,6 +33,8 @@ export interface Hotel {
   bestFor: string[];
   notFor: string[];
   ourTip: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const hotels: Hotel[] = [
@@ -40,6 +42,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "palais-de-mahe",
+    metaTitle: "Palais de Mahe, Luxury Heritage Hotel in White Town",
+    metaDescription: "Palais de Mahe offers luxury heritage accommodation in White Town, with a colonial courtyard, pool, and one of Puducherry's most elegant settings.",
     name: "Palais de Mahe",
     collection: "french-heritage",
     category: "luxury",
@@ -67,6 +71,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "maison-perumal",
+    metaTitle: "Maison Perumal, Franco-Tamil Heritage Stay in Puducherry",
+    metaDescription: "Maison Perumal combines Franco-Tamil heritage, antique-filled interiors, and the atmosphere of a restored merchant's mansion in Puducherry.",
     name: "Maison Perumal",
     collection: "french-heritage",
     category: "luxury",
@@ -94,6 +100,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "le-dupleix",
+    metaTitle: "Le Dupleix, Colonial Heritage Hotel in Puducherry",
+    metaDescription: "Le Dupleix lets you stay inside Puducherry's colonial history, with period architecture, antique furnishings, and a White Town location.",
     name: "Le Dupleix",
     collection: "french-heritage",
     category: "luxury",
@@ -121,6 +129,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "la-villa",
+    metaTitle: "La Villa, Boutique Luxury Retreat in White Town",
+    metaDescription: "La Villa is a discreet boutique retreat behind restored heritage walls, offering stylish rooms, a pool, and a peaceful White Town setting.",
     name: "La Villa",
     collection: "french-heritage",
     category: "luxury",
@@ -148,6 +158,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "the-promenade",
+    metaTitle: "The Promenade, Seafront Hotel on Beach Road",
+    metaDescription: "The Promenade sits directly on Beach Road, offering Bay of Bengal views and front-row access to Puducherry's evening promenade.",
     name: "The Promenade",
     collection: "french-heritage",
     category: "luxury",
@@ -177,6 +189,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "villa-shanti",
+    metaTitle: "Villa Shanti, Boutique Hotel in White Town Puducherry",
+    metaDescription: "Villa Shanti combines sophisticated hospitality, stylish rooms, and one of the most sought-after addresses in White Town, Puducherry.",
     name: "Villa Shanti",
     collection: "boutique",
     category: "heritage",
@@ -204,6 +218,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "villa-helena",
+    metaTitle: "Villa Helena, Colonial Boutique Stay in White Town",
+    metaDescription: "Villa Helena preserves the charm of a private colonial home, with elegant rooms and a beautifully restored White Town setting.",
     name: "Villa Helena",
     collection: "boutique",
     category: "heritage",
@@ -231,6 +247,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "gratitude-heritage",
+    metaTitle: "Gratitude Heritage, Warm Heritage Stay in Puducherry",
+    metaDescription: "Gratitude Heritage offers character, personal hospitality, and the atmosphere of a carefully restored heritage home in Puducherry.",
     name: "Gratitude Heritage",
     collection: "boutique",
     category: "heritage",
@@ -258,6 +276,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "dune-de-lorient",
+    metaTitle: "Dune de L'Orient, Creole Heritage Stay in White Town",
+    metaDescription: "Dune de L'Orient pairs heritage accommodation with renowned Franco-Tamil Creole dining in a restored White Town building.",
     name: "Dune de L'Orient",
     collection: "boutique",
     category: "heritage",
@@ -285,6 +305,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "petit-palais",
+    metaTitle: "Petit Palais, Rooftop Boutique Hotel in White Town",
+    metaDescription: "Petit Palais combines contemporary comfort, modern rooms, and a rooftop view across the heritage streets of White Town.",
     name: "Petit Palais",
     collection: "boutique",
     category: "mid",
@@ -314,6 +336,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "accord-puducherry",
+    metaTitle: "Accord Puducherry, Family-Friendly Hotel with Pool",
+    metaDescription: "Accord Puducherry offers spacious rooms, a large pool, and full-service facilities that work well for families exploring the city.",
     name: "Accord Puducherry",
     collection: "family",
     category: "luxury",
@@ -341,6 +365,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "the-residency-towers",
+    metaTitle: "The Residency Towers, Modern Hotel in Puducherry",
+    metaDescription: "The Residency Towers delivers polished contemporary comfort, generous rooms, and facilities suited to families and longer stays.",
     name: "The Residency Towers",
     collection: "family",
     category: "luxury",
@@ -368,6 +394,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "shenbaga-hotel",
+    metaTitle: "Shenbaga Hotel, Family Stay in Central Puducherry",
+    metaDescription: "Shenbaga Hotel & Convention Centre is a dependable central base with family-friendly facilities, a pool, and easy access to the city.",
     name: "Shenbaga Hotel & Convention Centre",
     collection: "family",
     category: "mid",
@@ -395,6 +423,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "anandha-inn",
+    metaTitle: "Anandha Inn, Established Hotel in Central Puducherry",
+    metaDescription: "Anandha Inn provides a welcoming central location, comfortable rooms, and the confidence of decades serving visitors to Puducherry.",
     name: "Anandha Inn",
     collection: "family",
     category: "mid",
@@ -422,6 +452,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "hotel-atithi",
+    metaTitle: "Hotel Atithi, Rooftop Pool Hotel in Puducherry",
+    metaDescription: "Hotel Atithi combines modern city comfort, a rooftop pool, and a convenient location for exploring Puducherry's main attractions.",
     name: "Hotel Atithi",
     collection: "family",
     category: "mid",
@@ -451,6 +483,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "zostel-pondicherry",
+    metaTitle: "Zostel Pondicherry, Social Hostel in White Town",
+    metaDescription: "Zostel Pondicherry is one of the city's most social hostels, with dorms, private rooms, and a lively backpacker atmosphere.",
     name: "Zostel Pondicherry",
     collection: "backpacker",
     category: "hostel",
@@ -478,6 +512,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "micasa-hostels",
+    metaTitle: "Micasa Hostels, Remote Work Hostel in Puducherry",
+    metaDescription: "Micasa Hostels offers a welcoming community, work-friendly spaces, and a relaxed atmosphere for longer stays in Puducherry.",
     name: "Micasa Hostels",
     collection: "backpacker",
     category: "hostel",
@@ -505,6 +541,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "time-travellers-hostel",
+    metaTitle: "Time Travellers Hostel, Creative Stay in Puducherry",
+    metaDescription: "Time Travellers Hostel offers a creative, informal atmosphere with social spaces and a location that makes exploring Puducherry easy.",
     name: "Time Travellers Hostel",
     collection: "backpacker",
     category: "hostel",
@@ -532,6 +570,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "hotel-coramandal-heritage",
+    metaTitle: "Hotel Coramandal Heritage, Budget Stay in White Town",
+    metaDescription: "Hotel Coramandal Heritage delivers heritage character, a central White Town location, and budget-friendly accommodation that still feels distinctive.",
     name: "Hotel Coramandal Heritage",
     collection: "backpacker",
     category: "budget",
@@ -559,6 +599,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "villa-krish",
+    metaTitle: "Villa Krish, Boutique Stay Near White Town Beach Road",
+    metaDescription: "Villa Krish sits between boutique hotel and guesthouse, with comfortable rooms and a location close to White Town and Beach Road.",
     name: "Villa Krish",
     collection: "backpacker",
     category: "budget",
@@ -588,6 +630,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "le-pondy",
+    metaTitle: "Le Pondy, Lagoon and Beach Resort Near Puducherry",
+    metaDescription: "Le Pondy sits between the lagoon and the sea, offering spacious resort accommodation just south of Puducherry.",
     name: "Le Pondy",
     collection: "coastal-wellness",
     category: "luxury",
@@ -615,6 +659,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "radisson-resort",
+    metaTitle: "Radisson Resort Pondicherry Bay, Coastal Luxury Stay",
+    metaDescription: "Radisson Resort Pondicherry Bay offers contemporary tropical comfort, resort facilities, and a relaxed setting along Puducherry's coast.",
     name: "Radisson Resort Pondicherry Bay",
     collection: "coastal-wellness",
     category: "luxury",
@@ -642,6 +688,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "club-mahindra",
+    metaTitle: "Club Mahindra Puducherry, Family Beach Resort Stay",
+    metaDescription: "Club Mahindra Puducherry offers spacious resort accommodation, family-friendly facilities, and a peaceful coastal setting.",
     name: "Club Mahindra Puducherry",
     collection: "coastal-wellness",
     category: "luxury",
@@ -669,6 +717,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "ocean-spray",
+    metaTitle: "Ocean Spray, Lagoon Resort Near Puducherry",
+    metaDescription: "Ocean Spray is a lagoon-side retreat with spacious rooms, resort facilities, and a quieter setting away from central Puducherry.",
     name: "Ocean Spray",
     collection: "coastal-wellness",
     category: "mid",
@@ -696,6 +746,8 @@ export const hotels: Hotel[] = [
 
   {
     id: "dune-eco-village",
+    metaTitle: "Dune Eco Village & Spa, Eco Resort Near Puducherry",
+    metaDescription: "Dune Eco Village & Spa combines art, nature, eco-conscious design, and a slower style of resort living near Puducherry.",
     name: "Dune Eco Village & Spa",
     collection: "coastal-wellness",
     category: "luxury",
