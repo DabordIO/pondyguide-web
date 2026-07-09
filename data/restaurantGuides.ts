@@ -238,12 +238,40 @@ export const restaurantGuides: RestaurantGuide[] = [
     id: "seafood",
     slug: "best-seafood-restaurants",
     title: "Best Seafood Restaurants in Pondicherry",
+    metaTitle: "3 Best Seafood Restaurants in Pondicherry",
+    metaDescription: "Three of Pondicherry's best seafood restaurants, from dedicated coastal kitchens to a rooftop sunset table, with what each does best.",
     restaurantIds: [
       "de-bluefin-seafood",
       "rendezvous",
       "bay-of-buddha",
-      "1-rue-suffren",
-      "the-spot",
+    ],
+    intro:
+      "Few things feel more fitting in Pondicherry than ending the day with fresh seafood.\n\nSet along the Bay of Bengal, the city has long been shaped by the sea. Fishing boats still head out before sunrise, seafood markets bustle each morning, and several of Pondicherry's restaurants draw inspiration from the ingredients that arrive on the coast each day. While the city is often celebrated for its French cafés and colonial architecture, its seafood is just as much a part of the local story.\n\nThe restaurants featured here each offer a different way to experience Pondicherry's coastal cuisine, from a kitchen built entirely around the day's catch to a rooftop table where seafood shares the menu with sweeping sunset views. Rather than ranking them from first to last, we've highlighted what makes each one distinctive and who it's best suited for. Each listing links to our dedicated restaurant guide for practical information and planning tips.",
+    whyHeading: "Why seafood is an essential part of eating in Pondicherry",
+    whyBody:
+      "Pondicherry's relationship with the sea extends far beyond its beaches.\n\nFor generations, the Bay of Bengal has shaped local livelihoods and the city's culinary traditions. Fresh fish, prawns, crab and other seafood feature prominently in regional cooking, while Pondicherry's cosmopolitan history has introduced French, South Indian and international influences that continue to shape restaurant menus today.\n\nThis diversity means there's no single \"Pondicherry seafood style.\" Some restaurants focus squarely on the day's catch, while others fold seafood into a broader menu alongside sweeping views or other cuisines entirely. Together, they offer some of the most enjoyable ways to experience the city's coastal side.",
+    bestFor: {
+      "de-bluefin-seafood": "Seafood as the main event, not a side note",
+      "rendezvous": "Relaxed, central seafood dining",
+      "bay-of-buddha": "Sunset views with seafood on the menu",
+    },
+    blurbs: {
+      "de-bluefin-seafood":
+        "When seafood is the reason for your meal rather than simply one option on the menu, De Bluefin Seafood Restaurant is a natural place to begin. Its reputation centres on giving fresh fish and shellfish the attention they deserve.\n\nIt's a favourite for diners who want the catch, not the setting, to take centre stage. If your priority is a meal built around the coast's freshest ingredients, this is one of Pondicherry's strongest choices.",
+      "rendezvous":
+        "Rendezvous Café Restaurant combines a relaxed atmosphere with a menu that bridges café dining and seafood specialities, all within a central White Town location.\n\nIt's an easy stop while exploring the French Quarter, whether you're after a leisurely lunch or an evening meal after a day of sightseeing. It strikes a comfortable balance between accessibility and atmosphere.",
+      "bay-of-buddha":
+        "Bay of Buddha crowns The Promenade Hotel with one of the city's most spectacular rooftop settings, looking out over the Bay of Bengal, the old lighthouse, and Rock Beach. Its actual signature is a Pan-Asian menu built around dim sum and satay, but seafood dishes run throughout the offering, and arriving before sunset turns dinner into an occasion in its own right.\n\nIt's worth knowing going in: this isn't a dedicated seafood kitchen the way De Bluefin is. It's a rooftop destination where good seafood happens to be part of a wider, well-executed menu.",
+    },
+    quickPicks: [
+      { situation: "Seafood as the main event", recommendation: "De Bluefin Seafood Restaurant" },
+      { situation: "A relaxed lunch in the French Quarter", recommendation: "Rendezvous Café Restaurant" },
+      { situation: "Sunset views alongside your meal", recommendation: "Bay of Buddha" },
+    ],
+    faq: [
+      { question: "Where can I eat good seafood in Pondicherry?", answer: "The three restaurants in this guide each offer a different take on seafood dining, from a dedicated seafood specialist to a rooftop table with sweeping sea views." },
+      { question: "Is seafood expensive in Pondicherry?", answer: "Not necessarily. De Bluefin and Rendezvous are both mid-range, while Bay of Buddha sits at the upscale end given its rooftop setting and Pan-Asian menu." },
+      { question: "Which seafood restaurant has the best views?", answer: "Bay of Buddha is well known for pairing its menu with panoramic views of the Bay of Bengal from The Promenade Hotel's rooftop." },
     ],
   },
   {
