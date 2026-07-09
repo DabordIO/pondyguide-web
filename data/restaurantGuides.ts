@@ -278,6 +278,8 @@ export const restaurantGuides: RestaurantGuide[] = [
     id: "international",
     slug: "best-international-restaurants",
     title: "Best International Restaurants in Pondicherry",
+    metaTitle: "10 Best International Restaurants in Pondicherry",
+    metaDescription: "Ten of Pondicherry's best international restaurants, from Japanese ramen to rooftop dining and craft beer, with what each does best.",
     restaurantIds: [
       "sola-bistro",
       "boku-ramen",
@@ -289,6 +291,59 @@ export const restaurantGuides: RestaurantGuide[] = [
       "mira",
       "catamaran-brewing",
       "mahe-bar",
+    ],
+    intro:
+      "One of Pondicherry's greatest strengths as a food destination is that it refuses to be defined by a single cuisine.\n\nAlongside its celebrated French cafés and deeply rooted Tamil food traditions, the city has developed an increasingly diverse dining scene that draws inspiration from around the world. Japanese comfort food, contemporary European cooking, rooftop restaurants, craft breweries and globally inspired menus all sit comfortably alongside one another.\n\nFor travellers staying several days, this variety becomes especially welcome. After exploring French classics and local South Indian dishes, many visitors find themselves looking for something different. Pondicherry has plenty to offer.\n\nThis guide brings together ten restaurants that showcase the city's international side. Rather than ranking them from first to last, we've focused on what each restaurant does particularly well and the kind of dining experience you can expect.",
+    whyHeading: "Why Pondicherry embraces global flavours",
+    whyBody:
+      "Pondicherry has always been a meeting point of cultures.\n\nIts history as an international trading port and later as the capital of French India helped shape a city that has long welcomed influences from beyond its shores. Today, that openness continues in its restaurants. Alongside long-established French traditions, chefs and restaurateurs draw inspiration from cuisines across Asia, Europe and beyond, creating a dining scene that's surprisingly cosmopolitan for a city of its size.\n\nWhether you're craving a comforting bowl of ramen, a rooftop dinner overlooking the sea, craft beer brewed locally or inventive contemporary cooking, you'll find that Pondicherry offers far more variety than many first-time visitors expect.",
+    bestFor: {
+      "sola-bistro": "Contemporary Mediterranean dining",
+      "boku-ramen": "Japanese comfort food",
+      "bay-of-buddha": "Pan-Asian rooftop dining",
+      "1-rue-suffren": "Daytime café that turns into a lively cocktail bar",
+      "the-spot": "Mediterranean small plates and cocktails",
+      "the-boho": "Contemporary fine dining and nightlife",
+      "anthe-restaurant": "Modern gastronomic fine dining",
+      "mira": "Continental cuisine in a heritage hotel",
+      "catamaran-brewing": "Craft beer and casual food",
+      "mahe-bar": "Refined cocktails in a heritage setting",
+    },
+    blurbs: {
+      "sola-bistro":
+        "Sola Bistro brings a modern Mediterranean sensibility to a restored heritage building in White Town. Naturally fermented pizzas, fresh pasta, and seasonal ingredients are paired with a thoughtful cocktail programme.\n\nIt has become one of the city's most popular restaurants for a leisurely lunch or dinner, striking a comfortable middle ground between casual and special occasion.",
+      "boku-ramen":
+        "Boku Ramen has earned a loyal following in White Town by focusing on one thing and doing it well. Rather than offering an extensive menu, it keeps the spotlight on carefully prepared bowls of ramen inspired by classic Japanese styles.\n\nIt's one of the more unexpected finds in Pondicherry's increasingly diverse dining scene, and an easy recommendation if you want a genuine change of pace from French or Tamil food.",
+      "bay-of-buddha":
+        "Bay of Buddha crowns The Promenade Hotel with sweeping views across the Bay of Bengal, the old lighthouse, and Rock Beach. The kitchen draws on Thai, Vietnamese, Chinese, and Korean influences, with dim sum and satay as the standout dishes.\n\nArriving before sunset turns dinner into an occasion, and the rooftop setting is one of the more memorable in White Town.",
+      "1-rue-suffren":
+        "1 Rue Suffren occupies a restored colonial building that changes personality through the day: a relaxed café by daylight, and one of White Town's most popular bars by evening. The kitchen offers an eclectic menu spanning Continental fusion, Indian favourites, and globally inspired comfort food.\n\nThe cocktail programme is among the strongest in the city, and the retro interiors, exposed brick and vintage furnishings, feel authentic rather than staged.",
+      "the-spot":
+        "THE SPOT is the Villa Shanti group's most relaxed concept: a café, cocktail bar, and artisan boutique under one roof, facing the Coromandel coast on Dumas Street. The menu leans towards Mediterranean-inspired small plates designed for sharing rather than a full sit-down meal.\n\nIt rewards a slow afternoon rather than a quick visit, and the adjoining boutique is worth browsing for regional textiles and ceramics.",
+      "the-boho":
+        "The Boho has become one of Puducherry's standout dining destinations in remarkably little time, housed within the restored Old Venus Theatre building in Saram. It's built for a full evening rather than a quick meal, blending ambitious contemporary cuisine with an excellent cocktail programme.\n\nAs the night progresses, the atmosphere shifts naturally from dinner into a livelier social scene without either the food or the drinks losing quality. It's one of the strongest choices in the city for a memorable night out.",
+      "anthe-restaurant":
+        "ANTHÉ occupies an elegant heritage building on Romain Rolland Street and has established itself as one of White Town's leading contemporary fine-dining destinations. The kitchen takes a modern gastronomic approach, with seafood featuring prominently among carefully composed, seasonal dishes.\n\nIt sits in a comfortable middle ground between the city's grand heritage-hotel restaurants and its more relaxed café culture, sophisticated without excessive formality.",
+      "mira":
+        "Mira is the signature restaurant of the Grand Hotel on Suffren Street, one of White Town's best-preserved heritage properties. The menu centres on Continental cuisine, with seafood featuring prominently alongside seasonal specials.\n\nReliable execution and polished hospitality make it a strong choice for a refined meal without the formality of some luxury hotel restaurants.",
+      "catamaran-brewing":
+        "Pondicherry's craft beer scene is still relatively young, and Catamaran Brewing Company is one of the places that helped put it on the map. House-brewed beers, a casual dining menu, and an easygoing evening atmosphere set it apart from the French Quarter's cafés and cocktail bars.\n\nIt's the natural choice if you want a beer with your meal rather than wine or a cocktail.",
+      "mahe-bar":
+        "Mahe Bar is tucked inside Palais de Mahe, one of White Town's finest heritage hotels, and offers a calm alternative to the city's livelier nightlife. Polished service and thoughtfully made cocktails take priority over volume or spectacle.\n\nThe signature 12 Mile Limit, a spirit-forward blend of rum, rye whiskey, and brandy, nods to the historic maritime boundary that once marked French territorial waters off the coast. Even for those not staying at the hotel, it's worth seeking out for an evening drink.",
+    },
+    quickPicks: [
+      { situation: "Japanese food", recommendation: "Boku Ramen" },
+      { situation: "Rooftop views", recommendation: "Bay of Buddha" },
+      { situation: "Craft beer", recommendation: "Catamaran Brewing Company" },
+      { situation: "Contemporary fine dining", recommendation: "ANTHÉ Restaurant, Sola Bistro, or Mira" },
+      { situation: "A relaxed, easygoing meal", recommendation: "THE SPOT or 1 Rue Suffren" },
+      { situation: "An evening out with cocktails", recommendation: "Mahe Bar or The Boho" },
+    ],
+    faq: [
+      { question: "Does Pondicherry have good international restaurants?", answer: "Yes. Alongside its French and Tamil culinary traditions, Pondicherry has a growing collection of restaurants serving Japanese, European and globally inspired cuisine." },
+      { question: "Where can I find Japanese food in Pondicherry?", answer: "Boku Ramen specialises in Japanese comfort food and offers something distinctly different from the city's more traditional dining scene." },
+      { question: "Are there craft breweries in Pondicherry?", answer: "Yes. Catamaran Brewing Company combines locally brewed craft beer with a full dining experience." },
+      { question: "Which international restaurant is best for special occasions?", answer: "Several restaurants in this guide suit celebrations or memorable evenings, particularly Sola Bistro, ANTHÉ Restaurant, Mira and Bay of Buddha." },
     ],
   },
 ];
