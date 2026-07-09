@@ -20,6 +20,8 @@ export interface Site {
     entry?: string;
     tip?: string;
   };
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const CATEGORY_LABELS: Record<SiteCategory, string> = {
@@ -35,6 +37,8 @@ export const CATEGORY_COLORS: Record<SiteCategory, string> = {
 export const sites: Site[] = [
   {
     id: "promenade",
+    metaTitle: "Promenade Beach, 1.5 km Seafront Walk in Pondicherry",
+    metaDescription: "A 1.5 km seafront walk where fishermen cast nets at dawn and three centuries of Pondicherry history line Goubert Avenue.",
     name: "Promenade Beach",
     frenchName: "Avenue Goubert",
     category: "experience",
@@ -59,6 +63,8 @@ export const sites: Site[] = [
   },
   {
     id: "ashram",
+    metaTitle: "Sri Aurobindo Ashram, Pondicherry's Spiritual Landmark",
+    metaDescription: "Sri Aurobindo arrived in French Pondicherry in 1910 fleeing a British sedition charge, and remained here for the rest of his life.",
     name: "Sri Aurobindo Ashram",
     frenchName: "Ashram de Sri Aurobindo",
     category: "experience",
@@ -83,6 +89,8 @@ export const sites: Site[] = [
   },
   {
     id: "sacred-heart",
+    metaTitle: "Sacred Heart Basilica, French Gothic Church in Puducherry",
+    metaDescription: "Built between 1902 and 1907, this French Gothic basilica features 28 stained-glass windows shipped from France to Puducherry.",
     name: "Sacred Heart Basilica",
     frenchName: "Basilique du Sacré-Cœur de Jésus",
     category: "experience",
@@ -107,6 +115,8 @@ export const sites: Site[] = [
   },
   {
     id: "raj-nivas",
+    metaTitle: "Lok Nivas, Former Governor's Palace in Puducherry",
+    metaDescription: "Once used by Dupleix, destroyed by the British, rebuilt by France, and now the official residence of Puducherry's Lieutenant Governor.",
     name: "Lok Nivas",
     frenchName: "Palais du Gouverneur",
     category: "admire",
@@ -131,6 +141,8 @@ export const sites: Site[] = [
   },
   {
     id: "museum",
+    metaTitle: "Pondicherry Museum, Roman Pottery and Chola Bronzes",
+    metaDescription: "Pondicherry Museum displays Roman pottery, Chola bronzes, Dupleix-era artefacts, and a vehicle associated with Subramania Bharathi.",
     name: "Pondicherry Museum",
     frenchName: "Musée de Pondichéry",
     tamilName: "புதுச்சேரி அரசு அருங்காட்சியகம்",
@@ -156,6 +168,8 @@ export const sites: Site[] = [
   },
   {
     id: "bharathi-park",
+    metaTitle: "Bharathi Park, Historic French Garden in Pondicherry",
+    metaDescription: "Eight acres of shaded lawns, Greco-Roman columns, and colonial-era history make Bharathi Park the ceremonial heart of Pondicherry.",
     name: "Bharathi Park",
     frenchName: "Place du Gouvernement",
     category: "experience",
@@ -182,6 +196,8 @@ export const sites: Site[] = [
   },
   {
     id: "notre-dame",
+    metaTitle: "Notre-Dame des Anges, Seafront Church in Pondicherry",
+    metaDescription: "The only church in Pondicherry where Mass is celebrated in French, English, and Tamil, on a site occupied by churches since 1687.",
     name: "Notre-Dame des Anges",
     frenchName: "Notre-Dame des Anges",
     category: "experience",
@@ -207,6 +223,8 @@ export const sites: Site[] = [
   },
   {
     id: "botanical-garden",
+    metaTitle: "Botanical Garden, 1,500 Plant Varieties in Pondicherry",
+    metaDescription: "Twenty-two acres with 1,500 plant varieties, fossil plants, giant trees, a toy train, singing fountains, and a fossil park.",
     name: "Botanical Garden",
     frenchName: "Jardin botanique de Pondichéry",
     category: "experience",
@@ -231,6 +249,8 @@ export const sites: Site[] = [
   },
   {
     id: "white-town-streets",
+    metaTitle: "White Town, French Colonial Streets of Pondicherry",
+    metaDescription: "Ochre-yellow mansions, Rue Dupleix, Rue Suffren, and Rue Bussy form one of the world's best-preserved French colonial streetscapes.",
     name: "White Town (Ville Blanche)",
     frenchName: "Ville Blanche",
     category: "experience",
@@ -254,6 +274,8 @@ export const sites: Site[] = [
   },
   {
     id: "french-consulate",
+    metaTitle: "French Consulate, Active French Mission in Pondicherry",
+    metaDescription: "One of the rarest colonial buildings in the world, France's active diplomatic mission in its former territory, established here since 1674.",
     name: "French Consulate",
     frenchName: "Consulat de France à Pondichéry",
     category: "admire",
@@ -281,6 +303,8 @@ export const sites: Site[] = [
   },
   {
     id: "war-memorial",
+    metaTitle: "French War Memorial, Goubert Avenue in Pondicherry",
+    metaDescription: "The Monument aux Combattants honours Pondicherrians who died fighting for France in the First and Second World Wars.",
     name: "French War Memorial",
     frenchName: "Monument aux Combattants",
     category: "admire",
@@ -307,6 +331,8 @@ export const sites: Site[] = [
   },
   {
     id: "customs-building",
+    metaTitle: "Customs Building, Art Deco Landmark on Pondicherry Promenade",
+    metaDescription: "A circular colonial customs house remodelled in the 1940s with Art Deco detailing, now one of the Promenade's most photographed buildings.",
     name: "Customs Building",
     frenchName: "La Douane",
     category: "experience",
@@ -331,6 +357,8 @@ export const sites: Site[] = [
   },
   {
     id: "dupleix-statue",
+    metaTitle: "Dupleix Statue, French Colonial Monument in Pondicherry",
+    metaDescription: "The bronze statue of Joseph François Dupleix stands on the seafront, commemorating the governor who nearly made France dominant in India.",
     name: "Dupleix Statue",
     frenchName: "Statue de Dupleix",
     category: "experience",
@@ -356,6 +384,8 @@ export const sites: Site[] = [
   },
   {
     id: "gandhi-statue",
+    metaTitle: "Gandhi Statue, 1965 Monument on Goubert Avenue",
+    metaDescription: "Unveiled on 26 January 1965, the Gandhi Statue stands on eight granite pillars brought from Gingee Fort during the French colonial era.",
     name: "Gandhi Statue",
     category: "experience",
     lat: 11.9325,
@@ -383,6 +413,8 @@ export const sites: Site[] = [
   },
   {
     id: "joan-of-arc-statue",
+    metaTitle: "Joan of Arc Statue, French Memorial in Pondicherry",
+    metaDescription: "This white marble statue in the Notre-Dame des Anges garden was donated in 1920 by industrialist François Gaudart.",
     name: "Joan of Arc Statue",
     frenchName: "Statue de Jeanne d'Arc",
     category: "admire",
@@ -410,6 +442,8 @@ export const sites: Site[] = [
   },
   {
     id: "schoelcher-bust",
+    metaTitle: "Victor Schoelcher Bust, Abolition Memorial in Pondicherry",
+    metaDescription: "A rare South Asian memorial to Victor Schoelcher, who abolished slavery throughout the French Empire on 27 April 1848.",
     name: "Victor Schoelcher Bust",
     frenchName: "Buste de Victor Schoelcher",
     category: "experience",
@@ -437,6 +471,8 @@ export const sites: Site[] = [
   },
   {
     id: "old-lighthouse",
+    metaTitle: "Old Lighthouse, 1836 Colonial Beacon in Pondicherry",
+    metaDescription: "Built in 1836 and reopened in June 2026, the Old Lighthouse offers panoramic views of the Bay of Bengal and White Town.",
     name: "Old Lighthouse",
     frenchName: "Phare de Pondichéry",
     category: "admire",
@@ -463,6 +499,8 @@ export const sites: Site[] = [
   },
   {
     id: "european-cemetery",
+    metaTitle: "European Cemetery, Colonial Burial Ground in Pondicherry",
+    metaDescription: "In use since around 1700, this cemetery preserves the graves of governors, missionaries, merchants, and Franco-Pondicherrian families.",
     name: "European Cemetery",
     frenchName: "Cimetière européen",
     category: "admire",
@@ -489,6 +527,8 @@ export const sites: Site[] = [
   },
   {
     id: "french-streets",
+    metaTitle: "White Town Walking Tour, 2 km Route Through Pondicherry",
+    metaDescription: "A two-kilometre loop through Pondicherry's preserved French colonial quarter, with churches, statues, gardens, and seafront landmarks.",
     name: "Walking Tour of White Town",
     frenchName: "Promenade en Ville Blanche",
     category: "experience",
@@ -515,6 +555,8 @@ export const sites: Site[] = [
   },
   {
     id: "golconde",
+    metaTitle: "Golconde, Modernist Ashram Building in Pondicherry",
+    metaDescription: "Completed in 1942, Golconde was India's first reinforced cast-in-place concrete building and remains a landmark of modern architecture.",
     name: "Golconde",
     category: "admire",
     lat: 11.9374,
@@ -538,6 +580,8 @@ export const sites: Site[] = [
   },
   {
     id: "romain-rolland-library",
+    metaTitle: "Romain Rolland Library, Founded 1827 in Pondicherry",
+    metaDescription: "One of India's oldest public libraries, holding around 400,000 items in French, English, and Tamil, including manuscripts.",
     name: "Romain Rolland Library",
     frenchName: "Bibliothèque Romain Rolland",
     category: "experience",
@@ -564,6 +608,8 @@ export const sites: Site[] = [
   },
   {
     id: "hotel-de-ville",
+    metaTitle: "La Mairie, 1870 French Town Hall in Pondicherry",
+    metaDescription: "Built in 1870 on Goubert Avenue, this neoclassical Town Hall was the main symbol of French municipal authority on the Coromandel Coast.",
     name: "La Mairie (Town Hall)",
     frenchName: "Hôtel de Ville de Pondichéry",
     category: "experience",
@@ -590,6 +636,8 @@ export const sites: Site[] = [
   },
   {
     id: "manakula-vinayagar",
+    metaTitle: "Manakula Vinayagar Temple, Historic Ganesha Shrine",
+    metaDescription: "A major Ganesha temple that predates the French arrival in 1674 and remained on its original site through sustained local resistance.",
     name: "Manakula Vinayagar Temple",
     tamilName: "மணக்குள விநாயகர் கோயில்",
     category: "experience",
