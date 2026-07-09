@@ -70,9 +70,9 @@ export const restaurantGuides: RestaurantGuide[] = [
     ],
   },
   {
-    id: "international-fusion",
-    slug: "best-international-and-fusion-restaurants",
-    title: "Best International & Fusion Restaurants in Pondicherry",
+    id: "international",
+    slug: "best-international-restaurants",
+    title: "Best International Restaurants in Pondicherry",
     restaurantIds: [
       "sola-bistro",
       "boku-ramen",
