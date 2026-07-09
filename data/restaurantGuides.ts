@@ -182,6 +182,8 @@ export const restaurantGuides: RestaurantGuide[] = [
     id: "indian-tamil",
     slug: "best-indian-and-tamil-restaurants",
     title: "Best Indian & Tamil Restaurants in Pondicherry",
+    metaTitle: "6 Best Indian & Tamil Restaurants in Pondicherry",
+    metaDescription: "Six of Pondicherry's best Indian and Tamil restaurants, from everyday filter-coffee spots to heritage Franco-Tamil dining, with what each does best.",
     restaurantIds: [
       "indian-coffee-house",
       "maison-perumal",
@@ -189,6 +191,47 @@ export const restaurantGuides: RestaurantGuide[] = [
       "great-indian-cuisine",
       "podouke-heritage",
       "surguru-spot",
+    ],
+    intro:
+      "French cafés may have put Pondicherry on the culinary map, but to understand the city, you have to sit down for a proper South Indian meal.\n\nThe aromas of freshly ground spices, the comforting simplicity of a well-made dosa, the satisfying spread of a traditional Tamil meal served on a banana leaf, and the unmistakable richness of regional curries tell a story that predates colonial boulevards by centuries. While the French Quarter attracts much of the attention, some of Pondicherry's most memorable meals are found in restaurants that celebrate the flavours of Tamil Nadu and the wider Indian subcontinent.\n\nThese are the places where breakfast begins early, filter coffee is taken seriously, recipes are rooted in tradition, and hospitality often feels as important as the food itself.\n\nThis guide brings together six restaurants that showcase different sides of Indian dining in Pondicherry. Some specialise in classic South Indian favourites, others present regional cuisine in a more refined setting, but each offers a distinctly local experience. Rather than ranking them from first to last, we've highlighted what each restaurant is best known for so you can choose the one that suits your appetite and your itinerary. Each listing links to our dedicated restaurant guide for practical information, location details and planning tips.",
+    whyHeading: "Why Pondicherry's Indian food deserves equal attention",
+    whyBody:
+      "It's easy to arrive in Pondicherry expecting croissants, cafés and French cuisine. And while those experiences are undoubtedly part of the city's charm, they tell only one chapter of its story.\n\nLong before French influences arrived, this stretch of the Coromandel Coast had developed its own rich culinary traditions shaped by Tamil culture, local agriculture and generations of family cooking. Even today, the rhythm of daily life is reflected in the food: bustling breakfast spots serving idli and dosa at sunrise, generous vegetarian meals at lunchtime, and comforting regional dishes enjoyed with family in the evening.\n\nWhat makes Pondicherry particularly rewarding for food lovers is the way these traditions exist alongside its colonial legacy. You don't have to choose between French and Indian cuisine. You can enjoy both, often on the same street.\n\nWhether you're searching for an authentic South Indian breakfast, a traditional vegetarian meal or a restaurant that celebrates local heritage, these six restaurants offer an excellent introduction to the city's Indian culinary identity.",
+    bestFor: {
+      "indian-coffee-house": "Traditional South Indian breakfast and filter coffee",
+      "maison-perumal": "Heritage Franco-Tamil dining",
+      "oh-pondi": "Casual, everyday Tamil favourites",
+      "great-indian-cuisine": "North and South Indian variety",
+      "podouke-heritage": "Local heritage dining at exceptional value",
+      "surguru-spot": "Everyday Tamil vegetarian meals",
+    },
+    blurbs: {
+      "indian-coffee-house":
+        "Few restaurants evoke nostalgia quite like Indian Coffee House. Part of a long-running, worker-owned network found across India, it offers an experience that's refreshingly unpretentious and deeply rooted in everyday life.\n\nIt's the sort of place where mornings begin with crisp dosas, soft idlis and a strong cup of filter coffee served without ceremony but with reassuring consistency. For visitors wanting to experience the city's everyday dining culture rather than its tourist trail, this is an excellent place to start.",
+      "maison-perumal":
+        "Maison Perumal occupies a unique place in Pondicherry's dining scene. Set within a beautifully restored 130-year-old Chettiar mansion, it brings together French colonial elegance and Tamil culinary tradition through Franco-Tamil cooking rooted in the Renonçant community, the Franco-Indian Catholic families whose kitchens evolved at the crossroads of both cultures.\n\nRather than presenting Tamil cuisine as a backdrop, the restaurant treats it as the main event, refined through French technique but never diluted. It's an excellent choice if you're looking for a meal that feels both distinctly local and thoughtfully curated.",
+      "oh-pondi":
+        "Relaxed, welcoming and rooted in local flavours, Oh Pondi! offers a straightforward introduction to Tamil cuisine without unnecessary fuss.\n\nIts appeal lies in its accessibility. Whether you're stopping for lunch after exploring the city or looking for a dependable dinner that showcases familiar South Indian favourites, it provides an easygoing experience that suits families, solo travellers and first-time visitors alike.",
+      "great-indian-cuisine":
+        "As the name suggests, The Great Indian Cuisine celebrates the diversity of Indian cooking rather than focusing on a single regional tradition, spanning both North and South Indian favourites on Anna Salai.\n\nThis makes it a good option for groups with different tastes or travellers keen to sample a broader cross-section of Indian flavours during one meal. Its varied menu offers flexibility without losing sight of the comforting familiarity that defines good Indian hospitality.",
+      "podouke-heritage":
+        "Named after Podouke, the ancient trading port identified in Greco-Roman texts and widely associated with the Puducherry region, Podouke Heritage Restaurant draws inspiration from the city's oldest culinary traditions rather than modern reinterpretations.\n\nThe emphasis here is on connecting visitors with local identity as much as local food. For travellers interested in experiencing Pondicherry beyond the French Quarter, it offers a dining experience that feels grounded in the region's own traditions and heritage, at some of the best-value prices in the city.",
+      "surguru-spot":
+        "For many residents, the best meals aren't necessarily the most elaborate. They're the ones enjoyed regularly, prepared with consistency and served without pretence. Surguru Spot, on Jawaharlal Nehru Street, embodies that philosophy.\n\nIt's the kind of restaurant visitors often discover after asking locals where they eat rather than where tourists go. Simple surroundings allow the focus to remain firmly on reliable South Indian vegetarian cooking, from crisp dosas to soft idlis, served with warmth and efficiency.",
+    },
+    quickPicks: [
+      { situation: "Your first authentic South Indian breakfast", recommendation: "Indian Coffee House" },
+      { situation: "A heritage Franco-Tamil dining experience", recommendation: "Maison Perumal" },
+      { situation: "Discovering local history through food", recommendation: "Podouke Heritage Restaurant" },
+      { situation: "A relaxed family meal", recommendation: "Oh Pondi!" },
+      { situation: "Trying a wide range of Indian dishes", recommendation: "The Great Indian Cuisine" },
+      { situation: "Everyday Tamil vegetarian food", recommendation: "Surguru Spot" },
+    ],
+    faq: [
+      { question: "Where can I find authentic South Indian food in Pondicherry?", answer: "All six restaurants in this guide offer authentic Indian dining, with Indian Coffee House and Surguru Spot particularly well suited to travellers looking for classic South Indian flavours." },
+      { question: "Is Pondicherry known only for French food?", answer: "Not at all. While its French heritage is one of the city's defining attractions, Pondicherry also has a rich Tamil culinary tradition that deserves equal attention. Exploring both sides of its food culture offers a much fuller picture of the city." },
+      { question: "Which restaurant is best for a traditional South Indian breakfast?", answer: "Indian Coffee House is a popular choice for visitors wanting to experience classic South Indian breakfast staples in an authentic setting." },
+      { question: "Where can I enjoy Indian food in a heritage setting?", answer: "Maison Perumal pairs a heritage Chettiar mansion with a Franco-Tamil menu, making it one of the city's most distinctive dining experiences." },
     ],
   },
   {
