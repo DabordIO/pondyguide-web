@@ -30,11 +30,15 @@ export interface Restaurant {
   whatsapp?: string;
   address?: string;
   voucherEnabled?: boolean;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const restaurants: Restaurant[] = [
   {
     id: "cafe-des-arts",
+    metaTitle: "Café des Arts, Heritage Courtyard Café in White Town",
+    metaDescription: "Café des Arts serves French pastries, crepes, waffles, and salads in a restored White Town mansion with a shaded courtyard and relaxed Parisian feel.",
     name: "Café des Arts",
     category: "cafe",
     priceRange: "mid",
@@ -59,6 +63,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "bread-and-chocolate",
+    metaTitle: "Bread & Chocolate, Bakery & Gelato in Pondicherry",
+    metaDescription: "Bread & Chocolate combines a bakery, chocolatier, gelato counter, and rooftop restaurant, making it ideal for breakfast, lunch, or dinner.",
     name: "Bread & Chocolate",
     category: "bakery",
     priceRange: "upscale",
@@ -83,6 +89,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "coromandel-cafe",
+    metaTitle: "Coromandel Café, Garden Breakfast & Dinner in White Town",
+    metaDescription: "Coromandel Café is known for its elegant garden setting, polished service, and all-day menu that draws breakfast and dinner crowds alike.",
     name: "Coromandel Café",
     category: "cafe",
     priceRange: "upscale",
@@ -105,6 +113,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "le-cafe",
+    metaTitle: "Le Café, Beach Road Sea View Café in Pondicherry",
+    metaDescription: "Le Café sits directly on Goubert Avenue facing the Bay of Bengal, offering coffee and light meals with one of Pondicherry's best sea views.",
     name: "Le Café",
     category: "cafe",
     priceRange: "budget",
@@ -125,6 +135,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "the-french-loaf",
+    metaTitle: "The French Loaf, White Town Bakery & Coffee Stop",
+    metaDescription: "The French Loaf offers fresh pastries, bread, coffee, and light snacks on Suffren Street, making it a reliable and affordable White Town stop.",
     name: "The French Loaf",
     category: "bakery",
     priceRange: "budget",
@@ -147,6 +159,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "indian-coffee-house",
+    metaTitle: "Indian Coffee House, Pondicherry Filter Coffee & Meals",
+    metaDescription: "Indian Coffee House serves strong filter coffee and simple South Indian meals, remaining one of Pondicherry's most authentic budget eateries.",
     name: "Indian Coffee House",
     category: "indian",
     priceRange: "budget",
@@ -168,6 +182,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "sola-bistro",
+    metaTitle: "Sola Bistro, Mediterranean Dining in Pondicherry",
+    metaDescription: "Sola Bistro pairs naturally fermented pizzas, fresh pasta, seasonal ingredients, and cocktails inside a restored White Town heritage building.",
     name: "Sola Bistro",
     category: "international",
     priceRange: "upscale",
@@ -190,6 +206,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "de-bluefin-seafood",
+    metaTitle: "De Bluefin Seafood, Fresh Coastal Cooking in Pondicherry",
+    metaDescription: "De Bluefin Seafood focuses on fresh fish, shellfish, and straightforward coastal cooking, making it a favourite for seafood-focused meals.",
     name: "De Bluefin Seafood Restaurant",
     category: "seafood",
     priceRange: "mid",
@@ -210,6 +228,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "boku-ramen",
+    metaTitle: "Boku Ramen, Authentic Japanese Ramen in White Town",
+    metaDescription: "Boku Ramen keeps the focus on carefully prepared bowls inspired by classic Japanese styles, earning a loyal following in White Town.",
     name: "Boku Ramen",
     category: "international",
     priceRange: "budget",
@@ -231,6 +251,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "gelateria-montecatini",
+    metaTitle: "Gelateria Montecatini Terme, Pondicherry Gelato",
+    metaDescription: "Gelateria Montecatini Terme serves Italian-style gelato near the promenade, making it an easy stop during a French Quarter evening stroll.",
     name: "Gelateria Montecatini Terme",
     category: "gelato",
     priceRange: "budget",
@@ -252,6 +274,8 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "catamaran-brewing",
+    metaTitle: "Catamaran Brewing Company, Craft Beer in Pondicherry",
+    metaDescription: "Catamaran Brewing Company offers house-brewed beers, a casual food menu, and an easygoing evening atmosphere away from White Town cafés.",
     name: "Catamaran Brewing Company",
     category: "brewery",
     priceRange: "mid",
@@ -273,6 +297,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "baker-street",
+    metaTitle: "Baker Street, Indo-French Bakery in Pondicherry",
+    metaDescription: "Baker Street is known for buttery pastries, flaky éclairs, and its famous chicken and olive sandwich, a long-time White Town favourite.",
     name: "Baker Street",
     category: "cafe",
     priceRange: "budget",
@@ -290,6 +316,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "botanist-lounge",
+    metaTitle: "The Botanist Lounge, Pondicherry Cocktails & Desserts",
+    metaDescription: "The Botanist Lounge combines elegant botanical interiors, creative cocktails, and one of Pondicherry's most memorable vegan desserts.",
     name: "The Botanist Lounge",
     category: "cafe",
     priceRange: "mid",
@@ -304,6 +332,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "chez-pushpa",
+    metaTitle: "Chez Pushpa, Creole Home Dining in Ariyankuppam",
+    metaDescription: "Chez Pushpa offers reservation-only Creole home dining, with duck vadavoum, prawn poriyal, and traditional desserts served family-style.",
     name: "Chez Pushpa",
     category: "french",
     priceRange: "upscale",
@@ -318,6 +348,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "la-villa",
+    metaTitle: "La Villa, Romantic Indo-French Dining in White Town",
+    metaDescription: "La Villa serves seasonal Indo-French and Italian cuisine inside a restored 19th-century colonial mansion with a romantic courtyard setting.",
     name: "La Villa",
     category: "french",
     priceRange: "upscale",
@@ -334,6 +366,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "mahe-bar",
+    metaTitle: "Mahe Bar, Heritage Cocktails in Pondicherry",
+    metaDescription: "Mahe Bar serves expertly crafted classics and house signatures inside Palais de Mahe, one of White Town's finest heritage hotels.",
     name: "Mahe Bar",
     category: "international",
     priceRange: "upscale",
@@ -348,6 +382,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "maison-perumal",
+    metaTitle: "Maison Perumal, Franco-Tamil Dining in Puducherry",
+    metaDescription: "Maison Perumal brings together Franco-Tamil heritage cooking, traditional recipes, and standout fish dishes inside a 130-year-old mansion.",
     name: "Maison Perumal",
     category: "indian",
     priceRange: "upscale",
@@ -362,6 +398,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "new-banana-cafe",
+    metaTitle: "New Banana Café, Rooftop Galettes in White Town",
+    metaDescription: "New Banana Café is a relaxed rooftop spot known for galettes, quiches, and a much-loved chicken pie at excellent White Town prices.",
     name: "New Banana Café",
     category: "cafe",
     priceRange: "budget",
@@ -376,6 +414,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "villa-helena",
+    metaTitle: "Villa Helena, Heritage Indo-French Dining in White Town",
+    metaDescription: "Villa Helena serves refined Indo-French and international cuisine inside a restored 19th-century colonial residence in White Town.",
     name: "Villa Helena",
     category: "french",
     priceRange: "upscale",
@@ -390,6 +430,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "villa-shanti",
+    metaTitle: "Villa Shanti, Patio Dining in Puducherry",
+    metaDescription: "Villa Shanti combines elegant patio dining with refined Indian, Indo-French, and European cuisine, including its famous prawn pomelo salad.",
     name: "Villa Shanti",
     category: "french",
     priceRange: "upscale",
@@ -406,6 +448,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "carte-blanche",
+    metaTitle: "Carte Blanche, Creole Cuisine in Pondicherry",
+    metaDescription: "Carte Blanche specialises in authentic Pondicherry Creole cuisine, served in the colonial surroundings of Hôtel de l'Orient.",
     name: "Carte Blanche",
     category: "french",
     priceRange: "upscale",
@@ -423,6 +467,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "eat-my-cake",
+    metaTitle: "Eat My Cake, Rooftop Cheesecakes in White Town",
+    metaDescription: "Eat My Cake is a peaceful White Town rooftop bakery known for exceptional cheesecakes, delicate tarts, and its women-led origins.",
     name: "Eat My Cake",
     category: "bakery",
     priceRange: "mid",
@@ -440,6 +486,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "les-saveurs",
+    metaTitle: "Les Saveurs, Classic French Dining on Dumas Street",
+    metaDescription: "Les Saveurs offers refined French and European cuisine, polished service, and one of White Town's most sophisticated dining rooms.",
     name: "Les Saveurs",
     category: "french",
     priceRange: "upscale",
@@ -457,6 +505,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "rendezvous",
+    metaTitle: "Rendezvous Café, Seafood & Rooftop Dining in White Town",
+    metaDescription: "Rendezvous Café is known for fresh seafood, lively weekend music, and the warm hospitality that makes it a White Town favourite.",
     name: "Rendezvous Café Restaurant",
     category: "seafood",
     priceRange: "mid",
@@ -474,6 +524,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "bay-of-buddha",
+    metaTitle: "Bay of Buddha, Rooftop Asian Dining in Puducherry",
+    metaDescription: "Bay of Buddha offers Pan-Asian cuisine, sweeping Bay of Bengal views, and one of Puducherry's finest rooftop sunset experiences.",
     name: "Bay of Buddha",
     category: "international",
     priceRange: "upscale",
@@ -490,6 +542,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "1-rue-suffren",
+    metaTitle: "1 Rue Suffren, Heritage Resto-Bar in White Town",
+    metaDescription: "1 Rue Suffren shifts from daytime café to lively evening social hub, with strong cocktails, fusion cuisine, and a retro atmosphere.",
     name: "1 Rue Suffren",
     category: "international",
     priceRange: "mid",
@@ -507,6 +561,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "the-spot",
+    metaTitle: "THE SPOT, Mediterranean Café in Pondicherry",
+    metaDescription: "THE SPOT combines Mediterranean-inspired food, craft beverages, and regional artisan shopping opposite the Coromandel coast.",
     name: "THE SPOT",
     category: "international",
     priceRange: "mid",
@@ -524,6 +580,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "indian-kaffe-express",
+    metaTitle: "The Indian Kaffe Express, Family Café on Dumas Street",
+    metaDescription: "The Indian Kaffe Express serves Indian snacks, waffles, pancakes, and Western breakfasts at family-friendly prices in White Town.",
     name: "The Indian Kaffe Express",
     category: "cafe",
     priceRange: "budget",
@@ -541,6 +599,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "le-pondichery",
+    metaTitle: "Le Pondichéry, Oceanfront Café at The Promenade",
+    metaDescription: "Le Pondichéry serves coffee, pastries, and light bites with uninterrupted views across the Bay of Bengal from The Promenade Hotel.",
     name: "Le Pondichéry",
     category: "cafe",
     priceRange: "budget",
@@ -558,6 +618,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "the-boho",
+    metaTitle: "The Boho, Fine Dining & Cocktails in Puducherry",
+    metaDescription: "The Boho combines contemporary fine dining, a strong cocktail programme, and one of Puducherry's liveliest nightlife atmospheres.",
     name: "The Boho",
     category: "international",
     priceRange: "upscale",
@@ -574,6 +636,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "oh-pondi",
+    metaTitle: "Oh Pondi!, Authentic Tamil Seafood in Puducherry",
+    metaDescription: "Oh Pondi! is a dependable local favourite for Tamil home-style cooking, generous seafood portions, and excellent value.",
     name: "Oh Pondi!",
     category: "indian",
     priceRange: "budget",
@@ -590,6 +654,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "rasa-table",
+    metaTitle: "Rasa Table, Chef-Driven Seasonal Dining in White Town",
+    metaDescription: "Rasa Table offers a focused seasonal menu and one of Puducherry's most thoughtfully curated chef-driven dining experiences.",
     name: "Rasa Table",
     category: "french",
     priceRange: "upscale",
@@ -606,6 +672,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "anthe-restaurant",
+    metaTitle: "ANTHÉ Restaurant, Fine Dining on Romain Rolland Street",
+    metaDescription: "ANTHÉ Restaurant pairs contemporary fine dining with one of White Town's most elegant heritage settings on Romain Rolland Street.",
     name: "ANTHÉ Restaurant",
     category: "international",
     priceRange: "upscale",
@@ -622,6 +690,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "mira",
+    metaTitle: "Mira, Heritage Continental Dining in Puducherry",
+    metaDescription: "Mira combines polished service, heritage surroundings, and refined Continental cuisine inside the historic Grand Hotel.",
     name: "Mira",
     category: "international",
     priceRange: "upscale",
@@ -638,6 +708,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "great-indian-cuisine",
+    metaTitle: "The Great Indian Cuisine, North & South Indian Meals",
+    metaDescription: "The Great Indian Cuisine serves dependable North and South Indian favourites at fair prices in a relaxed Anna Salai setting.",
     name: "The Great Indian Cuisine",
     category: "indian",
     priceRange: "mid",
@@ -654,6 +726,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "cherrypond",
+    metaTitle: "Cherrypond Garden Café & Bar, Cocktails in White Town",
+    metaDescription: "Cherrypond Garden Café & Bar offers leafy outdoor seating, thoughtful cocktails, and a relaxed atmosphere from day to night.",
     name: "Cherrypond Garden Café & Bar",
     category: "cafe",
     priceRange: "mid",
@@ -670,6 +744,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "podouke-heritage",
+    metaTitle: "Podouke Heritage Restaurant, Tamil Cuisine in Puducherry",
+    metaDescription: "Podouke Heritage Restaurant celebrates Tamil culinary traditions with heritage-inspired South Indian meals at excellent prices.",
     name: "Podouke Heritage Restaurant",
     category: "indian",
     priceRange: "budget",
@@ -686,6 +762,8 @@ export const restaurants: Restaurant[] = [
 
   {
     id: "surguru-spot",
+    metaTitle: "Surguru Spot, Puducherry South Indian Breakfasts",
+    metaDescription: "Surguru Spot has served consistently excellent South Indian vegetarian breakfasts and traditional Tamil meals for decades.",
     name: "Surguru Spot",
     category: "indian",
     priceRange: "budget",
