@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { restaurantGuides } from "@/data/restaurantGuides";
 import { restaurants } from "@/data/restaurants";
 import ArticleBody from "@/components/ArticleBody";
@@ -80,6 +81,11 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
 
       {entries.map(r => (
         <div key={r.id} style={{ margin: "40px 0", paddingTop: 32, borderTop: "1px solid #e8ddd4" }}>
+          {r.photo && (
+            <div style={{ position: "relative", width: "100%", height: 220, borderRadius: 14, overflow: "hidden", marginBottom: 20 }}>
+              <Image src={`/restaurants/${r.photo}`} alt={r.name} fill style={{ objectFit: "cover", objectPosition: r.photoPosition ?? "center" }} />
+            </div>
+          )}
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.3rem", fontWeight: 700, color: "#1c1917", marginBottom: 12 }}>
             {r.name}
           </h2>
