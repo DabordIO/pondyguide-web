@@ -27,6 +27,9 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  images: {
+    minimumCacheTTL: 31536000,
+  },
   async headers() {
     return [
       {
