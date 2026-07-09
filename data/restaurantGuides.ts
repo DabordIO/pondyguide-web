@@ -10,7 +10,7 @@ export interface RestaurantGuide {
   whyBody?: string;
   bestFor?: Record<string, string>;
   blurbs?: Record<string, string>;
-  chooseGuide?: { heading: string; body: string }[];
+  quickPicks?: { situation: string; recommendation: string }[];
   faq?: { question: string; answer: string }[];
 }
 
@@ -72,15 +72,15 @@ export const restaurantGuides: RestaurantGuide[] = [
       "rasa-table":
         "Rasa Table operates less like a conventional restaurant and more like an intimate chef's table, tucked into a discreet space on the quiet Rue de l'Évêché. The compact dining room keeps attention on the food, with a concise menu that changes according to season and the chef's own inspiration.\n\nPortions are considered rather than showy, and the small scale of the restaurant allows for genuinely unhurried service throughout the meal. Reservations are strongly recommended, since seating is intentionally limited.",
     },
-    chooseGuide: [
-      { heading: "For a romantic dinner", body: "La Villa remains one of the city's standout choices for special occasions and memorable evenings." },
-      { heading: "For a heritage atmosphere", body: "Café des Arts offers one of the most recognisable French Quarter settings." },
-      { heading: "For an authentic Creole experience", body: "Chez Pushpa and Carte Blanche both offer a genuine introduction to Pondicherry's Creole culinary tradition, one intimate and home-cooked, the other grand and historic." },
-      { heading: "For contemporary flavours", body: "Coromandel Café brings a more modern interpretation of French-inspired dining." },
-      { heading: "For a tasting-menu experience", body: "Rasa Table offers a contemporary, chef-driven approach with a menu that changes by season." },
-      { heading: "For a refined evening meal", body: "Villa Shanti and Les Saveurs are both excellent choices if you're looking for an upscale dining experience." },
-      { heading: "For a quiet retreat", body: "Villa Helena offers one of White Town's calmest heritage settings." },
-      { heading: "For combining sightseeing with a meal", body: "1 Rue Suffren is an easy option if you're exploring White Town and want somewhere that works for both lunch and drinks later." },
+    quickPicks: [
+      { situation: "A romantic dinner", recommendation: "La Villa" },
+      { situation: "A heritage French Quarter atmosphere", recommendation: "Café des Arts" },
+      { situation: "An authentic Creole experience", recommendation: "Chez Pushpa or Carte Blanche" },
+      { situation: "Contemporary, modern flavours", recommendation: "Coromandel Café" },
+      { situation: "A chef's tasting menu", recommendation: "Rasa Table" },
+      { situation: "A refined evening meal", recommendation: "Villa Shanti or Les Saveurs" },
+      { situation: "A quiet, peaceful retreat", recommendation: "Villa Helena" },
+      { situation: "Combining sightseeing with a meal", recommendation: "1 Rue Suffren" },
     ],
     faq: [
       { question: "What is the best French restaurant in Pondicherry?", answer: "That depends on the experience you're looking for. La Villa is often chosen for special occasions, while Café des Arts is a favourite for relaxed café dining in the French Quarter." },
@@ -93,6 +93,8 @@ export const restaurantGuides: RestaurantGuide[] = [
     id: "cafes-bakeries",
     slug: "best-cafes-and-bakeries",
     title: "Best Cafés & Bakeries in Pondicherry",
+    metaTitle: "13 Best Cafés & Bakeries in Pondicherry",
+    metaDescription: "Thirteen of Pondicherry's best cafés and bakeries, from heritage courtyards to sea-view coffee stops, with what each one does best.",
     restaurantIds: [
       "cafe-des-arts",
       "bread-and-chocolate",
@@ -105,9 +107,75 @@ export const restaurantGuides: RestaurantGuide[] = [
       "eat-my-cake",
       "indian-kaffe-express",
       "le-pondichery",
-      "the-boho",
       "gelateria-montecatini",
       "cherrypond",
+    ],
+    intro:
+      "Some of the best memories you'll make in Pondicherry won't be over a lavish dinner. They'll begin with a cup of coffee.\n\nPerhaps it's breakfast in a leafy courtyard tucked away in the French Quarter. Maybe it's a flaky croissant after an early morning walk along the Promenade, a lazy afternoon with cake and conversation, or an evening gelato before heading back to your hotel. Pondicherry has a café culture that's as much about slowing down as it is about eating well.\n\nThe city's cafés reflect its personality. French-inspired bakeries sit alongside old-school Indian coffee houses, contemporary brunch spots share streets with neighbourhood favourites, and artisan desserts are never far away. Some are destinations in themselves, while others are the perfect excuse to pause between exploring heritage streets, galleries and beaches.\n\nThis guide brings together thirteen of the best cafés and bakeries in Pondicherry. Rather than ranking them from first to last, we've highlighted what each place is known for and who it's best suited to. If one catches your eye, follow the link through to our dedicated guide for more detail, including location, opening hours and practical tips.",
+    whyHeading: "Why Pondicherry has one of India's best café cultures",
+    whyBody:
+      "Pondicherry has always been a city that encourages people to linger.\n\nIts wide boulevards, colonial architecture and slower pace of life make cafés feel like a natural extension of the streets rather than simply places to grab a quick drink. The city's French heritage has influenced everything from bakery traditions to café culture, while local tastes have shaped menus that comfortably blend European favourites with South Indian classics.\n\nThe result is a café scene that's remarkably diverse. You can start the day with traditional filter coffee, enjoy freshly baked pastries for breakfast, settle into a stylish café for a long lunch, or finish the evening with handcrafted gelato, all within a short walk of one another.\n\nWhether you're travelling solo, working remotely for a few hours, meeting friends or simply escaping the afternoon heat, there's a café in Pondicherry to match the mood.",
+    bestFor: {
+      "cafe-des-arts": "Breakfast and coffee in a French Quarter courtyard",
+      "bread-and-chocolate": "Artisan bakery and a proper breakfast",
+      "coromandel-cafe": "Elegant brunch and long lunches",
+      "le-cafe": "Coffee with a sea view",
+      "the-french-loaf": "Quick, good-value pastries and bread",
+      "baker-street": "Fresh bread and the city's best éclairs",
+      "botanist-lounge": "Botanical interiors and creative cocktails",
+      "new-banana-cafe": "Rooftop galettes and a cult-favourite chicken pie",
+      "eat-my-cake": "Cheesecake and rooftop calm",
+      "indian-kaffe-express": "Budget-friendly Indian snacks and Western breakfast",
+      "le-pondichery": "Oceanfront coffee and pastries",
+      "gelateria-montecatini": "Italian-style gelato on the promenade",
+      "cherrypond": "Garden café and cocktail bar",
+    },
+    blurbs: {
+      "cafe-des-arts":
+        "There are cafés that serve coffee, and then there are cafés that become part of a city's identity. Café des Arts belongs in the second category, tucked inside a restored mansion in the heart of the French Quarter.\n\nIt's the kind of place where a quick coffee stop turns into an hour, then two. Come for breakfast before the streets get busy, or drop in mid-afternoon when the courtyard settles into its slowest, most pleasant rhythm.",
+      "bread-and-chocolate":
+        "If your ideal morning starts with fresh bread, good pastries and strong coffee, Bread & Chocolate belongs on the list. It combines a bakery, chocolatier, gelato counter and rooftop dining space under one roof, which is part of why it's become one of Pondicherry's busiest all-day cafés.\n\nPopular items sell out before lunchtime, so arriving early is worth it, especially on weekends. The rooftop seating is the better choice when it's available.",
+      "coromandel-cafe":
+        "Coromandel Café blends an elegant garden setting with an all-day menu that works equally well for brunch, a long lunch, or an afternoon coffee between sightseeing stops.\n\nIt's polished without feeling formal, which makes it one of the easiest recommendations in White Town when you want a proper sit-down meal rather than a quick bite.",
+      "le-cafe":
+        "Le Café sits directly on Goubert Avenue, facing the Bay of Bengal, and its main appeal is exactly what the location promises: one of the simplest, most well-situated places to sit by the sea in Pondicherry. Run in association with the Sri Aurobindo Ashram, it isn't trying to be a destination restaurant.\n\nCome for coffee and a light bite rather than a full meal, and time your visit for the golden hour before sunset if you can.",
+      "the-french-loaf":
+        "The French Loaf is a reliable bakery and café on Suffren Street, and one of White Town's best-value stops for fresh pastries, bread, coffee and light snacks. It's part of a larger bakery chain, but it hasn't lost the qualities that make a good neighbourhood bakery worth returning to.\n\nIt's an easy choice for an inexpensive breakfast, a quick lunch, or an afternoon coffee when you don't want to pay White Town's usual prices.",
+      "baker-street":
+        "Baker Street has been a fixture of White Town's café scene for years, occupying a prominent corner on Rue Bussy. It blends the atmosphere of a neighbourhood boulangerie with an approachable café menu: fresh breads, sandwiches, quiches, and a pastry counter lined with éclairs and croissants.\n\nThe chicken and olive sandwich is the house classic, and the éclairs are among the city's best, often selling out before lunchtime. Prices remain reasonable given the quality of the baking.",
+      "botanist-lounge":
+        "The Botanist Lounge occupies a beautifully restored space within La Maison Rose, with preserved botanical specimens, rattan furniture and warm lighting that make the interiors an attraction in their own right. It works equally well for a leisurely afternoon coffee or sunset cocktails.\n\nThe vegan mango ice cream has become something of a signature, and the cocktail programme is one of the more inventive in White Town. It's one of the few cafés where lunch naturally drifts into evening drinks.",
+      "new-banana-cafe":
+        "New Banana Café occupies an unassuming rooftop on Cazy Street and has built its reputation quietly, mostly through word of mouth. The menu leans towards Continental comfort food with a French touch: galettes, quiches, and a chicken pie that has developed something of a cult following.\n\nMuch of the charm comes from Senthil, the owner, who is often personally involved in welcoming guests. Prices are some of the most reasonable in White Town.",
+      "eat-my-cake":
+        "Eat My Cake occupies a quiet rooftop on Rue Labourdonnais and has earned its reputation through consistently excellent baking. It began as a social enterprise training and employing local women, and has grown into one of Puducherry's most rewarding stops for coffee and dessert.\n\nThe cheesecakes are among the finest in the city, rich but never cloying, and vegan and gluten-free options are clearly labelled, which is still relatively rare in Puducherry's café scene.",
+      "indian-kaffe-express":
+        "The Indian Kaffe Express fills a useful niche on Dumas Street: affordable, straightforward food in a clean, welcoming setting, at a time when many nearby cafés lean upscale and Franco-European. The menu mixes masala chai, filter coffee, waffles, pancakes and Indian snacks.\n\nIt won't be the most memorable meal of your trip, but it's a dependable, good-value stop between sightseeing, especially with families.",
+      "le-pondichery":
+        "Le Pondichéry is the casual café inside The Promenade Hotel, and it occupies one of the best waterfront tables in the city. Tables look directly onto Rock Beach and the Bay of Bengal, so you can have coffee while watching fishermen and morning walkers along the promenade.\n\nThe menu is intentionally simple: espresso, filter coffee, pastries and light bites. Prices are reasonable considering the view, and it works especially well as an early breakfast stop before the promenade gets busy.",
+      "gelateria-montecatini":
+        "Gelateria Montecatini Terme serves Italian-style gelato within easy reach of the promenade, with the ocean on one side and the French Quarter just behind. It's the kind of place that fits naturally into an evening stroll rather than requiring a special trip.\n\nThere's nothing complicated about the appeal here: good gelato, a good location, and an easy stop to end a day of walking.",
+      "cherrypond":
+        "Cherrypond Garden Café & Bar occupies a leafy courtyard on one of White Town's more attractive streets, offering a break from the busier stretches nearby. The garden setting suits everything from a morning coffee to sunset drinks beneath the trees.\n\nThe menu blends café staples with a well-considered drinks list, and the atmosphere shifts naturally through the day without ever losing its relaxed character.",
+    },
+    quickPicks: [
+      { situation: "Your first morning in Pondicherry", recommendation: "Café des Arts" },
+      { situation: "A proper baked breakfast", recommendation: "Bread & Chocolate" },
+      { situation: "A long, relaxed brunch", recommendation: "Coromandel Café" },
+      { situation: "Coffee by the sea", recommendation: "Le Café or Le Pondichéry" },
+      { situation: "A quick, good-value pastry stop", recommendation: "The French Loaf or Baker Street" },
+      { situation: "Cakes and desserts", recommendation: "Eat My Cake" },
+      { situation: "Authentic gelato", recommendation: "Gelateria Montecatini Terme" },
+      { situation: "A quiet garden setting", recommendation: "Cherrypond Garden Café & Bar" },
+      { situation: "Cocktails alongside your coffee", recommendation: "The Botanist Lounge" },
+      { situation: "Budget-friendly and family-easy", recommendation: "Indian Kaffe Express or New Banana Café" },
+    ],
+    faq: [
+      { question: "Which is the most famous café in Pondicherry?", answer: "Café des Arts is one of the city's best-known cafés, particularly among visitors exploring the French Quarter. Its heritage setting and relaxed atmosphere have made it a Pondicherry favourite." },
+      { question: "Where can I get the best breakfast in Pondicherry?", answer: "Several cafés on this list are popular for breakfast, with Bread & Chocolate, Coromandel Café and Café des Arts among the best-known choices." },
+      { question: "Are there good bakeries in Pondicherry?", answer: "Yes. Pondicherry has a strong bakery tradition influenced by its French heritage, ranging from artisan bakeries to neighbourhood favourites serving fresh bread, pastries and cakes." },
+      { question: "Which café is best for sea views?", answer: "Le Café and Le Pondichéry are the two cafés where you can enjoy coffee right by the waterfront, making either a popular stop during a walk along the Promenade." },
+      { question: "Is Pondicherry good for café hopping?", answer: "Yes. Many of the city's best cafés and bakeries are within walking distance of one another, especially around the French Quarter, making it easy to explore several in a single day." },
     ],
   },
   {

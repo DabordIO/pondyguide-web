@@ -46,6 +46,22 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
 
       {guide.intro && <ArticleBody text={guide.intro} />}
 
+      {guide.quickPicks && guide.quickPicks.length > 0 && (
+        <div style={{ margin: "32px 0", background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 12, padding: "20px 24px", overflowX: "auto" }}>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 14 }}>How to choose</p>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+            <tbody>
+              {guide.quickPicks.map((item, i) => (
+                <tr key={i} style={{ borderBottom: i < guide.quickPicks!.length - 1 ? "1px solid #fed7aa" : "none" }}>
+                  <td style={{ padding: "8px 12px 8px 0", color: "#292524" }}>{item.situation}</td>
+                  <td style={{ padding: "8px 0", fontWeight: 700, color: "#1c1917" }}>{item.recommendation}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
       {guide.whyHeading && guide.whyBody && (
         <>
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", margin: "40px 0 16px" }}>
@@ -98,19 +114,6 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
           </Link>
         </div>
       ))}
-
-      {guide.chooseGuide && guide.chooseGuide.length > 0 && (
-        <div style={{ margin: "48px 0", background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 12, padding: "24px 28px" }}>
-          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.3rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
-            Which one should you choose?
-          </h2>
-          {guide.chooseGuide.map((item, i) => (
-            <p key={i} style={{ fontSize: 14, color: "#292524", lineHeight: 1.7, marginBottom: 12 }}>
-              <strong>{item.heading}: </strong>{item.body}
-            </p>
-          ))}
-        </div>
-      )}
 
       {guide.faq && guide.faq.length > 0 && (
         <div style={{ margin: "48px 0" }}>
