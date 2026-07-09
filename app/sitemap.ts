@@ -3,6 +3,7 @@ import { historyArticles } from "@/data/history";
 import { institutionArticles } from "@/data/institutions";
 import { figures } from "@/data/figures";
 import { restaurants } from "@/data/restaurants";
+import { restaurantGuides } from "@/data/restaurantGuides";
 import { hotels } from "@/data/hotels";
 import { festivals } from "@/data/festivals";
 import { streets } from "@/data/streets";
@@ -60,6 +61,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const restaurantGuidePages = restaurantGuides
+    .filter(g => g.intro)
+    .map(g => ({
+      url: `${BASE}/restaurants/guides/${g.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
+
   const hotelPages = hotels.map(h => ({
     url: `${BASE}/hotels/${h.id}`,
     lastModified: new Date(),
@@ -108,6 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...institutionPages,
     ...figurePages,
     ...restaurantPages,
+    ...restaurantGuidePages,
     ...hotelPages,
     ...festivalPages,
     ...streetPages,

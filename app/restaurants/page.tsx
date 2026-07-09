@@ -32,6 +32,16 @@ function RestaurantCard({ r }: { r: Restaurant }) {
   );
 }
 
+function GuideCard({ title, slug }: { title: string; slug: string }) {
+  return (
+    <Link href={`/restaurants/guides/${slug}`} style={{ textDecoration: "none", background: "#1c1917", border: "1px solid #1c1917", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "center", padding: "24px 20px", minHeight: 180 }}>
+      <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 10 }}>Our Guide</p>
+      <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#fff", fontSize: 18, lineHeight: 1.35, marginBottom: 12 }}>{title}</p>
+      <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600 }}>Read the full guide →</p>
+    </Link>
+  );
+}
+
 export default function RestaurantsPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
@@ -53,6 +63,7 @@ export default function RestaurantsPage() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20 }}>
               {group.map(r => <RestaurantCard key={r.id} r={r} />)}
+              {guide.intro && <GuideCard title={guide.title} slug={guide.slug} />}
             </div>
           </div>
         );
