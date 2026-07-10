@@ -6,11 +6,15 @@ export interface AurovilleArticle {
   body: string;
   gradient: string;
   photo?: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const aurovilleArticles: AurovilleArticle[] = [
   {
     id: "what-is-auroville",
+    metaTitle: "What Is Auroville? The 1968 Experiment in Human Unity",
+    metaDescription: "Founded in 1968, Auroville is home to about 3,400 residents from over 60 countries and remains an ongoing experiment in human unity.",
     title: "What is Auroville?",
     cardTitle: "The Vision",
     gradient: "linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%)",
@@ -54,6 +58,8 @@ Spend time beyond the Visitors' Centre. Walk or cycle the forest roads, visit a 
 
   {
     id: "the-matrimandir",
+    metaTitle: "The Matrimandir, Auroville's Golden Meditation Sphere",
+    metaDescription: "The Matrimandir is Auroville's golden sphere, built over 37 years as a place for silent concentration rather than religious worship.",
     title: "The Matrimandir",
     gradient: "linear-gradient(135deg, #78350f 0%, #d97706 100%)",
     photo: "matrimandir.jpg",
@@ -92,6 +98,8 @@ Twelve themed gardens encircle the Matrimandir, each corresponding to one of the
 
   {
     id: "sustainable-living",
+    metaTitle: "Sustainable Living in Auroville Since 1968",
+    metaDescription: "Auroville has reforested a barren plateau, developed compressed earth architecture, and pioneered solar cooking on a large scale.",
     title: "Sustainable Living",
     gradient: "linear-gradient(135deg, #064e3b 0%, #16a34a 100%)",
     photo: "sustainable-living.jpg",
@@ -138,6 +146,8 @@ The Visitors' Centre provides information on ecological projects. Several farms,
 
   {
     id: "arts-crafts",
+    metaTitle: "Auroville Arts & Crafts, Handmade Paper to Ceramics",
+    metaDescription: "Auroville's workshops produce handmade paper, natural incense, ceramics, ethical fashion, and a remarkable sound garden for visitors.",
     title: "Arts & Crafts",
     gradient: "linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%)",
     photo: "pottery.jpg",
@@ -178,6 +188,8 @@ The Visitors' Centre boutiques bring together products from dozens of enterprise
 
   {
     id: "food-cafes",
+    metaTitle: "Auroville Food & Cafés, Pizza, Pastries & Organic Farms",
+    metaDescription: "Auroville offers French pastries, solar-cooked community meals, wood-fired pizza, and organic farm cafés in a multicultural setting.",
     title: "Food & Cafés",
     cardTitle: "Food & Cafés",
     gradient: "linear-gradient(135deg, #7f1d1d 0%, #b45309 100%)",
@@ -219,6 +231,8 @@ The settings are part of the experience: shaded gardens, birdsong instead of tra
 
   {
     id: "how-to-visit",
+    metaTitle: "How to Visit Auroville, Passes, Scooters & Best Season",
+    metaDescription: "Auroville covers 20 sq km. The Matrimandir requires a pass, scooters offer the most flexibility, and November to February is ideal.",
     title: "How to Visit",
     gradient: "linear-gradient(135deg, #374151 0%, #6b7280 100%)",
     photo: "going-to-auroville.jpg",
