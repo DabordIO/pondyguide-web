@@ -24,11 +24,15 @@ export interface Festival {
   photo?: string;
   photoPosition?: string;
   photoAspectRatio?: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const festivals: Festival[] = [
   {
     id: "christmas",
+    metaTitle: "Christmas in Pondicherry, French and Tamil Traditions",
+    metaDescription: "Christmas in Pondicherry blends French pastry culture, Tamil Catholic traditions, and celebrations in three grand colonial churches.",
     title: "Christmas",
     category: "christian",
     month: "dec",
@@ -42,6 +46,8 @@ export const festivals: Festival[] = [
 
   {
     id: "new-year",
+    metaTitle: "New Year in Pondicherry, Beach Road and White Town",
+    metaDescription: "Pondicherry's New Year brings beachfront crowds, White Town music, and December's cool sea breeze for a relaxed celebration.",
     title: "New Year",
     category: "civic",
     month: "dec",
@@ -56,6 +62,8 @@ export const festivals: Festival[] = [
 
   {
     id: "yoga-festival",
+    metaTitle: "International Yoga Festival, Puducherry Since 1993",
+    metaDescription: "Since 1993, Puducherry has hosted a four-day yoga gathering with masters, scholars, and practitioners at the Old Port Convention Centre.",
     title: "International Yoga Festival",
     category: "spiritual",
     month: "jan",
@@ -70,6 +78,8 @@ export const festivals: Festival[] = [
 
   {
     id: "pongal",
+    metaTitle: "Pongal in Pondicherry, Four Days of Tamil Harvest Traditions",
+    metaDescription: "Pongal fills Pondicherry with fresh-boiled rice, decorated cattle, kolams, and the communal cry of Pongalo Pongal across four days.",
     title: "Pongal",
     category: "hindu",
     month: "jan",
@@ -85,6 +95,8 @@ export const festivals: Festival[] = [
 
   {
     id: "republic-day",
+    metaTitle: "Republic Day in Pondicherry, Parade on Goubert Avenue",
+    metaDescription: "Republic Day features flag-hoisting, military and school parades, gallantry awards, and tricolour illuminations along the seafront.",
     title: "Republic Day",
     category: "civic",
     month: "jan",
@@ -99,6 +111,8 @@ export const festivals: Festival[] = [
 
   {
     id: "mothers-birthday",
+    metaTitle: "The Mother's Birth Anniversary at Sri Aurobindo Ashram",
+    metaDescription: "The Ashram marks Mirra Alfassa's birthday with silent meditations, collective readings, and the rare opening of her private room.",
     title: "The Mother's Birth Anniversary",
     category: "spiritual",
     month: "feb",
@@ -114,6 +128,8 @@ export const festivals: Festival[] = [
 
   {
     id: "masi-magam",
+    metaTitle: "Masi Magam in Pondicherry, Temple Processions to the Sea",
+    metaDescription: "Dozens of temple deities are carried through Pondicherry to Vaithikuppam Beach for a ceremonial bath in the Bay of Bengal.",
     title: "Masi Magam",
     category: "hindu",
     month: "feb",
@@ -131,6 +147,8 @@ export const festivals: Festival[] = [
 
   {
     id: "auroville-day",
+    metaTitle: "Auroville Day, Silent Dawn Gathering at the Matrimandir",
+    metaDescription: "Auroville marks its founding with a 4:45 AM silent gathering at the Matrimandir Amphitheatre, without phones, bags, or cameras.",
     title: "Auroville Day",
     category: "spiritual",
     month: "feb",
@@ -145,6 +163,8 @@ export const festivals: Festival[] = [
 
   {
     id: "heritage-festival",
+    metaTitle: "Pondicherry Heritage Festival, Walks, Talks and Kayaking",
+    metaDescription: "A month of heritage walks, kayaking, architectural sketching, conservation talks, and school events focused on Pondicherry's history.",
     title: "Pondicherry Heritage Festival",
     category: "arts",
     month: "mar",
@@ -159,6 +179,8 @@ export const festivals: Festival[] = [
 
   {
     id: "easter",
+    metaTitle: "Easter in Pondicherry, Midnight Masses and French Pastries",
+    metaDescription: "Easter brings midnight masses, a Way of the Cross procession, handmade chocolate eggs, marzipan bunnies, and French meringues.",
     title: "Easter",
     category: "christian",
     month: "apr",
@@ -175,6 +197,8 @@ export const festivals: Festival[] = [
 
   {
     id: "tamil-new-year",
+    metaTitle: "Tamil New Year in Pondicherry, Puthandu Traditions",
+    metaDescription: "Tamil New Year begins with an auspicious tray of mangoes, bananas, jackfruit, flowers, and a mirror viewed at dawn on April 14.",
     title: "Tamil New Year (Puthandu)",
     category: "hindu",
     month: "apr",
@@ -191,6 +215,8 @@ export const festivals: Festival[] = [
 
   {
     id: "eid-ul-fitr",
+    metaTitle: "Eid-ul-Fitr in Pondicherry, Prayers, Feasts and Shopping",
+    metaDescription: "Eid-ul-Fitr marks the end of Ramadan with mosque prayers, family feasts, Nehru Street shopping, and special Iftar spreads.",
     title: "Eid-ul-Fitr (Ramzan)",
     category: "muslim",
     month: "mar",
@@ -206,6 +232,8 @@ export const festivals: Festival[] = [
 
   {
     id: "villianur-car-festival",
+    metaTitle: "Villianur Temple Car Festival, 15-Metre Chariot Procession",
+    metaDescription: "Thousands pull a 15-metre flower-decorated temple car through Villianur on the Vaikasi full moon, joined by the Lieutenant Governor.",
     title: "Villianur Temple Car Festival",
     category: "hindu",
     month: "may",
@@ -222,6 +250,8 @@ export const festivals: Festival[] = [
 
   {
     id: "fete-de-la-musique",
+    metaTitle: "Fête de la Musique in Pondicherry, Free Citywide Concerts",
+    metaDescription: "On the longest day of the year, jazz, rock, classical music, and street performances fill Pondicherry through Alliance Française events.",
     title: "Fête de la Musique",
     category: "french",
     month: "jun",
@@ -237,6 +267,8 @@ export const festivals: Festival[] = [
 
   {
     id: "midnight-tribe",
+    metaTitle: "Midnight Tribe Festival, EDM and Techno on Paradise Beach",
+    metaDescription: "Two days of live bands, EDM, techno, beach camping, water sports, floating stages, and seafood at Sandunes Paradise Beach.",
     title: "Midnight Tribe Festival",
     category: "arts",
     month: "sep",
@@ -252,6 +284,8 @@ export const festivals: Festival[] = [
 
   {
     id: "bastille-day",
+    metaTitle: "Bastille Day in Pondicherry, Torchlight Parade and Fireworks",
+    metaDescription: "Bastille Day includes wreath-laying, both national anthems, a White Town torchlight parade, and fireworks over the Promenade.",
     title: "Bastille Day",
     category: "french",
     month: "jul",
@@ -265,6 +299,8 @@ export const festivals: Festival[] = [
 
   {
     id: "manifest-dance-film",
+    metaTitle: "Manifest Dance-Film Festival, Auroville and White Town",
+    metaDescription: "An international dance-film festival with shorts, features, workshops, Q&As, and outdoor screenings across Auroville and White Town.",
     title: "Manifest Dance-Film Festival",
     category: "arts",
     month: "aug",
@@ -279,6 +315,8 @@ export const festivals: Festival[] = [
 
   {
     id: "veerampattinam-festival",
+    metaTitle: "Veerampattinam Car Festival, 450-Year-Old Goddess Festival",
+    metaDescription: "The fishing village celebrates its 450-year-old Aadi festival with fish curry feasts, temple rituals, and a chariot procession.",
     title: "Veerampattinam Car Festival",
     category: "hindu",
     month: "aug",
@@ -294,6 +332,8 @@ export const festivals: Festival[] = [
 
   {
     id: "fete-de-pondichery",
+    metaTitle: "Fête de Pondichéry, Music, Lights and Liberation History",
+    metaDescription: "Three days of music, illuminated buildings, street food, and dancing celebrate Independence Day and Pondicherry's liberation history.",
     title: "Fête de Pondichéry",
     category: "civic",
     month: "aug",
@@ -307,6 +347,8 @@ export const festivals: Festival[] = [
 
   {
     id: "sri-aurobindo-birthday",
+    metaTitle: "Sri Aurobindo's Birthday, Darshan Day on 15 August",
+    metaDescription: "One of the Ashram's four Darshan Days, with queues from dawn to view Sri Aurobindo's room and meditate at the marble Samadhi.",
     title: "Sri Aurobindo's Birthday",
     category: "spiritual",
     month: "aug",
@@ -322,6 +364,8 @@ export const festivals: Festival[] = [
 
   {
     id: "vinayaka-chaturthi",
+    metaTitle: "Vinayaka Chaturthi in Pondicherry, Ganesha by the Sea",
+    metaDescription: "The festival centres on Sri Manakula Vinayagar Temple and ends with a large procession carrying clay Ganesha idols to the sea.",
     title: "Vinayaka Chaturthi (Ganesha Festival)",
     category: "hindu",
     month: "aug",
@@ -338,6 +382,8 @@ export const festivals: Festival[] = [
 
   {
     id: "ayudha-puja",
+    metaTitle: "Ayudha Puja in Pondicherry, Tools, Vehicles and Books",
+    metaDescription: "Ayudha Puja sees vehicles garlanded, workshops decorated, and students placing books before Saraswathi in homes across the city.",
     title: "Ayudha Puja and Saraswathi Puja",
     category: "hindu",
     month: "oct",
@@ -354,6 +400,8 @@ export const festivals: Festival[] = [
 
   {
     id: "deepavali",
+    metaTitle: "Deepavali in Pondicherry, 4 AM Firecrackers and Lamps",
+    metaDescription: "Families wake at 4 AM for oil baths, new clothes, and pre-dawn firecrackers before lamps illuminate White Town in the evening.",
     title: "Deepavali",
     category: "hindu",
     month: "oct",
@@ -371,6 +419,8 @@ export const festivals: Festival[] = [
 
   {
     id: "liberation-day",
+    metaTitle: "Liberation Day in Pondicherry, 1 November 1954",
+    metaDescription: "Marking the lowering of the French tricolour and the raising of the Indian flag, with public holidays, parades, and civic ceremonies.",
     title: "Liberation Day",
     category: "civic",
     month: "nov",
@@ -385,6 +435,8 @@ export const festivals: Festival[] = [
 
   {
     id: "karthigai-deepam",
+    metaTitle: "Karthigai Deepam in Pondicherry, Rows of Clay Oil Lamps",
+    metaDescription: "Homes across Pondicherry glow with agal vilakku, creating a soft pre-electric light through the Tamil quarter and White Town.",
     title: "Karthigai Deepam",
     category: "hindu",
     month: "nov",
