@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { institutionArticles as institutions } from "@/data/institutions";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -40,6 +41,17 @@ export default async function InstitutionPage({ params }: { params: Promise<{ sl
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: item.title,
+          description: item.teaser,
+          image: item.photo ? `https://www.pondyguide.com/${item.photoFolder ?? "history"}/${item.photo}` : undefined,
+          url: `https://www.pondyguide.com/history/institutions/${item.id}`,
+          publisher: { "@type": "Organization", name: "Pondy Guide" },
+        }}
+      />
       <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← History</Link>
 
       {item.photo && (

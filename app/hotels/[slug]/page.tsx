@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { hotels, COLLECTION_LABELS, getHotelsByCollection, COLLECTION_ORDER } from "@/data/hotels";
 import AppBanner from "@/components/AppBanner";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 
 const orderedHotels = COLLECTION_ORDER.flatMap(c => getHotelsByCollection(c));
@@ -43,8 +44,31 @@ export default async function HotelPage({ params }: { params: Promise<{ slug: st
   const prev = idx > 0 ? orderedHotels[idx - 1] : null;
   const next = idx < orderedHotels.length - 1 ? orderedHotels[idx + 1] : null;
 
+  const priceSymbol = { budget: "₹", mid: "₹₹", upscale: "₹₹₹", luxury: "₹₹₹₹" }[h.priceRange];
+
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Hotel",
+          name: h.name,
+          description: h.tagline,
+          image: h.photo ? `https://www.pondyguide.com/hotels/${h.photo}` : undefined,
+          url: `https://www.pondyguide.com/hotels/${h.id}`,
+          priceRange: priceSymbol,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Puducherry",
+            addressCountry: "IN",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: h.lat,
+            longitude: h.lng,
+          },
+        }}
+      />
       <Link href="/hotels" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Hotels</Link>
 
       {h.photo && (

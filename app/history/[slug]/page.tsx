@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { historyArticles } from "@/data/history";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -34,6 +35,17 @@ export default async function HistoryArticlePage({ params }: { params: Promise<{
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: article.title,
+          description: article.teaser,
+          image: article.photo ? `https://www.pondyguide.com/${article.photoFolder ?? "history"}/${article.photo}` : undefined,
+          url: `https://www.pondyguide.com/history/${article.id}`,
+          publisher: { "@type": "Organization", name: "Pondy Guide" },
+        }}
+      />
       <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← History</Link>
 
       {article.photo && (

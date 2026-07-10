@@ -4,6 +4,7 @@ import Image from "next/image";
 import { figures } from "@/data/figures";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -40,6 +41,16 @@ export default async function FigurePage({ params }: { params: Promise<{ slug: s
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: figure.name,
+          description: figure.role,
+          image: figure.photo ? `https://www.pondyguide.com/figures/${figure.photo}` : undefined,
+          url: `https://www.pondyguide.com/history/lives-and-legacies/${figure.id}`,
+        }}
+      />
       <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Lives & Legacies</Link>
 
       {figure.photo && (

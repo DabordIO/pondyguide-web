@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { restaurants } from "@/data/restaurants";
 import AppBanner from "@/components/AppBanner";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -42,8 +43,33 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
   const prev = idx > 0 ? restaurants[idx - 1] : null;
   const next = idx < restaurants.length - 1 ? restaurants[idx + 1] : null;
 
+  const priceSymbol = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" }[r.priceRange];
+
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          name: r.name,
+          description: r.summary,
+          image: r.photo ? `https://www.pondyguide.com/restaurants/${r.photo}` : undefined,
+          url: `https://www.pondyguide.com/restaurants/${r.id}`,
+          priceRange: priceSymbol,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: r.address,
+            addressLocality: "Puducherry",
+            addressCountry: "IN",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: r.lat,
+            longitude: r.lng,
+          },
+          servesCuisine: r.category,
+        }}
+      />
       <Link href="/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
 
       {r.photo && (
