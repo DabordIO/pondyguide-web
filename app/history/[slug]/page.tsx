@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!article) return {};
   return {
     title: article.metaTitle ?? article.title,
-    description: article.teaser,
+    description: article.metaDescription ?? article.teaser,
     openGraph: article.photo ? { images: [`/${article.photoFolder ?? "history"}/${article.photo}`] } : undefined,
   };
 }

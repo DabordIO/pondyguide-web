@@ -2,6 +2,7 @@ export interface HistoryArticle {
   id: string;
   title: string;
   metaTitle?: string;
+  metaDescription?: string;
   subtitle: string;
   teaser: string;
   body: string;
@@ -14,7 +15,8 @@ export const historyArticles: HistoryArticle[] = [
   {
     id: "before-the-french",
     title: "Before the French",
-    metaTitle: "Before the French: Pondicherry's Ancient History & Roman Trade Roots",
+    metaTitle: "Before the French: Roman Trade and Ancient Pondicherry",
+    metaDescription: "Long before European rule, this coast traded with Rome, appeared in Tamil poetry and welcomed pilgrims for centuries.",
     subtitle: "Two thousand years of a world-famous shore",
     teaser:
       "Long before any European flag flew here, this coast was already cosmopolitan. Romans anchored offshore. Tamil poets wrote its praises. Pilgrims walked its roads for centuries.",
@@ -60,7 +62,8 @@ The grid he laid out, the canal that divided the Tamil quarter from the French q
   {
     id: "the-europeans-arrive",
     title: "The Europeans Arrive",
-    metaTitle: "The Europeans Arrive: Pondicherry's Early Colonial History",
+    metaTitle: "The Europeans Arrive on Pondicherry's Coast",
+    metaDescription: "Five European powers competed for the Coromandel Coast, but it took a century, nine men and a grid of streets to shape Pondicherry.",
     subtitle: "Portuguese, Danish, Dutch, British. And finally French.",
     teaser:
       "Five European powers tried to establish themselves on the Coromandel Coast. Only one succeeded in building something that lasted. But it took a century, nine men, and a grid of straight streets to make it work.",
@@ -106,7 +109,8 @@ It was the long competition between French Pondicherry and British Madras that w
   {
     id: "dupleix-gamble",
     title: "Dupleix's Gamble",
-    metaTitle: "Dupleix's Gamble: Pondicherry's French Colonial History",
+    metaTitle: "Dupleix's Gamble and French Rule in Pondicherry",
+    metaDescription: "In 1742, Governor Dupleix arrived with a radical vision: France would dominate the Deccan through politics as much as trade.",
     subtitle: "The man who almost gave France an empire",
     teaser:
       "In 1742 a new governor arrived in Pondicherry with an audacious idea: that France could rule the Deccan not through trade, but through political genius. For a decade, he was almost right.",
@@ -158,7 +162,8 @@ The garden he had planted was Pondicherry itself, briefly the capital of a Frenc
   {
     id: "the-fallen-city",
     title: "The Fallen City",
-    metaTitle: "The Fallen City: The British Siege of Pondicherry",
+    metaTitle: "The Fallen City, Britain's Siege of Pondicherry",
+    metaDescription: "After the British captured Pondicherry in 1761, the city was razed to the ground. The French rebuilt it slowly, stone by stone.",
     subtitle: "Siege, demolition, and the long rebuilding",
     teaser:
       "In 1761 the British captured Pondicherry and systematically demolished it. What the French recovered eight years later was a field of rubble. The city you see today was built on that foundation, stone by patient stone.",
@@ -220,7 +225,8 @@ The city he arrived in was quiet and conscious of its diminished status. Its str
   {
     id: "the-handover-1954",
     title: "1954: The Handover",
-    metaTitle: "1954: The Handover — How French Rule in Pondicherry Ended",
+    metaTitle: "1954: How French Rule Ended in Pondicherry",
+    metaDescription: "India became independent in 1947, but Pondicherry remained French for seven more years before an orderly, partial transfer.",
     subtitle: "The peaceful end of three centuries of French rule",
     teaser:
       "India became independent in 1947. Pondicherry did not. For seven more years, the tricolour flew over the French Quarter while the rest of the country remade itself. When the transfer finally came, it was orderly, and carefully incomplete.",
@@ -262,7 +268,8 @@ That is perhaps the most interesting thing about Pondicherry. It absorbed the Ro
   {
     id: "les-combattants",
     title: "Les anciens combattants",
-    metaTitle: "Les Anciens Combattants: Pondicherry's French Indian War Veterans",
+    metaTitle: "Les Anciens Combattants and French India Veterans",
+    metaDescription: "Pondicherry's seafront war memorial survived 1954 and still reflects a complex history of citizenship, loyalty and military service.",
     subtitle: "The French Indians who fought in four wars for France",
     teaser:
       "On Goubert Avenue there is a war memorial that France kept after 1954. It is the one piece of ground on the promenade that is technically still French. The names on it tell a story about citizenship, loyalty, and a community that took an unusual path through the twentieth century.",
@@ -308,7 +315,8 @@ When French officials pass through Pondicherry, the memorial is where they come.
   {
     id: "can-anyone-become-french",
     title: "Can Anyone from Pondy Become French?",
-    metaTitle: "Can Anyone from Pondy Become French? The Renonçant System Explained",
+    metaTitle: "The Renonçant System: Becoming French in Pondicherry",
+    metaDescription: "Not everyone in colonial Pondicherry could become French. This unusual legal system shaped the city's society and identity.",
     subtitle: "The renonçant system, the 1962 option, and what remains today",
     teaser:
       "The short answer is: not in the way it once was possible. But the way it was once possible is one of the strangest legal inventions of the colonial era, and understanding it explains why Pondicherry looks the way it does.",
