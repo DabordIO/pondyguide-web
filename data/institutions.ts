@@ -9,11 +9,15 @@ export interface InstitutionArticle {
   photoFolder?: string;
   address?: string;
   website?: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const institutionArticles: InstitutionArticle[] = [
   {
     id: "lycee-francais",
+    metaTitle: "Lycée Français International, Founded 1826 in Pondicherry",
+    metaDescription: "Founded in 1826, the Lycée Français International celebrates its bicentenary in 2026, one of the oldest French schools outside France.",
     title: "Lycée Français International",
     subtitle: "Founded 1826 as the Collège Royal de Pondichéry. Bicentenary: 2026.",
     photo: "lycee-français-pondichéry.jpg",
@@ -63,6 +67,8 @@ That continuity across three regimes, across colonial and postcolonial, across F
   },
   {
     id: "consulate-general",
+    metaTitle: "Consulat Général de France, French Citizens in Pondicherry",
+    metaDescription: "France maintains a Consulate General in Pondicherry because thousands of residents chose French citizenship after the 1962 transfer.",
     title: "Consulat Général de France",
     subtitle: "The diplomatic thread that was never cut",
     teaser:
@@ -106,6 +112,8 @@ It is the oldest continuously occupied site of French official presence in India
   },
   {
     id: "efeo",
+    metaTitle: "EFEO Pondicherry Centre, French Research Institute in India",
+    metaDescription: "The EFEO relocated scholars and collections to Pondicherry after French Indochina collapsed, creating a major centre for Indian studies.",
     title: "EFEO Pondicherry Centre",
     subtitle: "École française d'Extrême-Orient, founded Saigon 1900",
     photo: "EFEO.jpg",
@@ -151,6 +159,8 @@ The EFEO maintains establishments across Asia. The Pondicherry centre is arguabl
   },
   {
     id: "petit-seminaire",
+    metaTitle: "Petit Séminaire, Two Centuries of Education in Pondicherry",
+    metaDescription: "Founded in the late eighteenth century to train clergy, Petit Séminaire has continued educating boys through every political transition.",
     title: "Petit Séminaire",
     subtitle: "Founded 1792, one of India's oldest schools in continuous operation",
     photo: "petit-seminaire.jpg",
@@ -201,6 +211,8 @@ Its alumni include Prapanchan, the Tamil writer S. Vaidyalingam, who received th
   },
   {
     id: "alliance-francaise",
+    metaTitle: "Alliance Française de Pondichéry, French Language Centre",
+    metaDescription: "The Alliance Française de Pondichéry operates in a city where French remained an official language of government within living memory.",
     title: "Alliance Française de Pondichéry",
     subtitle: "French language and culture, with a particular local meaning",
     teaser:
@@ -226,6 +238,8 @@ The Pondicherry Alliance Française draws a student body that would be unusual i
   },
   {
     id: "pensionnat",
+    metaTitle: "Pensionnat de Jeunes Filles, Girls' Education Since 1826",
+    metaDescription: "The first structured institution for girls' education in French India, opened in 1826 and still operating under Indian administration.",
     title: "Pensionnat de Jeunes Filles",
     subtitle: "Founded 1826, secularized by France in 1903, then absorbed by India",
     photo: "pensionnat.jpg",
@@ -263,6 +277,8 @@ It functions today as a government-run school, still teaching in the same city, 
   },
   {
     id: "cluny-schools",
+    metaTitle: "The Cluny Schools, French Sisters in Pondicherry Since 1827",
+    metaDescription: "The Sisters of Saint Joseph of Cluny arrived in Pondicherry in 1827 and have educated generations of girls ever since.",
     title: "The Cluny Schools",
     subtitle: "Sisters of St. Joseph of Cluny, in Pondicherry since 1827",
     photo: "école-cluny.jpg",
@@ -306,6 +322,8 @@ Javouhey never visited Pondicherry. Her image appears in the schools she founded
   },
   {
     id: "calve-college",
+    metaTitle: "Collège Calvé, 1875 Heritage College in Pondicherry",
+    metaDescription: "Founded in 1875 by Calvé Soupraya Chettiar for Hindu and Muslim children, the college later became a centre of nationalist politics.",
     title: "Collège Calvé",
     subtitle: "Founded 1875 by a Tamil philanthropist, now a heritage school under restoration",
     photo: "collège-calvé.jpg",
@@ -349,6 +367,8 @@ Heritage records place it within what they describe as Pondicherry's "heritage s
   },
   {
     id: "foyer-du-soldat",
+    metaTitle: "Foyer du Soldat, Home for French Indian Veterans",
+    metaDescription: "Created for Tamil veterans returning from service in the French army, the Foyer du Soldat preserved a fading military memory in Pondicherry.",
     title: "Foyer du Soldat",
     subtitle: "The social afterlife of the French imperial army in Pondicherry",
     photo: "foyer-du-soldat.jpg",

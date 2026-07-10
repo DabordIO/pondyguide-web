@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const item = institutions.find(a => a.id === slug);
   if (!item) return {};
   return {
-    title: `${item.title} — Pondicherry`,
-    description: item.teaser,
+    title: item.metaTitle ?? `${item.title} — Pondicherry`,
+    description: item.metaDescription ?? item.teaser,
     openGraph: item.photo ? { images: [`/${item.photoFolder ?? "history"}/${item.photo}`] } : undefined,
   };
 }
