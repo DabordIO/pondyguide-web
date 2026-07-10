@@ -11,6 +11,8 @@ export interface ExploreArticle {
   photo?: string;
   highlights?: string[];
   visitInfo?: { hours?: string; entry?: string; tip?: string };
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const exploreArticles: ExploreArticle[] = [
@@ -18,6 +20,8 @@ export const exploreArticles: ExploreArticle[] = [
 
   {
     id: "walk-white-town",
+    metaTitle: "White Town Walking Route, Streets and Landmarks",
+    metaDescription: "A self-guided walk through Pondicherry's French Quarter, past colonial villas, temples and the seafront promenade in about two hours.",
     category: "walk",
     title: "Walking the White Town",
     cardTitle: "White Town Walk",
@@ -48,6 +52,8 @@ Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo As
 
   {
     id: "activity-sunday-market",
+    metaTitle: "Pondicherry Sunday Market on Mahatma Gandhi Street",
+    metaDescription: "Every Sunday, Mahatma Gandhi Street fills with second-hand furniture, old electronics, handmade clothes, tools and street food.",
     category: "activity",
     title: "The Sunday Market",
     cardTitle: "Sunday Market",
@@ -59,6 +65,8 @@ Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo As
   },
   {
     id: "activity-botanical-gardens",
+    metaTitle: "Pondicherry Botanical Gardens, History and Highlights",
+    metaDescription: "Founded by the French in 1826, these gardens contain over 1,500 plant species, plus greenhouses, an aquarium and a miniature railway.",
     category: "activity",
     title: "Pondicherry Botanical Gardens",
     cardTitle: "Botanical Garden",
@@ -70,6 +78,8 @@ Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo As
   },
   {
     id: "activity-beach-lighthouse-walk",
+    metaTitle: "Lighthouse and Fishing Village Walk, Pondicherry",
+    metaDescription: "Walk south from the promenade through a working fishing village to the new lighthouse, passing looms, warehouses and sea views.",
     category: "walk",
     title: "The Lighthouse and Fishing Village Walk",
     photo: "new-lighthouse.jpg",
@@ -83,6 +93,8 @@ Return to Goubert Avenue at the end of the walk. Le Café, the [Sri Aurobindo As
 
   {
     id: "daytrip-ousteri",
+    metaTitle: "Ousteri Lake, Birds and Wetlands Near Pondicherry",
+    metaDescription: "Five kilometres west of town, Ousteri is the region's largest natural freshwater lake and a Ramsar wetland with 170 bird species.",
     category: "daytrip",
     title: "Ousteri Lake",
     cardTitle: "Ousteri Lake",
@@ -109,6 +121,8 @@ Ousteri is approximately five kilometres west of Pondicherry town centre, a 15-m
 
   {
     id: "daytrip-gingee",
+    metaTitle: "Gingee Fort, the Troy of the East Near Pondicherry",
+    metaDescription: "Seventy kilometres west of Pondicherry, this vast fortress spans three granite hills linked by walls, gates and bastions.",
     category: "daytrip",
     title: "Gingee Fort",
     cardTitle: "Gingee Fort",
@@ -141,6 +155,8 @@ Archaeological Survey of India site: open daily, 9am to 5:30pm. Entry fee approx
 
   {
     id: "daytrip-arikamedu",
+    metaTitle: "Arikamedu, the Ancient Roman Port Near Pondicherry",
+    metaDescription: "Four kilometres south of the French Quarter, Roman traders once exchanged Mediterranean goods here for cotton and gems.",
     category: "daytrip",
     title: "Arikamedu",
     cardTitle: "Arikamedu",
@@ -193,6 +209,8 @@ The site lies about four kilometres south of the French Quarter near Ariyankuppa
 
   {
     id: "daytrip-pichavaram",
+    metaTitle: "Pichavaram Mangrove Forest Near Pondicherry",
+    metaDescription: "Sixty-five kilometres north of Puducherry, this vast mangrove landscape covers 1,100 hectares of channels and islands.",
     category: "daytrip",
     title: "Pichavaram Mangrove Forest",
     cardTitle: "Pichavaram",
@@ -248,6 +266,8 @@ Allow at least two to three hours for the visit, particularly if choosing a rowi
 
   {
     id: "daytrip-auroville",
+    metaTitle: "Auroville Day Trip from Pondicherry, Matrimandir",
+    metaDescription: "Founded in 1968 by Mirra Alfassa, Auroville is an experimental township north of Pondicherry centred on the Matrimandir.",
     category: "daytrip",
     title: "Day trip: Auroville",
     cardTitle: "Auroville",
@@ -269,6 +289,8 @@ The beach near Auroville is the closest safe swimming beach to Pondicherry, with
   },
   {
     id: "daytrip-mahabalipuram",
+    metaTitle: "Mahabalipuram Day Trip from Pondicherry",
+    metaDescription: "Visit UNESCO-listed Pallava monuments carved from granite in the 7th century, including cave temples and the Shore Temple.",
     category: "daytrip",
     title: "Day trip: Mahabalipuram",
     cardTitle: "Mahabalipuram",
@@ -287,6 +309,8 @@ Buses run from Pondicherry main bus depot north toward Chennai, passing the Maha
 
   {
     id: "theme-temples",
+    metaTitle: "Temples and History of Pondicherry's Tamil Quarter",
+    metaDescription: "Across the canal, temples, markets and family homes reveal the older settlement that existed before the French arrived in 1674.",
     category: "walk",
     title: "Temples of the Tamil Quarter",
     photo: "temples-tamil-quarter.jpg",
