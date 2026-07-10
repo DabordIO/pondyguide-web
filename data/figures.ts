@@ -601,6 +601,7 @@ He served in Pondicherry through the critical early phase of the merger movement
     name: "Marie Cuperly",
     dates: "Dates unknown, fl. 1650s–after 1706",
     role: "Wife of François Martin, founder of Pondicherry",
+    photo: "marie-cuperly.png",
     teaser: "A Parisian fishmonger's daughter who married in secret, was abandoned for twenty-two years while her husband built French India, and then arrived to share his triumph, his captivity, and his city.",
     body: `**THE FISHWIFE'S DAUGHTER**
 
@@ -621,6 +622,7 @@ By the time Martin died in December 1706, all three of their daughters had marri
     name: "Jeanne Dupleix",
     dates: "c.1706–1756",
     role: "Political adviser and intermediary to Governor-General Dupleix",
+    photo: "jeanne-dupleix.png",
     teaser: "Fluent in Tamil, Telugu, and Persian, Jeanne Dupleix ran the diplomacy her husband's French officers could not, and Ananda Ranga Pillai's diary recorded her every move with a mixture of admiration and unease.",
     body: `**THE GOVERNOR'S OTHER HALF**
 
@@ -639,6 +641,7 @@ When Dupleix was recalled to France in 1754, having been stripped of the protect
     name: "Claude Martin",
     dates: "1735–1800",
     role: "Soldier, collector, and founder of the La Martinière schools",
+    photo: "claude-martin.png",
     teaser: "He arrived in Pondicherry as a common soldier under Dupleix and Lally. When the city fell in 1761 he switched sides, and died forty years later in Lucknow as a Major-General worth nearly half a million pounds.",
     body: `**FROM PONDICHERRY TO CONSTANTIA**
 
@@ -659,6 +662,7 @@ Martin never married, though he maintained a decades-long relationship with a co
     name: "Napoleon Bonaparte",
     dates: "1769–1821",
     role: "Emperor of the French; cause of Pondicherry's fourth British occupation",
+    photo: "napoleon-bonaparte.png",
     teaser: "He never set foot in India, but his wars caused Pondicherry's fourth and longest British occupation, thirteen years that only ended when he lost at Waterloo.",
     body: `**THE EMPEROR WHO NEVER CAME**
 
@@ -677,6 +681,7 @@ Napoleon's defeat at Waterloo in June 1815 and the Congress of Vienna settlement
     name: "Charles de Gaulle",
     dates: "1890–1970",
     role: "President of France; ratified French India's transfer to India in 1962",
+    photo: "charles-de-gaulle.png",
     teaser: "He did not build French India, and barely engaged with it personally. But it was his government that finally signed the law ending three centuries of French rule, eight years after Pondicherry had already changed hands.",
     body: `**THE SIGNATURE THAT ENDED IT**
 
@@ -695,6 +700,7 @@ The more lasting legacy of his government for Pondicherry was cultural rather th
     name: "Kewal Singh",
     dates: "1915–1991",
     role: "Consul-General of India, then first Chief Commissioner of Pondicherry",
+    photo: "kewal-singh.png",
     teaser: "He was India's Consul-General in French Pondicherry, and on the day of the 1954 referendum became its first Chief Commissioner too, holding both roles at once during the handover before going on to become Foreign Secretary of India.",
     body: `**THE OPERATIONAL HAND BEHIND THE HANDOVER**
 
