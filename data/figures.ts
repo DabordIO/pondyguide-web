@@ -8,11 +8,15 @@ export interface Figure {
   photoZoom?: number;
   teaser: string;
   body: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const figures: Figure[] = [
   {
     id: "dupleix",
+    metaTitle: "Joseph François Dupleix, Architect of French India",
+    metaDescription: "Dupleix built a French empire in India through alliances and sepoy armies, then lost it after a recall order from Paris.",
     name: "Joseph François Dupleix",
     dates: "1697–1763",
     role: "Governor-General of French India",
@@ -33,6 +37,8 @@ His statue stands on [Goubert Avenue](/discover/white-town/avenue-goubert), arm 
 
   {
     id: "ananda-ranga-pillai",
+    metaTitle: "Ananda Ranga Pillai, Voice of French India",
+    metaDescription: "Dupleix's chief broker and interpreter left behind the most intimate Tamil diary of French India, written from inside the colonial court.",
     name: "Ananda Ranga Pillai",
     dates: "1709–1761",
     role: "Chief Interpreter to Dupleix, Diarist",
@@ -51,6 +57,8 @@ He died in 1761, the same year Pondicherry fell to the British and the world he 
 
   {
     id: "la-bourdonnais",
+    metaTitle: "Mahé de La Bourdonnais, Captor of Madras in 1746",
+    metaDescription: "The admiral who captured Madras for France in 1746, quarrelled with Dupleix over its fate, and later lost his liberty and health.",
     name: "Bertrand François Mahé de La Bourdonnais",
     cardName: "La Bourdonnais",
     dates: "1699–1753",
@@ -70,6 +78,8 @@ He returned to France expecting recognition. Instead, his enemies were waiting. 
 
   {
     id: "chanda-sahib",
+    metaTitle: "Chanda Sahib, Dupleix's Nawab of the Carnatic",
+    metaDescription: "Dupleix's chosen Nawab rose and fell within three years, and his death marked the end of French dominance in southern India.",
     name: "Chanda Sahib",
     dates: "died 1752",
     role: "Nawab of the Carnatic, French Ally",
@@ -88,6 +98,8 @@ The British response was Robert Clive's seizure of Arcot in 1751, which diverted
 
   {
     id: "charles-de-bussy",
+    metaTitle: "Charles de Bussy, Dupleix's Lieutenant at Hyderabad",
+    metaDescription: "Bussy governed a French protectorate at Hyderabad for eight years with a small force, until his recall destroyed the system he built.",
     name: "Charles de Bussy",
     dates: "1718–1785",
     role: "French Military Commander in the Deccan",
@@ -106,6 +118,8 @@ He was captured at the Battle of Wandiwash in January 1760 and spent three years
 
   {
     id: "lally",
+    metaTitle: "Comte de Lally, General Who Lost French India",
+    metaDescription: "Arriving in 1758 to save French India, Lally instead presided over its collapse and was executed in Paris for the defeat.",
     name: "Thomas Arthur, Comte de Lally",
     cardName: "Comte de Lally",
     dates: "1702–1766",
@@ -125,6 +139,8 @@ The city surrendered in January 1761 after a five-month siege that left the popu
 
   {
     id: "suffren",
+    metaTitle: "Pierre André de Suffren, Admiral of the Coromandel Coast",
+    metaDescription: "The great French admiral fought five battles off the Coromandel Coast in 1782 and 1783, coming close to reversing British dominance.",
     name: "Pierre André de Suffren",
     cardName: "Pierre de Suffren",
     dates: "1729–1788",
@@ -144,6 +160,8 @@ The peace of 1783 ended his campaign before a decision could be reached. He retu
 
   {
     id: "robert-clive",
+    metaTitle: "Robert Clive, Destroyer of Dupleix's Empire",
+    metaDescription: "Clive broke French power at Arcot and Srirangam, won Bengal at Plassey, and transformed the East India Company into a territorial power.",
     name: "Robert Clive",
     dates: "1725–1774",
     role: "British Military Commander; 1st Baron Clive",
@@ -164,6 +182,8 @@ Clive ended his career in controversy, accused of corruption during his two Beng
 
   {
     id: "stringer-lawrence",
+    metaTitle: "Stringer Lawrence, Founder of the British Sepoy Army",
+    metaDescription: "Lawrence built the East India Company's sepoy army from scratch and mentored Robert Clive during the Carnatic Wars.",
     name: "Stringer Lawrence",
     dates: "1697–1775",
     role: "Father of the Indian Army",
@@ -182,6 +202,8 @@ He is less celebrated than Clive because his contribution was institutional rath
 
   {
     id: "law-de-lauriston",
+    metaTitle: "Law de Lauriston, Surrender at Srirangam in 1752",
+    metaDescription: "The French commander surrendered the last field force in the Carnatic on the same afternoon Chanda Sahib was executed.",
     name: "Law de Lauriston",
     dates: "1719–1797",
     role: "French Military Officer",
@@ -200,6 +222,8 @@ Law de Lauriston was released after capitulation, continued in French service, a
 
   {
     id: "hyder-ali",
+    metaTitle: "Hyder Ali, Mysore Sultan and French Ally",
+    metaDescription: "The self-made ruler of Mysore twice defeated British armies and became central to every French plan for India after Pondicherry fell.",
     name: "Hyder Ali",
     dates: "c. 1720–1782",
     role: "De facto Ruler of Mysore",
@@ -218,6 +242,8 @@ He died on 7 December 1782 of a lumbar abscess, at the moment of maximum French 
 
   {
     id: "tipu-sultan",
+    metaTitle: "Tipu Sultan, Revolutionary Ally of France in India",
+    metaDescription: "The Tiger of Mysore was France's strongest ally in Revolutionary India and the last Indian ruler to seriously threaten British power.",
     name: "Tipu Sultan",
     dates: "1751–1799",
     role: "Sultan of Mysore",
@@ -238,6 +264,8 @@ Among the objects the British took from his palace was a life-size mechanical au
 
   {
     id: "pierre-loti",
+    metaTitle: "Pierre Loti, Literary Portrait of Pondicherry",
+    metaDescription: "The French novelist arrived by sea in 1899 and wrote the most atmospheric literary portrait of colonial Pondicherry.",
     name: "Pierre Loti",
     dates: "1850–1923",
     role: "French Novelist and Naval Officer",
@@ -256,6 +284,8 @@ He died in Hendaye in June 1923. *L'Inde (sans les Anglais)* is less read today 
 
   {
     id: "romain-rolland",
+    metaTitle: "Romain Rolland, French Nobel Laureate and Pondicherry",
+    metaDescription: "Though he never visited India, Rolland's engagement with Indian spirituality connected Pondicherry's ashram with European culture.",
     name: "Romain Rolland",
     dates: "1866–1944",
     role: "French Novelist; Nobel Prize 1915",
@@ -274,6 +304,8 @@ He died in Vézelay in December 1944, having never visited India. A street in Po
 
   {
     id: "francois-gaudart",
+    metaTitle: "François Gaudart, Mayor and Industrialist of French India",
+    metaDescription: "Karikal's first elected mayor donated the Joan of Arc statue that still stands in the garden of Notre-Dame des Anges.",
     name: "François Gaudart",
     dates: "1844–1923",
     role: "First Mayor of Karikal; Industrialist",
@@ -292,6 +324,8 @@ Shortly before his death he donated to [Notre-Dame des Anges](/discover/landmark
 
   {
     id: "edouard-goubert",
+    metaTitle: "Édouard Goubert, Man Who Chose India in 1954",
+    metaDescription: "After a decade defending French rule, Goubert switched sides in 1954 and made the transfer of French India to India possible.",
     name: "Édouard Goubert",
     dates: "1894–1974",
     role: "Mayor of Pondicherry; Last Pro-French Political Boss",
@@ -312,6 +346,8 @@ His political reversal in March 1954 was the decisive event of Pondicherry's fin
 
   {
     id: "charles-baron",
+    metaTitle: "Charles François Baron, Last Governor of French India",
+    metaDescription: "The final governor of French India moved from Paris surrealist circles to Sri Aurobindo's spiritual world in Pondicherry.",
     name: "Charles François Baron",
     dates: "1900–1980",
     role: "Last Governor of French India",
@@ -330,6 +366,8 @@ In September 1947, Baron arranged a meeting between Sri Aurobindo, in strict sec
 
   {
     id: "sri-aurobindo",
+    metaTitle: "Sri Aurobindo, Revolutionary Turned Spiritual Teacher",
+    metaDescription: "Arriving in Pondicherry in 1910 as a fugitive, Sri Aurobindo spent forty years building a major spiritual tradition here.",
     name: "Sri Aurobindo",
     dates: "1872–1950",
     role: "Philosopher, Yogi, Nationalist",
@@ -350,6 +388,8 @@ In September 1947, for the first time since 1928, he received outside visitors: 
 
   {
     id: "subramania-bharati",
+    metaTitle: "Subramania Bharati, Tamil Poet in Exile at Pondicherry",
+    metaDescription: "Living in Pondicherry from 1908 to 1919, Bharati wrote some of the finest poetry in modern Tamil while fleeing British India.",
     name: "Subramania Bharati",
     dates: "1882–1921",
     role: "Tamil Poet; Nationalist",
@@ -368,6 +408,8 @@ He returned to British India in 1919, was arrested briefly, and died in Madras i
 
   {
     id: "v-subbiah",
+    metaTitle: "V. Subbiah, Communist Leader of Pondicherry Merger",
+    metaDescription: "The trade union leader built the mass movement that turned Pondicherry's merger with India into a popular rather than elite cause.",
     name: "V. Subbiah",
     dates: "1911–1993",
     role: "Trade Union Leader; Pro-Merger Activist",
@@ -386,6 +428,8 @@ The Congrès de Kijour on 18 October 1954, at which 170 representatives voted fo
 
   {
     id: "francois-martin",
+    metaTitle: "François Martin, Founder of Pondicherry in 1674",
+    metaDescription: "Arriving with six men in 1674, Martin built Pondicherry into a city, rebuilt it after Dutch occupation, and died at his desk.",
     name: "François Martin",
     dates: "1634–1706",
     role: "Founder of Pondicherry; Director-General of French India",
@@ -408,6 +452,8 @@ He died in office on 30 December 1706, buried in the fort he had built at the he
 
   {
     id: "mirra-alfassa",
+    metaTitle: "Mirra Alfassa, The Mother of Pondicherry's Ashram",
+    metaDescription: "The Paris-born mystic worked with Sri Aurobindo for fifty-nine years and founded Auroville at the age of ninety.",
     name: "Mirra Alfassa",
     dates: "1878–1973",
     role: "Co-founder of the Sri Aurobindo Ashram; Founder of Auroville; 'The Mother'",
@@ -428,6 +474,8 @@ She initiated [Auroville](/discover/auroville/what-is-auroville) in 1968: a town
 
   {
     id: "le-gentil",
+    metaTitle: "Guillaume Le Gentil, Astronomer of the Transit of Venus",
+    metaDescription: "Le Gentil crossed the world twice to observe the transit of Venus, missed it both times, and left a vivid portrait of 1760s Pondicherry.",
     name: "Guillaume Le Gentil",
     dates: "1725–c.1792",
     role: "French Astronomer; Member, Académie des Sciences",
@@ -452,6 +500,8 @@ He sailed for home on 1 March 1770. A hurricane off Réunion nearly sank his shi
 
   {
     id: "eyre-coote",
+    metaTitle: "Eyre Coote, Victor of Wandiwash and Pondicherry",
+    metaDescription: "Coote destroyed French military power at Wandiwash, captured Bussy, and led the siege that brought Pondicherry down.",
     name: "Eyre Coote",
     dates: "1726–1783",
     role: "British Commander; Captor of Pondicherry",
@@ -472,6 +522,8 @@ Coote returned to Britain, was knighted in 1771, and came back to India in his l
 
   {
     id: "muhammad-ali-khan-wallajah",
+    metaTitle: "Muhammad Ali Khan Wallajah, British-Backed Nawab",
+    metaDescription: "The British-backed Nawab survived for forty-six years, shaping the political and financial system that British South India inherited.",
     name: "Muhammad Ali Khan Wallajah",
     cardName: "Muhammad Wallajah",
     dates: "1717–1795",
@@ -493,6 +545,8 @@ His name is least familiar to history because his achievement was survival rathe
 
   {
     id: "victor-simonel",
+    metaTitle: "Victor Simonel, Tamil Officer Killed at Verdun",
+    metaDescription: "The Pondicherry-born engineering student became a French infantry officer at twenty-one and died leading an assault at Verdun.",
     name: "Victor Simonel",
     dates: "1896–1917",
     role: "Officer Cadet, 55th Infantry Regiment; Died for France",
@@ -521,6 +575,8 @@ He is buried in the national necropolis at Bras-sur-Meuse, near Samogneux, tomb 
 
   {
     id: "mirza-rashid-ali-baig",
+    metaTitle: "Mirza Rashid Ali Baig, Independent India's Man in Pondicherry",
+    metaDescription: "The Sandhurst-trained diplomat chose India over Pakistan and arrived in Pondicherry in 1947 as New Delhi's representative.",
     name: "Mirza Rashid Ali Baig",
     dates: "1905–1979",
     role: "Inaugural Consul-General of India in French India",
