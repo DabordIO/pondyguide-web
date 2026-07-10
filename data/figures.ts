@@ -4,7 +4,7 @@ export interface Figure {
   cardName?: string;
   dates: string;
   role: string;
-  photo: string;
+  photo?: string;
   photoZoom?: number;
   teaser: string;
   body: string;
@@ -593,5 +593,117 @@ He went on to become Sheriff of Bombay in 1942, joined the Indian Foreign Servic
 The symbolic dimensions of the posting were considerable. A Muslim aristocrat of Mughal lineage, educated at Sandhurst, who had been Jinnah's personal secretary and had rejected Pakistan, serving as the face of secular, plural India to a French colonial enclave that was anxiously watching the subcontinent tear itself apart. His brother Mirza Osman Ali Baig, a year older, had made the opposite choice at Partition and became a Pakistani diplomat. The two brothers embodied in personal terms the sundering that Partition imposed on Muslim families of the old colonial service class.
 
 He served in Pondicherry through the critical early phase of the merger movement, from 1947 to 1949, before moving on to Jakarta, Manila, and eventually Tehran, where he served as Indian Ambassador. He died in 1979. His memoir *In Different Saddles* (1967) covers his military, political, and diplomatic career; *The Muslim Dilemma in India* (1974) addresses the position of Muslims in independent India, a subject on which, having broken with Jinnah and chosen India, he had singular standing. The Indian consulate he established at rue des Capucins opened the diplomatic process that ended with [the transfer of Pondicherry to India in 1954](/history/the-handover-1954).`,
+  },
+  {
+    id: "marie-cuperly",
+    metaTitle: "Marie Cuperly, the Fishmonger's Daughter Who Founded Pondicherry",
+    metaDescription: "François Martin's wife survived poverty, a twenty-two-year separation, and Dutch captivity to become one of the only named women of French India's founding generation.",
+    name: "Marie Cuperly",
+    dates: "Dates unknown, fl. 1650s–after 1706",
+    role: "Wife of François Martin, founder of Pondicherry",
+    teaser: "A Parisian fishmonger's daughter who married in secret, was abandoned for twenty-two years while her husband built French India, and then arrived to share his triumph, his captivity, and his city.",
+    body: `**THE FISHWIFE'S DAUGHTER**
+
+Marie Cuperly is one of the very few women of French India's founding generation whose name survives at all, and the only one whose life touches every part of Pondicherry's earliest story. She was born in Paris into the world of Les Halles, the daughter of a fishmonger, a milieu entirely removed from the merchants and officers who staffed the Compagnie des Indes. There she met [François Martin](/history/lives-and-legacies/francois-martin), the future founder of Pondicherry, then working as a shop assistant in the same district. They fell in love without her mother's knowledge and married in secret.
+
+When the marriage was discovered, both families reacted badly. Marie's mother expelled her and refused to recognise Martin as a son-in-law; Martin's employer dismissed him for the same marriage. The young couple began their life together twice disgraced, with no income and no allies. Marie returned to selling fish at the market to keep the household alive while Martin took whatever ledger work he could find. At least one daughter, Marie-Anne, was born into this poverty.
+
+In the summer of 1664, Martin saw a Compagnie des Indes recruitment notice offering passage and employment in Madagascar and the Indies. He left in March 1665, and according to the traveller Robert Challes, who visited Pondicherry decades later and recorded the story, he left without telling his wife where he was going or how to reach him. Marie Cuperly went more than twenty-two years without news of her husband, raising her children alone on what she earned at the market. The Compagnie is said to have searched the Halles district for six weeks before it could even locate her to confirm Martin's own account of his marriage.
+
+She reached Pondicherry in April 1674 with her daughter Marie-Anne, three months after Martin had re-established the French position there following the fall of San-Thomé. She arrived to a settlement of reed huts and salt pans and watched it become the principal French base in India over the next two decades. When the Dutch besieged and captured Pondicherry in 1693, Martin was taken prisoner to Batavia. Marie Cuperly chose to go with him into captivity rather than remain behind, and the family did not return until the Peace of Ryswick restored the city to France in 1697.
+
+By the time Martin died in December 1706, all three of their daughters had married into the leadership of French India: one to the first Director of Chandernagor, one to the Major responsible for Pondicherry's garrison, one to a senior Company officer. Marie Cuperly outlived her husband. Her own will was discovered alongside his in Pondicherry in 1918, confirming what Challes had reported two centuries earlier, though the date and circumstances of her own death were never recorded. What survives of her is not an official portrait but the shape of an entire life: a fishmonger's daughter who sold fish in Paris while her husband built an empire, and who arrived in India not as an administrator's consort but as a woman who had already survived worse than anything the colony could offer.`,
+  },
+  {
+    id: "jeanne-dupleix",
+    metaTitle: "Jeanne Dupleix, the Political Partner Behind Dupleix's Empire",
+    metaDescription: "Fluent in Tamil, Telugu, and Persian, Dupleix's wife ran the diplomacy his French officers could not, and Ananda Ranga Pillai's diary recorded every move.",
+    name: "Jeanne Dupleix",
+    dates: "c.1706–1756",
+    role: "Political adviser and intermediary to Governor-General Dupleix",
+    teaser: "Fluent in Tamil, Telugu, and Persian, Jeanne Dupleix ran the diplomacy her husband's French officers could not, and Ananda Ranga Pillai's diary recorded her every move with a mixture of admiration and unease.",
+    body: `**THE GOVERNOR'S OTHER HALF**
+
+Jeanne Dupleix was born in Pondicherry around 1706 into the Franco-Indian Creole community that occupied the middle ground of the French establishment, neither metropolitan French nor Tamil Indian. Her mother was of part-Indian descent; her father, Jacques Vincens, was a French merchant settled in the city. She grew up fluent in Tamil, Telugu, and Persian as well as French, in a colony where French officers routinely needed interpreters just to conduct business. Her first marriage, to a French councillor, left her a widow with children and real standing in Pondicherry society by the time she met [Joseph François Dupleix](/history/lives-and-legacies/dupleix), newly arrived as Governor-General. They married in 1741.
+
+What followed was unusual for any period of eighteenth-century colonial government: a governor's wife who was also a working political partner. [Ananda Ranga Pillai](/history/lives-and-legacies/ananda-ranga-pillai), Dupleix's own dubash, recorded her activities in his diary in extraordinary detail, and his account is the most complete portrait of any woman in the primary sources for French India. He documents her direct involvement in appointing the colony's chief interpreter, in commercial licensing, in receiving Indian princes and their delegations, and in negotiating the political relationships on which her husband's entire protectorate strategy depended. Where French officers needed interpreters and went through formal channels, she went directly to the wives and female relatives of Indian rulers, women who were themselves serious political actors, and built the kind of access her husband could never have obtained on his own.
+
+Pillai's diary does not flatter her. He also records her willingness to receive gifts in exchange for influence over appointments, and her direct hand in commercial contracts and personal disputes across the French establishment. He portrays a woman who understood the patronage systems that ran through both French and Indian society and who worked both simultaneously, for the colony's benefit and her own. When the pretender Muzaffar Jung's delegation arrived at Pondicherry in December 1749, ahead of his proclamation as Nizam, it was Jeanne Dupleix who received them.
+
+When Dupleix was recalled to France in 1754, having been stripped of the protectorate he had spent twelve years building, Jeanne went with him. She died in Paris in 1756, two years before her husband, who lived on in increasing poverty and bitterness until 1763, still trying and failing to recover the fortune he had put into French India. She remains one of the most politically consequential women in the history of the French settlements, and one of the very few whose voice, however filtered through Pillai's suspicious admiration, survives at all.`,
+  },
+  {
+    id: "claude-martin",
+    metaTitle: "Claude Martin, the Pondicherry Soldier Who Built an Empire in Lucknow",
+    metaDescription: "A common soldier in Dupleix and Lally's army who switched sides after the fall of Pondicherry in 1761, and died a Major-General worth nearly £500,000.",
+    name: "Claude Martin",
+    dates: "1735–1800",
+    role: "Soldier, collector, and founder of the La Martinière schools",
+    teaser: "He arrived in Pondicherry as a common soldier under Dupleix and Lally. When the city fell in 1761 he switched sides, and died forty years later in Lucknow as a Major-General worth nearly half a million pounds.",
+    body: `**FROM PONDICHERRY TO CONSTANTIA**
+
+Claude Martin was born in Lyon in 1735, the son of a cooper, and apprenticed to a silk weaver before he enlisted with the French Compagnie des Indes in September 1751, aged sixteen. His mother reportedly told him not to come home until he could arrive in a carriage, a remark that would prove darkly ironic: the French Revolution made any return to France impossible, carriage or not.
+
+Martin served in India under [Joseph François Dupleix](/history/lives-and-legacies/dupleix) and General [Thomas Arthur Lally](/history/lives-and-legacies/lally) during the Carnatic Wars, as French power on the Coromandel Coast was ground down to a handful of coastal outposts. In 1761, [Pondicherry fell to the British](/history/dupleix-gamble) for the third time, and with it went the French army's pay, discipline, and any realistic future. Three years later, camped on the Karamnassa river after a mutiny among unpaid French and German troops in British service, Martin was approached by fellow Frenchmen planning to desert and join a mercenary commander. He gave an equivocal answer, quietly fell back from the column, and rode for the British camp instead of joining them. His formal British commission is dated 18 April 1764. The choice, made in the ruins of French India, set the course for the rest of his life.
+
+Martin spent the following years as a survey officer under Bengal's Surveyor-General, mapping Awadh, Cooch Behar, and Bengal, and was briefly dismissed from Company service in 1767 over a sedition charge before being reinstated two years later on the strength of his surveying skills. In 1776 he accepted the post of Superintendent of the Arsenal under the Nawab of Awadh at Lucknow, a position that made him useful to the Nawab as a counterweight to the Company and left him, unusually, trusted by both sides at once. He never returned to France, and he never changed his nationality: he died in 1800 a Frenchman who had spent his entire adult life in British and Nawabi service.
+
+At Lucknow, Martin became one of the largest landholders in northern India and assembled one of the great private collections of the age: manuscripts, miniature paintings, coins, and naturalia, catalogued at his death across roughly eighty pages, alongside a personal library of more than four thousand books. He commissioned around 650 paintings of Indian birds from Mughal-trained artists, a collection that sat forgotten at Kew Gardens for two centuries until its rediscovery was called "the biggest discovery" of a major 2020 London exhibition on East India Company painting. His great building project, Constantia, on the banks of the Gomti, combined banquet hall, mansion, fortress, and his own mausoleum in one six-storey structure, designed specifically so the Nawab, who had repeatedly tried to acquire it, could never take it from him while he lived, and would find it a tomb the moment he did.
+
+Martin never married, though he maintained a decades-long relationship with a companion named Boulone, whom he had purchased as a child and who is buried in the grounds of the college he founded. His will, proved only after decades of delay, endowed six schools bearing the name La Martinière, in Lucknow, Calcutta, and his native Lyon, open in principle to children of every race and nationality. They still operate today. A common soldier from Pondicherry's garrison who switched sides when the city fell became, in the end, one of the most improbable philanthropists of colonial India.`,
+  },
+  {
+    id: "napoleon-bonaparte",
+    metaTitle: "Napoleon and Pondicherry: The Emperor Who Never Came",
+    metaDescription: "Napoleon never set foot in India, but his wars caused Pondicherry's fourth and longest British occupation, thirteen years that ended only at Waterloo.",
+    name: "Napoleon Bonaparte",
+    dates: "1769–1821",
+    role: "Emperor of the French; cause of Pondicherry's fourth British occupation",
+    teaser: "He never set foot in India, but his wars caused Pondicherry's fourth and longest British occupation, thirteen years that only ended when he lost at Waterloo.",
+    body: `**THE EMPEROR WHO NEVER CAME**
+
+Napoleon Bonaparte never visited India, and by his own account Pondicherry meant almost nothing to him. Yet no single individual is responsible for a longer stretch of foreign rule over the city: his wars caused the fourth British occupation of Pondicherry, thirteen years from 1803 to 1816, the longest of the five times the city changed hands by force.
+
+India occupied a real place in Napoleon's strategic imagination, mostly as the asset whose loss would hurt Britain the most. His Egyptian campaign of 1798 to 1801 was conceived in part as the first stage of an overland route to India through Ottoman territory and Persia, a scheme ended decisively by Nelson's victory at the Battle of the Nile. He maintained contact with Tipu Sultan of Mysore, France's last serious Indian ally, but Tipu was killed by British forces in 1799 before any French help could reach him, and after that France had no ally left on the subcontinent capable of threatening British power from within.
+
+When war resumed in 1803 after the collapse of the Peace of Amiens, British forces moved immediately to seize every French position in India, and Pondicherry fell for the fourth time. For the next thirteen years it was a quiet backwater, too small to matter strategically and too far from the battlefields of Europe to attract any of Napoleon's attention. It was, in the middle of his empire, an irrelevant footnote to a continental war.
+
+Napoleon's defeat at Waterloo in June 1815 and the Congress of Vienna settlement that followed led, after negotiation, to the restoration of French India on 4 December 1816, the fifth and final such restitution after a European war, following the same pattern set at Ryswick in 1697, Aix-la-Chapelle in 1748, Paris in 1763, and Versailles in 1783. No French territory in India was ever seized by force again. Even his administrative legacy outlasted his politics: the Napoleonic Code and the centralised French civil and judicial system he built at home were carried into French India and shaped how nineteenth-century Pondicherry was governed, long after the Emperor who never came there was gone.`,
+  },
+  {
+    id: "charles-de-gaulle",
+    metaTitle: "Charles de Gaulle and the End of French India",
+    metaDescription: "De Gaulle did not build French India. His government signed the law that legally ended it, six years after the city had already changed hands.",
+    name: "Charles de Gaulle",
+    dates: "1890–1970",
+    role: "President of France; ratified French India's transfer to India in 1962",
+    teaser: "He did not build French India, and barely engaged with it personally. But it was his government that finally signed the law ending three centuries of French rule, eight years after Pondicherry had already changed hands.",
+    body: `**THE SIGNATURE THAT ENDED IT**
+
+Charles de Gaulle's role in the story of French India is administrative rather than personal, and he would probably have agreed with that description himself. By the time he returned to power in 1958 to found the Fifth Republic, [French administration in Pondicherry had already ended](/history/the-handover-1954): the de facto transfer to India had taken effect in 1954, under the Fourth Republic, four years before de Gaulle became President. What remained was a legal formality with an unusually long half-life.
+
+The Treaty of Cession had been signed back in 1956, under Guy Mollet's government, but required parliamentary ratification to take legal effect, and French parliamentary attention for the rest of that decade was consumed almost entirely by the war in Algeria. The treaty sat waiting for six years. De Gaulle's government finally resolved the Algerian question with the Évian Accords in March 1962, and with that crisis cleared, the ratification law for French India, Loi n° 62-862 du 28 juillet 1962, passed that July. The de jure transfer took legal effect on 16 August 1962, the last formal act in a French presence that had begun with [François Martin](/history/lives-and-legacies/francois-martin) in 1674.
+
+Unlike Algeria, French India's transfer generated almost no domestic controversy. The administrative handover was already eight years old, the population of the former settlements was broadly settled on the outcome, and there was no constituency in France with a reason to fight it. It passed through the National Assembly as one small item within a much larger wave of decolonisation, alongside the independence of France's African territories and the resolution in Algeria, all within the same few years of de Gaulle's presidency.
+
+The more lasting legacy of his government for Pondicherry was cultural rather than legal. His Minister of Culture, André Malraux, met Jawaharlal Nehru in November 1958, and their conversation on the place of French culture in independent India shaped the framework under which institutions like the Institut Français de Pondichéry and the city's French lycée were allowed to continue operating after 1962, preserving Pondicherry's status as, in Nehru's own phrase, a window on French culture. De Gaulle did not make French India. He signed the paperwork that closed the file on a story whose decisive scenes had already been played out, under Louis XV and Dupleix two centuries earlier, and under Nehru and [Edouard Goubert](/history/lives-and-legacies/edouard-goubert) just a few years before his own signature made it final.`,
+  },
+  {
+    id: "kewal-singh",
+    metaTitle: "Kewal Singh, the Diplomat Who Executed Pondicherry's Transfer",
+    metaDescription: "India's Consul-General in French India became its first Chief Commissioner on the same day, in 1954, and went on to become Foreign Secretary of India.",
+    name: "Kewal Singh",
+    dates: "1915–1991",
+    role: "Consul-General of India, then first Chief Commissioner of Pondicherry",
+    teaser: "He was India's Consul-General in French Pondicherry, and on the day of the 1954 referendum became its first Chief Commissioner too, holding both roles at once during the handover before going on to become Foreign Secretary of India.",
+    body: `**THE OPERATIONAL HAND BEHIND THE HANDOVER**
+
+Kewal Singh Choudhary was born into a Sikh family in West Punjab in 1915, educated at Forman Christian College and the Law College in Lahore, then at Balliol College, Oxford, and joined the Indian Civil Service in 1939, serving in Punjab administrative posts through the final years of the Raj. After Independence he transferred to the newly created Indian Foreign Service, with postings in Turkey and Berlin before his assignment, in October 1953, to French India, succeeding R. K. Tandon as Consul-General at the Indian consulate on rue des Capucins, the street known today as [rue Romain Rolland](/discover/white-town/rue-romain-rolland).
+
+He arrived at the most tense possible moment. The campaign to merge the French settlements with India had been building since 1947, Nehru's government was applying sustained diplomatic pressure, and the French administration under Governor-General Georges Escargueil was operating under an Indian economic blockade. On 21 October 1954, the Kizhoor referendum put the merger agreement negotiated between Paris and New Delhi to the elected representatives of the French settlements, who voted 170 to 8 in favour. On that same day, the Government of India appointed Kewal Singh the first Chief Commissioner of the French Establishments in India, effective from 1 November. For a short window he held both posts at once, Consul-General and Chief Commissioner, embodying in a single person the entire handover from French to Indian administration. He went on to oversee the territory's first two years under Indian rule, replacing three centuries of French legal, judicial, and fiscal machinery with Indian systems, a task considerably more complicated than the political agreement that authorised it. He received the Padma Shri in 1955 for the work.
+
+What followed was one of the more improbable careers in Indian diplomacy, built almost entirely on being sent wherever a relationship had just broken down. He was Ambassador to Portugal in 1962, immediately after India's annexation of Goa had severed relations between New Delhi and Lisbon. He was High Commissioner to Pakistan in 1965 and 1966, exactly when the Indo-Pakistani War broke diplomatic ties for the second time in his career. Postings to the Soviet Union, Mongolia, and Germany followed, and in December 1972 he was appointed Foreign Secretary of India, the most senior civil service position in Indian diplomacy, serving through the absorption of Sikkim in 1975 and a maritime boundary agreement with Sri Lanka before finishing his career as Ambassador to the United States.
+
+After retirement he taught at UCLA and held the title of Distinguished World Statesman in Residence at the University of Kentucky until his death in 1991. His memoir, *Partition and Aftermath*, published the year he died, covers a career that took him from a Sikh Civil Service posting in colonial Punjab to the exact administrative center of one of the last acts of French colonialism in Asia, and from there to nearly every major rupture in Indian foreign relations for the following two decades.`,
   },
 ];

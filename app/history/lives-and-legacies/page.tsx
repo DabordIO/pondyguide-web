@@ -26,7 +26,7 @@ export default function LivesAndLegaciesPage() {
         {figures.map(f => (
           <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
             <div style={{ position: "relative", width: "100%", height: 220, background: "#f0ece6" }}>
-              <Image src={`/figures/${f.photo}`} alt={f.name} fill style={{ objectFit: "cover", objectPosition: "center top" }} />
+              {f.photo && <Image src={`/figures/${f.photo}`} alt={f.name} fill style={{ objectFit: "cover", objectPosition: "center top" }} />}
             </div>
             <div style={{ padding: "14px 16px 16px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
