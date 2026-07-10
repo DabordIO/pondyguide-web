@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "next": "16.2.10",
     "react": "19.2.7",
     "react-dom": "19.2.7"
@@ -16,8 +17,18 @@
     "postcss": "^8.5.10"
   },
   "browserslist": {
-    "production": ["chrome >= 92", "firefox >= 90", "safari >= 15", "edge >= 92", "not dead"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "production": [
+      "chrome >= 92",
+      "firefox >= 90",
+      "safari >= 15",
+      "edge >= 92",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
