@@ -49,6 +49,7 @@ export default async function InstitutionPage({ params }: { params: Promise<{ sl
           description: item.teaser,
           image: item.photo ? `https://www.pondyguide.com/${item.photoFolder ?? "history"}/${item.photo}` : undefined,
           url: `https://www.pondyguide.com/history/institutions/${item.id}`,
+          author: { "@type": "Organization", name: "Pondy Guide" },
           publisher: { "@type": "Organization", name: "Pondy Guide" },
         }}
       />

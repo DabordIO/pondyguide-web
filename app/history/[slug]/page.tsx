@@ -43,6 +43,7 @@ export default async function HistoryArticlePage({ params }: { params: Promise<{
           description: article.teaser,
           image: article.photo ? `https://www.pondyguide.com/${article.photoFolder ?? "history"}/${article.photo}` : undefined,
           url: `https://www.pondyguide.com/history/${article.id}`,
+          author: { "@type": "Organization", name: "Pondy Guide" },
           publisher: { "@type": "Organization", name: "Pondy Guide" },
         }}
       />
