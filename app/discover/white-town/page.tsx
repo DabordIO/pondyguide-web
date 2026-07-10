@@ -6,7 +6,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "White Town Streets — Pondicherry",
-  description: "The French Quarter street grid — 43 streets named after governors, admirals, and the men who built and fought over French India.",
+  description: "The French Quarter street grid: 43 streets named after governors, admirals, and the men who built and fought over French India.",
 };
 
 const NS = streets.filter(s => s.axis === "N-S");
@@ -22,7 +22,7 @@ export default function WhiteTownPage() {
         The Streets of the French Quarter
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
-        The French Quarter street grid was designed in the 1690s and has barely changed since. Every street carries a name from French India's history — governors, admirals, soldiers, scholars. Most of the names survived decolonisation in 1962.
+        The French Quarter street grid was designed in the 1690s and has barely changed since. Every street carries a name from French India's history: governors, admirals, soldiers, scholars. Most of the names survived decolonisation in 1962.
       </p>
 
       <StreetSection title="North–South Streets" subtitle="Running parallel to the coastline" items={NS} />

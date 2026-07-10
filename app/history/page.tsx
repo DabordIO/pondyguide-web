@@ -8,7 +8,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "History of Pondicherry",
-  description: "The full story of Pondicherry — from ancient Roman trading post to French colonial capital, the wars that shaped it, and the people who built it.",
+  description: "The full story of Pondicherry, from ancient Roman trading post to French colonial capital, the wars that shaped it, and the people who built it.",
 };
 
 export default function HistoryPage() {

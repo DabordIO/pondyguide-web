@@ -7,7 +7,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Restaurants in Pondicherry",
-  description: "Where to eat in Pondicherry — from colonial garden cafés to seafood tables and South Indian classics. Honest recommendations with no fluff.",
+  description: "Where to eat in Pondicherry: colonial garden cafés, seafood tables, and South Indian classics. Honest recommendations with no fluff.",
 };
 
 const PRICE = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };
@@ -50,7 +50,7 @@ export default function RestaurantsPage() {
         Restaurants in Pondicherry
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
-        Pondicherry punches above its weight for food. French-influenced cafés, fresh seafood, Tamil homecooked thalis — and enough coffee to keep you going through the afternoon heat.
+        Pondicherry punches above its weight for food. French-influenced cafés, fresh seafood, Tamil homecooked thalis, and enough coffee to keep you going through the afternoon heat.
       </p>
 
       {restaurantGuides.map(guide => {

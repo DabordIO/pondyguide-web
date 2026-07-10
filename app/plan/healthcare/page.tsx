@@ -33,7 +33,7 @@ export default function HealthcarePage() {
         Emergency in Pondicherry
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
-        Pondicherry is better served medically than most Indian towns its size. JIPMER — Jawaharlal Institute of Postgraduate Medical Education and Research — is one of the top public hospitals in the country and provides free emergency care around the clock.
+        Pondicherry is better served medically than most Indian towns its size. JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) is one of the top public hospitals in the country and provides free emergency care around the clock.
       </p>
 
       {byCategory.map(({ cat, items }) => (

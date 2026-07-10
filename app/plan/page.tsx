@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Plan Your Trip to Pondicherry",
-  description: "Everything you need before you go — how to get here, getting around town, healthcare, and practical advice from people who know Pondicherry well.",
+  description: "Everything you need before you go: how to get here, getting around town, healthcare, and practical advice from people who know Pondicherry well.",
 };
 
 const sections = [
   {
     href: "/plan/getting-here",
     title: "Getting Here",
-    description: "From Chennai by bus or train, from Bangalore overnight, from Madurai by road. No meaningful direct flights — but the journey is manageable.",
+    description: "From Chennai by bus or train, from Bangalore overnight, from Madurai by road. No meaningful direct flights, but the journey is manageable.",
     photo: "/transport/puducherry-railway-station.jpg",
   },
   {

@@ -6,7 +6,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "French Institutions in Pondicherry",
-  description: "The schools, consulate, research centres, and cultural organisations that France left behind in Pondicherry — many of which are still operating today.",
+  description: "The schools, consulate, research centres, and cultural organisations that France left behind in Pondicherry, many of which are still operating today.",
 };
 
 export default function InstitutionsPage() {
@@ -19,7 +19,7 @@ export default function InstitutionsPage() {
         French Institutions
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
-        The schools, consulate, research centres, and cultural organisations that France left behind in Pondicherry — many of which are still operating today.
+        The schools, consulate, research centres, and cultural organisations that France left behind in Pondicherry, many of which are still operating today.
       </p>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>

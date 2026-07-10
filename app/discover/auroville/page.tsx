@@ -6,7 +6,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Auroville — Pondicherry",
-  description: "An experiment in human unity founded in 1968. 3,400 residents from 60 countries, 10 km north of Pondicherry. Not easy to explain — but worth understanding before you go.",
+  description: "An experiment in human unity founded in 1968. 3,400 residents from 60 countries, 10 km north of Pondicherry. Not easy to explain, but worth understanding before you go.",
 };
 
 export default function AurovillePage() {

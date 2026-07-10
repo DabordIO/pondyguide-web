@@ -6,7 +6,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Things to Do in Pondicherry",
-  description: "Walks, day trips, workshops, and experiences in and around Pondicherry — from the Roman ruins at Arikamedu to the mangrove forests at Pichavaram.",
+  description: "Walks, day trips, workshops, and experiences in and around Pondicherry, from the Roman ruins at Arikamedu to the mangrove forests at Pichavaram.",
 };
 
 const CATEGORY_LABELS: Record<string, string> = {

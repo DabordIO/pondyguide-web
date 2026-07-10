@@ -6,7 +6,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Lives & Legacies — Pondicherry",
-  description: "The governors, commanders, diplomats, and diarists who shaped Pondicherry's history — and left their names on its streets.",
+  description: "The governors, commanders, diplomats, and diarists who shaped Pondicherry's history, and left their names on its streets.",
 };
 
 export default function LivesAndLegaciesPage() {
@@ -19,7 +19,7 @@ export default function LivesAndLegaciesPage() {
         Lives & Legacies
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
-        The governors, commanders, diplomats, and diarists who shaped Pondicherry's history — and left their names on its streets.
+        The governors, commanders, diplomats, and diarists who shaped Pondicherry's history, and left their names on its streets.
       </p>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>

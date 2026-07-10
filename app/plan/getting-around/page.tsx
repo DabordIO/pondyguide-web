@@ -22,7 +22,7 @@ export default function GettingAroundPage() {
         Moving Around Town
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 40, paddingBottom: 40, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
-        The French Quarter is compact — most of it fits within a 20-minute walk. For Auroville, the beaches south of town, or any day trip, you need a vehicle. Here is what works.
+        The French Quarter is compact: most of it fits within a 20-minute walk. For Auroville, the beaches south of town, or any day trip, you need a vehicle. Here is what works.
       </p>
 
       {articles.map((a, i) => (

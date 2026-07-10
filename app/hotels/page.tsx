@@ -5,7 +5,7 @@ import { hotels, COLLECTION_LABELS, COLLECTION_ORDER, getHotelsByCollection } fr
 
 export const metadata: Metadata = {
   title: "Hotels in Pondicherry",
-  description: "Where to stay in Pondicherry — heritage mansions, boutique guesthouses, family-friendly hotels, and coastal escapes. Honest recommendations.",
+  description: "Where to stay in Pondicherry: heritage mansions, boutique guesthouses, family-friendly hotels, and coastal escapes. Honest recommendations.",
 };
 
 export default function HotelsPage() {

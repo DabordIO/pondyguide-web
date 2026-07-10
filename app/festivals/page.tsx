@@ -6,7 +6,7 @@ import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
   title: "Festivals in Pondicherry",
-  description: "A month-by-month guide to Pondicherry's festivals — Tamil, French, Hindu, Christian, and the extraordinary celebrations entirely unique to this town.",
+  description: "A month-by-month guide to Pondicherry's festivals: Tamil, French, Hindu, Christian, and the extraordinary celebrations entirely unique to this town.",
 };
 
 const MONTH_LABELS: Record<string, string> = {
@@ -41,7 +41,7 @@ export default function FestivalsPage() {
         Festivals in Pondicherry
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 600, lineHeight: 1.8, marginBottom: 48 }}>
-        Pondicherry celebrates constantly — Tamil temple festivals, French commemorations, Auroville gatherings, and events that exist nowhere else on earth.
+        Pondicherry celebrates constantly: Tamil temple festivals, French commemorations, Auroville gatherings, and events that exist nowhere else on earth.
       </p>
 
       {/* Coming up */}
