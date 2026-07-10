@@ -3,8 +3,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plan Your Trip to Pondicherry",
-  description: "Everything you need before you go: how to get here, getting around town, healthcare, and practical advice from people who know Pondicherry well.",
+  title: "Plan Your Trip: Transport and Advice for Pondicherry",
+  description: "Practical information on getting here, moving around town, healthcare and the details visitors need before arriving.",
 };
 
 const sections = [

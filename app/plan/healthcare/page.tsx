@@ -6,8 +6,8 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 
 export const metadata: Metadata = {
-  title: "Healthcare in Pondicherry",
-  description: "JIPMER is one of India's premier medical institutes. Private clinics are plentiful. What to know before you need it.",
+  title: "Healthcare in Pondicherry, Hospitals and Clinics",
+  description: "From JIPMER to private clinics, understand Pondicherry's healthcare options before you need medical help.",
 };
 
 const CATEGORY_LABELS: Record<string, string> = {

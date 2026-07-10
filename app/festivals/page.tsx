@@ -5,8 +5,8 @@ import { festivals } from "@/data/festivals";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "Festivals in Pondicherry",
-  description: "A month-by-month guide to Pondicherry's festivals: Tamil, French, Hindu, Christian, and the extraordinary celebrations entirely unique to this town.",
+  title: "Festivals in Pondicherry, Month by Month Guide",
+  description: "A calendar of Pondicherry's festivals, from Hindu and Christian celebrations to French traditions unique to the town.",
 };
 
 const MONTH_LABELS: Record<string, string> = {

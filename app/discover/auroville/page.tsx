@@ -5,8 +5,8 @@ import { aurovilleArticles } from "@/data/auroville";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "Auroville — Pondicherry",
-  description: "An experiment in human unity founded in 1968. 3,400 residents from 60 countries, 10 km north of Pondicherry. Not easy to explain, but worth understanding before you go.",
+  title: "Auroville: History, Ideas and Places to Visit",
+  description: "Founded in 1968, Auroville is home to 3,400 residents from 60 countries. Understand the township before you visit.",
 };
 
 export default function AurovillePage() {

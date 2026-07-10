@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { hotels, COLLECTION_LABELS, COLLECTION_ORDER, getHotelsByCollection } from "@/data/hotels";
 
 export const metadata: Metadata = {
-  title: "Hotels in Pondicherry",
-  description: "Where to stay in Pondicherry: heritage mansions, boutique guesthouses, family-friendly hotels, and coastal escapes. Honest recommendations.",
+  title: "Hotels in Pondicherry, Where to Stay and Why",
+  description: "Compare heritage mansions, boutique guesthouses, family hotels and coastal retreats with independent recommendations.",
 };
 
 export default function HotelsPage() {

@@ -6,8 +6,8 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 
 export const metadata: Metadata = {
-  title: "Getting to Pondicherry",
-  description: "From Chennai by bus or train, from Bangalore overnight, from Madurai by road. How to reach Pondicherry without a direct flight.",
+  title: "Getting to Pondicherry from Chennai and Beyond",
+  description: "Compare routes from Chennai and Bangalore by bus, train and the scenic East Coast Road, without a direct flight.",
 };
 
 const articles = transportArticles.filter(a => a.category === "arriving");

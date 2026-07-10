@@ -5,8 +5,8 @@ import { sites, CATEGORY_LABELS, CATEGORY_COLORS } from "@/data/sites";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "Sites & Landmarks — Pondicherry",
-  description: "Heritage buildings, temples, churches, museums, and the ancient ruins that predate the French by two thousand years.",
+  title: "Pondicherry Landmarks, Temples and Historic Sites",
+  description: "Browse churches, temples, museums, colonial buildings and ancient ruins that reveal two thousand years of local history.",
 };
 
 const CATEGORY_ORDER = ["experience", "admire"] as const;

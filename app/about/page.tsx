@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import AppBanner from "@/components/AppBanner";
 
 export const metadata: Metadata = {
-  title: "About Pondy Guide",
-  description: "Two friends with family roots in Pondicherry built this guide to give visitors more than the surface.",
+  title: "About Pondy Guide and the People Behind It",
+  description: "Learn how two friends with family roots in Pondicherry built an independent guide focused on history and place.",
 };
 
 export default function AboutPage() {

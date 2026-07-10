@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Pondy Guide",
-  description: "Get in touch with the Pondy Guide team.",
+  title: "Contact Pondy Guide and Send Us a Message",
+  description: "Contact the Pondy Guide team with questions, suggestions or corrections about the site and its research.",
 };
 
 export default function ContactPage() {

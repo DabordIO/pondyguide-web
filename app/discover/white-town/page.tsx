@@ -5,8 +5,8 @@ import { streets } from "@/data/streets";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "White Town Streets — Pondicherry",
-  description: "The French Quarter street grid: 43 streets named after governors, admirals, and the men who built and fought over French India.",
+  title: "White Town Streets: Pondicherry's French Quarter",
+  description: "Navigate the French Quarter's 40 streets and learn about the governors, admirals and soldiers behind their names.",
 };
 
 const NS = streets.filter(s => s.axis === "N-S");

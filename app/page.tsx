@@ -9,8 +9,8 @@ import { restaurants } from "@/data/restaurants";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "Pondy Guide — Pondicherry Travel & Heritage Guide",
-  description: "The definitive English-language guide to Pondicherry. History, heritage streets, restaurants, hotels, festivals, and practical travel information.",
+  title: "Pondy Guide: Travel, History and Heritage in Pondicherry",
+  description: "An independent guide to Pondicherry, covering history, heritage streets, restaurants, hotels, festivals and practical travel advice.",
 };
 
 const PRICE_LABELS: Record<string, string> = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };
@@ -191,7 +191,7 @@ export default function HomePage() {
         <SectionIntro>Four ways into Pondicherry: its streets, its monuments, its Tamil Quarter temples, and day trips that take you further.</SectionIntro>
         <ThreeGrid>
           {[
-            { href: "/discover/white-town", photo: "/streets/rue-françois-martin.jpg", label: "White Town", title: "The French Quarter Streets", description: "43 streets named after governors and admirals. Each one has a story." },
+            { href: "/discover/white-town", photo: "/streets/rue-françois-martin.jpg", label: "White Town", title: "The French Quarter Streets", description: "40 streets named after governors and admirals. Each one has a story." },
             { href: "/discover/landmarks", photo: "/sites/customs-building.jpg", label: "Landmarks", title: "Sites & Heritage Buildings", description: "From the seafront promenade to Arikamedu's Roman-era ruins." },
             { href: "/discover/explore/theme-temples", photo: "/explore/temples-tamil-quarter.png", label: "Discover", title: "Temples of the Tamil Quarter", description: "The city's older history, just across the canal. Temples, markets, and streets that long predate the French." },
           ].map(s => (

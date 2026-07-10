@@ -6,8 +6,8 @@ import { restaurantGuides } from "@/data/restaurantGuides";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "Restaurants in Pondicherry",
-  description: "Where to eat in Pondicherry: colonial garden cafés, seafood tables, and South Indian classics. Honest recommendations with no fluff.",
+  title: "Restaurants in Pondicherry, Honest Local Picks",
+  description: "Browse Pondicherry restaurants, from colonial garden cafés and seafood spots to South Indian staples, with honest recommendations.",
 };
 
 const PRICE = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };

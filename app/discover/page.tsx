@@ -3,15 +3,15 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Discover Pondicherry",
-  description: "Explore Pondicherry beyond the surface: the French Quarter streets, heritage landmarks, Auroville, and the best things to do in town.",
+  title: "Discover Pondicherry: Streets, Landmarks and Beyond",
+  description: "Browse White Town streets, heritage landmarks, Auroville and day trips, with guides to the places that shape Pondicherry.",
 };
 
 const sections = [
   {
     href: "/discover/white-town",
     title: "White Town Streets",
-    description: "The French Quarter grid: 43 streets named after governors, admirals, and soldiers. Each one has a story.",
+    description: "The French Quarter grid: 40 streets named after governors, admirals, and soldiers. Each one has a story.",
     photo: "/streets/rue-françois-martin.jpg",
   },
   {

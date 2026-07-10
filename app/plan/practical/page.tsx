@@ -5,8 +5,8 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 
 export const metadata: Metadata = {
-  title: "Practical Guide to Pondicherry",
-  description: "Currency, SIM cards, dress code, water, tipping, and the things visitors consistently get wrong in Pondicherry.",
+  title: "Practical Guide to Pondicherry for First-Time Visitors",
+  description: "Advice on currency, SIM cards, clothing, water, tipping and the common mistakes visitors make in Pondicherry.",
 };
 
 const SECTION_LABELS: Record<string, string> = {

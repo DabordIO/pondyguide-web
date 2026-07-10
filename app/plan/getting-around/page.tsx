@@ -6,8 +6,8 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 
 export const metadata: Metadata = {
-  title: "Getting Around Pondicherry",
-  description: "Auto-rickshaws, bicycles, scooters, and the rare taxi. The White Town is walkable in 20 minutes. Beyond it, you need wheels.",
+  title: "Getting Around Pondicherry by Auto, Bike and Bus",
+  description: "Learn how to navigate Pondicherry by auto-rickshaw, bicycle, scooter or taxi, and when walking is enough.",
 };
 
 const articles = transportArticles.filter(a => a.category === "local");

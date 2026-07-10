@@ -7,8 +7,8 @@ import { figures } from "@/data/figures";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "History of Pondicherry",
-  description: "The full story of Pondicherry, from ancient Roman trading post to French colonial capital, the wars that shaped it, and the people who built it.",
+  title: "History of Pondicherry, From Rome to French India",
+  description: "Follow Pondicherry's story from ancient trade and French rule to the wars, institutions and people who shaped the city.",
 };
 
 export default function HistoryPage() {

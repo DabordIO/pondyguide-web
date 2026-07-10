@@ -5,8 +5,8 @@ import { institutionArticles } from "@/data/institutions";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
-  title: "French Institutions in Pondicherry",
-  description: "The schools, consulate, research centres, and cultural organisations that France left behind in Pondicherry, many of which are still operating today.",
+  title: "French Institutions Still Operating in Pondicherry",
+  description: "Schools, research centres, the consulate and cultural organisations show how France's presence endures in Pondicherry.",
 };
 
 export default function InstitutionsPage() {
