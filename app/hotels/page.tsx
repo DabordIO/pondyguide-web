@@ -2,11 +2,22 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { hotels, COLLECTION_LABELS, COLLECTION_ORDER, getHotelsByCollection } from "@/data/hotels";
+import { hotelGuides } from "@/data/hotelGuides";
 
 export const metadata: Metadata = {
   title: "Hotels in Pondicherry, Where to Stay and Why",
   description: "Compare heritage mansions, boutique guesthouses, family hotels and coastal retreats with independent recommendations.",
 };
+
+function GuideCard({ title, slug }: { title: string; slug: string }) {
+  return (
+    <Link href={`/hotels/guides/${slug}`} style={{ textDecoration: "none", background: "#1c1917", border: "1px solid #1c1917", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "center", padding: "24px 20px", minHeight: 180 }}>
+      <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 10 }}>Our Guide</p>
+      <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#fff", fontSize: 18, lineHeight: 1.35, marginBottom: 12 }}>{title}</p>
+      <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600 }}>Read the full guide →</p>
+    </Link>
+  );
+}
 
 export default function HotelsPage() {
   return (
@@ -22,6 +33,7 @@ export default function HotelsPage() {
       {COLLECTION_ORDER.map(collection => {
         const group = getHotelsByCollection(collection);
         if (!group.length) return null;
+        const guide = hotelGuides.find(g => g.id === collection);
         return (
           <div key={collection} style={{ marginBottom: 48 }}>
             <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 20, paddingBottom: 12, borderBottom: "1px solid #e8ddd4" }}>
@@ -42,6 +54,7 @@ export default function HotelsPage() {
                   </div>
                 </Link>
               ))}
+              {guide?.intro && <GuideCard title={guide.title} slug={guide.slug} />}
             </div>
           </div>
         );
