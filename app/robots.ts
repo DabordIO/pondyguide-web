@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://pondyguide.com/sitemap.xml",
+    sitemap: "https://www.pondyguide.com/sitemap.xml",
   };
 }
