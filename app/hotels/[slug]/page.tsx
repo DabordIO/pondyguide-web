@@ -4,6 +4,7 @@ import Image from "next/image";
 import { hotels, COLLECTION_LABELS, getHotelsByCollection, COLLECTION_ORDER } from "@/data/hotels";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
+import ArticleBody from "@/components/ArticleBody";
 import Link from "next/link";
 
 const orderedHotels = COLLECTION_ORDER.flatMap(c => getHotelsByCollection(c));
@@ -87,9 +88,9 @@ export default async function HotelPage({ params }: { params: Promise<{ slug: st
         {h.tagline}
       </p>
 
-      <Section title="The Vibe">{h.vibe.split("\n\n").map((p, i) => <p key={i} style={{ fontSize: "1.0625rem", lineHeight: 1.85, color: "#292524", marginBottom: "1.25rem" }}>{p}</p>)}</Section>
-      <Section title="Why You'll Love It">{h.whyLoveIt.split("\n\n").map((p, i) => <p key={i} style={{ fontSize: "1.0625rem", lineHeight: 1.85, color: "#292524", marginBottom: "1.25rem" }}>{p}</p>)}</Section>
-      <Section title="Explore Nearby">{h.exploreNearby.split("\n\n").map((p, i) => <p key={i} style={{ fontSize: "1.0625rem", lineHeight: 1.85, color: "#292524", marginBottom: "1.25rem" }}>{p}</p>)}</Section>
+      <Section title="The Vibe"><ArticleBody text={h.vibe} /></Section>
+      <Section title="Why You'll Love It"><ArticleBody text={h.whyLoveIt} /></Section>
+      <Section title="Explore Nearby"><ArticleBody text={h.exploreNearby} /></Section>
 
       <div style={{ background: "#f8f8f6", border: "1px solid #e8ddd4", borderRadius: 12, padding: "20px 24px", margin: "32px 0" }}>
         <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Best For</p>

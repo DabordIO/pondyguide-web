@@ -4,6 +4,7 @@ import Image from "next/image";
 import { restaurants } from "@/data/restaurants";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
+import ArticleBody from "@/components/ArticleBody";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -87,9 +88,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
         {r.summary}
       </p>
 
-      {r.description.split("\n\n").map((para, i) => (
-        <p key={i} style={{ fontSize: "1.0625rem", lineHeight: 1.85, color: "#292524", marginBottom: "1.25rem" }}>{para}</p>
-      ))}
+      <ArticleBody text={r.description} />
 
       {r.mustOrder && r.mustOrder.length > 0 && (
         <div style={{ background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 12, padding: "20px 24px", margin: "32px 0" }}>
