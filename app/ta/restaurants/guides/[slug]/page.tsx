@@ -9,55 +9,62 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
 
-const READY_GUIDES = restaurantGuides.filter(g => g.intro && g.blurbs);
+function findGuide(slug: string) {
+  const en = restaurantGuides.find(g => g.slug === slug);
+  const ta = en ? restaurantGuidesTa.find(g => g.id === en.id) : undefined;
+  if (!en || !ta) return null;
+  return { en, ta };
+}
 
 export async function generateStaticParams() {
-  return READY_GUIDES.map(g => ({ slug: g.slug }));
+  return restaurantGuidesTa
+    .map(ta => restaurantGuides.find(g => g.id === ta.id))
+    .filter((g): g is NonNullable<typeof g> => Boolean(g))
+    .map(g => ({ slug: g.slug }));
 }
 
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const guide = READY_GUIDES.find(g => g.slug === slug);
+  const guide = findGuide(slug);
   if (!guide) return {};
   return {
-    title: guide.metaTitle ?? guide.title,
-    description: guide.metaDescription,
+    title: guide.ta.metaTitle ?? guide.ta.title,
+    description: guide.ta.metaDescription,
   };
 }
 
 const PRICE = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };
 
-export default async function RestaurantGuidePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function RestaurantGuidePageTa({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const guide = READY_GUIDES.find(g => g.slug === slug);
+  const guide = findGuide(slug);
   if (!guide) notFound();
+  const { en, ta } = guide;
 
-  const entries = guide.restaurantIds
+  const entries = en.restaurantIds
     .map(id => restaurants.find(r => r.id === id))
     .filter((r): r is NonNullable<typeof r> => Boolean(r));
 
-  const hasTa = restaurantGuidesTa.some(g => g.id === guide.id);
-
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      {hasTa && <LanguageToggle enHref={`/restaurants/guides/${guide.slug}`} taHref={`/ta/restaurants/guides/${guide.slug}`} current="en" />}
-      <Link href="/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
+      <LanguageToggle enHref={`/restaurants/guides/${en.slug}`} taHref={`/ta/restaurants/guides/${en.slug}`} current="ta" />
+      <Link href="/ta/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← உணவகங்கள்</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>
-        {guide.title}
+        {ta.title}
       </h1>
 
-      {guide.intro && <ArticleBody text={guide.intro} />}
+      {ta.intro && <ArticleBody text={ta.intro} />}
 
-      {guide.quickPicks && guide.quickPicks.length > 0 && (
+      {ta.quickPicks && ta.quickPicks.length > 0 && (
         <div style={{ margin: "32px 0", background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 12, padding: "20px 24px", overflowX: "auto" }}>
-          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 14 }}>How to choose</p>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 14 }}>எப்படித் தேர்வு செய்வது</p>
           <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
             <tbody>
-              {guide.quickPicks.map((item, i) => (
-                <tr key={i} style={{ borderBottom: i < guide.quickPicks!.length - 1 ? "1px solid #fed7aa" : "none" }}>
+              {ta.quickPicks.map((item, i) => (
+                <tr key={i} style={{ borderBottom: i < ta.quickPicks!.length - 1 ? "1px solid #fed7aa" : "none" }}>
                   <td style={{ padding: "8px 12px 8px 0", color: "#292524" }}>{item.situation}</td>
                   <td style={{ padding: "8px 0", fontWeight: 700, color: "#1c1917" }}>{item.recommendation}</td>
                 </tr>
@@ -67,31 +74,31 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
         </div>
       )}
 
-      {guide.whyHeading && guide.whyBody && (
+      {ta.whyHeading && ta.whyBody && (
         <>
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", margin: "40px 0 16px" }}>
-            {guide.whyHeading}
+            {ta.whyHeading}
           </h2>
-          <ArticleBody text={guide.whyBody} />
+          <ArticleBody text={ta.whyBody} />
         </>
       )}
 
-      {guide.bestFor && (
+      {ta.bestFor && (
         <div style={{ margin: "40px 0", overflowX: "auto" }}>
-          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>At a glance</h2>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>ஒரே பார்வையில்</h2>
           <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
             <thead>
               <tr style={{ borderBottom: "2px solid #e8ddd4" }}>
-                <th style={{ textAlign: "left", padding: "10px 12px", color: "#1c1917" }}>Restaurant</th>
-                <th style={{ textAlign: "left", padding: "10px 12px", color: "#1c1917" }}>Best for</th>
-                <th style={{ textAlign: "left", padding: "10px 12px", color: "#1c1917" }}>Price</th>
+                <th style={{ textAlign: "left", padding: "10px 12px", color: "#1c1917" }}>உணவகம்</th>
+                <th style={{ textAlign: "left", padding: "10px 12px", color: "#1c1917" }}>சிறந்தது</th>
+                <th style={{ textAlign: "left", padding: "10px 12px", color: "#1c1917" }}>விலை</th>
               </tr>
             </thead>
             <tbody>
               {entries.map(r => (
                 <tr key={r.id} style={{ borderBottom: "1px solid #e8ddd4" }}>
                   <td style={{ padding: "10px 12px", fontWeight: 600, color: "#1c1917" }}>{r.name}</td>
-                  <td style={{ padding: "10px 12px", color: "#6b6560" }}>{guide.bestFor?.[r.id]}</td>
+                  <td style={{ padding: "10px 12px", color: "#6b6560" }}>{ta.bestFor?.[r.name]}</td>
                   <td style={{ padding: "10px 12px", color: "#6b6560" }}>{PRICE[r.priceRange]}</td>
                 </tr>
               ))}
@@ -110,22 +117,22 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.3rem", fontWeight: 700, color: "#1c1917", marginBottom: 12 }}>
             {r.name}
           </h2>
-          {guide.blurbs?.[r.id] && <ArticleBody text={guide.blurbs[r.id]} />}
-          {guide.bestFor?.[r.id] && (
-            <p style={{ fontSize: 14, color: "#292524", marginTop: 12 }}><strong>Best for:</strong> {guide.bestFor[r.id]}</p>
+          {ta.blurbs?.[r.name] && <ArticleBody text={ta.blurbs[r.name]} />}
+          {ta.bestFor?.[r.name] && (
+            <p style={{ fontSize: 14, color: "#292524", marginTop: 12 }}><strong>சிறந்தது:</strong> {ta.bestFor[r.name]}</p>
           )}
           <Link href={`/restaurants/${r.id}`} style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, textDecoration: "none", display: "inline-block", marginTop: 8 }}>
-            Read our complete guide to {r.name} →
+            {r.name} பற்றிய முழு வழிகாட்டியைப் படிக்க →
           </Link>
         </div>
       ))}
 
-      {guide.faq && guide.faq.length > 0 && (
+      {ta.faq && ta.faq.length > 0 && (
         <div style={{ margin: "48px 0" }}>
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 20 }}>
-            Frequently Asked Questions
+            அடிக்கடி கேட்கப்படும் கேள்விகள்
           </h2>
-          {guide.faq.map((item, i) => (
+          {ta.faq.map((item, i) => (
             <div key={i} style={{ marginBottom: 20 }}>
               <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
               <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }}>{item.answer}</p>

@@ -2,9 +2,11 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { figures } from "@/data/figures";
+import { figuresTa } from "@/data/ta/figures";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -39,8 +41,11 @@ export default async function FigurePage({ params }: { params: Promise<{ slug: s
   const prev = idx > 0 ? figures[idx - 1] : null;
   const next = idx < figures.length - 1 ? figures[idx + 1] : null;
 
+  const hasTa = figuresTa.some(f => f.id === slug);
+
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {hasTa && <LanguageToggle enHref={`/history/lives-and-legacies/${slug}`} taHref={`/ta/history/lives-and-legacies/${slug}`} current="en" />}
       <JsonLd
         data={{
           "@context": "https://schema.org",
