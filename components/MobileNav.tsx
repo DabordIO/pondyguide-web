@@ -5,17 +5,27 @@ import { usePathname } from "next/navigation";
 
 const nav = [
   { label: "History", href: "/history" },
+  { label: "Legacies", href: "/history/lives-and-legacies" },
   { label: "Discover", href: "/discover" },
-  { label: "Auroville", href: "/discover/auroville" },
-  { label: "Restaurants", href: "/restaurants" },
   { label: "Hotels", href: "/hotels" },
+  { label: "Restaurants", href: "/restaurants" },
+  { label: "Auroville", href: "/discover/auroville" },
   { label: "Festivals", href: "/festivals" },
   { label: "Plan", href: "/plan" },
 ];
 
+function bestMatch(pathname: string) {
+  return nav.reduce<string | null>((best, item) => {
+    const matches = pathname === item.href || pathname.startsWith(item.href + "/");
+    if (!matches) return best;
+    return !best || item.href.length > best.length ? item.href : best;
+  }, null);
+}
+
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const activeHref = bestMatch(pathname);
 
   return (
     <div className="mobile-nav-toggle">
@@ -32,7 +42,7 @@ export default function MobileNav() {
       {open && (
         <div style={{ position: "absolute", top: 68, left: 0, right: 0, background: "#fff", borderBottom: "1px solid #e8ddd4", zIndex: 100, padding: "8px 0" }}>
           {nav.map(item => {
-            const active = pathname === item.href || pathname.startsWith(item.href + "/");
+            const active = item.href === activeHref;
             return (
               <Link
                 key={item.href}

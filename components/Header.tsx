@@ -7,16 +7,26 @@ import MobileNav from "./MobileNav";
 
 const nav = [
   { label: "History", href: "/history" },
+  { label: "Legacies", href: "/history/lives-and-legacies" },
   { label: "Discover", href: "/discover" },
-  { label: "Auroville", href: "/discover/auroville" },
-  { label: "Restaurants", href: "/restaurants" },
   { label: "Hotels", href: "/hotels" },
+  { label: "Restaurants", href: "/restaurants" },
+  { label: "Auroville", href: "/discover/auroville" },
   { label: "Festivals", href: "/festivals" },
   { label: "Plan", href: "/plan" },
 ];
 
+function bestMatch(pathname: string) {
+  return nav.reduce<string | null>((best, item) => {
+    const matches = pathname === item.href || pathname.startsWith(item.href + "/");
+    if (!matches) return best;
+    return !best || item.href.length > best.length ? item.href : best;
+  }, null);
+}
+
 export default function Header() {
   const pathname = usePathname();
+  const activeHref = bestMatch(pathname);
 
   return (
     <header style={{ background: "#fff", borderBottom: "1px solid #e8ddd4", position: "relative" }}>
@@ -29,7 +39,7 @@ export default function Header() {
         </Link>
         <nav className="desktop-nav" style={{ display: "flex", gap: 28, alignItems: "center" }}>
           {nav.map((item) => {
-            const active = pathname === item.href || pathname.startsWith(item.href + "/");
+            const active = item.href === activeHref;
             return (
               <Link
                 key={item.href}
