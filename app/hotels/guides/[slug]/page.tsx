@@ -21,9 +21,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = READY_GUIDES.find(g => g.slug === slug);
   if (!guide) return {};
+  const hasTa = hotelGuidesTa.some(g => g.id === guide.id);
   return {
     title: guide.metaTitle ?? guide.title,
     description: guide.metaDescription,
+    alternates: hasTa
+      ? {
+          languages: {
+            en: `/hotels/guides/${slug}`,
+            ta: `/ta/hotels/guides/${slug}`,
+            "x-default": `/hotels/guides/${slug}`,
+          },
+        }
+      : undefined,
   };
 }
 

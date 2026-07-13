@@ -8,6 +8,13 @@ import { truncate } from "@/lib/truncate";
 export const metadata: Metadata = {
   title: "Restaurants in Pondicherry, Honest Local Picks",
   description: "Browse Pondicherry restaurants, from colonial garden cafés and seafood spots to South Indian staples, with honest recommendations.",
+  alternates: {
+    languages: {
+      en: "/restaurants",
+      ta: "/ta/restaurants",
+      "x-default": "/restaurants",
+    },
+  },
 };
 
 const PRICE = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };

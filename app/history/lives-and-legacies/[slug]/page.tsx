@@ -19,10 +19,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const f = figures.find(f => f.id === slug);
   if (!f) return {};
+  const hasTa = figuresTa.some(f => f.id === slug);
   return {
     title: f.metaTitle ?? `${f.name} — Pondicherry`,
     description: f.metaDescription ?? f.teaser,
     openGraph: f.photo ? { images: [`/figures/${f.photo}`] } : undefined,
+    alternates: hasTa
+      ? {
+          languages: {
+            en: `/history/lives-and-legacies/${slug}`,
+            ta: `/ta/history/lives-and-legacies/${slug}`,
+            "x-default": `/history/lives-and-legacies/${slug}`,
+          },
+        }
+      : undefined,
   };
 }
 

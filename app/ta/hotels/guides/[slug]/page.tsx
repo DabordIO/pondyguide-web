@@ -32,6 +32,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: guide.ta.metaTitle ?? guide.ta.title,
     description: guide.ta.metaDescription,
+    alternates: {
+      languages: {
+        en: `/hotels/guides/${slug}`,
+        ta: `/ta/hotels/guides/${slug}`,
+        "x-default": `/hotels/guides/${slug}`,
+      },
+    },
   };
 }
 

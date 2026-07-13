@@ -7,6 +7,13 @@ import { truncate } from "@/lib/truncate";
 export const metadata: Metadata = {
   title: "Lives and Legacies That Shaped Pondicherry",
   description: "Meet the governors, commanders, diplomats and writers whose decisions shaped Pondicherry and its streets.",
+  alternates: {
+    languages: {
+      en: "/history/lives-and-legacies",
+      ta: "/ta/history/lives-and-legacies",
+      "x-default": "/history/lives-and-legacies",
+    },
+  },
 };
 
 export default function LivesAndLegaciesPage() {

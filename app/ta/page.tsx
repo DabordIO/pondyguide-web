@@ -11,6 +11,13 @@ import { truncate } from "@/lib/truncate";
 export const metadata: Metadata = {
   title: "புதுச்சேரி வழிகாட்டி — தமிழில்",
   description: "புதுச்சேரியின் வரலாறு, உணவகங்கள் மற்றும் மேலும் பல — தமிழில்.",
+  alternates: {
+    languages: {
+      en: "/",
+      ta: "/ta",
+      "x-default": "/",
+    },
+  },
 };
 
 function SectionHeader({ title, href }: { title: string; href: string }) {

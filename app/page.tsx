@@ -11,6 +11,13 @@ import { truncate } from "@/lib/truncate";
 export const metadata: Metadata = {
   title: "Pondy Guide: Travel, History and Heritage in Pondicherry",
   description: "An independent guide to Pondicherry, covering history, heritage streets, restaurants, hotels, festivals and practical travel advice.",
+  alternates: {
+    languages: {
+      en: "/",
+      ta: "/ta",
+      "x-default": "/",
+    },
+  },
 };
 
 const PRICE_LABELS: Record<string, string> = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };

@@ -7,6 +7,13 @@ import { hotelGuides } from "@/data/hotelGuides";
 export const metadata: Metadata = {
   title: "Hotels in Pondicherry, Where to Stay and Why",
   description: "Compare heritage mansions, boutique guesthouses, family hotels and coastal retreats with independent recommendations.",
+  alternates: {
+    languages: {
+      en: "/hotels",
+      ta: "/ta/hotels",
+      "x-default": "/hotels",
+    },
+  },
 };
 
 function GuideCard({ title, slug }: { title: string; slug: string }) {

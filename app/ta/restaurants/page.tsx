@@ -6,6 +6,13 @@ import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
 export const metadata: Metadata = {
   title: "புதுச்சேரியில் உணவகங்கள்",
   description: "புதுச்சேரியின் சிறந்த பிரெஞ்சு, இந்திய, கடலுணவு மற்றும் சர்வதேச உணவகங்களுக்கான வழிகாட்டிகள்.",
+  alternates: {
+    languages: {
+      en: "/restaurants",
+      ta: "/ta/restaurants",
+      "x-default": "/restaurants",
+    },
+  },
 };
 
 function GuideCard({ title, slug }: { title: string; slug: string }) {
