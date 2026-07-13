@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { figures } from "@/data/figures";
 import { figuresTa } from "@/data/ta/figures";
+import { figuresFr } from "@/data/fr/figures";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
@@ -20,15 +21,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const f = figures.find(f => f.id === slug);
   if (!f) return {};
   const hasTa = figuresTa.some(f => f.id === slug);
+  const hasFr = figuresFr.some(f => f.id === slug);
   return {
     title: f.metaTitle ?? `${f.name} — Pondicherry`,
     description: f.metaDescription ?? f.teaser,
     openGraph: f.photo ? { images: [`/figures/${f.photo}`] } : undefined,
-    alternates: hasTa
+    alternates: hasTa || hasFr
       ? {
           languages: {
             en: `/history/lives-and-legacies/${slug}`,
-            ta: `/ta/history/lives-and-legacies/${slug}`,
+            ta: hasTa ? `/ta/history/lives-and-legacies/${slug}` : undefined,
+            fr: hasFr ? `/fr/history/lives-and-legacies/${slug}` : undefined,
             "x-default": `/history/lives-and-legacies/${slug}`,
           },
         }
@@ -52,10 +55,18 @@ export default async function FigurePage({ params }: { params: Promise<{ slug: s
   const next = idx < figures.length - 1 ? figures[idx + 1] : null;
 
   const hasTa = figuresTa.some(f => f.id === slug);
+  const hasFr = figuresFr.some(f => f.id === slug);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      {hasTa && <LanguageToggle enHref={`/history/lives-and-legacies/${slug}`} taHref={`/ta/history/lives-and-legacies/${slug}`} current="en" />}
+      {(hasTa || hasFr) && (
+        <LanguageToggle
+          enHref={`/history/lives-and-legacies/${slug}`}
+          taHref={hasTa ? `/ta/history/lives-and-legacies/${slug}` : undefined}
+          frHref={hasFr ? `/fr/history/lives-and-legacies/${slug}` : undefined}
+          current="en"
+        />
+      )}
       <JsonLd
         data={{
           "@context": "https://schema.org",

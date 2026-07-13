@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function LanguageToggle({ enHref, taHref, current }: { enHref: string; taHref: string; current: "en" | "ta" }) {
+export default function LanguageToggle({ enHref, taHref, frHref, current }: { enHref: string; taHref?: string; frHref?: string; current: "en" | "ta" | "fr" }) {
   const pillBase: React.CSSProperties = {
     fontSize: 13,
     fontWeight: 600,
@@ -14,7 +14,8 @@ export default function LanguageToggle({ enHref, taHref, current }: { enHref: st
   return (
     <div style={{ position: "absolute", top: 24, right: 24, display: "flex", gap: 6, zIndex: 5 }}>
       <Link href={enHref} style={current === "en" ? active : inactive}>English</Link>
-      <Link href={taHref} style={current === "ta" ? active : inactive}>தமிழ்</Link>
+      {taHref && <Link href={taHref} style={current === "ta" ? active : inactive}>தமிழ்</Link>}
+      {frHref && <Link href={frHref} style={current === "fr" ? active : inactive}>Français</Link>}
     </div>
   );
 }

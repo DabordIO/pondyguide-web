@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/history/lives-and-legacies",
       ta: "/ta/history/lives-and-legacies",
+      fr: "/fr/history/lives-and-legacies",
       "x-default": "/history/lives-and-legacies",
     },
   },
