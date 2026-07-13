@@ -98,7 +98,7 @@ export default async function RestaurantGuidePageTa({ params }: { params: Promis
               {entries.map(r => (
                 <tr key={r.id} style={{ borderBottom: "1px solid #e8ddd4" }}>
                   <td style={{ padding: "10px 12px", fontWeight: 600, color: "#1c1917" }}>{r.name}</td>
-                  <td style={{ padding: "10px 12px", color: "#6b6560" }}>{ta.bestFor?.[r.name]}</td>
+                  <td style={{ padding: "10px 12px", color: "#6b6560" }}>{ta.bestFor?.[r.id]}</td>
                   <td style={{ padding: "10px 12px", color: "#6b6560" }}>{PRICE[r.priceRange]}</td>
                 </tr>
               ))}
@@ -117,9 +117,9 @@ export default async function RestaurantGuidePageTa({ params }: { params: Promis
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.3rem", fontWeight: 700, color: "#1c1917", marginBottom: 12 }}>
             {r.name}
           </h2>
-          {ta.blurbs?.[r.name] && <ArticleBody text={ta.blurbs[r.name]} />}
-          {ta.bestFor?.[r.name] && (
-            <p style={{ fontSize: 14, color: "#292524", marginTop: 12 }}><strong>சிறந்தது:</strong> {ta.bestFor[r.name]}</p>
+          {ta.blurbs?.[r.id] && <ArticleBody text={ta.blurbs[r.id]} />}
+          {ta.bestFor?.[r.id] && (
+            <p style={{ fontSize: 14, color: "#292524", marginTop: 12 }}><strong>சிறந்தது:</strong> {ta.bestFor[r.id]}</p>
           )}
           <Link href={`/restaurants/${r.id}`} style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, textDecoration: "none", display: "inline-block", marginTop: 8 }}>
             {r.name} பற்றிய முழு வழிகாட்டியைப் படிக்க →
