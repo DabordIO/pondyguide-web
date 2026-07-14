@@ -17,7 +17,7 @@ export const figuresFr: FigureFr[] = [
     dates: "1697–1763",
     role: "Gouverneur général de l'Inde française",
     metaTitle: "Joseph François Dupleix, l'architecte de l'Inde française",
-    metaDescription: "Dupleix bâtit un empire français en Inde à coups d'alliances et d'armées de cipayes, avant de le perdre sur un ordre de rappel venu de Paris.",
+    metaDescription: "Dupleix bâtit un empire français en Inde grâce aux alliances et aux armées de cipayes, avant de le perdre après un rappel de Paris.",
     teaser: "L'homme qui rêva d'un empire français en Inde, le bâtit pièce par pièce à coups d'alliances et de cipayes, et le perdit non par les armes britanniques mais sur un ordre de rappel venu de Paris.",
     body: `**L'ARCHITECTE DE L'INDE FRANÇAISE**
 
@@ -37,8 +37,8 @@ Sa statue se dresse sur l'[avenue Goubert](/discover/white-town/avenue-goubert),
     name: "Ananda Ranga Pillai",
     dates: "1709–1761",
     role: "Interprète en chef de Dupleix, diariste",
-    metaTitle: "Ananda Ranga Pillai, la voix de l'Inde française",
-    metaDescription: "Le principal courtier et interprète de Dupleix a laissé le journal tamoul le plus intime jamais écrit sur l'Inde française, rédigé depuis l'intérieur de la cour coloniale.",
+    metaTitle: "Ananda Ranga Pillai, témoin de l'Inde française",
+    metaDescription: "Courtier et interprète de Dupleix, il a laissé le plus précieux journal tamoul de l'Inde française, écrit au cœur du pouvoir colonial.",
     teaser: "Le courtier et interprète en chef de Dupleix, dont le journal tamoul privé constitue le témoignage le plus intime jamais écrit sur l'Inde française — le seul récit raconté depuis l'intérieur de la pièce.",
     body: `**L'HOMME QUI CONSIGNA TOUT**
 
@@ -58,7 +58,7 @@ Il meurt en 1761, l'année même où Pondichéry tombe aux mains des Britannique
     dates: "1699–1753",
     role: "Commandant naval français",
     metaTitle: "Mahé de La Bourdonnais, le vainqueur de Madras en 1746",
-    metaDescription: "L'amiral qui prit Madras pour la France en 1746, se brouilla avec Dupleix sur son sort, et perdit ensuite sa liberté et sa santé.",
+    metaDescription: "L'amiral qui prit Madras pour la France en 1746, se brouilla avec Dupleix sur son avenir, puis perdit sa liberté et sa santé.",
     teaser: "L'amiral qui prit Madras pour la France en 1746, puis gâcha cette victoire dans une querelle furieuse avec Dupleix sur ce qu'il fallait en faire, et paya le prix fort : sa liberté, puis sa santé.",
     body: `**L'AMIRAL DE SAINT-MALO**
 
@@ -76,8 +76,8 @@ Il rentre en France en espérant la reconnaissance. Ses ennemis, eux, l'attendai
     name: "Chanda Sahib",
     dates: "mort en 1752",
     role: "Nawab du Carnatic, allié français",
-    metaTitle: "Chanda Sahib, le nawab du Carnatic choisi par Dupleix",
-    metaDescription: "Le nawab choisi par Dupleix connut l'ascension puis la chute en trois ans ; sa mort marqua la fin de la domination française dans le sud de l'Inde.",
+    metaTitle: "Chanda Sahib, le nawab de Dupleix au Carnatic",
+    metaDescription: "Le nawab soutenu par Dupleix connut l'ascension puis la chute en trois ans ; sa mort marqua la fin de la domination française.",
     teaser: "Le nawab du Carnatic choisi par Dupleix, dont l'ascension et la chute en trois années définirent la phase décisive des guerres du Carnatic, et dont la mort mit fin, en une seule après-midi, à la domination française dans le sud de l'Inde.",
     body: `**LE NAWAB SOUTENU PAR LA FRANCE**
 
@@ -135,8 +135,8 @@ La ville capitule en janvier 1761, après un siège de cinq mois qui laisse la p
     cardName: "Pierre de Suffren",
     dates: "1729–1788",
     role: "Vice-amiral de la marine française",
-    metaTitle: "Pierre André de Suffren, l'amiral de la côte de Coromandel",
-    metaDescription: "Le grand amiral français livra cinq batailles au large de la côte de Coromandel en 1782 et 1783, et faillit inverser la domination britannique.",
+    metaTitle: "Pierre André de Suffren, amiral du Coromandel",
+    metaDescription: "Le grand amiral français livra cinq batailles au large du Coromandel en 1782 et 1783, frôlant le renversement de la domination britannique.",
     teaser: "Le plus grand commandant naval français du XVIIIe siècle, qui livra cinq batailles sur la côte de Coromandel en 1782 et 1783, et s'approcha plus que quiconque de renverser l'ascendant britannique en Inde.",
     body: `**L'AMIRAL DE L'OCÉAN INDIEN**
 
@@ -155,7 +155,7 @@ La paix de 1783 met fin à sa campagne avant qu'une décision ne soit acquise. I
     dates: "1725–1774",
     role: "Commandant militaire britannique ; 1er baron Clive",
     metaTitle: "Robert Clive, celui qui détruisit l'empire de Dupleix",
-    metaDescription: "Clive brisa la puissance française à Arcot et à Srirangam, conquit le Bengale à Plassey, et transforma la Compagnie des Indes orientales en puissance territoriale.",
+    metaDescription: "Clive brisa la puissance française à Arcot et à Srirangam, gagna le Bengale à Plassey et fit de la Compagnie des Indes orientales une puissance territoriale.",
     teaser: "Le commis de la Compagnie devenu conquérant, qui démantela l'empire de Dupleix à Arcot puis à Srirangam, avant d'offrir à la Grande-Bretagne les revenus du Bengale à Plassey, et qui termina sa vie comme il avait un temps songé à la commencer : de sa propre main.",
     body: `**CLIVE DES INDES**
 
@@ -176,7 +176,7 @@ Clive achève sa carrière dans la controverse, accusé de corruption durant ses
     dates: "1697–1775",
     role: "Père de l'armée indienne",
     metaTitle: "Stringer Lawrence, le fondateur de l'armée de cipayes britannique",
-    metaDescription: "Lawrence bâtit de toutes pièces l'armée de cipayes de la Compagnie des Indes orientales et forma Robert Clive pendant les guerres du Carnatic.",
+    metaDescription: "Lawrence créa l'armée de cipayes de la Compagnie britannique des Indes orientales et forma Robert Clive pendant les guerres du Carnatic.",
     teaser: "L'officier britannique qui bâtit de toutes pièces l'armée de cipayes et forma Robert Clive, et dont l'héritage institutionnel survécut à chacune des batailles individuelles des guerres du Carnatic.",
     body: `**LE BÂTISSEUR D'ARMÉES**
 
@@ -194,8 +194,8 @@ Il est moins célébré que Clive parce que sa contribution fut institutionnelle
     name: "Law de Lauriston",
     dates: "1719–1797",
     role: "Officier militaire français",
-    metaTitle: "Law de Lauriston, la capitulation de Srirangam en 1752",
-    metaDescription: "Le commandant français capitula avec la dernière armée de campagne du Carnatic la même après-midi que l'exécution de Chanda Sahib.",
+    metaTitle: "Law de Lauriston et la capitulation de Srirangam",
+    metaDescription: "Le commandant français capitula avec la dernière armée de campagne du Carnatic le jour même de l'exécution de Chanda Sahib.",
     teaser: "L'officier français qui capitula avec la dernière armée de campagne française dans le Carnatic à Srirangam, la même après-midi, peut-être à la même heure, où Chanda Sahib était décapité à quelques kilomètres de là.",
     body: `**LA CAPITULATION DE SRIRANGAM**
 
@@ -213,8 +213,8 @@ Law de Lauriston est libéré après la capitulation, poursuit sa carrière au s
     name: "Hyder Ali",
     dates: "v. 1720–1782",
     role: "Souverain de facto de Mysore",
-    metaTitle: "Hyder Ali, sultan de Mysore et allié de la France",
-    metaDescription: "Le souverain autodidacte de Mysore infligea deux défaites aux armées britanniques et devint central dans tous les plans français pour l'Inde après la chute de Pondichéry.",
+    metaTitle: "Hyder Ali, allié français et sultan de Mysore",
+    metaDescription: "Le souverain de Mysore vainquit deux fois les armées britanniques et devint essentiel aux projets français en Inde après la chute de Pondichéry.",
     teaser: "Le souverain autodidacte de Mysore, qui humilia par deux fois les forces britanniques sur le terrain, et devint la pierre angulaire de tous les plans stratégiques français pour l'Inde après la chute de Pondichéry.",
     body: `**LE TIGRE AVANT LE TIGRE**
 
@@ -232,8 +232,8 @@ Il meurt le 7 décembre 1782 d'un abcès lombaire, au moment même où l'engagem
     name: "Tipu Sultan",
     dates: "1751–1799",
     role: "Sultan de Mysore",
-    metaTitle: "Tipu Sultan, l'allié révolutionnaire de la France en Inde",
-    metaDescription: "Le Tigre de Mysore fut le plus solide allié de la France révolutionnaire en Inde, et le dernier souverain indien à menacer sérieusement la puissance britannique.",
+    metaTitle: "Tipu Sultan, allié de la France révolutionnaire",
+    metaDescription: "Le Tigre de Mysore fut le principal allié de la France révolutionnaire en Inde et le dernier souverain indien à menacer sérieusement les Britanniques.",
     teaser: "Le Tigre de Mysore, dernier souverain indien à représenter une menace véritablement existentielle pour la puissance britannique en Asie du Sud, et l'allié français le plus idéologiquement engagé de l'ère révolutionnaire.",
     body: `**LE TIGRE DE MYSORE**
 
@@ -276,7 +276,7 @@ Coote rentre en Grande-Bretagne, est fait chevalier en 1771, et revient en Inde 
     dates: "1717–1795",
     role: "Nawab du Carnatic",
     metaTitle: "Muhammad Ali Khan Wallajah, le nawab soutenu par les Britanniques",
-    metaDescription: "Le nawab soutenu par les Britanniques survécut quarante-six ans, façonnant le système politique et financier dont hériterait l'Inde britannique du Sud.",
+    metaDescription: "Le nawab soutenu par les Britanniques régna quarante-six ans et façonna le système politique et financier de l'Inde britannique du Sud.",
     teaser: "Le nawab soutenu par les Britanniques, dont les quarante-six années de survie, d'abord dans la forteresse de Trichinopoly puis dans le labyrinthe de la dette envers la Compagnie, définirent ce que deviendrait la présence britannique dans le sud de l'Inde.",
     body: `**LE NAWAB DANS LA FORTERESSE**
 
@@ -286,7 +286,7 @@ Il tint Trichinopoly pendant que se déroulait autour de lui la deuxième guerre
 
 Quand Chanda Sahib est capturé et décapité en juin 1752, Muhammad Ali devient le nawab incontesté du Carnatic. La construction politique française dans le sud, le protectorat de Dupleix, s'effondre en une seule après-midi. Muhammad Ali quitte Trichinopoly pour Madras, est reconnu par le nizam d'Hyderabad, confirmé par la Compagnie britannique des Indes orientales, et s'installe pour un règne qui allait encore durer quarante-trois ans.
 
-Le prix de ce règne fut l'abandon progressif de l'indépendance politique. Il emprunta des sommes considérables à la Compagnie et à des marchands britanniques privés pour financer ses guerres et sa cour. Ces dettes servirent de levier : contrôle de la collecte des revenus, accès militaire, subordination diplomatique. Dans les dernières décennies de son règne, le Carnatic était de fait un protectorat britannique, Muhammad Ali une figure de proue riche mais contrainte, au centre d'un enchevêtrement d'obligations financières qu'il ne maîtrisait plus. Il fut témoin de la chute de Pondichéry en 1761, des quatre occupations britanniques ultérieures de la capitale française, et de la montée d'Hyder Ali puis de Tipu Sultan. Il meurt à Madras en 1795, à soixante-dix-huit ans, ayant survécu à ses ennemis français de plus de trois décennies, et ayant permis, pas à pas et avec patience, l'hégémonie britannique qui allait leur succéder.
+Le prix de ce règne fut l'abandon progressif de l'indépendance politique. Il emprunta des sommes considérables à la Compagnie et à des marchands britanniques privés pour financer ses guerres et sa cour. Ces dettes servirent de levier : contrôle de la collecte des revenus, accès militaire, subordination diplomatique. Dans les dernières décennies de son règne, le Carnatic était de fait un protectorat britannique, Muhammad Ali une figure de proue riche mais contrainte, au centre d'un enchevêtrement d'obligations financières qu'il ne maîtrisait plus. Il fut témoin de [la chute de Pondichéry en 1761](/fr/history/the-fallen-city), des quatre occupations britanniques ultérieures de la capitale française, et de la montée d'Hyder Ali puis de Tipu Sultan. Il meurt à Madras en 1795, à soixante-dix-huit ans, ayant survécu à ses ennemis français de plus de trois décennies, et ayant permis, pas à pas et avec patience, l'hégémonie britannique qui allait leur succéder.
 
 Son nom est le moins familier à l'histoire, car son exploit fut la survie plutôt que la conquête. Mais sans lui, sans la décision britannique de soutenir sa prétention et la décision française de s'y opposer, le protectorat de Dupleix aurait pu tenir, et l'histoire ultérieure du sud de l'Inde aurait été entièrement différente.`,
   },
@@ -297,8 +297,8 @@ Son nom est le moins familier à l'histoire, car son exploit fut la survie plut�
     dates: "1634–1706",
     role: "Fondateur de Pondichéry ; directeur général de l'Inde française",
     metaTitle: "François Martin, le fondateur de Pondichéry en 1674",
-    metaDescription: "Arrivé avec six hommes en 1674, Martin bâtit Pondichéry en une ville, la reconstruisit après l'occupation hollandaise, et mourut à son bureau.",
-    teaser: "Le marchand parisien arrivé dans un village de pêcheurs en 1674 avec six hommes, qui le tint face aux Hollandais, en fit une ville, la perdit, la rebâtit, et mourut à son bureau : l'homme qui fit Pondichéry.",
+    metaDescription: "Arrivé avec six hommes en 1674, Martin transforma Pondichéry en ville, la reconstruisit après l'occupation hollandaise et mourut à sa table de travail.",
+    teaser: "Le marchand parisien arrivé dans un village de pêcheurs en 1674 avec six hommes, qui le tint face aux Hollandais, en fit une ville, la perdit, la rebâtit, et mourut à sa table de travail : l'homme qui fit Pondichéry.",
     body: `**L'HOMME QUI FIT PONDICHÉRY**
 
 François Martin naît à Paris en 1634, fils naturel d'un marchand, et quitte la France en mars 1665 comme jeune commis de la Compagnie, à bord de la frégate *l'Aigle Blanc*, pour ne plus jamais y revenir. Il passe quatre ans en mer et à Madagascar avant de débarquer à Surate en 1669 et de descendre la côte de Coromandel. Il n'est encore le fondateur de rien : c'est un comptable méticuleux au service d'une entreprise commerciale chancelante, naviguant entre l'hostilité hollandaise, l'indifférence moghole et des ambitions françaises chroniquement sous-capitalisées.
@@ -320,7 +320,7 @@ Il meurt en fonction le 30 décembre 1706, enterré dans le fort qu'il avait bâ
     dates: "1725–v. 1792",
     role: "Astronome français ; membre de l'Académie des sciences",
     metaTitle: "Guillaume Le Gentil, l'astronome du passage de Vénus",
-    metaDescription: "Le Gentil traversa deux fois le monde pour observer le passage de Vénus, le manqua les deux fois, et laissa un portrait vivant de Pondichéry dans les années 1760.",
+    metaDescription: "Le Gentil traversa deux fois le monde pour observer le passage de Vénus, le manqua à chaque fois et décrivit la Pondichéry des années 1760.",
     teaser: "L'astronome qui traversa deux fois la moitié du globe pour observer le passage de Vénus, le manqua les deux fois, une fois à cause d'une guerre, une fois à cause d'un nuage, et laissa à la place le portrait européen le plus vivant de Pondichéry dans les années 1760.",
     body: `**L'ASTRONOME LE PLUS MALCHANCEUX DE L'HISTOIRE**
 
@@ -344,8 +344,8 @@ Il repart pour la France le 1er mars 1770. Un ouragan au large de La Réunion fa
     name: "Pierre Loti",
     dates: "1850–1923",
     role: "Romancier français et officier de marine",
-    metaTitle: "Pierre Loti, portrait littéraire de Pondichéry",
-    metaDescription: "Le romancier français débarqua par mer en 1899 et écrivit le portrait littéraire le plus vivant de la Pondichéry coloniale.",
+    metaTitle: "Pierre Loti et la Pondichéry coloniale",
+    metaDescription: "Arrivé par mer en 1899, le romancier français a livré le portrait littéraire le plus évocateur de la Pondichéry coloniale.",
     teaser: "Le célèbre romancier français qui débarqua à Pondichéry par la mer en 1899 et en écrivit le portrait littéraire le plus vivant jamais couché sur le papier.",
     body: `**LE ROMANCIER VENU PAR LA MER**
 
@@ -363,7 +363,7 @@ Il meurt à Hendaye en juin 1923. *L'Inde (sans les Anglais)* est aujourd'hui mo
     name: "Romain Rolland",
     dates: "1866–1944",
     role: "Romancier français ; prix Nobel 1915",
-    metaTitle: "Romain Rolland, prix Nobel français et Pondichéry",
+    metaTitle: "Romain Rolland, prix Nobel et Pondichéry",
     metaDescription: "Bien qu'il ne soit jamais venu en Inde, l'engagement de Rolland envers la spiritualité indienne relia l'ashram de Pondichéry à la culture européenne.",
     teaser: "Le prix Nobel français qui ne mit jamais les pieds en Inde, mais dont l'engagement passionné envers la pensée spirituelle indienne bâtit le pont intellectuel entre l'ashram de Pondichéry et la culture européenne.",
     body: `**L'EUROPÉEN QUI ÉCOUTAIT L'INDE**
@@ -383,7 +383,7 @@ Il meurt à Vézelay en décembre 1944, sans jamais avoir visité l'Inde. La [ru
     dates: "1844–1923",
     role: "Premier maire de Karikal ; industriel",
     metaTitle: "François Gaudart, maire et industriel de l'Inde française",
-    metaDescription: "Le premier maire élu de Karikal fit don de la statue de Jeanne d'Arc qui se dresse toujours dans le jardin de Notre-Dame des Anges.",
+    metaDescription: "Premier maire élu de Karikal, il offrit la statue de Jeanne d'Arc toujours visible dans le jardin de Notre-Dame des Anges.",
     teaser: "Le premier maire élu de Karikal, avocat, industriel, et l'homme dont le don d'une statue de Jeanne d'Arc à Notre-Dame des Anges demeure l'un des objets les plus visités de Pondichéry.",
     body: `**L'HOMME QUI BÂTIT KARIKAL**
 
@@ -401,8 +401,8 @@ Peu avant sa mort, il fit don à [Notre-Dame des Anges](/discover/landmarks/notr
     name: "Édouard Goubert",
     dates: "1894–1974",
     role: "Maire de Pondichéry ; dernier chef politique pro-français",
-    metaTitle: "Édouard Goubert, l'homme qui choisit l'Inde en 1954",
-    metaDescription: "Après une décennie à défendre la souveraineté française, Goubert changea de camp en 1954 et rendit possible le transfert de l'Inde française à l'Inde.",
+    metaTitle: "Édouard Goubert et le choix de l'Inde en 1954",
+    metaDescription: "Après avoir défendu la souveraineté française, Goubert changea de camp en 1954 et facilita le transfert de l'Inde française à l'Inde.",
     teaser: "Le médecin devenu chef politique, qui maintint Pondichéry dans le camp français par la fraude et l'obstruction pendant une décennie, avant de changer de camp en 1954 et de rendre possible, du jour au lendemain, le transfert à l'Inde.",
     body: `**LE DERNIER POLITICIEN DE MACHINE**
 
@@ -423,7 +423,7 @@ L'[avenue Goubert](/discover/white-town/avenue-goubert), la promenade en bord de
     dates: "1900–1980",
     role: "Dernier gouverneur de l'Inde française",
     metaTitle: "Charles François Baron, dernier gouverneur de l'Inde française",
-    metaDescription: "Le dernier gouverneur de l'Inde française passa des cercles surréalistes parisiens au monde spirituel de Sri Aurobindo à Pondichéry.",
+    metaDescription: "Dernier gouverneur de l'Inde française, il passa des cercles surréalistes de Paris au monde spirituel de Sri Aurobindo à Pondichéry.",
     teaser: "Le premier gaulliste de l'histoire, disciple de Sri Aurobindo, et dernier gouverneur de l'Inde française : une vie qui mena des salons du surréalisme parisien à une tentative d'empoisonnement à Singapour, puis aux couloirs spirituels de la Ville Blanche.",
     body: `**LE GOUVERNEUR QUI S'AGENOUILLA DEVANT UN YOGI**
 
@@ -441,8 +441,8 @@ En septembre 1947, Baron organise une rencontre entre Sri Aurobindo, en stricte 
     name: "Sri Aurobindo",
     dates: "1872–1950",
     role: "Philosophe, yogi, nationaliste",
-    metaTitle: "Sri Aurobindo, du révolutionnaire au maître spirituel",
-    metaDescription: "Arrivé à Pondichéry en 1910 en fugitif, Sri Aurobindo y passa quarante ans à bâtir une tradition spirituelle majeure.",
+    metaTitle: "Sri Aurobindo, révolutionnaire et maître spirituel",
+    metaDescription: "Réfugié à Pondichéry en 1910, Sri Aurobindo y consacra quarante ans à bâtir une grande tradition spirituelle.",
     teaser: "Le nationaliste indien arrivé à Pondichéry en 1910 en fugitif politique, qui n'en repartit jamais, et passa les quarante années suivantes à bâtir l'une des traditions spirituelles les plus marquantes du XXe siècle, dans une ville qui l'abritait parce qu'elle arborait un autre drapeau.",
     body: `**DU RÉVOLUTIONNAIRE AU RISHI**
 
@@ -463,7 +463,7 @@ En septembre 1947, pour la première fois depuis 1928, il reçoit des visiteurs 
     dates: "1882–1921",
     role: "Poète tamoul ; nationaliste",
     metaTitle: "Subramania Bharati, poète tamoul en exil à Pondichéry",
-    metaDescription: "Vivant à Pondichéry de 1908 à 1919, Bharati y écrivit certains des plus beaux poèmes du tamoul moderne tout en fuyant l'Inde britannique.",
+    metaDescription: "Installé à Pondichéry de 1908 à 1919, Bharati y composa parmi les plus grands poèmes du tamoul moderne en fuyant l'Inde britannique.",
     teaser: "Le plus grand poète tamoul de l'ère moderne, qui vécut à Pondichéry de 1908 à 1919 en fugitif de l'Inde britannique, et y écrivit certains des plus beaux poèmes de la langue tamoule dans une petite maison près du front de mer.",
     body: `**LE POÈTE EN EXIL**
 
@@ -492,7 +492,7 @@ Son engagement partisan allait au Parti communiste indien plutôt qu'au Congrès
 
 Les élections municipales frauduleuses d'octobre 1948, où la faction de Goubert remporta les 102 sièges disponibles sur 102, un résultat universellement reconnu comme impossible, relevaient exactement du type de manipulation institutionnelle qui discrédita le cadre référendaire et renforça les arguments en faveur d'un transfert direct. Le travail d'organisation de Subbiah parmi les travailleurs, en dehors des structures électorales formelles que Goubert avait corrompues, donna au mouvement pro-fusion sa crédibilité populaire et ses racines dans la majorité tamoulophone, qu'aucun conseil municipal ne pouvait manipuler.
 
-Le Congrès de Kizhoor, le 18 octobre 1954, où 170 représentants votèrent la fusion contre 8, fut le point culminant politique d'une décennie de militantisme où Subbiah joua un rôle de premier plan. Le transfert de fait suivit le 1er novembre 1954. Il continua comme législateur à Pondichéry après le transfert, représentant le Parti communiste indien et défendant les droits des travailleurs dans le nouveau cadre d'un territoire de l'Union. Il meurt en 1993, ayant été témoin à la fois de la fin de la domination coloniale française et de la consolidation de Pondichéry au sein de l'Inde indépendante.`,
+Le Congrès de Kizhoor, le 18 octobre 1954, où 170 représentants votèrent la fusion contre 8, fut le point culminant politique d'une décennie de militantisme où Subbiah joua un rôle de premier plan. [Le transfert de fait](/fr/history/the-handover-1954) suivit le 1er novembre 1954. Il continua comme législateur à Pondichéry après le transfert, représentant le Parti communiste indien et défendant les droits des travailleurs dans le nouveau cadre d'un territoire de l'Union. Il meurt en 1993, ayant été témoin à la fois de la fin de la domination coloniale française et de la consolidation de Pondichéry au sein de l'Inde indépendante.`,
   },
 
   {
@@ -501,7 +501,7 @@ Le Congrès de Kizhoor, le 18 octobre 1954, où 170 représentants votèrent la 
     dates: "1878–1973",
     role: "Cofondatrice de l'Ashram de Sri Aurobindo ; fondatrice d'Auroville ; « la Mère »",
     metaTitle: "Mirra Alfassa, la Mère de l'Ashram de Pondichéry",
-    metaDescription: "La mystique née à Paris travailla avec Sri Aurobindo pendant cinquante-neuf ans et fonda Auroville à l'âge de quatre-vingt-dix ans.",
+    metaDescription: "Née à Paris, la mystique travailla avec Sri Aurobindo pendant cinquante-neuf ans et fonda Auroville à quatre-vingt-dix ans.",
     teaser: "La mystique parisienne arrivée à Pondichéry en 1914, qui reconnut en Sri Aurobindo l'être qu'elle percevait dans sa vie intérieure depuis des années, passa les cinquante-neuf années suivantes à bâtir ce qui allait devenir le centre spirituel de la Ville Blanche, et fonda Auroville à quatre-vingt-dix ans.",
     body: `**LA MÈRE**
 
@@ -522,7 +522,7 @@ Elle fonde [Auroville](/discover/auroville/what-is-auroville) en 1968 : une cit�
     dates: "1896–1917",
     role: "Aspirant, 55e régiment d'infanterie ; mort pour la France",
     metaTitle: "Victor Simonel, officier tamoul tué à Verdun",
-    metaDescription: "L'étudiant en ingénierie né à Pondichéry devint officier d'infanterie française à vingt et un ans et mourut en menant un assaut à Verdun.",
+    metaDescription: "Né à Pondichéry, l'étudiant en ingénierie devint officier d'infanterie française à vingt et un ans avant de tomber à Verdun.",
     teaser: "Le garçon tamoul de Pondichéry qui obtint une place dans une grande école d'ingénieurs parisienne la semaine où la guerre fut déclarée, devint officier d'infanterie à vingt et un ans, et mourut en menant un assaut à Verdun, le seul enfant de l'Inde à y tomber.",
     body: `**« À BAS LES ALLEMANDS »**
 
@@ -547,7 +547,7 @@ Il repose à la nécropole nationale de Bras-sur-Meuse, près de Samogneux, tomb
     dates: "1905–1979",
     role: "Premier consul général de l'Inde en Inde française",
     metaTitle: "Mirza Rashid Ali Baig, l'homme de l'Inde indépendante à Pondichéry",
-    metaDescription: "Le diplomate formé à Sandhurst choisit l'Inde plutôt que le Pakistan et arriva à Pondichéry en 1947 comme représentant de New Delhi.",
+    metaDescription: "Formé à Sandhurst, le diplomate choisit l'Inde plutôt que le Pakistan et arriva à Pondichéry en 1947 comme représentant de New Delhi.",
     teaser: "L'aristocrate musulman formé à Sandhurst, qui rompit avec Jinnah au moment de la Partition, choisit l'Inde, et arriva à Pondichéry en 1947 comme premier visage de l'Inde indépendante dans la ville française, au moment précis où tout basculait.",
     body: `**L'HOMME QUI CHOISIT L'INDE**
 
@@ -559,7 +559,7 @@ Il devient ensuite shérif de Bombay en 1942, rejoint le service diplomatique in
 
 La dimension symbolique de ce poste était considérable. Un aristocrate musulman de lignée moghole, formé à Sandhurst, qui avait été le secrétaire personnel de Jinnah et avait rejeté le Pakistan, incarnant le visage d'une Inde laïque et plurielle auprès d'une enclave coloniale française qui observait avec anxiété le sous-continent se déchirer. Son frère Mirza Osman Ali Baig, d'un an son aîné, avait fait le choix inverse au moment de la Partition et était devenu diplomate pakistanais. Les deux frères incarnaient, à l'échelle personnelle, la déchirure que la Partition imposa aux familles musulmanes de l'ancienne classe des fonctionnaires coloniaux.
 
-Il sert à Pondichéry pendant la phase critique des débuts du mouvement de fusion, de 1947 à 1949, avant de partir pour Jakarta, Manille, puis finalement Téhéran, où il sert comme ambassadeur de l'Inde. Il meurt en 1979. Ses mémoires, *In Different Saddles* (1967), retracent sa carrière militaire, politique et diplomatique ; *The Muslim Dilemma in India* (1974) aborde la situation des musulmans dans l'Inde indépendante, un sujet sur lequel, ayant rompu avec Jinnah et choisi l'Inde, il jouissait d'une autorité singulière. Le consulat indien qu'il établit rue des Capucins ouvrit le processus diplomatique qui s'acheva par le transfert de Pondichéry à l'Inde en 1954.`,
+Il sert à Pondichéry pendant la phase critique des débuts du mouvement de fusion, de 1947 à 1949, avant de partir pour Jakarta, Manille, puis finalement Téhéran, où il sert comme ambassadeur de l'Inde. Il meurt en 1979. Ses mémoires, *In Different Saddles* (1967), retracent sa carrière militaire, politique et diplomatique ; *The Muslim Dilemma in India* (1974) aborde la situation des musulmans dans l'Inde indépendante, un sujet sur lequel, ayant rompu avec Jinnah et choisi l'Inde, il jouissait d'une autorité singulière. Le consulat indien qu'il établit rue des Capucins ouvrit le processus diplomatique qui s'acheva par [le transfert de Pondichéry à l'Inde en 1954](/fr/history/the-handover-1954).`,
   },
 
   {
@@ -568,7 +568,7 @@ Il sert à Pondichéry pendant la phase critique des débuts du mouvement de fus
     dates: "dates inconnues, active dans les années 1650 – après 1706",
     role: "Épouse de François Martin, fondateur de Pondichéry",
     metaTitle: "Marie Cuperly, la fille de poissonnière qui fonda Pondichéry",
-    metaDescription: "L'épouse de François Martin survécut à la pauvreté, vingt-deux ans de séparation et la captivité hollandaise pour devenir l'une des seules femmes nommées de la génération fondatrice de l'Inde française.",
+    metaDescription: "L'épouse de François Martin survécut à la pauvreté, à vingt-deux ans de séparation et à la captivité hollandaise.",
     teaser: "Une fille de poissonnière parisienne, mariée en secret, abandonnée vingt-deux ans durant pendant que son mari bâtissait l'Inde française, puis arrivée pour partager son triomphe, sa captivité et sa ville.",
     body: `**LA FILLE DE LA POISSONNIÈRE**
 
@@ -578,7 +578,7 @@ Quand le mariage fut découvert, les deux familles réagirent mal. La mère de M
 
 Au cours de l'été 1664, Martin voit une annonce de recrutement de la Compagnie des Indes offrant passage et emploi à Madagascar et aux Indes. Il part en mars 1665 et, selon le voyageur Robert Challes, qui visita Pondichéry des décennies plus tard et consigna l'histoire, il partit sans dire à sa femme où il allait ni comment le joindre. Marie Cuperly passa plus de vingt-deux ans sans nouvelles de son mari, élevant seule ses enfants sur ce qu'elle gagnait au marché. La Compagnie aurait, dit-on, fouillé le quartier des Halles pendant six semaines avant de seulement parvenir à la localiser, pour confirmer le récit que Martin faisait lui-même de son mariage.
 
-Elle atteint Pondichéry en avril 1674 avec sa fille Marie-Anne, trois mois après que Martin y eut rétabli la position française à la suite de la chute de Saint-Thomé. Elle arrive dans un établissement de huttes de roseaux et de marais salants, et le voit devenir, au cours des deux décennies suivantes, la principale base française en Inde. Quand les Hollandais assiègent et prennent Pondichéry en 1693, Martin est emmené prisonnier à Batavia. Marie Cuperly choisit de le suivre en captivité plutôt que de rester en arrière, et la famille ne revient qu'après que la paix de Ryswick eut restitué la ville à la France, en 1697.
+Elle atteint Pondichéry en avril 1674 avec sa fille Marie-Anne, trois mois après que Martin y eut [rétabli la position française](/fr/history/the-europeans-arrive) à la suite de la chute de Saint-Thomé. Elle arrive dans un établissement de huttes de roseaux et de marais salants, et le voit devenir, au cours des deux décennies suivantes, la principale base française en Inde. Quand les Hollandais assiègent et prennent Pondichéry en 1693, Martin est emmené prisonnier à Batavia. Marie Cuperly choisit de le suivre en captivité plutôt que de rester en arrière, et la famille ne revient qu'après que la paix de Ryswick eut restitué la ville à la France, en 1697.
 
 À la mort de Martin, en décembre 1706, leurs trois filles avaient toutes épousé des membres de la direction de l'Inde française : l'une le premier directeur de Chandernagor, l'une le major responsable de la garnison de Pondichéry, l'une un haut fonctionnaire de la Compagnie. Marie Cuperly survécut à son mari. Son propre testament fut découvert aux côtés du sien à Pondichéry en 1918, confirmant ce que Challes avait rapporté deux siècles plus tôt, bien que la date et les circonstances de sa propre mort n'aient jamais été consignées. Ce qui subsiste d'elle n'est pas un portrait officiel mais la forme d'une vie entière : une fille de poissonnier qui vendait du poisson à Paris pendant que son mari bâtissait un empire, et qui arriva en Inde non pas comme l'épouse d'un administrateur, mais comme une femme ayant déjà survécu à pire que tout ce que la colonie pouvait lui offrir.`,
   },
@@ -588,8 +588,8 @@ Elle atteint Pondichéry en avril 1674 avec sa fille Marie-Anne, trois mois apr�
     name: "Jeanne Dupleix",
     dates: "v. 1706–1756",
     role: "Conseillère politique et intermédiaire du gouverneur général Dupleix",
-    metaTitle: "Jeanne Dupleix, la partenaire politique derrière l'empire de Dupleix",
-    metaDescription: "Parlant couramment le tamoul, le télougou et le persan, l'épouse de Dupleix menait la diplomatie que ses officiers français ne pouvaient assurer, et le journal d'Ananda Ranga Pillai consigna chacun de ses gestes.",
+    metaTitle: "Jeanne Dupleix, l'alliée politique de Dupleix",
+    metaDescription: "Maîtrisant le tamoul, le télougou et le persan, elle mena la diplomatie que les officiers français de Dupleix ne pouvaient assurer.",
     teaser: "Parlant couramment le tamoul, le télougou et le persan, Jeanne Dupleix menait la diplomatie que les officiers français de son mari ne pouvaient assurer, et le journal d'Ananda Ranga Pillai consigna chacun de ses gestes, avec un mélange d'admiration et de malaise.",
     body: `**L'AUTRE MOITIÉ DU GOUVERNEUR**
 
@@ -607,8 +607,8 @@ Quand Dupleix fut rappelé en France en 1754, dépouillé du protectorat qu'il a
     name: "Claude Martin",
     dates: "1735–1800",
     role: "Soldat, collectionneur et fondateur des écoles La Martinière",
-    metaTitle: "Claude Martin, le soldat de Pondichéry qui bâtit un empire à Lucknow",
-    metaDescription: "Simple soldat dans l'armée de Dupleix et de Lally, il changea de camp après la chute de Pondichéry en 1761, et mourut général de division fortuné de près de 500 000 livres sterling.",
+    metaTitle: "Claude Martin, de Pondichéry à Lucknow",
+    metaDescription: "Simple soldat chez Dupleix et Lally, il changea de camp après la chute de Pondichéry en 1761 et mourut général de division.",
     teaser: "Il arrive à Pondichéry comme simple soldat sous Dupleix et Lally. Quand la ville tombe en 1761, il change de camp, et meurt quarante ans plus tard à Lucknow général de division, à la tête d'une fortune de près d'un demi-million de livres sterling.",
     body: `**DE PONDICHÉRY À CONSTANTIA**
 
@@ -628,7 +628,7 @@ Martin ne se maria jamais, bien qu'il entretînt pendant des décennies une rela
     name: "Napoléon Bonaparte",
     dates: "1769–1821",
     role: "Empereur des Français ; cause de la quatrième occupation britannique de Pondichéry",
-    metaTitle: "Napoléon et Pondichéry : l'empereur qui ne vint jamais",
+    metaTitle: "Napoléon et Pondichéry : l'empereur absent",
     metaDescription: "Napoléon ne mit jamais les pieds en Inde, mais ses guerres provoquèrent la quatrième et plus longue occupation britannique de Pondichéry, treize années qui ne s'achevèrent qu'à Waterloo.",
     teaser: "Il ne mit jamais les pieds en Inde, mais ses guerres provoquèrent la quatrième et plus longue occupation britannique de Pondichéry, treize années qui ne s'achevèrent que par sa défaite à Waterloo.",
     body: `**L'EMPEREUR QUI NE VINT JAMAIS**
@@ -652,7 +652,7 @@ La défaite de Napoléon à Waterloo en juin 1815 et le règlement du congrès d
     teaser: "Il ne bâtit pas l'Inde française, et s'y engagea à peine personnellement. Mais ce fut son gouvernement qui finit par signer la loi mettant fin à trois siècles de domination française, huit ans après que Pondichéry eut déjà changé de mains.",
     body: `**LA SIGNATURE QUI Y MIT FIN**
 
-Le rôle de Charles de Gaulle dans l'histoire de l'Inde française est administratif plutôt que personnel, et il aurait probablement souscrit lui-même à cette description. Quand il revient au pouvoir en 1958 pour fonder la Cinquième République, l'administration française à Pondichéry avait déjà pris fin : le transfert de fait à l'Inde avait pris effet en 1954, sous la Quatrième République, quatre ans avant que de Gaulle ne devienne président. Ce qui restait n'était qu'une formalité juridique, d'une longévité inhabituelle.
+Le rôle de Charles de Gaulle dans l'histoire de l'Inde française est administratif plutôt que personnel, et il aurait probablement souscrit lui-même à cette description. Quand il revient au pouvoir en 1958 pour fonder la Cinquième République, [l'administration française à Pondichéry avait déjà pris fin](/fr/history/the-handover-1954) : le transfert de fait à l'Inde avait pris effet en 1954, sous la Quatrième République, quatre ans avant que de Gaulle ne devienne président. Ce qui restait n'était qu'une formalité juridique, d'une longévité inhabituelle.
 
 Le traité de cession avait été signé dès 1956, sous le gouvernement de Guy Mollet, mais nécessitait une ratification parlementaire pour entrer en vigueur, et l'attention du Parlement français, pour le reste de cette décennie, fut presque entièrement absorbée par la guerre d'Algérie. Le traité attendit six ans. Le gouvernement de de Gaulle finit par résoudre la question algérienne avec les accords d'Évian, en mars 1962, et cette crise réglée, la loi de ratification pour l'Inde française, la loi n° 62-862 du 28 juillet 1962, fut adoptée ce mois de juillet. Le transfert de droit prit effet le 16 août 1962, dernier acte formel d'une présence française qui avait commencé avec [François Martin](/fr/history/lives-and-legacies/francois-martin) en 1674.
 
@@ -666,7 +666,7 @@ L'héritage le plus durable de son gouvernement pour Pondichéry fut culturel pl
     name: "Kewal Singh",
     dates: "1915–1991",
     role: "Consul général de l'Inde, puis premier commissaire en chef de Pondichéry",
-    metaTitle: "Kewal Singh, le diplomate qui exécuta le transfert de Pondichéry",
+    metaTitle: "Kewal Singh, le diplomate du transfert de Pondichéry",
     metaDescription: "Le consul général de l'Inde en Inde française devint son premier commissaire en chef le même jour, en 1954, avant de devenir secrétaire aux Affaires étrangères de l'Inde.",
     teaser: "Il fut consul général de l'Inde dans la Pondichéry française, et le jour même du référendum de 1954 en devint aussi le premier commissaire en chef, cumulant les deux fonctions pendant le transfert, avant de devenir secrétaire aux Affaires étrangères de l'Inde.",
     body: `**LA MAIN OPÉRATIONNELLE DERRIÈRE LE TRANSFERT**
