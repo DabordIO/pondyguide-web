@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { sites, CATEGORY_LABELS, CATEGORY_COLORS } from "@/data/sites";
+import { sites } from "@/data/sites";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import Link from "next/link";
@@ -48,10 +48,7 @@ export default async function LandmarkPage({ params }: { params: Promise<{ slug:
         </div>
       )}
 
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: CATEGORY_COLORS[site.category], margin: "20px 0 6px" }}>
-        {CATEGORY_LABELS[site.category]}
-      </p>
-      <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 8, lineHeight: 1.2 }}>
+      <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "20px 0 8px", lineHeight: 1.2 }}>
         {displayH1(site.name)}
       </h1>
       {site.frenchName && <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 4 }}>French: {site.frenchName}</p>}

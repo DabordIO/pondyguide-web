@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { sites, CATEGORY_LABELS, CATEGORY_COLORS } from "@/data/sites";
+import { sites } from "@/data/sites";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
@@ -9,14 +9,7 @@ export const metadata: Metadata = {
   description: "Browse churches, temples, museums, colonial buildings and ancient ruins that reveal two thousand years of local history.",
 };
 
-const CATEGORY_ORDER = ["experience", "admire"] as const;
-
 export default function LandmarksPage() {
-  const byCategory = CATEGORY_ORDER.map(cat => ({
-    cat,
-    items: sites.filter(s => s.category === cat),
-  })).filter(g => g.items.length > 0);
-
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
       <Link href="/discover" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
@@ -30,7 +23,7 @@ export default function LandmarksPage() {
       </p>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-        {byCategory.flatMap(({ items }) => items).map(s => (
+        {sites.map(s => (
           <Link key={s.id} href={`/discover/landmarks/${s.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
             {s.photo && (
               <div style={{ position: "relative", width: "100%", height: 160 }}>
@@ -38,7 +31,6 @@ export default function LandmarksPage() {
               </div>
             )}
             <div style={{ padding: "14px 16px 16px" }}>
-              <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: CATEGORY_COLORS[s.category], marginBottom: 6 }}>{CATEGORY_LABELS[s.category]}</p>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{s.name}</p>
               <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{truncate(s.summary, 110)}</p>
               <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 10 }}>Read more →</p>
