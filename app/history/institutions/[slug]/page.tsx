@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { institutionArticles as institutions } from "@/data/institutions";
+import { institutionArticlesFr } from "@/data/fr/institutions";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,10 +19,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const item = institutions.find(a => a.id === slug);
   if (!item) return {};
+  const hasFr = institutionArticlesFr.some(a => a.id === slug);
   return {
     title: item.metaTitle ?? `${item.title} — Pondicherry`,
     description: item.metaDescription ?? item.teaser,
     openGraph: item.photo ? { images: [`/${item.photoFolder ?? "history"}/${item.photo}`] } : undefined,
+    alternates: hasFr
+      ? {
+          languages: {
+            en: `/history/institutions/${slug}`,
+            fr: `/fr/history/institutions/${slug}`,
+            "x-default": `/history/institutions/${slug}`,
+          },
+        }
+      : undefined,
   };
 }
 
@@ -39,8 +51,11 @@ export default async function InstitutionPage({ params }: { params: Promise<{ sl
   const prev = idx > 0 ? institutions[idx - 1] : null;
   const next = idx < institutions.length - 1 ? institutions[idx + 1] : null;
 
+  const hasFr = institutionArticlesFr.some(a => a.id === slug);
+
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {hasFr && <LanguageToggle enHref={`/history/institutions/${slug}`} frHref={`/fr/history/institutions/${slug}`} current="en" />}
       <JsonLd
         data={{
           "@context": "https://schema.org",

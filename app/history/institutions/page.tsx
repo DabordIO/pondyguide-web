@@ -7,6 +7,13 @@ import { truncate } from "@/lib/truncate";
 export const metadata: Metadata = {
   title: "French Institutions Still Operating in Pondicherry",
   description: "Schools, research centres, the consulate and cultural organisations show how France's presence endures in Pondicherry.",
+  alternates: {
+    languages: {
+      en: "/history/institutions",
+      fr: "/fr/history/institutions",
+      "x-default": "/history/institutions",
+    },
+  },
 };
 
 export default function InstitutionsPage() {

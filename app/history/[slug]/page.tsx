@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { historyArticles } from "@/data/history";
+import { historyArticlesFr } from "@/data/fr/history";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,10 +19,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const article = historyArticles.find(a => a.id === slug);
   if (!article) return {};
+  const hasFr = historyArticlesFr.some(a => a.id === slug);
   return {
     title: article.metaTitle ?? article.title,
     description: article.metaDescription ?? article.teaser,
     openGraph: article.photo ? { images: [`/${article.photoFolder ?? "history"}/${article.photo}`] } : undefined,
+    alternates: hasFr
+      ? {
+          languages: {
+            en: `/history/${slug}`,
+            fr: `/fr/history/${slug}`,
+            "x-default": `/history/${slug}`,
+          },
+        }
+      : undefined,
   };
 }
 
@@ -33,8 +45,11 @@ export default async function HistoryArticlePage({ params }: { params: Promise<{
   const prev = idx > 0 ? historyArticles[idx - 1] : null;
   const next = idx < historyArticles.length - 1 ? historyArticles[idx + 1] : null;
 
+  const hasFr = historyArticlesFr.some(a => a.id === slug);
+
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {hasFr && <LanguageToggle enHref={`/history/${slug}`} frHref={`/fr/history/${slug}`} current="en" />}
       <JsonLd
         data={{
           "@context": "https://schema.org",
