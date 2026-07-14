@@ -6,6 +6,9 @@ import { figuresTa } from "@/data/ta/figures";
 import { restaurants } from "@/data/restaurants";
 import { restaurantGuides } from "@/data/restaurantGuides";
 import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
+import { hotels } from "@/data/hotels";
+import { hotelGuides } from "@/data/hotelGuides";
+import { hotelGuidesTa } from "@/data/ta/hotelGuides";
 import { truncate } from "@/lib/truncate";
 
 export const metadata: Metadata = {
@@ -49,14 +52,32 @@ export default function TamilHomePage() {
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
-  const featuredGuideIds = ["french", "indian-tamil", "seafood"];
-  const featuredGuides = featuredGuideIds
-    .map(id => {
-      const ta = restaurantGuidesTa.find(g => g.id === id);
-      const en = restaurantGuides.find(g => g.id === id);
-      if (!ta || !en) return null;
-      const firstRestaurantId = en.restaurantIds[0];
-      const photo = restaurants.find(r => r.id === firstRestaurantId)?.photo;
+  const usedRestaurantPhotos = new Set<string>();
+  const featuredGuides = restaurantGuidesTa
+    .map(ta => {
+      const en = restaurantGuides.find(g => g.id === ta.id);
+      if (!en) return null;
+      const restaurantId = en.restaurantIds.find(id => {
+        const p = restaurants.find(r => r.id === id)?.photo;
+        return p && !usedRestaurantPhotos.has(p);
+      }) ?? en.restaurantIds[0];
+      const photo = restaurants.find(r => r.id === restaurantId)?.photo;
+      if (photo) usedRestaurantPhotos.add(photo);
+      return { ta, en, photo };
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const usedHotelPhotos = new Set<string>();
+  const featuredHotelGuides = hotelGuidesTa
+    .map(ta => {
+      const en = hotelGuides.find(g => g.id === ta.id);
+      if (!en) return null;
+      const hotelId = en.hotelIds.find(id => {
+        const p = hotels.find(h => h.id === id)?.photo;
+        return p && !usedHotelPhotos.has(p);
+      }) ?? en.hotelIds[0];
+      const photo = hotels.find(h => h.id === hotelId)?.photo;
+      if (photo) usedHotelPhotos.add(photo);
       return { ta, en, photo };
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -106,6 +127,30 @@ export default function TamilHomePage() {
               {photo && (
                 <div style={{ position: "relative", width: "100%", height: 180 }}>
                   <Image src={`/restaurants/${photo}`} alt={ta.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.title}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.intro?.split("\n\n")[0] ?? "", 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="புதுச்சேரியில் ஹோட்டல்கள்" href="/ta/hotels" />
+        <SectionIntro>
+          White Town-இன் பாரம்பரிய மாளிகைகள் முதல் கடற்கரை ரிசார்ட்கள் வரை — உங்கள் பயணத்திற்கு ஏற்ற தங்குமிடத்தைத் தேர்வு செய்ய உதவும் வழிகாட்டிகள்.
+        </SectionIntro>
+        <ThreeGrid>
+          {featuredHotelGuides.map(({ ta, en, photo }) => (
+            <Link key={ta.id} href={`/ta/hotels/guides/${en.slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/hotels/${photo}`} alt={ta.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
                 </div>
               )}
               <div style={{ padding: "14px 16px 18px" }}>
