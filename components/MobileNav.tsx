@@ -2,19 +2,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { navEn, navTa, isTamil } from "@/lib/nav";
 
-const nav = [
-  { label: "History", href: "/history" },
-  { label: "Legacies", href: "/history/lives-and-legacies" },
-  { label: "Discover", href: "/discover" },
-  { label: "Hotels", href: "/hotels" },
-  { label: "Restaurants", href: "/restaurants" },
-  { label: "Auroville", href: "/discover/auroville" },
-  { label: "Festivals", href: "/festivals" },
-  { label: "Plan", href: "/plan" },
-];
-
-function bestMatch(pathname: string) {
+function bestMatch(nav: { href: string }[], pathname: string) {
   return nav.reduce<string | null>((best, item) => {
     const matches = pathname === item.href || pathname.startsWith(item.href + "/");
     if (!matches) return best;
@@ -25,7 +15,8 @@ function bestMatch(pathname: string) {
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  const activeHref = bestMatch(pathname);
+  const nav = isTamil(pathname) ? navTa : navEn;
+  const activeHref = bestMatch(nav, pathname);
 
   return (
     <div className="mobile-nav-toggle">
