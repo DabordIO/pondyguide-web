@@ -10,6 +10,7 @@ import { hotels } from "@/data/hotels";
 import { hotelGuides } from "@/data/hotelGuides";
 import { hotelGuidesTa } from "@/data/ta/hotelGuides";
 import { truncate } from "@/lib/truncate";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "புதுச்சேரி வழிகாட்டி — தமிழில்",
@@ -83,7 +84,8 @@ export default function TamilHomePage() {
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px" }}>
+    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/" taHref="/ta" current="ta" />
 
       {/* ── HERO ────────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72, paddingBottom: 64, borderBottom: "1px solid #e8ddd4" }}>

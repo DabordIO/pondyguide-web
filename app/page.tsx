@@ -7,6 +7,7 @@ import { figures } from "@/data/figures";
 import { aurovilleArticles } from "@/data/auroville";
 import { restaurants } from "@/data/restaurants";
 import { truncate } from "@/lib/truncate";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "Pondy Guide: Travel, History and Heritage in Pondicherry",
@@ -85,7 +86,8 @@ export default function HomePage() {
     .map(id => restaurants.find(r => r.id === id)).filter(Boolean) as typeof restaurants;
 
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px" }}>
+    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/" taHref="/ta" current="en" />
 
       {/* ── HERO ────────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72, paddingBottom: 64, borderBottom: "1px solid #e8ddd4" }}>
