@@ -2,8 +2,10 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { sites } from "@/data/sites";
+import { sitesTa } from "@/data/ta/sites";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -16,10 +18,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const s = sites.find(s => s.id === slug);
   if (!s) return {};
+  const hasTa = sitesTa.some(t => t.id === slug);
   return {
     title: s.metaTitle ?? `${s.name} — Pondicherry`,
     description: s.metaDescription ?? s.summary,
     openGraph: s.photo ? { images: [`/sites/${s.photo}`] } : undefined,
+    alternates: {
+      languages: {
+        en: `/discover/landmarks/${slug}`,
+        ta: hasTa ? `/ta/discover/landmarks/${slug}` : undefined,
+        "x-default": `/discover/landmarks/${slug}`,
+      },
+    },
   };
 }
 
@@ -37,9 +47,11 @@ export default async function LandmarkPage({ params }: { params: Promise<{ slug:
   const idx = sites.findIndex(s => s.id === slug);
   const prev = idx > 0 ? sites[idx - 1] : null;
   const next = idx < sites.length - 1 ? sites[idx + 1] : null;
+  const hasTa = sitesTa.some(t => t.id === slug);
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref={`/discover/landmarks/${slug}`} taHref={hasTa ? `/ta/discover/landmarks/${slug}` : undefined} current="en" />
       <Link href="/discover/landmarks" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Landmarks</Link>
 
       {site.photo && (

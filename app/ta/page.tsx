@@ -9,6 +9,10 @@ import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
 import { hotels } from "@/data/hotels";
 import { hotelGuides } from "@/data/hotelGuides";
 import { hotelGuidesTa } from "@/data/ta/hotelGuides";
+import { streets } from "@/data/streets";
+import { streetsTa } from "@/data/ta/streets";
+import { sites } from "@/data/sites";
+import { sitesTa } from "@/data/ta/sites";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
 
@@ -49,6 +53,24 @@ export default function TamilHomePage() {
     .map(id => {
       const ta = figuresTa.find(f => f.id === id);
       const en = figures.find(f => f.id === id);
+      return ta && en ? { ta, en } : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const featuredStreetIds = ["rue-de-la-marine", "rue-dumas", "rue-suffren"];
+  const featuredStreets = featuredStreetIds
+    .map(id => {
+      const ta = streetsTa.find(s => s.id === id);
+      const en = streets.find(s => s.id === id);
+      return ta && en ? { ta, en } : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const featuredSiteIds = ["sacred-heart", "notre-dame", "museum"];
+  const featuredSites = featuredSiteIds
+    .map(id => {
+      const ta = sitesTa.find(s => s.id === id);
+      const en = sites.find(s => s.id === id);
       return ta && en ? { ta, en } : null;
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -111,6 +133,50 @@ export default function TamilHomePage() {
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{ta.name}</p>
                 <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 6 }}>{en.dates}</p>
                 <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{en.role}</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── WHITE TOWN STREETS ──────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="வெள்ளை நகர் தெருக்கள்" href="/ta/discover/white-town" />
+        <SectionIntro>40 தெருக்கள், ஒவ்வொன்றும் ஒரு ஆளுநர் அல்லது கடற்படைத் தளபதியின் பெயரில். ஒவ்வொன்றுக்கும் ஒரு கதை உண்டு.</SectionIntro>
+        <ThreeGrid>
+          {featuredStreets.map(({ ta, en }) => (
+            <Link key={ta.id} href={`/ta/discover/white-town/${ta.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/streets/${en.photo}`} alt={en.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{en.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="தளங்களும் சின்னங்களும்" href="/ta/discover/landmarks" />
+        <SectionIntro>தேவாலயங்கள், கோயில்கள், அருங்காட்சியகங்கள் மற்றும் காலனித்துவக் கட்டிடங்கள் — இரண்டாயிரம் ஆண்டுகால உள்ளூர் வரலாறு.</SectionIntro>
+        <ThreeGrid>
+          {featuredSites.map(({ ta, en }) => (
+            <Link key={ta.id} href={`/ta/discover/landmarks/${ta.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/sites/${en.photo}`} alt={ta.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
               </div>
             </Link>
           ))}
