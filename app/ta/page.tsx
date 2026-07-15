@@ -13,6 +13,8 @@ import { streets } from "@/data/streets";
 import { streetsTa } from "@/data/ta/streets";
 import { sites } from "@/data/sites";
 import { sitesTa } from "@/data/ta/sites";
+import { historyArticles } from "@/data/history";
+import { historyArticlesTa } from "@/data/ta/history";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
 
@@ -53,6 +55,15 @@ export default function TamilHomePage() {
     .map(id => {
       const ta = figuresTa.find(f => f.id === id);
       const en = figures.find(f => f.id === id);
+      return ta && en ? { ta, en } : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const featuredHistoryIds = ["dupleix-gamble", "the-handover-1954", "can-anyone-become-french"];
+  const featuredHistory = featuredHistoryIds
+    .map(id => {
+      const ta = historyArticlesTa.find(a => a.id === id);
+      const en = historyArticles.find(a => a.id === id);
       return ta && en ? { ta, en } : null;
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -119,6 +130,28 @@ export default function TamilHomePage() {
         </p>
       </section>
 
+      {/* ── HISTORY ─────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="புதுச்சேரியின் கதை" href="/ta/history" />
+        <SectionIntro>Roman வணிகர்கள் முதல் French ஆட்சி வரை, நகரத்தை வடிவமைத்த வரலாற்று அத்தியாயங்கள்.</SectionIntro>
+        <ThreeGrid>
+          {featuredHistory.map(({ ta, en }) => (
+            <Link key={ta.id} href={`/ta/history/${ta.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/${en.photoFolder ?? "history"}/${en.photo}`} alt={ta.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.title}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.teaser, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="வாழ்க்கை வரலாறுகள்" href="/ta/history/lives-and-legacies" />
@@ -163,7 +196,7 @@ export default function TamilHomePage() {
 
       {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="தளங்களும் சின்னங்களும்" href="/ta/discover/landmarks" />
+        <SectionHeader title="வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்" href="/ta/discover/landmarks" />
         <SectionIntro>தேவாலயங்கள், கோயில்கள், அருங்காட்சியகங்கள் மற்றும் காலனித்துவக் கட்டிடங்கள் — இரண்டாயிரம் ஆண்டுகால உள்ளூர் வரலாறு.</SectionIntro>
         <ThreeGrid>
           {featuredSites.map(({ ta, en }) => (
