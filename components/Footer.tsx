@@ -116,7 +116,7 @@ export default function Footer() {
             <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>{ta ? "செயலி" : fr ? "L'application" : "The App"}</p>
             <p style={{ fontSize: 13, lineHeight: 1.7, marginBottom: 12 }}>
               {ta
-                ? "முழு வழிகாட்டியையும் ஆஃப்லைனில் எடுத்துச் செல்லுங்கள். வரைபடங்கள், வரலாறு மற்றும் பரிந்துரைகள் உங்கள் பையில்."
+                ? "முழு வழிகாட்டியையும் இணைய இணைப்பு இல்லாமலேயே உங்களுடன் எடுத்துச் செல்லுங்கள். வரைபடங்கள், வரலாற்றுத் தகவல்கள் மற்றும் பரிந்துரைகள் அனைத்தும் உங்கள் கையில்."
                 : fr
                 ? "Emportez le guide complet hors ligne. Cartes, histoire et recommandations dans votre poche."
                 : "Take the full guide offline. Maps, history, and recommendations in your pocket."}
