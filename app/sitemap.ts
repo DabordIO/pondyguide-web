@@ -1,9 +1,12 @@
 import type { MetadataRoute } from "next";
 import { historyArticles } from "@/data/history";
 import { historyArticlesTa } from "@/data/ta/history";
+import { historyArticlesFr } from "@/data/fr/history";
 import { institutionArticles } from "@/data/institutions";
+import { institutionArticlesFr } from "@/data/fr/institutions";
 import { figures } from "@/data/figures";
 import { figuresTa } from "@/data/ta/figures";
+import { figuresFr } from "@/data/fr/figures";
 import { restaurants } from "@/data/restaurants";
 import { restaurantGuides } from "@/data/restaurantGuides";
 import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
@@ -50,6 +53,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ta/about`, priority: 0.4 },
     { url: `${BASE}/ta/contact`, priority: 0.3 },
     { url: `${BASE}/ta/sitemap`, priority: 0.2 },
+    { url: `${BASE}/fr`, priority: 0.9 },
+    { url: `${BASE}/fr/history`, priority: 0.8 },
+    { url: `${BASE}/fr/history/institutions`, priority: 0.7 },
+    { url: `${BASE}/fr/history/lives-and-legacies`, priority: 0.7 },
+    { url: `${BASE}/fr/about`, priority: 0.4 },
+    { url: `${BASE}/fr/contact`, priority: 0.3 },
   ].map(p => ({ ...p, lastModified: new Date(), changeFrequency: "monthly" as const }));
 
   const historyPages = historyArticles.map(a => ({
@@ -184,6 +193,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  const historyPagesFr = historyArticlesFr.map(a => ({
+    url: `${BASE}/fr/history/${a.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const institutionPagesFr = institutionArticlesFr.map(a => ({
+    url: `${BASE}/fr/history/institutions/${a.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const figurePagesFr = figuresFr.map(f => ({
+    url: `${BASE}/fr/history/lives-and-legacies/${f.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
   return [
     ...staticPages,
     ...historyPages,
@@ -204,5 +234,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...hotelGuidePagesTa,
     ...streetPagesTa,
     ...landmarkPagesTa,
+    ...historyPagesFr,
+    ...institutionPagesFr,
+    ...figurePagesFr,
   ];
 }
