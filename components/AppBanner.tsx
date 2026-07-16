@@ -25,6 +25,8 @@ const COPY = {
   },
 };
 
+const APP_HREF = { en: "https://pondyguide.com/app", ta: "https://pondyguide.com/ta/app", fr: "https://pondyguide.com/app" };
+
 export default function AppBanner() {
   const locale = getLocale(usePathname());
   const copy = COPY[locale];
@@ -44,7 +46,7 @@ export default function AppBanner() {
         </div>
       </div>
       <a
-        href="https://pondyguide.com/app"
+        href={APP_HREF[locale]}
         style={{ background: "#d4711a", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 28px", borderRadius: 10, textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}
       >
         {copy.cta}
