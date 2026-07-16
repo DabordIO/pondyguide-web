@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/",
       ta: "/ta",
+      fr: "/fr",
       "x-default": "/",
     },
   },
@@ -87,7 +88,7 @@ export default function HomePage() {
 
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "64px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref="/" taHref="/ta" current="en" />
+      <LanguageToggle enHref="/" taHref="/ta" frHref="/fr" current="en" />
 
       {/* ── HERO ────────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72, paddingBottom: 64, borderBottom: "1px solid #e8ddd4" }}>
