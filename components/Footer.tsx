@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { isTamil } from "@/lib/nav";
+import { getLocale } from "@/lib/nav";
 
 function FooterColumn({ title, links }: { title: string; links: [string, string][] }) {
   return (
@@ -17,7 +17,9 @@ function FooterColumn({ title, links }: { title: string; links: [string, string]
 }
 
 export default function Footer() {
-  const ta = isTamil(usePathname());
+  const locale = getLocale(usePathname());
+  const ta = locale === "ta";
+  const fr = locale === "fr";
 
   return (
     <footer style={{ background: "#1c1917", color: "#a8a29e", marginTop: 80 }}>
@@ -33,6 +35,8 @@ export default function Footer() {
             <p style={{ fontSize: 13, lineHeight: 1.7 }}>
               {ta
                 ? "புதுச்சேரியின் வரலாறு, பாரம்பரியம் மற்றும் அறிந்து கொள்ள வேண்டிய அனைத்தையும் உள்ளடக்கிய முழுமையான வழிகாட்டி."
+                : fr
+                ? "Le guide de référence sur l'histoire, le patrimoine et tout ce qu'il faut savoir sur Pondichéry."
                 : "The definitive guide to Puducherry's history, heritage, and everything worth knowing."}
             </p>
           </div>
@@ -44,6 +48,15 @@ export default function Footer() {
                 ["வாழ்க்கை வரலாறுகள்", "/ta/history/lives-and-legacies"],
                 ["வெள்ளை நகர் தெருக்கள்", "/ta/discover/white-town"],
                 ["வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்", "/ta/discover/landmarks"],
+              ]}
+            />
+          ) : fr ? (
+            <FooterColumn
+              title="Explorer"
+              links={[
+                ["Histoire", "/fr/history"],
+                ["Vies et héritages", "/fr/history/lives-and-legacies"],
+                ["Institutions françaises", "/fr/history/institutions"],
               ]}
             />
           ) : (
@@ -58,7 +71,7 @@ export default function Footer() {
             />
           )}
 
-          {ta ? (
+          {ta && (
             <FooterColumn
               title="திட்டமிடுங்கள்"
               links={[
@@ -66,7 +79,8 @@ export default function Footer() {
                 ["ஹோட்டல்கள்", "/ta/hotels"],
               ]}
             />
-          ) : (
+          )}
+          {!ta && !fr && (
             <FooterColumn
               title="Plan"
               links={[
@@ -82,22 +96,33 @@ export default function Footer() {
             <FooterColumn
               title="மேலும்"
               links={[
-                ["About", "/about"],
-                ["Contact", "/contact"],
-                ["Sitemap", "/sitemap"],
+                ["About", "/ta/about"],
+                ["Contact", "/ta/contact"],
+                ["Sitemap", "/ta/sitemap"],
+              ]}
+            />
+          )}
+          {fr && (
+            <FooterColumn
+              title="Plus"
+              links={[
+                ["À propos", "/fr/about"],
+                ["Contact", "/fr/contact"],
               ]}
             />
           )}
 
           <div>
-            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>{ta ? "செயலி" : "The App"}</p>
+            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>{ta ? "செயலி" : fr ? "L'application" : "The App"}</p>
             <p style={{ fontSize: 13, lineHeight: 1.7, marginBottom: 12 }}>
               {ta
                 ? "முழு வழிகாட்டியையும் ஆஃப்லைனில் எடுத்துச் செல்லுங்கள். வரைபடங்கள், வரலாறு மற்றும் பரிந்துரைகள் உங்கள் பையில்."
+                : fr
+                ? "Emportez le guide complet hors ligne. Cartes, histoire et recommandations dans votre poche."
                 : "Take the full guide offline. Maps, history, and recommendations in your pocket."}
             </p>
             <Link href="/app" style={{ display: "inline-block", background: "#d4711a", color: "#fff", fontSize: 13, fontWeight: 700, padding: "8px 16px", borderRadius: 8, textDecoration: "none" }}>
-              {ta ? "Pondy App-ஐப் பெறுங்கள்" : "Get the Pondy App"}
+              {ta ? "Pondy App-ஐப் பெறுங்கள்" : fr ? "Obtenir l'appli Pondy" : "Get the Pondy App"}
             </Link>
           </div>
         </div>
@@ -106,11 +131,20 @@ export default function Footer() {
         <p style={{ fontSize: 12, color: "#a8a29e" }}>
           {ta
             ? `© ${new Date().getFullYear()} பாண்டி வழிகாட்டி. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.`
+            : fr
+            ? `© ${new Date().getFullYear()} Pondy Guide. Tous droits réservés.`
             : `© ${new Date().getFullYear()} Pondy Guide. All rights reserved.`}
         </p>
-        {!ta && (
+        {!ta && !fr && (
           <div style={{ display: "flex", gap: 24 }}>
             {[["About", "/about"], ["Contact", "/contact"], ["Sitemap", "/sitemap"]].map(([label, href]) => (
+              <Link key={href} href={href} style={{ fontSize: 12, color: "#a8a29e", textDecoration: "none" }}>{label}</Link>
+            ))}
+          </div>
+        )}
+        {fr && (
+          <div style={{ display: "flex", gap: 24 }}>
+            {[["À propos", "/fr/about"], ["Contact", "/fr/contact"]].map(([label, href]) => (
               <Link key={href} href={href} style={{ fontSize: 12, color: "#a8a29e", textDecoration: "none" }}>{label}</Link>
             ))}
           </div>

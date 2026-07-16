@@ -1,4 +1,5 @@
 export type NavItem = { label: string; href: string };
+export type Locale = "en" | "ta" | "fr";
 
 export const navEn: NavItem[] = [
   { label: "History", href: "/history" },
@@ -22,6 +23,25 @@ export const navTa: NavItem[] = [
   { label: "வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்", href: "/ta/discover/landmarks" },
 ];
 
+// Mirrors the sections actually published on the French homepage (app/fr/page.tsx), in the
+// same order — items without a French translation yet (Discover, Hotels, Restaurants, Auroville,
+// Festivals, Plan) are omitted.
+export const navFr: NavItem[] = [
+  { label: "Histoire", href: "/fr/history" },
+  { label: "Vies et héritages", href: "/fr/history/lives-and-legacies" },
+  { label: "Institutions françaises", href: "/fr/history/institutions" },
+];
+
 export function isTamil(pathname: string): boolean {
   return pathname === "/ta" || pathname.startsWith("/ta/");
+}
+
+export function isFrench(pathname: string): boolean {
+  return pathname === "/fr" || pathname.startsWith("/fr/");
+}
+
+export function getLocale(pathname: string): Locale {
+  if (isTamil(pathname)) return "ta";
+  if (isFrench(pathname)) return "fr";
+  return "en";
 }

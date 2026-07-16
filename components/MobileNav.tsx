@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navEn, navTa, isTamil } from "@/lib/nav";
+import { navEn, navTa, navFr, getLocale } from "@/lib/nav";
 
 function bestMatch(nav: { href: string }[], pathname: string) {
   return nav.reduce<string | null>((best, item) => {
@@ -12,10 +12,12 @@ function bestMatch(nav: { href: string }[], pathname: string) {
   }, null);
 }
 
+const NAV_BY_LOCALE = { en: navEn, ta: navTa, fr: navFr };
+
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  const nav = isTamil(pathname) ? navTa : navEn;
+  const nav = NAV_BY_LOCALE[getLocale(pathname)];
   const activeHref = bestMatch(nav, pathname);
 
   return (
