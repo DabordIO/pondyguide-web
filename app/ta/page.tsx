@@ -172,6 +172,30 @@ export default function TamilHomePage() {
         </ThreeGrid>
       </section>
 
+      {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="புதுச்சேரியில் ஹோட்டல்கள்" href="/ta/hotels" />
+        <SectionIntro>
+          White Town-இன் பாரம்பரிய மாளிகைகள் முதல் கடற்கரை ரிசார்ட்கள் வரை — உங்கள் பயணத்திற்கு ஏற்ற தங்குமிடத்தைத் தேர்வு செய்ய உதவும் வழிகாட்டிகள்.
+        </SectionIntro>
+        <ThreeGrid>
+          {featuredHotelGuides.map(({ ta, en, photo }) => (
+            <Link key={ta.id} href={`/ta/hotels/guides/${en.slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/hotels/${photo}`} alt={ta.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.title}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.intro?.split("\n\n")[0] ?? "", 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── WHITE TOWN STREETS ──────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="வெள்ளை நகர் தெருக்கள்" href="/ta/discover/white-town" />
@@ -186,28 +210,6 @@ export default function TamilHomePage() {
               )}
               <div style={{ padding: "16px 18px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{en.name}</p>
-                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.summary, 115)}</p>
-                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
-              </div>
-            </Link>
-          ))}
-        </ThreeGrid>
-      </section>
-
-      {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
-      <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்" href="/ta/discover/landmarks" />
-        <SectionIntro>தேவாலயங்கள், கோயில்கள், அருங்காட்சியகங்கள் மற்றும் காலனித்துவக் கட்டிடங்கள் — இரண்டாயிரம் ஆண்டுகால உள்ளூர் வரலாறு.</SectionIntro>
-        <ThreeGrid>
-          {featuredSites.map(({ ta, en }) => (
-            <Link key={ta.id} href={`/ta/discover/landmarks/${ta.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              {en.photo && (
-                <div style={{ position: "relative", width: "100%", height: 180 }}>
-                  <Image src={`/sites/${en.photo}`} alt={ta.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
-                </div>
-              )}
-              <div style={{ padding: "16px 18px 18px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.name}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.summary, 115)}</p>
                 <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
               </div>
@@ -240,23 +242,21 @@ export default function TamilHomePage() {
         </ThreeGrid>
       </section>
 
-      {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
+      {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="புதுச்சேரியில் ஹோட்டல்கள்" href="/ta/hotels" />
-        <SectionIntro>
-          White Town-இன் பாரம்பரிய மாளிகைகள் முதல் கடற்கரை ரிசார்ட்கள் வரை — உங்கள் பயணத்திற்கு ஏற்ற தங்குமிடத்தைத் தேர்வு செய்ய உதவும் வழிகாட்டிகள்.
-        </SectionIntro>
+        <SectionHeader title="வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்" href="/ta/discover/landmarks" />
+        <SectionIntro>தேவாலயங்கள், கோயில்கள், அருங்காட்சியகங்கள் மற்றும் காலனித்துவக் கட்டிடங்கள் — இரண்டாயிரம் ஆண்டுகால உள்ளூர் வரலாறு.</SectionIntro>
         <ThreeGrid>
-          {featuredHotelGuides.map(({ ta, en, photo }) => (
-            <Link key={ta.id} href={`/ta/hotels/guides/${en.slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              {photo && (
+          {featuredSites.map(({ ta, en }) => (
+            <Link key={ta.id} href={`/ta/discover/landmarks/${ta.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
                 <div style={{ position: "relative", width: "100%", height: 180 }}>
-                  <Image src={`/hotels/${photo}`} alt={ta.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                  <Image src={`/sites/${en.photo}`} alt={ta.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
                 </div>
               )}
-              <div style={{ padding: "14px 16px 18px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.title}</p>
-                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.intro?.split("\n\n")[0] ?? "", 115)}</p>
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.summary, 115)}</p>
                 <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
               </div>
             </Link>

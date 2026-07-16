@@ -11,14 +11,15 @@ export const navEn: NavItem[] = [
   { label: "Plan", href: "/plan" },
 ];
 
-// Mirrors the sections actually published on the Tamil homepage (app/ta/page.tsx) —
-// items without a Tamil translation yet (Discover overview, Auroville, Festivals, Plan) are omitted.
+// Mirrors the sections actually published on the Tamil homepage (app/ta/page.tsx), in the
+// same order — items without a Tamil translation yet (Discover overview, Auroville, Festivals, Plan) are omitted.
 export const navTa: NavItem[] = [
+  { label: "புதுச்சேரியின் கதை", href: "/ta/history" },
   { label: "வாழ்க்கை வரலாறுகள்", href: "/ta/history/lives-and-legacies" },
-  { label: "வெள்ளை நகர் தெருக்கள்", href: "/ta/discover/white-town" },
-  { label: "வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்", href: "/ta/discover/landmarks" },
-  { label: "உணவகங்கள்", href: "/ta/restaurants" },
   { label: "ஹோட்டல்கள்", href: "/ta/hotels" },
+  { label: "வெள்ளை நகர் தெருக்கள்", href: "/ta/discover/white-town" },
+  { label: "உணவகங்கள்", href: "/ta/restaurants" },
+  { label: "வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்", href: "/ta/discover/landmarks" },
 ];
 
 export function isTamil(pathname: string): boolean {
