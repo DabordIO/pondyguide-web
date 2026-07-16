@@ -1,14 +1,20 @@
 import type { MetadataRoute } from "next";
 import { historyArticles } from "@/data/history";
+import { historyArticlesTa } from "@/data/ta/history";
 import { institutionArticles } from "@/data/institutions";
 import { figures } from "@/data/figures";
+import { figuresTa } from "@/data/ta/figures";
 import { restaurants } from "@/data/restaurants";
 import { restaurantGuides } from "@/data/restaurantGuides";
+import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
 import { hotels } from "@/data/hotels";
 import { hotelGuides } from "@/data/hotelGuides";
+import { hotelGuidesTa } from "@/data/ta/hotelGuides";
 import { festivals } from "@/data/festivals";
 import { streets } from "@/data/streets";
+import { streetsTa } from "@/data/ta/streets";
 import { sites } from "@/data/sites";
+import { sitesTa } from "@/data/ta/sites";
 import { aurovilleArticles } from "@/data/auroville";
 import { exploreArticles } from "@/data/explore";
 
@@ -32,6 +38,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/discover/auroville`, priority: 0.8 },
     { url: `${BASE}/discover/explore`, priority: 0.8 },
     { url: `${BASE}/about`, priority: 0.5 },
+    { url: `${BASE}/contact`, priority: 0.3 },
+    { url: `${BASE}/sitemap`, priority: 0.2 },
+    { url: `${BASE}/ta`, priority: 0.9 },
+    { url: `${BASE}/ta/history`, priority: 0.8 },
+    { url: `${BASE}/ta/history/lives-and-legacies`, priority: 0.7 },
+    { url: `${BASE}/ta/discover/white-town`, priority: 0.7 },
+    { url: `${BASE}/ta/discover/landmarks`, priority: 0.7 },
+    { url: `${BASE}/ta/restaurants`, priority: 0.7 },
+    { url: `${BASE}/ta/hotels`, priority: 0.7 },
+    { url: `${BASE}/ta/about`, priority: 0.4 },
+    { url: `${BASE}/ta/contact`, priority: 0.3 },
+    { url: `${BASE}/ta/sitemap`, priority: 0.2 },
   ].map(p => ({ ...p, lastModified: new Date(), changeFrequency: "monthly" as const }));
 
   const historyPages = historyArticles.map(a => ({
@@ -122,6 +140,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const historyPagesTa = historyArticlesTa.map(a => ({
+    url: `${BASE}/ta/history/${a.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const figurePagesTa = figuresTa.map(f => ({
+    url: `${BASE}/ta/history/lives-and-legacies/${f.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const restaurantGuidePagesTa = restaurantGuidesTa
+    .filter(g => g.intro)
+    .map(g => {
+      const en = restaurantGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/ta/restaurants/guides/${en.slug}`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const hotelGuidePagesTa = hotelGuidesTa
+    .filter(g => g.intro)
+    .map(g => {
+      const en = hotelGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/ta/hotels/guides/${en.slug}`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const streetPagesTa = streetsTa.map(s => ({
+    url: `${BASE}/ta/discover/white-town/${s.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  const landmarkPagesTa = sitesTa.map(s => ({
+    url: `${BASE}/ta/discover/landmarks/${s.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
   return [
     ...staticPages,
     ...historyPages,
@@ -136,5 +198,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...landmarkPages,
     ...aurovillePages,
     ...explorePages,
+    ...historyPagesTa,
+    ...figurePagesTa,
+    ...restaurantGuidePagesTa,
+    ...hotelGuidePagesTa,
+    ...streetPagesTa,
+    ...landmarkPagesTa,
   ];
 }

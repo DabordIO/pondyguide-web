@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "Contact Pondy Guide and Send Us a Message",
   description: "Contact the Pondy Guide team with questions, suggestions or corrections about the site and its research.",
+  alternates: {
+    languages: {
+      en: "/contact",
+      ta: "/ta/contact",
+      "x-default": "/contact",
+    },
+  },
 };
 
 export default function ContactPage() {
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "56px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/contact" taHref="/ta/contact" current="en" />
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Contact</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 2.75rem)", fontWeight: 700, color: "#1c1917", marginBottom: 32, lineHeight: 1.2 }}>
         Get in touch

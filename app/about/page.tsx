@@ -1,14 +1,23 @@
 import type { Metadata } from "next";
 import AppBanner from "@/components/AppBanner";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "About Pondy Guide and the People Behind It",
   description: "Learn how two friends with family roots in Pondicherry built an independent guide focused on history and place.",
+  alternates: {
+    languages: {
+      en: "/about",
+      ta: "/ta/about",
+      "x-default": "/about",
+    },
+  },
 };
 
 export default function AboutPage() {
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "56px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/about" taHref="/ta/about" current="en" />
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>About</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 2.75rem)", fontWeight: 700, color: "#1c1917", marginBottom: 32, lineHeight: 1.2 }}>
         Why this guide exists
