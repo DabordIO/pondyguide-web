@@ -16,7 +16,7 @@ export const navEn: NavItem[] = [
 export const navTa: NavItem[] = [
   { label: "வாழ்க்கை வரலாறுகள்", href: "/ta/history/lives-and-legacies" },
   { label: "வெள்ளை நகர் தெருக்கள்", href: "/ta/discover/white-town" },
-  { label: "தளங்களும் சின்னங்களும்", href: "/ta/discover/landmarks" },
+  { label: "வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்", href: "/ta/discover/landmarks" },
   { label: "உணவகங்கள்", href: "/ta/restaurants" },
   { label: "ஹோட்டல்கள்", href: "/ta/hotels" },
 ];

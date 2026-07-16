@@ -43,7 +43,7 @@ export default function Footer() {
               links={[
                 ["வாழ்க்கை வரலாறுகள்", "/ta/history/lives-and-legacies"],
                 ["வெள்ளை நகர் தெருக்கள்", "/ta/discover/white-town"],
-                ["தளங்களும் சின்னங்களும்", "/ta/discover/landmarks"],
+                ["வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்", "/ta/discover/landmarks"],
               ]}
             />
           ) : (

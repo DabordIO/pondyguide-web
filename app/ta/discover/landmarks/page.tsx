@@ -31,10 +31,10 @@ export default function LandmarksPageTa() {
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>சின்னங்கள்</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
-        தளங்களும் சின்னங்களும்
+        வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 640, lineHeight: 1.8, marginBottom: 56 }}>
-        அரிக்கமேட்டின் ரோமானியகால இடிபாடுகள் முதல் கடற்கரையில் உள்ள பிரெஞ்சு தூதரகம் வரை, புதுச்சேரியின் சின்னங்கள் இரண்டாயிரம் ஆண்டுகளுக்கும் மேலான வரலாற்றை உள்ளடக்கியவை.
+        அரிக்கமேட்டின் ரோமானியக் கால இடிபாடுகள் முதல் கடற்கரையில் உள்ள பிரெஞ்சு தூதரகம் வரை, புதுச்சேரியின் வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும் இரண்டாயிரம் ஆண்டுகளுக்கும் மேலான கடந்த காலத்தைச் சுமந்து நிற்கின்றன.
       </p>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
