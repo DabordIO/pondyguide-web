@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { restaurantGuides } from "@/data/restaurantGuides";
 import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
+import { restaurantGuidesFr } from "@/data/fr/restaurantGuides";
 import { restaurants } from "@/data/restaurants";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = findGuide(slug);
   if (!guide) return {};
+  const hasFr = restaurantGuidesFr.some(g => g.id === guide.en.id);
   return {
     title: guide.ta.metaTitle ?? guide.ta.title,
     description: guide.ta.metaDescription,
@@ -36,6 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/restaurants/guides/${slug}`,
         ta: `/ta/restaurants/guides/${slug}`,
+        ...(hasFr ? { fr: `/fr/restaurants/guides/${slug}` } : {}),
         "x-default": `/restaurants/guides/${slug}`,
       },
     },
@@ -49,6 +52,7 @@ export default async function RestaurantGuidePageTa({ params }: { params: Promis
   const guide = findGuide(slug);
   if (!guide) notFound();
   const { en, ta } = guide;
+  const hasFr = restaurantGuidesFr.some(g => g.id === en.id);
 
   const entries = en.restaurantIds
     .map(id => restaurants.find(r => r.id === id))
@@ -56,7 +60,7 @@ export default async function RestaurantGuidePageTa({ params }: { params: Promis
 
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/restaurants/guides/${en.slug}`} taHref={`/ta/restaurants/guides/${en.slug}`} current="ta" />
+      <LanguageToggle enHref={`/restaurants/guides/${en.slug}`} taHref={`/ta/restaurants/guides/${en.slug}`} frHref={hasFr ? `/fr/restaurants/guides/${en.slug}` : undefined} current="ta" />
       <Link href="/ta/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← உணவகங்கள்</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

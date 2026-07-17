@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { sites } from "@/data/sites";
 import { sitesTa } from "@/data/ta/sites";
+import { sitesFr } from "@/data/fr/sites";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const entry = findEntry(slug);
   if (!entry) return {};
   const { ta, en } = entry;
+  const hasFr = sitesFr.some(s => s.id === slug);
   return {
     title: ta.metaTitle ?? `${ta.name} — புதுச்சேரி`,
     description: ta.metaDescription ?? ta.summary,
@@ -34,6 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/discover/landmarks/${slug}`,
         ta: `/ta/discover/landmarks/${slug}`,
+        ...(hasFr ? { fr: `/fr/discover/landmarks/${slug}` } : {}),
         "x-default": `/discover/landmarks/${slug}`,
       },
     },
@@ -45,6 +48,7 @@ export default async function LandmarkPageTa({ params }: { params: Promise<{ slu
   const entry = findEntry(slug);
   if (!entry) notFound();
   const { ta, en } = entry;
+  const hasFr = sitesFr.some(s => s.id === slug);
 
   const idx = sitesTa.findIndex(s => s.id === slug);
   const prev = idx > 0 ? sitesTa[idx - 1] : null;
@@ -52,7 +56,7 @@ export default async function LandmarkPageTa({ params }: { params: Promise<{ slu
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/discover/landmarks/${slug}`} taHref={`/ta/discover/landmarks/${slug}`} current="ta" />
+      <LanguageToggle enHref={`/discover/landmarks/${slug}`} taHref={`/ta/discover/landmarks/${slug}`} frHref={hasFr ? `/fr/discover/landmarks/${slug}` : undefined} current="ta" />
       <Link href="/ta/discover/landmarks" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← சின்னங்கள்</Link>
 
       {en.photo && (

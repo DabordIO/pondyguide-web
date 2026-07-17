@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { restaurantGuides } from "@/data/restaurantGuides";
 import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "புதுச்சேரியில் உணவகங்கள்",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/restaurants",
       ta: "/ta/restaurants",
+      fr: "/fr/restaurants",
       "x-default": "/restaurants",
     },
   },
@@ -34,7 +36,8 @@ export default function RestaurantsPageTa() {
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/restaurants" taHref="/ta/restaurants" frHref="/fr/restaurants" current="ta" />
       <Link href="/ta" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← முகப்பு</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>உணவு</p>

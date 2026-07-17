@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { institutionArticles } from "@/data/institutions";
 import { institutionArticlesTa } from "@/data/ta/institutions";
+import { institutionArticlesFr } from "@/data/fr/institutions";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
@@ -33,6 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const entry = findEntry(slug);
   if (!entry) return {};
   const { ta, en } = entry;
+  const hasFr = institutionArticlesFr.some(a => a.id === slug);
   return {
     title: ta.metaTitle ?? `${ta.title} — Pondicherry`,
     description: ta.metaDescription ?? ta.teaser,
@@ -41,6 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/history/institutions/${slug}`,
         ta: `/ta/history/institutions/${slug}`,
+        ...(hasFr ? { fr: `/fr/history/institutions/${slug}` } : {}),
         "x-default": `/history/institutions/${slug}`,
       },
     },
@@ -52,6 +55,7 @@ export default async function InstitutionPageTa({ params }: { params: Promise<{ 
   const entry = findEntry(slug);
   if (!entry) notFound();
   const { ta, en } = entry;
+  const hasFr = institutionArticlesFr.some(a => a.id === slug);
 
   const idx = institutionArticlesTa.findIndex(a => a.id === slug);
   const prev = idx > 0 ? institutionArticlesTa[idx - 1] : null;
@@ -59,7 +63,7 @@ export default async function InstitutionPageTa({ params }: { params: Promise<{ 
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/history/institutions/${slug}`} taHref={`/ta/history/institutions/${slug}`} current="ta" />
+      <LanguageToggle enHref={`/history/institutions/${slug}`} taHref={`/ta/history/institutions/${slug}`} frHref={hasFr ? `/fr/history/institutions/${slug}` : undefined} current="ta" />
       <JsonLd
         data={{
           "@context": "https://schema.org",

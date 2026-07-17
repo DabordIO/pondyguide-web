@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { streets } from "@/data/streets";
 import { streetsTa } from "@/data/ta/streets";
+import { streetsFr } from "@/data/fr/streets";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const entry = findEntry(slug);
   if (!entry) return {};
   const { ta, en } = entry;
+  const hasFr = streetsFr.some(s => s.id === slug);
   return {
     title: ta.metaTitle ?? `${en.name} — வெள்ளை நகர், புதுச்சேரி`,
     description: ta.metaDescription ?? ta.summary,
@@ -34,6 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/discover/white-town/${slug}`,
         ta: `/ta/discover/white-town/${slug}`,
+        ...(hasFr ? { fr: `/fr/discover/white-town/${slug}` } : {}),
         "x-default": `/discover/white-town/${slug}`,
       },
     },
@@ -45,6 +48,7 @@ export default async function StreetPageTa({ params }: { params: Promise<{ slug:
   const entry = findEntry(slug);
   if (!entry) notFound();
   const { ta, en } = entry;
+  const hasFr = streetsFr.some(s => s.id === slug);
 
   const idx = streetsTa.findIndex(s => s.id === slug);
   const prev = idx > 0 ? streetsTa[idx - 1] : null;
@@ -54,7 +58,7 @@ export default async function StreetPageTa({ params }: { params: Promise<{ slug:
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/discover/white-town/${slug}`} taHref={`/ta/discover/white-town/${slug}`} current="ta" />
+      <LanguageToggle enHref={`/discover/white-town/${slug}`} taHref={`/ta/discover/white-town/${slug}`} frHref={hasFr ? `/fr/discover/white-town/${slug}` : undefined} current="ta" />
       <Link href="/ta/discover/white-town" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← வெள்ளை நகர் தெருக்கள்</Link>
 
       {en.photo && (

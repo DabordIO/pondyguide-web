@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { hotelGuides } from "@/data/hotelGuides";
 import { hotelGuidesFr } from "@/data/fr/hotelGuides";
+import { hotelGuidesTa } from "@/data/ta/hotelGuides";
 import { hotels } from "@/data/hotels";
 import { hotelsFr } from "@/data/fr/hotels";
 import ArticleBody from "@/components/ArticleBody";
@@ -32,7 +33,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const entry = findGuide(slug);
   if (!entry) return {};
-  const { fr } = entry;
+  const { en, fr } = entry;
+  const hasTa = hotelGuidesTa.some(g => g.id === en.id);
   return {
     title: fr.metaTitle ?? fr.title,
     description: fr.metaDescription,
@@ -40,6 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/hotels/guides/${slug}`,
         fr: `/fr/hotels/guides/${slug}`,
+        ...(hasTa ? { ta: `/ta/hotels/guides/${slug}` } : {}),
         "x-default": `/hotels/guides/${slug}`,
       },
     },
@@ -53,6 +56,7 @@ export default async function HotelGuidePageFr({ params }: { params: Promise<{ s
   const entry = findGuide(slug);
   if (!entry) notFound();
   const { en: guide, fr } = entry;
+  const hasTa = hotelGuidesTa.some(g => g.id === guide.id);
 
   const entries = guide.hotelIds
     .map(id => {
@@ -64,7 +68,7 @@ export default async function HotelGuidePageFr({ params }: { params: Promise<{ s
 
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/hotels/guides/${guide.slug}`} frHref={`/fr/hotels/guides/${guide.slug}`} current="fr" />
+      <LanguageToggle enHref={`/hotels/guides/${guide.slug}`} taHref={hasTa ? `/ta/hotels/guides/${guide.slug}` : undefined} frHref={`/fr/hotels/guides/${guide.slug}`} current="fr" />
       <Link href="/fr/hotels" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Hôtels</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

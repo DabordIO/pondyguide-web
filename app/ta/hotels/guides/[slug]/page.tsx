@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { hotelGuides } from "@/data/hotelGuides";
 import { hotelGuidesTa } from "@/data/ta/hotelGuides";
+import { hotelGuidesFr } from "@/data/fr/hotelGuides";
 import { hotels } from "@/data/hotels";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = findGuide(slug);
   if (!guide) return {};
+  const hasFr = hotelGuidesFr.some(g => g.id === guide.en.id);
   return {
     title: guide.ta.metaTitle ?? guide.ta.title,
     description: guide.ta.metaDescription,
@@ -36,6 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/hotels/guides/${slug}`,
         ta: `/ta/hotels/guides/${slug}`,
+        ...(hasFr ? { fr: `/fr/hotels/guides/${slug}` } : {}),
         "x-default": `/hotels/guides/${slug}`,
       },
     },
@@ -49,6 +52,7 @@ export default async function HotelGuidePageTa({ params }: { params: Promise<{ s
   const guide = findGuide(slug);
   if (!guide) notFound();
   const { en, ta } = guide;
+  const hasFr = hotelGuidesFr.some(g => g.id === en.id);
 
   const entries = en.hotelIds
     .map(id => hotels.find(h => h.id === id))
@@ -56,7 +60,7 @@ export default async function HotelGuidePageTa({ params }: { params: Promise<{ s
 
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/hotels/guides/${en.slug}`} taHref={`/ta/hotels/guides/${en.slug}`} current="ta" />
+      <LanguageToggle enHref={`/hotels/guides/${en.slug}`} taHref={`/ta/hotels/guides/${en.slug}`} frHref={hasFr ? `/fr/hotels/guides/${en.slug}` : undefined} current="ta" />
       <Link href="/ta/hotels" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← ஹோட்டல்கள்</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

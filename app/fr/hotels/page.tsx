@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   alternates: {
     languages: {
       en: "/hotels",
+      ta: "/ta/hotels",
       fr: "/fr/hotels",
       "x-default": "/hotels",
     },
@@ -47,7 +48,7 @@ function GuideCard({ title, slug, photos, span }: { title: string; slug: string;
 export default function HotelsPageFr() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref="/hotels" frHref="/fr/hotels" current="fr" />
+      <LanguageToggle enHref="/hotels" taHref="/ta/hotels" frHref="/fr/hotels" current="fr" />
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Séjourner</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>

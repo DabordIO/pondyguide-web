@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { historyArticles } from "@/data/history";
 import { historyArticlesTa } from "@/data/ta/history";
+import { historyArticlesFr } from "@/data/fr/history";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const entry = findEntry(slug);
   if (!entry) return {};
   const { ta, en } = entry;
+  const hasFr = historyArticlesFr.some(a => a.id === slug);
   return {
     title: ta.metaTitle ?? ta.title,
     description: ta.metaDescription ?? ta.teaser,
@@ -35,6 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/history/${slug}`,
         ta: `/ta/history/${slug}`,
+        ...(hasFr ? { fr: `/fr/history/${slug}` } : {}),
         "x-default": `/history/${slug}`,
       },
     },
@@ -46,6 +49,7 @@ export default async function HistoryArticlePageTa({ params }: { params: Promise
   const entry = findEntry(slug);
   if (!entry) notFound();
   const { ta, en } = entry;
+  const hasFr = historyArticlesFr.some(a => a.id === slug);
 
   const idx = historyArticlesTa.findIndex(a => a.id === slug);
   const prev = idx > 0 ? historyArticlesTa[idx - 1] : null;
@@ -53,7 +57,7 @@ export default async function HistoryArticlePageTa({ params }: { params: Promise
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/history/${slug}`} taHref={`/ta/history/${slug}`} current="ta" />
+      <LanguageToggle enHref={`/history/${slug}`} taHref={`/ta/history/${slug}`} frHref={hasFr ? `/fr/history/${slug}` : undefined} current="ta" />
       <JsonLd
         data={{
           "@context": "https://schema.org",

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { institutionArticles } from "@/data/institutions";
 import { institutionArticlesFr } from "@/data/fr/institutions";
+import { institutionArticlesTa } from "@/data/ta/institutions";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const entry = findEntry(slug);
   if (!entry) return {};
   const { fr, en } = entry;
+  const hasTa = institutionArticlesTa.some(a => a.id === slug);
   return {
     title: fr.metaTitle ?? `${fr.title} — Pondichéry`,
     description: fr.metaDescription ?? fr.teaser,
@@ -35,6 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/history/institutions/${slug}`,
         fr: `/fr/history/institutions/${slug}`,
+        ...(hasTa ? { ta: `/ta/history/institutions/${slug}` } : {}),
         "x-default": `/history/institutions/${slug}`,
       },
     },
@@ -52,6 +55,7 @@ export default async function InstitutionPageFr({ params }: { params: Promise<{ 
   const entry = findEntry(slug);
   if (!entry) notFound();
   const { fr, en } = entry;
+  const hasTa = institutionArticlesTa.some(a => a.id === slug);
 
   const idx = institutionArticlesFr.findIndex(a => a.id === slug);
   const prev = idx > 0 ? institutionArticlesFr[idx - 1] : null;
@@ -59,7 +63,7 @@ export default async function InstitutionPageFr({ params }: { params: Promise<{ 
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/history/institutions/${slug}`} frHref={`/fr/history/institutions/${slug}`} current="fr" />
+      <LanguageToggle enHref={`/history/institutions/${slug}`} taHref={hasTa ? `/ta/history/institutions/${slug}` : undefined} frHref={`/fr/history/institutions/${slug}`} current="fr" />
       <JsonLd
         data={{
           "@context": "https://schema.org",
