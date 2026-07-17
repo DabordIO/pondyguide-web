@@ -32,6 +32,7 @@ export const navFr: NavItem[] = [
   { label: "Histoire", href: "/fr/history" },
   { label: "Vies et héritages", href: "/fr/history/lives-and-legacies" },
   { label: "Institutions françaises", href: "/fr/history/institutions" },
+  { label: "Rues", href: "/fr/discover/white-town" },
 ];
 
 export function isTamil(pathname: string): boolean {

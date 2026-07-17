@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { streets } from "@/data/streets";
 import { streetsTa } from "@/data/ta/streets";
+import { streetsFr } from "@/data/fr/streets";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const s = streets.find(s => s.id === slug);
   if (!s) return {};
   const hasTa = streetsTa.some(t => t.id === slug);
+  const hasFr = streetsFr.some(f => f.id === slug);
   return {
     title: s.metaTitle ?? `${s.name} — White Town, Pondicherry`,
     description: s.metaDescription ?? s.summary,
@@ -27,6 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/discover/white-town/${slug}`,
         ta: hasTa ? `/ta/discover/white-town/${slug}` : undefined,
+        fr: hasFr ? `/fr/discover/white-town/${slug}` : undefined,
         "x-default": `/discover/white-town/${slug}`,
       },
     },
@@ -48,10 +51,11 @@ export default async function StreetPage({ params }: { params: Promise<{ slug: s
   const prev = idx > 0 ? streets[idx - 1] : null;
   const next = idx < streets.length - 1 ? streets[idx + 1] : null;
   const hasTa = streetsTa.some(t => t.id === slug);
+  const hasFr = streetsFr.some(f => f.id === slug);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref={`/discover/white-town/${slug}`} taHref={hasTa ? `/ta/discover/white-town/${slug}` : undefined} current="en" />
+      <LanguageToggle enHref={`/discover/white-town/${slug}`} taHref={hasTa ? `/ta/discover/white-town/${slug}` : undefined} frHref={hasFr ? `/fr/discover/white-town/${slug}` : undefined} current="en" />
       <Link href="/discover/white-town" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← White Town Streets</Link>
 
       {street.photo && (

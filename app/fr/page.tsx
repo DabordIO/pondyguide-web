@@ -7,6 +7,8 @@ import { institutionArticles } from "@/data/institutions";
 import { institutionArticlesFr } from "@/data/fr/institutions";
 import { figures } from "@/data/figures";
 import { figuresFr } from "@/data/fr/figures";
+import { streets } from "@/data/streets";
+import { streetsFr } from "@/data/fr/streets";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
 
@@ -65,6 +67,15 @@ export default function FrenchHomePage() {
     .map(id => {
       const fr = figuresFr.find(f => f.id === id);
       const en = figures.find(f => f.id === id);
+      return fr && en ? { fr, en } : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const featuredStreetIds = ["rue-de-la-marine", "rue-dumas", "rue-suffren"];
+  const featuredStreets = featuredStreetIds
+    .map(id => {
+      const fr = streetsFr.find(s => s.id === id);
+      const en = streets.find(s => s.id === id);
       return fr && en ? { fr, en } : null;
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -142,6 +153,28 @@ export default function FrenchHomePage() {
               <div style={{ padding: "16px 18px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{fr.title}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.teaser, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── WHITE TOWN STREETS ──────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Les rues du quartier français" href="/fr/discover/white-town" />
+        <SectionIntro>40 rues, chacune nommée d'après un gouverneur ou un amiral. Chacune a son histoire.</SectionIntro>
+        <ThreeGrid>
+          {featuredStreets.map(({ fr, en }) => (
+            <Link key={fr.id} href={`/fr/discover/white-town/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/streets/${en.photo}`} alt={en.altName ?? en.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{en.altName ?? en.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
                 <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
               </div>
             </Link>
