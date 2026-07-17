@@ -131,7 +131,7 @@ export default function FrenchHomePage() {
 
       {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Où dormir" href="/fr/hotels" />
+        <SectionHeader title="Où séjourner" href="/fr/hotels" />
         <SectionIntro>25 adresses soigneusement sélectionnées, des hôtels boutique patrimoniaux aux maisons d'hôtes économiques, pour tous les goûts.</SectionIntro>
         <ThreeGrid>
           {[
