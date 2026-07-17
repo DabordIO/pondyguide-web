@@ -86,7 +86,7 @@ La communauté qu'il dessert comprend des citoyens français nés à Pondichéry
 
 **Le 14 juillet et le monument aux morts**
 
-Chaque année, le 14 juillet, le Consulat organise les cérémonies du [14 juillet](/festivals/bastille-day) qui demeurent une véritable occasion civique à Pondichéry. Des gerbes sont déposées au [monument aux morts français](/discover/landmarks/war-memorial) sur l'[avenue Goubert](/discover/white-town/avenue-goubert), en présence d'officiels français, de familles d'anciens combattants et de membres de la communauté franco-tamoule. Ces cérémonies ne sont pas de la pompe. Elles reflètent une histoire partagée qui dépasse la diplomatie pour toucher la mémoire et l'identité, reliant la ville aux soldats qu'elle envoya sur le front occidental, en Afrique du Nord, en Indochine, et aux familles que ces soldats laissèrent derrière eux.
+Chaque année, le 14 juillet, le Consulat organise les cérémonies du [14 juillet](/festivals/bastille-day) qui demeurent une véritable occasion civique à Pondichéry. Des gerbes sont déposées au [monument aux morts français](/fr/discover/landmarks/war-memorial) sur l'[avenue Goubert](/fr/discover/white-town/avenue-goubert), en présence d'officiels français, de familles d'anciens combattants et de membres de la communauté franco-tamoule. Ces cérémonies ne sont pas de la pompe. Elles reflètent une histoire partagée qui dépasse la diplomatie pour toucher la mémoire et l'identité, reliant la ville aux soldats qu'elle envoya sur le front occidental, en Afrique du Nord, en Indochine, et aux familles que ces soldats laissèrent derrière eux.
 
 **Le bâtiment**
 
@@ -130,7 +130,7 @@ Il montra que les ponts, les routes, les forts et les réseaux spatiaux sont des
 
 **Le centre vivant**
 
-La bibliothèque du campus de la [rue Dumas](/discover/white-town/rue-dumas) abrite des milliers de volumes sur le sanskrit, le tamoul et les langues d'Asie du Sud et du Sud-Est, ainsi que des estampages d'inscriptions sur pierre, des manuscrits sur feuilles de palme, et des archives photographiques accumulées sur plus d'un siècle de travail de terrain. Pour certains domaines de l'indologie et de l'épigraphie, elle est irremplaçable. Des chercheurs viennent de France, d'Europe, du Japon et d'Amérique du Nord spécifiquement pour l'utiliser.
+La bibliothèque du campus de la [rue Dumas](/fr/discover/white-town/rue-dumas) abrite des milliers de volumes sur le sanskrit, le tamoul et les langues d'Asie du Sud et du Sud-Est, ainsi que des estampages d'inscriptions sur pierre, des manuscrits sur feuilles de palme, et des archives photographiques accumulées sur plus d'un siècle de travail de terrain. Pour certains domaines de l'indologie et de l'épigraphie, elle est irremplaçable. Des chercheurs viennent de France, d'Europe, du Japon et d'Amérique du Nord spécifiquement pour l'utiliser.
 
 Le centre continue de mener des recherches de terrain dans toute l'Inde du Sud, de publier des éditions critiques de manuscrits et d'inscriptions, et de collaborer avec des universités et institutions indiennes. Il demeure l'un des centres mondiaux les plus respectés pour les études sud-asiatiques.
 
@@ -370,7 +370,7 @@ Certains firent face à des restrictions spécifiques liées à leur ancien serv
 
 Le Foyer du soldat ne fonctionne plus comme autrefois. La génération d'hommes qui servirent réellement est aujourd'hui très âgée, et l'institution est passée d'une infrastructure sociale active à quelque chose de plus proche de la commémoration. Ses traces survivent dans les histoires orales familiales, dans les photographies historiques, dans les cérémonies du 14 juillet encore tenues au monument aux morts de l'avenue Goubert, et dans les familles franco-tamoules de Reddiyarpalayam et des quartiers environnants qui gardent la mémoire de l'endroit où sont allés leurs grands-pères et de ce qu'ils y ont fait.
 
-Le [monument aux morts de l'avenue Goubert](/discover/landmarks/war-memorial) commémore les soldats de ces villages : leurs noms, leurs origines, leur déploiement dans une guerre mondiale que la plupart d'entre eux ne s'attendaient probablement pas à survivre. Les cérémonies du [14 juillet](/festivals/bastille-day) au monument demeurent une véritable occasion civique dans la ville. C'est un rappel que l'histoire française de Pondichéry ne fut pas seulement administrative ou culturelle. Ce fut aussi une histoire de corps envoyés à l'autre bout du monde, et des institutions bâties pour les accueillir quand certains d'entre eux revenaient.`,
+Le [monument aux morts de l'avenue Goubert](/fr/discover/landmarks/war-memorial) commémore les soldats de ces villages : leurs noms, leurs origines, leur déploiement dans une guerre mondiale que la plupart d'entre eux ne s'attendaient probablement pas à survivre. Les cérémonies du [14 juillet](/festivals/bastille-day) au monument demeurent une véritable occasion civique dans la ville. C'est un rappel que l'histoire française de Pondichéry ne fut pas seulement administrative ou culturelle. Ce fut aussi une histoire de corps envoyés à l'autre bout du monde, et des institutions bâties pour les accueillir quand certains d'entre eux revenaient.`,
   },
 ];
 
