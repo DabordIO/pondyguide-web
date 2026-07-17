@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { hotelGuides } from "@/data/hotelGuides";
 import { hotelGuidesTa } from "@/data/ta/hotelGuides";
+import { hotelGuidesFr } from "@/data/fr/hotelGuides";
 import { hotels } from "@/data/hotels";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -22,14 +23,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const guide = READY_GUIDES.find(g => g.slug === slug);
   if (!guide) return {};
   const hasTa = hotelGuidesTa.some(g => g.id === guide.id);
+  const hasFr = hotelGuidesFr.some(g => g.id === guide.id);
   return {
     title: guide.metaTitle ?? guide.title,
     description: guide.metaDescription,
-    alternates: hasTa
+    alternates: hasTa || hasFr
       ? {
           languages: {
             en: `/hotels/guides/${slug}`,
-            ta: `/ta/hotels/guides/${slug}`,
+            ...(hasTa ? { ta: `/ta/hotels/guides/${slug}` } : {}),
+            ...(hasFr ? { fr: `/fr/hotels/guides/${slug}` } : {}),
             "x-default": `/hotels/guides/${slug}`,
           },
         }
@@ -49,10 +52,18 @@ export default async function HotelGuidePage({ params }: { params: Promise<{ slu
     .filter((h): h is NonNullable<typeof h> => Boolean(h));
 
   const hasTa = hotelGuidesTa.some(g => g.id === guide.id);
+  const hasFr = hotelGuidesFr.some(g => g.id === guide.id);
 
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      {hasTa && <LanguageToggle enHref={`/hotels/guides/${guide.slug}`} taHref={`/ta/hotels/guides/${guide.slug}`} current="en" />}
+      {(hasTa || hasFr) && (
+        <LanguageToggle
+          enHref={`/hotels/guides/${guide.slug}`}
+          taHref={hasTa ? `/ta/hotels/guides/${guide.slug}` : undefined}
+          frHref={hasFr ? `/fr/hotels/guides/${guide.slug}` : undefined}
+          current="en"
+        />
+      )}
       <Link href="/hotels" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Hotels</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

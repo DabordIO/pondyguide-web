@@ -5,6 +5,8 @@ import { hotels, COLLECTION_LABELS, getHotelsByCollection, COLLECTION_ORDER } fr
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import ArticleBody from "@/components/ArticleBody";
+import LanguageToggle from "@/components/LanguageToggle";
+import { hotelsFr } from "@/data/fr/hotels";
 import Link from "next/link";
 
 const orderedHotels = COLLECTION_ORDER.flatMap(c => getHotelsByCollection(c));
@@ -19,10 +21,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const h = hotels.find(h => h.id === slug);
   if (!h) return {};
+  const hasFr = hotelsFr.some(f => f.id === slug);
   return {
     title: h.metaTitle ?? `${h.name} — Pondicherry`,
     description: h.metaDescription ?? h.tagline,
     openGraph: h.photo ? { images: [`/hotels/${h.photo}`] } : undefined,
+    alternates: hasFr
+      ? {
+          languages: {
+            en: `/hotels/${slug}`,
+            fr: `/fr/hotels/${slug}`,
+            "x-default": `/hotels/${slug}`,
+          },
+        }
+      : undefined,
   };
 }
 
@@ -46,9 +58,11 @@ export default async function HotelPage({ params }: { params: Promise<{ slug: st
   const next = idx < orderedHotels.length - 1 ? orderedHotels[idx + 1] : null;
 
   const priceSymbol = { budget: "₹", mid: "₹₹", upscale: "₹₹₹", luxury: "₹₹₹₹" }[h.priceRange];
+  const hasFr = hotelsFr.some(f => f.id === slug);
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {hasFr && <LanguageToggle enHref={`/hotels/${slug}`} frHref={`/fr/hotels/${slug}`} current="en" />}
       <JsonLd
         data={{
           "@context": "https://schema.org",

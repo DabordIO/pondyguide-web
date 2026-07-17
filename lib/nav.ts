@@ -26,7 +26,7 @@ export const navTa: NavItem[] = [
 ];
 
 // Mirrors the sections actually published on the French homepage (app/fr/page.tsx), in the
-// same order — items without a French translation yet (Discover, Hotels, Restaurants, Auroville,
+// same order — items without a French translation yet (Discover, Restaurants, Auroville,
 // Festivals, Plan) are omitted.
 export const navFr: NavItem[] = [
   { label: "Histoire", href: "/fr/history" },
@@ -34,6 +34,7 @@ export const navFr: NavItem[] = [
   { label: "Institutions françaises", href: "/fr/history/institutions" },
   { label: "Rues", href: "/fr/discover/white-town" },
   { label: "Monuments", href: "/fr/discover/landmarks" },
+  { label: "Hôtels", href: "/fr/hotels" },
 ];
 
 export function isTamil(pathname: string): boolean {
