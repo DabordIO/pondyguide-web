@@ -20,17 +20,17 @@ export default function AboutPageFr() {
       <LanguageToggle enHref="/about" frHref="/fr/about" current="fr" />
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>À propos</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 2.75rem)", fontWeight: 700, color: "#1c1917", marginBottom: 32, lineHeight: 1.2 }}>
-        Pourquoi ce guide existe
+        Pourquoi ce guide ?
       </h1>
       <div style={{ fontSize: "1.0625rem", lineHeight: 1.85, color: "#292524" }}>
         <p style={{ marginBottom: "1.25rem" }}>
-          Pondy Guide a été créé par deux amis dont le lien avec Pondichéry dépasse largement celui d'un simple séjour de vacances. Tous deux ont des racines familiales dans la ville remontant à plusieurs générations, et tous deux ont grandi avec un attachement particulier pour ses rues, son histoire, et les couches de vie que la plupart des visiteurs n'ont jamais l'occasion de découvrir.
+          Pondy Guide a été créé par deux amis dont le lien avec Pondichéry va bien au-delà d'une simple visite de vacances. Tous deux ont des racines familiales dans la ville qui remontent à plusieurs générations, et tous deux ont grandi avec un attachement particulier pour ses rues, son histoire, et les histoires qui se cachent derrière les différentes strates de vie que la plupart des visiteurs n'ont jamais l'occasion de découvrir.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
-          L'idée était simple : donner à ceux qui viennent à Pondichéry la possibilité de découvrir bien plus que la surface des choses. Pas seulement où manger et où loger, mais qui a bâti ce lieu, les troupes qui se sont battues pour lui, les familles qui sont parties, celles qui sont restées, et ce que font leurs descendants aujourd'hui.
+          L'idée était simple : donner à ceux qui viennent à Pondichéry la possibilité de découvrir bien plus que ce qui apparaît au premier regard. Pas seulement où manger et où loger, mais aussi les personnes qui ont façonné cette ville, les troupes qui se sont battues pour elle, les familles qui sont parties, celles qui sont restées, et ce que font leurs descendants aujourd'hui.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
-          L'histoire de Pondichéry est véritablement extraordinaire, et une grande partie reste mal documentée là où les touristes cherchent habituellement. Nous avons voulu changer cela, à notre modeste échelle.
+          L'histoire de Pondichéry est véritablement extraordinaire, et une grande partie de cette histoire reste pourtant peu documentée dans les endroits où les touristes cherchent habituellement leurs informations. Nous avons voulu changer cela, à notre modeste échelle.
         </p>
         <p style={{ marginBottom: "1.25rem" }}>
           Ce guide a été réalisé avec soin, avec l'aide précieuse d'archives historiques, bien qu'aucun de nous ne soit historien, et avec un profond respect pour une ville qui compte énormément pour nous deux depuis l'enfance.
