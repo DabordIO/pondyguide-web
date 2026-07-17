@@ -3,7 +3,6 @@ import { historyArticles } from "@/data/history";
 import { historyArticlesTa } from "@/data/ta/history";
 import { historyArticlesFr } from "@/data/fr/history";
 import { institutionArticles } from "@/data/institutions";
-import { institutionArticlesTa } from "@/data/ta/institutions";
 import { institutionArticlesFr } from "@/data/fr/institutions";
 import { figures } from "@/data/figures";
 import { figuresTa } from "@/data/ta/figures";
@@ -199,13 +198,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  const institutionPagesTa = institutionArticlesTa.map(a => ({
-    url: `${BASE}/ta/history/institutions/${a.id}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
   const historyPagesFr = historyArticlesFr.map(a => ({
     url: `${BASE}/fr/history/${a.id}`,
     lastModified: new Date(),
@@ -261,7 +253,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...hotelGuidePagesTa,
     ...streetPagesTa,
     ...landmarkPagesTa,
-    ...institutionPagesTa,
     ...historyPagesFr,
     ...institutionPagesFr,
     ...figurePagesFr,
