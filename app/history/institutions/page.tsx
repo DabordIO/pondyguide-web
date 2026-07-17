@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     languages: {
       en: "/history/institutions",
+      ta: "/ta/history/institutions",
       fr: "/fr/history/institutions",
       "x-default": "/history/institutions",
     },

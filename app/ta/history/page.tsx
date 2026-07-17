@@ -54,8 +54,9 @@ export default function HistoryPageTa() {
         ))}
       </div>
 
-      <div style={{ marginTop: 56, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>
+      <div style={{ marginTop: 56, paddingTop: 24, borderTop: "1px solid #e8ddd4", display: "flex", gap: 24, flexWrap: "wrap" }}>
         <Link href="/ta/history/lives-and-legacies" style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>வாழ்க்கை வரலாறுகளைப் பார்க்க →</Link>
+        <Link href="/ta/history/institutions" style={{ fontSize: 14, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>French நிறுவனங்களைப் பார்க்க →</Link>
       </div>
     </div>
   );
