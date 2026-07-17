@@ -77,7 +77,7 @@ export default function TamilHomePage() {
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
-  const featuredSiteIds = ["sacred-heart", "notre-dame", "museum"];
+  const featuredSiteIds = ["sacred-heart", "museum", "manakula-vinayagar"];
   const featuredSites = featuredSiteIds
     .map(id => {
       const ta = sitesTa.find(s => s.id === id);
