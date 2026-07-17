@@ -41,11 +41,11 @@ function RestaurantCard({ r }: { r: Restaurant }) {
   );
 }
 
-function GuideCard({ title, slug, photos }: { title: string; slug: string; photos: string[] }) {
+function GuideCard({ title, slug, photos, span }: { title: string; slug: string; photos: string[]; span: number }) {
   const [main, ...rest] = photos;
   const side = rest.slice(0, 2);
   return (
-    <Link href={`/restaurants/guides/${slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", minHeight: 180 }}>
+    <Link href={`/restaurants/guides/${slug}`} style={{ gridColumn: `span ${span}`, textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", minHeight: 180 }}>
       <div style={{ flex: "2 1 0%", display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 0 }}>
         <div style={{ position: "relative" }}>
           {main && <Image src={`/restaurants/${main}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />}
@@ -93,6 +93,7 @@ export default function RestaurantsPage() {
                   title={guide.title}
                   slug={guide.slug}
                   photos={group.filter(r => r.photo).map(r => r.photo as string)}
+                  span={[1, 3, 2][(group.length + 1) % 3]}
                 />
               )}
             </div>
