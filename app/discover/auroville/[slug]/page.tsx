@@ -2,8 +2,10 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { aurovilleArticles } from "@/data/auroville";
+import { aurovilleArticlesFr } from "@/data/fr/auroville";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -16,10 +18,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const a = aurovilleArticles.find(a => a.id === slug);
   if (!a) return {};
+  const hasFr = aurovilleArticlesFr.some(f => f.id === slug);
   return {
     title: a.metaTitle ?? `${a.title} — Auroville`,
     description: a.metaDescription ?? a.teaser,
     openGraph: a.photo ? { images: [`/auroville/${a.photo}`] } : undefined,
+    alternates: hasFr
+      ? {
+          languages: {
+            en: `/discover/auroville/${slug}`,
+            fr: `/fr/discover/auroville/${slug}`,
+            "x-default": `/discover/auroville/${slug}`,
+          },
+        }
+      : undefined,
   };
 }
 
@@ -37,9 +49,11 @@ export default async function AurovilleArticlePage({ params }: { params: Promise
   const idx = aurovilleArticles.findIndex(a => a.id === slug);
   const prev = idx > 0 ? aurovilleArticles[idx - 1] : null;
   const next = idx < aurovilleArticles.length - 1 ? aurovilleArticles[idx + 1] : null;
+  const hasFr = aurovilleArticlesFr.some(f => f.id === slug);
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {hasFr && <LanguageToggle enHref={`/discover/auroville/${slug}`} frHref={`/fr/discover/auroville/${slug}`} current="en" />}
       <Link href="/discover/auroville" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Auroville</Link>
 
       {article.photo ? (

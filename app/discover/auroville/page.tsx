@@ -3,15 +3,24 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { aurovilleArticles } from "@/data/auroville";
 import { truncate } from "@/lib/truncate";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "Auroville: History, Ideas and Places to Visit",
   description: "Founded in 1968, Auroville is home to 3,400 residents from 60 countries. Understand the township before you visit.",
+  alternates: {
+    languages: {
+      en: "/discover/auroville",
+      fr: "/fr/discover/auroville",
+      "x-default": "/discover/auroville",
+    },
+  },
 };
 
 export default function AurovillePage() {
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/discover/auroville" frHref="/fr/discover/auroville" current="en" />
       <Link href="/discover" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Auroville</p>

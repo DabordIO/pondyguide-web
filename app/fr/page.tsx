@@ -13,6 +13,8 @@ import { sites } from "@/data/sites";
 import { sitesFr } from "@/data/fr/sites";
 import { restaurants } from "@/data/restaurants";
 import { restaurantsFr } from "@/data/fr/restaurants";
+import { aurovilleArticles } from "@/data/auroville";
+import { aurovilleArticlesFr } from "@/data/fr/auroville";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
 
@@ -100,6 +102,15 @@ export default function FrenchHomePage() {
     .map(id => {
       const fr = restaurantsFr.find(r => r.id === id);
       const en = restaurants.find(r => r.id === id);
+      return fr && en ? { fr, en } : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const featuredAurovilleIds = ["the-matrimandir", "arts-crafts", "how-to-visit"];
+  const featuredAuroville = featuredAurovilleIds
+    .map(id => {
+      const fr = aurovilleArticlesFr.find(a => a.id === id);
+      const en = aurovilleArticles.find(a => a.id === id);
       return fr && en ? { fr, en } : null;
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -224,6 +235,32 @@ export default function FrenchHomePage() {
                 <div style={{ position: "relative", width: "100%", height: 180 }}>
                   <Image src={`/${en.photoFolder ?? "history"}/${en.photo}`} alt={fr.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
                 </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{fr.title}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.teaser, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── AUROVILLE ────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Comprendre Auroville" href="/fr/discover/auroville" />
+        <SectionIntro>
+          Fondée en 1968 sur un plateau de terre érodée au nord de Pondichéry, Auroville compte environ 3 400 habitants venus de plus de 60 pays. Ce n'est ni une attraction touristique, ni une retraite spirituelle. À lire avant votre visite.
+        </SectionIntro>
+        <ThreeGrid>
+          {featuredAuroville.map(({ fr, en }) => (
+            <Link key={fr.id} href={`/fr/discover/auroville/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo ? (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/auroville/${en.photo}`} alt={fr.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              ) : (
+                <div style={{ width: "100%", height: 8, background: en.gradient }} />
               )}
               <div style={{ padding: "16px 18px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{fr.title}</p>
