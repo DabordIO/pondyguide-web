@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/app",
       ta: "/ta/app",
+      fr: "/fr/app",
       "x-default": "/app",
     },
   },
