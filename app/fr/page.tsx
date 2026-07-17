@@ -129,6 +129,30 @@ export default function FrenchHomePage() {
         </ThreeGrid>
       </section>
 
+      {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Où dormir" href="/fr/hotels" />
+        <SectionIntro>25 adresses soigneusement sélectionnées, des hôtels boutique patrimoniaux aux maisons d'hôtes économiques, pour tous les goûts.</SectionIntro>
+        <ThreeGrid>
+          {[
+            { href: "/fr/hotels/palais-de-mahe", photo: "/hotels/palais-de-mahe.jpg", title: "Palais de Mahé", description: "L'adresse la plus romantique de White Town. Une façade jaune moutarde rue Law de Lauriston." },
+            { href: "/fr/hotels/maison-perumal", photo: "/hotels/maison-perumal.jpg", title: "Maison Perumal", description: "Une demeure chettinad restaurée avec un soin extraordinaire. Calme, belle, sans hâte." },
+            { href: "/fr/hotels/le-dupleix", photo: "/hotels/le-dupleix.jpg", title: "Le Dupleix", description: "Nommé d'après le gouverneur lui-même, dans la rue qui porte son nom." },
+          ].map(h => (
+            <Link key={h.href} href={h.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={h.photo} alt={h.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{h.title}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{h.description}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Vies et héritages" href="/fr/history/lives-and-legacies" />

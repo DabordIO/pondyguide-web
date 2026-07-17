@@ -31,9 +31,8 @@ function GuideCard({ title, slug, photos }: { title: string; slug: string; photo
       </div>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(28,25,23,0.25) 0%, rgba(28,25,23,0.55) 55%, rgba(28,25,23,0.92) 100%)" }} />
       <div style={{ position: "relative", height: "100%", minHeight: 180, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "24px 20px" }}>
-        <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 10 }}>Our Guide</p>
         <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#fff", fontSize: 18, lineHeight: 1.35, marginBottom: 12 }}>{title}</p>
-        <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600 }}>Read the full guide →</p>
+        <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600 }}>Read the full article →</p>
       </div>
     </Link>
   );
