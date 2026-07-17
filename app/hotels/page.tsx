@@ -19,19 +19,24 @@ export const metadata: Metadata = {
 };
 
 function GuideCard({ title, slug, photos }: { title: string; slug: string; photos: string[] }) {
-  const tiles = photos.slice(0, 4);
+  const [main, ...rest] = photos;
+  const side = rest.slice(0, 2);
   return (
-    <Link href={`/hotels/guides/${slug}`} style={{ position: "relative", textDecoration: "none", border: "1px solid #1c1917", borderRadius: 14, overflow: "hidden", display: "block", minHeight: 180 }}>
-      <div style={{ position: "absolute", inset: 0, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr" }}>
-        {tiles.map((photo, i) => (
-          <div key={i} style={{ position: "relative" }}>
-            <Image src={`/hotels/${photo}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />
-          </div>
-        ))}
+    <Link href={`/hotels/guides/${slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", minHeight: 180 }}>
+      <div style={{ flex: "2 1 0%", display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 0 }}>
+        <div style={{ position: "relative" }}>
+          {main && <Image src={`/hotels/${main}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />}
+        </div>
+        <div style={{ display: "grid", gridTemplateRows: "1fr 1fr" }}>
+          {side.map((photo, i) => (
+            <div key={i} style={{ position: "relative" }}>
+              <Image src={`/hotels/${photo}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />
+            </div>
+          ))}
+        </div>
       </div>
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(28,25,23,0.25) 0%, rgba(28,25,23,0.55) 55%, rgba(28,25,23,0.92) 100%)" }} />
-      <div style={{ position: "relative", height: "100%", minHeight: 180, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "24px 20px" }}>
-        <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#fff", fontSize: 18, lineHeight: 1.35, marginBottom: 12 }}>{title}</p>
+      <div style={{ flex: "1 1 0%", padding: "20px 20px 16px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6 }}>{title}</p>
         <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600 }}>Read the full article →</p>
       </div>
     </Link>
