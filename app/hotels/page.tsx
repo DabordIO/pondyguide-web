@@ -23,7 +23,7 @@ function GuideCard({ title, slug, photos, span }: { title: string; slug: string;
   const side = rest.slice(0, 2);
   return (
     <Link href={`/hotels/guides/${slug}`} style={{ gridColumn: `span ${span}`, textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", minHeight: 180 }}>
-      <div style={{ flex: "2 1 0%", display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 0 }}>
+      <div style={{ flex: "2 1 0%", display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 180 }}>
         <div style={{ position: "relative" }}>
           {main && <Image src={`/hotels/${main}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />}
         </div>
