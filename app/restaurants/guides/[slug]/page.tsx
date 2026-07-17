@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { restaurantGuides } from "@/data/restaurantGuides";
 import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
+import { restaurantGuidesFr } from "@/data/fr/restaurantGuides";
 import { restaurants } from "@/data/restaurants";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -22,14 +23,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const guide = READY_GUIDES.find(g => g.slug === slug);
   if (!guide) return {};
   const hasTa = restaurantGuidesTa.some(g => g.id === guide.id);
+  const hasFr = restaurantGuidesFr.some(g => g.id === guide.id);
   return {
     title: guide.metaTitle ?? guide.title,
     description: guide.metaDescription,
-    alternates: hasTa
+    alternates: hasTa || hasFr
       ? {
           languages: {
             en: `/restaurants/guides/${slug}`,
-            ta: `/ta/restaurants/guides/${slug}`,
+            ...(hasTa ? { ta: `/ta/restaurants/guides/${slug}` } : {}),
+            ...(hasFr ? { fr: `/fr/restaurants/guides/${slug}` } : {}),
             "x-default": `/restaurants/guides/${slug}`,
           },
         }
@@ -49,10 +52,18 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
     .filter((r): r is NonNullable<typeof r> => Boolean(r));
 
   const hasTa = restaurantGuidesTa.some(g => g.id === guide.id);
+  const hasFr = restaurantGuidesFr.some(g => g.id === guide.id);
 
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
-      {hasTa && <LanguageToggle enHref={`/restaurants/guides/${guide.slug}`} taHref={`/ta/restaurants/guides/${guide.slug}`} current="en" />}
+      {(hasTa || hasFr) && (
+        <LanguageToggle
+          enHref={`/restaurants/guides/${guide.slug}`}
+          taHref={hasTa ? `/ta/restaurants/guides/${guide.slug}` : undefined}
+          frHref={hasFr ? `/fr/restaurants/guides/${guide.slug}` : undefined}
+          current="en"
+        />
+      )}
       <Link href="/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

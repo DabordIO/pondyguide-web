@@ -2,9 +2,11 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { restaurants } from "@/data/restaurants";
+import { restaurantsFr } from "@/data/fr/restaurants";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import ArticleBody from "@/components/ArticleBody";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -17,10 +19,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const r = restaurants.find(r => r.id === slug);
   if (!r) return {};
+  const hasFr = restaurantsFr.some(f => f.id === slug);
   return {
     title: r.metaTitle ?? `${r.name} — Pondicherry`,
     description: r.metaDescription ?? r.summary,
     openGraph: r.photo ? { images: [`/restaurants/${r.photo}`] } : undefined,
+    alternates: hasFr
+      ? {
+          languages: {
+            en: `/restaurants/${slug}`,
+            fr: `/fr/restaurants/${slug}`,
+            "x-default": `/restaurants/${slug}`,
+          },
+        }
+      : undefined,
   };
 }
 
@@ -45,9 +57,11 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
   const next = idx < restaurants.length - 1 ? restaurants[idx + 1] : null;
 
   const priceSymbol = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" }[r.priceRange];
+  const hasFr = restaurantsFr.some(f => f.id === slug);
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {hasFr && <LanguageToggle enHref={`/restaurants/${slug}`} frHref={`/fr/restaurants/${slug}`} current="en" />}
       <JsonLd
         data={{
           "@context": "https://schema.org",

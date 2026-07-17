@@ -11,8 +11,12 @@ import { streets } from "@/data/streets";
 import { streetsFr } from "@/data/fr/streets";
 import { sites } from "@/data/sites";
 import { sitesFr } from "@/data/fr/sites";
+import { restaurants } from "@/data/restaurants";
+import { restaurantsFr } from "@/data/fr/restaurants";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
+
+const PRICE_LABELS = { budget: "₹", mid: "₹₹", upscale: "₹₹₹" };
 
 export const metadata: Metadata = {
   title: "Guide de Pondichéry — en français",
@@ -87,6 +91,15 @@ export default function FrenchHomePage() {
     .map(id => {
       const fr = sitesFr.find(s => s.id === id);
       const en = sites.find(s => s.id === id);
+      return fr && en ? { fr, en } : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const featuredRestaurantIds = ["coromandel-cafe", "indian-coffee-house", "de-bluefin-seafood"];
+  const featuredRestaurants = featuredRestaurantIds
+    .map(id => {
+      const fr = restaurantsFr.find(r => r.id === id);
+      const en = restaurants.find(r => r.id === id);
       return fr && en ? { fr, en } : null;
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -167,6 +180,33 @@ export default function FrenchHomePage() {
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{fr.name}</p>
                 <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 6 }}>{en.dates}</p>
                 <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{fr.role}</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── RESTAURANTS ─────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Restaurants à Pondichéry" href="/fr/restaurants" />
+        <SectionIntro>
+          Pondichéry est étonnamment généreuse côté cuisine. Cafés d'inspiration française, fruits de mer frais, thalis tamouls faits maison, et de quoi tenir au café et à la glace toute l'après-midi malgré la chaleur.
+        </SectionIntro>
+        <ThreeGrid>
+          {featuredRestaurants.map(({ fr, en }) => (
+            <Link key={fr.id} href={`/fr/restaurants/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/restaurants/${en.photo}`} alt={fr.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
+                </div>
+              )}
+              <div style={{ padding: "14px 16px 18px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+                  <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, lineHeight: 1.3 }}>{fr.name}</p>
+                  <p style={{ fontSize: 13, color: "#6b6560", whiteSpace: "nowrap", marginLeft: 8 }}>{PRICE_LABELS[en.priceRange] ?? ""}</p>
+                </div>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
               </div>
             </Link>
           ))}
