@@ -20,6 +20,7 @@ import { streetsTa } from "@/data/ta/streets";
 import { streetsFr } from "@/data/fr/streets";
 import { sites } from "@/data/sites";
 import { sitesTa } from "@/data/ta/sites";
+import { sitesFr } from "@/data/fr/sites";
 import { aurovilleArticles } from "@/data/auroville";
 import { exploreArticles } from "@/data/explore";
 
@@ -61,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/fr/history/institutions`, priority: 0.7 },
     { url: `${BASE}/fr/history/lives-and-legacies`, priority: 0.7 },
     { url: `${BASE}/fr/discover/white-town`, priority: 0.7 },
+    { url: `${BASE}/fr/discover/landmarks`, priority: 0.7 },
     { url: `${BASE}/fr/about`, priority: 0.4 },
     { url: `${BASE}/fr/contact`, priority: 0.3 },
   ].map(p => ({ ...p, lastModified: new Date(), changeFrequency: "monthly" as const }));
@@ -232,6 +234,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  const landmarkPagesFr = sitesFr.map(s => ({
+    url: `${BASE}/fr/discover/landmarks/${s.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
   return [
     ...staticPages,
     ...historyPages,
@@ -257,5 +266,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...institutionPagesFr,
     ...figurePagesFr,
     ...streetPagesFr,
+    ...landmarkPagesFr,
   ];
 }

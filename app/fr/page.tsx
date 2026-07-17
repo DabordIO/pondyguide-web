@@ -9,6 +9,8 @@ import { figures } from "@/data/figures";
 import { figuresFr } from "@/data/fr/figures";
 import { streets } from "@/data/streets";
 import { streetsFr } from "@/data/fr/streets";
+import { sites } from "@/data/sites";
+import { sitesFr } from "@/data/fr/sites";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
 
@@ -76,6 +78,15 @@ export default function FrenchHomePage() {
     .map(id => {
       const fr = streetsFr.find(s => s.id === id);
       const en = streets.find(s => s.id === id);
+      return fr && en ? { fr, en } : null;
+    })
+    .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const featuredSiteIds = ["sacred-heart", "museum", "manakula-vinayagar"];
+  const featuredSites = featuredSiteIds
+    .map(id => {
+      const fr = sitesFr.find(s => s.id === id);
+      const en = sites.find(s => s.id === id);
       return fr && en ? { fr, en } : null;
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -174,6 +185,28 @@ export default function FrenchHomePage() {
               )}
               <div style={{ padding: "16px 18px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{en.altName ?? en.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Monuments et sites historiques" href="/fr/discover/landmarks" />
+        <SectionIntro>Églises, temples, musées, et bâtiments coloniaux — deux mille ans d'histoire locale.</SectionIntro>
+        <ThreeGrid>
+          {featuredSites.map(({ fr, en }) => (
+            <Link key={fr.id} href={`/fr/discover/landmarks/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/sites/${en.photo}`} alt={fr.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{fr.name}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
                 <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
               </div>
