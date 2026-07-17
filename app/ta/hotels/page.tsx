@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
+import { hotels } from "@/data/hotels";
 import { hotelGuides } from "@/data/hotelGuides";
 import { hotelGuidesTa } from "@/data/ta/hotelGuides";
 
@@ -15,12 +17,27 @@ export const metadata: Metadata = {
   },
 };
 
-function GuideCard({ title, slug }: { title: string; slug: string }) {
+function GuideCard({ title, slug, photos }: { title: string; slug: string; photos: string[] }) {
+  const [main, ...rest] = photos;
+  const side = rest.slice(0, 2);
   return (
-    <Link href={`/ta/hotels/guides/${slug}`} style={{ textDecoration: "none", background: "#1c1917", border: "1px solid #1c1917", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "center", padding: "24px 20px", minHeight: 180 }}>
-      <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 10 }}>எங்கள் வழிகாட்டி</p>
-      <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#fff", fontSize: 18, lineHeight: 1.35, marginBottom: 12 }}>{title}</p>
-      <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600 }}>முழு வழிகாட்டியைப் படிக்க →</p>
+    <Link href={`/ta/hotels/guides/${slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%", minHeight: 180 }}>
+      <div style={{ flex: "2 1 0%", display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 0 }}>
+        <div style={{ position: "relative" }}>
+          {main && <Image src={`/hotels/${main}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />}
+        </div>
+        <div style={{ display: "grid", gridTemplateRows: "1fr 1fr" }}>
+          {side.map((photo, i) => (
+            <div key={i} style={{ position: "relative" }}>
+              <Image src={`/hotels/${photo}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div style={{ flex: "1 1 0%", padding: "20px 20px 16px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6 }}>{title}</p>
+        <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600 }}>முழு வழிகாட்டியைப் படிக்க →</p>
+      </div>
     </Link>
   );
 }
@@ -29,7 +46,11 @@ export default function HotelsPageTa() {
   const guides = hotelGuidesTa
     .map(ta => {
       const en = hotelGuides.find(g => g.id === ta.id);
-      return en ? { ta, en } : null;
+      if (!en) return null;
+      const photos = en.hotelIds
+        .map(id => hotels.find(h => h.id === id)?.photo)
+        .filter((p): p is string => Boolean(p));
+      return { ta, en, photos };
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
@@ -46,8 +67,8 @@ export default function HotelsPageTa() {
       </p>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16 }}>
-        {guides.map(({ ta, en }) => (
-          <GuideCard key={ta.id} title={ta.title} slug={en.slug} />
+        {guides.map(({ ta, en, photos }) => (
+          <GuideCard key={ta.id} title={ta.title} slug={en.slug} photos={photos} />
         ))}
       </div>
     </div>

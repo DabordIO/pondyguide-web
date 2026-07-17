@@ -1,6 +1,7 @@
 export interface SiteFr {
   id: string;
   name: string;
+  era: string;
   metaTitle?: string;
   metaDescription?: string;
   summary: string;
@@ -17,6 +18,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "promenade",
     name: "Promenade Beach",
+    era: "Époque coloniale (XVIIIe–XXe s.)",
     metaTitle: "Promenade Beach, 1,5 km de front de mer à Pondichéry",
     metaDescription: "Une promenade de 1,5 km en bord de mer où les pêcheurs jettent leurs filets à l'aube et où trois siècles d'histoire bordent l'avenue Goubert.",
     summary:
@@ -37,6 +39,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "ashram",
     name: "Ashram de Sri Aurobindo",
+    era: "Fondé en 1926",
     metaTitle: "Ashram de Sri Aurobindo, haut lieu spirituel de Pondichéry",
     metaDescription: "Sri Aurobindo arriva à Pondichéry française en 1910, fuyant une inculpation britannique pour sédition, et y resta jusqu'à la fin de sa vie.",
     summary:
@@ -57,6 +60,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "sacred-heart",
     name: "Basilique du Sacré-Cœur",
+    era: "Construite de 1902 à 1907",
     metaTitle: "Basilique du Sacré-Cœur, église gothique française à Pondichéry",
     metaDescription: "Construite entre 1902 et 1907, cette basilique néo-gothique compte 28 vitraux expédiés de France jusqu'à Pondichéry.",
     summary:
@@ -77,6 +81,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "raj-nivas",
     name: "Lok Nivas",
+    era: "Fondé en 1738 (reconstruit à partir de 1766)",
     metaTitle: "Lok Nivas, ancien palais du gouverneur à Pondichéry",
     metaDescription: "Utilisé jadis par Dupleix, détruit par les Britanniques, reconstruit par la France, il est aujourd'hui la résidence officielle du Lieutenant-Gouverneur de Pondichéry.",
     summary:
@@ -97,6 +102,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "museum",
     name: "Musée de Pondichéry",
+    era: "Créé en 1983",
     metaTitle: "Musée de Pondichéry, poteries romaines et bronzes chola",
     metaDescription: "Le musée de Pondichéry expose des poteries romaines, des bronzes chola, des objets de l'époque de Dupleix et un véhicule associé à Subramania Bharathi.",
     summary:
@@ -117,6 +123,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "bharathi-park",
     name: "Parc Bharathi",
+    era: "Époque coloniale (rebaptisé après 1962)",
     metaTitle: "Parc Bharathi, jardin français historique de Pondichéry",
     metaDescription: "Huit hectares de pelouses ombragées, de colonnes gréco-romaines et d'histoire coloniale font du parc Bharathi le cœur cérémoniel de Pondichéry.",
     summary:
@@ -139,6 +146,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "notre-dame",
     name: "Notre-Dame des Anges",
+    era: "Fondée en 1687 (bâtiment actuel 1851–1855)",
     metaTitle: "Notre-Dame des Anges, église du front de mer à Pondichéry",
     metaDescription: "La seule église de Pondichéry où la messe est célébrée en français, en anglais et en tamoul, sur un site occupé par des églises depuis 1687.",
     summary:
@@ -159,6 +167,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "botanical-garden",
     name: "Jardin botanique",
+    era: "Créé en 1826",
     metaTitle: "Jardin botanique, 1 500 variétés de plantes à Pondichéry",
     metaDescription: "Neuf hectares avec 1 500 variétés de plantes, des plantes fossiles, des arbres géants, un petit train, des fontaines chantantes et un parc fossile.",
     summary:
@@ -179,6 +188,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "french-consulate",
     name: "Consulat de France",
+    era: "Après 1962 (continuité institutionnelle depuis 1674)",
     metaTitle: "Consulat de France, mission française active à Pondichéry",
     metaDescription: "L'un des bâtiments coloniaux les plus rares au monde, la mission diplomatique active de la France sur son ancien territoire, établie ici depuis 1674.",
     summary:
@@ -201,6 +211,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "war-memorial",
     name: "Monument aux Combattants",
+    era: "Inauguré en 1938",
     metaTitle: "Monument aux Combattants, avenue Goubert à Pondichéry",
     metaDescription: "Le Monument aux Combattants honore les Pondichériens morts en combattant pour la France lors des Première et Seconde Guerres mondiales.",
     summary:
@@ -223,6 +234,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "customs-building",
     name: "La Douane",
+    era: "Construit au XIXe s., remanié vers 1940",
     metaTitle: "La Douane, bâtiment Art déco de la Promenade de Pondichéry",
     metaDescription: "Un bâtiment de douane colonial circulaire remanié dans les années 1940 avec des détails Art déco, aujourd'hui l'un des bâtiments les plus photographiés de la Promenade.",
     summary:
@@ -243,6 +255,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "dupleix-statue",
     name: "Statue de Dupleix",
+    era: "Époque coloniale",
     metaTitle: "Statue de Dupleix, monument colonial français à Pondichéry",
     metaDescription: "La statue en bronze de Joseph François Dupleix se dresse sur le front de mer, commémorant le gouverneur qui faillit rendre la France dominante en Inde.",
     summary:
@@ -263,6 +276,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "gandhi-statue",
     name: "Statue de Gandhi",
+    era: "Inaugurée le 26 janvier 1965",
     metaTitle: "Statue de Gandhi, monument de 1965 sur l'avenue Goubert",
     metaDescription: "Inaugurée le 26 janvier 1965, la statue de Gandhi repose sur huit piliers de granit apportés du fort de Gingee à l'époque coloniale française.",
     summary:
@@ -286,6 +300,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "joan-of-arc-statue",
     name: "Statue de Jeanne d'Arc",
+    era: "1920",
     metaTitle: "Statue de Jeanne d'Arc, mémorial français à Pondichéry",
     metaDescription: "Cette statue en marbre blanc du jardin de Notre-Dame des Anges fut offerte en 1920 par l'industriel François Gaudart.",
     summary:
@@ -309,6 +324,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "schoelcher-bust",
     name: "Buste de Victor Schoelcher",
+    era: "Fin XIXe / début XXe siècle",
     metaTitle: "Buste de Victor Schoelcher, mémorial de l'abolition à Pondichéry",
     metaDescription: "Un mémorial rare en Asie du Sud à Victor Schoelcher, qui abolit l'esclavage dans tout l'Empire français le 27 avril 1848.",
     summary:
@@ -331,6 +347,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "old-lighthouse",
     name: "Phare de Pondichéry",
+    era: "Construit en 1835–1836",
     metaTitle: "Ancien phare, balise coloniale de 1836 à Pondichéry",
     metaDescription: "Construit en 1836 et rouvert en juin 2026, l'ancien phare offre une vue panoramique sur le golfe du Bengale et le quartier français.",
     summary:
@@ -352,6 +369,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "european-cemetery",
     name: "Cimetière européen",
+    era: "Vers 1700 – aujourd'hui",
     metaTitle: "Cimetière européen, terrain funéraire colonial à Pondichéry",
     metaDescription: "En usage depuis environ 1700, ce cimetière préserve les tombes de gouverneurs, missionnaires, marchands, et familles franco-pondichériennes.",
     summary:
@@ -374,6 +392,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "golconde",
     name: "Golconde",
+    era: "Achevé en 1942",
     metaTitle: "Golconde, bâtiment moderniste de l'Ashram à Pondichéry",
     metaDescription: "Achevé en 1942, Golconde fut le premier bâtiment en béton armé coulé sur place de l'Inde et demeure un jalon de l'architecture moderne.",
     summary:
@@ -394,6 +413,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "romain-rolland-library",
     name: "Bibliothèque Romain Rolland",
+    era: "Fondée en 1827",
     metaTitle: "Bibliothèque Romain Rolland, fondée en 1827 à Pondichéry",
     metaDescription: "L'une des plus anciennes bibliothèques publiques d'Inde, conservant environ 400 000 documents en français, anglais et tamoul, dont des manuscrits.",
     summary:
@@ -416,6 +436,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "hotel-de-ville",
     name: "La Mairie",
+    era: "Construit en 1870–1871",
     metaTitle: "La Mairie, hôtel de ville français de 1870 à Pondichéry",
     metaDescription: "Construit en 1870 sur l'avenue Goubert, cet hôtel de ville néoclassique fut le principal symbole de l'autorité municipale française sur la côte de Coromandel.",
     summary:
@@ -438,6 +459,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "manakula-vinayagar",
     name: "Temple Manakula Vinayagar",
+    era: "Précoloniale (avant 1674)",
     metaTitle: "Temple Manakula Vinayagar, sanctuaire historique de Ganesh",
     metaDescription: "Un temple majeur dédié à Ganesh, antérieur à l'arrivée des Français en 1674, resté sur son site d'origine grâce à une résistance locale soutenue.",
     summary:
@@ -458,6 +480,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "white-town-streets",
     name: "Ville Blanche",
+    era: "XVIIe–XXe siècle",
     metaTitle: "Ville Blanche, rues coloniales françaises de Pondichéry",
     metaDescription: "Demeures ocre jaune, rue Dupleix, rue Suffren, et rue Bussy composent l'un des paysages de rues coloniales françaises les mieux préservés au monde.",
     summary:
@@ -478,6 +501,7 @@ export const sitesFr: SiteFr[] = [
   {
     id: "french-streets",
     name: "Promenade en Ville Blanche",
+    era: "Époque coloniale (XVIIe–XXe s.)",
     metaTitle: "Circuit du quartier français, 2 km à travers Pondichéry",
     metaDescription: "Une boucle de deux kilomètres à travers le quartier colonial français préservé de Pondichéry, avec églises, statues, jardins, et monuments du front de mer.",
     summary:

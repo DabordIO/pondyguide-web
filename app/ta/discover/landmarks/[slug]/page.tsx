@@ -65,7 +65,7 @@ export default async function LandmarkPageTa({ params }: { params: Promise<{ slu
         {ta.name}
       </h1>
       {en.frenchName && <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 4 }}>பிரெஞ்சு: {en.frenchName}</p>}
-      <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 24 }}>கட்டப்பட்ட காலம்: {en.era}</p>
+      <p style={{ fontSize: 13, color: "#6b6560", marginBottom: 24 }}>கட்டப்பட்ட காலம்: {ta.era}</p>
 
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         {ta.summary}

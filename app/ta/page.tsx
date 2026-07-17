@@ -101,18 +101,14 @@ export default function TamilHomePage() {
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
-  const usedHotelPhotos = new Set<string>();
   const featuredHotelGuides = hotelGuidesTa
     .map(ta => {
       const en = hotelGuides.find(g => g.id === ta.id);
       if (!en) return null;
-      const hotelId = en.hotelIds.find(id => {
-        const p = hotels.find(h => h.id === id)?.photo;
-        return p && !usedHotelPhotos.has(p);
-      }) ?? en.hotelIds[0];
-      const photo = hotels.find(h => h.id === hotelId)?.photo;
-      if (photo) usedHotelPhotos.add(photo);
-      return { ta, en, photo };
+      const photos = en.hotelIds
+        .map(id => hotels.find(h => h.id === id)?.photo)
+        .filter((p): p is string => Boolean(p));
+      return { ta, en, photos };
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
@@ -179,20 +175,31 @@ export default function TamilHomePage() {
           White Town-இன் பாரம்பரிய மாளிகைகள் முதல் கடற்கரை ரிசார்ட்கள் வரை — உங்கள் பயணத்திற்கு ஏற்ற தங்குமிடத்தைத் தேர்வு செய்ய உதவும் வழிகாட்டிகள்.
         </SectionIntro>
         <ThreeGrid>
-          {featuredHotelGuides.map(({ ta, en, photo }) => (
-            <Link key={ta.id} href={`/ta/hotels/guides/${en.slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              {photo && (
-                <div style={{ position: "relative", width: "100%", height: 180 }}>
-                  <Image src={`/hotels/${photo}`} alt={ta.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+          {featuredHotelGuides.map(({ ta, en, photos }) => {
+            const [main, ...rest] = photos;
+            const side = rest.slice(0, 2);
+            return (
+              <Link key={ta.id} href={`/ta/hotels/guides/${en.slug}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%" }}>
+                <div style={{ flex: "2 1 0%", display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 180 }}>
+                  <div style={{ position: "relative" }}>
+                    {main && <Image src={`/hotels/${main}`} alt="" fill sizes="(max-width: 640px) 50vw, 200px" style={{ objectFit: "cover" }} />}
+                  </div>
+                  <div style={{ display: "grid", gridTemplateRows: "1fr 1fr" }}>
+                    {side.map((photo, i) => (
+                      <div key={i} style={{ position: "relative" }}>
+                        <Image src={`/hotels/${photo}`} alt="" fill sizes="(max-width: 640px) 25vw, 100px" style={{ objectFit: "cover" }} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              )}
-              <div style={{ padding: "14px 16px 18px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.title}</p>
-                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.intro?.split("\n\n")[0] ?? "", 115)}</p>
-                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
-              </div>
-            </Link>
-          ))}
+                <div style={{ flex: "1 1 0%", padding: "14px 16px 18px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                  <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{ta.title}</p>
+                  <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(ta.intro?.split("\n\n")[0] ?? "", 115)}</p>
+                  <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>மேலும் படிக்க →</p>
+                </div>
+              </Link>
+            );
+          })}
         </ThreeGrid>
       </section>
 
