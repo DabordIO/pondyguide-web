@@ -25,7 +25,7 @@ function GuideCard({ title, slug, photos }: { title: string; slug: string; photo
       <div style={{ position: "absolute", inset: 0, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr" }}>
         {tiles.map((photo, i) => (
           <div key={i} style={{ position: "relative" }}>
-            <Image src={`/hotels/${photo}`} alt="" fill style={{ objectFit: "cover" }} />
+            <Image src={`/hotels/${photo}`} alt="" fill sizes="200px" style={{ objectFit: "cover" }} />
           </div>
         ))}
       </div>
