@@ -225,6 +225,8 @@ Its alumni include Prapanchan, the Tamil writer S. Vaidyalingam, who received th
     website: "https://www.alliancefrancaisepondichery.com",
     body: `The Alliance Française is the global network through which France supports French language and culture beyond its borders. It operates more than eight hundred centres across a hundred and thirty countries. Most of them work in places where French is a foreign language, a professional asset, or a cultural interest with no particular local history. The Pondicherry branch is different.
 
+The Alliance Française de Pondichéry was established in 1889, making it one of the oldest in the world.
+
 **A Language With a Local Past**
 
 Pondicherry is one of the very few places in India where French was an official administrative language within the lifetimes of people still alive in the city. The Tamil families of the French quarter navigated French bureaucracy in French. The Creole families educated their children in French. The courts, the land registry, and the civil administration all operated in French until the 1950s. The language has a specific gravity here that it lacks in Mumbai or Bangalore.

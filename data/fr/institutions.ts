@@ -195,6 +195,8 @@ Parmi ses anciens élèves figurent Prapanchan, l'écrivain tamoul S. Vaidyaling
     teaser: "L'Alliance française opère dans plus de cent pays. L'antenne de Pondichéry est singulière : elle travaille dans une ville où le français fut, de mémoire vivante, une langue officielle de l'administration.",
     body: `L'Alliance française est le réseau mondial par lequel la France soutient la langue et la culture françaises au-delà de ses frontières. Elle exploite plus de huit cents centres dans cent trente pays. La plupart travaillent dans des lieux où le français est une langue étrangère, un atout professionnel, ou un intérêt culturel sans histoire locale particulière. L'antenne de Pondichéry est différente.
 
+L'Alliance française de Pondichéry a été établie en 1889, ce qui en fait l'une des plus anciennes du monde.
+
 **Une langue au passé local**
 
 Pondichéry est l'un des très rares endroits en Inde où le français fut une langue administrative officielle du vivant de personnes encore présentes dans la ville. Les familles tamoules du quartier français menaient leurs démarches administratives françaises en français. Les familles créoles éduquaient leurs enfants en français. Les tribunaux, le cadastre et l'administration civile fonctionnèrent tous en français jusque dans les années 1950. La langue a ici une gravité particulière qu'elle n'a ni à Mumbai ni à Bangalore.
