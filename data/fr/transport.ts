@@ -38,6 +38,29 @@ Réservez à l'avance via RedBus ou MakeMyTrip. À l'arrivée, utilisez Namma Ya
   },
 
   {
+    id: "private-taxi",
+    title: "Se rendre en taxi privé",
+    cardTitle: "En taxi",
+    teaser:
+      "Un taxi réservé à l'avance surtout depuis l'aéroport de Chennai est l'option porte-à-porte la plus confortable",
+    body: `**Quand un taxi a du sens**
+
+Un taxi privé est le bon choix quand vous voyagez avec des bagages, arrivez tard le soir, ou partagez le coût entre deux à quatre personnes. Il n'y a aucune correspondance à changer, aucun horaire à suivre, et le chauffeur vous attend à l'arrivée.
+
+**Plateformes de réservation**
+
+Savaari Car Rentals propose des taxis interurbains réservés à l'avance, avec des tarifs commençant généralement entre 9 et 13 roupies par kilomètre. MakeMyTrip couvre une gamme de véhicules, des petites citadines aux SUV. Uber Intercity permet des réservations à la demande ou programmées, avec un tarif fixe à partir d'environ 2 300 roupies pour le trajet Chennai-Pondichéry. Gozo Cabs est réputé pour ses réservations fiables en aller simple.
+
+**Depuis l'aéroport de Chennai**
+
+Des taxis prépayés officiels sont disponibles à tarif fixe dans le hall des arrivées. Pour Pondichéry, comptez 2 500 roupies ou plus au comptoir de l'aéroport. Une réservation Uber Intercity effectuée via l'application avant l'atterrissage coûte généralement moins cher et évite la file d'attente.
+
+**Temps de trajet depuis d'autres villes**
+
+Depuis Bangalore : environ six heures. Depuis Coimbatore : sept heures. Depuis Mysore : huit heures.`,
+  },
+
+  {
     id: "train",
     title: "Le train pour Pondichéry",
     cardTitle: "En train",
@@ -107,29 +130,6 @@ Depuis Tiruchirappalli, le trajet couvre environ 175 kilomètres et prend quatre
     faq: [
       { question: "Est-il facile de rejoindre Pondichéry depuis Chennai ?", answer: "Oui, il est relativement facile de rejoindre Pondichéry depuis Chennai. L'option la plus populaire est la route par l'East Coast Road (ECR), connue pour ses paysages côtiers. Les voyageurs peuvent choisir un taxi privé, une voiture de location ou les nombreux bus publics et privés. Le trajet dure généralement entre 3 et 4 heures selon la circulation. Cette route est appréciée pour sa praticité et ses vues sur la côte." },
     ],
-  },
-
-  {
-    id: "private-taxi",
-    title: "Taxi privé",
-    cardTitle: "En taxi",
-    teaser:
-      "Un taxi réservé à l'avance depuis Chennai est l'option porte-à-porte la plus confortable, prenant trois à trois heures et demie sans correspondance à gérer.",
-    body: `**Quand un taxi a du sens**
-
-Un taxi privé est le bon choix quand vous voyagez avec des bagages, arrivez tard le soir, ou partagez le coût entre deux à quatre personnes. Il n'y a aucune correspondance à changer, aucun horaire à suivre, et le chauffeur vous attend à l'arrivée.
-
-**Plateformes de réservation**
-
-Savaari Car Rentals propose des taxis interurbains réservés à l'avance, avec des tarifs commençant généralement entre 9 et 13 roupies par kilomètre. MakeMyTrip couvre une gamme de véhicules, des petites citadines aux SUV. Uber Intercity permet des réservations à la demande ou programmées, avec un tarif fixe à partir d'environ 2 300 roupies pour le trajet Chennai-Pondichéry. Gozo Cabs est réputé pour ses réservations fiables en aller simple.
-
-**Depuis l'aéroport de Chennai**
-
-Des taxis prépayés officiels sont disponibles à tarif fixe dans le hall des arrivées. Pour Pondichéry, comptez 2 500 roupies ou plus au comptoir de l'aéroport. Une réservation Uber Intercity effectuée via l'application avant l'atterrissage coûte généralement moins cher et évite la file d'attente.
-
-**Temps de trajet depuis d'autres villes**
-
-Depuis Bangalore : environ six heures. Depuis Coimbatore : sept heures. Depuis Mysore : huit heures.`,
   },
 
   {

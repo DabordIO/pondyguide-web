@@ -42,6 +42,31 @@ Book in advance via RedBus or MakeMyTrip. On arrival, use Namma Yatri to book an
   },
 
   {
+    id: "private-taxi",
+    title: "By private taxi",
+    cardTitle: "By Taxi",
+    category: "arriving",
+    teaser:
+      "A pre-booked taxi from Chennai, especially from the airport, is the most comfortable door-to-door option",
+    photo: "private-taxi.jpg",
+    body: `**When a taxi makes sense**
+
+A private taxi is the right call when you are travelling with luggage, arriving late at night, or splitting the cost across a group of two to four people. There is no connection to change, no schedule to chase, and the driver waits for you in arrivals.
+
+**Booking platforms**
+
+Savaari Car Rentals offers pre-booked outstation cabs with fares typically starting at 9 to 13 rupees per kilometre. MakeMyTrip covers a range of vehicle types from compact hatchbacks to SUVs. Uber Intercity allows on-demand or scheduled bookings with a fixed rate starting at approximately 2,300 rupees for the Chennai to Pondicherry run. Gozo Cabs is well regarded for reliable one-way drop bookings.
+
+**From Chennai Airport**
+
+Official pre-paid taxis are available at fixed tariffs in the arrivals hall. For Pondicherry, expect to pay 2,500 rupees or more at the airport rank. An Uber Intercity booking made through the app before landing typically costs less and avoids the queue.
+
+**Travel times from other cities**
+
+From Bangalore: approximately six hours. From Coimbatore: seven hours. From Mysore: eight hours.`,
+  },
+
+  {
     id: "train",
     title: "Train to Pondicherry",
     cardTitle: "By Train",
@@ -117,31 +142,6 @@ From Tiruchirappalli, the drive is approximately 175 kilometres and takes four t
     faq: [
       { question: "What is the easiest way to reach Pondicherry from Chennai?", answer: "Yes, reaching Pondicherry from Chennai is relatively easy. The most popular option is by road using the scenic East Coast Road (ECR). Travelers can choose private taxis, rental cars, or frequent government and private buses. The journey usually takes 3 to 4 hours depending on traffic. This route is favored for its coastal views and convenient departure points from Chennai city and the airport." },
     ],
-  },
-
-  {
-    id: "private-taxi",
-    title: "Private taxi",
-    cardTitle: "By Taxi",
-    category: "arriving",
-    teaser:
-      "A pre-booked taxi from Chennai is the most comfortable door-to-door option, taking three to three and a half hours with no connection to manage.",
-    photo: "private-taxi.jpg",
-    body: `**When a taxi makes sense**
-
-A private taxi is the right call when you are travelling with luggage, arriving late at night, or splitting the cost across a group of two to four people. There is no connection to change, no schedule to chase, and the driver waits for you in arrivals.
-
-**Booking platforms**
-
-Savaari Car Rentals offers pre-booked outstation cabs with fares typically starting at 9 to 13 rupees per kilometre. MakeMyTrip covers a range of vehicle types from compact hatchbacks to SUVs. Uber Intercity allows on-demand or scheduled bookings with a fixed rate starting at approximately 2,300 rupees for the Chennai to Pondicherry run. Gozo Cabs is well regarded for reliable one-way drop bookings.
-
-**From Chennai Airport**
-
-Official pre-paid taxis are available at fixed tariffs in the arrivals hall. For Pondicherry, expect to pay 2,500 rupees or more at the airport rank. An Uber Intercity booking made through the app before landing typically costs less and avoids the queue.
-
-**Travel times from other cities**
-
-From Bangalore: approximately six hours. From Coimbatore: seven hours. From Mysore: eight hours.`,
   },
 
   {

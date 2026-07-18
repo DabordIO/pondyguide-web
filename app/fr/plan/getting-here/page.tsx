@@ -70,7 +70,7 @@ export default function GettingHerePageFr() {
             </div>
           )}
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 8 }}>{fr.title}</h2>
-          <p style={{ fontSize: "1rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 20, fontStyle: "italic" }}>{fr.teaser}</p>
+          <p style={{ fontSize: "1rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 20, ...(en.id === "private-taxi" ? { fontWeight: 700 } : { fontStyle: "italic" }) }}>{fr.teaser}</p>
           <ArticleBody text={fr.body} />
           {fr.faq && fr.faq.length > 0 && (
             <div style={{ marginTop: 28 }}>

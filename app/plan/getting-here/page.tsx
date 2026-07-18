@@ -61,7 +61,7 @@ export default function GettingHerePage() {
             </div>
           )}
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 8 }}>{a.title}</h2>
-          <p style={{ fontSize: "1rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 20, fontStyle: "italic" }}>{a.teaser}</p>
+          <p style={{ fontSize: "1rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 20, ...(a.id === "private-taxi" ? { fontWeight: 700 } : { fontStyle: "italic" }) }}>{a.teaser}</p>
           <ArticleBody text={a.body} />
           {a.faq && a.faq.length > 0 && (
             <div style={{ marginTop: 28 }}>
