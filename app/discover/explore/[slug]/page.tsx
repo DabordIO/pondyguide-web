@@ -57,7 +57,7 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
 
       {article.photo && (
         <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
-          <Image src={`/explore/${article.photo}`} alt={article.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+          <Image src={`/explore/${article.photo}`} alt={article.title} fill priority style={{ objectFit: "cover", objectPosition: "center" }} />
         </div>
       )}
 

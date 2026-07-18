@@ -61,7 +61,7 @@ export default async function LandmarkPage({ params }: { params: Promise<{ slug:
 
       {site.photo && (
         <div style={{ position: "relative", width: "100%", height: 320, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
-          <Image src={`/sites/${site.photo}`} alt={site.name} fill style={{ objectFit: "cover", objectPosition: site.photoPosition ?? "center" }} />
+          <Image src={`/sites/${site.photo}`} alt={site.name} fill priority style={{ objectFit: "cover", objectPosition: site.photoPosition ?? "center" }} />
         </div>
       )}
 

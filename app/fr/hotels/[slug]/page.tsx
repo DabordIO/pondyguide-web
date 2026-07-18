@@ -96,7 +96,7 @@ export default async function HotelPageFr({ params }: { params: Promise<{ slug: 
 
       {en.photo && (
         <div style={{ position: "relative", width: "100%", height: 320, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
-          <Image src={`/hotels/${en.photo}`} alt={fr.name} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+          <Image src={`/hotels/${en.photo}`} alt={fr.name} fill priority style={{ objectFit: "cover", objectPosition: "center" }} />
         </div>
       )}
 

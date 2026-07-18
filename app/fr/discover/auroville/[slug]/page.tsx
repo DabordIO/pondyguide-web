@@ -64,7 +64,7 @@ export default async function AurovilleArticlePageFr({ params }: { params: Promi
 
       {en.photo ? (
         <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
-          <Image src={`/auroville/${en.photo}`} alt={fr.title} fill style={{ objectFit: "cover", objectPosition: "center" }} />
+          <Image src={`/auroville/${en.photo}`} alt={fr.title} fill priority style={{ objectFit: "cover", objectPosition: "center" }} />
         </div>
       ) : (
         <div style={{ width: "100%", height: 8, borderRadius: 4, background: en.gradient, margin: "24px 0 28px" }} />

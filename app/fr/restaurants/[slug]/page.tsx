@@ -95,7 +95,7 @@ export default async function RestaurantPageFr({ params }: { params: Promise<{ s
 
       {en.photo && (
         <div style={{ position: "relative", width: "100%", height: 320, borderRadius: 14, overflow: "hidden", margin: "24px 0 28px" }}>
-          <Image src={`/restaurants/${en.photo}`} alt={fr.name} fill style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
+          <Image src={`/restaurants/${en.photo}`} alt={fr.name} fill priority style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
         </div>
       )}
 
