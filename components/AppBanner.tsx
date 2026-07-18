@@ -25,7 +25,7 @@ const COPY = {
   },
 };
 
-const APP_HREF = { en: "https://pondyguide.com/app", ta: "https://pondyguide.com/ta/app", fr: "https://pondyguide.com/fr/app" };
+const APP_HREF = { en: "https://www.pondyguide.com/app", ta: "https://www.pondyguide.com/ta/app", fr: "https://www.pondyguide.com/fr/app" };
 
 export default function AppBanner() {
   const locale = getLocale(usePathname());

@@ -12,7 +12,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["700"], variabl
 export const metadata: Metadata = {
   title: { default: "Pondy Guide — Pondicherry Travel & Heritage", template: "%s | Pondy Guide" },
   description: "The definitive guide to Pondicherry — history, heritage, restaurants, hotels, festivals, and everything you need to explore one of India's most extraordinary towns.",
-  metadataBase: new URL("https://pondyguide.com"),
+  metadataBase: new URL("https://www.pondyguide.com"),
   openGraph: {
     siteName: "Pondy Guide",
     locale: "en_US",
