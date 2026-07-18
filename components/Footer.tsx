@@ -57,6 +57,8 @@ export default function Footer() {
                 ["Histoire", "/fr/history"],
                 ["Vies et héritages", "/fr/history/lives-and-legacies"],
                 ["Institutions françaises", "/fr/history/institutions"],
+                ["Rues du quartier français", "/fr/discover/white-town"],
+                ["Monuments et sites historiques", "/fr/discover/landmarks"],
               ]}
             />
           ) : (

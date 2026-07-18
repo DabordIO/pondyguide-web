@@ -25,19 +25,16 @@ export const navTa: NavItem[] = [
   { label: "இடங்கள்", href: "/ta/discover/landmarks" },
 ];
 
-// Mirrors the sections actually published on the French homepage (app/fr/page.tsx), in the
-// same order — items without a French translation yet (Discover overview) are omitted.
+// Trimmed to the core sections to keep the top nav from getting crowded — Vies et
+// heritages, Institutions francaises, Rues and Monuments are still on the homepage
+// and linked from the footer, just not repeated in the top nav.
 export const navFr: NavItem[] = [
   { label: "Histoire", href: "/fr/history" },
-  { label: "Vies et héritages", href: "/fr/history/lives-and-legacies" },
-  { label: "Institutions françaises", href: "/fr/history/institutions" },
-  { label: "Rues", href: "/fr/discover/white-town" },
-  { label: "Monuments", href: "/fr/discover/landmarks" },
   { label: "Hôtels", href: "/fr/hotels" },
   { label: "Restaurants", href: "/fr/restaurants" },
   { label: "Auroville", href: "/fr/discover/auroville" },
   { label: "Fêtes", href: "/fr/festivals" },
-  { label: "Préparer", href: "/fr/plan" },
+  { label: "Avant de partir", href: "/fr/plan" },
 ];
 
 export function isTamil(pathname: string): boolean {
