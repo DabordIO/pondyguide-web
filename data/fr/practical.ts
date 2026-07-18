@@ -32,7 +32,11 @@ Un taxi privé depuis Chennai prend environ trois heures et constitue l'option l
 
 **En avion**
 
-Prenez l'avion jusqu'à l'aéroport international de Chennai, qui dessert toutes les grandes villes indiennes et un certain nombre de destinations internationales (Dubaï, Kuala Lumpur, Colombo). Pondichéry dispose d'un petit aéroport aux services programmés très limités : ne comptez pas dessus.`,
+Prenez l'avion jusqu'à l'aéroport international de Chennai, qui dessert toutes les grandes villes indiennes et un certain nombre de destinations internationales (Dubaï, Kuala Lumpur, Colombo). Pondichéry dispose d'un petit aéroport aux services programmés très limités : ne comptez pas dessus.
+
+**En savoir plus**
+
+Pour le détail complet des trajets, tarifs et plateformes de réservation pour chaque option, consultez notre guide complet pour [se rendre à Pondichéry](/fr/plan/getting-here).`,
   },
   {
     id: "getting-around",
@@ -61,7 +65,11 @@ Plusieurs agences de location près de White Town louent scooters et motos à la
 
 **En Uber**
 
-Uber opère à Pondichéry. Il vous faudra une carte SIM indienne ou une eSIM pour l'utiliser.`,
+Uber opère à Pondichéry. Il vous faudra une carte SIM indienne ou une eSIM pour l'utiliser.
+
+**En savoir plus**
+
+Pour les tarifs, les trajets et les applications de réservation des auto-rickshaws, vélos et scooters, consultez notre guide complet pour [se déplacer à Pondichéry](/fr/plan/getting-around).`,
     faq: [
       { question: "Pondichéry se visite-t-elle facilement à pied ?", answer: "Oui. Le quartier historique de White Town est compact et particulièrement agréable à découvrir à pied. La plupart des bâtiments coloniaux, cafés, boutiques, églises et la promenade du bord de mer se trouvent à courte distance les uns des autres. La marche est souvent la meilleure façon d'apprécier l'architecture et l'ambiance. En revanche, pour les plages éloignées du centre, [Auroville](/fr/discover/auroville) ou les villages voisins, un scooter, un vélo, un auto-rickshaw ou un taxi sera plus pratique." },
     ],
@@ -241,7 +249,11 @@ Urgence générale : 112
 
 **Sécurité générale**
 
-Pondichéry est une ville sûre pour les visiteurs. Les précautions urbaines habituelles s'appliquent : faites attention à vos affaires dans les marchés bondés, utilisez des tarifs négociés pour les rickshaws, et gardez une copie de votre passeport plutôt que l'original. Les rues de White Town sont largement calmes après 22h ; évitez de marcher seul tard le soir dans des zones peu familières.`,
+Pondichéry est une ville sûre pour les visiteurs. Les précautions urbaines habituelles s'appliquent : faites attention à vos affaires dans les marchés bondés, utilisez des tarifs négociés pour les rickshaws, et gardez une copie de votre passeport plutôt que l'original. Les rues de White Town sont largement calmes après 22h ; évitez de marcher seul tard le soir dans des zones peu familières.
+
+**En savoir plus**
+
+Pour la liste complète des hôpitaux, cliniques privées et pharmacies, consultez notre guide complet de la [santé à Pondichéry](/fr/plan/healthcare).`,
   },
   {
     id: "sun-water-health",
@@ -323,7 +335,7 @@ L'ashram est ouvert de 8h à midi et de 14h à 18h la plupart des jours. Mettez 
 
 **Auroville**
 
-Les véhicules privés ne sont pas autorisés à l'intérieur de la zone principale d'Auroville pour les visiteurs de passage. Garez-vous au Centre d'accueil et marchez ou prenez la navette depuis là. Le Centre d'accueil est ouvert de 9h à 17h30 tous les jours. Les observations du Matrimandir (la sphère dorée de méditation au cœur d'Auroville) nécessitent un laissez-passer récupéré en personne au Centre d'accueil : les laissez-passer ne peuvent pas être réservés en ligne. Arrivez tôt car les places sont limitées. Plus d'informations sur auroville.org.
+Les véhicules privés ne sont pas autorisés à l'intérieur de la zone principale d'Auroville pour les visiteurs de passage. Garez-vous au Centre d'accueil et marchez ou prenez la navette depuis là. Le Centre d'accueil est ouvert de 9h à 17h30 tous les jours. Les observations du [Matrimandir](/fr/discover/auroville/the-matrimandir) (la sphère dorée de méditation au cœur d'Auroville) nécessitent un laissez-passer récupéré en personne au Centre d'accueil : les laissez-passer ne peuvent pas être réservés en ligne. Arrivez tôt car les places sont limitées. Plus d'informations sur auroville.org.
 
 **Chunnambar Boat House et Paradise Beach**
 
@@ -331,11 +343,11 @@ Le dernier ferry public de la Chunnambar Boat House vers Paradise Beach part à 
 
 **Musée de Pondichéry**
 
-Ouvert de 10h à 17h, fermé le lundi. La photographie n'est pas autorisée à l'intérieur. Les collections archéologiques et coloniales françaises méritent bien une heure de votre temps.
+Ouvert de 10h à 17h, fermé le lundi. La photographie n'est pas autorisée à l'intérieur. Les collections archéologiques et coloniales françaises méritent bien une heure de votre temps — consultez notre [guide complet du musée](/fr/discover/landmarks/museum) pour savoir ce qui y est exposé.
 
 **Jardin botanique**
 
-Ouvert de 10h à 17h, fermé le mardi. Le jardin est petit mais agréable tôt le matin. L'aquarium au sein du complexe du jardin a des horaires séparés.
+Ouvert de 10h à 17h, fermé le mardi. Le jardin est petit mais agréable tôt le matin. L'aquarium au sein du complexe du jardin a des horaires séparés. Pour en savoir plus, consultez notre [guide du Jardin botanique](/fr/discover/landmarks/botanical-garden).
 
 **Phare d'Auroville**
 

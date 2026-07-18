@@ -36,7 +36,11 @@ A private taxi from Chennai takes about three hours and is the most flexible opt
 
 **By air**
 
-Fly into Chennai International Airport, which connects to all major Indian cities and a number of international destinations (Dubai, Kuala Lumpur, Colombo). Pondicherry has a small airport with very limited scheduled services: do not rely on it.`,
+Fly into Chennai International Airport, which connects to all major Indian cities and a number of international destinations (Dubai, Kuala Lumpur, Colombo). Pondicherry has a small airport with very limited scheduled services: do not rely on it.
+
+**More detail**
+
+For a full breakdown of routes, prices, and booking platforms for each option, see our complete guide to [getting to Pondicherry](/plan/getting-here).`,
   },
   {
     id: "getting-around",
@@ -66,7 +70,11 @@ Several rental agencies near the White Town rent scooters and motorbikes by the 
 
 **By Uber**
 
-Uber operates in Pondicherry. You will need an Indian SIM card or eSIM to use it.`,
+Uber operates in Pondicherry. You will need an Indian SIM card or eSIM to use it.
+
+**More detail**
+
+For fares, routes, and booking apps for auto-rickshaws, bicycles, and scooters, see our complete guide to [getting around Pondicherry](/plan/getting-around).`,
     faq: [
       { question: "Is Pondicherry walkable?", answer: "Yes. The historic White Town area is compact and very pleasant to explore on foot. Most colonial buildings, cafés, boutiques, churches, and the seaside promenade are located within walking distance of one another. Walking is often the best way to enjoy the architecture and atmosphere. However, for beaches outside the center, [Auroville](/discover/auroville), or nearby villages, a scooter, bicycle, auto-rickshaw, or taxi is more convenient." },
     ],
@@ -250,7 +258,11 @@ General emergency: 112
 
 **General safety**
 
-Pondicherry is a safe city for visitors. Standard city precautions apply: be aware of your belongings in crowded markets, use negotiated fares for rickshaws, and carry a copy of your passport rather than the original. Streets in the White Town are largely quiet after 10pm; avoid walking alone late at night in unfamiliar areas.`,
+Pondicherry is a safe city for visitors. Standard city precautions apply: be aware of your belongings in crowded markets, use negotiated fares for rickshaws, and carry a copy of your passport rather than the original. Streets in the White Town are largely quiet after 10pm; avoid walking alone late at night in unfamiliar areas.
+
+**More detail**
+
+For a full list of hospitals, private clinics, and pharmacies, see our complete guide to [healthcare in Pondicherry](/plan/healthcare).`,
   },
   {
     id: "sun-water-health",
@@ -340,7 +352,7 @@ The ashram is open from 8am to noon and from 2pm to 6pm most days. Switch your p
 
 **Auroville**
 
-Private vehicles are not permitted inside the main Auroville area for casual visitors. Park at the Visitor Centre and walk or take the shuttle from there. The Visitor Centre is open from 9am to 5:30pm daily. Viewings of the Matrimandir (the golden meditation sphere at the heart of Auroville) require a pass collected in person from the Visitor Centre: passes cannot be booked online. Arrive early as numbers are limited. More information at auroville.org.
+Private vehicles are not permitted inside the main Auroville area for casual visitors. Park at the Visitor Centre and walk or take the shuttle from there. The Visitor Centre is open from 9am to 5:30pm daily. Viewings of the [Matrimandir](/discover/auroville/the-matrimandir) (the golden meditation sphere at the heart of Auroville) require a pass collected in person from the Visitor Centre: passes cannot be booked online. Arrive early as numbers are limited. More information at auroville.org.
 
 **Chunnambar Boat House and Paradise Beach**
 
@@ -348,11 +360,11 @@ The last public ferry from Chunnambar Boat House to Paradise Beach departs at 4p
 
 **Pondicherry Museum**
 
-Open from 10am to 5pm, closed on Mondays. Photography is not allowed inside. The archaeological and French colonial collections are worth an hour of your time.
+Open from 10am to 5pm, closed on Mondays. Photography is not allowed inside. The archaeological and French colonial collections are worth an hour of your time — see our [full guide to the museum](/discover/landmarks/museum) for what's on display.
 
 **Botanical Garden**
 
-Open from 10am to 5pm, closed on Tuesdays. The garden is small but pleasant in the early morning. The aquarium within the garden complex keeps separate hours.
+Open from 10am to 5pm, closed on Tuesdays. The garden is small but pleasant in the early morning. The aquarium within the garden complex keeps separate hours. Read more in our [guide to the Botanical Garden](/discover/landmarks/botanical-garden).
 
 **Auroville Lighthouse**
 
