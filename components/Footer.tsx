@@ -123,7 +123,7 @@ export default function Footer() {
                 ? "Emportez le guide complet hors ligne. Cartes, histoire et recommandations dans votre poche."
                 : "Take the full guide offline. Maps, history, and recommendations in your pocket."}
             </p>
-            <Link href={ta ? "/ta/app" : "/app"} style={{ display: "inline-block", background: "#d4711a", color: "#fff", fontSize: 13, fontWeight: 700, padding: "8px 16px", borderRadius: 8, textDecoration: "none" }}>
+            <Link href={ta ? "/ta/app" : fr ? "/fr/app" : "/app"} style={{ display: "inline-block", background: "#d4711a", color: "#fff", fontSize: 13, fontWeight: 700, padding: "8px 16px", borderRadius: 8, textDecoration: "none" }}>
               {ta ? "Pondy App-ஐப் பெறுங்கள்" : fr ? "Obtenir l'appli Pondy" : "Get the Pondy App"}
             </Link>
           </div>
