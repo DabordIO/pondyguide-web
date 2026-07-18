@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   title: "Pondy Guide: Travel, History and Heritage in Pondicherry",
   description: "An independent guide to Pondicherry, covering history, heritage streets, restaurants, hotels, festivals and practical travel advice.",
   alternates: {
+    canonical: "/",
     languages: {
       en: "/",
       ta: "/ta",

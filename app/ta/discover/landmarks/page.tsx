@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "புதுச்சேரி சின்னங்கள், கோயில்கள் மற்றும் வரலாற்றுத் தளங்கள்",
   description: "தேவாலயங்கள், கோயில்கள், அருங்காட்சியகங்கள், காலனித்துவக் கட்டிடங்கள் மற்றும் பழங்கால இடிபாடுகள் — இரண்டாயிரம் ஆண்டு உள்ளூர் வரலாற்றை வெளிப்படுத்துபவை.",
   alternates: {
+    canonical: "/ta/discover/landmarks",
     languages: {
       en: "/discover/landmarks",
       ta: "/ta/discover/landmarks",

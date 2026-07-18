@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Hotels in Pondicherry, Where to Stay and Why",
   description: "Compare heritage mansions, boutique guesthouses, family hotels and coastal retreats with independent recommendations.",
   alternates: {
+    canonical: "/hotels",
     languages: {
       en: "/hotels",
       ta: "/ta/hotels",

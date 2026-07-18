@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "À propos de Pondy Guide et de ses créateurs",
   description: "Découvrez comment deux amis aux racines familiales à Pondichéry ont créé un guide indépendant centré sur l'histoire et le lieu.",
   alternates: {
+    canonical: "/fr/about",
     languages: {
       en: "/about",
       ta: "/ta/about",

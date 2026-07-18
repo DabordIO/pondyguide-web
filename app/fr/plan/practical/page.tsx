@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Guide pratique de Pondichéry pour les primo-visiteurs",
   description: "Conseils sur la devise, les cartes SIM, les vêtements, l'eau, le pourboire et les erreurs courantes des visiteurs à Pondichéry.",
   alternates: {
+    canonical: "/fr/plan/practical",
     languages: {
       en: "/plan/practical",
       fr: "/fr/plan/practical",

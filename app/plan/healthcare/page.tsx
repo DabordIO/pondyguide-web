@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Healthcare in Pondicherry, Hospitals and Clinics",
   description: "From JIPMER to private clinics, understand Pondicherry's healthcare options before you need medical help.",
   alternates: {
+    canonical: "/plan/healthcare",
     languages: {
       en: "/plan/healthcare",
       fr: "/fr/plan/healthcare",

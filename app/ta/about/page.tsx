@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Pondy Guide பற்றி மற்றும் அதன் பின்னணியில் உள்ளவர்கள்",
   description: "Pondicherry உடன் குடும்ப வேர்கள் கொண்ட இரு நண்பர்கள், வரலாறு மற்றும் இடத்தை மையமாகக் கொண்ட ஒரு சுயாதீன வழிகாட்டியை எவ்வாறு உருவாக்கினர் என்பதை அறியுங்கள்.",
   alternates: {
+    canonical: "/ta/about",
     languages: {
       en: "/about",
       ta: "/ta/about",

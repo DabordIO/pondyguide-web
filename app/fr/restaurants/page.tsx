@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Restaurants à Pondichéry, sélection locale honnête",
   description: "Découvrez les restaurants de Pondichéry, des cafés coloniaux en cour intérieure aux adresses de fruits de mer en passant par les classiques sud-indiens, avec des recommandations honnêtes.",
   alternates: {
+    canonical: "/fr/restaurants",
     languages: {
       en: "/restaurants",
       ta: "/ta/restaurants",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Vies et héritages qui ont façonné Pondichéry",
   description: "Découvrez les gouverneurs, commandants, diplomates et écrivains dont les décisions ont façonné Pondichéry et ses rues.",
   alternates: {
+    canonical: "/fr/history/lives-and-legacies",
     languages: {
       en: "/history/lives-and-legacies",
       ta: "/ta/history/lives-and-legacies",

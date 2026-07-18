@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Se déplacer à Pondichéry en auto, à vélo et en bus",
   description: "Apprenez à circuler à Pondichéry en auto-rickshaw, à vélo, en scooter ou en taxi, et quand la marche suffit.",
   alternates: {
+    canonical: "/fr/plan/getting-around",
     languages: {
       en: "/plan/getting-around",
       fr: "/fr/plan/getting-around",

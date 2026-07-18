@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Plan du site — Pondy Guide",
   description: "Une carte complète de tout ce que propose Pondy Guide — histoire, découverte, festivals, hôtels, restaurants, et informations pratiques.",
   alternates: {
+    canonical: "/fr/sitemap",
     languages: {
       en: "/sitemap",
       fr: "/fr/sitemap",

@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: fr.metaDescription ?? fr.teaser,
     openGraph: en.photo ? { images: [`/explore/${en.photo}`] } : undefined,
     alternates: {
+      canonical: `/fr/discover/explore/${slug}`,
       languages: {
         en: `/discover/explore/${slug}`,
         fr: `/fr/discover/explore/${slug}`,

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "புதுச்சேரியில் உணவகங்கள்",
   description: "புதுச்சேரியின் சிறந்த பிரெஞ்சு, இந்திய, கடலுணவு மற்றும் சர்வதேச உணவகங்களுக்கான வழிகாட்டிகள்.",
   alternates: {
+    canonical: "/ta/restaurants",
     languages: {
       en: "/restaurants",
       ta: "/ta/restaurants",

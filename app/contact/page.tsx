@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Contact Pondy Guide and Send Us a Message",
   description: "Contact the Pondy Guide team with questions, suggestions or corrections about the site and its research.",
   alternates: {
+    canonical: "/contact",
     languages: {
       en: "/contact",
       ta: "/ta/contact",

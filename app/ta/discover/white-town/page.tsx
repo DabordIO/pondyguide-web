@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "வெள்ளை நகர் தெருக்கள்: புதுச்சேரியின் பிரெஞ்சு பகுதி",
   description: "பிரெஞ்சு பகுதியின் 40 தெருக்களையும், அவற்றின் பெயர்களுக்குப் பின்னால் உள்ள ஆளுநர்கள், கடற்படைத் தளபதிகள், வீரர்களையும் அறியுங்கள்.",
   alternates: {
+    canonical: "/ta/discover/white-town",
     languages: {
       en: "/discover/white-town",
       ta: "/ta/discover/white-town",

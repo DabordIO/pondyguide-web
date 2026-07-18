@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   title: "புதுச்சேரி வழிகாட்டி — தமிழில்",
   description: "புதுச்சேரியின் வரலாறு, உணவகங்கள் மற்றும் மேலும் பல — தமிழில்.",
   alternates: {
+    canonical: "/ta",
     languages: {
       en: "/",
       ta: "/ta",

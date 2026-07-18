@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Festivals à Pondichéry, calendrier mois par mois",
   description: "Un calendrier des festivals de Pondichéry, des célébrations hindoues et chrétiennes aux traditions françaises propres à la ville.",
   alternates: {
+    canonical: "/fr/festivals",
     languages: {
       en: "/festivals",
       fr: "/fr/festivals",

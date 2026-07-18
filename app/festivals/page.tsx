@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Festivals in Pondicherry, Month by Month Guide",
   description: "A calendar of Pondicherry's festivals, from Hindu and Christian celebrations to French traditions unique to the town.",
   alternates: {
+    canonical: "/festivals",
     languages: {
       en: "/festivals",
       fr: "/fr/festivals",

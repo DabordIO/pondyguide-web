@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: guide.metaDescription,
     alternates: hasTa || hasFr
       ? {
+          canonical: `/hotels/guides/${slug}`,
           languages: {
             en: `/hotels/guides/${slug}`,
             ...(hasTa ? { ta: `/ta/hotels/guides/${slug}` } : {}),

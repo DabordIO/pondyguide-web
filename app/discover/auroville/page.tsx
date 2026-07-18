@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Auroville: History, Ideas and Places to Visit",
   description: "Founded in 1968, Auroville is home to 3,400 residents from 60 countries. Understand the township before you visit.",
   alternates: {
+    canonical: "/discover/auroville",
     languages: {
       en: "/discover/auroville",
       fr: "/fr/discover/auroville",

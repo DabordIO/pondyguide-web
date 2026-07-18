@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "The Pondy App — Coming Soon",
   description: "The Pondy App, the offline companion to this guide, is launching in a few days.",
   alternates: {
+    canonical: "/app",
     languages: {
       en: "/app",
       ta: "/ta/app",

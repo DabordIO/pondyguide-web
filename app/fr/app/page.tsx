@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "L'application Pondy — Bientôt disponible",
   description: "L'appli Pondy, le compagnon hors ligne de ce guide, sera lancée dans quelques jours.",
   alternates: {
+    canonical: "/fr/app",
     languages: {
       en: "/app",
       ta: "/ta/app",

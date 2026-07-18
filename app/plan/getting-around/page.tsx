@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Getting Around Pondicherry by Auto, Bike and Bus",
   description: "Learn how to navigate Pondicherry by auto-rickshaw, bicycle, scooter or taxi, and when walking is enough.",
   alternates: {
+    canonical: "/plan/getting-around",
     languages: {
       en: "/plan/getting-around",
       fr: "/fr/plan/getting-around",

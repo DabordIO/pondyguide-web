@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "Histoire de Pondichéry, de Rome à l'Inde française",
   description: "Suivez l'histoire de Pondichéry, du commerce antique et de la domination française aux guerres, institutions et personnages qui ont façonné la ville.",
   alternates: {
+    canonical: "/fr/history",
     languages: {
       en: "/history",
       fr: "/fr/history",

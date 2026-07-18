@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Restaurants in Pondicherry, Honest Local Picks",
   description: "Browse Pondicherry restaurants, from colonial garden cafés and seafood spots to South Indian staples, with honest recommendations.",
   alternates: {
+    canonical: "/restaurants",
     languages: {
       en: "/restaurants",
       ta: "/ta/restaurants",

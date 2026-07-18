@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Rejoindre Pondichéry depuis Chennai et au-delà",
   description: "Comparez les trajets depuis Chennai et Bangalore en bus, en train et par la pittoresque East Coast Road, sans vol direct.",
   alternates: {
+    canonical: "/fr/plan/getting-here",
     languages: {
       en: "/plan/getting-here",
       fr: "/fr/plan/getting-here",

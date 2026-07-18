@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: article.metaDescription ?? article.teaser,
     openGraph: article.photo ? { images: [`/${article.photoFolder ?? "history"}/${article.photo}`] } : undefined,
     alternates: {
+      canonical: `/history/${slug}`,
       languages: {
         en: `/history/${slug}`,
         ta: hasTa ? `/ta/history/${slug}` : undefined,

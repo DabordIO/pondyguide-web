@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "தள வரைபடம் — Pondy Guide",
   description: "Pondy Guide-இல் உள்ள அனைத்தையும் காணும் ஒரு முழு வரைபடம் — வரலாறு, தளங்கள், திருவிழாக்கள், ஹோட்டல்கள், உணவகங்கள் மற்றும் நடைமுறைத் தகவல்கள்.",
   alternates: {
+    canonical: "/ta/sitemap",
     languages: {
       en: "/sitemap",
       ta: "/ta/sitemap",

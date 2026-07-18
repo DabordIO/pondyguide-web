@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "புதுச்சேரியை உருவாக்கிய வாழ்க்கை வரலாறுகள்",
   description: "புதுச்சேரியின் வரலாற்றை வடிவமைத்த ஆளுநர்கள், தளபதிகள், தூதர்கள் மற்றும் எழுத்தாளர்களை அறியுங்கள்.",
   alternates: {
+    canonical: "/ta/history/lives-and-legacies",
     languages: {
       en: "/history/lives-and-legacies",
       ta: "/ta/history/lives-and-legacies",

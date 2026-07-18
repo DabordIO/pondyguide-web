@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Institutions françaises encore actives à Pondichéry",
   description: "Écoles, centres de recherche, le consulat et les organisations culturelles montrent comment la présence française perdure à Pondichéry.",
   alternates: {
+    canonical: "/fr/history/institutions",
     languages: {
       en: "/history/institutions",
       fr: "/fr/history/institutions",

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "About Pondy Guide and the People Behind It",
   description: "Learn how two friends with family roots in Pondicherry built an independent guide focused on history and place.",
   alternates: {
+    canonical: "/about",
     languages: {
       en: "/about",
       ta: "/ta/about",

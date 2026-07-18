@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Auroville : histoire, idées et lieux à visiter",
   description: "Fondée en 1968, Auroville compte 3 400 résidents venus de 60 pays. Comprenez la cité avant votre visite.",
   alternates: {
+    canonical: "/fr/discover/auroville",
     languages: {
       en: "/discover/auroville",
       fr: "/fr/discover/auroville",

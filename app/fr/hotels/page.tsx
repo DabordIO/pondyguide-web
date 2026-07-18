@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Hôtels à Pondichéry, où loger et pourquoi",
   description: "Comparez demeures patrimoniales, maisons d'hôtes boutique, hôtels familiaux et retraites côtières, avec des recommandations indépendantes.",
   alternates: {
+    canonical: "/fr/hotels",
     languages: {
       en: "/hotels",
       ta: "/ta/hotels",

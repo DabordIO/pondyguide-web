@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Plan Your Trip: Transport and Advice for Pondicherry",
   description: "Practical information on getting here, moving around town, healthcare and the details visitors need before arriving.",
   alternates: {
+    canonical: "/plan",
     languages: {
       en: "/plan",
       fr: "/fr/plan",

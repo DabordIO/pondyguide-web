@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "History of Pondicherry, From Rome to French India",
   description: "Follow Pondicherry's story from ancient trade and French rule to the wars, institutions and people who shaped the city.",
   alternates: {
+    canonical: "/history",
     languages: {
       en: "/history",
       fr: "/fr/history",

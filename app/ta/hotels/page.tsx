@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "புதுச்சேரியில் ஹோட்டல்கள்",
   description: "புதுச்சேரியின் பாரம்பரிய, boutique, குடும்ப, backpacker மற்றும் கடற்கரை ஹோட்டல்களுக்கான வழிகாட்டிகள்.",
   alternates: {
+    canonical: "/ta/hotels",
     languages: {
       en: "/hotels",
       ta: "/ta/hotels",

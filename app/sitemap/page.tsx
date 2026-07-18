@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Sitemap — Pondy Guide",
   description: "A full map of everything on Pondy Guide — history, discover, festivals, hotels, restaurants, and practical information.",
   alternates: {
+    canonical: "/sitemap",
     languages: {
       en: "/sitemap",
       ta: "/ta/sitemap",

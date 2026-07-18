@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   title: "Guide de Pondichéry — en français",
   description: "L'histoire, les institutions françaises et les grandes figures de Pondichéry — en français.",
   alternates: {
+    canonical: "/fr",
     languages: {
       en: "/",
       fr: "/fr",

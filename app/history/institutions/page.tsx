@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "French Institutions Still Operating in Pondicherry",
   description: "Schools, research centres, the consulate and cultural organisations show how France's presence endures in Pondicherry.",
   alternates: {
+    canonical: "/history/institutions",
     languages: {
       en: "/history/institutions",
       ta: "/ta/history/institutions",

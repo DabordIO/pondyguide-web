@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Pondy Guide-ஐத் தொடர்பு கொள்ளுங்கள்",
   description: "இணையதளம் மற்றும் அதன் ஆராய்ச்சி குறித்த கேள்விகள், பரிந்துரைகள் அல்லது திருத்தங்களுக்காக Pondy Guide குழுவைத் தொடர்பு கொள்ளுங்கள்.",
   alternates: {
+    canonical: "/ta/contact",
     languages: {
       en: "/contact",
       ta: "/ta/contact",

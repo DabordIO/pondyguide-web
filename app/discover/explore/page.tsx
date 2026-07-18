@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Things to Do in Pondicherry, Walks and Day Trips",
   description: "Find walking routes, workshops and day trips around Pondicherry, from Arikamedu's Roman ruins to Pichavaram's mangroves.",
   alternates: {
+    canonical: "/discover/explore",
     languages: {
       en: "/discover/explore",
       fr: "/fr/discover/explore",

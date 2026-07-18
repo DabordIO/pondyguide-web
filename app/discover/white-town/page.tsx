@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "White Town Streets: Pondicherry's French Quarter",
   description: "Navigate the French Quarter's 40 streets and learn about the governors, admirals and soldiers behind their names.",
   alternates: {
+    canonical: "/discover/white-town",
     languages: {
       en: "/discover/white-town",
       ta: "/ta/discover/white-town",

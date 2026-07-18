@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Préparer votre voyage : transport et conseils pour Pondichéry",
   description: "Informations pratiques pour arriver, se déplacer en ville, la santé, et tout ce que les visiteurs doivent savoir avant d'arriver.",
   alternates: {
+    canonical: "/fr/plan",
     languages: {
       en: "/plan",
       fr: "/fr/plan",

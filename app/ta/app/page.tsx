@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "பாண்டி செயலி — இன்னும் சில நாட்களில்",
   description: "இந்த வழிகாட்டியின் ஆஃப்லைன் துணையான பாண்டி செயலி, இன்னும் சில நாட்களில் வெளியிடப்படும்.",
   alternates: {
+    canonical: "/ta/app",
     languages: {
       en: "/app",
       ta: "/ta/app",

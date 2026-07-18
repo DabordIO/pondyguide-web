@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Practical Guide to Pondicherry for First-Time Visitors",
   description: "Advice on currency, SIM cards, clothing, water, tipping and the common mistakes visitors make in Pondicherry.",
   alternates: {
+    canonical: "/plan/practical",
     languages: {
       en: "/plan/practical",
       fr: "/fr/plan/practical",

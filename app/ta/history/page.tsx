@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "புதுச்சேரியின் வரலாறு, Rome முதல் French India வரை",
   description: "பண்டைய வணிகம் முதல் French ஆட்சி வரை, நகரத்தை வடிவமைத்த போர்கள், நிறுவனங்கள் மற்றும் மனிதர்கள் வரை, புதுச்சேரியின் கதையைப் பின்தொடருங்கள்.",
   alternates: {
+    canonical: "/ta/history",
     languages: {
       en: "/history",
       ta: "/ta/history",

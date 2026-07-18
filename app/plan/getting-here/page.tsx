@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Getting to Pondicherry from Chennai and Beyond",
   description: "Compare routes from Chennai and Bangalore by bus, train and the scenic East Coast Road, without a direct flight.",
   alternates: {
+    canonical: "/plan/getting-here",
     languages: {
       en: "/plan/getting-here",
       fr: "/fr/plan/getting-here",

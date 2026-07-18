@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Les rues du quartier français de Pondichéry",
   description: "Découvrez les 40 rues du quartier français et les gouverneurs, amiraux et personnalités dont elles portent le nom.",
   alternates: {
+    canonical: "/fr/discover/white-town",
     languages: {
       en: "/discover/white-town",
       fr: "/fr/discover/white-town",

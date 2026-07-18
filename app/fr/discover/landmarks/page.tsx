@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Monuments, temples et sites historiques de Pondichéry",
   description: "Églises, temples, musées, bâtiments coloniaux et vestiges antiques — deux mille ans d'histoire locale.",
   alternates: {
+    canonical: "/fr/discover/landmarks",
     languages: {
       en: "/discover/landmarks",
       fr: "/fr/discover/landmarks",

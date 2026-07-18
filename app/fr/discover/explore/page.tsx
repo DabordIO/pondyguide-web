@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Que faire à Pondichéry, balades et excursions",
   description: "Balades, ateliers et excursions autour de Pondichéry, des ruines romaines d'Arikamedu aux mangroves de Pichavaram.",
   alternates: {
+    canonical: "/fr/discover/explore",
     languages: {
       en: "/discover/explore",
       fr: "/fr/discover/explore",

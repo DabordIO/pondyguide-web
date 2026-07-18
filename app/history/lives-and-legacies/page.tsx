@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Lives and Legacies That Shaped Pondicherry",
   description: "Meet the governors, commanders, diplomats and writers whose decisions shaped Pondicherry and its streets.",
   alternates: {
+    canonical: "/history/lives-and-legacies",
     languages: {
       en: "/history/lives-and-legacies",
       ta: "/ta/history/lives-and-legacies",

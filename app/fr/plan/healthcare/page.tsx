@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Santé à Pondichéry, hôpitaux et cliniques",
   description: "De JIPMER aux cliniques privées, comprenez les options de santé de Pondichéry avant d'en avoir besoin.",
   alternates: {
+    canonical: "/fr/plan/healthcare",
     languages: {
       en: "/plan/healthcare",
       fr: "/fr/plan/healthcare",

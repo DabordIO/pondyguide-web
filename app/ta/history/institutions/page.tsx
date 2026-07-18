@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "புதுச்சேரியில் இன்னும் செயல்படும் French நிறுவனங்கள்",
   description: "பள்ளிகள், ஆய்வு மையங்கள், தூதரகம் மற்றும் கலாச்சார அமைப்புகள் — புதுச்சேரியில் French இருப்பு எவ்வாறு தொடர்கிறது என்பதைக் காட்டுகின்றன.",
   alternates: {
+    canonical: "/ta/history/institutions",
     languages: {
       en: "/history/institutions",
       ta: "/ta/history/institutions",
