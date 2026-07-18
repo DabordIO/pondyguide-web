@@ -32,7 +32,7 @@ export default function Footer() {
             <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>
               Pondy<span style={{ color: "#f97316" }}>.</span>Guide
             </p>
-            <p style={{ fontSize: 13, lineHeight: 1.7 }}>
+            <p style={{ fontSize: 14, fontWeight: 700, lineHeight: 1.7 }}>
               {ta
                 ? "புதுச்சேரியின் வரலாறு, பாரம்பரியம் மற்றும் அறிந்து கொள்ள வேண்டிய அனைத்தையும் உள்ளடக்கிய முழுமையான வழிகாட்டி."
                 : fr
@@ -45,7 +45,9 @@ export default function Footer() {
             <FooterColumn
               title="ஆராயுங்கள்"
               links={[
+                ["வரலாறு", "/ta/history"],
                 ["வாழ்க்கை வரலாறுகள்", "/ta/history/lives-and-legacies"],
+                ["French நிறுவனங்கள்", "/ta/history/institutions"],
                 ["வெள்ளை நகர் தெருக்கள்", "/ta/discover/white-town"],
                 ["வரலாற்றுச் சின்னங்களும் முக்கிய இடங்களும்", "/ta/discover/landmarks"],
               ]}
@@ -76,15 +78,6 @@ export default function Footer() {
 
           {ta && (
             <FooterColumn
-              title="திட்டமிடுங்கள்"
-              links={[
-                ["உணவகங்கள்", "/ta/restaurants"],
-                ["ஹோட்டல்கள்", "/ta/hotels"],
-              ]}
-            />
-          )}
-          {ta && (
-            <FooterColumn
               title="மேலும்"
               links={[
                 ["About", "/ta/about"],
@@ -97,6 +90,7 @@ export default function Footer() {
             <FooterColumn
               title="Plus"
               links={[
+                ["Conseils pratiques", "/fr/plan/practical"],
                 ["À propos", "/fr/about"],
                 ["Contact", "/fr/contact"],
                 ["Plan du site", "/fr/sitemap"],
@@ -107,6 +101,7 @@ export default function Footer() {
             <FooterColumn
               title="More"
               links={[
+                ["Practical Tips", "/plan/practical"],
                 ["About", "/about"],
                 ["Contact", "/contact"],
                 ["Sitemap", "/sitemap"],
