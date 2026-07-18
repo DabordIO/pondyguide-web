@@ -66,9 +66,10 @@ export default function Footer() {
               title="Explore"
               links={[
                 ["History", "/history"],
-                ["Discover", "/discover"],
-                ["Trips & Experiences", "/discover/explore"],
                 ["Legacies", "/history/lives-and-legacies"],
+                ["French Institutions", "/history/institutions"],
+                ["White Town Streets", "/discover/white-town"],
+                ["Landmarks", "/discover/landmarks"],
               ]}
             />
           )}
@@ -86,9 +87,9 @@ export default function Footer() {
             <FooterColumn
               title="Plan"
               links={[
-                ["Restaurants", "/restaurants"],
-                ["Hotels", "/hotels"],
                 ["Getting Here", "/plan/getting-here"],
+                ["Getting Around", "/plan/getting-around"],
+                ["Healthcare", "/plan/healthcare"],
                 ["Practical Tips", "/plan/practical"],
               ]}
             />
@@ -111,6 +112,16 @@ export default function Footer() {
                 ["À propos", "/fr/about"],
                 ["Contact", "/fr/contact"],
                 ["Plan du site", "/fr/sitemap"],
+              ]}
+            />
+          )}
+          {!ta && !fr && (
+            <FooterColumn
+              title="More"
+              links={[
+                ["About", "/about"],
+                ["Contact", "/contact"],
+                ["Sitemap", "/sitemap"],
               ]}
             />
           )}
@@ -138,13 +149,6 @@ export default function Footer() {
             ? `© ${new Date().getFullYear()} Pondy Guide. Tous droits réservés.`
             : `© ${new Date().getFullYear()} Pondy Guide. All rights reserved.`}
         </p>
-        {!ta && !fr && (
-          <div style={{ display: "flex", gap: 24 }}>
-            {[["About", "/about"], ["Contact", "/contact"], ["Sitemap", "/sitemap"]].map(([label, href]) => (
-              <Link key={href} href={href} style={{ fontSize: 12, color: "#a8a29e", textDecoration: "none" }}>{label}</Link>
-            ))}
-          </div>
-        )}
       </div>
     </footer>
   );

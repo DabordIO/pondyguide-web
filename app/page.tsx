@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { historyArticles } from "@/data/history";
 import { institutionArticles } from "@/data/institutions";
 import { figures } from "@/data/figures";
+import { streets } from "@/data/streets";
+import { sites } from "@/data/sites";
 import { aurovilleArticles } from "@/data/auroville";
 import { restaurants } from "@/data/restaurants";
 import { truncate } from "@/lib/truncate";
@@ -81,6 +83,10 @@ export default function HomePage() {
     .map(id => institutionArticles.find(a => a.id === id)).filter(Boolean) as typeof institutionArticles;
   const featuredFigures = ["ananda-ranga-pillai", "lally", "sri-aurobindo"]
     .map(id => figures.find(f => f.id === id)).filter(Boolean) as typeof figures;
+  const featuredStreets = ["rue-de-la-marine", "rue-dumas", "rue-suffren"]
+    .map(id => streets.find(s => s.id === id)).filter(Boolean) as typeof streets;
+  const featuredSites = ["sacred-heart", "museum", "manakula-vinayagar"]
+    .map(id => sites.find(s => s.id === id)).filter(Boolean) as typeof sites;
   const featuredAuroville = ["the-matrimandir", "arts-crafts", "how-to-visit"]
     .map(id => aurovilleArticles.find(a => a.id === id)).filter(Boolean) as typeof aurovilleArticles;
   const featuredRestaurants = ["coromandel-cafe", "indian-coffee-house", "de-bluefin-seafood"]
@@ -113,6 +119,26 @@ export default function HomePage() {
         </ThreeGrid>
       </section>
 
+      {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Lives & Legacies" href="/history/lives-and-legacies" />
+        <SectionIntro>The governors, soldiers, scholars, and saints who shaped the town.</SectionIntro>
+        <ThreeGrid>
+          {featuredFigures.map(f => (
+            <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 280, background: "#f0ece6" }}>
+                <Image src={`/figures/${f.photo}`} alt={f.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: "center top" }} />
+              </div>
+              <div style={{ padding: "14px 16px 16px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 6 }}>{f.dates}</p>
+                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{f.role}</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Where to Stay" href="/hotels" />
@@ -137,20 +163,44 @@ export default function HomePage() {
         </ThreeGrid>
       </section>
 
-      {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
+      {/* ── WHITE TOWN STREETS ──────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Lives & Legacies" href="/history/lives-and-legacies" />
-        <SectionIntro>The governors, soldiers, scholars, and saints who shaped the town.</SectionIntro>
+        <SectionHeader title="The French Quarter Streets" href="/discover/white-town" />
+        <SectionIntro>40 streets, each named after a governor or admiral. Each one has a story.</SectionIntro>
         <ThreeGrid>
-          {featuredFigures.map(f => (
-            <Link key={f.id} href={`/history/lives-and-legacies/${f.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              <div style={{ position: "relative", width: "100%", height: 280, background: "#f0ece6" }}>
-                <Image src={`/figures/${f.photo}`} alt={f.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: "center top" }} />
+          {featuredStreets.map(s => (
+            <Link key={s.id} href={`/discover/white-town/${s.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {s.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/streets/${s.photo}`} alt={s.altName ?? s.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{s.altName ?? s.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(s.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
-              <div style={{ padding: "14px 16px 16px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{f.name}</p>
-                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 6 }}>{f.dates}</p>
-                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{f.role}</p>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Sites & Heritage Buildings" href="/discover/landmarks" />
+        <SectionIntro>Churches, temples, museums, and colonial buildings — two thousand years of local history.</SectionIntro>
+        <ThreeGrid>
+          {featuredSites.map(s => (
+            <Link key={s.id} href={`/discover/landmarks/${s.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {s.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/sites/${s.photo}`} alt={s.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: s.photoPosition ?? "center" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{s.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(s.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Read more →</p>
               </div>
             </Link>
           ))}
@@ -191,30 +241,6 @@ export default function HomePage() {
         <ThreeGrid>
           {featuredInstitutions.map(a => (
             <ArticleCard key={a.id} href={`/history/institutions/${a.id}`} photo={a.photo} photoFolder={a.photoFolder ?? "history"} title={a.title} teaser={a.teaser} />
-          ))}
-        </ThreeGrid>
-      </section>
-
-      {/* ── DISCOVER ────────────────────────────────────────────────────────── */}
-      <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Explore the Town" href="/discover" />
-        <SectionIntro>Four ways into Pondicherry: its streets, its monuments, its Tamil Quarter temples, and day trips that take you further.</SectionIntro>
-        <ThreeGrid>
-          {[
-            { href: "/discover/white-town", photo: "/streets/rue-françois-martin.jpg", label: "White Town", title: "The French Quarter Streets", description: "40 streets named after governors and admirals. Each one has a story." },
-            { href: "/discover/landmarks", photo: "/sites/customs-building.jpg", label: "Landmarks", title: "Sites & Heritage Buildings", description: "From the seafront promenade to Arikamedu's Roman-era ruins." },
-            { href: "/discover/explore/theme-temples", photo: "/explore/temples-tamil-quarter.png", label: "Discover", title: "Temples of the Tamil Quarter", description: "The city's older history, just across the canal. Temples, markets, and streets that long predate the French." },
-          ].map(s => (
-            <Link key={s.href} href={s.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              <div style={{ position: "relative", width: "100%", height: 180 }}>
-                <Image src={s.photo} alt={s.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
-              </div>
-              <div style={{ padding: "14px 16px 16px" }}>
-                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 5 }}>{s.label}</p>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 6, lineHeight: 1.3 }}>{s.title}</p>
-                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.55 }}>{s.description}</p>
-              </div>
-            </Link>
           ))}
         </ThreeGrid>
       </section>
