@@ -9,6 +9,7 @@ import { restaurants } from "@/data/restaurants";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
 
@@ -80,6 +81,7 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
           current="en"
         />
       )}
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Restaurants", href: "/restaurants" }, { label: guide.title, href: `/restaurants/guides/${guide.slug}` }]} />
       <Link href="/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

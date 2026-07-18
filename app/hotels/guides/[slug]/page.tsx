@@ -9,6 +9,7 @@ import { hotels } from "@/data/hotels";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
 
@@ -80,6 +81,7 @@ export default async function HotelGuidePage({ params }: { params: Promise<{ slu
           current="en"
         />
       )}
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Hotels", href: "/hotels" }, { label: guide.title, href: `/hotels/guides/${guide.slug}` }]} />
       <Link href="/hotels" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Hotels</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

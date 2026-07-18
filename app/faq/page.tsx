@@ -9,6 +9,7 @@ import { historyArticles } from "@/data/history";
 import { hotelGuides } from "@/data/hotelGuides";
 import FaqAnswer from "@/components/FaqAnswer";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Pondicherry Visitor FAQ",
@@ -81,6 +82,7 @@ export default function FaqPage() {
   return (
     <div style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref="/faq" frHref="/fr/faq" current="en" />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "FAQ", href: "/faq" }]} />
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>FAQ</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         Pondicherry Visitor FAQ

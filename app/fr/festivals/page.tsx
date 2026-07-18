@@ -5,6 +5,7 @@ import { festivals } from "@/data/festivals";
 import { festivalsFr } from "@/data/fr/festivals";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Festivals à Pondichéry, calendrier mois par mois",
@@ -49,6 +50,7 @@ export default function FestivalsPageFr() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref="/festivals" frHref="/fr/festivals" current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Festivals", href: "/fr/festivals" }]} />
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Calendrier</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Festivals à Pondichéry

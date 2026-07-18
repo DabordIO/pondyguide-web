@@ -7,6 +7,7 @@ import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import ArticleBody from "@/components/ArticleBody";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 function findEntry(slug: string) {
@@ -91,6 +92,7 @@ export default async function RestaurantPageFr({ params }: { params: Promise<{ s
         }}
       />
       <LanguageToggle enHref={`/restaurants/${slug}`} frHref={`/fr/restaurants/${slug}`} current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Restaurants", href: "/fr/restaurants" }, { label: fr.name, href: `/fr/restaurants/${slug}` }]} />
       <Link href="/fr/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
 
       {en.photo && (

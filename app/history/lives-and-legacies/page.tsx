@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { figures } from "@/data/figures";
 import { truncate } from "@/lib/truncate";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Lives and Legacies That Shaped Pondicherry",
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function LivesAndLegaciesPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "History", href: "/history" }, { label: "Lives & Legacies", href: "/history/lives-and-legacies" }]} />
       <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← History</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>History</p>

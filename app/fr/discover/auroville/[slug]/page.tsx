@@ -6,6 +6,7 @@ import { aurovilleArticlesFr } from "@/data/fr/auroville";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
 import Link from "next/link";
@@ -75,6 +76,7 @@ export default async function AurovilleArticlePageFr({ params }: { params: Promi
         />
       )}
       <LanguageToggle enHref={`/discover/auroville/${slug}`} frHref={`/fr/discover/auroville/${slug}`} current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Auroville", href: "/fr/discover/auroville" }, { label: fr.title, href: `/fr/discover/auroville/${slug}` }]} />
       <Link href="/fr/discover/auroville" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Auroville</Link>
 
       {en.photo ? (

@@ -8,6 +8,7 @@ import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Getting Around Pondicherry by Auto, Bike and Bus",
@@ -43,6 +44,7 @@ export default function GettingAroundPage() {
         />
       )}
       <LanguageToggle enHref="/plan/getting-around" frHref="/fr/plan/getting-around" current="en" />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan", href: "/plan" }, { label: "Getting Around", href: "/plan/getting-around" }]} />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Getting Around</p>

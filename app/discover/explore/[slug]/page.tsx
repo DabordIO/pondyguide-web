@@ -6,6 +6,7 @@ import { exploreArticlesFr } from "@/data/fr/explore";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -53,6 +54,7 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/discover/explore/${slug}`} frHref={hasFr ? `/fr/discover/explore/${slug}` : undefined} current="en" />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Discover", href: "/discover" }, { label: "Walks, Trips & Experiences", href: "/discover/explore" }, { label: article.title, href: `/discover/explore/${slug}` }]} />
       <Link href="/discover/explore" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Things to Do</Link>
 
       {article.photo && (

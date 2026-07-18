@@ -7,6 +7,7 @@ import { sitesFr } from "@/data/fr/sites";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -57,6 +58,7 @@ export default async function LandmarkPage({ params }: { params: Promise<{ slug:
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/discover/landmarks/${slug}`} taHref={hasTa ? `/ta/discover/landmarks/${slug}` : undefined} frHref={hasFr ? `/fr/discover/landmarks/${slug}` : undefined} current="en" />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Discover", href: "/discover" }, { label: "Landmarks", href: "/discover/landmarks" }, { label: site.name, href: `/discover/landmarks/${slug}` }]} />
       <Link href="/discover/landmarks" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Landmarks</Link>
 
       {site.photo && (

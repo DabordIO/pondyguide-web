@@ -5,6 +5,7 @@ import { historyArticles } from "@/data/history";
 import { institutionArticles as institutions } from "@/data/institutions";
 import { figures } from "@/data/figures";
 import { truncate } from "@/lib/truncate";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "History of Pondicherry, From Rome to French India",
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 export default function HistoryPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "History", href: "/history" }]} />
         <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>History</p>
         <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
           The Story of Pondicherry

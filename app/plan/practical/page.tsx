@@ -6,6 +6,7 @@ import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Practical Guide to Pondicherry for First-Time Visitors",
@@ -56,6 +57,7 @@ export default function PracticalPage() {
         />
       )}
       <LanguageToggle enHref="/plan/practical" frHref="/fr/plan/practical" current="en" />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan", href: "/plan" }, { label: "Practical", href: "/plan/practical" }]} />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Practical</p>

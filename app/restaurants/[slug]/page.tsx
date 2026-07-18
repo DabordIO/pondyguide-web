@@ -7,6 +7,7 @@ import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import ArticleBody from "@/components/ArticleBody";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -63,6 +64,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ slu
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       {hasFr && <LanguageToggle enHref={`/restaurants/${slug}`} frHref={`/fr/restaurants/${slug}`} current="en" />}
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Restaurants", href: "/restaurants" }, { label: r.name, href: `/restaurants/${slug}` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

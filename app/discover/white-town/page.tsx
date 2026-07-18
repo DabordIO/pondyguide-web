@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { streets } from "@/data/streets";
 import { truncate } from "@/lib/truncate";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "White Town Streets: Pondicherry's French Quarter",
@@ -24,6 +25,7 @@ const EW = streets.filter(s => s.axis === "E-W");
 export default function WhiteTownPage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Discover", href: "/discover" }, { label: "White Town", href: "/discover/white-town" }]} />
       <Link href="/discover" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>White Town</p>

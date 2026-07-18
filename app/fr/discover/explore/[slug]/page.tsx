@@ -6,6 +6,7 @@ import { exploreArticlesFr } from "@/data/fr/explore";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 function findEntry(slug: string) {
@@ -62,6 +63,7 @@ export default async function ExploreArticlePageFr({ params }: { params: Promise
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/discover/explore/${slug}`} frHref={`/fr/discover/explore/${slug}`} current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Balades, excursions et expériences", href: "/fr/discover/explore" }, { label: fr.title, href: `/fr/discover/explore/${slug}` }]} />
       <Link href="/fr/discover/explore" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← À faire</Link>
 
       {article.photo && (

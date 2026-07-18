@@ -7,6 +7,7 @@ import { streetsTa } from "@/data/ta/streets";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -58,6 +59,7 @@ export default async function StreetPageFr({ params }: { params: Promise<{ slug:
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/discover/white-town/${slug}`} taHref={hasTa ? `/ta/discover/white-town/${slug}` : undefined} frHref={`/fr/discover/white-town/${slug}`} current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Quartier français", href: "/fr/discover/white-town" }, { label: en.altName ?? en.name, href: `/fr/discover/white-town/${slug}` }]} />
       <Link href="/fr/discover/white-town" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Les rues du quartier français</Link>
 
       {en.photo && (

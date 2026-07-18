@@ -8,6 +8,7 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -75,6 +76,7 @@ export default async function FigurePageFr({ params }: { params: Promise<{ slug:
           url: `https://www.pondyguide.com/fr/history/lives-and-legacies/${en.id}`,
         }}
       />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Histoire", href: "/fr/history" }, { label: "Vies & Héritages", href: "/fr/history/lives-and-legacies" }, { label: fr.name, href: `/fr/history/lives-and-legacies/${slug}` }]} />
       <Link href="/fr/history/lives-and-legacies" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Vies & Héritages</Link>
 
       {en.photo && (

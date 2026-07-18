@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { figures } from "@/data/figures";
 import { figuresFr } from "@/data/fr/figures";
 import { truncate } from "@/lib/truncate";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Vies et héritages qui ont façonné Pondichéry",
@@ -29,6 +30,7 @@ export default function LivesAndLegaciesPageFr() {
 
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Histoire", href: "/fr/history" }, { label: "Vies & Héritages", href: "/fr/history/lives-and-legacies" }]} />
       <Link href="/fr" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Accueil</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Histoire</p>

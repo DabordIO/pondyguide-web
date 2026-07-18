@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { exploreArticles } from "@/data/explore";
 import { truncate } from "@/lib/truncate";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Things to Do in Pondicherry, Walks and Day Trips",
@@ -36,6 +37,7 @@ export default function ExplorePage() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref="/discover/explore" frHref="/fr/discover/explore" current="en" />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Discover", href: "/discover" }, { label: "Walks, Trips & Experiences", href: "/discover/explore" }]} />
       <Link href="/discover" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Discover</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Things to Do</p>

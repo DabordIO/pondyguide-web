@@ -8,6 +8,7 @@ import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -84,6 +85,7 @@ export default async function HistoryArticlePage({ params }: { params: Promise<{
           }}
         />
       )}
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "History", href: "/history" }, { label: article.title, href: `/history/${slug}` }]} />
       <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← History</Link>
 
       {article.photo && (

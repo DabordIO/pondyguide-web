@@ -10,6 +10,7 @@ import { restaurantsFr } from "@/data/fr/restaurants";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
 
@@ -85,6 +86,7 @@ export default async function RestaurantGuidePageFr({ params }: { params: Promis
         />
       )}
       <LanguageToggle enHref={`/restaurants/guides/${guide.slug}`} taHref={hasTa ? `/ta/restaurants/guides/${guide.slug}` : undefined} frHref={`/fr/restaurants/guides/${guide.slug}`} current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Restaurants", href: "/fr/restaurants" }, { label: fr.title, href: `/fr/restaurants/guides/${guide.slug}` }]} />
       <Link href="/fr/restaurants" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Restaurants</Link>
 
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", margin: "24px 0 24px", lineHeight: 1.2 }}>

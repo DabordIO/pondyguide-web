@@ -7,6 +7,7 @@ import { truncate } from "@/lib/truncate";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 const MONTH_LABELS: Record<string, string> = {
@@ -55,6 +56,7 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
     const monthFestivals = festivals.filter(f => f.month === slug);
     return (
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Festivals", href: "/festivals" }, { label: MONTH_LABELS[slug], href: `/festivals/${slug}` }]} />
         <Link href="/festivals" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
         <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", margin: "20px 0 40px" }}>
           {MONTH_LABELS[slug]} in Pondicherry
@@ -89,6 +91,7 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/festivals/${slug}`} frHref={hasFr ? `/fr/festivals/${slug}` : undefined} current="en" />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Festivals", href: "/festivals" }, { label: festival.title, href: `/festivals/${slug}` }]} />
       <Link href="/festivals" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
 
       {festival.photo && (

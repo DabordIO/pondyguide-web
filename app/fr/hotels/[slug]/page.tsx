@@ -7,6 +7,7 @@ import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import ArticleBody from "@/components/ArticleBody";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
 const orderedHotels = COLLECTION_ORDER.flatMap(c => getHotelsByCollection(c));
@@ -92,6 +93,7 @@ export default async function HotelPageFr({ params }: { params: Promise<{ slug: 
         }}
       />
       <LanguageToggle enHref={`/hotels/${slug}`} frHref={`/fr/hotels/${slug}`} current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Hôtels", href: "/fr/hotels" }, { label: fr.name, href: `/fr/hotels/${slug}` }]} />
       <Link href="/fr/hotels" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Hôtels</Link>
 
       {en.photo && (

@@ -8,6 +8,7 @@ import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
 import LanguageToggle from "@/components/LanguageToggle";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -91,6 +92,7 @@ export default async function InstitutionPageFr({ params }: { params: Promise<{ 
           }}
         />
       )}
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Histoire", href: "/fr/history" }, { label: "Institutions françaises", href: "/fr/history/institutions" }, { label: fr.title, href: `/fr/history/institutions/${slug}` }]} />
       <Link href="/fr/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Histoire</Link>
 
       {en.photo && (

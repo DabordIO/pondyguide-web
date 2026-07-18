@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { streets } from "@/data/streets";
 import { streetsFr } from "@/data/fr/streets";
 import { truncate } from "@/lib/truncate";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Les rues du quartier français de Pondichéry",
@@ -34,6 +35,7 @@ const EW = merged.filter(m => m.en.axis === "E-W");
 export default function WhiteTownPageFr() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Quartier français", href: "/fr/discover/white-town" }]} />
       <Link href="/fr" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Accueil</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Quartier français</p>

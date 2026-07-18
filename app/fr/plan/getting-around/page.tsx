@@ -9,6 +9,7 @@ import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
 import JsonLd from "@/components/JsonLd";
 import FaqAnswer from "@/components/FaqAnswer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Se déplacer à Pondichéry en auto, à vélo et en bus",
@@ -52,6 +53,7 @@ export default function GettingAroundPageFr() {
         />
       )}
       <LanguageToggle enHref="/plan/getting-around" frHref="/fr/plan/getting-around" current="fr" />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/fr" }, { label: "Préparer", href: "/fr/plan" }, { label: "Se déplacer", href: "/fr/plan/getting-around" }]} />
       <Link href="/fr/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Préparer</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Se déplacer</p>
