@@ -5,6 +5,7 @@ export interface PracticalTopicFr {
   title: string;
   summary: string;
   body: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const practicalTopicsFr: PracticalTopicFr[] = [
@@ -200,27 +201,15 @@ La faune, y compris les oiseaux le long de la côte, doit être observée sans �
 
 • Le lever et le coucher du soleil sur la baie du Bengale comptent parmi les points forts de Pondichéry. Arriver un peu en avance garantit la meilleure expérience.
 
-**Questions fréquentes**
-
-**Pondichéry est-elle sûre pour les familles ?**
-Oui. Elle est largement considérée comme l'une des destinations les plus sûres du sud de l'Inde pour les vacances en famille.
-
-**Puis-je utiliser UPI partout ?**
-La plupart des commerces acceptent UPI, bien qu'il soit recommandé de garder un peu d'espèces pour les achats mineurs.
-
-**Le marchandage est-il attendu ?**
-Seulement dans certains marchés de rue. Les boutiques à prix fixe ne négocient pas.
-
-**Puis-je boire de l'alcool sur la plage ?**
-Non. La consommation d'alcool dans les lieux publics, y compris les plages et la promenade, est interdite.
-
-**Les plages sont-elles ouvertes la nuit ?**
-L'accès public est généralement disponible, mais la baignade après la tombée de la nuit est dangereuse et déconseillée.
-
-**Puis-je tout photographier ?**
-La plupart des lieux extérieurs se prêtent à la photographie, mais respectez toujours les restrictions à l'intérieur des lieux religieux, musées et locaux gouvernementaux.
-
 Un peu de préparation change beaucoup de choses à Pondichéry. Respectez les coutumes locales, faites attention près de la mer, restez hydraté, et ralentissez suffisamment pour apprécier le mélange unique d'histoire, de spiritualité et de charme côtier de la ville. Avec son atmosphère accueillante et son rythme tranquille, Pondichéry récompense les visiteurs qui l'explorent avec attention plutôt qu'en se pressant.`,
+    faq: [
+      { question: "Pondichéry est-elle sûre pour les familles ?", answer: "Oui. Elle est largement considérée comme l'une des destinations les plus sûres du sud de l'Inde pour les vacances en famille." },
+      { question: "Puis-je utiliser UPI partout ?", answer: "La plupart des commerces acceptent UPI, bien qu'il soit recommandé de garder un peu d'espèces pour les achats mineurs." },
+      { question: "Le marchandage est-il attendu ?", answer: "Seulement dans certains marchés de rue. Les boutiques à prix fixe ne négocient pas." },
+      { question: "Puis-je boire de l'alcool sur la plage ?", answer: "Non. La consommation d'alcool dans les lieux publics, y compris les plages et la promenade, est interdite." },
+      { question: "Les plages sont-elles ouvertes la nuit ?", answer: "L'accès public est généralement disponible, mais la baignade après la tombée de la nuit est dangereuse et déconseillée." },
+      { question: "Puis-je tout photographier ?", answer: "La plupart des lieux extérieurs se prêtent à la photographie, mais respectez toujours les restrictions à l'intérieur des lieux religieux, musées et locaux gouvernementaux." },
+    ],
   },
   {
     id: "healthcare-emergency",

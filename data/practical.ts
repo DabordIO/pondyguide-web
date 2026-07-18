@@ -8,6 +8,7 @@ export interface PracticalTopic {
   body: string;
   photo?: string;
   photoPosition?: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const practicalTopics: PracticalTopic[] = [
@@ -208,27 +209,15 @@ Wildlife, including birds along the coast, should be observed without disturbanc
 
 • Sunrise and sunset along the Bay of Bengal are among Pondicherry's highlights. Arriving a little early ensures the best experience.
 
-**Frequently Asked Questions**
-
-**Is Pondicherry safe for families?**
-Yes. It is widely regarded as one of the safest destinations in South India for family holidays.
-
-**Can I use UPI everywhere?**
-Most businesses accept UPI, although carrying a small amount of cash is recommended for minor purchases.
-
-**Is bargaining expected?**
-Only at some street markets. Fixed-price stores do not negotiate.
-
-**Can I drink alcohol on the beach?**
-No. Alcohol consumption in public places, including beaches and the promenade, is prohibited.
-
-**Are beaches open at night?**
-Public access is generally available, but swimming after dark is unsafe and not recommended.
-
-**Can I photograph everything?**
-Most outdoor locations are open for photography, but always respect restrictions inside religious places, museums and government premises.
-
 A little preparation goes a long way in Pondicherry. Respect local customs, take care around the sea, stay hydrated, and slow down enough to enjoy the city's unique blend of history, spirituality and coastal charm. With its welcoming atmosphere and leisurely pace, Pondicherry rewards visitors who explore it thoughtfully rather than hurriedly.`,
+    faq: [
+      { question: "Is Pondicherry safe for families?", answer: "Yes. It is widely regarded as one of the safest destinations in South India for family holidays." },
+      { question: "Can I use UPI everywhere?", answer: "Most businesses accept UPI, although carrying a small amount of cash is recommended for minor purchases." },
+      { question: "Is bargaining expected?", answer: "Only at some street markets. Fixed-price stores do not negotiate." },
+      { question: "Can I drink alcohol on the beach?", answer: "No. Alcohol consumption in public places, including beaches and the promenade, is prohibited." },
+      { question: "Are beaches open at night?", answer: "Public access is generally available, but swimming after dark is unsafe and not recommended." },
+      { question: "Can I photograph everything?", answer: "Most outdoor locations are open for photography, but always respect restrictions inside religious places, museums and government premises." },
+    ],
   },
   {
     id: "healthcare-emergency",

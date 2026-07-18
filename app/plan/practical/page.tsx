@@ -4,6 +4,7 @@ import { practicalTopics } from "@/data/practical";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Practical Guide to Pondicherry for First-Time Visitors",
@@ -32,8 +33,23 @@ export default function PracticalPage() {
     items: practicalTopics.filter(t => t.section === sec),
   })).filter(g => g.items.length > 0);
 
+  const faqEntries = practicalTopics.flatMap(t => t.faq ?? []);
+
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {faqEntries.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqEntries.map(item => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }}
+        />
+      )}
       <LanguageToggle enHref="/plan/practical" frHref="/fr/plan/practical" current="en" />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
@@ -55,6 +71,19 @@ export default function PracticalPage() {
               <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{t.title}</h3>
               <p style={{ fontSize: "0.95rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 16, fontStyle: "italic" }}>{t.summary}</p>
               <ArticleBody text={t.body} />
+              {t.faq && t.faq.length > 0 && (
+                <div style={{ marginTop: 28 }}>
+                  <h4 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
+                    Frequently Asked Questions
+                  </h4>
+                  {t.faq.map((item, fi) => (
+                    <div key={fi} style={{ marginBottom: 16 }}>
+                      <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
+                      <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }}>{item.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
