@@ -153,6 +153,26 @@ export default function FrenchHomePage() {
         </ThreeGrid>
       </section>
 
+      {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Vies et héritages" href="/fr/history/lives-and-legacies" />
+        <SectionIntro>Les gouverneurs, soldats, érudits et saints qui ont façonné la ville.</SectionIntro>
+        <ThreeGrid>
+          {featuredFigures.map(({ fr, en }) => (
+            <Link key={fr.id} href={`/fr/history/lives-and-legacies/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 280, background: "#f0ece6" }}>
+                {en.photo && <Image src={`/figures/${en.photo}`} alt={fr.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: "center top" }} />}
+              </div>
+              <div style={{ padding: "14px 16px 16px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{fr.name}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 6 }}>{en.dates}</p>
+                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{fr.role}</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── HOTELS ──────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Où séjourner" href="/fr/hotels" />
@@ -177,20 +197,44 @@ export default function FrenchHomePage() {
         </ThreeGrid>
       </section>
 
-      {/* ── LIVES & LEGACIES ────────────────────────────────────────────────── */}
+      {/* ── WHITE TOWN STREETS ──────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Vies et héritages" href="/fr/history/lives-and-legacies" />
-        <SectionIntro>Les gouverneurs, soldats, érudits et saints qui ont façonné la ville.</SectionIntro>
+        <SectionHeader title="Les rues du quartier français" href="/fr/discover/white-town" />
+        <SectionIntro>40 rues, chacune nommée d'après un gouverneur ou un amiral. Chacune a son histoire.</SectionIntro>
         <ThreeGrid>
-          {featuredFigures.map(({ fr, en }) => (
-            <Link key={fr.id} href={`/fr/history/lives-and-legacies/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              <div style={{ position: "relative", width: "100%", height: 280, background: "#f0ece6" }}>
-                {en.photo && <Image src={`/figures/${en.photo}`} alt={fr.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: "center top" }} />}
+          {featuredStreets.map(({ fr, en }) => (
+            <Link key={fr.id} href={`/fr/discover/white-town/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/streets/${en.photo}`} alt={en.altName ?? en.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{en.altName ?? en.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
               </div>
-              <div style={{ padding: "14px 16px 16px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 15, marginBottom: 4, lineHeight: 1.3 }}>{fr.name}</p>
-                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginBottom: 6 }}>{en.dates}</p>
-                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.5 }}>{fr.role}</p>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
+      {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Monuments et sites historiques" href="/fr/discover/landmarks" />
+        <SectionIntro>Églises, temples, musées, et bâtiments coloniaux — deux mille ans d'histoire locale.</SectionIntro>
+        <ThreeGrid>
+          {featuredSites.map(({ fr, en }) => (
+            <Link key={fr.id} href={`/fr/discover/landmarks/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              {en.photo && (
+                <div style={{ position: "relative", width: "100%", height: 180 }}>
+                  <Image src={`/sites/${en.photo}`} alt={fr.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
+                </div>
+              )}
+              <div style={{ padding: "16px 18px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{fr.name}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
               </div>
             </Link>
           ))}
@@ -289,50 +333,6 @@ export default function FrenchHomePage() {
               <div style={{ padding: "16px 18px 18px" }}>
                 <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{fr.title}</p>
                 <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.teaser, 115)}</p>
-                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
-              </div>
-            </Link>
-          ))}
-        </ThreeGrid>
-      </section>
-
-      {/* ── WHITE TOWN STREETS ──────────────────────────────────────────────── */}
-      <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Les rues du quartier français" href="/fr/discover/white-town" />
-        <SectionIntro>40 rues, chacune nommée d'après un gouverneur ou un amiral. Chacune a son histoire.</SectionIntro>
-        <ThreeGrid>
-          {featuredStreets.map(({ fr, en }) => (
-            <Link key={fr.id} href={`/fr/discover/white-town/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              {en.photo && (
-                <div style={{ position: "relative", width: "100%", height: 180 }}>
-                  <Image src={`/streets/${en.photo}`} alt={en.altName ?? en.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
-                </div>
-              )}
-              <div style={{ padding: "16px 18px 18px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{en.altName ?? en.name}</p>
-                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
-                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
-              </div>
-            </Link>
-          ))}
-        </ThreeGrid>
-      </section>
-
-      {/* ── LANDMARKS ───────────────────────────────────────────────────────── */}
-      <section style={{ marginBottom: 72 }}>
-        <SectionHeader title="Monuments et sites historiques" href="/fr/discover/landmarks" />
-        <SectionIntro>Églises, temples, musées, et bâtiments coloniaux — deux mille ans d'histoire locale.</SectionIntro>
-        <ThreeGrid>
-          {featuredSites.map(({ fr, en }) => (
-            <Link key={fr.id} href={`/fr/discover/landmarks/${fr.id}`} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
-              {en.photo && (
-                <div style={{ position: "relative", width: "100%", height: 180 }}>
-                  <Image src={`/sites/${en.photo}`} alt={fr.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover", objectPosition: en.photoPosition ?? "center" }} />
-                </div>
-              )}
-              <div style={{ padding: "16px 18px 18px" }}>
-                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{fr.name}</p>
-                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(fr.summary, 115)}</p>
                 <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
               </div>
             </Link>
