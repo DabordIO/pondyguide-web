@@ -4,17 +4,26 @@ import type { Metadata } from "next";
 import { transportArticles } from "@/data/transport";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "Getting Around Pondicherry by Auto, Bike and Bus",
   description: "Learn how to navigate Pondicherry by auto-rickshaw, bicycle, scooter or taxi, and when walking is enough.",
+  alternates: {
+    languages: {
+      en: "/plan/getting-around",
+      fr: "/fr/plan/getting-around",
+      "x-default": "/plan/getting-around",
+    },
+  },
 };
 
 const articles = transportArticles.filter(a => a.category === "local");
 
 export default function GettingAroundPage() {
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/plan/getting-around" frHref="/fr/plan/getting-around" current="en" />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Getting Around</p>

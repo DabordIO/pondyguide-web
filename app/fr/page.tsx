@@ -315,6 +315,30 @@ export default function FrenchHomePage() {
           ))}
         </ThreeGrid>
       </section>
+
+      {/* ── PLAN ─────────────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Avant de partir" href="/fr/plan" />
+        <SectionIntro>Tout ce qu'il faut savoir avant d'arriver.</SectionIntro>
+        <ThreeGrid>
+          {[
+            { href: "/fr/plan/getting-here", photo: "/transport/puducherry-railway-station.jpg", title: "Arriver à Pondichéry", desc: "Bus depuis Chennai, train depuis Bangalore, la route côtière ECR." },
+            { href: "/fr/plan/getting-around", photo: "/transport/auto-rickshaw-white-town.jpg", title: "Se déplacer en ville", desc: "Auto-rickshaws, vélos, scooters. White Town se parcourt à pied." },
+            { href: "/fr/plan/healthcare", photo: "/healthcare/public-hospital.jpg", title: "Urgences", desc: "JIPMER, cliniques privées, pharmacies : à savoir avant d'en avoir besoin." },
+          ].map(item => (
+            <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={item.photo} alt={item.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 16px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6 }}>{item.title}</p>
+                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55 }}>{item.desc}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 10 }}>Lire →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
     </div>
   );
 }

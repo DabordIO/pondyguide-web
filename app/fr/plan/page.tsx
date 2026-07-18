@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
-  title: "Plan Your Trip: Transport and Advice for Pondicherry",
-  description: "Practical information on getting here, moving around town, healthcare and the details visitors need before arriving.",
+  title: "Préparer votre voyage : transport et conseils pour Pondichéry",
+  description: "Informations pratiques pour arriver, se déplacer en ville, la santé, et tout ce que les visiteurs doivent savoir avant d'arriver.",
   alternates: {
     languages: {
       en: "/plan",
@@ -17,41 +17,41 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    href: "/plan/getting-here",
-    title: "Getting Here",
-    description: "From Chennai by bus or train, from Bangalore overnight, from Madurai by road. No meaningful direct flights, but the journey is manageable.",
+    href: "/fr/plan/getting-here",
+    title: "Arriver à Pondichéry",
+    description: "Depuis Chennai en bus ou en train, depuis Bangalore de nuit, depuis Madurai par la route. Pas de vol direct valable, mais le trajet reste facile.",
     photo: "/transport/puducherry-railway-station.jpg",
   },
   {
-    href: "/plan/getting-around",
-    title: "Getting Around",
-    description: "Auto-rickshaws, bicycles, scooters, and the rare taxi. The White Town is walkable. Beyond it, you need wheels.",
+    href: "/fr/plan/getting-around",
+    title: "Se déplacer en ville",
+    description: "Auto-rickshaws, vélos, scooters, et le taxi occasionnel. White Town se parcourt à pied. Au-delà, il vous faut des roues.",
     photo: "/transport/auto-rickshaw-white-town.jpg",
   },
   {
-    href: "/plan/healthcare",
-    title: "Emergency",
-    description: "JIPMER is one of India's premier medical institutes. Private clinics are plentiful. Pharmacies are on every corner.",
+    href: "/fr/plan/healthcare",
+    title: "Urgences",
+    description: "JIPMER est l'un des instituts médicaux les plus prestigieux d'Inde. Les cliniques privées sont nombreuses. Les pharmacies se trouvent à chaque coin de rue.",
     photo: "/healthcare/public-hospital.jpg",
   },
   {
-    href: "/plan/practical",
-    title: "Practical Tips",
-    description: "Currency, SIM cards, dress code, water safety, tipping, and the things visitors consistently get wrong.",
+    href: "/fr/plan/practical",
+    title: "Conseils pratiques",
+    description: "Devise, cartes SIM, code vestimentaire, sécurité de l'eau, pourboire, et les erreurs que font régulièrement les visiteurs.",
     photo: "/transport/general-tourism-information.jpeg",
   },
 ];
 
-export default function PlanPage() {
+export default function PlanPageFr() {
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref="/plan" frHref="/fr/plan" current="en" />
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Plan</p>
+      <LanguageToggle enHref="/plan" frHref="/fr/plan" current="fr" />
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Préparer</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
-        Before You Go
+        Avant de partir
       </h1>
       <p style={{ fontSize: "1.05rem", color: "#6b6560", maxWidth: 600, lineHeight: 1.8, marginBottom: 56 }}>
-        Pondicherry is easy to navigate once you understand the basics. Most visitors get into trouble for the same three or four reasons. Read this first.
+        Pondichéry est facile à parcourir une fois les bases comprises. La plupart des visiteurs rencontrent des difficultés pour les trois ou quatre mêmes raisons. Lisez ceci en premier.
       </p>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 20 }}>
@@ -63,7 +63,7 @@ export default function PlanPage() {
             <div style={{ padding: "16px 18px 18px" }}>
               <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 19, marginBottom: 10, lineHeight: 1.3 }}>{s.title}</p>
               <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.65 }}>{s.description}</p>
-              <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 16 }}>Read →</p>
+              <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 16 }}>Lire →</p>
             </div>
           </Link>
         ))}

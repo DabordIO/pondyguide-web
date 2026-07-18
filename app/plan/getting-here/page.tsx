@@ -4,17 +4,26 @@ import type { Metadata } from "next";
 import { transportArticles } from "@/data/transport";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "Getting to Pondicherry from Chennai and Beyond",
   description: "Compare routes from Chennai and Bangalore by bus, train and the scenic East Coast Road, without a direct flight.",
+  alternates: {
+    languages: {
+      en: "/plan/getting-here",
+      fr: "/fr/plan/getting-here",
+      "x-default": "/plan/getting-here",
+    },
+  },
 };
 
 const articles = transportArticles.filter(a => a.category === "arriving");
 
 export default function GettingHerePage() {
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/plan/getting-here" frHref="/fr/plan/getting-here" current="en" />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Getting Here</p>
