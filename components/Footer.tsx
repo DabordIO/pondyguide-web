@@ -83,29 +83,6 @@ export default function Footer() {
               ]}
             />
           )}
-          {fr && (
-            <FooterColumn
-              title="Plan"
-              links={[
-                ["Arriver", "/fr/plan/getting-here"],
-                ["Se déplacer", "/fr/plan/getting-around"],
-                ["Urgences", "/fr/plan/healthcare"],
-                ["Infos pratiques", "/fr/plan/practical"],
-              ]}
-            />
-          )}
-          {!ta && !fr && (
-            <FooterColumn
-              title="Plan"
-              links={[
-                ["Getting Here", "/plan/getting-here"],
-                ["Getting Around", "/plan/getting-around"],
-                ["Healthcare", "/plan/healthcare"],
-                ["Practical Tips", "/plan/practical"],
-              ]}
-            />
-          )}
-
           {ta && (
             <FooterColumn
               title="மேலும்"
