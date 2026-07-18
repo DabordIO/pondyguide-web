@@ -32,7 +32,7 @@ export default function Footer() {
             <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>
               Pondy<span style={{ color: "#f97316" }}>.</span>Guide
             </p>
-            <p style={{ fontSize: 14, fontWeight: 700, lineHeight: 1.7 }}>
+            <p style={{ fontSize: 14, color: "#fff", lineHeight: 1.7 }}>
               {ta
                 ? "புதுச்சேரியின் வரலாறு, பாரம்பரியம் மற்றும் அறிந்து கொள்ள வேண்டிய அனைத்தையும் உள்ளடக்கிய முழுமையான வழிகாட்டி."
                 : fr
