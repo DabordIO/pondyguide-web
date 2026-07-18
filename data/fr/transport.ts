@@ -6,6 +6,7 @@ export interface TransportArticleFr {
   cardTitle?: string;
   teaser: string;
   body: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const transportArticlesFr: TransportArticleFr[] = [
@@ -57,6 +58,9 @@ Le Yesvantpur-Puducherry Weekly Express circule une fois par semaine, en environ
 **Via la jonction de Villupuram**
 
 Si votre ville de départ n'a pas de liaison directe avec Pondichéry, rendez-vous à la jonction de Villupuram (VM), une grande gare ferroviaire à 37 kilomètres de Pondichéry. Depuis Villupuram, vous pouvez prendre un train local de correspondance jusqu'à PDY (45 à 55 minutes), un bus local, ou un taxi pour une heure de route. Villupuram dispose de bien plus de connexions depuis des villes de tout le sud de l'Inde et constitue une solution de repli fiable.`,
+    faq: [
+      { question: "Existe-t-il un train pour Pondichéry ?", answer: "Oui. Pondichéry possède une gare ferroviaire reliée à Chennai, Villupuram, Bengaluru et à plusieurs villes du sud de l'Inde. La disponibilité des trains dépend des itinéraires et des jours de circulation ; il est donc recommandé de réserver à l'avance, notamment pendant les week-ends et les vacances. Pour certains trajets, une correspondance à Villupuram Junction peut être nécessaire, cette gare étant le principal nœud ferroviaire de la région. Une fois arrivé, consultez [se déplacer à Pondichéry](/fr/plan/getting-around) pour la suite du trajet jusqu'à White Town." },
+    ],
   },
 
   {
@@ -74,6 +78,9 @@ L'aéroport de Pondichéry (IATA : PNY) accueille un petit nombre de vols domest
 La plupart des visiteurs prennent l'avion jusqu'à l'aéroport international de Chennai (MAA), qui dessert toutes les grandes villes indiennes et des destinations internationales dont Dubaï, Singapour, Kuala Lumpur et Colombo. Depuis Chennai, Pondichéry se trouve à 3h30-4h en bus ou 4h-4h30 en train. Les deux options sont fréquentes, fiables et bon marché.
 
 Depuis l'aéroport de Chennai, le métro depuis la station de Meenambakkam (juste devant le terminal, 50 ₹, correspondance à Alandur) vous mène à CMBT, d'où partent des bus pour Pondichéry toutes les 15 à 20 minutes tout au long de la journée. Un taxi réservé à l'avance depuis l'aéroport prend environ trois heures et coûte à partir de 2 500 roupies.`,
+    faq: [
+      { question: "Puis-je prendre un vol pour Pondichéry ?", answer: "Oui. Pondichéry dispose d'un petit aéroport domestique avec un nombre limité de vols, principalement depuis Bengaluru et parfois d'autres villes indiennes. La plupart des voyageurs internationaux arrivent à l'aéroport international de Chennai, qui offre beaucoup plus de correspondances. Depuis Chennai, Pondichéry est accessible par la route en environ 3 à 4 heures. Les horaires des vols pouvant varier selon la saison, il est conseillé de vérifier les disponibilités avant de réserver. Une fois sur place, consultez [se déplacer à Pondichéry](/fr/plan/getting-around) pour la suite du trajet." },
+    ],
   },
 
   {
@@ -97,6 +104,9 @@ La National Highway 45 part de Chennai en passant par Tindivanam et est environ 
 **Depuis d'autres villes**
 
 Depuis Tiruchirappalli, le trajet couvre environ 175 kilomètres et prend quatre à quatre heures et demie. Les taxis réservés à l'avance depuis l'aéroport de Tiruchirappalli sont une option sensée pour les visiteurs arrivant par vol régional. Depuis Mysore, la route passe par Bangalore et prend environ huit heures.`,
+    faq: [
+      { question: "Est-il facile de rejoindre Pondichéry depuis Chennai ?", answer: "Oui, il est relativement facile de rejoindre Pondichéry depuis Chennai. L'option la plus populaire est la route par l'East Coast Road (ECR), connue pour ses paysages côtiers. Les voyageurs peuvent choisir un taxi privé, une voiture de location ou les nombreux bus publics et privés. Le trajet dure généralement entre 3 et 4 heures selon la circulation. Cette route est appréciée pour sa praticité et ses vues sur la côte." },
+    ],
   },
 
   {
@@ -212,6 +222,9 @@ L'application Royal Brothers reste l'option la plus fiable et pleinement légale
 **Avant de rouler**
 
 Photographiez les rayures existantes du véhicule et vérifiez les pneus, les freins et les feux avant de quitter la boutique de location. Mettez-vous d'accord sur le niveau de carburant actuel : la plupart des locations sont remises presque vides. Votre premier arrêt sera une station-service. La station Indian Oil près de la New Bus Stand et la pompe HP sur SV Patel Salai sont toutes deux pratiques. Emportez votre contrat de location et votre permis de conduire, particulièrement sur la route entre Pondichéry (un territoire de l'Union) et le Tamil Nadu environnant, où se trouve Auroville : un poste de contrôle actif de la police se trouve à la frontière, et les agents y sont particulièrement stricts avec les touristes. Le port du casque est légalement obligatoire pour le conducteur et le passager dès que vous quittez le centre-ville pour Auroville ou les plages excentrées ; pensez à demander deux casques au loueur si vous roulez à deux.`,
+    faq: [
+      { question: "Comment louer un scooter ou une moto à Pondichéry ?", answer: "Les locations de scooters et de motos sont largement disponibles dans White Town, près de la gare routière et dans les principales zones touristiques. Un permis de conduire valide ainsi qu'une pièce d'identité sont généralement demandés. Les tarifs journaliers varient selon le type de véhicule et la saison. Avant de prendre le véhicule, vérifiez les freins, les feux, le niveau de carburant et les éventuelles rayures, et demandez si l'assurance est incluse. Un scooter est particulièrement utile pour rejoindre [Auroville](/fr/discover/auroville)." },
+    ],
   },
 ];
 

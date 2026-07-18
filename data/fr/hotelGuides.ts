@@ -55,6 +55,7 @@ export const hotelGuidesFr: HotelGuideFr[] = [
       { question: "Les hôtels patrimoniaux de Pondichéry sont-ils chers ?", answer: "La plupart se situent dans la gamme haut de gamme à luxe, reflétant le coût de la restauration de bâtiments de l'époque coloniale. Le Dupleix est généralement le plus accessible des cinq." },
       { question: "Vaut-il la peine de séjourner dans le quartier tamoul plutôt qu'à White Town ?", answer: "La Maison Perumal est le seul établissement de cette liste en dehors de White Town, et elle offre une facette de la ville authentiquement différente et moins touristique. La plupart des visiteurs de première visite restent toutefois mieux servis par une base à White Town." },
       { question: "Ces hôtels ont-ils leur propre restaurant ?", answer: "Oui, et dans plusieurs cas le restaurant est une destination à part entière, en particulier au Palais de Mahé, à La Villa et à la Maison Perumal." },
+      { question: "Quel est le meilleur quartier où séjourner à Pondichéry ?", answer: "Pour une première visite, White Town est généralement le meilleur choix grâce à sa proximité avec la promenade, les restaurants, les cafés, les bâtiments historiques et les rues commerçantes. Les voyageurs recherchant davantage de calme préfèrent souvent Auroville ou les complexes balnéaires situés au nord de la ville. Les familles peuvent opter pour des quartiers résidentiels avec de grands hôtels et des parkings. Le choix dépend surtout de vos priorités : visites, vie nocturne, plage ou détente." },
     ],
   },
 
@@ -144,6 +145,7 @@ export const hotelGuidesFr: HotelGuideFr[] = [
       { question: "Ces hôtels ont-ils des piscines ?", answer: "Oui, les cinq disposent de piscines, généralement sur le toit-terrasse, ce qui compte beaucoup vu la chaleur de Pondichéry." },
       { question: "Lequel convient le mieux pour combiner Pondichéry avec Auroville ?", answer: "Accord Puducherry et Anandha Inn sont tous deux bien placés pour une excursion à la journée à Auroville en complément des visites en ville." },
       { question: "Ces hôtels sont-ils plus abordables que les établissements patrimoniaux de White Town ?", answer: "Généralement oui. Cette catégorie privilégie l'espace et les installations plutôt que l'architecture coloniale restaurée, ce qui se traduit habituellement par un prix inférieur à celui des hôtels patrimoniaux." },
+      { question: "Faut-il réserver son hébergement à l'avance ?", answer: "Il est fortement recommandé de réserver à l'avance pendant les week-ends, les jours fériés indiens, les vacances scolaires et la saison plus fraîche de novembre à février. Les hébergements de White Town sont particulièrement demandés et peuvent afficher complet rapidement. En période plus calme, des réservations de dernière minute restent possibles. Réserver à l'avance permet de bénéficier d'un choix plus large d'hôtels, de maisons d'hôtes et d'établissements historiques, souvent à un meilleur tarif." },
     ],
   },
 
@@ -232,6 +234,7 @@ export const hotelGuidesFr: HotelGuideFr[] = [
       { question: "Lequel de ces complexes convient le mieux à une lune de miel ?", answer: "Le Pondy est l'option la plus romantique et la plus isolée, située entre la mer et les eaux calmes de Chunnambar." },
       { question: "Certains conviennent-ils pour combiner un séjour côtier avec une visite d'Auroville ?", answer: "Oui, Radisson Resort Pondicherry Bay et Dune Eco Village & Spa sont tous deux bien placés pour une excursion à la journée à Auroville en complément du temps passé à la plage." },
       { question: "Vaut-il la peine de séjourner sur la côte plutôt qu'à White Town ?", answer: "Cela dépend du voyage. Si les rues patrimoniales et les cafés sont la priorité, restez à White Town. Si vous voulez du temps à la plage, du bien-être ou une vraie coupure avec les visites, ces cinq options conviennent mieux, idéalement en complément de quelques jours à White Town plutôt qu'à sa place." },
+      { question: "Faut-il séjourner à White Town ou près de la plage ?", answer: "White Town convient parfaitement aux visiteurs intéressés par l'architecture française, les cafés, les promenades et les attractions culturelles. Les hébergements proches de la plage offrent une ambiance plus détendue et un accès plus direct aux activités balnéaires. Pour un court séjour, White Town permet généralement de rejoindre plus facilement les principaux sites. Pour des vacances plus longues axées sur le repos, un complexe en bord de mer peut être préférable." },
     ],
   },
 ];

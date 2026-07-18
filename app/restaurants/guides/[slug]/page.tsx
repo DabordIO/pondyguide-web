@@ -9,6 +9,8 @@ import { restaurants } from "@/data/restaurants";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 
 const READY_GUIDES = restaurantGuides.filter(g => g.intro && g.blurbs);
 
@@ -57,6 +59,19 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
 
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {guide.faq && guide.faq.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: guide.faq.map(item => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }}
+        />
+      )}
       {(hasTa || hasFr) && (
         <LanguageToggle
           enHref={`/restaurants/guides/${guide.slug}`}
@@ -150,7 +165,7 @@ export default async function RestaurantGuidePage({ params }: { params: Promise<
           {guide.faq.map((item, i) => (
             <div key={i} style={{ marginBottom: 20 }}>
               <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
-              <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }}>{item.answer}</p>
+              <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
             </div>
           ))}
         </div>

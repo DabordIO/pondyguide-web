@@ -6,6 +6,7 @@ export interface HistoryArticleFr {
   subtitle: string;
   teaser: string;
   body: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const historyArticlesFr: HistoryArticleFr[] = [
@@ -241,6 +242,9 @@ La Pondichéry qui existe aujourd'hui est le produit de tout cela. Le quartier t
 Les Français qui viennent aujourd'hui éprouvent souvent une sensation troublante de reconnaissance : les proportions des bâtiments, l'échelle des rues, la relation entre la mer et la promenade, quelque chose dans la qualité de la lumière de l'après-midi qui fait de Pondichéry la « fenêtre de la France sur l'Inde », comme le disait fameusement Nehru. Et pourtant les sons, les odeurs et les visages sont entièrement tamouls, entièrement sud-indiens. La ville n'est pas un musée du colonialisme. C'est un lieu vivant qui a métabolisé son histoire et se l'est appropriée.
 
 C'est peut-être la chose la plus intéressante à propos de Pondichéry. Elle a absorbé les Romains et les Pallava, les Chola et les Moghols, les Français et les Britanniques, l'ashram et la commune. Elle demeure reconnaissablement elle-même. La mer que les marchands romains traversaient pour l'atteindre est la même mer que l'on peut voir aujourd'hui depuis la promenade. La continuité, c'est la ville.`,
+    faq: [
+      { question: "Pourquoi la culture française est-elle si présente à Pondichéry ?", answer: "Pondichéry a été une colonie française pendant près de trois siècles avant de rejoindre l'Inde au milieu du XXe siècle. Cette histoire se reflète dans l'architecture, les noms des rues, les églises, les cafés, les établissements scolaires et les traditions culinaires. White Town conserve encore de nombreux bâtiments coloniaux et une atmosphère résolument européenne. L'influence française se mêle à la culture tamoule pour former une identité unique en Inde. Des institutions comme le [Lycée français](/fr/history/institutions/lycee-francais) et l'[Alliance française](/fr/history/institutions/alliance-francaise) fonctionnent encore aujourd'hui." },
+    ],
   },
   {
     id: "les-combattants",

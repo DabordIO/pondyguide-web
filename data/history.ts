@@ -9,6 +9,7 @@ export interface HistoryArticle {
   gradient: string;
   photo?: string;
   photoFolder?: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const historyArticles: HistoryArticle[] = [
@@ -264,6 +265,9 @@ The Pondicherry that exists today is the product of all of this. The Tamil quart
 The French who come today often have the disorienting sensation of recognition: the proportions of the buildings, the scale of the streets, the relationship between the sea and the promenade, something in the quality of the afternoon light that makes Puducherry the 'Window of France on India' as Nehru famously said. And yet the sounds and the smells and the faces are entirely Tamil, entirely South Indian. The city is not a museum of colonialism. It is a living place that has metabolised its history and made it its own.
 
 That is perhaps the most interesting thing about Pondicherry. It absorbed the Romans and the Pallavas, the Cholas and the Mughals, the French and the British, the ashram and the commune. It remains recognisably itself. The sea that the Roman merchants sailed to reach it is the same sea you can see from the promenade today. The continuity is the city.`,
+    faq: [
+      { question: "Why is French culture so visible in Pondicherry?", answer: "Pondicherry was a French colony for nearly three centuries until it became part of India in the mid-20th century. This history is reflected in the town's architecture, street names, churches, cafés, educational institutions, and culinary traditions. White Town still preserves many colonial buildings and a distinctly European atmosphere. The French influence blends with Tamil culture, creating a unique identity found nowhere else in India. Institutions such as the [Lycée Français](/history/institutions/lycee-francais) and the [Alliance Française](/history/institutions/alliance-francaise) still operate today." },
+    ],
   },
   {
     id: "les-combattants",

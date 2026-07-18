@@ -11,6 +11,7 @@ export interface InstitutionArticle {
   website?: string;
   metaTitle?: string;
   metaDescription?: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const institutionArticles: InstitutionArticle[] = [
@@ -235,6 +236,9 @@ The [Alliance Française de Pondichéry](/history/institutions/alliance-francais
 **Three Reasons to Be in the Same Classroom**
 
 The Pondicherry Alliance Française draws a student body that would be unusual in any other Indian city. Some come because they are descendants of families that were French-speaking two generations ago and want to reclaim something. Some come because French is a professional qualification in hospitality, diplomacy, or European business. Some come simply because they live on a street with a French name and want to understand what it says. Three different reasons, the same classroom. That particular mix is one of the things that makes this institution unlike any other Alliance Française in India.`,
+    faq: [
+      { question: "Can I learn French in Pondicherry?", answer: "Yes. Pondicherry has a long French heritage, and several language schools and cultural institutions offer French courses for beginners and advanced learners. Short-term classes are available for travelers staying a few weeks, while longer programs suit students and expatriates. Because French is still used in some educational and cultural circles, Pondicherry is one of the most convenient places in India to study the language." },
+    ],
   },
   {
     id: "pensionnat",

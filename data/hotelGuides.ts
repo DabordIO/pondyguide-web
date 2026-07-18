@@ -65,6 +65,7 @@ export const hotelGuides: HotelGuide[] = [
       { question: "Are Pondicherry's heritage hotels expensive?", answer: "Most sit in the upscale to luxury range, reflecting the cost of restoring colonial-era buildings. Le Dupleix is generally the most accessible of the five." },
       { question: "Is it worth staying in the Tamil Quarter instead of White Town?", answer: "Maison Perumal is the one property here outside White Town, and it offers a genuinely different, less touristed side of the city. Most first-time visitors are still better served by a White Town base." },
       { question: "Do these hotels have their own restaurants?", answer: "Yes, and in several cases the restaurant is a destination in its own right, particularly at Palais de Mahe, La Villa and Maison Perumal." },
+      { question: "What is the best area to stay in Pondicherry?", answer: "For first-time visitors, White Town is usually the best choice because it offers easy access to the promenade, restaurants, cafés, heritage buildings, and shopping streets. Travelers seeking a quieter atmosphere often prefer Auroville or beachside resorts north of the city. Families may choose residential areas with larger hotels and parking facilities. The ideal location depends on whether you prioritize sightseeing, nightlife, beaches, or relaxation." },
     ],
   },
 
@@ -170,6 +171,7 @@ export const hotelGuides: HotelGuide[] = [
       { question: "Do these hotels have pools?", answer: "Yes, all five have swimming pools, generally rooftop, which matters a lot given Pondicherry's heat." },
       { question: "Which is best for combining Pondicherry with Auroville?", answer: "Accord Puducherry and Anandha Inn are both well positioned for an Auroville day trip alongside city sightseeing." },
       { question: "Are these hotels more affordable than White Town's heritage properties?", answer: "Generally yes. This category prioritises space and facilities over restored colonial architecture, which usually means a lower price point than the heritage hotels." },
+      { question: "Do I need to book accommodation in advance?", answer: "Advance booking is strongly recommended during weekends, Indian public holidays, school vacations, and the cooler months from November to February. White Town properties are especially popular and can fill up quickly. During quieter periods, last-minute bookings may still be available. Reserving ahead gives you a wider choice of hotels, guesthouses, and heritage stays, and often provides better prices than booking on arrival." },
     ],
   },
 
@@ -274,6 +276,7 @@ export const hotelGuides: HotelGuide[] = [
       { question: "Which of these is best for a honeymoon?", answer: "Le Pondy is the most romantic and secluded option, set between the sea and the Chunnambar backwaters." },
       { question: "Are any of these good for combining a coastal stay with visiting Auroville?", answer: "Yes, Radisson Resort Pondicherry Bay and Dune Eco Village & Spa are both well positioned for an Auroville day trip alongside beach time." },
       { question: "Is it worth staying at the coast instead of White Town?", answer: "It depends on the trip. If heritage streets and cafés are the priority, stay in White Town. If you want beach time, wellness, or a genuine break from sightseeing, these five are a better fit, ideally as a few days added on to a White Town stay rather than instead of one." },
+      { question: "Should I stay in White Town or near the beach?", answer: "White Town is ideal for visitors interested in French architecture, cafés, walking tours, and cultural attractions. Beachside accommodations offer a more relaxed resort atmosphere with easier access to swimming and seaside activities. If your stay is short, White Town usually provides better access to the main attractions. For a longer holiday focused on relaxation, a beach resort may be more suitable." },
     ],
   },
 ];

@@ -91,6 +91,7 @@ export default function Footer() {
               title="Plus"
               links={[
                 ["Conseils pratiques", "/fr/plan/practical"],
+                ["FAQ", "/fr/faq"],
                 ["À propos", "/fr/about"],
                 ["Contact", "/fr/contact"],
                 ["Plan du site", "/fr/sitemap"],
@@ -102,6 +103,7 @@ export default function Footer() {
               title="More"
               links={[
                 ["Practical Tips", "/plan/practical"],
+                ["FAQ", "/faq"],
                 ["About", "/about"],
                 ["Contact", "/contact"],
                 ["Sitemap", "/sitemap"],

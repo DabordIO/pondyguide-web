@@ -10,6 +10,8 @@ import { hotelsFr } from "@/data/fr/hotels";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 
 const READY_GUIDES_EN = hotelGuides.filter(g => g.intro && g.blurbs);
 
@@ -69,6 +71,19 @@ export default async function HotelGuidePageFr({ params }: { params: Promise<{ s
 
   return (
     <div style={{ maxWidth: 780, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {fr.faq && fr.faq.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: fr.faq.map(item => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }}
+        />
+      )}
       <LanguageToggle enHref={`/hotels/guides/${guide.slug}`} taHref={hasTa ? `/ta/hotels/guides/${guide.slug}` : undefined} frHref={`/fr/hotels/guides/${guide.slug}`} current="fr" />
       <Link href="/fr/hotels" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Hôtels</Link>
 
@@ -155,7 +170,7 @@ export default async function HotelGuidePageFr({ params }: { params: Promise<{ s
           {fr.faq.map((item, i) => (
             <div key={i} style={{ marginBottom: 20 }}>
               <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
-              <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }}>{item.answer}</p>
+              <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
             </div>
           ))}
         </div>

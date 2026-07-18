@@ -62,6 +62,9 @@ Plusieurs agences de location près de White Town louent scooters et motos à la
 **En Uber**
 
 Uber opère à Pondichéry. Il vous faudra une carte SIM indienne ou une eSIM pour l'utiliser.`,
+    faq: [
+      { question: "Pondichéry se visite-t-elle facilement à pied ?", answer: "Oui. Le quartier historique de White Town est compact et particulièrement agréable à découvrir à pied. La plupart des bâtiments coloniaux, cafés, boutiques, églises et la promenade du bord de mer se trouvent à courte distance les uns des autres. La marche est souvent la meilleure façon d'apprécier l'architecture et l'ambiance. En revanche, pour les plages éloignées du centre, [Auroville](/fr/discover/auroville) ou les villages voisins, un scooter, un vélo, un auto-rickshaw ou un taxi sera plus pratique." },
+    ],
   },
 
   // ── SERVICES ───────────────────────────────────────────────────────────────
@@ -209,6 +212,7 @@ Un peu de préparation change beaucoup de choses à Pondichéry. Respectez les c
       { question: "Puis-je boire de l'alcool sur la plage ?", answer: "Non. La consommation d'alcool dans les lieux publics, y compris les plages et la promenade, est interdite." },
       { question: "Les plages sont-elles ouvertes la nuit ?", answer: "L'accès public est généralement disponible, mais la baignade après la tombée de la nuit est dangereuse et déconseillée." },
       { question: "Puis-je tout photographier ?", answer: "La plupart des lieux extérieurs se prêtent à la photographie, mais respectez toujours les restrictions à l'intérieur des lieux religieux, musées et locaux gouvernementaux." },
+      { question: "Pondichéry est-elle sûre pour les voyageurs seuls ?", answer: "Pondichéry est généralement considérée comme une destination sûre pour les voyageurs seuls, y compris les femmes. Les principales zones touristiques sont animées pendant la journée, et White Town est habituellement bien fréquenté. Comme partout, il est conseillé d'éviter les endroits isolés tard le soir, de garder ses objets de valeur en sécurité et d'utiliser des moyens de transport fiables. Des précautions de voyage habituelles suffisent généralement pour un séjour confortable." },
     ],
   },
   {
@@ -283,6 +287,9 @@ De fortes précipitations arrivent dès juillet, portées par la mousson du sud-
 **Semaine vs week-end**
 
 Pondichéry est une destination de week-end prisée des habitants de Chennai, ce qui signifie que les cafés et rues du quartier français sont nettement plus animés les samedis et dimanches. Si vous pouvez arriver en semaine, l'atmosphère est plus calme et les tables plus faciles à trouver.`,
+    faq: [
+      { question: "Quelle est la meilleure période pour visiter Pondichéry ?", answer: "La période la plus agréable s'étend de novembre à février, lorsque les températures sont plus douces et l'humidité moins élevée. Cette saison est idéale pour les promenades, les plages et la découverte d'[Auroville](/fr/discover/auroville). De mars à juin, la chaleur peut être importante, tandis qu'octobre et novembre connaissent parfois des pluies liées à la mousson du nord-est. Les voyageurs recherchant un climat confortable privilégient généralement les mois d'hiver." },
+    ],
   },
   {
     id: "dress-and-comfort",
@@ -374,6 +381,12 @@ Le tamoul est la langue locale. Le français reste en usage dans certains contex
 **Marché du dimanche**
 
 Le marché du dimanche sur Mahatma Gandhi Street se tient d'environ 10h jusque dans l'après-midi. Meubles d'occasion, électronique vintage, vêtements, outils et street food. Très fréquenté, entièrement local, et qui mérite le détour.`,
+    faq: [
+      { question: "Combien de jours faut-il prévoir pour Pondichéry ?", answer: "Deux à trois jours suffisent pour découvrir les principales attractions, notamment White Town, la promenade, les cafés, les marchés et [Auroville](/fr/discover/auroville). Un séjour de quatre à cinq jours permet de profiter des plages voisines, des activités culturelles, des cours de français, du vélo, du yoga et d'une découverte plus détendue. Beaucoup de voyageurs considèrent qu'un long week-end offre un excellent équilibre entre visites et repos." },
+      { question: "Peut-on utiliser des cartes bancaires internationales à Pondichéry ?", answer: "Oui. La plupart des hôtels, restaurants, cafés et grandes boutiques de White Town et des zones touristiques acceptent les cartes bancaires internationales. En revanche, les petits commerces locaux, les marchés, les auto-rickshaws et certaines maisons d'hôtes peuvent préférer les espèces ou les moyens de paiement numériques indiens. Il est donc utile d'avoir une somme raisonnable en roupies indiennes pour les petites dépenses et les lieux n'acceptant pas les cartes." },
+      { question: "Quelles sont les règles concernant l'alcool à Pondichéry ?", answer: "Pondichéry est connue pour appliquer des taxes sur l'alcool souvent plus faibles que dans de nombreux États indiens, ce qui rend les boissons alcoolisées relativement abordables. L'alcool peut être acheté dans des magasins agréés et consommé dans des restaurants et bars autorisés. La consommation dans les lieux publics est interdite, et les voyageurs doivent respecter les règles locales concernant l'âge légal et la consommation. Si vous transportez de l'alcool hors du territoire, les règles de l'État de destination s'appliqueront." },
+      { question: "Puis-je transporter de l'alcool acheté à Pondichéry ?", answer: "L'alcool acheté à Pondichéry peut généralement être transporté pour une consommation personnelle, mais les quantités autorisées dépendent de la réglementation de l'État dans lequel vous entrez. Les États voisins peuvent imposer des limites, et les quantités excessives peuvent être saisies lors des contrôles. Il est conseillé de conserver les reçus d'achat et d'éviter de transporter de grandes quantités. Pour une information fiable, consultez les règles d'accise en vigueur dans votre État de destination." },
+    ],
   },
 ];
 

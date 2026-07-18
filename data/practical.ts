@@ -67,6 +67,9 @@ Several rental agencies near the White Town rent scooters and motorbikes by the 
 **By Uber**
 
 Uber operates in Pondicherry. You will need an Indian SIM card or eSIM to use it.`,
+    faq: [
+      { question: "Is Pondicherry walkable?", answer: "Yes. The historic White Town area is compact and very pleasant to explore on foot. Most colonial buildings, cafés, boutiques, churches, and the seaside promenade are located within walking distance of one another. Walking is often the best way to enjoy the architecture and atmosphere. However, for beaches outside the center, [Auroville](/discover/auroville), or nearby villages, a scooter, bicycle, auto-rickshaw, or taxi is more convenient." },
+    ],
   },
 
   // ── SERVICE ────────────────────────────────────────────────────────────────
@@ -217,6 +220,7 @@ A little preparation goes a long way in Pondicherry. Respect local customs, take
       { question: "Can I drink alcohol on the beach?", answer: "No. Alcohol consumption in public places, including beaches and the promenade, is prohibited." },
       { question: "Are beaches open at night?", answer: "Public access is generally available, but swimming after dark is unsafe and not recommended." },
       { question: "Can I photograph everything?", answer: "Most outdoor locations are open for photography, but always respect restrictions inside religious places, museums and government premises." },
+      { question: "Is Pondicherry safe for solo travelers?", answer: "Pondicherry is generally considered safe for solo travelers, including women. The main tourist areas are active throughout the day, and White Town is usually well frequented. As in any destination, it is wise to avoid isolated areas late at night, keep valuables secure, and use trusted transport services. Following normal travel precautions is usually sufficient for a comfortable visit." },
     ],
   },
   {
@@ -296,6 +300,9 @@ Heavy rainfall arrives from July, driven by the southwest monsoon, and Pondicher
 **Weekdays vs weekends**
 
 Pondicherry is a favourite weekend destination for Chennai residents, which means the French Quarter cafés and streets are noticeably busier on Saturdays and Sundays. If you can arrive on a weekday, the atmosphere is calmer and tables are easier to find.`,
+    faq: [
+      { question: "What is the best time of year to visit Pondicherry?", answer: "The most pleasant season is from November to February, when temperatures are cooler and humidity is lower. This period is ideal for walking tours, beach visits, and exploring [Auroville](/discover/auroville). March to June can be very hot, while October and November may experience occasional rainfall from the northeast monsoon. Travelers looking for comfortable weather generally prefer the winter months." },
+    ],
   },
   {
     id: "dress-and-comfort",
@@ -393,6 +400,12 @@ Tamil is the local language. French remains in use in some institutional context
 **Sunday market**
 
 The Sunday market on Mahatma Gandhi Street runs from around 10am through the afternoon. Second-hand furniture, vintage electronics, clothes, tools, and street food. Very crowded, entirely local, and worth a visit.`,
+    faq: [
+      { question: "How many days are enough for Pondicherry?", answer: "Two to three days are enough to see the main attractions, including White Town, the promenade, local cafés, markets, and [Auroville](/discover/auroville). A longer stay of four to five days allows time for nearby beaches, cultural activities, French language classes, cycling, yoga, and more relaxed exploration. Many visitors find that a long weekend offers a good balance between sightseeing and leisure." },
+      { question: "Can I use international credit cards in Pondicherry?", answer: "Yes. Most hotels, restaurants, cafés, and larger shops in White Town and major tourist areas accept international credit and debit cards. However, smaller local stores, markets, auto-rickshaws, and some guesthouses may prefer cash or Indian digital payment methods. It is a good idea to carry a moderate amount of Indian rupees for small purchases, local transport, and places that do not accept cards." },
+      { question: "What are the alcohol rules in Pondicherry?", answer: "Pondicherry is known for having lower alcohol taxes than many Indian states, which makes alcoholic beverages relatively inexpensive. Alcohol can be purchased from licensed shops and served in authorized restaurants and bars. Public drinking is not permitted, and travelers should respect local regulations regarding age limits and consumption. If you plan to take alcohol outside the union territory, the destination state's rules will apply." },
+      { question: "Can I transport alcohol purchased in Pondicherry?", answer: "Alcohol purchased in Pondicherry can generally be carried for personal consumption, but the quantity allowed varies according to the regulations of the state you are entering. Neighboring states may impose limits, and excess quantities can be confiscated during inspections. Travelers should keep purchase receipts and avoid carrying large amounts. For the most reliable information, check the current excise rules of your destination state before traveling." },
+    ],
   },
 ];
 

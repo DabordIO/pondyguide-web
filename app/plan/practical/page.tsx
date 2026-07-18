@@ -5,6 +5,7 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
 import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 
 export const metadata: Metadata = {
   title: "Practical Guide to Pondicherry for First-Time Visitors",
@@ -27,13 +28,17 @@ const SECTION_LABELS: Record<string, string> = {
 
 const SECTION_ORDER = ["transport", "service", "tips"];
 
+// "getting-around" FAQ lives on its dedicated page (/plan/getting-around) to avoid duplicate FAQPage schema.
+const topicFaq = (t: { id: string; faq?: { question: string; answer: string }[] }) =>
+  t.id === "getting-around" ? [] : (t.faq ?? []);
+
 export default function PracticalPage() {
   const bySectionArr = SECTION_ORDER.map(sec => ({
     sec,
     items: practicalTopics.filter(t => t.section === sec),
   })).filter(g => g.items.length > 0);
 
-  const faqEntries = practicalTopics.flatMap(t => t.faq ?? []);
+  const faqEntries = practicalTopics.flatMap(topicFaq);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
@@ -71,15 +76,15 @@ export default function PracticalPage() {
               <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{t.title}</h3>
               <p style={{ fontSize: "0.95rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 16, fontStyle: "italic" }}>{t.summary}</p>
               <ArticleBody text={t.body} />
-              {t.faq && t.faq.length > 0 && (
+              {topicFaq(t).length > 0 && (
                 <div style={{ marginTop: 28 }}>
                   <h4 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
                     Frequently Asked Questions
                   </h4>
-                  {t.faq.map((item, fi) => (
+                  {topicFaq(t).map((item, fi) => (
                     <div key={fi} style={{ marginBottom: 16 }}>
                       <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
-                      <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }}>{item.answer}</p>
+                      <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
                     </div>
                   ))}
                 </div>

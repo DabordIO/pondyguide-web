@@ -6,6 +6,7 @@ export interface InstitutionArticleFr {
   body: string;
   metaTitle?: string;
   metaDescription?: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const institutionArticlesFr: InstitutionArticleFr[] = [
@@ -205,6 +206,9 @@ L'[Alliance française de Pondichéry](/fr/history/institutions/alliance-francai
 **Trois raisons de se retrouver dans la même salle**
 
 L'Alliance française de Pondichéry attire un public d'élèves qui serait inhabituel dans toute autre ville indienne. Certains viennent parce qu'ils descendent de familles francophones deux générations plus tôt et souhaitent renouer avec quelque chose. Certains viennent parce que le français est une qualification professionnelle dans l'hôtellerie, la diplomatie ou les affaires européennes. Certains viennent simplement parce qu'ils habitent une rue au nom français et veulent comprendre ce qu'il signifie. Trois raisons différentes, la même salle de classe. Ce mélange particulier est l'une des choses qui distinguent cette institution de toute autre Alliance française en Inde.`,
+    faq: [
+      { question: "Puis-je apprendre le français à Pondichéry ?", answer: "Oui. Grâce à son héritage français, Pondichéry compte plusieurs écoles de langues et institutions culturelles proposant des cours de français pour débutants comme pour niveaux avancés. Des formations de courte durée existent pour les voyageurs de passage, tandis que des programmes plus longs conviennent aux étudiants et expatriés. Le français étant encore présent dans certains milieux éducatifs et culturels, Pondichéry est l'un des endroits les plus pratiques en Inde pour apprendre cette langue." },
+    ],
   },
 
   {

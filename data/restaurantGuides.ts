@@ -87,6 +87,7 @@ export const restaurantGuides: RestaurantGuide[] = [
       { question: "Is French food expensive in Pondicherry?", answer: "Not necessarily. While several French restaurants are upscale, there are also cafés and mid-range options that offer a French-inspired experience without the price tag of fine dining." },
       { question: "Do I need to book in advance?", answer: "Reservations are recommended for popular upscale restaurants, especially on weekends. Chez Pushpa and Rasa Table have limited seating and require advance booking." },
       { question: "Where are most French restaurants located?", answer: "Many of Pondicherry's best French restaurants are concentrated in and around the French Quarter (White Town), making it easy to explore several on foot." },
+      { question: "Where can I taste French cuisine in Pondicherry?", answer: "French cuisine is mainly found in White Town, where several restaurants and cafés serve dishes such as croissants, baguettes, crêpes, quiches, seafood specialties, and French-style desserts. Many establishments combine French techniques with local ingredients, creating a distinctive Franco-Tamil culinary style. Popular areas include [Rue Suffren](/discover/white-town/rue-suffren), [Rue Dumas](/discover/white-town/rue-dumas), and the beachfront neighborhood, where visitors can enjoy both traditional and contemporary French-inspired menus." },
     ],
   },
   {
@@ -176,6 +177,8 @@ export const restaurantGuides: RestaurantGuide[] = [
       { question: "Are there good bakeries in Pondicherry?", answer: "Yes. Pondicherry has a strong bakery tradition influenced by its French heritage, ranging from artisan bakeries to neighbourhood favourites serving fresh bread, pastries and cakes." },
       { question: "Which café is best for sea views?", answer: "Le Café and Le Pondichéry are the two cafés where you can enjoy coffee right by the waterfront, making either a popular stop during a walk along the Promenade." },
       { question: "Is Pondicherry good for café hopping?", answer: "Yes. Many of the city's best cafés and bakeries are within walking distance of one another, especially around the French Quarter, making it easy to explore several in a single day." },
+      { question: "What are the best café areas in White Town?", answer: "The most popular café areas are around [Rue Dumas](/discover/white-town/rue-dumas), [Rue Suffren](/discover/white-town/rue-suffren), Rue Romain Rolland, and the Beach Road promenade. These streets offer a mix of French bakeries, specialty coffee shops, heritage cafés, and modern brunch spots. Many are located in restored colonial buildings with courtyards and shaded terraces. Early morning and late afternoon are particularly pleasant times to enjoy the café atmosphere." },
+      { question: "Can I find vegetarian and vegan food easily?", answer: "Yes. Pondicherry is very friendly to vegetarian and vegan travelers. Traditional South Indian cuisine includes many naturally vegetarian dishes such as idli, dosa, sambar, and vegetable curries. Auroville and White Town also have numerous cafés specializing in vegan meals, organic produce, fresh juices, salads, and international vegetarian cuisine. Most restaurants can accommodate dietary preferences if informed when ordering." },
     ],
   },
   {
@@ -232,6 +235,7 @@ export const restaurantGuides: RestaurantGuide[] = [
       { question: "Is Pondicherry known only for French food?", answer: "Not at all. While its French heritage is one of the city's defining attractions, Pondicherry also has a rich Tamil culinary tradition that deserves equal attention. Exploring both sides of its food culture offers a much fuller picture of the city." },
       { question: "Which restaurant is best for a traditional South Indian breakfast?", answer: "Indian Coffee House is a popular choice for visitors wanting to experience classic South Indian breakfast staples in an authentic setting." },
       { question: "Where can I enjoy Indian food in a heritage setting?", answer: "Maison Perumal pairs a heritage Chettiar mansion with a Franco-Tamil menu, making it one of the city's most distinctive dining experiences." },
+      { question: "What local dishes should I try in Pondicherry?", answer: "Visitors should try Pondicherry fish curry, prawn masala, crab dishes, dosa, idli, and local Tamil-style meals served on banana leaves. A distinctive specialty is Franco-Tamil cuisine, which blends French cooking techniques with South Indian ingredients. Seafood is especially popular because of the coastal location. For dessert, many cafés offer French pastries alongside traditional South Indian sweets, giving visitors a unique culinary experience." },
     ],
   },
   {

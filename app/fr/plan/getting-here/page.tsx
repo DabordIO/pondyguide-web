@@ -6,6 +6,8 @@ import { transportArticlesFr } from "@/data/fr/transport";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 
 export const metadata: Metadata = {
   title: "Rejoindre Pondichéry depuis Chennai et au-delà",
@@ -29,9 +31,24 @@ const articles = idsInOrder
   })
   .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
+const faqEntries = articles.flatMap(({ fr }) => fr.faq ?? []);
+
 export default function GettingHerePageFr() {
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {faqEntries.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqEntries.map(item => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }}
+        />
+      )}
       <LanguageToggle enHref="/plan/getting-here" frHref="/fr/plan/getting-here" current="fr" />
       <Link href="/fr/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Préparer</Link>
 
@@ -53,6 +70,19 @@ export default function GettingHerePageFr() {
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 8 }}>{fr.title}</h2>
           <p style={{ fontSize: "1rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 20, fontStyle: "italic" }}>{fr.teaser}</p>
           <ArticleBody text={fr.body} />
+          {fr.faq && fr.faq.length > 0 && (
+            <div style={{ marginTop: 28 }}>
+              <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
+                Questions fréquentes
+              </h3>
+              {fr.faq.map((item, fi) => (
+                <div key={fi} style={{ marginBottom: 16 }}>
+                  <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
+                  <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
 

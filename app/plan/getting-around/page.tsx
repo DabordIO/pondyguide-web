@@ -2,9 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { transportArticles } from "@/data/transport";
+import { practicalTopics } from "@/data/practical";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 
 export const metadata: Metadata = {
   title: "Getting Around Pondicherry by Auto, Bike and Bus",
@@ -20,10 +23,25 @@ export const metadata: Metadata = {
 };
 
 const articles = transportArticles.filter(a => a.category === "local");
+const walkabilityFaq = practicalTopics.find(t => t.id === "getting-around")?.faq ?? [];
+const faqEntries = [...walkabilityFaq, ...articles.flatMap(a => a.faq ?? [])];
 
 export default function GettingAroundPage() {
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {faqEntries.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqEntries.map(item => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }}
+        />
+      )}
       <LanguageToggle enHref="/plan/getting-around" frHref="/fr/plan/getting-around" current="en" />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
@@ -45,8 +63,35 @@ export default function GettingAroundPage() {
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 8 }}>{a.title}</h2>
           <p style={{ fontSize: "1rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 20, fontStyle: "italic" }}>{a.teaser}</p>
           <ArticleBody text={a.body} />
+          {a.faq && a.faq.length > 0 && (
+            <div style={{ marginTop: 28 }}>
+              <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
+                Frequently Asked Questions
+              </h3>
+              {a.faq.map((item, fi) => (
+                <div key={fi} style={{ marginBottom: 16 }}>
+                  <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
+                  <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
+
+      {walkabilityFaq.length > 0 && (
+        <div style={{ marginBottom: 48 }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
+            On Foot
+          </h2>
+          {walkabilityFaq.map((item, fi) => (
+            <div key={fi} style={{ marginBottom: 16 }}>
+              <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
+              <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+            </div>
+          ))}
+        </div>
+      )}
 
       <AppBanner />
     </div>

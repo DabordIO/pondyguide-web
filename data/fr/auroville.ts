@@ -8,6 +8,7 @@ export interface AurovilleArticleFr {
   body: string;
   metaTitle?: string;
   metaDescription?: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const aurovilleArticlesFr: AurovilleArticleFr[] = [
@@ -90,6 +91,11 @@ Le jour de votre réservation, présentez-vous au Centre d'accueil avant 8h. Por
 **Les jardins**
 
 Douze jardins thématiques encerclent le Matrimandir, chacun correspondant à l'une des douze qualités. Un grand banian se dresse près de l'amphithéâtre en plein air, au centre de la Zone de Paix. Parcourir les allées de ces jardins constitue en soi une raison de venir : c'est l'espace le plus paisible de toute la région de Pondichéry.`,
+    faq: [
+      { question: "Comment visiter le Matrimandir ?", answer: "Les visiteurs doivent d'abord se rendre au Centre d'accueil d'Auroville. Un point de vue gratuit est généralement accessible le jour même, tandis que l'entrée dans la chambre intérieure nécessite une réservation préalable et dépend des disponibilités. Le silence et une attitude respectueuse sont demandés. La photographie est interdite dans certaines zones. Il est conseillé de réserver quelques jours à l'avance, surtout pendant les week-ends et les périodes de vacances." },
+      { question: "Faut-il un laissez-passer pour visiter le Matrimandir ?", answer: "Aucun laissez-passer n'est nécessaire pour accéder à l'espace visiteurs et au point de vue, mais il en faut un pour entrer dans la chambre intérieure du Matrimandir. Les laissez-passer sont délivrés selon la procédure officielle du Centre d'accueil et leur nombre est limité. La demande pouvant être importante, notamment les week-ends et pendant les vacances, il est préférable d'effectuer la réservation avant la date prévue de la visite." },
+      { question: "Les enfants peuvent-ils entrer dans la chambre intérieure du Matrimandir ?", answer: "L'accès des enfants est limité. La chambre intérieure est destinée à la méditation silencieuse, et les enfants de moins de dix ans ne sont pas admis. Les enfants plus âgés peuvent être admis selon la réglementation en vigueur et leur capacité à rester silencieux pendant toute la visite. Les familles devraient vérifier les règles les plus récentes au Centre d'accueil avant de prévoir l'entrée dans la chambre." },
+    ],
   },
 
   {
@@ -281,6 +287,11 @@ Matinée au Matrimandir. Déjeuner à la Solar Kitchen. Après-midi à Svaram ou
 **Une note sur la conduite à tenir**
 
 Auroville est une communauté internationale en activité. Les visiteurs y sont chaleureusement accueillis : gardez le bruit faible près du Matrimandir et des zones résidentielles, demandez la permission avant de photographier des personnes, et accordez-vous le temps de ralentir. Plus la visite est silencieuse, plus elle donne en retour.`,
+    faq: [
+      { question: "Comment se rendre à Auroville depuis Pondichéry ?", answer: "Auroville se situe à environ 10 à 12 km au nord du centre de Pondichéry. Le moyen le plus simple d'y aller est en scooter, en taxi, en auto-rickshaw ou en bus local. Le trajet dure généralement entre 20 et 30 minutes selon la circulation. De nombreux visiteurs associent la visite d'Auroville aux plages et cafés voisins. En scooter de location, il suffit de suivre l'East Coast Road et les panneaux indiquant Auroville. Voir [se déplacer à Pondichéry](/fr/plan/getting-around) pour les détails de location." },
+      { question: "Combien de temps faut-il prévoir pour visiter Auroville ?", answer: "Pour une première découverte, une demi-journée suffit généralement pour voir le Centre d'accueil, le point de vue du Matrimandir, quelques espaces communautaires ainsi que des cafés ou boutiques. Si vous souhaitez participer à des ateliers, explorer les zones boisées ou accéder à la chambre intérieure du Matrimandir, il est préférable de prévoir une journée complète. Auroville s'étend sur une vaste superficie et les déplacements entre les différents lieux demandent du temps." },
+      { question: "Quelle tenue porter pour visiter Auroville et le Matrimandir ?", answer: "Il est recommandé de porter des vêtements confortables et décents. Les habits légers en coton sont idéaux en raison du climat chaud. Il vaut mieux éviter les tenues très décolletées ou trop courtes, notamment dans les espaces de méditation et les lieux communautaires. Il peut être nécessaire de retirer ses chaussures dans certaines zones. Un chapeau, des lunettes de soleil et une bouteille d'eau sont utiles pour se déplacer à travers le vaste site d'Auroville." },
+    ],
   },
 ];
 

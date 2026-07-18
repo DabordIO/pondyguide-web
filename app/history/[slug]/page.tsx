@@ -6,6 +6,7 @@ import { historyArticlesFr } from "@/data/fr/history";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 import Image from "next/image";
@@ -70,6 +71,19 @@ export default async function HistoryArticlePage({ params }: { params: Promise<{
           publisher: { "@type": "Organization", name: "Pondy Guide" },
         }}
       />
+      {article.faq && article.faq.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: article.faq.map(f => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }}
+        />
+      )}
       <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← History</Link>
 
       {article.photo && (
@@ -89,6 +103,20 @@ export default async function HistoryArticlePage({ params }: { params: Promise<{
       )}
 
       <ArticleBody text={article.body} />
+
+      {article.faq && article.faq.length > 0 && (
+        <div style={{ margin: "48px 0" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 20 }}>
+            Frequently Asked Questions
+          </h2>
+          {article.faq.map((f, i) => (
+            <div key={i} style={{ marginBottom: 20 }}>
+              <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{f.question}</p>
+              <FaqAnswer text={f.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+            </div>
+          ))}
+        </div>
+      )}
 
       <AppBanner />
 

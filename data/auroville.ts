@@ -8,6 +8,7 @@ export interface AurovilleArticle {
   photo?: string;
   metaTitle?: string;
   metaDescription?: string;
+  faq?: { question: string; answer: string }[];
 }
 
 export const aurovilleArticles: AurovilleArticle[] = [
@@ -94,6 +95,11 @@ On your booked day, arrive at the Visitors' Centre by 8am. Wear modest clothing 
 **The gardens**
 
 Twelve themed gardens encircle the Matrimandir, each corresponding to one of the twelve qualities. A large Banyan tree stands near the open-air amphitheatre at the centre of the Peace Area. Walking the paths through the gardens is itself a reason to come: this is the quietest space in the Pondicherry region.`,
+    faq: [
+      { question: "How do I visit the Matrimandir?", answer: "Visitors must first go to the Auroville Visitors' Centre. A free viewing point can usually be accessed the same day, while entry into the inner chamber requires advance booking and is subject to availability. Silence and respectful behavior are expected. Photography is restricted in certain areas. It is advisable to reserve your visit a few days ahead, especially during weekends and holiday periods." },
+      { question: "Do I need a pass to visit the Matrimandir?", answer: "A pass is not required for the general visitor area and viewing point, but it is required for entry into the inner chamber of the Matrimandir. Passes must be obtained through the official booking process at the Visitors' Centre and are limited in number. Because demand can be high, especially during weekends and holidays, it is wise to arrange the pass before your planned visit." },
+      { question: "Can children enter the Matrimandir inner chamber?", answer: "Access for children is restricted. The inner chamber is intended for silent meditation, and children under ten are not admitted. Older children may be allowed depending on current regulations and their ability to remain quiet throughout the visit. Families should check the latest rules at the Visitors' Centre before planning entry into the chamber, as policies can change." },
+    ],
   },
 
   {
@@ -293,5 +299,10 @@ Morning at the Matrimandir. Lunch at the Solar Kitchen. Afternoon at Svaram or a
 **A note on conduct**
 
 Auroville is a working international community. Visitors are warmly welcomed: keep noise low near the Matrimandir and residential areas, ask before photographing people, and allow yourself time to move slowly. The quieter the visit, the more it gives back.`,
+    faq: [
+      { question: "How do I get to Auroville from Pondicherry?", answer: "Auroville is located about 10 to 12 km north of central Pondicherry. The easiest way to reach it is by scooter, taxi, auto-rickshaw, or local bus. Travel time is usually 20 to 30 minutes depending on traffic. Many visitors combine Auroville with nearby beaches and cafés. If you are using a rental scooter, follow the East Coast Road and the clearly marked Auroville signs. See [getting around Pondicherry](/plan/getting-around) for rental details." },
+      { question: "How much time should I plan for an Auroville visit?", answer: "For a first visit, half a day is usually sufficient to see the Visitors' Centre, the Matrimandir viewing area, a few community spaces, and some cafés or shops. If you wish to attend workshops, explore the forested areas, or spend time in the inner chamber of the Matrimandir, you should plan a full day. Auroville is spread over a large area, so moving between locations takes time." },
+      { question: "What should I wear when visiting Auroville and the Matrimandir?", answer: "Comfortable and modest clothing is recommended. Light cotton clothes are ideal because of the warm climate. Visitors should avoid very revealing outfits, especially when entering meditation or community spaces. Footwear may need to be removed in certain areas. A hat, sunglasses, and water bottle are useful for walking around Auroville, as the site covers a large area with outdoor paths." },
+    ],
   },
 ];

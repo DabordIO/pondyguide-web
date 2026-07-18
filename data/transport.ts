@@ -8,6 +8,7 @@ export interface TransportArticle {
   teaser: string;
   body: string;
   photo?: string; // image filename under /public/transport/
+  faq?: { question: string; answer: string }[];
 }
 
 export const transportArticles: TransportArticle[] = [
@@ -63,6 +64,9 @@ The Yesvantpur-Puducherry Weekly Express runs once a week, taking approximately 
 **Via Villupuram Junction**
 
 If your origin city has no direct service to Puducherry, travel to Villupuram Junction (VM), a major rail hub 37 kilometres from Pondicherry. From Villupuram you can take a connecting local train to PDY (45 to 55 minutes), a local bus, or a taxi for a one-hour drive. Villupuram has far more connections from cities across South India and is a reliable fallback.`,
+    faq: [
+      { question: "Is there a train to Pondicherry?", answer: "Yes. Pondicherry has a railway station connected to major cities such as Chennai, Villupuram, Bengaluru, and parts of southern India. Train availability depends on the route and day of travel, so advance booking is recommended, especially during weekends and holidays. For some itineraries, travelers may need to change trains at Villupuram Junction, which is the main rail connection point for the region. Once you arrive, see [getting around Pondicherry](/plan/getting-around) for the last stretch into White Town." },
+    ],
   },
 
   {
@@ -82,6 +86,9 @@ Pondicherry Airport (IATA: PNY) handles a small number of domestic flights, prim
 Most visitors fly into Chennai International Airport (MAA), which has connections to all major Indian cities and international destinations including Dubai, Singapore, Kuala Lumpur, and Colombo. From Chennai, Pondicherry is 3.5 to 4 hours by bus or 4 to 4.5 hours by train. Both options are frequent, reliable, and inexpensive.
 
 From Chennai Airport, the metro from Meenambakkam station (directly outside the terminal, Rs 50, change at Alandur) takes you to CMBT, where buses to Pondicherry depart every 15 to 20 minutes throughout the day. A pre-booked taxi from the airport takes around three hours and costs from 2,500 rupees.`,
+    faq: [
+      { question: "Can I fly to Pondicherry?", answer: "Yes. Pondicherry has a small domestic airport with limited flights, mainly from Bengaluru and occasionally other Indian cities. Most international travelers arrive via Chennai International Airport, which offers many more connections. From Chennai, Pondicherry can be reached by road in about 3 to 4 hours. Flight schedules to Pondicherry may change seasonally, so it is advisable to check current availability before booking. Once you land, see [getting around Pondicherry](/plan/getting-around) for onward transport." },
+    ],
   },
 
   {
@@ -107,6 +114,9 @@ National Highway 45 runs from Chennai through Tindivanam and is around 10 kilome
 **From other cities**
 
 From Tiruchirappalli, the drive is approximately 175 kilometres and takes four to four and a half hours. Pre-booked taxis from Tiruchirappalli airport are a sensible option for visitors arriving on regional flights. From Mysore, the drive runs through Bangalore and takes around eight hours.`,
+    faq: [
+      { question: "What is the easiest way to reach Pondicherry from Chennai?", answer: "Yes, reaching Pondicherry from Chennai is relatively easy. The most popular option is by road using the scenic East Coast Road (ECR). Travelers can choose private taxis, rental cars, or frequent government and private buses. The journey usually takes 3 to 4 hours depending on traffic. This route is favored for its coastal views and convenient departure points from Chennai city and the airport." },
+    ],
   },
 
   {
@@ -230,6 +240,9 @@ The Royal Brothers app remains the most reliable and fully legal option, guarant
 **Before you ride**
 
 Photograph the vehicle's existing scratches and check the tyres, brakes, and lights before leaving the rental shop. Agree on the current fuel level: most rentals are handed over nearly empty. Your first stop is a petrol station. The Indian Oil station near the New Bus Stand and the HP pump on SV Patel Salai are both convenient. Carry your rental agreement and driver's licence, particularly on the road between Pondicherry (a Union Territory) and the surrounding Tamil Nadu state, where Auroville sits: there is an active police checkpoint at the border and officers are notably strict with tourists there. Helmets are legally required for both rider and passenger once you leave the town centre for Auroville or the outer beaches, so ask the rental shop for two helmets if you are riding as a pair.`,
+    faq: [
+      { question: "How can I rent a bike in Pondicherry?", answer: "Bike and scooter rentals are widely available in White Town, near the bus stand, and around major tourist areas. You will generally need a valid driving license and an identity document. Daily rental rates vary according to the vehicle type and season. Before accepting the bike, check the brakes, lights, fuel level, and any existing scratches, and confirm whether insurance is included in the rental agreement. A scooter is especially useful for reaching [Auroville](/discover/auroville)." },
+    ],
   },
 ];
 

@@ -6,6 +6,7 @@ import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
 import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 
 export const metadata: Metadata = {
   title: "Guide pratique de Pondichéry pour les primo-visiteurs",
@@ -28,6 +29,10 @@ const SECTION_LABELS: Record<string, string> = {
 
 const SECTION_ORDER = ["transport", "service", "tips"];
 
+// La FAQ "getting-around" vit sur sa page dédiée (/fr/plan/getting-around) pour éviter un schéma FAQPage dupliqué.
+const topicFaq = (t: { id: string; faq?: { question: string; answer: string }[] }) =>
+  t.id === "getting-around" ? [] : (t.faq ?? []);
+
 export default function PracticalPageFr() {
   const bySectionArr = SECTION_ORDER.map(sec => ({
     sec,
@@ -40,7 +45,7 @@ export default function PracticalPageFr() {
       .filter((x): x is NonNullable<typeof x> => Boolean(x)),
   })).filter(g => g.items.length > 0);
 
-  const faqEntries = practicalTopicsFr.flatMap(t => t.faq ?? []);
+  const faqEntries = practicalTopicsFr.flatMap(topicFaq);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
@@ -78,15 +83,15 @@ export default function PracticalPageFr() {
               <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{fr.title}</h3>
               <p style={{ fontSize: "0.95rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 16, fontStyle: "italic" }}>{fr.summary}</p>
               <ArticleBody text={fr.body} />
-              {fr.faq && fr.faq.length > 0 && (
+              {topicFaq(fr).length > 0 && (
                 <div style={{ marginTop: 28 }}>
                   <h4 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
                     Questions fréquentes
                   </h4>
-                  {fr.faq.map((item, fi) => (
+                  {topicFaq(fr).map((item, fi) => (
                     <div key={fi} style={{ marginBottom: 16 }}>
                       <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
-                      <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }}>{item.answer}</p>
+                      <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
                     </div>
                   ))}
                 </div>

@@ -6,6 +6,7 @@ import { institutionArticlesTa } from "@/data/ta/institutions";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 import Image from "next/image";
@@ -80,6 +81,19 @@ export default async function InstitutionPage({ params }: { params: Promise<{ sl
           publisher: { "@type": "Organization", name: "Pondy Guide" },
         }}
       />
+      {item.faq && item.faq.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: item.faq.map(f => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }}
+        />
+      )}
       <Link href="/history" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← History</Link>
 
       {item.photo && (
@@ -102,6 +116,21 @@ export default async function InstitutionPage({ params }: { params: Promise<{ sl
       )}
 
       <ArticleBody text={item.body} />
+
+      {item.faq && item.faq.length > 0 && (
+        <div style={{ margin: "48px 0" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 20 }}>
+            Frequently Asked Questions
+          </h2>
+          {item.faq.map((f, i) => (
+            <div key={i} style={{ marginBottom: 20 }}>
+              <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{f.question}</p>
+              <FaqAnswer text={f.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+            </div>
+          ))}
+        </div>
+      )}
+
       <AppBanner />
 
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 48, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>

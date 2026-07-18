@@ -3,9 +3,12 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { transportArticles } from "@/data/transport";
 import { transportArticlesFr } from "@/data/fr/transport";
+import { practicalTopicsFr } from "@/data/fr/practical";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 
 export const metadata: Metadata = {
   title: "Se déplacer à Pondichéry en auto, à vélo et en bus",
@@ -29,9 +32,25 @@ const articles = idsInOrder
   })
   .filter((x): x is NonNullable<typeof x> => Boolean(x));
 
+const walkabilityFaq = practicalTopicsFr.find(t => t.id === "getting-around")?.faq ?? [];
+const faqEntries = [...walkabilityFaq, ...articles.flatMap(({ fr }) => fr.faq ?? [])];
+
 export default function GettingAroundPageFr() {
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {faqEntries.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqEntries.map(item => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }}
+        />
+      )}
       <LanguageToggle enHref="/plan/getting-around" frHref="/fr/plan/getting-around" current="fr" />
       <Link href="/fr/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Préparer</Link>
 
@@ -53,8 +72,35 @@ export default function GettingAroundPageFr() {
           <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 8 }}>{fr.title}</h2>
           <p style={{ fontSize: "1rem", color: "#6b6560", lineHeight: 1.7, marginBottom: 20, fontStyle: "italic" }}>{fr.teaser}</p>
           <ArticleBody text={fr.body} />
+          {fr.faq && fr.faq.length > 0 && (
+            <div style={{ marginTop: 28 }}>
+              <h3 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
+                Questions fréquentes
+              </h3>
+              {fr.faq.map((item, fi) => (
+                <div key={fi} style={{ marginBottom: 16 }}>
+                  <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
+                  <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
+
+      {walkabilityFaq.length > 0 && (
+        <div style={{ marginBottom: 48 }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.4rem", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
+            À pied
+          </h2>
+          {walkabilityFaq.map((item, fi) => (
+            <div key={fi} style={{ marginBottom: 16 }}>
+              <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
+              <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+            </div>
+          ))}
+        </div>
+      )}
 
       <AppBanner />
     </div>

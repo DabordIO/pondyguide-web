@@ -6,6 +6,8 @@ import { aurovilleArticlesFr } from "@/data/fr/auroville";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
 import LanguageToggle from "@/components/LanguageToggle";
+import JsonLd from "@/components/JsonLd";
+import FaqAnswer from "@/components/FaqAnswer";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -54,6 +56,19 @@ export default async function AurovilleArticlePage({ params }: { params: Promise
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      {article.faq && article.faq.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: article.faq.map(item => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }}
+        />
+      )}
       {hasFr && <LanguageToggle enHref={`/discover/auroville/${slug}`} frHref={`/fr/discover/auroville/${slug}`} current="en" />}
       <Link href="/discover/auroville" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Auroville</Link>
 
@@ -75,6 +90,21 @@ export default async function AurovilleArticlePage({ params }: { params: Promise
       </p>
 
       <ArticleBody text={article.body} />
+
+      {article.faq && article.faq.length > 0 && (
+        <div style={{ margin: "48px 0" }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1c1917", marginBottom: 20 }}>
+            Frequently Asked Questions
+          </h2>
+          {article.faq.map((item, i) => (
+            <div key={i} style={{ marginBottom: 20 }}>
+              <p style={{ fontSize: 15, fontWeight: 700, color: "#1c1917", marginBottom: 6 }}>{item.question}</p>
+              <FaqAnswer text={item.answer} style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.7 }} />
+            </div>
+          ))}
+        </div>
+      )}
+
       <AppBanner />
 
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 48, paddingTop: 24, borderTop: "1px solid #e8ddd4" }}>
