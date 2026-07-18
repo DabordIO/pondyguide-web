@@ -83,6 +83,17 @@ export default function Footer() {
               ]}
             />
           )}
+          {fr && (
+            <FooterColumn
+              title="Plan"
+              links={[
+                ["Arriver", "/fr/plan/getting-here"],
+                ["Se déplacer", "/fr/plan/getting-around"],
+                ["Urgences", "/fr/plan/healthcare"],
+                ["Infos pratiques", "/fr/plan/practical"],
+              ]}
+            />
+          )}
           {!ta && !fr && (
             <FooterColumn
               title="Plan"
@@ -127,7 +138,7 @@ export default function Footer() {
           )}
 
           <div>
-            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>{ta ? "செயலி" : fr ? "L'application" : "The App"}</p>
+            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f97316", marginBottom: 12 }}>{ta ? "செயலி" : fr ? "L'appli Pondy" : "The Pondy App"}</p>
             <p style={{ fontSize: 13, lineHeight: 1.7, marginBottom: 12 }}>
               {ta
                 ? "முழு வழிகாட்டியையும் இணைய இணைப்பு இல்லாமலேயே உங்களுடன் எடுத்துச் செல்லுங்கள். வரைபடங்கள், வரலாற்றுத் தகவல்கள் மற்றும் பரிந்துரைகள் அனைத்தும் உங்கள் கையில்."
