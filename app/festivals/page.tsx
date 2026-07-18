@@ -3,10 +3,18 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { festivals } from "@/data/festivals";
 import { truncate } from "@/lib/truncate";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
   title: "Festivals in Pondicherry, Month by Month Guide",
   description: "A calendar of Pondicherry's festivals, from Hindu and Christian celebrations to French traditions unique to the town.",
+  alternates: {
+    languages: {
+      en: "/festivals",
+      fr: "/fr/festivals",
+      "x-default": "/festivals",
+    },
+  },
 };
 
 const MONTH_LABELS: Record<string, string> = {
@@ -35,7 +43,8 @@ const upcoming = getUpcoming();
 
 export default function FestivalsPage() {
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px" }}>
+    <div style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref="/festivals" frHref="/fr/festivals" current="en" />
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Calendar</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16 }}>
         Festivals in Pondicherry

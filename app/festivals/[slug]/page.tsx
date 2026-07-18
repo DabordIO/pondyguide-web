@@ -2,9 +2,11 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { festivals } from "@/data/festivals";
+import { festivalsFr } from "@/data/fr/festivals";
 import { truncate } from "@/lib/truncate";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 
 const MONTH_LABELS: Record<string, string> = {
@@ -29,10 +31,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
   const f = festivals.find(f => f.id === slug);
   if (!f) return {};
+  const hasFr = festivalsFr.some(x => x.id === slug);
   return {
     title: f.metaTitle ?? `${f.title} — Pondicherry`,
     description: f.metaDescription ?? f.teaser,
     openGraph: f.photo ? { images: [`/festivals/${f.photo}`] } : undefined,
+    alternates: {
+      languages: {
+        en: `/festivals/${slug}`,
+        ...(hasFr ? { fr: `/fr/festivals/${slug}` } : {}),
+        "x-default": `/festivals/${slug}`,
+      },
+    },
   };
 }
 
@@ -69,13 +79,15 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
   // Festival article view
   const festival = festivals.find(f => f.id === slug);
   if (!festival) notFound();
+  const hasFr = festivalsFr.some(x => x.id === slug);
 
   const idx = festivals.findIndex(f => f.id === slug);
   const prev = idx > 0 ? festivals[idx - 1] : null;
   const next = idx < festivals.length - 1 ? festivals[idx + 1] : null;
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref={`/festivals/${slug}`} frHref={hasFr ? `/fr/festivals/${slug}` : undefined} current="en" />
       <Link href="/festivals" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
 
       {festival.photo && (

@@ -316,6 +316,30 @@ export default function FrenchHomePage() {
         </ThreeGrid>
       </section>
 
+      {/* ── FESTIVALS ───────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Calendrier des fêtes" href="/fr/festivals" />
+        <SectionIntro>Pondichéry est en fête en permanence, et de façon peu ordinaire. Chaque mois est une fête.</SectionIntro>
+        <ThreeGrid>
+          {[
+            { href: "/fr/festivals/pongal", photo: "/festivals/pongal.jpg", label: "Janvier", title: "Pongal", description: "La fête tamoule des moissons : quatre jours, des pots de riz qui débordent, des vaches décorées, et des motifs de kolam à chaque porte." },
+            { href: "/fr/festivals/bastille-day", photo: "/festivals/bastille-day.jpg", label: "Juillet", title: "14 Juillet", description: "Pondichéry est l'un des très rares endroits hors de France où le 14 juillet est encore célébré dans les rues." },
+            { href: "/fr/festivals/masi-magam", photo: "/festivals/masi-magam.jpg", label: "Février–Mars", title: "Masi Magam", description: "Le festival le plus spectaculaire du calendrier de Pondichéry. Chars de temple, la mer, et une foule immense." },
+          ].map(f => (
+            <Link key={f.href} href={f.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={f.photo} alt={f.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#d4711a", marginBottom: 5 }}>{f.label}</p>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{f.title}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{f.description}</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── PLAN ─────────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Avant de partir" href="/fr/plan" />
