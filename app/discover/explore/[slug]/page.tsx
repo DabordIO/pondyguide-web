@@ -2,8 +2,10 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { exploreArticles } from "@/data/explore";
+import { exploreArticlesFr } from "@/data/fr/explore";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import LanguageToggle from "@/components/LanguageToggle";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -16,10 +18,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const a = exploreArticles.find(a => a.id === slug);
   if (!a) return {};
+  const hasFr = exploreArticlesFr.some(x => x.id === slug);
   return {
     title: a.metaTitle ?? `${a.title} — Pondicherry`,
     description: a.metaDescription ?? a.teaser,
     openGraph: a.photo ? { images: [`/explore/${a.photo}`] } : undefined,
+    alternates: {
+      languages: {
+        en: `/discover/explore/${slug}`,
+        ...(hasFr ? { fr: `/fr/discover/explore/${slug}` } : {}),
+        "x-default": `/discover/explore/${slug}`,
+      },
+    },
   };
 }
 
@@ -33,13 +43,15 @@ export default async function ExploreArticlePage({ params }: { params: Promise<{
   const { slug } = await params;
   const article = exploreArticles.find(a => a.id === slug);
   if (!article) notFound();
+  const hasFr = exploreArticlesFr.some(x => x.id === slug);
 
   const idx = exploreArticles.findIndex(a => a.id === slug);
   const prev = idx > 0 ? exploreArticles[idx - 1] : null;
   const next = idx < exploreArticles.length - 1 ? exploreArticles[idx + 1] : null;
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px" }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
+      <LanguageToggle enHref={`/discover/explore/${slug}`} frHref={hasFr ? `/fr/discover/explore/${slug}` : undefined} current="en" />
       <Link href="/discover/explore" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Things to Do</Link>
 
       {article.photo && (

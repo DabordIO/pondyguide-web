@@ -246,6 +246,30 @@ export default function FrenchHomePage() {
         </ThreeGrid>
       </section>
 
+      {/* ── BALADES, EXCURSIONS ET EXPÉRIENCES ──────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <SectionHeader title="Balades, excursions et expériences" href="/fr/discover/explore" />
+        <SectionIntro>Des lieux sans équivalent nulle part ailleurs en Inde. À explorer à votre rythme.</SectionIntro>
+        <ThreeGrid>
+          {[
+            { href: "/fr/discover/explore/walk-white-town", photo: "/explore/walking-tour-1.jpg", title: "Se promener dans White Town", teaser: "Une balade en autonomie à travers le quartier français : rues coloniales, bâtiments patrimoniaux, temples, et la promenade du front de mer. Les deux meilleures heures que vous passerez à Pondichéry." },
+            { href: "/fr/discover/explore/daytrip-arikamedu", photo: "/explore/arikamedu.jpg", title: "Arikamedu", teaser: "À quatre kilomètres au sud du quartier français, un ancien port où des marchands romains échangeaient des marchandises méditerranéennes contre du coton et des pierres précieuses indiennes. Des amphores romaines, de la céramique arétine, et une pierre gravée à l'effigie de l'empereur Auguste y ont été mises au jour." },
+            { href: "/fr/discover/explore/activity-sunday-market", photo: "/explore/sunday-market.jpg", title: "Le marché du dimanche", teaser: "Chaque dimanche sur la rue Mahatma Gandhi : meubles d'occasion, appareils électroniques vintage, vêtements faits main, outils, et street food. L'une des expériences les plus locales de Pondichéry." },
+          ].map(e => (
+            <Link key={e.href} href={e.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
+              <div style={{ position: "relative", width: "100%", height: 180 }}>
+                <Image src={e.photo} alt={e.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" style={{ objectFit: "cover" }} />
+              </div>
+              <div style={{ padding: "14px 16px 18px" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 17, marginBottom: 8, lineHeight: 1.3 }}>{e.title}</p>
+                <p style={{ fontSize: 14, color: "#6b6560", lineHeight: 1.6 }}>{truncate(e.teaser, 115)}</p>
+                <p style={{ fontSize: 14, color: "#d4711a", fontWeight: 600, marginTop: 12 }}>Lire la suite →</p>
+              </div>
+            </Link>
+          ))}
+        </ThreeGrid>
+      </section>
+
       {/* ── AUROVILLE ────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="Comprendre Auroville" href="/fr/discover/auroville" />
