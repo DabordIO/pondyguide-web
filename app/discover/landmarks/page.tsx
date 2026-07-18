@@ -7,6 +7,14 @@ import { truncate } from "@/lib/truncate";
 export const metadata: Metadata = {
   title: "Pondicherry Landmarks, Temples and Historic Sites",
   description: "Browse churches, temples, museums, colonial buildings and ancient ruins that reveal two thousand years of local history.",
+  alternates: {
+    languages: {
+      en: "/discover/landmarks",
+      ta: "/ta/discover/landmarks",
+      fr: "/fr/discover/landmarks",
+      "x-default": "/discover/landmarks",
+    },
+  },
 };
 
 export default function LandmarksPage() {
