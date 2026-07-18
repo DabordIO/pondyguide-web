@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 768px) {
   .desktop-nav { display: none !important; }
   .mobile-nav-toggle { display: flex !important; }
+  .search-trigger-label { display: none; }
 }
 @media (min-width: 769px) {
   .mobile-nav-toggle { display: none !important; }

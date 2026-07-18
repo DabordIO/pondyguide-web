@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
+import SearchBox from "./SearchBox";
 import { navEn, navTa, navFr, getLocale } from "@/lib/nav";
 
 function bestMatch(nav: { href: string }[], pathname: string) {
@@ -54,7 +55,10 @@ export default function Header() {
             );
           })}
         </nav>
-        <MobileNav />
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <SearchBox />
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
