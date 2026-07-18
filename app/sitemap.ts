@@ -9,12 +9,17 @@ import { figures } from "@/data/figures";
 import { figuresTa } from "@/data/ta/figures";
 import { figuresFr } from "@/data/fr/figures";
 import { restaurants } from "@/data/restaurants";
+import { restaurantsFr } from "@/data/fr/restaurants";
 import { restaurantGuides } from "@/data/restaurantGuides";
 import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
+import { restaurantGuidesFr } from "@/data/fr/restaurantGuides";
 import { hotels } from "@/data/hotels";
+import { hotelsFr } from "@/data/fr/hotels";
 import { hotelGuides } from "@/data/hotelGuides";
 import { hotelGuidesTa } from "@/data/ta/hotelGuides";
+import { hotelGuidesFr } from "@/data/fr/hotelGuides";
 import { festivals } from "@/data/festivals";
+import { festivalsFr } from "@/data/fr/festivals";
 import { streets } from "@/data/streets";
 import { streetsTa } from "@/data/ta/streets";
 import { streetsFr } from "@/data/fr/streets";
@@ -22,7 +27,9 @@ import { sites } from "@/data/sites";
 import { sitesTa } from "@/data/ta/sites";
 import { sitesFr } from "@/data/fr/sites";
 import { aurovilleArticles } from "@/data/auroville";
+import { aurovilleArticlesFr } from "@/data/fr/auroville";
 import { exploreArticles } from "@/data/explore";
+import { exploreArticlesFr } from "@/data/fr/explore";
 
 const BASE = "https://www.pondyguide.com";
 
@@ -46,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/about`, priority: 0.5 },
     { url: `${BASE}/contact`, priority: 0.3 },
     { url: `${BASE}/sitemap`, priority: 0.2 },
+    { url: `${BASE}/app`, priority: 0.4 },
     { url: `${BASE}/ta`, priority: 0.9 },
     { url: `${BASE}/ta/history`, priority: 0.8 },
     { url: `${BASE}/ta/history/institutions`, priority: 0.7 },
@@ -57,14 +65,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ta/about`, priority: 0.4 },
     { url: `${BASE}/ta/contact`, priority: 0.3 },
     { url: `${BASE}/ta/sitemap`, priority: 0.2 },
+    { url: `${BASE}/ta/app`, priority: 0.4 },
     { url: `${BASE}/fr`, priority: 0.9 },
     { url: `${BASE}/fr/history`, priority: 0.8 },
     { url: `${BASE}/fr/history/institutions`, priority: 0.7 },
     { url: `${BASE}/fr/history/lives-and-legacies`, priority: 0.7 },
     { url: `${BASE}/fr/discover/white-town`, priority: 0.7 },
     { url: `${BASE}/fr/discover/landmarks`, priority: 0.7 },
+    { url: `${BASE}/fr/discover/auroville`, priority: 0.8 },
+    { url: `${BASE}/fr/discover/explore`, priority: 0.8 },
+    { url: `${BASE}/fr/restaurants`, priority: 0.9 },
+    { url: `${BASE}/fr/hotels`, priority: 0.9 },
+    { url: `${BASE}/fr/festivals`, priority: 0.9 },
+    { url: `${BASE}/fr/plan`, priority: 0.8 },
+    { url: `${BASE}/fr/plan/getting-here`, priority: 0.7 },
+    { url: `${BASE}/fr/plan/getting-around`, priority: 0.7 },
+    { url: `${BASE}/fr/plan/healthcare`, priority: 0.7 },
+    { url: `${BASE}/fr/plan/practical`, priority: 0.7 },
     { url: `${BASE}/fr/about`, priority: 0.4 },
     { url: `${BASE}/fr/contact`, priority: 0.3 },
+    { url: `${BASE}/fr/sitemap`, priority: 0.2 },
+    { url: `${BASE}/fr/app`, priority: 0.4 },
   ].map(p => ({ ...p, lastModified: new Date(), changeFrequency: "monthly" as const }));
 
   const historyPages = historyArticles.map(a => ({
@@ -241,6 +262,57 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  const hotelPagesFr = hotelsFr.map(h => ({
+    url: `${BASE}/fr/hotels/${h.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const hotelGuidePagesFr = hotelGuidesFr
+    .filter(g => g.intro)
+    .map(g => {
+      const en = hotelGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/fr/hotels/guides/${en.slug}`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const restaurantPagesFr = restaurantsFr.map(r => ({
+    url: `${BASE}/fr/restaurants/${r.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const restaurantGuidePagesFr = restaurantGuidesFr
+    .filter(g => g.intro)
+    .map(g => {
+      const en = restaurantGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/fr/restaurants/guides/${en.slug}`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const festivalPagesFr = festivalsFr.map(f => ({
+    url: `${BASE}/fr/festivals/${f.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const aurovillePagesFr = aurovilleArticlesFr.map(a => ({
+    url: `${BASE}/fr/discover/auroville/${a.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const explorePagesFr = exploreArticlesFr.map(a => ({
+    url: `${BASE}/fr/discover/explore/${a.id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
   return [
     ...staticPages,
     ...historyPages,
@@ -267,5 +339,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...figurePagesFr,
     ...streetPagesFr,
     ...landmarkPagesFr,
+    ...hotelPagesFr,
+    ...hotelGuidePagesFr,
+    ...restaurantPagesFr,
+    ...restaurantGuidePagesFr,
+    ...festivalPagesFr,
+    ...aurovillePagesFr,
+    ...explorePagesFr,
   ];
 }
