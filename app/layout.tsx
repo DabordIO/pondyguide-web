@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     siteName: "Pondy Guide",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/sites/gandhi-statue.jpg",
+        width: 1600,
+        height: 1066,
+        alt: "Gandhi statue on the Pondicherry promenade at sunset",
+      },
+    ],
   },
 };
 
