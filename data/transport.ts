@@ -213,7 +213,7 @@ Pondicherry is entirely flat, and the White Town's grid layout makes cycling alm
 
 Standard bicycles rent for 80 to 150 rupees per day; geared or mountain bikes cost 150 to 250 rupees. A refundable deposit of 500 to 1,000 rupees plus a copy of a government ID (Aadhaar or passport) is standard at most rental points.
 
-The Sita Cultural Center at 22 Kandappa Mudaliyar Street keeps a reliable fleet of clean bicycles. Rental points also cluster near the Botanical Garden and along Goubert Avenue. Many boutique guesthouses in the White Town offer bicycles free of charge to guests: ask when you check in.
+Rental points cluster around Mission Street and MG Road, with more near the Botanical Garden and along Goubert Avenue; most have bikes ready to go on the spot. A few heritage cultural centres in White Town also rent out vintage-style bicycles, though some now focus more on their own guided morning cycling tours than walk-in day rentals, so it is worth checking what is actually available before turning up. Many boutique guesthouses in the White Town offer bicycles free of charge to guests: ask when you check in.
 
 **Scooters and motorbikes**
 
@@ -225,11 +225,11 @@ Rates per day: mopeds and small scooters, 200 to 300 rupees; standard scooters, 
 
 This is the most important thing to know before renting a scooter in Pondicherry. Only rent vehicles with yellow-on-black commercial licence plates. Private white plates are not legally authorised for rental use. If traffic police stop you on a private-plated rental, the vehicle can be impounded on the spot and you face fines for unauthorised commercial usage. Many informal shops will try to hand you a private-plate scooter; decline and walk away.
 
-The Royal Brothers app guarantees legally registered commercial vehicles with insurance and has multiple pickup points across Pondicherry. Onn Bikes is a budget alternative operating locally. For physical shops, the highest concentration of legitimate rental garages is on Mission Street, Nehru Street, and near the railway station. If you are staying close to Auroville, shops on Auroville Main Road near Kuilapalayam specialise in rugged mopeds and electric scooters suited to the unpaved forest tracks inside the township.
+The Royal Brothers app remains the most reliable and fully legal option, guaranteeing registered commercial vehicles with insurance and multiple pickup points across Pondicherry. Onn Bikes has scaled back its local presence in favour of larger cities, but independent garages on Mission Street cover much of that gap. For physical shops, the highest concentration of legitimate rental garages is on Mission Street, Nehru Street, and near the railway station. If you are staying close to Auroville, shops on Auroville Main Road near Kuilapalayam specialise in rugged mopeds and electric scooters suited to the unpaved forest tracks inside the township.
 
 **Before you ride**
 
-Photograph the vehicle's existing scratches and check the tyres, brakes, and lights before leaving the rental shop. Agree on the current fuel level: most rentals are handed over nearly empty. Your first stop is a petrol station. The Indian Oil station near the New Bus Stand and the HP pump on SV Patel Salai are both convenient. Carry your rental agreement and driver's licence, particularly on the road between Pondicherry and Auroville, where there is an active police checkpoint at the Union Territory border. Helmets are legally required on major roads.`,
+Photograph the vehicle's existing scratches and check the tyres, brakes, and lights before leaving the rental shop. Agree on the current fuel level: most rentals are handed over nearly empty. Your first stop is a petrol station. The Indian Oil station near the New Bus Stand and the HP pump on SV Patel Salai are both convenient. Carry your rental agreement and driver's licence, particularly on the road between Pondicherry (a Union Territory) and the surrounding Tamil Nadu state, where Auroville sits: there is an active police checkpoint at the border and officers are notably strict with tourists there. Helmets are legally required for both rider and passenger once you leave the town centre for Auroville or the outer beaches, so ask the rental shop for two helmets if you are riding as a pair.`,
   },
 ];
 
