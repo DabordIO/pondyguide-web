@@ -3,12 +3,11 @@ import Link from "next/link";
 import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
-  title: "Sitemap — Pondy Guide",
-  description: "A full map of everything on Pondy Guide — history, discover, festivals, hotels, restaurants, and practical information.",
+  title: "Plan du site — Pondy Guide",
+  description: "Une carte complète de tout ce que propose Pondy Guide — histoire, découverte, festivals, hôtels, restaurants, et informations pratiques.",
   alternates: {
     languages: {
       en: "/sitemap",
-      ta: "/ta/sitemap",
       fr: "/fr/sitemap",
       "x-default": "/sitemap",
     },
@@ -17,62 +16,51 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    label: "History",
+    label: "Histoire",
     links: [
-      ["History", "/history"],
-      ["Lives & Legacies", "/history/lives-and-legacies"],
-      ["Institutions", "/history/institutions"],
+      ["Histoire", "/fr/history"],
+      ["Vies et héritages", "/fr/history/lives-and-legacies"],
+      ["Institutions françaises", "/fr/history/institutions"],
     ],
   },
   {
-    label: "Discover",
+    label: "Découvrir",
     links: [
-      ["Discover", "/discover"],
-      ["White Town streets", "/discover/white-town"],
-      ["Landmarks & sites", "/discover/landmarks"],
-      ["Explore", "/discover/explore"],
-      ["Auroville", "/discover/auroville"],
+      ["Rues du quartier français", "/fr/discover/white-town"],
+      ["Monuments et sites historiques", "/fr/discover/landmarks"],
+      ["Balades, excursions et expériences", "/fr/discover/explore"],
+      ["Auroville", "/fr/discover/auroville"],
     ],
   },
   {
-    label: "Festivals",
+    label: "Fêtes",
     links: [
-      ["Festivals", "/festivals"],
+      ["Calendrier des fêtes", "/fr/festivals"],
     ],
   },
   {
-    label: "Stay & Eat",
+    label: "Séjourner & manger",
     links: [
-      ["Hotels", "/hotels"],
-      ["Restaurants", "/restaurants"],
+      ["Hôtels", "/fr/hotels"],
+      ["Restaurants", "/fr/restaurants"],
     ],
   },
   {
-    label: "Plan Your Visit",
+    label: "À propos",
     links: [
-      ["Plan", "/plan"],
-      ["Getting Here", "/plan/getting-here"],
-      ["Getting Around", "/plan/getting-around"],
-      ["Healthcare", "/plan/healthcare"],
-      ["Practical", "/plan/practical"],
-    ],
-  },
-  {
-    label: "About",
-    links: [
-      ["About Pondy Guide", "/about"],
-      ["Contact", "/contact"],
+      ["À propos de Pondy Guide", "/fr/about"],
+      ["Contact", "/fr/contact"],
     ],
   },
 ];
 
-export default function SitemapPage() {
+export default function SitemapPageFr() {
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "56px 24px 80px", position: "relative" }}>
-      <LanguageToggle enHref="/sitemap" taHref="/ta/sitemap" frHref="/fr/sitemap" current="en" />
-      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Sitemap</p>
+      <LanguageToggle enHref="/sitemap" frHref="/fr/sitemap" current="fr" />
+      <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 12 }}>Plan du site</p>
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 5vw, 2.75rem)", fontWeight: 700, color: "#1c1917", marginBottom: 48, lineHeight: 1.2 }}>
-        Everything on Pondy Guide
+        Tout Pondy Guide
       </h1>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px 48px" }}>
         {sections.map((section) => (

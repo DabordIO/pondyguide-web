@@ -110,6 +110,7 @@ export default function Footer() {
               links={[
                 ["À propos", "/fr/about"],
                 ["Contact", "/fr/contact"],
+                ["Plan du site", "/fr/sitemap"],
               ]}
             />
           )}
@@ -140,13 +141,6 @@ export default function Footer() {
         {!ta && !fr && (
           <div style={{ display: "flex", gap: 24 }}>
             {[["About", "/about"], ["Contact", "/contact"], ["Sitemap", "/sitemap"]].map(([label, href]) => (
-              <Link key={href} href={href} style={{ fontSize: 12, color: "#a8a29e", textDecoration: "none" }}>{label}</Link>
-            ))}
-          </div>
-        )}
-        {fr && (
-          <div style={{ display: "flex", gap: 24 }}>
-            {[["À propos", "/fr/about"], ["Contact", "/fr/contact"]].map(([label, href]) => (
               <Link key={href} href={href} style={{ fontSize: 12, color: "#a8a29e", textDecoration: "none" }}>{label}</Link>
             ))}
           </div>
