@@ -233,7 +233,7 @@ Pondicherry is one of the very few places in India where French was an official 
 
 **What It Offers**
 
-The [Alliance Française de Pondichéry](/history/institutions/alliance-francaise) runs French language courses at every level, from complete beginner through advanced, and prepares students for the DELF and DALF official qualifications that are recognised by French universities and European employers. Its library holds French books, films, and periodicals. Its cultural programme brings cinema, music, and exhibitions to a city that has particular reasons to be interested.
+The [Alliance Française de Pondichéry](/history/institutions/alliance-francaise) runs French language courses at every level, from complete beginner through advanced, and prepares students for the DELF and DALF official qualifications that are recognised by French universities and European employers. Its library holds French books, films, and periodicals. Its cultural programme brings cinema, music, and exhibitions to a city that has particular reasons to be interested, including the city's biggest live-music night, [Fête de la Musique](/festivals/fete-de-la-musique), every 21 June, and a share of the screenings at the [Manifest Dance-Film Festival](/festivals/manifest-dance-film) each August.
 
 **Three Reasons to Be in the Same Classroom**
 

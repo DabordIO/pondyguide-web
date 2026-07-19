@@ -349,6 +349,8 @@ The temple is especially renowned for its [annual car festival](/festivals/villi
 
 **Visiting the Temples**
 
+Once a year, on [Masi Magam](/festivals/masi-magam), dozens of temples across the city carry their deities out of these same sanctuaries in procession to Vaithikuppam Beach for a ceremonial bath in the sea, one of the largest religious gatherings the Tamil Quarter sees all year.
+
 Visitors are welcome at all these temples, provided they observe local customs. Shoes must be removed before entering the temple precincts, and modest clothing covering the shoulders and knees is expected. Photography policies vary between temples and may also differ within individual parts of a temple, so it is always best to look for signs or ask permission.
 
 The innermost sanctum is generally reserved for Hindu worshippers, but visitors of all faiths are welcome in the outer halls and courtyards, where they can observe the architecture, rituals, and devotional life with respect.`,

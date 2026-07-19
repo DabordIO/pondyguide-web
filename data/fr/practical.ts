@@ -290,7 +290,7 @@ La saison sèche est la principale période de visite. Les températures vont du
 
 **Avril à juin (saison chaude)**
 
-D'avril à juin, il fait très chaud, avec des températures atteignant régulièrement 38 à 40 degrés Celsius. C'est la période la plus calme pour le tourisme. Si vous voyagez pendant cette fenêtre, réservez matins et soirs aux activités extérieures et reposez-vous pendant les heures de l'après-midi.
+D'avril à juin, il fait très chaud, avec des températures atteignant régulièrement 38 à 40 degrés Celsius. C'est la période la plus calme pour le tourisme. Si vous voyagez pendant cette fenêtre, réservez matins et soirs aux activités extérieures et reposez-vous pendant les heures de l'après-midi. La mi-avril apporte le [Nouvel An tamoul](/fr/festivals/tamil-new-year), une fête discrète et surtout domestique, facile à manquer si l'on ne sait pas la reconnaître.
 
 **Juillet à octobre (mousson)**
 

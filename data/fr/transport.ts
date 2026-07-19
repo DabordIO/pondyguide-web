@@ -30,7 +30,7 @@ Depuis l'aéroport de Chennai, prenez le métro de Meenambakkam jusqu'à CMBT (5
 
 **Depuis Bangalore**
 
-Les bus suivent la NH 77 via Hosur, Krishnagiri, Tiruvannamalai et Tindivanam : 315 kilomètres, six à huit heures. La route passe à vue de l'Arunachala de Tiruvannamalai et du fort de Gingee.
+Les bus suivent la NH 77 via Hosur, Krishnagiri, Tiruvannamalai et Tindivanam : 315 kilomètres, six à huit heures. La route passe à vue de l'Arunachala de Tiruvannamalai et du fort de Gingee. C'est sur l'Arunachala qu'est allumé chaque année le grand feu de [Karthigai Deepam](/fr/festivals/karthigai-deepam), visible à des kilomètres à la ronde.
 
 La plupart des services sont de nuit, partant entre 20h et 23h30 depuis Madiwala, Shanti Nagar ou la gare routière de Majestic, pour arriver à la New Bus Stand de Pondichéry tôt le matin. Les opérateurs privés Kallada Travels, Sharma Transports et KPN Travels proposent des services couchette et assis (500 à 1 200 roupies). KSRTC et SETC sont des alternatives d'État fiables en entrée de gamme.
 
@@ -172,7 +172,7 @@ Entre White Town et la gare routière ou la gare ferroviaire (2 à 3 km) : 80 à
 Trajets plus longs à travers la ville (4 à 7 km) : 120 à 250 roupies.
 White Town à Auroville (9 à 10 km) : 250 à 500 roupies.
 
-Les week-ends de festival, la veille du Nouvel An et les jours fériés, les tarifs grimpent sensiblement.
+Les week-ends de festival, la veille du Nouvel An et les jours fériés, les tarifs grimpent sensiblement. Le jour de l'[Ayudha Puja](/fr/festivals/ayudha-puja), la plupart des rickshaws sont fraîchement lavés, décorés de guirlandes, et brièvement absents de la route pendant que leurs conducteurs accomplissent une puja matinale sur leur propre véhicule.
 
 **Avant de monter**
 

@@ -333,6 +333,8 @@ Le temple est particulièrement réputé pour sa [fête annuelle du char](/fr/fe
 
 **Visiter les temples**
 
+Une fois par an, à l'occasion de [Masi Magam](/fr/festivals/masi-magam), des dizaines de temples de la ville sortent leurs divinités de ces mêmes sanctuaires en procession jusqu'à la plage de Vaithikuppam pour un bain rituel dans la mer, l'un des plus grands rassemblements religieux que connaisse le Quartier tamoul dans l'année.
+
 Les visiteurs sont les bienvenus dans tous ces temples, à condition de respecter les usages locaux. Les chaussures doivent être retirées avant d'entrer dans l'enceinte du temple, et une tenue modeste couvrant les épaules et les genoux est attendue. Les règles de photographie varient d'un temple à l'autre, et peuvent aussi différer selon les parties d'un même temple ; il est donc toujours préférable de chercher des panneaux ou de demander l'autorisation.
 
 Le sanctuaire le plus intérieur est généralement réservé aux fidèles hindous, mais les visiteurs de toutes confessions sont bienvenus dans les salles et cours extérieures, où ils peuvent observer l'architecture, les rituels, et la vie dévotionnelle avec respect.`,

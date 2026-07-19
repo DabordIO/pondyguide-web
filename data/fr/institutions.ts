@@ -203,7 +203,7 @@ Pondichéry est l'un des très rares endroits en Inde où le français fut une l
 
 **Ce qu'elle propose**
 
-L'[Alliance française de Pondichéry](/fr/history/institutions/alliance-francaise) propose des cours de français à tous les niveaux, du grand débutant à l'avancé, et prépare aux qualifications officielles DELF et DALF reconnues par les universités françaises et les employeurs européens. Sa bibliothèque contient des livres, films et périodiques français. Sa programmation culturelle apporte cinéma, musique et expositions à une ville qui a des raisons particulières de s'y intéresser.
+L'[Alliance française de Pondichéry](/fr/history/institutions/alliance-francaise) propose des cours de français à tous les niveaux, du grand débutant à l'avancé, et prépare aux qualifications officielles DELF et DALF reconnues par les universités françaises et les employeurs européens. Sa bibliothèque contient des livres, films et périodiques français. Sa programmation culturelle apporte cinéma, musique et expositions à une ville qui a des raisons particulières de s'y intéresser, dont la plus grande soirée musicale de la ville, la [Fête de la Musique](/fr/festivals/fete-de-la-musique), chaque 21 juin, et une partie des projections du [Manifest Dance-Film Festival](/fr/festivals/manifest-dance-film) en août.
 
 **Trois raisons de se retrouver dans la même salle**
 

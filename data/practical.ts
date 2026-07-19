@@ -303,7 +303,7 @@ The dry season is the main visitor period. Temperatures run from the mid-twentie
 
 **April to June (hot season)**
 
-April through June is very hot, with temperatures regularly reaching 38 to 40 degrees Celsius. This is the quietest period for tourism. If you travel during this window, keep mornings and evenings for outdoor activity and rest during the afternoon hours.
+April through June is very hot, with temperatures regularly reaching 38 to 40 degrees Celsius. This is the quietest period for tourism. If you travel during this window, keep mornings and evenings for outdoor activity and rest during the afternoon hours. Mid-April brings [Tamil New Year](/festivals/tamil-new-year), a quiet, mostly domestic festival that is easy to miss if you don't know to look for it.
 
 **July to October (monsoon)**
 

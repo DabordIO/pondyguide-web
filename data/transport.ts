@@ -34,7 +34,7 @@ From Chennai Airport, take the metro from Meenambakkam to CMBT (₹50, change at
 
 **From Bangalore**
 
-Buses follow NH 77 through Hosur, Krishnagiri, Tiruvannamalai, and Tindivanam: 315 kilometres, six to eight hours. The route passes within sight of Tiruvannamalai's Arunachala and Gingee Fort.
+Buses follow NH 77 through Hosur, Krishnagiri, Tiruvannamalai, and Tindivanam: 315 kilometres, six to eight hours. The route passes within sight of Tiruvannamalai's Arunachala and Gingee Fort. Arunachala is where the beacon fire of [Karthigai Deepam](/festivals/karthigai-deepam) is lit each year, visible for kilometres around.
 
 Most services are overnight, departing 8pm–11:30pm from Madiwala, Shanti Nagar, or Majestic bus stand, arriving at Pondicherry's New Bus Stand in the early morning. Private operators Kallada Travels, Sharma Transports, and KPN Travels run sleeper and seater services (500–1,200 rupees). KSRTC and SETC are reliable state alternatives at the lower end.
 
@@ -188,7 +188,7 @@ Between the White Town and the bus stand or railway station (2 to 3 km): 80 to 1
 Longer cross-town trips (4 to 7 km): 120 to 250 rupees.
 White Town to Auroville (9 to 10 km): 250 to 500 rupees.
 
-On festival weekends, New Year's Eve, and public holidays, fares run noticeably higher.
+On festival weekends, New Year's Eve, and public holidays, fares run noticeably higher. On [Ayudha Puja](/festivals/ayudha-puja), most rickshaws are freshly washed, garlanded, and briefly off the road while drivers complete a morning puja over their own vehicle.
 
 **Before you get in**
 

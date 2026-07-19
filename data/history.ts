@@ -248,7 +248,7 @@ The decisive political shift came in March 1954 when [Édouard Goubert](/history
 
 On 1 November 1954, the de facto transfer took place. The French administration handed power to a pro-merger provisional government. The French flag came down; the Indian tricolour went up. French administrators departed. Indian officials arrived. The transfer was orderly, negotiated, and peaceful, governed by a 35-article accord that addressed administrative arrangements, the rights of French citizens, and the guarantee of French language rights under Article 28.
 
-The formal legal transfer, the Treaty of Cession, was signed on 28 May 1956 and ratified by the French National Assembly in July 1962, with full legal effect from 16 August 1962. Pondicherry became, in international law, part of India. Its residents were offered a choice between French and Indian citizenship. A significant number chose French, and the French consulate that operates on the Rue de la Marine today is a direct descendant of that choice.
+The formal legal transfer, the Treaty of Cession, was signed on 28 May 1956 and ratified by the French National Assembly in July 1962, with full legal effect from 16 August 1962. Pondicherry became, in international law, part of India. Its residents were offered a choice between French and Indian citizenship. A significant number chose French, and the French consulate that operates on the Rue de la Marine today is a direct descendant of that choice. Both dates are still marked each year: 16 August, De Jure Day, is the middle day of the three-day [Fête de Pondichéry](/festivals/fete-de-pondichery).
 
 **What Was Kept**
 
