@@ -38,7 +38,7 @@ export const restaurants: Restaurant[] = [
   {
     id: "cafe-des-arts",
     metaTitle: "Café des Arts, Heritage Courtyard Café in White Town",
-    metaDescription: "Café des Arts serves French pastries, crepes, waffles, and salads in a restored White Town mansion with a shaded courtyard and relaxed Parisian feel.",
+    metaDescription: "Café des Arts serves French pastries, crepes, waffles, salads, and now dinner in a restored White Town mansion with a shaded courtyard and relaxed Parisian feel.",
     name: "Café des Arts",
     category: "cafe",
     priceRange: "mid",
@@ -46,11 +46,11 @@ export const restaurants: Restaurant[] = [
     lng: 79.8327,
     photo: "cafe-des-arts.jpg",
     address: "58, Capitaine Marius Xavier Street, White Town",
-    whatsapp: "919994481914",
+    whatsapp: "918122130066",
     summary:
-      "Set inside a restored heritage mansion in the French Quarter, Café des Arts is one of the closest things Pondicherry has to a Parisian-style courtyard café. French pastries, fresh salads, crepes, and waffles are served beneath shaded trees in a space that feels designed for slow, unhurried meals.",
+      "Set inside a restored heritage mansion in the French Quarter, Café des Arts is one of the closest things Pondicherry has to a Parisian-style courtyard café. French pastries, fresh salads, crepes, and waffles are served beneath shaded trees in a space that feels designed for slow, unhurried meals, now through to dinner.",
     description:
-      "The garden is the main draw: bougainvillea overhead, mismatched tables, and a relaxed rhythm that makes it easy to lose track of time. It's a place that rewards lingering, especially in the cooler morning hours. The café takes its address from [Rue Capitaine Marius](/discover/white-town/rue-capitaine-marius), one of the quieter cross-streets connecting the seafront to the canal.\n\nThe menu focuses on light French-inspired dishes and café staples. The summer salad, with cucumber, mint, watermelon, feta, pumpkin seeds, and almonds, is a standout for freshness and balance. The caramelized banana crepe is a simple but reliable favourite, and locally brewed ginger beer from Auroville is a refreshing accompaniment. Almond croissants are also worth ordering if you arrive early.\n\nExpect queues on weekend mornings, while weekdays offer a quieter, more comfortable experience with better choice of seating.",
+      "The garden is the main draw: bougainvillea overhead, mismatched tables, and a relaxed rhythm that makes it easy to lose track of time. It's a place that rewards lingering, especially in the cooler morning hours. The café takes its address from [Rue Capitaine Marius](/discover/white-town/rue-capitaine-marius), one of the quieter cross-streets connecting the seafront to the canal.\n\nThe menu focuses on light French-inspired dishes and café staples. The summer salad, with cucumber, mint, watermelon, feta, pumpkin seeds, and almonds, is a standout for freshness and balance. The caramelized banana crepe is a simple but reliable favourite, and locally brewed ginger beer from Auroville is a refreshing accompaniment. Almond croissants are also worth ordering if you arrive early. Café des Arts now also serves dinner, so the courtyard stays open well into the evening rather than winding down after lunch.\n\nExpect queues on weekend mornings, while weekdays offer a quieter, more comfortable experience with better choice of seating.",
     mustOrder: [
       "Summer salad (cucumber, mint, watermelon, feta, pumpkin seeds, almonds)",
       "Caramelized banana crepe",
@@ -58,7 +58,7 @@ export const restaurants: Restaurant[] = [
       "Auroville ginger beer",
     ],
     tip: "Weekday mornings are ideal if you want a calm garden table. Weekends get busy quickly.",
-    hours: "Daily, ~8:00 AM to 10:00 PM (hours may vary)",
+    hours: "Tuesday to Sunday, 8:30 AM to 11:00 PM. Closed Mondays.",
     voucherEnabled: true,
   },
   {

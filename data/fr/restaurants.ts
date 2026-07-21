@@ -16,12 +16,12 @@ export const restaurantsFr: RestaurantFr[] = [
   {
     id: "cafe-des-arts",
     metaTitle: "Café des Arts, café patrimonial en cour intérieure à White Town",
-    metaDescription: "Café des Arts sert pâtisseries françaises, crêpes, gaufres et salades dans une demeure restaurée de White Town, avec une cour ombragée et une atmosphère parisienne détendue.",
+    metaDescription: "Café des Arts sert pâtisseries françaises, crêpes, gaufres, salades et désormais le dîner dans une demeure restaurée de White Town, avec une cour ombragée et une atmosphère parisienne détendue.",
     name: "Café des Arts",
     summary:
-      "Installé dans une demeure patrimoniale restaurée du quartier français, Café des Arts est ce que Pondichéry offre de plus proche d'un café de style parisien avec cour intérieure. Pâtisseries françaises, salades fraîches, crêpes et gaufres y sont servies à l'ombre des arbres, dans un cadre pensé pour des repas lents et sans hâte.",
+      "Installé dans une demeure patrimoniale restaurée du quartier français, Café des Arts est ce que Pondichéry offre de plus proche d'un café de style parisien avec cour intérieure. Pâtisseries françaises, salades fraîches, crêpes et gaufres y sont servies à l'ombre des arbres, dans un cadre pensé pour des repas lents et sans hâte, désormais jusqu'au dîner.",
     description:
-      "Le jardin est le principal attrait : bougainvilliers au-dessus des têtes, tables dépareillées, et un rythme détendu qui fait facilement perdre la notion du temps. C'est un lieu qui récompense la flânerie, surtout aux heures plus fraîches du matin. Le café tire son adresse de la [rue Capitaine Marius](/fr/discover/white-town/rue-capitaine-marius), l'une des rues transversales les plus tranquilles reliant le front de mer au canal.\n\nLe menu privilégie des plats légers d'inspiration française et les classiques de café. La salade d'été, avec concombre, menthe, pastèque, feta, graines de courge et amandes, se distingue par sa fraîcheur et son équilibre. La crêpe à la banane caramélisée est un classique simple mais fiable, et le ginger beer brassé localement à Auroville l'accompagne à merveille. Les croissants aux amandes valent aussi le détour si vous arrivez tôt.\n\nAttendez-vous à faire la queue les week-ends matin, tandis que les jours de semaine offrent une expérience plus calme, avec un meilleur choix de places assises.",
+      "Le jardin est le principal attrait : bougainvilliers au-dessus des têtes, tables dépareillées, et un rythme détendu qui fait facilement perdre la notion du temps. C'est un lieu qui récompense la flânerie, surtout aux heures plus fraîches du matin. Le café tire son adresse de la [rue Capitaine Marius](/fr/discover/white-town/rue-capitaine-marius), l'une des rues transversales les plus tranquilles reliant le front de mer au canal.\n\nLe menu privilégie des plats légers d'inspiration française et les classiques de café. La salade d'été, avec concombre, menthe, pastèque, feta, graines de courge et amandes, se distingue par sa fraîcheur et son équilibre. La crêpe à la banane caramélisée est un classique simple mais fiable, et le ginger beer brassé localement à Auroville l'accompagne à merveille. Les croissants aux amandes valent aussi le détour si vous arrivez tôt. Café des Arts sert désormais aussi le dîner, et la cour reste ouverte bien après la tombée de la nuit plutôt que de fermer après le déjeuner.\n\nAttendez-vous à faire la queue les week-ends matin, tandis que les jours de semaine offrent une expérience plus calme, avec un meilleur choix de places assises.",
     mustOrder: [
       "Salade d'été (concombre, menthe, pastèque, feta, graines de courge, amandes)",
       "Crêpe à la banane caramélisée",
@@ -29,7 +29,7 @@ export const restaurantsFr: RestaurantFr[] = [
       "Ginger beer d'Auroville",
     ],
     tip: "Les matinées en semaine sont idéales pour une table calme au jardin. Le week-end, l'affluence monte vite.",
-    hours: "Tous les jours, environ 8h00 à 22h00 (horaires variables)",
+    hours: "Du mardi au dimanche, 8h30 à 23h00. Fermé le lundi.",
   },
   {
     id: "bread-and-chocolate",
