@@ -48,14 +48,15 @@ export const restaurants: Restaurant[] = [
     address: "58, Capitaine Marius Xavier Street, White Town",
     whatsapp: "918122130066",
     summary:
-      "Set inside a restored heritage mansion in the French Quarter, Café des Arts is one of the closest things Pondicherry has to a Parisian-style courtyard café. French pastries, fresh salads, crepes, and waffles are served beneath shaded trees in a space that feels designed for slow, unhurried meals, now through to dinner.",
+      "Set inside a restored heritage mansion in the French Quarter and open since 2009, Café des Arts is one of the closest things Pondicherry has to a Parisian-style courtyard café. French pastries, fresh salads, crepes, and waffles are served beneath shaded trees in a space that feels designed for slow, unhurried meals, now through to dinner.",
     description:
-      "The garden is the main draw: bougainvillea overhead, mismatched tables, and a relaxed rhythm that makes it easy to lose track of time. It's a place that rewards lingering, especially in the cooler morning hours. The café takes its address from [Rue Capitaine Marius](/discover/white-town/rue-capitaine-marius), one of the quieter cross-streets connecting the seafront to the canal.\n\nThe menu focuses on light French-inspired dishes and café staples. The summer salad, with cucumber, mint, watermelon, feta, pumpkin seeds, and almonds, is a standout for freshness and balance. The caramelized banana crepe is a simple but reliable favourite, and locally brewed ginger beer from Auroville is a refreshing accompaniment. Almond croissants are also worth ordering if you arrive early. Café des Arts now also serves dinner, so the courtyard stays open well into the evening rather than winding down after lunch.\n\nExpect queues on weekend mornings, while weekdays offer a quieter, more comfortable experience with better choice of seating.",
+      "The garden is the main draw: bougainvillea overhead, mismatched tables, and a relaxed rhythm that makes it easy to lose track of time. It's a place that rewards lingering, especially in the cooler morning hours. Open since 2009, it's one of the French Quarter's longest-running cafés, and the upstairs seating area, with its wall of vintage floral plates, is one of the most photographed rooms in White Town. The café takes its address from [Rue Capitaine Marius](/discover/white-town/rue-capitaine-marius), one of the quieter cross-streets connecting the seafront to the canal.\n\nThe menu focuses on light French-inspired dishes and café staples, alongside a genuine specialty coffee programme. The summer salad, with cucumber, mint, watermelon, feta, pumpkin seeds, and almonds, is a standout for freshness and balance. The mushroom toast, piled with sautéed mushrooms, melted cheese, and microgreens, is one of the most-ordered plates on the menu, and the caramelized banana crepe remains a reliable favourite. The chocolat chaud, a rich house-made hot chocolate topped with vanilla whipped cream, is the café's own pick for most popular item, and the house-made ginger ale is a good, less-sweet alternative to soda. Almond croissants are worth ordering if you arrive early. Café des Arts now also serves dinner, so the courtyard stays open well into the evening rather than winding down after lunch.\n\nExpect queues on weekend mornings, while weekdays offer a quieter, more comfortable experience with better choice of seating.",
     mustOrder: [
       "Summer salad (cucumber, mint, watermelon, feta, pumpkin seeds, almonds)",
+      "Mushroom toast",
       "Caramelized banana crepe",
-      "Almond croissant",
-      "Auroville ginger beer",
+      "Chocolat chaud (hot chocolate)",
+      "House-made ginger ale",
     ],
     tip: "Weekday mornings are ideal if you want a calm garden table. Weekends get busy quickly.",
     hours: "Tuesday to Sunday, 8:30 AM to 11:00 PM. Closed Mondays.",
