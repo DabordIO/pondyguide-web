@@ -276,7 +276,7 @@ That is perhaps the most interesting thing about Pondicherry. It absorbed the Ro
     metaDescription: "Pondicherry marks freedom on three dates, not one: 15 August, 1 November 1954, and 16 August 1962. The real story involves a rigged election, a defector, and Dien Bien Phu.",
     subtitle: "A rigged election, a defector, and a deadline in Geneva",
     teaser:
-      "Ask why Pondicherry has two Independence Days and the honest answer is that it has three, tangled up with a corrupt election boss who switched sides overnight, a French government that needed India's help at the Geneva peace talks, and eight years in which Pondicherry belonged to India in practice but not yet in law.",
+      "Ask why Pondicherry has two Independence Days and the honest answer is that it has three, tangled up with an election boss who switched sides overnight, a French government that needed India's help at the Geneva peace talks, and eight years in which Pondicherry belonged to India in practice but not yet in law.",
     gradient: "linear-gradient(135deg, #7c2d12 0%, #431407 100%)",
     photo: "two-independence-days.jpg",
     photoFolder: "history",
