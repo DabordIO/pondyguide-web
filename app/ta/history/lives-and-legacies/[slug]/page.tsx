@@ -79,8 +79,13 @@ export default async function FigurePageTa({ params }: { params: Promise<{ slug:
 
       {en.photo && (
         <div style={{ display: "flex", gap: 24, margin: "24px 0 28px", alignItems: "flex-start" }}>
-          <div style={{ position: "relative", width: 160, height: 200, flexShrink: 0, borderRadius: 10, overflow: "hidden", border: "1px solid #e8ddd4" }}>
-            <Image src={`/figures/${en.photo}`} alt={ta.name} fill style={{ objectFit: "cover", objectPosition: en.photoZoom ? `center ${en.photoZoom}%` : "center top" }} />
+          <div>
+            <div style={{ position: "relative", width: 160, height: 200, flexShrink: 0, borderRadius: 10, overflow: "hidden", border: "1px solid #e8ddd4" }}>
+              <Image src={`/figures/${en.photo}`} alt={ta.name} fill style={{ objectFit: "cover", objectPosition: en.photoZoom ? `center ${en.photoZoom}%` : "center top" }} />
+            </div>
+            {ta.photoCaption && (
+              <p style={{ fontSize: 11, color: "#a39990", fontStyle: "italic", marginTop: 6, maxWidth: 160, lineHeight: 1.4 }}>{ta.photoCaption}</p>
+            )}
           </div>
         </div>
       )}
