@@ -158,21 +158,6 @@ export const streetsFr: StreetFr[] = [
     ],
   },
   {
-    id: "rue-dumont-durville",
-    metaTitle: "Rue Dumont d'Urville, la rue de l'explorateur dans le quartier français",
-    metaDescription: "Nommée d'après l'explorateur naval français de l'Antarctique. Le Cercle de Pondichéry, historique, se trouve sur cette rue du quartier français.",
-    summary:
-      "Bienvenue Rue Dumont d'Urville, nommée d'après l'explorateur naval français qui cartographia l'Antarctique, donna le nom de sa femme à un continent, et mourut dans l'une des premières catastrophes ferroviaires françaises. Il n'est jamais venu à Pondichéry. Sa rue est ici parce que les villes coloniales françaises nommaient leurs rues d'après les héros navals français. Le Cercle de Pondichéry, le club social historique du quartier français, se trouve sur cette rue.",
-    history:
-      "Vous marchez sur une rue nommée d'après un homme qui est allé aussi loin d'ici qu'il est possible d'aller. Jules Sébastien César Dumont d'Urville (1790-1842) commanda deux expéditions d'exploration : l'une dans le Pacifique (1826-1829), l'autre en Antarctique (1837-1840), au cours de laquelle il débarqua sur la banquise, planta le drapeau français, et nomma le territoire Terre Adélie d'après sa femme Adèle. Il rentra en héros. Deux ans plus tard, il mourut dans la catastrophe ferroviaire de Versailles du 8 mai 1842, l'un des premiers et des plus meurtriers accidents de train de l'histoire française.\n\nIl n'avait aucun lien avec Pondichéry. Son nom figure sur cette rue parce que les villes coloniales françaises nommaient systématiquement leurs rues d'après des figures navales : cela ancrait la fierté institutionnelle métropolitaine dans le tissu urbain et reliait la vie civique locale à un réseau mondial de réussites françaises. Les voyages de d'Urville plaçaient Pondichéry, symboliquement, dans un monde qui s'étendait de la côte de Coromandel au pôle Sud.\n\nLe Cercle de Pondichéry, club social historique de l'élite française et renonçante du quartier français, se trouve sur cette rue. Parties de cartes, billard, journaux venus de France, dîners : le Cercle était l'endroit où la Pondichéry coloniale venait se sentir parisienne le temps d'une soirée. Deux formes très différentes d'ambition française sur la même rue : l'explorateur qui atteignit l'Antarctique, et le club qui ne voulut jamais quitter le pays.",
-    notable: [
-      "La Terre Adélie, en Antarctique, porte le nom de sa femme Adèle. Il la nomma ainsi durant son expédition de 1837-1840. Les manchots Adélie portent aussi son nom, indirectement. Le nom d'une femme se retrouve désormais sur un continent et une espèce.",
-      "Il mourut dans la catastrophe ferroviaire de Versailles du 8 mai 1842, l'un des premiers grands accidents de train de France. Il survécut à l'Antarctique et mourut sur la ligne Paris-Versailles.",
-      "Le Cercle de Pondichéry se trouve sur cette rue : le club social historique du quartier français. S'il est ouvert, entrez. Le bâtiment seul en vaut la peine.",
-      "D'Urville n'avait aucun lien avec Pondichéry. Sa présence dans la grille des rues représente la France comme puissance navale mondiale plutôt que comme administratrice coloniale locale.",
-    ],
-  },
-  {
     id: "rue-dupleix",
     metaTitle: "Jawaharlal Nehru Street, l'ancienne rue Dupleix du quartier français",
     metaDescription: "L'axe est-ouest principal du quartier français, portant l'héritage de Dupleix et de l'Inde qui absorba ensuite la Pondichéry française.",

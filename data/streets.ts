@@ -246,28 +246,6 @@ export const streets: Street[] = [
     ],
   },
   {
-    id: "rue-dumont-durville",
-    metaTitle: "Rue Dumont d'Urville, Explorer's Street in White Town",
-    metaDescription: "Named after the French naval explorer of Antarctica. The historic Cercle de Pondichéry stands on this White Town street.",
-    photo: "generic.jpg",
-    name: "Rue Dumont d'Urville",
-    axis: "E-W",
-    namedAfter: "Jules Dumont d'Urville, French naval explorer",
-    dates: "1790–1842",
-    lat: 11.9358,
-    lng: 79.8330,
-    summary:
-      "Welcome to Rue Dumont d'Urville, named after the French naval explorer who mapped Antarctica, named a continent for his wife, and died in one of France's first railway disasters. He never came to Pondicherry. His street is here because French colonial cities named streets after French naval heroes. The Cercle de Pondichéry, the White Town's historic social club, is on this street.",
-    history:
-      "You are walking on a street named after a man who went as far from here as it is possible to go. Jules Sébastien César Dumont d'Urville (1790–1842) commanded two voyages of exploration: one through the Pacific (1826–1829) and one to Antarctica (1837–1840), during which he landed on the ice shelf, planted the French flag, and named the territory Adélie Land after his wife Adèle. He returned a hero. Two years later he died in the Versailles railway disaster of 8 May 1842, one of the earliest and deadliest train crashes in French history.\n\nHe had no connection to Pondicherry. His name is on this street because French colonial towns systematically named streets after naval figures: it embedded metropolitan institutional pride in the urban fabric and connected local civic life to a global network of French achievement. D'Urville's voyages placed Pondicherry, symbolically, in a world that stretched from the Coromandel Coast to the South Pole.\n\nThe Cercle de Pondichéry, the historic social club of the White Town's French and renonçant elite, is on this street. Card games, billiards, newspapers from France, dinner parties: the Cercle was where colonial Pondicherry came to feel Parisian for an evening. Two very different kinds of French ambition on the same street: the explorer who reached Antarctica and the club that never wanted to leave home.",
-    notable: [
-      "Adélie Land in Antarctica is named after his wife Adèle. He named it during his 1837–1840 voyage. Adélie penguins are also named after her, indirectly. One woman's name is now on a continent and a species.",
-      "He died in the Versailles railway disaster of 8 May 1842. One of France's first major train crashes. He survived Antarctica and died on the Paris-Versailles line.",
-      "The Cercle de Pondichéry is on this street: the historic social club of the White Town. If it is open, go in. The building alone is worth it.",
-      "D'Urville had no connection to Pondicherry. His presence in the street grid represents France as a global naval power rather than France as a local colonial administrator.",
-    ],
-  },
-  {
     id: "rue-dupleix",
     metaTitle: "Jawaharlal Nehru Street, Former Rue Dupleix White Town",
     metaDescription: "The main east-west axis of White Town, carrying the legacy of Dupleix and the India that later absorbed French Pondicherry.",
