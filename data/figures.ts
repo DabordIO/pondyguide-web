@@ -6,6 +6,7 @@ export interface Figure {
   role: string;
   photo?: string;
   photoZoom?: number;
+  photoCaption?: string;
   teaser: string;
   body: string;
   metaTitle?: string;
@@ -434,6 +435,7 @@ The Congrès de Kijour on 18 October 1954, at which 170 representatives voted fo
     dates: "1634–1706",
     role: "Founder of Pondicherry; Director-General of French India",
     photo: "francois-martin.jpg",
+    photoCaption: "Artist's impression — no contemporary portrait of Martin is known to survive.",
     teaser: "The Paris merchant who arrived at a fishing village in 1674 with six men, held it against the Dutch, built it into a city, lost it, built it again, and died at his desk: the man who made Pondicherry.",
     body: `**THE MAN WHO MADE PONDICHERRY**
 
@@ -602,6 +604,7 @@ He served in Pondicherry through the critical early phase of the merger movement
     dates: "Dates unknown, fl. 1650s–after 1706",
     role: "Wife of François Martin, founder of Pondicherry",
     photo: "marie-cuperly.png",
+    photoCaption: "Artist's impression — no portrait of Cuperly survives.",
     teaser: "A Parisian fishmonger's daughter who married in secret, was abandoned for twenty-two years while her husband built French India, and then arrived to share his triumph, his captivity, and his city.",
     body: `**THE FISHWIFE'S DAUGHTER**
 

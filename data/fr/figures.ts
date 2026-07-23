@@ -8,6 +8,7 @@ export interface FigureFr {
   metaDescription?: string;
   teaser?: string;
   body: string;
+  photoCaption?: string;
 }
 
 export const figuresFr: FigureFr[] = [
@@ -298,6 +299,7 @@ Son nom est le moins familier à l'histoire, car son exploit fut la survie plut�
     role: "Fondateur de Pondichéry ; directeur général de l'Inde française",
     metaTitle: "François Martin, le fondateur de Pondichéry en 1674",
     metaDescription: "Arrivé avec six hommes en 1674, Martin transforma Pondichéry en ville, la reconstruisit après l'occupation hollandaise et mourut à sa table de travail.",
+    photoCaption: "Illustration d'artiste — aucun portrait d'époque de Martin n'est connu à ce jour.",
     teaser: "Le marchand parisien arrivé dans un village de pêcheurs en 1674 avec six hommes, qui le tint face aux Hollandais, en fit une ville, la perdit, la rebâtit, et mourut à sa table de travail : l'homme qui fit Pondichéry.",
     body: `**L'HOMME QUI FIT PONDICHÉRY**
 
@@ -569,6 +571,7 @@ Il sert à Pondichéry pendant la phase critique des débuts du mouvement de fus
     role: "Épouse de François Martin, fondateur de Pondichéry",
     metaTitle: "Marie Cuperly, la fille de poissonnière qui fonda Pondichéry",
     metaDescription: "L'épouse de François Martin survécut à la pauvreté, à vingt-deux ans de séparation et à la captivité hollandaise.",
+    photoCaption: "Illustration d'artiste — aucun portrait de Cuperly n'a survécu.",
     teaser: "Une fille de poissonnière parisienne, mariée en secret, abandonnée vingt-deux ans durant pendant que son mari bâtissait l'Inde française, puis arrivée pour partager son triomphe, sa captivité et sa ville.",
     body: `**LA FILLE DE LA POISSONNIÈRE**
 
