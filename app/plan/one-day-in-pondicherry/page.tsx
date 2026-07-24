@@ -83,7 +83,7 @@ export default function OneDayItineraryPage() {
         }}
       />
       <LanguageToggle enHref="/plan/one-day-in-pondicherry" current="en" />
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan", href: "/plan" }, { label: "One Day in Pondicherry", href: "/plan/one-day-in-pondicherry" }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan Your Visit", href: "/plan" }, { label: "One Day in Pondicherry", href: "/plan/one-day-in-pondicherry" }]} />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>One Day</p>

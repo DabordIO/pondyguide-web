@@ -44,7 +44,7 @@ export default function GettingAroundPage() {
         />
       )}
       <LanguageToggle enHref="/plan/getting-around" frHref="/fr/plan/getting-around" current="en" />
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan", href: "/plan" }, { label: "Getting Around", href: "/plan/getting-around" }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan Your Visit", href: "/plan" }, { label: "Getting Around", href: "/plan/getting-around" }]} />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Getting Around</p>

@@ -37,7 +37,7 @@ export default function HealthcarePage() {
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref="/plan/healthcare" frHref="/fr/plan/healthcare" current="en" />
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan", href: "/plan" }, { label: "Healthcare", href: "/plan/healthcare" }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan Your Visit", href: "/plan" }, { label: "Healthcare", href: "/plan/healthcare" }]} />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 
       <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", margin: "20px 0 12px" }}>Emergency</p>

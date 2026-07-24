@@ -9,7 +9,7 @@ export const navEn: NavItem[] = [
   { label: "Restaurants", href: "/restaurants" },
   { label: "Auroville", href: "/discover/auroville" },
   { label: "Festivals", href: "/festivals" },
-  { label: "Plan", href: "/plan" },
+  { label: "Plan Your Visit", href: "/plan" },
 ];
 
 // Mirrors the sections actually published on the Tamil homepage (app/ta/page.tsx), in the
