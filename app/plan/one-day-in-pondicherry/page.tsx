@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     canonical: "/plan/one-day-in-pondicherry",
     languages: {
       en: "/plan/one-day-in-pondicherry",
+      fr: "/fr/plan/one-day-in-pondicherry",
       "x-default": "/plan/one-day-in-pondicherry",
     },
   },
@@ -82,7 +83,7 @@ export default function OneDayItineraryPage() {
           })),
         }}
       />
-      <LanguageToggle enHref="/plan/one-day-in-pondicherry" current="en" />
+      <LanguageToggle enHref="/plan/one-day-in-pondicherry" frHref="/fr/plan/one-day-in-pondicherry" current="en" />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Plan Your Visit", href: "/plan" }, { label: "One Day in Pondicherry", href: "/plan/one-day-in-pondicherry" }]} />
       <Link href="/plan" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Plan</Link>
 

@@ -103,6 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/fr/hotels`, priority: 0.9 },
     { url: `${BASE}/fr/festivals`, priority: 0.9 },
     { url: `${BASE}/fr/plan`, priority: 0.8 },
+    { url: `${BASE}/fr/plan/one-day-in-pondicherry`, priority: 0.8 },
     { url: `${BASE}/fr/plan/getting-here`, priority: 0.7 },
     { url: `${BASE}/fr/plan/getting-around`, priority: 0.7 },
     { url: `${BASE}/fr/plan/healthcare`, priority: 0.7 },

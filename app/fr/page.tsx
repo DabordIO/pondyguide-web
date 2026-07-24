@@ -130,6 +130,33 @@ export default function FrenchHomePage() {
         </p>
       </section>
 
+      {/* ── START HERE ──────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <div style={{ background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 16, padding: "clamp(28px, 4vw, 44px)" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 10 }}>Nouveau ici ?</p>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 700, color: "#1c1917", marginBottom: 12 }}>
+            Par où commencer
+          </h2>
+          <p style={{ fontSize: "1rem", color: "#6b6560", maxWidth: 560, lineHeight: 1.75, marginBottom: 32 }}>
+            Ce site est dense. Si vous ne savez pas par où commencer, choisissez la porte qui correspond à ce qui vous amène ici.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 16 }}>
+            {[
+              { href: "/fr/plan/one-day-in-pondicherry", label: "Vous avez une journée ?", desc: "Un itinéraire complet de l'aube sur le Bord de mer au crépuscule sur la digue." },
+              { href: "/fr/discover/explore/walk-white-town", label: "Envie de marcher par vous-même ?", desc: "La promenade autoguidée du White Town, rue par rue." },
+              { href: "/fr/history", label: "Ici pour l'histoire ?", desc: "Des marchands romains aux gouverneurs français : l'histoire complète." },
+              { href: "/fr/restaurants", label: "Ici pour la gastronomie ?", desc: "Cafés français, thalis tamouls, et tout ce qu'il y a entre les deux." },
+            ].map(item => (
+              <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, padding: "18px 20px", display: "block" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{item.label}</p>
+                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55, marginBottom: 10 }}>{item.desc}</p>
+                <p style={{ fontSize: 13, color: "#d4711a", fontWeight: 600 }}>Commencer →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── HISTORY ─────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="L'histoire de Pondichéry" href="/fr/history" />

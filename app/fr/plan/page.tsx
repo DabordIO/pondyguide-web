@@ -19,6 +19,12 @@ export const metadata: Metadata = {
 
 const sections = [
   {
+    href: "/fr/plan/one-day-in-pondicherry",
+    title: "Une journée à Pondichéry",
+    description: "Un itinéraire complet et bien rythmé dans le quartier français : Bharathi Park à l'aube, le Bord de mer, le musée et l'Ashram de Sri Aurobindo.",
+    photo: "/sites/bharathi-park1.jpg",
+  },
+  {
     href: "/fr/plan/getting-here",
     title: "Arriver à Pondichéry",
     description: "Depuis Chennai en bus ou en train, depuis Bangalore de nuit, depuis Madurai par la route. Pas de vol direct valable, mais le trajet reste facile.",
