@@ -27,7 +27,7 @@ Commencez avant 8h, tant que les pelouses ombragées de [Bharathi Park](/fr/disc
 
 Depuis le parc, marchez vers l'est jusqu'à l'[avenue Goubert](/fr/discover/white-town/avenue-goubert), la promenade en bord de mer de Pondichéry, plus connue localement sous le nom de Beach Road. Tournez vers le nord pendant quelques minutes jusqu'à la [statue de Gandhi](/fr/discover/landmarks/gandhi-statue) : treize pieds de bronze abrités sous huit piliers de granit rapportés du fort de Gingee. Continuez jusqu'au [Monument aux morts français](/fr/discover/landmarks/war-memorial), puis, de l'autre côté de la route, l'élégant [Hôtel de Ville](/fr/discover/landmarks/hotel-de-ville) de Pondichéry, construit en 1870, l'un des plus beaux bâtiments civils subsistant de la période française.
 
-Revenez sur vos pas vers le sud le long de la promenade jusqu'au petit jardin voisin de [Notre-Dame des Anges](/fr/discover/landmarks/notre-dame), où la [statue de Jeanne d'Arc](/fr/discover/landmarks/joan-of-arc-statue) fait face à la baie du Bengale. Puis entrez dans l'église elle-même : achevée en 1855, sa façade crème et son intérieur voûté en berceau en font l'un des monuments les plus caractéristiques du White Town.
+Revenez sur vos pas vers le sud le long de la promenade jusqu'au petit jardin situé en face de [Notre-Dame des Anges](/fr/discover/landmarks/notre-dame), bordé par la promenade et la rue Dumas, où la [statue de Jeanne d'Arc](/fr/discover/landmarks/joan-of-arc-statue) fait face à l'église, dos tourné à la baie du Bengale. Puis entrez dans l'église elle-même : achevée en 1855, sa façade crème et son intérieur voûté en berceau en font l'un des monuments les plus caractéristiques du White Town.
 
 **Fin de matinée : à travers le quartier français**
 

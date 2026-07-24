@@ -27,7 +27,7 @@ Start before 8am, while the shaded lawns of [Bharathi Park](/discover/landmarks/
 
 From the park, walk east to [Goubert Avenue](/discover/white-town/avenue-goubert), Pondicherry's seaside promenade, better known locally as Beach Road. Turn north for a few minutes to the [Gandhi statue](/discover/landmarks/gandhi-statue): thirteen feet of bronze sheltered beneath eight granite pillars brought from Gingee Fort. Continue on to the [French War Memorial](/discover/landmarks/war-memorial), and across the road, the elegant [Hôtel de Ville](/discover/landmarks/hotel-de-ville), Pondicherry's Town Hall, built in 1870 and one of the finest surviving civic buildings from the French period.
 
-Retrace your steps south along the promenade to the small garden beside [Notre-Dame des Anges](/discover/landmarks/notre-dame), where the [statue of Joan of Arc](/discover/landmarks/joan-of-arc-statue) faces the Bay of Bengal. Then step inside the church itself: completed in 1855, its pale cream façade and barrel-vaulted interior make it one of White Town's most distinctive landmarks.
+Retrace your steps south along the promenade to the small garden opposite [Notre-Dame des Anges](/discover/landmarks/notre-dame), bordered by the promenade and Rue Dumas, where the [statue of Joan of Arc](/discover/landmarks/joan-of-arc-statue) faces the church, her back to the Bay of Bengal. Then step inside the church itself: completed in 1855, its pale cream façade and barrel-vaulted interior make it one of White Town's most distinctive landmarks.
 
 **Late morning: through the French Quarter**
 
