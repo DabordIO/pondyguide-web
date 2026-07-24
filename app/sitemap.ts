@@ -65,6 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/hotels`, priority: 0.9 },
     { url: `${BASE}/festivals`, priority: 0.9 },
     { url: `${BASE}/plan`, priority: 0.8 },
+    { url: `${BASE}/plan/one-day-in-pondicherry`, priority: 0.8 },
     { url: `${BASE}/plan/getting-here`, priority: 0.7 },
     { url: `${BASE}/plan/getting-around`, priority: 0.7 },
     { url: `${BASE}/plan/healthcare`, priority: 0.7 },

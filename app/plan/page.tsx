@@ -19,6 +19,12 @@ export const metadata: Metadata = {
 
 const sections = [
   {
+    href: "/plan/one-day-in-pondicherry",
+    title: "One Day in Pondicherry",
+    description: "A complete, well-paced itinerary through the French Quarter: Bharathi Park at dawn, the Promenade, the museum, and Sri Aurobindo Ashram.",
+    photo: "/sites/bharathi-park1.jpg",
+  },
+  {
     href: "/plan/getting-here",
     title: "Getting Here",
     description: "From Chennai by bus or train, from Bangalore overnight, from Madurai by road. No meaningful direct flights, but the journey is manageable.",

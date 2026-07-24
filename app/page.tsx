@@ -107,6 +107,33 @@ export default function HomePage() {
         </p>
       </section>
 
+      {/* ── START HERE ──────────────────────────────────────────────────────── */}
+      <section style={{ marginBottom: 72 }}>
+        <div style={{ background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 16, padding: "clamp(28px, 4vw, 44px)" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 10 }}>New here?</p>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 700, color: "#1c1917", marginBottom: 12 }}>
+            Start here
+          </h2>
+          <p style={{ fontSize: "1rem", color: "#6b6560", maxWidth: 560, lineHeight: 1.75, marginBottom: 32 }}>
+            This site runs deep. If you don&apos;t know where to begin, pick the door that matches what brought you here.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 16 }}>
+            {[
+              { href: "/plan/one-day-in-pondicherry", label: "Have one day?", desc: "A complete route from dawn on the Promenade to dusk on the sea wall." },
+              { href: "/discover/explore/walk-white-town", label: "Want to walk it yourself?", desc: "The self-guided White Town walk, street by street." },
+              { href: "/history", label: "Here for the history?", desc: "Roman traders to French governors: the full story." },
+              { href: "/restaurants", label: "Here for the food?", desc: "French cafés, Tamil thalis, and everything between." },
+            ].map(item => (
+              <Link key={item.href} href={item.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 12, padding: "18px 20px", display: "block" }}>
+                <p style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1c1917", fontSize: 16, marginBottom: 6, lineHeight: 1.3 }}>{item.label}</p>
+                <p style={{ fontSize: 13, color: "#6b6560", lineHeight: 1.55, marginBottom: 10 }}>{item.desc}</p>
+                <p style={{ fontSize: 13, color: "#d4711a", fontWeight: 600 }}>Start →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── HISTORY ─────────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
         <SectionHeader title="The Story of Pondicherry" href="/history" />
