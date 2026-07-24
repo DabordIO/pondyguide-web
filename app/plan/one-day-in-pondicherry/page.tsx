@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -22,23 +23,21 @@ export const metadata: Metadata = {
 
 const body = `**Morning: Bharathi Park and the seafront**
 
-Start before 8am, while the shaded lawns of [Bharathi Park](/discover/landmarks/bharathi-park) still belong to the local joggers and morning walkers rather than the heat. At the centre, find the Aayi Mandapam: four Greco-Roman columns built under Napoleon III to honour a courtesan who gave away her own house and savings to build the city its first water tank, centuries before the French arrived.
+Start before 8am, while the shaded lawns of [Bharathi Park](/discover/landmarks/bharathi-park) still belong to the local joggers and morning walkers rather than the heat. At its centre stands the Aayi Mandapam, a white Greco-Roman monument built under Napoleon III to honour a courtesan said to have given away her own house and savings so the city could have its first water reservoir.
 
-From the park, walk north to [Notre-Dame des Anges](/discover/landmarks/notre-dame), the twin-towered church that has stood on this seafront site since 1687, through four rebuildings. Early morning is the best time: the light comes in from the east directly onto the Joan of Arc statue in the garden between the church and the sea, and the church's own visitor advice is to start a White Town walk right here.
+From the park, walk east to [Goubert Avenue](/discover/white-town/avenue-goubert), Pondicherry's seaside promenade, better known locally as Beach Road. Turn north for a few minutes to the [Gandhi statue](/discover/landmarks/gandhi-statue): thirteen feet of bronze sheltered beneath eight granite pillars brought from Gingee Fort. Continue on to the [French War Memorial](/discover/landmarks/war-memorial), and across the road, the elegant [Hôtel de Ville](/discover/landmarks/hotel-de-ville), Pondicherry's Town Hall, built in 1870 and one of the finest surviving civic buildings from the French period.
 
-From Notre-Dame, head south along the Promenade. You will pass the [French War Memorial](/discover/landmarks/war-memorial), the Dupleix statue, and the Gandhi statue, thirteen feet of bronze on eight granite pillars quarried from Gingee Fort. The low granite sea wall running alongside has been the city's communal sitting place for centuries; it is worth pausing on even this early.
+Retrace your steps south along the promenade to the small garden beside [Notre-Dame des Anges](/discover/landmarks/notre-dame), where the [statue of Joan of Arc](/discover/landmarks/joan-of-arc-statue) faces the Bay of Bengal. Then step inside the church itself: completed in 1855, its pale cream façade and barrel-vaulted interior make it one of White Town's most distinctive landmarks.
 
-Stop for coffee at [Indian Coffee House](/restaurants/indian-coffee-house), an old-school institution rather than a café built for photographs.
+**Late morning: through the French Quarter**
 
-**Late morning: into the White Town grid**
+Leave the seafront and head west into the French Quarter. Follow streets such as [Rue Dumas](/discover/white-town/rue-dumas), [Rue Romain Rolland](/discover/white-town/rue-romain-rolland), [Rue Suffren](/discover/white-town/rue-suffren), and [Rue Saint-Louis](/discover/white-town/rue-saint-louis), wandering south through a remarkably intact grid of colonial streets: pastel villas, high compound walls, louvred shutters, and cascades of bougainvillea. Quiet morning light is the best time to take in the architecture, before the traffic and the heat build. For the fuller version of this walk, with more streets and more stops, see [Walking the White Town](/discover/explore/walk-white-town).
 
-Cut west off the Promenade into the French Quarter itself. [Rue Dupleix](/discover/white-town/rue-dupleix) has the best-preserved facades in the neighbourhood: painted walls, shuttered windows, bougainvillea over the balconies. For the fuller version of this walk, with more streets and more stops, see [Walking the White Town](/discover/explore/walk-white-town).
-
-Follow the grid to the Manakula Vinayagar Temple, over 800 years old and dedicated to Ganesh: gold pillars, painted towers, and a constant flow of worshippers in the middle of the colonial street plan. Entry is free; leave your shoes at the door.
+Continue south until the streets bring you back toward the waterfront near the [Dupleix statue](/discover/landmarks/dupleix-statue), overlooking the Bay of Bengal. Here Beach Road curves inland and becomes South Boulevard, where a line of snack stalls, juice stands, and small cafés gathers beneath enormous shade trees. It's a good place to pause for a fresh coconut, a coffee, or a South Indian breakfast before continuing.
 
 **Midday: the museum**
 
-The [Pondicherry Museum](/discover/landmarks/museum) is the most undervisited stop in the city and the best value: ₹10 gets you Roman Arretine pottery from Arikamedu, Chola and Pallava bronzes of real quality, and a cot said to have belonged to Dupleix himself. Allow 60 to 90 minutes if you want to do it properly. **It is closed on Mondays** — if your one day falls on a Monday, swap this slot for a longer stretch at Bharathi Park or move straight into lunch.
+Rue Saint-Louis, one of the streets you just walked, is also home to the [Pondicherry Museum](/discover/landmarks/museum) — the most undervisited stop in the city and the best value: ₹10 gets you Roman Arretine pottery from Arikamedu, Chola and Pallava bronzes of real quality, and a cot said to have belonged to Dupleix himself. Allow 60 to 90 minutes if you want to do it properly. **It is closed on Mondays** — if your one day falls on a Monday, swap this slot for a longer stretch at Bharathi Park or move straight into lunch.
 
 **Lunch**
 
@@ -91,6 +90,11 @@ export default function OneDayItineraryPage() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         One Day in Pondicherry
       </h1>
+
+      <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 12, overflow: "hidden", marginBottom: 32 }}>
+        <Image src="/streets/generic.jpg" alt="A White Town street in Pondicherry, colonial facades under tree cover" fill sizes="(max-width: 768px) 100vw, 720px" style={{ objectFit: "cover" }} priority />
+      </div>
+
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         A single, well-paced route through the French Quarter, from dawn on the Promenade to dusk on the sea wall. Everything here is walkable, and every stop links through to the full story if you want to go deeper.
       </p>

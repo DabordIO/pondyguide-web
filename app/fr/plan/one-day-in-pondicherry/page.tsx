@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
@@ -22,23 +23,21 @@ export const metadata: Metadata = {
 
 const body = `**Matin : Bharathi Park et le front de mer**
 
-Commencez avant 8h, tant que les pelouses ombragées de [Bharathi Park](/fr/discover/landmarks/bharathi-park) appartiennent encore aux joggeurs et promeneurs matinaux plutôt qu'à la chaleur. Au centre, trouvez l'Aayi Mandapam : quatre colonnes gréco-romaines construites sous Napoléon III pour honorer une courtisane qui donna sa propre maison et ses économies pour offrir à la ville son premier réservoir d'eau, des siècles avant l'arrivée des Français.
+Commencez avant 8h, tant que les pelouses ombragées de [Bharathi Park](/fr/discover/landmarks/bharathi-park) appartiennent encore aux joggeurs et promeneurs matinaux plutôt qu'à la chaleur. Au centre se dresse l'Aayi Mandapam, un monument blanc de style gréco-romain construit sous Napoléon III pour honorer une courtisane qui aurait donné sa propre maison et ses économies pour offrir à la ville son premier réservoir d'eau.
 
-Depuis le parc, marchez vers le nord jusqu'à [Notre-Dame des Anges](/fr/discover/landmarks/notre-dame), l'église aux tours jumelles qui se dresse sur ce site en bord de mer depuis 1687, à travers quatre reconstructions. Tôt le matin est le meilleur moment : la lumière arrive de l'est directement sur la statue de Jeanne d'Arc dans le jardin entre l'église et la mer, et le conseil de visite de l'église elle-même est de commencer ici une promenade dans le White Town.
+Depuis le parc, marchez vers l'est jusqu'à l'[avenue Goubert](/fr/discover/white-town/avenue-goubert), la promenade en bord de mer de Pondichéry, plus connue localement sous le nom de Beach Road. Tournez vers le nord pendant quelques minutes jusqu'à la [statue de Gandhi](/fr/discover/landmarks/gandhi-statue) : treize pieds de bronze abrités sous huit piliers de granit rapportés du fort de Gingee. Continuez jusqu'au [Monument aux morts français](/fr/discover/landmarks/war-memorial), puis, de l'autre côté de la route, l'élégant [Hôtel de Ville](/fr/discover/landmarks/hotel-de-ville) de Pondichéry, construit en 1870, l'un des plus beaux bâtiments civils subsistant de la période française.
 
-Depuis Notre-Dame, dirigez-vous vers le sud le long du Bord de mer. Vous passerez devant le [Monument aux morts français](/fr/discover/landmarks/war-memorial), la statue de Dupleix, et la statue de Gandhi, treize pieds de bronze sur huit piliers de granit extraits du fort de Gingee. Le muret de granit bas qui longe le front de mer est le lieu de rassemblement de la ville depuis des siècles ; il vaut la peine de s'y arrêter même à cette heure matinale.
+Revenez sur vos pas vers le sud le long de la promenade jusqu'au petit jardin voisin de [Notre-Dame des Anges](/fr/discover/landmarks/notre-dame), où la [statue de Jeanne d'Arc](/fr/discover/landmarks/joan-of-arc-statue) fait face à la baie du Bengale. Puis entrez dans l'église elle-même : achevée en 1855, sa façade crème et son intérieur voûté en berceau en font l'un des monuments les plus caractéristiques du White Town.
 
-Faites une pause café à l'[Indian Coffee House](/fr/restaurants/indian-coffee-house), une institution à l'ancienne plutôt qu'un café conçu pour les photos.
+**Fin de matinée : à travers le quartier français**
 
-**Fin de matinée : dans la grille du White Town**
+Quittez le front de mer et dirigez-vous vers l'ouest, dans le quartier français lui-même. Suivez des rues comme la [Rue Dumas](/fr/discover/white-town/rue-dumas), la [Rue Romain Rolland](/fr/discover/white-town/rue-romain-rolland), la [Rue Suffren](/fr/discover/white-town/rue-suffren) et la [Rue Saint-Louis](/fr/discover/white-town/rue-saint-louis), en descendant vers le sud à travers une grille coloniale remarquablement intacte : villas aux couleurs pastel, hauts murs d'enceinte, volets persiennés, cascades de bougainvillées. La lumière calme du matin est le meilleur moment pour apprécier l'architecture, avant que la circulation et la chaleur ne s'installent. Pour la version complète de cette promenade, avec davantage de rues et d'arrêts, voir [La promenade du White Town](/fr/discover/explore/walk-white-town).
 
-Quittez le Bord de mer vers l'ouest pour entrer dans le quartier français lui-même. La [Rue Dupleix](/fr/discover/white-town/rue-dupleix) possède les façades les mieux conservées du quartier : murs peints, fenêtres à volets, bougainvillées sur les balcons. Pour la version complète de cette promenade, avec davantage de rues et d'arrêts, voir [La promenade du White Town](/fr/discover/explore/walk-white-town).
-
-Suivez la grille jusqu'au temple Manakula Vinayagar, vieux de plus de 800 ans et dédié à Ganesh : piliers dorés, tours peintes, et un flot constant de fidèles au milieu du plan colonial. Entrée gratuite ; laissez vos chaussures à la porte.
+Continuez vers le sud jusqu'à ce que les rues vous ramènent vers le front de mer, près de la [statue de Dupleix](/fr/discover/landmarks/dupleix-statue), qui domine la baie du Bengale. C'est ici que Beach Road s'incurve vers l'intérieur des terres et devient South Boulevard, où une rangée d'étals, de stands de jus de fruits et de petits cafés s'installe sous d'immenses arbres ombragés. C'est un bon endroit pour faire une pause : une noix de coco fraîche, un café, ou un petit-déjeuner sud-indien, avant de continuer.
 
 **Midi : le musée**
 
-Le [Musée de Pondichéry](/fr/discover/landmarks/museum) est l'endroit le plus sous-visité de la ville et le meilleur rapport qualité-prix : ₹10 vous donnent accès à de la poterie romaine arétine d'Arikamedu, à des bronzes Chola et Pallava de grande qualité, et à un lit que l'on dit avoir appartenu à Dupleix lui-même. Prévoyez 60 à 90 minutes pour bien en profiter. **Il est fermé le lundi** — si votre journée tombe un lundi, remplacez ce créneau par un temps plus long à Bharathi Park ou passez directement au déjeuner.
+La Rue Saint-Louis, l'une des rues que vous venez de parcourir, abrite aussi le [Musée de Pondichéry](/fr/discover/landmarks/museum) : l'endroit le plus sous-visité de la ville et le meilleur rapport qualité-prix. ₹10 vous donnent accès à de la poterie romaine arétine d'Arikamedu, à des bronzes Chola et Pallava de grande qualité, et à un lit que l'on dit avoir appartenu à Dupleix lui-même. Prévoyez 60 à 90 minutes pour bien en profiter. **Il est fermé le lundi** — si votre journée tombe un lundi, remplacez ce créneau par un temps plus long à Bharathi Park ou passez directement au déjeuner.
 
 **Déjeuner**
 
@@ -91,6 +90,11 @@ export default function OneDayItineraryPageFr() {
       <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.75rem, 5vw, 2.5rem)", fontWeight: 700, color: "#1c1917", marginBottom: 16, lineHeight: 1.2 }}>
         Une journée à Pondichéry
       </h1>
+
+      <div style={{ position: "relative", width: "100%", height: 300, borderRadius: 12, overflow: "hidden", marginBottom: 32 }}>
+        <Image src="/streets/generic.jpg" alt="Une rue du White Town à Pondichéry, façades coloniales sous les arbres" fill sizes="(max-width: 768px) 100vw, 720px" style={{ objectFit: "cover" }} priority />
+      </div>
+
       <p style={{ fontSize: "1.05rem", color: "#6b6560", lineHeight: 1.75, marginBottom: 32, paddingBottom: 32, borderBottom: "1px solid #e8ddd4", fontStyle: "italic" }}>
         Un itinéraire unique et bien rythmé à travers le quartier français, de l'aube sur le Bord de mer au crépuscule sur la digue. Tout est accessible à pied, et chaque étape renvoie vers l'histoire complète si vous voulez approfondir.
       </p>

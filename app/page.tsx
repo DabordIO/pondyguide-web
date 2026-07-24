@@ -109,9 +109,9 @@ export default function HomePage() {
 
       {/* ── START HERE ──────────────────────────────────────────────────────── */}
       <section style={{ marginBottom: 72 }}>
-        <div style={{ background: "#fff8f0", border: "1px solid #fed7aa", borderRadius: 16, padding: "clamp(28px, 4vw, 44px)" }}>
+        <div style={{ background: "linear-gradient(135deg, #fdead1 0%, #fbd6a3 100%)", border: "2px solid #eb9b4c", borderRadius: 16, padding: "clamp(28px, 4vw, 44px)", boxShadow: "0 10px 34px rgba(212, 113, 26, 0.18)" }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#d4711a", marginBottom: 10 }}>New here?</p>
-          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 700, color: "#1c1917", marginBottom: 12 }}>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(2rem, 4.5vw, 2.75rem)", fontWeight: 700, color: "#1c1917", marginBottom: 12, lineHeight: 1.1 }}>
             Start here
           </h2>
           <p style={{ fontSize: "1rem", color: "#6b6560", maxWidth: 560, lineHeight: 1.75, marginBottom: 32 }}>
