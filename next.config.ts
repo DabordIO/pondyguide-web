@@ -38,6 +38,25 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/discover/white-town/rue-victor-simonnel",
+        destination: "/discover/white-town/rue-victor-simonel",
+        permanent: true,
+      },
+      {
+        source: "/fr/discover/white-town/rue-victor-simonnel",
+        destination: "/fr/discover/white-town/rue-victor-simonel",
+        permanent: true,
+      },
+      {
+        source: "/ta/discover/white-town/rue-victor-simonnel",
+        destination: "/ta/discover/white-town/rue-victor-simonel",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
