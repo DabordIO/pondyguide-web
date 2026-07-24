@@ -230,7 +230,7 @@ Un peu de préparation change beaucoup de choses à Pondichéry. Respectez les c
       "Pondichéry dispose de bonnes installations hospitalières selon les standards du sud de l'Inde. JIPMER est l'un des meilleurs hôpitaux publics d'Inde. Emportez eau en bouteille, crème solaire et répulsif anti-insectes dès le premier jour.",
     body: `**Hôpitaux**
 
-L'Hôpital général de Pondichéry se trouve rue Victor Simonnel, au centre-ville. JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) est un grand hôpital universitaire public au sud du centre-ville, et l'un des meilleurs hôpitaux publics du sud de l'Inde. Les hôpitaux privés incluent le Pondicherry Institute of Medical Sciences (PIMS).
+L'Hôpital général de Pondichéry se trouve rue Victor Simonel, au centre-ville. JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) est un grand hôpital universitaire public au sud du centre-ville, et l'un des meilleurs hôpitaux publics du sud de l'Inde. Les hôpitaux privés incluent le Pondicherry Institute of Medical Sciences (PIMS).
 
 **Pharmacie**
 

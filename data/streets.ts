@@ -336,26 +336,26 @@ export const streets: Street[] = [
     ],
   },
   {
-    id: "rue-victor-simonnel",
-    metaTitle: "Rue Victor Simonnel, Verdun Hero Street in White Town",
+    id: "rue-victor-simonel",
+    metaTitle: "Rue Victor Simonel, Verdun Hero Street in White Town",
     metaDescription: "One of White Town's busiest streets, named after a Pondicherry soldier killed at Verdun in 1917, with hospitals and the Lycée Français.",
     photo: "rue-victor-simonel.png",
-    name: "Rue Victor Simonnel",
+    name: "Rue Victor Simonel",
     axis: "N-S",
-    namedAfter: "Victor Simonnel, soldier from Pondicherry killed at Verdun in the First World War",
+    namedAfter: "Victor Simonel, soldier from Pondicherry killed at Verdun in the First World War",
     lat: 11.9313,
     lng: 79.8335,
     summary:
-      "Welcome to Rue Victor Simonnel, one of the busiest streets in the White Town. It runs north to south from Ananda Rangapillai Street to Rue Bussy, and along the way you pass the General Hospital, the Maternity Hospital, the Legislative Assembly, St. John's Church, and the Lycée Français. The European Cemetery is here too. Victor Simonnel was a soldier from Pondicherry killed at Verdun in 1916. His street did not stay quiet.",
+      "Welcome to Rue Victor Simonel, one of the busiest streets in the White Town. It runs north to south from Ananda Rangapillai Street to Rue Bussy, and along the way you pass the General Hospital, the Maternity Hospital, the Legislative Assembly, St. John's Church, and the Lycée Français. The European Cemetery is here too. Victor Simonel was a soldier from Pondicherry killed at Verdun in 1916. His street did not stay quiet.",
     history:
-      "Rue Victor Simonnel may be named after a soldier of the First World War, but it has become one of the most institutionally dense streets in the city. The Pondicherry General Hospital and the Maternity Hospital draw patients and families from across the territory every day, and the pavement around them is lined with tea stalls and small shops: the informal economy that surrounds any major public hospital anywhere in India. In the middle of the street sits the Pondicherry Legislative Assembly, the seat of the Union Territory's government. St. John's Church, belonging to the Church of South India, stands nearby. The Lycée Français, the French school that has educated generations of the Franco-Pondicherrian community, is on this same street.\n\nAt the northern end, the European Cemetery has stood since around 1700. It is what one observer called the 'silent directory' of French India: where the paper archives were scattered across Aix-en-Provence, Paris, and Pondicherry, the tombstones stayed put. Governors, engineers, missionaries, merchants, and soldiers are buried here. The oldest graves, in coral stone, hold the first generation of French colonial builders. The nineteenth-century tombs are the most elaborate: marble sarcophagi, neo-Gothic iron railings, obelisks. The 1761 British destruction of Pondicherry interrupted the cemetery's maintenance, and the oldest stones show it.\n\n[Victor Simonnel](/history/lives-and-legacies/victor-simonel) was a Pondicherrian who died at Verdun. His name is carved on the French War Memorial on Beach Road. A separate bishops' cemetery at the Cathedral on Rue Dumas holds three hundred years of MEP clergy.",
+      "Rue Victor Simonel may be named after a soldier of the First World War, but it has become one of the most institutionally dense streets in the city. The Pondicherry General Hospital and the Maternity Hospital draw patients and families from across the territory every day, and the pavement around them is lined with tea stalls and small shops: the informal economy that surrounds any major public hospital anywhere in India. In the middle of the street sits the Pondicherry Legislative Assembly, the seat of the Union Territory's government. St. John's Church, belonging to the Church of South India, stands nearby. The Lycée Français, the French school that has educated generations of the Franco-Pondicherrian community, is on this same street.\n\nAt the northern end, the European Cemetery has stood since around 1700. It is what one observer called the 'silent directory' of French India: where the paper archives were scattered across Aix-en-Provence, Paris, and Pondicherry, the tombstones stayed put. Governors, engineers, missionaries, merchants, and soldiers are buried here. The oldest graves, in coral stone, hold the first generation of French colonial builders. The nineteenth-century tombs are the most elaborate: marble sarcophagi, neo-Gothic iron railings, obelisks. The 1761 British destruction of Pondicherry interrupted the cemetery's maintenance, and the oldest stones show it.\n\n[Victor Simonel](/history/lives-and-legacies/victor-simonel) was a Pondicherrian who died at Verdun. His name is carved on the French War Memorial on Beach Road. A separate bishops' cemetery at the Cathedral on Rue Dumas holds three hundred years of MEP clergy.",
     notable: [
       "Pondicherry General Hospital and Maternity Hospital are on this street. The pavement around them fills every morning with patients, families, and tea stalls.",
       "The Pondicherry Legislative Assembly is here: the seat of the Union Territory's elected government.",
       "The Lycée Français on this street has educated the Franco-Pondicherrian community for generations. It is still a functioning French school.",
       "St. John's Church (Church of South India) is also on this street: a reminder that not all of Pondicherry's Christian heritage is Catholic or French.",
       "The European Cemetery: active since around 1700. Three centuries of French colonial society buried in one walled enclosure. The 'silent directory' of French India.",
-      "Victor Simonnel was killed at Verdun in the First World War. His name is also on the War Memorial on Beach Road.",
+      "Victor Simonel was killed at Verdun in the First World War. His name is also on the War Memorial on Beach Road.",
     ],
   },
   {
@@ -510,12 +510,12 @@ export const streets: Street[] = [
     summary:
       "Welcome to Rue de l'Évêché, one of the smallest streets in the White Town. Évêché means bishop's palace in French. This short lane takes its name from the Catholic bishopric of Pondicherry, whose roots go back to the MEP missionaries who arrived here in the 1670s, almost as early as the French themselves.",
     history:
-      "The Missions Étrangères de Paris established the Catholic mission in Pondicherry from the early years of the French settlement, arriving in 1674 alongside the first French traders. For three centuries the MEP maintained the Church's presence in French India: building churches, running schools, burying the dead in the cathedral cemetery on Rue Dumas, and in time establishing the episcopal hierarchy that this street commemorates.\n\nThe Apostolic Vicariate of Pondicherry was created in 1776, giving the territory its own bishop. It was elevated to a full diocese in 1886. The évêché, the bishop's palace and administrative seat, gave its name to this lane, which sits between the canal and Rue Victor Simonnel in the quieter western edge of the White Town grid.\n\nIt is a small street. Not every street in a colonial city is named after a battle or a governor. Some are named for the institutions that held the fabric of daily life together: the company, the church, the bishop's house at the end of a quiet lane.",
+      "The Missions Étrangères de Paris established the Catholic mission in Pondicherry from the early years of the French settlement, arriving in 1674 alongside the first French traders. For three centuries the MEP maintained the Church's presence in French India: building churches, running schools, burying the dead in the cathedral cemetery on Rue Dumas, and in time establishing the episcopal hierarchy that this street commemorates.\n\nThe Apostolic Vicariate of Pondicherry was created in 1776, giving the territory its own bishop. It was elevated to a full diocese in 1886. The évêché, the bishop's palace and administrative seat, gave its name to this lane, which sits between the canal and Rue Victor Simonel in the quieter western edge of the White Town grid.\n\nIt is a small street. Not every street in a colonial city is named after a battle or a governor. Some are named for the institutions that held the fabric of daily life together: the company, the church, the bishop's house at the end of a quiet lane.",
     notable: [
       "Évêché means bishop's palace. The street is named after the seat of the Catholic Diocese of Pondicherry.",
       "The MEP (Missions Étrangères de Paris) arrived in Pondicherry in 1674, the same year as the first French settlement. The Church and the Company built this city together.",
       "The Apostolic Vicariate of Pondicherry was created in 1776. The diocese was elevated in 1886. Three hundred years of Catholic episcopal history in one small street name.",
-      "One of the smallest streets in the White Town, tucked between the canal and Rue Victor Simonnel. The name is bigger than the street.",
+      "One of the smallest streets in the White Town, tucked between the canal and Rue Victor Simonel. The name is bigger than the street.",
     ],
   },
   {

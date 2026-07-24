@@ -239,7 +239,7 @@ A little preparation goes a long way in Pondicherry. Respect local customs, take
       "Pondicherry has good hospital facilities by South Indian standards. JIPMER is one of the best public hospitals in India. Carry bottled water, sunscreen, and insect repellent from day one.",
     body: `**Hospitals**
 
-Pondicherry General Hospital is on Rue Victor Simonnel, in the centre of town. JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) is a major government teaching hospital south of the centre and one of the best public hospitals in South India. Private hospitals include the Pondicherry Institute of Medical Sciences (PIMS).
+Pondicherry General Hospital is on Rue Victor Simonel, in the centre of town. JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) is a major government teaching hospital south of the centre and one of the best public hospitals in South India. Private hospitals include the Pondicherry Institute of Medical Sciences (PIMS).
 
 **Pharmacy**
 
