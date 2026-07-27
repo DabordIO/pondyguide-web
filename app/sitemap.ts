@@ -1,0 +1,377 @@
+import type { MetadataRoute } from "next";
+import { execSync } from "child_process";
+import { historyArticles } from "@/data/history";
+import { historyArticlesTa } from "@/data/ta/history";
+import { historyArticlesFr } from "@/data/fr/history";
+import { institutionArticles } from "@/data/institutions";
+import { institutionArticlesTa } from "@/data/ta/institutions";
+import { institutionArticlesFr } from "@/data/fr/institutions";
+import { figures } from "@/data/figures";
+import { figuresTa } from "@/data/ta/figures";
+import { figuresFr } from "@/data/fr/figures";
+import { restaurants } from "@/data/restaurants";
+import { restaurantsFr } from "@/data/fr/restaurants";
+import { restaurantGuides } from "@/data/restaurantGuides";
+import { restaurantGuidesTa } from "@/data/ta/restaurantGuides";
+import { restaurantGuidesFr } from "@/data/fr/restaurantGuides";
+import { hotels } from "@/data/hotels";
+import { hotelsFr } from "@/data/fr/hotels";
+import { hotelGuides } from "@/data/hotelGuides";
+import { hotelGuidesTa } from "@/data/ta/hotelGuides";
+import { hotelGuidesFr } from "@/data/fr/hotelGuides";
+import { festivals } from "@/data/festivals";
+import { festivalsFr } from "@/data/fr/festivals";
+import { streets } from "@/data/streets";
+import { streetsTa } from "@/data/ta/streets";
+import { streetsFr } from "@/data/fr/streets";
+import { sites } from "@/data/sites";
+import { sitesTa } from "@/data/ta/sites";
+import { sitesFr } from "@/data/fr/sites";
+import { aurovilleArticles } from "@/data/auroville";
+import { aurovilleArticlesFr } from "@/data/fr/auroville";
+import { exploreArticles } from "@/data/explore";
+import { exploreArticlesFr } from "@/data/fr/explore";
+
+const BASE = "https://www.pondyguide.com";
+
+const lastModifiedCache = new Map<string, Date>();
+const buildTime = new Date();
+
+function lastModified(relativeFilePath: string): Date {
+  const cached = lastModifiedCache.get(relativeFilePath);
+  if (cached) return cached;
+
+  let date = buildTime;
+  try {
+    const output = execSync(`git log -1 --format=%cI -- "${relativeFilePath}"`, {
+      cwd: process.cwd(),
+      encoding: "utf-8",
+    }).trim();
+    if (output) date = new Date(output);
+  } catch {
+    // git unavailable at build time (e.g. shallow clone); fall back to build time
+  }
+
+  lastModifiedCache.set(relativeFilePath, date);
+  return date;
+}
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const staticPages = [
+    { url: BASE, priority: 1.0 },
+    { url: `${BASE}/history`, priority: 0.9 },
+    { url: `${BASE}/discover`, priority: 0.9 },
+    { url: `${BASE}/restaurants`, priority: 0.9 },
+    { url: `${BASE}/hotels`, priority: 0.9 },
+    { url: `${BASE}/festivals`, priority: 0.9 },
+    { url: `${BASE}/plan`, priority: 0.8 },
+    { url: `${BASE}/plan/one-day-in-pondicherry`, priority: 0.8 },
+    { url: `${BASE}/plan/getting-here`, priority: 0.7 },
+    { url: `${BASE}/plan/getting-around`, priority: 0.7 },
+    { url: `${BASE}/plan/healthcare`, priority: 0.7 },
+    { url: `${BASE}/plan/practical`, priority: 0.7 },
+    { url: `${BASE}/faq`, priority: 0.7 },
+    { url: `${BASE}/discover/white-town`, priority: 0.8 },
+    { url: `${BASE}/discover/landmarks`, priority: 0.8 },
+    { url: `${BASE}/discover/auroville`, priority: 0.8 },
+    { url: `${BASE}/discover/explore`, priority: 0.8 },
+    { url: `${BASE}/about`, priority: 0.5 },
+    { url: `${BASE}/contact`, priority: 0.3 },
+    { url: `${BASE}/sitemap`, priority: 0.2 },
+    { url: `${BASE}/app`, priority: 0.4 },
+    { url: `${BASE}/ta`, priority: 0.9 },
+    { url: `${BASE}/ta/history`, priority: 0.8 },
+    { url: `${BASE}/ta/history/institutions`, priority: 0.7 },
+    { url: `${BASE}/ta/history/lives-and-legacies`, priority: 0.7 },
+    { url: `${BASE}/ta/discover/white-town`, priority: 0.7 },
+    { url: `${BASE}/ta/discover/landmarks`, priority: 0.7 },
+    { url: `${BASE}/ta/restaurants`, priority: 0.7 },
+    { url: `${BASE}/ta/hotels`, priority: 0.7 },
+    { url: `${BASE}/ta/about`, priority: 0.4 },
+    { url: `${BASE}/ta/contact`, priority: 0.3 },
+    { url: `${BASE}/ta/sitemap`, priority: 0.2 },
+    { url: `${BASE}/ta/app`, priority: 0.4 },
+    { url: `${BASE}/fr`, priority: 0.9 },
+    { url: `${BASE}/fr/history`, priority: 0.8 },
+    { url: `${BASE}/fr/history/institutions`, priority: 0.7 },
+    { url: `${BASE}/fr/history/lives-and-legacies`, priority: 0.7 },
+    { url: `${BASE}/fr/discover/white-town`, priority: 0.7 },
+    { url: `${BASE}/fr/discover/landmarks`, priority: 0.7 },
+    { url: `${BASE}/fr/discover/auroville`, priority: 0.8 },
+    { url: `${BASE}/fr/discover/explore`, priority: 0.8 },
+    { url: `${BASE}/fr/restaurants`, priority: 0.9 },
+    { url: `${BASE}/fr/hotels`, priority: 0.9 },
+    { url: `${BASE}/fr/festivals`, priority: 0.9 },
+    { url: `${BASE}/fr/plan`, priority: 0.8 },
+    { url: `${BASE}/fr/plan/one-day-in-pondicherry`, priority: 0.8 },
+    { url: `${BASE}/fr/plan/getting-here`, priority: 0.7 },
+    { url: `${BASE}/fr/plan/getting-around`, priority: 0.7 },
+    { url: `${BASE}/fr/plan/healthcare`, priority: 0.7 },
+    { url: `${BASE}/fr/plan/practical`, priority: 0.7 },
+    { url: `${BASE}/fr/faq`, priority: 0.7 },
+    { url: `${BASE}/fr/about`, priority: 0.4 },
+    { url: `${BASE}/fr/contact`, priority: 0.3 },
+    { url: `${BASE}/fr/sitemap`, priority: 0.2 },
+    { url: `${BASE}/fr/app`, priority: 0.4 },
+  ].map(p => ({ ...p, lastModified: new Date(), changeFrequency: "monthly" as const }));
+
+  const historyPages = historyArticles.map(a => ({
+    url: `${BASE}/history/${a.id}`,
+    lastModified: lastModified("data/history.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  const institutionPages = institutionArticles.map(a => ({
+    url: `${BASE}/history/institutions/${a.id}`,
+    lastModified: lastModified("data/institutions.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const figurePages = figures.map(f => ({
+    url: `${BASE}/history/lives-and-legacies/${f.id}`,
+    lastModified: lastModified("data/figures.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const restaurantPages = restaurants.map(r => ({
+    url: `${BASE}/restaurants/${r.id}`,
+    lastModified: lastModified("data/restaurants.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const restaurantGuidePages = restaurantGuides
+    .filter(g => g.intro)
+    .map(g => ({
+      url: `${BASE}/restaurants/guides/${g.slug}`,
+      lastModified: lastModified("data/restaurantGuides.ts"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
+
+  const hotelPages = hotels.map(h => ({
+    url: `${BASE}/hotels/${h.id}`,
+    lastModified: lastModified("data/hotels.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const hotelGuidePages = hotelGuides
+    .filter(g => g.intro)
+    .map(g => ({
+      url: `${BASE}/hotels/guides/${g.slug}`,
+      lastModified: lastModified("data/hotelGuides.ts"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
+
+  const festivalPages = festivals.map(f => ({
+    url: `${BASE}/festivals/${f.id}`,
+    lastModified: lastModified("data/festivals.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const streetPages = streets.map(s => ({
+    url: `${BASE}/discover/white-town/${s.id}`,
+    lastModified: lastModified("data/streets.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const landmarkPages = sites.map(s => ({
+    url: `${BASE}/discover/landmarks/${s.id}`,
+    lastModified: lastModified("data/sites.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const aurovillePages = aurovilleArticles.map(a => ({
+    url: `${BASE}/discover/auroville/${a.id}`,
+    lastModified: lastModified("data/auroville.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const explorePages = exploreArticles.map(a => ({
+    url: `${BASE}/discover/explore/${a.id}`,
+    lastModified: lastModified("data/explore.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const historyPagesTa = historyArticlesTa.map(a => ({
+    url: `${BASE}/ta/history/${a.id}`,
+    lastModified: lastModified("data/ta/history.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const figurePagesTa = figuresTa.map(f => ({
+    url: `${BASE}/ta/history/lives-and-legacies/${f.id}`,
+    lastModified: lastModified("data/ta/figures.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const restaurantGuidePagesTa = restaurantGuidesTa
+    .filter(g => g.intro)
+    .map(g => {
+      const en = restaurantGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/ta/restaurants/guides/${en.slug}`, lastModified: lastModified("data/ta/restaurantGuides.ts"), changeFrequency: "monthly" as const, priority: 0.7 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const hotelGuidePagesTa = hotelGuidesTa
+    .filter(g => g.intro)
+    .map(g => {
+      const en = hotelGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/ta/hotels/guides/${en.slug}`, lastModified: lastModified("data/ta/hotelGuides.ts"), changeFrequency: "monthly" as const, priority: 0.7 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const streetPagesTa = streetsTa.map(s => ({
+    url: `${BASE}/ta/discover/white-town/${s.id}`,
+    lastModified: lastModified("data/ta/streets.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  const landmarkPagesTa = sitesTa.map(s => ({
+    url: `${BASE}/ta/discover/landmarks/${s.id}`,
+    lastModified: lastModified("data/ta/sites.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  const institutionPagesTa = institutionArticlesTa.map(a => ({
+    url: `${BASE}/ta/history/institutions/${a.id}`,
+    lastModified: lastModified("data/ta/institutions.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const historyPagesFr = historyArticlesFr.map(a => ({
+    url: `${BASE}/fr/history/${a.id}`,
+    lastModified: lastModified("data/fr/history.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const institutionPagesFr = institutionArticlesFr.map(a => ({
+    url: `${BASE}/fr/history/institutions/${a.id}`,
+    lastModified: lastModified("data/fr/institutions.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const figurePagesFr = figuresFr.map(f => ({
+    url: `${BASE}/fr/history/lives-and-legacies/${f.id}`,
+    lastModified: lastModified("data/fr/figures.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const streetPagesFr = streetsFr.map(s => ({
+    url: `${BASE}/fr/discover/white-town/${s.id}`,
+    lastModified: lastModified("data/fr/streets.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  const landmarkPagesFr = sitesFr.map(s => ({
+    url: `${BASE}/fr/discover/landmarks/${s.id}`,
+    lastModified: lastModified("data/fr/sites.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  const hotelPagesFr = hotelsFr.map(h => ({
+    url: `${BASE}/fr/hotels/${h.id}`,
+    lastModified: lastModified("data/fr/hotels.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const hotelGuidePagesFr = hotelGuidesFr
+    .filter(g => g.intro)
+    .map(g => {
+      const en = hotelGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/fr/hotels/guides/${en.slug}`, lastModified: lastModified("data/fr/hotelGuides.ts"), changeFrequency: "monthly" as const, priority: 0.8 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const restaurantPagesFr = restaurantsFr.map(r => ({
+    url: `${BASE}/fr/restaurants/${r.id}`,
+    lastModified: lastModified("data/fr/restaurants.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const restaurantGuidePagesFr = restaurantGuidesFr
+    .filter(g => g.intro)
+    .map(g => {
+      const en = restaurantGuides.find(guide => guide.id === g.id);
+      return en ? { url: `${BASE}/fr/restaurants/guides/${en.slug}`, lastModified: lastModified("data/fr/restaurantGuides.ts"), changeFrequency: "monthly" as const, priority: 0.8 } : null;
+    })
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  const festivalPagesFr = festivalsFr.map(f => ({
+    url: `${BASE}/fr/festivals/${f.id}`,
+    lastModified: lastModified("data/fr/festivals.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const aurovillePagesFr = aurovilleArticlesFr.map(a => ({
+    url: `${BASE}/fr/discover/auroville/${a.id}`,
+    lastModified: lastModified("data/fr/auroville.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const explorePagesFr = exploreArticlesFr.map(a => ({
+    url: `${BASE}/fr/discover/explore/${a.id}`,
+    lastModified: lastModified("data/fr/explore.ts"),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [
+    ...staticPages,
+    ...historyPages,
+    ...institutionPages,
+    ...figurePages,
+    ...restaurantPages,
+    ...restaurantGuidePages,
+    ...hotelPages,
+    ...hotelGuidePages,
+    ...festivalPages,
+    ...streetPages,
+    ...landmarkPages,
+    ...aurovillePages,
+    ...explorePages,
+    ...historyPagesTa,
+    ...figurePagesTa,
+    ...restaurantGuidePagesTa,
+    ...hotelGuidePagesTa,
+    ...streetPagesTa,
+    ...landmarkPagesTa,
+    ...institutionPagesTa,
+    ...historyPagesFr,
+    ...institutionPagesFr,
+    ...figurePagesFr,
+    ...streetPagesFr,
+    ...landmarkPagesFr,
+    ...hotelPagesFr,
+    ...hotelGuidePagesFr,
+    ...restaurantPagesFr,
+    ...restaurantGuidePagesFr,
+    ...festivalPagesFr,
+    ...aurovillePagesFr,
+    ...explorePagesFr,
+  ];
+}
