@@ -300,7 +300,7 @@ His India connection came not through travel but through reading, correspondence
 
 He then turned toward Pondicherry. He corresponded at length with both [Sri Aurobindo](/history/lives-and-legacies/sri-aurobindo) and the Mother through the 1930s, his letters engaging seriously with the philosophy of Integral Yoga and the ambitions of the Ashram. The Mother valued his work as a cultural bridge between France and the Indian spiritual tradition; Sri Aurobindo engaged with his philosophical positions at length. The exchange was among the most sustained intellectual correspondences between a European writer and the Pondicherry Ashram in the pre-war decades.
 
-He died in Vézelay in December 1944, having never visited India. [Rue Romain Rolland](/discover/white-town/rue-romain-rolland) bears his name, an acknowledgement that the man who never came here did more than most who did to make the city's spiritual legacy visible to the European world.`,
+He died in Vézelay in December 1944, having never visited India. [Rue Romain Rolland](/discover/white-town/rue-romain-rolland) bears his name, an acknowledgement that the man who never came here did more than most who did to make the city's spiritual legacy visible to the European world. So does the [Romain Rolland Library](/discover/landmarks/romain-rolland-library), one of India's oldest public libraries, whose French-language collection still reflects the very cultural bridge he spent his life building.`,
   },
 
   {

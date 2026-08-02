@@ -376,7 +376,7 @@ Son lien avec l'Inde ne se noua pas par le voyage mais par la lecture, la corres
 
 Il se tourna ensuite vers Pondichéry. Il correspondit longuement, dans les années 1930, avec [Sri Aurobindo](/fr/history/lives-and-legacies/sri-aurobindo) et la Mère, ses lettres engageant sérieusement le dialogue avec la philosophie du Yoga intégral et les ambitions de l'Ashram. La Mère appréciait son travail comme un pont culturel entre la France et la tradition spirituelle indienne ; Sri Aurobindo débattait longuement de ses positions philosophiques. Cet échange compte parmi les correspondances intellectuelles les plus soutenues entre un écrivain européen et l'Ashram de Pondichéry durant les décennies d'avant-guerre.
 
-Il meurt à Vézelay en décembre 1944, sans jamais avoir visité l'Inde. La [rue Romain Rolland](/fr/discover/white-town/rue-romain-rolland) porte son nom, reconnaissance du fait que cet homme qui n'était jamais venu ici fit plus que la plupart de ceux qui vinrent pour rendre visible au monde européen l'héritage spirituel de la ville.`,
+Il meurt à Vézelay en décembre 1944, sans jamais avoir visité l'Inde. La [rue Romain Rolland](/fr/discover/white-town/rue-romain-rolland) porte son nom, reconnaissance du fait que cet homme qui n'était jamais venu ici fit plus que la plupart de ceux qui vinrent pour rendre visible au monde européen l'héritage spirituel de la ville. La [bibliothèque Romain Rolland](/fr/discover/landmarks/romain-rolland-library), l'une des plus anciennes bibliothèques publiques d'Inde, porte également son nom, et sa collection en langue française reflète encore aujourd'hui le pont culturel qu'il passa sa vie à construire.`,
   },
 
   {
