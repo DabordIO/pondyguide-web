@@ -260,7 +260,7 @@ His French alliance reached its most striking expression in 1794 when he establi
 
 The Fourth Anglo-Mysore War opened in 1799. Seringapatam was stormed on 4 May. Tipu was found dead near the Water Gate, still in armour. He had refused the opportunity to escape. His reported last words: "Better to live one day as a tiger than a thousand years as a sheep."
 
-Among the objects the British took from his palace was a life-size mechanical automaton: a tiger mauling a European soldier, fitted with an organ producing the sounds of the tiger's roar and the victim's screams. Built by French engineers for Tipu's court, it has been displayed at the Victoria and Albert Museum in London since 1808: one of the most remarkable surviving objects of French-Indian cultural collaboration in the colonial era. [Tip Sahib Street](/discover/white-town/tip-sahib-street) in the White Town carries his name today.`,
+Among the objects the British took from his palace was a life-size mechanical automaton: a tiger mauling a European soldier, fitted with an organ producing the sounds of the tiger's roar and the victim's screams. Built by French engineers for Tipu's court, it has been displayed at the Victoria and Albert Museum in London since 1808: one of the most remarkable surviving objects of French-Indian cultural collaboration in the colonial era. [Tipu Sahib Street](/discover/white-town/tip-sahib-street) in the White Town carries his name today.`,
   },
 
   {

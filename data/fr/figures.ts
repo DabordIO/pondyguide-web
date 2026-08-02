@@ -246,7 +246,7 @@ Son alliance avec la France atteignit son expression la plus saisissante en 1794
 
 La quatrième guerre anglo-mysorienne s'ouvre en 1799. Seringapatam est prise d'assaut le 4 mai. On retrouve Tipu mort près de la Porte d'Eau, encore en armure. Il avait refusé l'occasion de fuir. Ses derniers mots, rapportés : « Mieux vaut vivre un jour en tigre que mille ans en mouton. »
 
-Parmi les objets que les Britanniques emportèrent de son palais figurait un automate mécanique grandeur nature : un tigre mutilant un soldat européen, équipé d'un orgue reproduisant le rugissement du tigre et les cris de la victime. Construit par des ingénieurs français pour la cour de Tipu, il est exposé au Victoria and Albert Museum de Londres depuis 1808 — l'un des objets les plus remarquables ayant survécu de la collaboration culturelle franco-indienne à l'époque coloniale. La [rue Tip Sahib](/fr/discover/white-town/tip-sahib-street), dans la Ville Blanche, porte aujourd'hui son nom.`,
+Parmi les objets que les Britanniques emportèrent de son palais figurait un automate mécanique grandeur nature : un tigre mutilant un soldat européen, équipé d'un orgue reproduisant le rugissement du tigre et les cris de la victime. Construit par des ingénieurs français pour la cour de Tipu, il est exposé au Victoria and Albert Museum de Londres depuis 1808 — l'un des objets les plus remarquables ayant survécu de la collaboration culturelle franco-indienne à l'époque coloniale. La [rue Tipu Sahib](/fr/discover/white-town/tip-sahib-street), dans la Ville Blanche, porte aujourd'hui son nom.`,
   },
 
   {
