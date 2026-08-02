@@ -405,10 +405,10 @@ Peu avant sa mort, il fit don à [Notre-Dame des Anges](/fr/discover/landmarks/n
     role: "Maire de Pondichéry ; dernier chef politique pro-français",
     metaTitle: "Édouard Goubert et le choix de l'Inde en 1954",
     metaDescription: "Après avoir défendu la souveraineté française, Goubert changea de camp en 1954 et facilita le transfert de l'Inde française à l'Inde.",
-    teaser: "Le médecin devenu chef politique, qui maintint Pondichéry dans le camp français par la fraude et l'obstruction pendant une décennie, avant de changer de camp en 1954 et de rendre possible, du jour au lendemain, le transfert à l'Inde.",
+    teaser: "L'avocat devenu chef politique, qui maintint Pondichéry dans le camp français par la fraude et l'obstruction pendant une décennie, avant de changer de camp en 1954 et de rendre possible, du jour au lendemain, le transfert à l'Inde.",
     body: `**LE DERNIER POLITICIEN DE MACHINE**
 
-Édouard Goubert naît à Pondichéry en 1894, se forme à la médecine, et bâtit l'une des machines politiques les plus efficaces de l'histoire des territoires français d'outre-mer. Son instrument fut le *Parti Français de Pondichéry*, sa méthode le clientélisme et la loyauté personnelle, et sa base la communauté catholique franco-indienne, qui plaçait la citoyenneté et l'identité culturelle françaises au-dessus de l'intégration à une Inde indépendante.
+Édouard Goubert naît à Pondichéry en 1894, fait ses études en Indochine française puis étudie le droit en France, et bâtit l'une des machines politiques les plus efficaces de l'histoire des territoires français d'outre-mer. Son instrument fut le *Parti Français de Pondichéry*, sa méthode le clientélisme et la loyauté personnelle, et sa base la communauté catholique franco-indienne, qui plaçait la citoyenneté et l'identité culturelle françaises au-dessus de l'intégration à une Inde indépendante.
 
 Dans les années d'après-guerre immédiates, alors que la question de l'avenir de l'Inde française devenait urgente, Goubert se positionna en défenseur du lien avec la France. Son intervention la plus spectaculaire fut les élections municipales d'octobre 1948, où sa faction remporta les 102 sièges du conseil municipal de Pondichéry, un résultat si manifestement impossible qu'il fut universellement reconnu comme frauduleux. L'Inde se servit de cette élection pour répudier le cadre référendaire convenu en 1947, arguant qu'aucun plébiscite loyal ne pouvait être organisé par un tel conseil. Aucun référendum ne fut jamais tenu.
 

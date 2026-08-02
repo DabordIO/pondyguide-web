@@ -331,10 +331,10 @@ Shortly before his death he donated to [Notre-Dame des Anges](/discover/landmark
     dates: "1894–1974",
     role: "Mayor of Pondicherry; Last Pro-French Political Boss",
     photo: "edouard-goubert.webp",
-    teaser: "The physician turned political boss who held Pondicherry in the French camp through fraud and obstruction for a decade, then switched sides in 1954 and made the transfer to India possible overnight.",
+    teaser: "The lawyer turned political boss who held Pondicherry in the French camp through fraud and obstruction for a decade, then switched sides in 1954 and made the transfer to India possible overnight.",
     body: `**THE LAST MACHINE POLITICIAN**
 
-Édouard Goubert was born in Pondicherry in 1894, trained as a physician, and built one of the most effective political machines in the history of the French overseas territories. His instrument was the *Parti Français de Pondichéry*, his method was patronage and personal loyalty, and his base was the Franco-Indian Catholic community that valued French citizenship and French cultural identity above integration with an independent India.
+Édouard Goubert was born in Pondicherry in 1894, was educated in French Indochina and studied law in France, and built one of the most effective political machines in the history of the French overseas territories. His instrument was the *Parti Français de Pondichéry*, his method was patronage and personal loyalty, and his base was the Franco-Indian Catholic community that valued French citizenship and French cultural identity above integration with an independent India.
 
 In the immediate post-war years, as the question of French India's future became urgent, Goubert positioned himself as the defender of the French connection. His most dramatic intervention was the October 1948 municipal elections, in which his faction claimed all 102 seats on the Pondicherry municipal council, a result so obviously impossible that it was universally recognised as fraud. India used the election to repudiate the referendum framework agreed in 1947, arguing that no fair plebiscite could be administered by such a council. No referendum was ever held.
 
