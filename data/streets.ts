@@ -4,6 +4,7 @@ export interface Street {
   id: string;
   name: string;
   photo?: string;
+  photoPosition?: string; // CSS object-position override; defaults to "center"
   altName?: string;   // explicit override; otherwise derived by getStreetAltName()
   axis: StreetAxis;
   namedAfter: string;
@@ -273,6 +274,7 @@ export const streets: Street[] = [
     metaTitle: "Rue Mahé de La Bourdonnais, Madras Victory Street",
     metaDescription: "Named after the commander who captured Madras in 1746, the greatest French military victory in India, before it was traded back.",
     photo: "rue-mahe-de-labourdonnais.jpg",
+    photoPosition: "center 78%",
     name: "Rue Mahé de La Bourdonnais",
     axis: "N-S",
     namedAfter: "Bertrand-François Mahé de La Bourdonnais, naval commander",
