@@ -577,7 +577,7 @@ He is buried in the national necropolis at Bras-sur-Meuse, near Samogneux, tomb 
 
   {
     id: "mirza-rashid-ali-baig",
-    metaTitle: "Mirza Rashid Ali Baig, Independent India's Man in Pondicherry",
+    metaTitle: "Mirza Rashid Ali Baig, India's Man in Pondicherry",
     metaDescription: "The Sandhurst-trained diplomat chose India over Pakistan and arrived in Pondicherry in 1947 as New Delhi's representative.",
     name: "Mirza Rashid Ali Baig",
     dates: "1905–1979",
@@ -598,7 +598,7 @@ He served in Pondicherry through the critical early phase of the merger movement
   },
   {
     id: "marie-cuperly",
-    metaTitle: "Marie Cuperly, the Fishmonger's Daughter Who Founded Pondicherry",
+    metaTitle: "Marie Cuperly, the Fishmonger's Daughter in Pondicherry",
     metaDescription: "François Martin's wife survived poverty, a twenty-two-year separation, and Dutch captivity to become one of the only named women of French India's founding generation.",
     name: "Marie Cuperly",
     dates: "Dates unknown, fl. 1650s–after 1706",
@@ -620,7 +620,7 @@ By the time Martin died in December 1706, all three of their daughters had marri
   },
   {
     id: "jeanne-dupleix",
-    metaTitle: "Jeanne Dupleix, the Political Partner Behind Dupleix's Empire",
+    metaTitle: "Jeanne Dupleix, Political Partner Behind an Empire",
     metaDescription: "Fluent in Tamil, Telugu, and Persian, Dupleix's wife ran the diplomacy his French officers could not, and Ananda Ranga Pillai's diary recorded every move.",
     name: "Jeanne Dupleix",
     dates: "c.1706–1756",
@@ -639,7 +639,7 @@ When Dupleix was recalled to France in 1754, having been stripped of the protect
   },
   {
     id: "claude-martin",
-    metaTitle: "Claude Martin, the Pondicherry Soldier Who Built an Empire in Lucknow",
+    metaTitle: "Claude Martin, Pondicherry's Soldier in Lucknow",
     metaDescription: "A common soldier in Dupleix and Lally's army who switched sides after the fall of Pondicherry in 1761, and died a Major-General worth nearly £500,000.",
     name: "Claude Martin",
     dates: "1735–1800",
@@ -698,7 +698,7 @@ The more lasting legacy of his government for Pondicherry was cultural rather th
   },
   {
     id: "kewal-singh",
-    metaTitle: "Kewal Singh, the Diplomat Who Executed Pondicherry's Transfer",
+    metaTitle: "Kewal Singh, Diplomat of the Pondicherry Transfer",
     metaDescription: "India's Consul-General in French India became its first Chief Commissioner on the same day, in 1954, and went on to become Foreign Secretary of India.",
     name: "Kewal Singh",
     dates: "1915–1991",

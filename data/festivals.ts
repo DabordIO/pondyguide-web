@@ -315,7 +315,7 @@ export const festivals: Festival[] = [
 
   {
     id: "veerampattinam-festival",
-    metaTitle: "Veerampattinam Car Festival 2026, 450-Year-Old Goddess Festival",
+    metaTitle: "Veerampattinam Car Festival 2026, a 450-Year Tradition",
     metaDescription: "Veerampattinam Car Festival 2026 is on August 14. The fishing village celebrates its 450-year-old Aadi festival with fish curry feasts, temple rituals, and a chariot procession.",
     title: "Veerampattinam Car Festival",
     category: "hindu",
