@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { buildOpenGraph } from "@/lib/metadata";
 import type { Metadata } from "next";
 import { institutionArticles as institutions } from "@/data/institutions";
 import { institutionArticlesFr } from "@/data/fr/institutions";
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: item.metaTitle ?? `${item.title} — Pondicherry`,
     description: item.metaDescription ?? item.teaser,
-    openGraph: item.photo ? { images: [`/${item.photoFolder ?? "history"}/${item.photo}`] } : undefined,
+    openGraph: buildOpenGraph({ path: `/history/institutions/${slug}`, image: item.photo ? `/${item.photoFolder ?? "history"}/${item.photo}` : undefined }),
     alternates: hasFr || hasTa
       ? {
           canonical: `/history/institutions/${slug}`,

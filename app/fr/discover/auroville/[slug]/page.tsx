@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { buildOpenGraph } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { aurovilleArticles } from "@/data/auroville";
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: fr.metaTitle ?? `${fr.title} — Auroville`,
     description: fr.metaDescription ?? fr.teaser,
-    openGraph: en.photo ? { images: [`/auroville/${en.photo}`] } : undefined,
+    openGraph: buildOpenGraph({ path: `/fr/discover/auroville/${slug}`, image: en.photo ? `/auroville/${en.photo}` : undefined, locale: "fr_FR" }),
     alternates: {
       canonical: `/fr/discover/auroville/${slug}`,
       languages: {

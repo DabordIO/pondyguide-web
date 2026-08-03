@@ -9,6 +9,7 @@ import LanguageToggle from "@/components/LanguageToggle";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { hotelsFr } from "@/data/fr/hotels";
 import Link from "next/link";
+import { buildOpenGraph } from "@/lib/metadata";
 
 const orderedHotels = COLLECTION_ORDER.flatMap(c => getHotelsByCollection(c));
 
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: h.metaTitle ?? `${h.name} — Pondicherry`,
     description: h.metaDescription ?? h.tagline,
-    openGraph: h.photo ? { images: [`/hotels/${h.photo}`] } : undefined,
+    openGraph: buildOpenGraph({ path: `/hotels/${slug}`, image: h.photo ? `/hotels/${h.photo}` : undefined }),
     alternates: hasFr
       ? {
           canonical: `/hotels/${slug}`,

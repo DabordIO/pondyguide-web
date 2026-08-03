@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { buildOpenGraph } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { historyArticles } from "@/data/history";
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: ta.metaTitle ?? ta.title,
     description: ta.metaDescription ?? ta.teaser,
-    openGraph: en.photo ? { images: [`/${en.photoFolder ?? "history"}/${en.photo}`] } : undefined,
+    openGraph: buildOpenGraph({ path: `/ta/history/${slug}`, image: en.photo ? `/${en.photoFolder ?? "history"}/${en.photo}` : undefined, locale: "ta_IN" }),
     alternates: {
       canonical: `/ta/history/${slug}`,
       languages: {
