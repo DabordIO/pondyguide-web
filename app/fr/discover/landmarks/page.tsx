@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/discover/landmarks",
       fr: "/fr/discover/landmarks",
+      ta: "/ta/discover/landmarks",
       "x-default": "/discover/landmarks",
     },
   },

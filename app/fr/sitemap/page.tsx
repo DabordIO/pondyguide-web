@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/sitemap",
       fr: "/fr/sitemap",
+      ta: "/ta/sitemap",
       "x-default": "/sitemap",
     },
   },

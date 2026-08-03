@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/discover/white-town",
       fr: "/fr/discover/white-town",
+      ta: "/ta/discover/white-town",
       "x-default": "/discover/white-town",
     },
   },

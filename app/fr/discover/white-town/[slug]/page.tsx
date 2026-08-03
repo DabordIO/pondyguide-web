@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languages: {
         en: `/discover/white-town/${slug}`,
         fr: `/fr/discover/white-town/${slug}`,
+        ...(entry.hasTa ? { ta: `/ta/discover/white-town/${slug}` } : {}),
         "x-default": `/discover/white-town/${slug}`,
       },
     },

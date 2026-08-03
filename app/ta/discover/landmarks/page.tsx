@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/discover/landmarks",
       ta: "/ta/discover/landmarks",
+      fr: "/fr/discover/landmarks",
       "x-default": "/discover/landmarks",
     },
   },

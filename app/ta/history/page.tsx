@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/history",
       ta: "/ta/history",
+      fr: "/fr/history",
       "x-default": "/history",
     },
   },

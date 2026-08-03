@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/history/institutions",
       fr: "/fr/history/institutions",
+      ta: "/ta/history/institutions",
       "x-default": "/history/institutions",
     },
   },
