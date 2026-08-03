@@ -39,7 +39,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "rue-suffren",
-    metaTitle: "Rue Suffren, la rue de l'amiral dans le quartier français de Pondichéry",
+    metaTitle: "Rue Suffren, la rue de l'amiral à Pondichéry",
     metaDescription: "Nommée d'après l'amiral qui livra cinq batailles contre les Britanniques au large de Pondichéry en 1782 et 1783 sans jamais essuyer de défaite.",
     summary:
       "Bienvenue Rue Suffren, nommée d'après l'amiral dont l'escadre croisa au large en 1782 et 1783, livrant cinq batailles contre les Britanniques sans jamais perdre. Il fut le dernier Français qui aurait pu changer l'issue en Inde. Il s'en fallut de peu.",
@@ -99,7 +99,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "rue-desbassayns",
-    metaTitle: "Rue Desbassayns, la rue du Lycée français dans le quartier français",
+    metaTitle: "Rue Desbassayns, la rue du Lycée français à Pondichéry",
     metaDescription: "Nommée d'après l'administrateur qui fonda le collège français en 1826, aujourd'hui le Lycée français de Pondichéry.",
     summary:
       "Bienvenue Rue Desbassayns de Richemont, nommée d'après l'administrateur de la Restauration qui fonda le collège français en 1826. Ce collège, aujourd'hui le Lycée français de Pondichéry, est le plus ancien établissement d'enseignement français hors de France. Cette rue marque la limite occidentale du quartier français, là où celui-ci rejoint le canal.",
@@ -129,7 +129,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "rue-lally-tollendal",
-    metaTitle: "Rue Lally-Tollendal, la rue du commandant tragique du quartier français",
+    metaTitle: "Rue Lally-Tollendal, le commandant tragique de Pondichéry",
     metaDescription: "Nommée d'après le commandant qui rendit Pondichéry en 1761, fut exécuté à Paris en 1766, puis réhabilité officiellement plus tard.",
     summary:
       "Bienvenue Rue Lally-Tollendal, nommée d'après le commandant qui rendit Pondichéry en janvier 1761, fut ramené en France enchaîné, jugé pour trahison, et décapité à Paris le 9 mai 1766. Voltaire mena campagne pour son innocence. Le Parlement de Paris lui donna raison, douze ans après l'exécution. La France lui donna tout de même une rue.",
@@ -159,7 +159,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "rue-dupleix",
-    metaTitle: "Jawaharlal Nehru Street, l'ancienne rue Dupleix du quartier français",
+    metaTitle: "Jawaharlal Nehru Street, l'ancienne rue Dupleix à Pondichéry",
     metaDescription: "L'axe est-ouest principal du quartier français, portant l'héritage de Dupleix et de l'Inde qui absorba ensuite la Pondichéry française.",
     summary:
       "Vous êtes sur Jawaharlal Nehru Street, l'axe est-ouest principal du quartier français et la rue commerçante la plus animée de Pondichéry. Le nom français était Rue Dupleix, et les Pondichériens les plus âgés l'appellent parfois encore ainsi. Elle porte le poids de deux histoires : le gouverneur français qui faillit faire de cette ville la capitale d'un empire, et le Premier ministre indien qui bâtit le pays qui l'absorba.",
@@ -205,7 +205,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "rue-bussy",
-    metaTitle: "Rue Bussy, la rue du lieutenant de Dupleix dans le quartier français",
+    metaTitle: "Rue Bussy, le lieutenant de Dupleix à Pondichéry",
     metaDescription: "Nommée d'après le lieutenant le plus doué de Dupleix, qui gouverna Hyderabad pour la France, fut capturé à Wandiwash, et revint des décennies plus tard.",
     summary:
       "Bienvenue Rue Bussy, nommée d'après le lieutenant le plus doué de Dupleix : l'homme qui dirigea pendant huit ans le protectorat français à Hyderabad avec une poignée de troupes, fut capturé à Wandiwash, retourna en Europe, puis revint vingt et un ans plus tard combattre à nouveau les Britanniques comme gouverneur-général. Il mourut dans cette ville en 1785. Un seul homme, deux carrières indo-françaises complètement différentes.",
@@ -221,7 +221,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "rue-victor-simonel",
-    metaTitle: "Rue Victor Simonel, la rue du héros de Verdun dans le quartier français",
+    metaTitle: "Rue Victor Simonel, le héros de Verdun à Pondichéry",
     metaDescription: "L'une des rues les plus animées du quartier français, nommée d'après un soldat de Pondichéry tué à Verdun en 1917, bordée d'hôpitaux et du Lycée français.",
     summary:
       "Bienvenue Rue Victor Simonel, l'une des rues les plus animées du quartier français. Elle court du nord au sud, de la rue Ananda Ranga Pillai à la rue Bussy, et sur son passage vous croisez l'hôpital général, la maternité, l'Assemblée législative, l'église Saint-Jean et le Lycée français. Le cimetière européen se trouve aussi ici. Victor Simonel était un soldat de Pondichéry tué à Verdun en 1916. Sa rue n'est pas restée tranquille.",
@@ -238,7 +238,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "marine-street",
-    metaTitle: "Marine Street, la rue de l'ashram du quartier français de Pondichéry",
+    metaTitle: "Marine Street, la rue de l'ashram à Pondichéry",
     metaDescription: "Nommée d'après la marine française qui relia Pondichéry à la France. L'ashram de Sri Aurobindo se dresse sur cette rue historique.",
     summary:
       "Bienvenue Marine Street, nommée d'après la marine française qui soutint le lien de Pondichéry avec la France à travers trois siècles d'océan. L'ashram de Sri Aurobindo, la plus grande communauté spirituelle du quartier français et l'une des plus importantes de toute l'Inde, se trouve sur cette rue.",
@@ -285,7 +285,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "caserne-street",
-    metaTitle: "Caserne Street, la rue de la garnison française du quartier français",
+    metaTitle: "Caserne Street, la rue de la garnison française à Pondichéry",
     metaDescription: "Nommée d'après la caserne militaire qui logea les soldats de l'Inde française à travers sièges, occupations et deux siècles d'empire.",
     summary:
       "Bienvenue Caserne Street. Caserne désigne le bâtiment militaire. Cette petite rue porte le nom de la garnison qui logea les soldats de l'Inde française à travers quatre sièges britanniques, trois occupations, et deux siècles d'ambition impériale. Les hommes qui tinrent Pondichéry, et ceux qui la rendirent, étaient cantonnés ici.",
@@ -429,7 +429,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "labourdonnais-street",
-    metaTitle: "Labourdonnais Street, la victoire de Madras de 1746 dans le quartier français",
+    metaTitle: "Labourdonnais Street, la victoire de Madras de 1746",
     metaDescription: "Nommée d'après l'amiral qui prit Madras en 1746, la plus grande réussite militaire française en Inde, avant d'être emprisonné en France.",
     summary:
       "Bienvenue Labourdonnais Street, nommée d'après l'amiral de Saint-Malo qui prit Madras pour la France en septembre 1746, la plus grande réussite militaire française en Inde. La France l'échangea ensuite contre une forteresse au Canada. L'homme qui offrit cette victoire fut emprisonné à son retour en France. Il mourut quatre ans plus tard, ses mémoires encore inachevées.",
@@ -444,7 +444,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "rue-aurobindo",
-    metaTitle: "Sri Aurobindo Street, la rue du philosophe dans le quartier français",
+    metaTitle: "Sri Aurobindo Street, la rue du philosophe à Pondichéry",
     metaDescription: "Nommée d'après le philosophe et révolutionnaire arrivé à Pondichéry en 1910, qui y bâtit une importante tradition spirituelle.",
     summary:
       "Bienvenue Sri Aurobindo Street, nommée d'après le philosophe, yogi et ancien nationaliste révolutionnaire arrivé à Pondichéry en 1910, fugitif de l'Inde britannique, et qui n'en repartit jamais. Il passa les quarante années suivantes dans la ville à bâtir l'une des traditions spirituelles les plus importantes du XXe siècle. Le territoire français fut son sanctuaire. Il repose dans l'ashram qu'il fonda, à quelques pas d'ici.",
@@ -459,7 +459,7 @@ export const streetsFr: StreetFr[] = [
   },
   {
     id: "mission-street",
-    metaTitle: "Mission Street, la rue de la mission catholique du quartier français",
+    metaTitle: "Mission Street, la rue de la mission catholique à Pondichéry",
     metaDescription: "Nommée d'après les missionnaires catholiques français arrivés en 1674, qui contribuèrent à façonner la ville aux côtés de la compagnie de commerce.",
     summary:
       "Bienvenue Mission Street, nommée d'après les missionnaires catholiques français arrivés à Pondichéry en 1674, la même année que les premiers marchands français. L'Église et la Compagnie ont bâti cette ville ensemble. Mission Street rappelle que l'une venait vendre du tissu et l'autre sauver des âmes, et qu'aucune des deux n'aurait pu le faire sans l'autre.",

@@ -48,7 +48,7 @@ export const festivalsFr: FestivalFr[] = [
 
   {
     id: "pongal",
-    metaTitle: "Pongal à Pondichéry, quatre jours de traditions tamoules des moissons",
+    metaTitle: "Pongal à Pondichéry, quatre jours de traditions tamoules",
     metaDescription: "Pongal remplit Pondichéry de riz fraîchement bouilli, de vaches décorées, de kolams, et du cri collectif « Pongalo Pongal » pendant quatre jours.",
     title: "Pongal",
     when: "Du 13 au 16 janvier chaque année (Thai Pongal, le jour principal, tombe toujours le 14 janvier)",
@@ -100,7 +100,7 @@ export const festivalsFr: FestivalFr[] = [
 
   {
     id: "auroville-day",
-    metaTitle: "Journée d'Auroville, rassemblement silencieux à l'aube au Matrimandir",
+    metaTitle: "Journée d'Auroville, rassemblement silencieux au Matrimandir",
     metaDescription: "Auroville célèbre sa fondation par un rassemblement silencieux à 4h45 à l'Amphithéâtre du Matrimandir, sans téléphones, sacs ni appareils photo.",
     title: "Journée d'Auroville",
     when: "28 février chaque année",
@@ -112,7 +112,7 @@ export const festivalsFr: FestivalFr[] = [
 
   {
     id: "heritage-festival",
-    metaTitle: "Festival du patrimoine de Pondichéry, balades, conférences et kayak",
+    metaTitle: "Festival du patrimoine de Pondichéry, balades et conférences",
     metaDescription: "Un mois de balades patrimoniales, de kayak, de croquis d'architecture, de conférences sur la conservation et d'événements scolaires autour de l'histoire de Pondichéry.",
     title: "Festival du patrimoine de Pondichéry",
     when: "De fin février à début avril chaque année. Durée et programme variables.",
@@ -180,7 +180,7 @@ export const festivalsFr: FestivalFr[] = [
 
   {
     id: "fete-de-la-musique",
-    metaTitle: "Fête de la Musique à Pondichéry, concerts gratuits dans toute la ville",
+    metaTitle: "Fête de la Musique à Pondichéry, concerts gratuits en ville",
     metaDescription: "Le jour le plus long de l'année, jazz, rock, musique classique et performances de rue remplissent Pondichéry grâce aux événements de l'Alliance française.",
     title: "Fête de la Musique",
     when: "21 juin chaque année (solstice d'été)",
@@ -230,7 +230,7 @@ export const festivalsFr: FestivalFr[] = [
 
   {
     id: "veerampattinam-festival",
-    metaTitle: "Fête du char de Veerampattinam 2026, fête de la déesse vieille de 450 ans",
+    metaTitle: "Char de Veerampattinam 2026, une tradition vieille de 450 ans",
     metaDescription: "La fête du char de Veerampattinam 2026 a lieu le 14 août. Le village de pêcheurs célèbre sa fête d'Aadi vieille de 450 ans avec des festins de curry de poisson, des rituels de temple et une procession de char.",
     title: "Fête du char de Veerampattinam",
     when: "Cinquième vendredi du mois tamoul d'Aadi. En 2026, cela tombe le 14 août.",
@@ -296,7 +296,7 @@ export const festivalsFr: FestivalFr[] = [
 
   {
     id: "deepavali",
-    metaTitle: "Deepavali à Pondichéry, pétards de 4 heures du matin et lampes à huile",
+    metaTitle: "Deepavali à Pondichéry, pétards à l'aube et lampes à huile",
     metaDescription: "Les familles se lèvent à 4 heures du matin pour un bain à l'huile, des habits neufs et des pétards avant l'aube, puis les lampes illuminent White Town le soir.",
     title: "Deepavali",
     when: "Nouvelle lune de Kartik dans le calendrier luni-solaire hindou. En 2026, aux alentours du 20 octobre.",

@@ -227,7 +227,7 @@ Le cadre fait partie de l'expérience : jardins ombragés, chants d'oiseaux plut
 
   {
     id: "how-to-visit",
-    metaTitle: "Comment visiter Auroville : laissez-passer, scooters et meilleure saison",
+    metaTitle: "Comment visiter Auroville : laissez-passer et scooters",
     metaDescription: "Auroville s'étend sur 20 km². Le Matrimandir nécessite un laissez-passer, le scooter offre le plus de flexibilité, et novembre à février est idéal.",
     title: "Comment visiter",
     teaser:
