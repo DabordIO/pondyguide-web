@@ -317,7 +317,7 @@ export default function HomePage() {
         <ThreeGrid>
           {[
             { href: "/festivals/pongal", photo: "/festivals/pongal.jpg", label: "January", title: "Pongal", description: "The Tamil harvest festival: four days, rice pots boiling over, decorated cows, and kolam patterns at every door." },
-            { href: "/festivals/bastille-day", photo: "/festivals/bastille-day.png", label: "July", title: "Bastille Day", description: "Pondicherry is one of the very few places outside France where July 14th is still celebrated in the streets." },
+            { href: "/festivals/bastille-day", photo: "/festivals/bastille-day.jpg", label: "July", title: "Bastille Day", description: "Pondicherry is one of the very few places outside France where July 14th is still celebrated in the streets." },
             { href: "/festivals/masi-magam", photo: "/festivals/masi-magam.jpg", label: "February–March", title: "Masi Magam", description: "The most spectacular festival in the Pondicherry calendar. Temple chariots, the sea, and a million people." },
           ].map(f => (
             <Link key={f.href} href={f.href} style={{ textDecoration: "none", background: "#fff", border: "1px solid #e8ddd4", borderRadius: 14, overflow: "hidden", display: "block" }}>
