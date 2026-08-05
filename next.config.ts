@@ -125,6 +125,11 @@ const nextConfig: NextConfig = {
         destination: "/fr/discover/auroville/how-to-visit",
         permanent: true,
       },
+      {
+        source: "/discover/arts/franco-tamil-cooking",
+        destination: "/restaurants",
+        permanent: true,
+      },
     ];
   },
 };
