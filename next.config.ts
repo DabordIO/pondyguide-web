@@ -61,8 +61,33 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/auroville/:slug",
-        destination: "/discover/auroville/:slug",
+        source: "/auroville/what-is-auroville",
+        destination: "/discover/auroville/what-is-auroville",
+        permanent: true,
+      },
+      {
+        source: "/auroville/the-matrimandir",
+        destination: "/discover/auroville/the-matrimandir",
+        permanent: true,
+      },
+      {
+        source: "/auroville/sustainable-living",
+        destination: "/discover/auroville/sustainable-living",
+        permanent: true,
+      },
+      {
+        source: "/auroville/arts-crafts",
+        destination: "/discover/auroville/arts-crafts",
+        permanent: true,
+      },
+      {
+        source: "/auroville/food-cafes",
+        destination: "/discover/auroville/food-cafes",
+        permanent: true,
+      },
+      {
+        source: "/auroville/how-to-visit",
+        destination: "/discover/auroville/how-to-visit",
         permanent: true,
       },
       {
@@ -71,8 +96,33 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/fr/auroville/:slug",
-        destination: "/fr/discover/auroville/:slug",
+        source: "/fr/auroville/what-is-auroville",
+        destination: "/fr/discover/auroville/what-is-auroville",
+        permanent: true,
+      },
+      {
+        source: "/fr/auroville/the-matrimandir",
+        destination: "/fr/discover/auroville/the-matrimandir",
+        permanent: true,
+      },
+      {
+        source: "/fr/auroville/sustainable-living",
+        destination: "/fr/discover/auroville/sustainable-living",
+        permanent: true,
+      },
+      {
+        source: "/fr/auroville/arts-crafts",
+        destination: "/fr/discover/auroville/arts-crafts",
+        permanent: true,
+      },
+      {
+        source: "/fr/auroville/food-cafes",
+        destination: "/fr/discover/auroville/food-cafes",
+        permanent: true,
+      },
+      {
+        source: "/fr/auroville/how-to-visit",
+        destination: "/fr/discover/auroville/how-to-visit",
         permanent: true,
       },
     ];
