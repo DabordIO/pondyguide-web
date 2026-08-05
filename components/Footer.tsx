@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { getLocale } from "@/lib/nav";
+import { clearStoredConsent } from "@/components/CookieConsent";
 
 function FooterColumn({ title, links }: { title: string; links: [string, string][] }) {
   return (
@@ -126,7 +127,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "16px 24px", borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "16px 24px", borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
         <p style={{ fontSize: 12, color: "#a8a29e" }}>
           {ta
             ? `© ${new Date().getFullYear()} பாண்டி வழிகாட்டி. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.`
@@ -134,6 +135,12 @@ export default function Footer() {
             ? `© ${new Date().getFullYear()} Pondy Guide. Tous droits réservés.`
             : `© ${new Date().getFullYear()} Pondy Guide. All rights reserved.`}
         </p>
+        <button
+          onClick={clearStoredConsent}
+          style={{ background: "none", border: "none", padding: 0, fontSize: 12, color: "#a8a29e", textDecoration: "underline", textUnderlineOffset: 3, cursor: "pointer" }}
+        >
+          {ta ? "குக்கீ விருப்பங்கள்" : fr ? "Préférences de cookies" : "Cookie preferences"}
+        </button>
       </div>
     </footer>
   );
