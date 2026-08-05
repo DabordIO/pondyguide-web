@@ -55,6 +55,26 @@ const nextConfig: NextConfig = {
         destination: "/ta/discover/white-town/rue-victor-simonel",
         permanent: true,
       },
+      {
+        source: "/auroville",
+        destination: "/discover/auroville",
+        permanent: true,
+      },
+      {
+        source: "/auroville/:slug",
+        destination: "/discover/auroville/:slug",
+        permanent: true,
+      },
+      {
+        source: "/fr/auroville",
+        destination: "/fr/discover/auroville",
+        permanent: true,
+      },
+      {
+        source: "/fr/auroville/:slug",
+        destination: "/fr/discover/auroville/:slug",
+        permanent: true,
+      },
     ];
   },
 };
