@@ -9,17 +9,17 @@ const CHANGE_EVENT = "cookie-consent-changed";
 
 export function getStoredConsent(): ConsentStatus | null {
   if (typeof window === "undefined") return null;
-  const value = localStorage.getItem(STORAGE_KEY);
+  const value = sessionStorage.getItem(STORAGE_KEY);
   return value === "accepted" || value === "declined" ? value : null;
 }
 
 export function clearStoredConsent() {
-  localStorage.removeItem(STORAGE_KEY);
+  sessionStorage.removeItem(STORAGE_KEY);
   window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
 function setStoredConsent(value: ConsentStatus) {
-  localStorage.setItem(STORAGE_KEY, value);
+  sessionStorage.setItem(STORAGE_KEY, value);
   window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
