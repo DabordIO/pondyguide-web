@@ -62,8 +62,8 @@ export default function CookieConsent() {
       }}
     >
       <p style={{ fontSize: 14, color: "#1c1917", lineHeight: 1.55, marginBottom: 14 }}>
-        We use cookies to understand site traffic and improve Pondy Guide. We don&apos;t use them for advertising.
-        You can change your choice at any time from the footer.
+        We don&apos;t use cookies for advertising. We only use cookies to understand site traffic and improve Pondy
+        Guide. You can change your choice at any time.
       </p>
       <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
         <button
