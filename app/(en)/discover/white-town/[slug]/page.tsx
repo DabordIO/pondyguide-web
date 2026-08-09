@@ -7,6 +7,7 @@ import { streetsTa } from "@/data/ta/streets";
 import { streetsFr } from "@/data/fr/streets";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import JsonLd from "@/components/JsonLd";
 import LanguageToggle from "@/components/LanguageToggle";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
@@ -59,6 +60,19 @@ export default async function StreetPage({ params }: { params: Promise<{ slug: s
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/discover/white-town/${slug}`} taHref={hasTa ? `/ta/discover/white-town/${slug}` : undefined} frHref={hasFr ? `/fr/discover/white-town/${slug}` : undefined} current="en" />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Place",
+          name: displayH1(street.name),
+          alternateName: street.altName,
+          description: street.summary,
+          image: street.photo ? `https://www.pondyguide.com/streets/${street.photo}` : undefined,
+          url: `https://www.pondyguide.com/discover/white-town/${street.id}`,
+          geo: { "@type": "GeoCoordinates", latitude: street.lat, longitude: street.lng },
+          address: { "@type": "PostalAddress", addressLocality: "White Town, Puducherry", addressCountry: "IN" },
+        }}
+      />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Discover", href: "/discover" }, { label: "White Town", href: "/discover/white-town" }, { label: street.name, href: `/discover/white-town/${slug}` }]} />
       <Link href="/discover/white-town" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← White Town Streets</Link>
 

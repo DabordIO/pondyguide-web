@@ -7,6 +7,7 @@ import { festivalsFr } from "@/data/fr/festivals";
 import { truncate } from "@/lib/truncate";
 import ArticleBody from "@/components/ArticleBody";
 import AppBanner from "@/components/AppBanner";
+import JsonLd from "@/components/JsonLd";
 import LanguageToggle from "@/components/LanguageToggle";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
@@ -92,6 +93,19 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/festivals/${slug}`} frHref={hasFr ? `/fr/festivals/${slug}` : undefined} current="en" />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Event",
+          name: festival.title,
+          description: `${festival.teaser} (${festival.when})`,
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          image: festival.photo ? `https://www.pondyguide.com/festivals/${festival.photo}` : undefined,
+          url: `https://www.pondyguide.com/festivals/${festival.id}`,
+          location: { "@type": "Place", name: "Puducherry", address: { "@type": "PostalAddress", addressLocality: "Puducherry", addressCountry: "IN" } },
+          ...(festival.website ? { sameAs: festival.website } : {}),
+        }}
+      />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Festivals", href: "/festivals" }, { label: festival.title, href: `/festivals/${slug}` }]} />
       <Link href="/festivals" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>
 

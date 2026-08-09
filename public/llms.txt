@@ -1,0 +1,39 @@
+# Pondy Guide
+
+> Pondy Guide (pondyguide.com) is an independent reference guide to Pondicherry/Puducherry, India. It covers the city's French colonial history, historical figures, French institutions, the White Town street grid, heritage landmarks, Auroville, festivals, restaurants, hotels, and practical travel information. Content is also available in Tamil (/ta) and French (/fr).
+
+## History
+
+- [History overview](https://www.pondyguide.com/history)
+- [Lives & Legacies — historical figures](https://www.pondyguide.com/history/lives-and-legacies)
+- [French Institutions](https://www.pondyguide.com/history/institutions)
+
+## Discover
+
+- [White Town Streets](https://www.pondyguide.com/discover/white-town)
+- [Heritage Landmarks](https://www.pondyguide.com/discover/landmarks)
+- [Auroville](https://www.pondyguide.com/discover/auroville)
+- [Walks, Day Trips & Experiences](https://www.pondyguide.com/discover/explore)
+
+## Travel
+
+- [Restaurants](https://www.pondyguide.com/restaurants)
+- [Hotels](https://www.pondyguide.com/hotels)
+- [Festivals](https://www.pondyguide.com/festivals)
+- [Getting Here](https://www.pondyguide.com/plan/getting-here)
+- [Getting Around](https://www.pondyguide.com/plan/getting-around)
+- [One Day in Pondicherry](https://www.pondyguide.com/plan/one-day-in-pondicherry)
+- [Practical Information](https://www.pondyguide.com/plan/practical)
+- [Healthcare](https://www.pondyguide.com/plan/healthcare)
+- [FAQ](https://www.pondyguide.com/faq)
+
+## Other Languages
+
+- [Tamil (தமிழ்)](https://www.pondyguide.com/ta)
+- [French (Français)](https://www.pondyguide.com/fr)
+
+## About
+
+- [About Pondy Guide](https://www.pondyguide.com/about)
+
+Full sitemap: https://www.pondyguide.com/sitemap.xml
