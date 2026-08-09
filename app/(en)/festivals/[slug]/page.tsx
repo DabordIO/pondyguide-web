@@ -11,6 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import LanguageToggle from "@/components/LanguageToggle";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
+import { nextOccurrence } from "@/lib/festivalDate";
 
 const MONTH_LABELS: Record<string, string> = {
   jan: "January", feb: "February", mar: "March", apr: "April",
@@ -94,17 +95,43 @@ export default async function FestivalOrMonthPage({ params }: { params: Promise<
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px 80px", position: "relative" }}>
       <LanguageToggle enHref={`/festivals/${slug}`} frHref={hasFr ? `/fr/festivals/${slug}` : undefined} current="en" />
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Event",
-          name: festival.title,
-          description: `${festival.teaser} (${festival.when})`,
-          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-          image: festival.photo ? `https://www.pondyguide.com/festivals/${festival.photo}` : undefined,
-          url: `https://www.pondyguide.com/festivals/${festival.id}`,
-          location: { "@type": "Place", name: "Puducherry", address: { "@type": "PostalAddress", addressLocality: "Puducherry", addressCountry: "IN" } },
-          ...(festival.website ? { sameAs: festival.website } : {}),
-        }}
+        data={(() => {
+          const base = {
+            "@context": "https://schema.org",
+            name: festival.title,
+            description: `${festival.teaser} (${festival.when})`,
+            image: festival.photo ? `https://www.pondyguide.com/festivals/${festival.photo}` : undefined,
+            url: `https://www.pondyguide.com/festivals/${festival.id}`,
+            ...(festival.website ? { sameAs: festival.website } : {}),
+          };
+
+          // Event requires a startDate to validate; only emit it when we have a
+          // real date (fixed annual date or a stated single occurrence).
+          // Otherwise fall back to CreativeWork rather than an invalid Event.
+          if (festival.fixedDate) {
+            const { startDate, endDate } = nextOccurrence(festival.fixedDate);
+            return {
+              ...base,
+              "@type": "Event",
+              startDate,
+              endDate,
+              eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+              eventStatus: "https://schema.org/EventScheduled",
+              location: { "@type": "Place", name: "Puducherry", address: { "@type": "PostalAddress", addressLocality: "Puducherry", addressCountry: "IN" } },
+            };
+          }
+          if (festival.approxDate) {
+            return {
+              ...base,
+              "@type": "Event",
+              startDate: festival.approxDate,
+              eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+              eventStatus: "https://schema.org/EventScheduled",
+              location: { "@type": "Place", name: "Puducherry", address: { "@type": "PostalAddress", addressLocality: "Puducherry", addressCountry: "IN" } },
+            };
+          }
+          return { ...base, "@type": "CreativeWork" };
+        })()}
       />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Festivals", href: "/festivals" }, { label: festival.title, href: `/festivals/${slug}` }]} />
       <Link href="/festivals" style={{ fontSize: 13, color: "#d4711a", textDecoration: "none", fontWeight: 600 }}>← Festivals</Link>

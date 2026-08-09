@@ -26,6 +26,10 @@ export interface Festival {
   photoAspectRatio?: string;
   metaTitle?: string;
   metaDescription?: string;
+  /** Annually-recurring civil-calendar date (no fixed year); used to compute the next occurrence for Event structured data. Only set when the date is genuinely fixed every year. */
+  fixedDate?: { month: number; day: number; endMonth?: number; endDay?: number };
+  /** A single dated occurrence (ISO YYYY-MM-DD) already stated in the copy for a lunar/movable festival, e.g. "in 2026, approximately October 9". Not recurring — used as-is, not projected forward. */
+  approxDate?: string;
 }
 
 export const festivals: Festival[] = [
@@ -37,6 +41,7 @@ export const festivals: Festival[] = [
     category: "christian",
     month: "dec",
     when: "December 25, with the Mission Street market running through most of December",
+    fixedDate: { month: 12, day: 25 },
     teaser:
       "Christmas in Pondicherry is unlike anywhere else in India: French pastry culture, Tamil Catholic tradition, and three grand colonial churches combine in a way that is entirely particular to this city.",
     photo: "christmas-pondicherry.jpg",
@@ -52,6 +57,7 @@ export const festivals: Festival[] = [
     category: "civic",
     month: "dec",
     when: "December 31 into January 1",
+    fixedDate: { month: 12, day: 31, endMonth: 1, endDay: 1 },
     photo: "happy-new-year.jpg",
     photoPosition: "center 25%",
     teaser:
@@ -68,6 +74,7 @@ export const festivals: Festival[] = [
     category: "spiritual",
     month: "jan",
     when: "January 4 to 7, annually",
+    fixedDate: { month: 1, day: 4, endMonth: 1, endDay: 7 },
     teaser:
       "Since 1993, the Government of Puducherry has organized a four-day gathering of yoga masters, scholars, and practitioners at the Convention Centre on the Old Port premises. Free board and lodging for registered delegates. Open to everyone.",
     body:
@@ -84,6 +91,7 @@ export const festivals: Festival[] = [
     category: "hindu",
     month: "jan",
     when: "January 13 to 16 each year (Thai Pongal, the main day, is always January 14)",
+    fixedDate: { month: 1, day: 13, endMonth: 1, endDay: 16 },
     calendarNote:
       "Pongal is fixed to the Tamil solar calendar: the sun's entry into Makaram (Capricorn) determines the date. Thai Pongal falls on January 14 in most years. Unlike most Hindu festivals, Pongal does not follow the lunar calendar and its Gregorian date is stable.",
     teaser:
@@ -101,6 +109,7 @@ export const festivals: Festival[] = [
     category: "civic",
     month: "jan",
     when: "January 26 each year",
+    fixedDate: { month: 1, day: 26 },
     teaser:
       "India's Republic Day is marked in Pondicherry with a formal flag-hoisting ceremony on Goubert Avenue, a military and school parade, gallantry awards, and tricolour illuminations along the seafront through the night.",
     body:
@@ -117,6 +126,7 @@ export const festivals: Festival[] = [
     category: "spiritual",
     month: "feb",
     when: "February 21 each year",
+    fixedDate: { month: 2, day: 21 },
     teaser:
       "The Sri Aurobindo Ashram marks the birthday of Mirra Alfassa, known as The Mother, with silent meditations at the Samadhi, collective readings, and the rare opening of her private room to visitors.",
     body:
@@ -153,6 +163,7 @@ export const festivals: Festival[] = [
     category: "spiritual",
     month: "feb",
     when: "February 28 each year",
+    fixedDate: { month: 2, day: 28 },
     teaser:
       "Auroville marks its founding anniversary with a silent dawn gathering at the Matrimandir Amphitheatre at 4:45 AM. Phones, bags, and cameras are prohibited. It is not a celebration in any ordinary sense.",
     body:
@@ -185,6 +196,7 @@ export const festivals: Festival[] = [
     category: "christian",
     month: "apr",
     when: "First Sunday after the full moon following the spring equinox of March 21. Easter 2026 falls on April 5. Easter 2027 falls on March 28.",
+    approxDate: "2027-03-28",
     calendarNote:
       "Easter follows the Western Christian computus: it is the first Sunday after the paschal full moon (the first ecclesiastical full moon on or after March 21). The date moves between March 22 and April 25. This is not the Julian calendar: the Eastern Orthodox Easter uses a different calculation and falls on a different date.",
     teaser:
@@ -203,6 +215,7 @@ export const festivals: Festival[] = [
     category: "hindu",
     month: "apr",
     when: "April 13 or April 14 each year",
+    fixedDate: { month: 4, day: 14 },
     calendarNote:
       "Puthandu is fixed to the Tamil solar calendar: it marks the sun's entry into Mesha (Aries), the first sign of the Tamil zodiac. Because this is a solar event, the Gregorian date remains stable at April 13 or 14. It is not determined by the lunar calendar.",
     teaser:
@@ -256,6 +269,7 @@ export const festivals: Festival[] = [
     category: "french",
     month: "jun",
     when: "June 21 each year (Summer Solstice)",
+    fixedDate: { month: 6, day: 21 },
     teaser:
       "On the longest day of the year, Pondicherry transforms into a giant stage. Free concerts, street performances, jazz, rock, and classical music spill across the city, organized through the Alliance Française de Pondichéry.",
     body:
@@ -290,6 +304,7 @@ export const festivals: Festival[] = [
     category: "french",
     month: "jul",
     when: "July 14 each year",
+    fixedDate: { month: 7, day: 14 },
     photo: "bastille-day.jpg",
     teaser:
       "France's national day is celebrated in Pondicherry with wreath-laying at the French War Memorial, both national anthems at the Consulate General, a torchlight parade through the White Town, and fireworks over the Promenade.",
@@ -321,6 +336,7 @@ export const festivals: Festival[] = [
     category: "hindu",
     month: "aug",
     when: "Fifth Friday of the Tamil month of Aadi. In 2026, this falls on August 14.",
+    approxDate: "2026-08-14",
     calendarNote:
       "The Tamil month of Aadi begins when the sun enters Cancer (Karkataka), typically around July 17 in the Gregorian calendar. The fifth Friday of Aadi follows from there. In 2026, Aadi begins July 17; the five Fridays are July 17, July 24, July 31, August 7, and August 14. The exact Gregorian date shifts by a day or two each year.",
     teaser:
@@ -338,6 +354,7 @@ export const festivals: Festival[] = [
     category: "civic",
     month: "aug",
     when: "August 15, 16, and 17 each year",
+    fixedDate: { month: 8, day: 15, endMonth: 8, endDay: 17 },
     teaser:
       "Three days of music, illuminated buildings, street food, and dancing mark Pondicherry's double celebration of Indian Independence Day and its own particular history of liberation from French rule.",
     body:
@@ -353,6 +370,7 @@ export const festivals: Festival[] = [
     category: "spiritual",
     month: "aug",
     when: "August 15 each year (one of the four annual Darshan Days at the Sri Aurobindo Ashram)",
+    fixedDate: { month: 8, day: 15 },
     teaser:
       "Sri Aurobindo was born on August 15, 1872. His birthday coincides with Indian Independence Day. At the Sri Aurobindo Ashram, it is one of four annual Darshan Days: devotees queue from before dawn for a token to view his room and meditate at the white marble Samadhi.",
     body:
@@ -370,6 +388,7 @@ export const festivals: Festival[] = [
     category: "hindu",
     month: "aug",
     when: "Fourth day of the bright fortnight of Bhadrapada in the Hindu lunisolar calendar. In 2026, approximately August 19.",
+    approxDate: "2026-08-19",
     calendarNote:
       "Ganesha Chaturthi follows the Hindu lunisolar calendar (Bhadrapada Shukla Chaturthi). The date shifts each year in Gregorian terms, typically falling between late August and mid-September. For the exact date, consult the Tamil panchangam.",
     teaser:
@@ -388,6 +407,7 @@ export const festivals: Festival[] = [
     category: "hindu",
     month: "oct",
     when: "Ninth day of Navaratri, in Ashwin (September or October). In 2026, approximately October 9.",
+    approxDate: "2026-10-09",
     calendarNote:
       "Ayudha Puja falls on Mahanavami, the ninth day of Navaratri in the Hindu lunisolar calendar. Navaratri begins on Ashwin Shukla Pratipada. In 2026, Navaratri runs approximately October 1 to 10, with Ayudha Puja on October 9. These dates shift each year.",
     teaser:
@@ -406,6 +426,7 @@ export const festivals: Festival[] = [
     category: "hindu",
     month: "oct",
     when: "New moon of Kartik in the Hindu lunisolar calendar. In 2026, approximately October 20.",
+    approxDate: "2026-10-20",
     calendarNote:
       "Diwali falls on Kartik Amavasya (the new moon night of the month of Kartik) in the Hindu lunisolar calendar. The Gregorian date shifts each year, typically between mid-October and mid-November. For the current year's date, consult the Tamil panchangam or bonjourpondicherry.in.",
     teaser:
@@ -425,6 +446,7 @@ export const festivals: Festival[] = [
     category: "civic",
     month: "nov",
     when: "November 1 each year",
+    fixedDate: { month: 11, day: 1 },
     teaser:
       "On November 1, 1954, the French tricolour was lowered over Pondicherry and the Indian flag raised for the first time. Liberation Day marks the de facto end of French rule with a public holiday, civic parades, and a moment to reckon with what exactly was liberated, and what was lost.",
     body:
