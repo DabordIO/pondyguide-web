@@ -60,6 +60,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     { url: BASE, priority: 1.0 },
     { url: `${BASE}/history`, priority: 0.9 },
+    { url: `${BASE}/history/institutions`, priority: 0.7 },
+    { url: `${BASE}/history/lives-and-legacies`, priority: 0.7 },
     { url: `${BASE}/discover`, priority: 0.9 },
     { url: `${BASE}/restaurants`, priority: 0.9 },
     { url: `${BASE}/hotels`, priority: 0.9 },
