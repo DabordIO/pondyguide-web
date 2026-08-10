@@ -71,7 +71,6 @@ export default async function LandmarkPage({ params }: { params: Promise<{ slug:
           url: `https://www.pondyguide.com/discover/landmarks/${site.id}`,
           geo: { "@type": "GeoCoordinates", latitude: site.lat, longitude: site.lng },
           address: { "@type": "PostalAddress", addressLocality: "Puducherry", addressCountry: "IN" },
-          ...(site.visitInfo?.hours ? { openingHours: site.visitInfo.hours } : {}),
           ...(site.visitInfo?.entry ? { isAccessibleForFree: /free/i.test(site.visitInfo.entry) } : {}),
         }}
       />
