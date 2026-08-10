@@ -130,6 +130,11 @@ const nextConfig: NextConfig = {
         destination: "/restaurants",
         permanent: true,
       },
+      {
+        source: "/festivals/veerampattinam-car-festival",
+        destination: "/festivals/veerampattinam-festival",
+        permanent: true,
+      },
     ];
   },
 };
